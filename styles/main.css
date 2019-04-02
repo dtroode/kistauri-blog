@@ -1,0 +1,113 @@
+/* Additional fonts */
+@font-face {
+  font-family: 'Inter UI Bold';
+  src: url('/fonts/Inter-UI-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter UI Medium';
+  src: url('/fonts/Inter-UI-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter UI Medium Italic';
+  src: url('/fonts/Inter-UI-MediumItalic.woff2') format('woff2');
+}
+
+/* Main style settings */
+body {
+  margin: 0;
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-position: left center;
+  background-attachment: fixed;
+}
+footer {
+  margin-top: 4.375rem;
+  padding-bottom: 4.375rem;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+section {
+  display: grid;
+  grid-template:
+    'heading text'
+    / 1fr 1fr;
+  padding: 2.5rem 4.375rem 0 4.375rem;
+}
+article.works p:not(:first-child) {
+  margin-top: 1rem;
+}
+h1, h2, p {
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Inter UI Bold', Arial, helvetica, sans-serif;
+  font-weight: bold;
+}
+h2, p {
+  width: 57%;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+  letter-spacing: -0.2rem;
+  color: #000000;
+}
+h2 {
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  word-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
+}
+p {
+  font-family: 'Inter UI Medium', Arial, Helvetica, sans-serif;
+  font-weight: medium;
+  font-size: 1.22rem;
+  line-height: 1.4rem;
+}
+a {
+  font-family: 'Inter UI Medium Italic', Arial, Helvetica, sans-serif;
+  font-weight: inherit;
+  font-size: inherit;
+  font-style: italic;
+  flex: inherit;
+  color: inherit;
+}
+a:hover {
+  text-decoration: line-through;
+}
+hr {
+  width: 100%;
+  margin: 4.375rem 0 0 0;
+  border-top: 2px solid #000000;
+  border-right: none;
+  border-bottom: 2px solid #000000;
+  border-left: none;
+  background-color: #000000;
+}
+
+/* Mobile style settings */
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section {
+    grid-template:
+    'heading' auto
+    'text' auto
+    / auto;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+  }
+  h2 {
+    width: auto;
+    margin-bottom: 1.2rem;
+  }
+  p {
+    width: auto;
+    font-size: 1.83rem;
+    line-height: 2.1rem;
+  }
+}
