@@ -26,6 +26,11 @@ footer {
   background-color: #000000;
   color: #FFFFFF;
 }
+footer hr {
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  background-color: #FFFFFf;
+}
 section {
   display: grid;
   grid-template:
@@ -47,9 +52,11 @@ h2, p {
   width: 57%;
 }
 h1 {
+  display: block;
   font-size: 5rem;
   line-height: 5rem;
   letter-spacing: -0.2rem;
+  width: 75%;
   color: #000000;
 }
 h2 {
@@ -75,6 +82,10 @@ a {
 a:hover {
   text-decoration: line-through;
 }
+img {
+  width: 10rem;
+  height: 10rem;
+}
 hr {
   width: 100%;
   margin: 4.375rem 0 0 0;
@@ -86,7 +97,6 @@ hr {
 }
 
 /* Mobile style settings */
-
 @media screen and (max-width: 950px) {
   html {
     font-size: 12px;
@@ -109,5 +119,10 @@ hr {
     width: auto;
     font-size: 1.83rem;
     line-height: 2.1rem;
+  }
+  img {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: auto;
   }
 }
