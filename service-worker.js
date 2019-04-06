@@ -5,9 +5,8 @@ var filesToCache = [
   '/scripts/main.js',
   '/styles/main.css',
   '/images/bg.jpg',
-  '/fonts/Inter-UI-Bold.woff2',
-  '/fonts/Inter-UI-Medium.woff2',
-  '/fonts/Inter-UI-MediumItalic.woff2'
+  '/images/avatar-light.jpg',
+  '/images/avatar-dark.jpg'
 ];
 
 self.addEventListener('install', function(e) {

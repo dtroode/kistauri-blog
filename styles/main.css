@@ -1,20 +1,20 @@
 /* Additional fonts */
-@font-face {
-  font-family: 'Inter UI Bold';
-  src: url('/fonts/Inter-UI-Bold.woff2') format('woff2');
+@import url('https://rsms.me/inter/inter.css');
+html {
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'case' 1;
 }
-@font-face {
-  font-family: 'Inter UI Medium';
-  src: url('/fonts/Inter-UI-Medium.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Inter UI Medium Italic';
-  src: url('/fonts/Inter-UI-MediumItalic.woff2') format('woff2');
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
 }
 
 /* Main style settings */
 body {
   margin: 0;
+}
+body.portfolio {
   background-image: url('/images/bg.jpg');
   background-size: cover;
   background-position: left center;
@@ -23,7 +23,7 @@ body {
 footer {
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: #FFFFFF;
 }
 footer hr {
@@ -33,23 +33,70 @@ footer hr {
 }
 section {
   display: grid;
+  padding: 2.5rem 4.375rem 0 4.375rem;
+}
+section.portfolio {
   grid-template:
     'heading text'
     / 1fr 1fr;
-  padding: 2.5rem 4.375rem 0 4.375rem;
 }
-article.works p:not(:first-child) {
+section.blog {
+  grid-template:
+    'articles news'
+    / 1fr 1fr;
+}
+section.news, section.articles {
+  padding: 0;
+}
+section.news {
+  display: grid;
+  grid-template:
+    'heading' auto
+    'news' 1fr
+    'empty' 1fr
+    / 1fr;
+  grid-area: news;
+}
+section.news hr {
+  display: none;
+}
+section.articles {
+  grid-area: articles;
+}
+article.works p:not(:first-child), article.news p:not(:first-child) {
   margin-top: 1rem;
+}
+article.news p:first-child, article.page-content p {
+  margin-top: 1.25rem;
+}
+article.page {
+  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
+  position: relative;
+  width: 75%;
+  height: 500px;
+  padding: 1.25rem 1.25rem 0 0;
+  background-color: #ED1D1B;
+}
+article.page:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2)
+}
+article.page:not(:first-child) {
+  margin-top: 2.5rem;
+}
+article.page-content {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
 }
 h1, h2, p {
   margin: 0;
 }
 h1, h2 {
-  font-family: 'Inter UI Bold', Arial, helvetica, sans-serif;
   font-weight: bold;
 }
-h2, p {
-  width: 57%;
+h2, p { 
+  width: 75%;
 }
 h1 {
   display: block;
@@ -57,7 +104,6 @@ h1 {
   line-height: 5rem;
   letter-spacing: -0.2rem;
   width: 75%;
-  color: #000000;
 }
 h2 {
   font-size: 3.125rem;
@@ -66,25 +112,40 @@ h2 {
   letter-spacing: -0.1rem;
 }
 p {
-  font-family: 'Inter UI Medium', Arial, Helvetica, sans-serif;
-  font-weight: medium;
+  font-weight: 600;
   font-size: 1.22rem;
   line-height: 1.4rem;
 }
 a {
-  font-family: 'Inter UI Medium Italic', Arial, Helvetica, sans-serif;
   font-weight: inherit;
   font-size: inherit;
   font-style: italic;
   flex: inherit;
   color: inherit;
 }
-a:hover {
-  text-decoration: line-through;
+a:after {
+  content: '⟶';
+  text-decoration: none;
 }
-img {
+a:hover {
+  color: #0000ff;
+}
+a:hover:after {
+  content: '⟵';
+}
+span {
+  font-feature-settings: 'ss01' 1;
+  font-weight: bold;
+}
+span.link-span {
+  font-style: italic;
+}
+span.image {
+  display: block;
   width: 10rem;
   height: 10rem;
+  background-image: url('/images/avatar-light.jpg');
+  background-size: contain;
 }
 hr {
   width: 100%;
@@ -105,11 +166,37 @@ hr {
 
 @media screen and (max-width: 750px) {
   section {
+    padding: 2.5rem 2.5rem 0 2.5rem;
+  }
+  section.portfolio {
     grid-template:
     'heading' auto
     'text' auto
     / auto;
-    padding: 2.5rem 2.5rem 0 2.5rem;
+  }
+  section.blog {
+    grid-template:
+      'news' auto
+      'articles' auto
+      / 1fr;
+  }
+  section.news {
+    grid-template:
+      'heading' auto
+      'news' auto
+      / 1fr;
+  }
+  section.news hr {
+    display: block;
+  }
+  section.articles {
+    padding-top: 2.5rem;
+  }
+  article.page {
+    width: auto;
+  }
+  article.empty {
+    display: none;
   }
   h2 {
     width: auto;
@@ -120,9 +207,18 @@ hr {
     font-size: 1.83rem;
     line-height: 2.1rem;
   }
-  img {
+  span.image {
     margin-top: 2.5rem;
-    width: 100%;
-    height: auto;
+  }
+}
+
+/* Dark color theme style settings */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  span.image {
+    background-image: url('/images/avatar-dark.jpg');
   }
 }
