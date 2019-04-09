@@ -49,7 +49,7 @@
     <header>
       <section class="portfolio">
         <article class="heading">
-          <h1>Давид <br> Кистаури</h1>
+          <h1>David<br>Kistauri's<br><span>Blog</span></h1>
         </article>
         <article class="content">
           <span class="image"></span>
@@ -60,28 +60,28 @@
     <section class="blog">
       <section class="news">
         <article class="heading">
-          <h2>Новости</h2>
+          <h2>News</h2>
         </article>
         <article class="content news">
           <p>
             <span class="link-span">0.4.</span>
-            <a href="https://cyxym.cf">Сайт города Сухум.</a><br>
-            Сделал, потому что больше такого нет.
+            <a href="https://cyxym.cf">Обновление сайта Сухума.</a><br>
+            Новое обновление с темным и "темным" режимами.
           </p>
           <p>
             <span class="link-span">0.3.</span>
-            <a href="https://secondschool.gq">Сайт школы.</a><br>
-            Сделал, потому что раньше было некрасиво.
+            <a href="https://secondschool.gq">Планы по развитию сайта школы.</a><br>
+            Редизайн, расписания, интерактивность, другие языки и еще много всякого.
           </p>
           <p>
             <span class="link-span">0.2.</span>
-            <a href="https://constantvalues.tk">Сайт с константами.</a><br>
-            Много таблиц, чтоб школьникам было легче учить.
+            <a href="">Прорвался в телевизор.</a><br>
+            Интервью со мной о том, как я делал сайт школы.
           </p>
           <p>
             <span class="link-span">0.1.</span>
-            <a href="https://masterbuket.com">Сайт и брендинг Мастер Букет.</a><br>
-            Сайт + логотип, дизайн система, оформление для соц. сетей и оффлайн брендинга.
+            <a href="https://masterbuket.com">Обновления на сайте Мастер Букет.</a><br>
+            Новости про бета-версию Мастер Букет.
           </p>
         </article>
         <article class="empty"></article>
@@ -96,62 +96,10 @@
             </p>
           </article>
         </article>
-        <hr>
         <article class="page"></article>
-        <hr>
         <article class="page"></article>
       </section>
     </section>
-    <!-- <section>
-      <article class="article">
-      </article>
-      <article class="content about">
-        <p>
-          <span>0.1.</span>
-          Я фронтенд-разработчик. Пишу на HTML, CSS, JS (практикуюсь).
-          Учусь в 10 классе. Живу в Абхазии.
-          Начал кодить в 2018 и уже написал несколько сайтов.
-          Занимаюсь веб-дизайном и виду мини канал в телеграме.
-          Диджитал во всю, поэтому имею опыт в сфере SMM.
-        </p>
-      </article>
-      <hr>
-    </section>
-    <section>
-      <article class="article">
-      </article>
-      <article class="content media">
-        <p><span class="link-span">0.2. </span><a href="">Рассказ на местном ТВ канале о том, как я сделал сайт для школы.</a></p>
-      </article>
-      <hr>
-    </section>
-    <section>
-      <article class="heading">
-        <h2>О работах</h2>
-      </article>
-      <article class="content works">
-        <p>
-          <span class="link-span">0.3.</span>
-          <a href="https://cyxym.cf">Сайт города Сухум.</a><br>
-          Сделал, потому что больше такого нет.
-        </p>
-        <p>
-          <span class="link-span">0.4.</span>
-          <a href="https://secondschool.gq">Сайт школы.</a><br>
-          Сделал, потому что раньше было некрасиво.
-        </p>
-        <p>
-          <span class="link-span">0.5.</span>
-          <a href="https://constantvalues.tk">Сайт с константами.</a><br>
-          Много таблиц, чтоб школьникам было легче учить.
-        </p>
-        <p>
-          <span class="link-span">0.6.</span>
-          <a href="https://masterbuket.com">Сайт и брендинг Мастер Букет.</a><br>
-          Сайт + логотип, дизайн система, оформление для соц. сетей и оффлайн брендинга.
-        </p>
-      </article>
-    </section> -->
     <footer>
       <section class="portfolio">
         <article class="heading">
@@ -165,17 +113,28 @@
           <p class="contacts-text"><a href="https://t.me/dkistauri">Телеграм</a></p>
           <p class="contacts-text"><a href="https://t.me/publichnii">Телеграм канал</a></p>
         </article>
-        <hr>
-      </section>
-      <section class="portfolio">
-        <article class="heading">
-          <h2>О языке страницы</h2>
-        </article>
-        <article class="content language">
-          <p><a href="">EN</a></p>
-        </article>
       </section>
     </footer>
   </main>
+  <script>
+    function articleHeight() {
+      let articleWidth = 0;
+      if (window.innerWidth > 750) {
+        articleWidth = (window.innerWidth - 4.375*32) * 0.375;
+      } else {
+        articleWidth = window.innerWidth - 2.5*32;
+      }
+      
+      const articles = document.querySelectorAll('.page');
+      const articlesArray = [...articles];
+
+      articlesArray.forEach(a => {
+        a.style.height = articleWidth + "px";
+      })
+    }
+
+    window.addEventListener('load', () => articleHeight());
+    window.addEventListener('resize', () => articleHeight());
+  </script>
 </body>
 </html>

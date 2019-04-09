@@ -73,7 +73,6 @@ article.page {
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   position: relative;
   width: 75%;
-  height: 500px;
   padding: 1.25rem 1.25rem 0 0;
   background-color: #ED1D1B;
 }
@@ -101,9 +100,12 @@ h2, p {
 h1 {
   display: block;
   font-size: 5rem;
-  line-height: 5rem;
+  line-height: 4rem;
   letter-spacing: -0.2rem;
   width: 75%;
+}
+h1 span {
+  color: #ED1D1B;
 }
 h2 {
   font-size: 3.125rem;
@@ -142,8 +144,8 @@ span.link-span {
 }
 span.image {
   display: block;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   background-image: url('/images/avatar-light.jpg');
   background-size: contain;
 }
@@ -217,6 +219,11 @@ hr {
   body {
     background-color: #000000;
     color: #FFFFFF;
+  }
+  hr {
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
   }
   span.image {
     background-image: url('/images/avatar-dark.jpg');

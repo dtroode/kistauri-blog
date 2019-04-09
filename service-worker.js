@@ -6,7 +6,8 @@ var filesToCache = [
   '/styles/main.css',
   '/images/bg.jpg',
   '/images/avatar-light.jpg',
-  '/images/avatar-dark.jpg'
+  '/images/avatar-dark.jpg',
+  'https://rsms.me/inter/inter.css'
 ];
 
 self.addEventListener('install', function(e) {
