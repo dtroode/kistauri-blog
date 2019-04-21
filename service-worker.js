@@ -5,8 +5,8 @@ var filesToCache = [
   '/scripts/main.js',
   '/styles/main.css',
   '/images/bg.jpg',
-  '/images/avatar-light.jpg',
-  '/images/avatar-dark.jpg',
+  '/images/avatar-light.png',
+  '/images/avatar-dark.png',
   'https://rsms.me/inter/inter.css'
 ];
 

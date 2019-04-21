@@ -28,6 +28,9 @@
   <meta name="twitter:image" content="http://aboutdavid.tk/images/preview.jpg">
 
   <!-- Links -->
+  <link rel="preload" href="https://rsms.me/inter/inter.css" as="style">
+  <link rel="preload" href="/styles/colors.css" as="style">
+  <link rel="stylesheet" type="text/css" media="screen" href="/styles/colors.css">
   <link rel="stylesheet" type="text/css" media="screen" href="/styles/main.css">
   <link rel="apple-touch-icon" sizes="256x256" href="/images/logos/icon-256.png">
   <link rel="apple-touch-icon" sizes="128x128" href="/images/logos/icon-128.png">
@@ -49,10 +52,13 @@
     <header>
       <section class="portfolio">
         <article class="heading">
-          <h1>David<br>Kistauri's<br><span>Blog</span></h1>
+          <h1>David<br>Kistauri<br><span>Blog</span></h1>
         </article>
         <article class="content">
-          <span class="image"></span>
+          <picture class="image">
+            <source media="(prefers-color-scheme: dark)" srcset="/images/avatar-dark.png">
+              <img src="/images/avatar-light.png" alt="">
+          </picture>
         </article>
         <hr>
       </section>
@@ -60,28 +66,28 @@
     <section class="blog">
       <section class="news">
         <article class="heading">
-          <h2>News</h2>
+          <h2>About news</h2>
         </article>
         <article class="content news">
           <p>
             <span class="link-span">0.4.</span>
-            <a href="https://cyxym.cf">Обновление сайта Сухума.</a><br>
-            Новое обновление с темным и "темным" режимами.
+            <a href="https://cyxym.cf">CYXYM update.</a><br>
+            New update with dark and "dark" mode.
           </p>
           <p>
             <span class="link-span">0.3.</span>
-            <a href="https://secondschool.gq">Планы по развитию сайта школы.</a><br>
-            Редизайн, расписания, интерактивность, другие языки и еще много всякого.
+            <a href="https://secondschool.gq">Secondschool developing plans.</a><br>
+            Redesign, timetable, interactivity, other langs and more.
           </p>
           <p>
             <span class="link-span">0.2.</span>
-            <a href="">Прорвался в телевизор.</a><br>
-            Интервью со мной о том, как я делал сайт школы.
+            <a href="">Goig to TV.</a><br>
+            Iterview with me about Secondschool developing.
           </p>
           <p>
             <span class="link-span">0.1.</span>
-            <a href="https://masterbuket.com">Обновления на сайте Мастер Букет.</a><br>
-            Новости про бета-версию Мастер Букет.
+            <a href="https://masterbuket.com">Updates on Master Buket.</a><br>
+            News about beta version of Master Buket.
           </p>
         </article>
         <article class="empty"></article>
@@ -90,9 +96,9 @@
       <section class="articles">
         <article class="page">
           <article class="page-content">
-            <h2>Как я начал кодить</h2>
+            <h2>How I started to code?</h2>
             <p>
-              Давным-давно, в 3/9 системе в 3/10 редакторе началась моя история как разработчика
+              Long time ago, I've started to code. How?
             </p>
           </article>
         </article>
@@ -103,15 +109,15 @@
     <footer>
       <section class="portfolio">
         <article class="heading">
-          <h2>О контактах</h2>
+          <h2>About contacts</h2>
         </article>
         <article class="content contacts">
-          <p class="contacts-text"><a href="/portfolio">Портфолио</a></p>
-          <p class="contacts-text"><a href="https://github.com/d4vidkis">Гитхаб</a></p>
-          <p class="contacts-text"><a href="https://twitter.com/sorry_cactus">Твиттер</a></p>
-          <p class="contacts-text"><a href="https://instagram.com/dkistauri">Инстаграм</a></p>
-          <p class="contacts-text"><a href="https://t.me/dkistauri">Телеграм</a></p>
-          <p class="contacts-text"><a href="https://t.me/publichnii">Телеграм канал</a></p>
+          <p class="contacts-text"><a href="/portfolio">Portfolio</a></p>
+          <p class="contacts-text"><a href="https://github.com/dtroode">Github</a></p>
+          <p class="contacts-text"><a href="https://twitter.com/dtroode">Twitter</a></p>
+          <p class="contacts-text"><a href="https://instagram.com/dtroode">Instagram</a></p>
+          <p class="contacts-text"><a href="https://t.me/dtroode">Telegram</a></p>
+          <p class="contacts-text"><a href="https://t.me/publichnii">Telegram channel</a></p>
         </article>
       </section>
     </footer>
