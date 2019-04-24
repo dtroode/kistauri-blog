@@ -5,8 +5,8 @@ html {
   font-feature-settings: 'case' 1, 'frac' 1;
 }
 @supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter var', sans-serif;
+  htmlfont-family: 'Inter var', sans-serif;
+    font-display: block;
   }
 }
 
@@ -87,16 +87,18 @@ article.works p:not(:first-child), article.news p:not(:first-child) {
 article.news p:first-child, article.page-content p {
   margin-top: 1.25rem;
 }
-article.page {
+article.page, button {
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
+}
+article.page {
   position: relative;
   width: 75%;
   padding: 1.25rem 1.25rem 0 0;
   background-color: var(--accent-red);
 }
-article.page:hover {
+article.page:hover, button:hover {
   transform: translateY(-0.5rem);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 article.page:not(:first-child) {
   margin-top: 2.5rem;
@@ -105,6 +107,19 @@ article.page-content {
   position: absolute;
   bottom: 1.25rem;
   left: 1.25rem;
+}
+aside {
+  background-color: var(--additional-light);
+}
+aside a {
+  text-decoration: none;
+  font-style: normal;
+}
+aside a::after {
+  content: '';
+}
+aside a:hover::after {
+  content: '';
 }
 h1, h2, p {
   margin: 0;
@@ -165,6 +180,13 @@ picture.image, picture.image img {
   width: 8rem;
   height: 8rem;
   background-size: contain;
+}
+button {
+  width: 200px;
+  height: 100px;
+  border: none;
+  background-color: var(--accent-red);
+  cursor: pointer;
 }
 hr {
   width: 100%;
