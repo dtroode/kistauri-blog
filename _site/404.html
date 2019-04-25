@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <!-- HTML Meta Tags -->
+  <title>David Kistauri</title>
+  <meta name="description" content="David Kistauri. Frontend developer, web designer, SMM specialist">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="David Kistauri">
+  <meta itemprop="description" content="David Kistauri. Frontend developer, web designer, SMM specialist">
+  <meta itemprop="image" content="http://aboutdavid.tk/images/preview.jpg">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://aboutdavid.tk">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="David Kistauri">
+  <meta property="og:description" content="David Kistauri. Frontend developer, web designer, SMM specialist">
+  <meta property="og:image" content="http://aboutdavid.tk/images/preview.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="David Kistauri">
+  <meta name="twitter:description" content="David Kistauri. Frontend developer, web designer, SMM specialist">
+  <meta name="twitter:image" content="http://aboutdavid.tk/images/preview.jpg">
+
+  <!-- Links -->
+  <link rel="preload" href="https://rsms.me/inter/inter.css" as="style">
+  <link rel="preload" href="/styles/colors.css" as="style">
+  <link rel="stylesheet" type="text/css" media="screen" href="/styles/colors.css">
+  <link rel="apple-touch-icon" sizes="256x256" href="/images/logos/icon-256.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="/images/logos/icon-128.png">
+  <link rel="apple-touch-icon" sizes="64x64" href="/images/logos/icon-64.png">
+  <link rel="apple-touch-icon" sizes="32x32" href="/images/logos/icon-32.png">
+  <link rel="apple-touch-icon" sizes="16x16" href="/images/logos/icon-16.png">
+  <link rel="icon" type="img/png" sizes="256x256" href="/images/logos/icon-256.png">
+  <link rel="icon" type="img/png" sizes="128x128" href="/images/logos/icon-128.png">
+  <link rel="icon" type="img/png" sizes="64x64" href="/images/logos/icon-64.png">
+  <link rel="icon" type="img/png" sizes="32x32" href="/images/logos/icon-32.png">
+  <link rel="icon" type="img/png" sizes="16x16" href="/images/logos/icon-16.png">
+
+  <!-- Scripts -->
+  <script src="/scripts/main.js"></script>
+
+</head>
+<body>
+  <style>
+    /* Additional fonts */
+    @import url('https://rsms.me/inter/inter.css');
+    html {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-feature-settings: 'case' 1;
+    }
+
+    /* Selection */
+    *::selection {
+      background-color: var(--accent-red);
+      color: var(--main-dark);
+    }
+    *::-moz-selection {
+      background-color: var(--accent-red);
+      color: var(--main-dark);
+    }
+
+    /* Main style settings */
+    body {
+      margin: 0;
+      background-color: var(--main-dark);
+    }
+    a {
+      display: block;
+      position: absolute;
+      top: 2.5rem;
+      left: 50%;
+      padding: 0.5rem;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      font-style: italic;
+      background-color: var(--main-light);
+      color: var(--main-dark);
+    }
+    a:after {
+      content: '⟶';
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--accent-blue);
+    }
+    a:hover:after {
+      content: '⟵';
+    }
+    span.error {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      font-size: 12rem;
+      color: var(--accent-red);
+    }
+
+    /* Mobile style settings */
+    @media screen and (max-width: 950px) {
+      html {
+        font-size: 12px;
+      }
+    }
+  </style>
+  <span class="error" id="error">404</span>
+  <a href="/" class="back">Back to main</a>
+  <script>
+    var fonts = [
+      "Inter, sans-serif",
+      "Helvetica, sans-serif",
+      "Roboto, sans-serif",
+      "Verdana, sans-serif",
+      "Arial, sans-serif",
+      "'Comic Sans MS', sans-serif",
+      "'Segoe UI', sans-serif",
+      "Georgia, serif",
+      "Iowan, serif",
+      "'Times New Roman', serif",
+      "Times, serif",
+      "Palatino, serif",
+      "Garamond, serif",
+      "Bookman, serif",
+      "'Space Mono', monospace",
+      "'Fira Mono', monospace",
+      "Inconsolata, monospace",
+      "'Courier New', monospace",
+      "Oswald, fantasy"
+    ]
+    var fontStyles = [
+      "italic",
+      "normal"
+    ]
+    var error = document.getElementById('error');
+
+    function changeErrorFont() {
+      setInterval(() => {
+        error.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)];
+        error.style.fontStyle = fontStyles[Math.floor(Math.random() * fontStyles.length)];
+      }, 100);
+    }
+
+    window.addEventListener('load', () => changeErrorFont());
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+// {
+//   "name": "Давид Кистаури",
+//   "short_name": "Кистаури",
+//   "icons": [{
+//       "src": "/images/K.png",
+//       "sizes": "768x768",
+//       "type": "image/png"
+//   }, {
+//       "src": "/images/K128.png",
+//       "sizes": "128x128",
+//       "type": "image/png"
+//   }, {
+//       "src": "/images/K64.png",
+//       "sizes": "64x64",
+//       "type": "image/png"
+//   }, {
+//       "src": "/images/K32.png",
+//       "sizes": "32x32",
+//       "type": "image/png"
+//   }, {
+//       "src": "/images/K16.png",
+//       "sizes": "16x16",
+//       "type": "image/png"
+//   }],
+//   "display": "standalone",
+//   "background_color": "#000000",
+//   "theme_color": "#FFFFFF"
+// }

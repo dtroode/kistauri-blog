@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<header>
+  <section class="post">
+    <article class="heading">
+      <h1 class="text-header">{{ page.title }}</h1>
+    </article>
+    <article class="content">
+      <picture class="image">
+        <source media="(prefers-color-scheme: dark)" srcset="/images/avatar-dark.png">
+          <img src="/images/avatar-light.png" alt="">
+      </picture>
+    </article>
+    <article class="links">
+      <article class="links-content">
+        <a href="/">Blog</a>
+        <a href="/portfolio/">Portfolio</a>
+        <hr>
+      </article>
+    </article>
+    <article class="date">
+      <p class="date-text">{{ page.date | date_to_string }}</p>
+    </article>
+  </section>
+</header>
+<section class="post">
+  <article class="text">
+    {{ content }}
+  </article>
+  <article class="empty"></article>
+</section>
+<footer>
+  <section class="portfolio">
+    <article class="heading">
+      <h2>About contacts</h2>
+    </article>
+    <article class="content contacts">
+      <p class="contacts-text"><a href="/">Blog</a></p>
+      <p class="contacts-text"><a href="/portfolio">Portfolio</a></p>
+      <p class="contacts-text"><a href="https://github.com/dtroode">Github</a></p>
+      <p class="contacts-text"><a href="https://twitter.com/dtroode">Twitter</a></p>
+      <p class="contacts-text"><a href="https://instagram.com/dtroode">Instagram</a></p>
+      <p class="contacts-text"><a href="https://t.me/dtroode">Telegram</a></p>
+      <p class="contacts-text"><a href="https://t.me/publichnii">Telegram channel</a></p>
+    </article>
+  </section>
+</footer>
