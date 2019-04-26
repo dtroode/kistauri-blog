@@ -8,3 +8,5 @@ default:
       path: ""
     values:
       layout: "default"
+
+permalink: /:categories/:title/
