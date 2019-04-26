@@ -90,7 +90,7 @@ article.text p {
     width: unset;
     font-style: italic;
     background-color: var(--additional-light); }
-article.text img {
+article.text img, article.text video {
   width: 100%; }
 article.date {
   position: relative;
