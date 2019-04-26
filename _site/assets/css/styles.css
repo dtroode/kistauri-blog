@@ -90,6 +90,8 @@ article.text p {
     width: unset;
     font-style: italic;
     background-color: var(--additional-light); }
+article.text img {
+  width: 100%; }
 article.date {
   position: relative;
   height: calc(4.375rem + 4px); }

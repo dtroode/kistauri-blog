@@ -131,6 +131,9 @@ article {
         background-color: var(--additional-light);
       }
     }
+    img {
+      width: 100%;
+    }
   }
   &.date {
     position: relative;
