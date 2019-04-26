@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /_data
+Disallow: /_includes
+Disallow: /_layouts
+Disallow: /_posts
+Disallow: /_sass
+Disallow: /.netlify
+Disallow: /admin
+Disallow: /assets
