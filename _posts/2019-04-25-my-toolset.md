@@ -15,6 +15,17 @@ thumbnail: /assets/img/uploads/toolset.png
 * Основные программы
 * Досвидания
 
+## Тест
+
+```
+Тест
+```
+
+> Тест
+
+1. Тест 1
+2. Тест 2
+
 ## Рабочая машинка и система(ы)
 
 ![My desktop](/assets/img/uploads/toolset.png "My desktop")
