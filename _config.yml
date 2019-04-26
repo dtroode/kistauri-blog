@@ -12,3 +12,5 @@ defaults:
       layout: "default"
 
 permalink: /:categories/:title/
+
+include: [404.html, .htaccess]
