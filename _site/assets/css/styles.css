@@ -22,7 +22,7 @@ body {
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    background-image: url("/images/bg.jpg");
+    background-image: url("/assets/img/bg.jpg");
     background-size: cover;
     background-position: left center;
     background-attachment: fixed;
@@ -235,6 +235,9 @@ hr {
   html {
     font-size: 12px; } }
 @media screen and (max-width: 750px) {
+  footer p.contacts-text {
+    line-height: 2.3rem; }
+
   section {
     padding: 2.5rem 2.5rem 0 2.5rem; }
     section.portfolio {

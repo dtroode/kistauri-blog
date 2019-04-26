@@ -20,8 +20,8 @@ title: David Kistauri Blog
         </article>
         <article class="content">
           <picture class="image">
-            <source media="(prefers-color-scheme: dark)" srcset="/images/avatar-dark.png">
-              <img src="/images/avatar-light.png" alt="">
+            <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
+              <img src="/assets/img/avatar-light.png" alt="">
           </picture>
         </article>
         <hr>
@@ -105,6 +105,17 @@ title: David Kistauri Blog
 
     window.addEventListener('load', () => articleHeight());
     window.addEventListener('resize', () => articleHeight());
+  </script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   </script>
 </body>
 </html>

@@ -2,11 +2,11 @@ var cacheName = 'Kistauri';
 var filesToCache = [
   '/',
   '/index.html',
-  '/scripts/main.js',
+  '/assets/js/main.js',
   '/styles/main.css',
-  '/images/bg.jpg',
-  '/images/avatar-light.png',
-  '/images/avatar-dark.png',
+  '/assets/img/bg.jpg',
+  '/assets/img/avatar-light.png',
+  '/assets/img/avatar-dark.png',
   'https://rsms.me/inter/inter.css'
 ];
 
