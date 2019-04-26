@@ -1,10 +1,10 @@
 ---
-title: "My Toolset"
-excerpt_separator: <!--more-->
-date: 2019-04-25 11:59:59 -0800
-thumbnail: "/assets/img/uploads/toolset.png"
+title: My Toolset
+date: '2019-04-25 11:59:59 -0800'
+thumbnail: /assets/img/uploads/toolset.png
 ---
 На чем, где и как я пишу этот и другие сайты. Моя коробочка с инструментами
+
 <!--more-->
 
 ## Кто я?
@@ -13,9 +13,9 @@ thumbnail: "/assets/img/uploads/toolset.png"
 
 ## Содержание, что-ли
 
-- Рабочая машинка и система(ы)
-- Основные программы
-- Досвидания
+* Рабочая машинка и система(ы)
+* Основные программы
+* Досвидания
 
 ## Рабочая машинка и система(ы)
 
