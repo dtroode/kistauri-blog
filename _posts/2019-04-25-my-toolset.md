@@ -15,6 +15,12 @@ thumbnail: /assets/img/uploads/toolset.png
 * Основные программы
 * Досвидания
 
+```
+for (var i = 0; i < u; i++) {
+  console.log(i);
+}
+```
+
 ## Рабочая машинка и система(ы)
 
 ![My desktop](/assets/img/uploads/toolset.png "My desktop")

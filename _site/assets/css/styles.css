@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:700");
 html {
   font-family: 'Inter', sans-serif;
   font-feature-settings: 'case' 1, 'frac' 1; }
@@ -86,7 +87,7 @@ article.text p {
   margin-top: 1.4rem; }
   article.text p:first-child {
     margin: 0;
-    padding: 1.5rem;
+    padding: 18px;
     width: unset;
     font-style: italic;
     background-color: var(--additional-light); }
@@ -208,6 +209,22 @@ span {
   span.link-span {
     font-style: italic; }
 
+blockquote {
+  margin-block-start: 0.7em;
+  margin-block-end: 2.1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0; }
+
+pre {
+  margin-top: 0.7rem;
+  margin-bottom: 2.1rem;
+  padding: 18px;
+  background-color: var(--additional-light); }
+
+code {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700; }
+
 picture.image {
   display: block;
   width: 8rem;
@@ -293,7 +310,7 @@ hr {
       border-bottom: 2px solid var(--additional-light);
       background-color: var(--additional-light); }
 
-  article.text p:first-child {
+  article.text p:first-child, article.text pre {
     background-color: var(--additional-dark); }
 
   hr {
