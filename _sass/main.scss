@@ -43,6 +43,15 @@ body {
   }
 }
 
+header {
+  section.post {
+    a, p.date-text {
+      font-size: 2rem;
+      letter-spacing: -0.05rem;
+    }
+  }
+}
+
 footer {
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
@@ -69,10 +78,6 @@ section {
     picture.image {
       width: 5rem;
       height: 5rem;
-    }
-    a, p.date-text {
-      font-size: 2rem;
-      letter-spacing: -0.05rem;
     }
   }
   &.news, &.articles {
