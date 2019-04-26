@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/2019/04/25/my-toolset.html</loc>
+<loc>http://localhost:4000/my-toolset/</loc>
 <lastmod>2019-04-25T22:59:59+03:00</lastmod>
 </url>
 <url>
-<loc>/portfolio/</loc>
+<loc>http://localhost:4000/404/</loc>
 </url>
 <url>
-<loc>/</loc>
+<loc>http://localhost:4000/portfolio/</loc>
 </url>
 <url>
-<loc>/admin/</loc>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/admin/</loc>
 <lastmod>2019-04-26T15:42:58+03:00</lastmod>
 </url>
 </urlset>

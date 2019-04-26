@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "My Toolset"
 excerpt_separator: <!--more-->
 date: 2019-04-25 11:59:59 -0800

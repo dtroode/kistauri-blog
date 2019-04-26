@@ -1,10 +1,12 @@
-default:
-  - scope:
+defaults:
+  -
+    scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-  - scope:
+  -
+    scope:
       path: ""
     values:
       layout: "default"
