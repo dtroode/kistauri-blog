@@ -6,4 +6,3 @@ Disallow: /_posts
 Disallow: /_sass
 Disallow: /.netlify
 Disallow: /admin
-Disallow: /assets
