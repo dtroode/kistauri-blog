@@ -29,6 +29,10 @@ body {
     background-attachment: fixed;
     opacity: 0.75; }
 
+header section.post a, header section.post p.date-text {
+  font-size: 2rem;
+  letter-spacing: -0.05rem; }
+
 footer {
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
@@ -51,9 +55,6 @@ section {
     section.post picture.image {
       width: 5rem;
       height: 5rem; }
-    section.post a, section.post p.date-text {
-      font-size: 2rem;
-      letter-spacing: -0.05rem; }
   section.news, section.articles {
     padding: 0; }
   section.news {
