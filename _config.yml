@@ -13,4 +13,4 @@ defaults:
 
 permalink: /:categories/:title/
 
-include: [404.html, .htaccess]
+include: [.htaccess]
