@@ -1,3 +1,4 @@
 [build]
+  command = "jekyll build"
+  functions = "functions"
   publish = "_site"
-  command = "jekyll build
