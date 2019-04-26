@@ -47,10 +47,11 @@ layout: default
   </section>
 </footer>
 <script>
-  const text = document.querySelector('.text');
-  console.log(text);
-  if (text) {
-    img = text.querySelectorAll('img');
-    console.log(img);
-  }
+  const p = document.querySelectorAll('p');
+  p.forEach((obj) => {
+    const node = obj.childNodes[0];
+    if (node.nodeName == 'IMG') {
+      obj.classList.add('figure');
+    }
+  });
 </script>
