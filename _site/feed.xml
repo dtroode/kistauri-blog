@@ -1,39 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-27T15:18:01+03:00</updated><id>/feed.xml</id><entry><title type="html">Education</title><link href="/education/" rel="alternate" type="text/html" title="Education" /><published>2019-04-27T00:00:00+03:00</published><updated>2019-04-27T00:00:00+03:00</updated><id>/education</id><content type="html" xml:base="/education/">&lt;h2 id=&quot;-head&quot;&gt;«««&amp;lt; HEAD&lt;/h2&gt;
-&lt;p&gt;layout: blog
-title: Education
-date: 2019-04-27T10:56:52.341Z
-thumbnail: /assets/img/uploads/desk.jpg
-—
-Опять про образование. Опять плохо. Как всегда&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-27T16:10:41+03:00</updated><id>/feed.xml</id><entry><title type="html">Education</title><link href="/education/" rel="alternate" type="text/html" title="Education" /><published>2019-04-27T15:23:39+03:00</published><updated>2019-04-27T15:23:39+03:00</updated><id>/education</id><content type="html" xml:base="/education/">&lt;p&gt;Опять про образование. Опять плохо. Как всегда&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;h2&gt;=======&lt;/h2&gt;
-&lt;p&gt;layout: blog
-title: Education
-date: 2019-04-27T10:56:52.341Z
-thumbnail: /assets/img/uploads/desk.jpg
-—
-Опять про образование. Опять плохо. Как всегда&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;blockquote&gt;
-        &lt;blockquote&gt;
-          &lt;blockquote&gt;
-            &lt;blockquote&gt;
-              &lt;p&gt;7b4a446580aa687bbdf85fb6e2c2c5df4a2274c9&lt;/p&gt;
-              &lt;h2 id=&quot;мы-живем-в-средневековье&quot;&gt;Мы живем в средневековье&lt;/h2&gt;
-            &lt;/blockquote&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&quot;мы-живем-в-средневековье&quot;&gt;Мы живем в средневековье&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/img/uploads/desk.jpg&quot; class=&quot;image-link&quot; title=&quot;Desk&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/desk.jpg&quot; alt=&quot;Desk&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -60,7 +29,7 @@ thumbnail: /assets/img/uploads/desk.jpg
 
 &lt;p&gt;Насчет дипломов. В сфере программирования уже почти не смотрят на диплом: приходи, докажи, что крут и работай (за деньги!). И это говорят не какие-то мелкие конторы, а такие компании, как Яндекс, ВК, Google и т. д.&lt;/p&gt;
 
-&lt;p&gt;Будем жить, следить за этим и менять все в лучшую сторону.&lt;/p&gt;</content><author><name></name></author><summary type="html">«««&amp;lt; HEAD layout: blog title: Education date: 2019-04-27T10:56:52.341Z thumbnail: /assets/img/uploads/desk.jpg — Опять про образование. Опять плохо. Как всегда</summary></entry><entry><title type="html">My Toolset</title><link href="/my-toolset/" rel="alternate" type="text/html" title="My Toolset" /><published>2019-04-25T22:59:59+03:00</published><updated>2019-04-25T22:59:59+03:00</updated><id>/my-toolset</id><content type="html" xml:base="/my-toolset/">&lt;p&gt;На чем, где и как я пишу этот и другие сайты. Моя коробочка с инструментами
+&lt;p&gt;Будем жить, следить за этим и менять все в лучшую сторону.&lt;/p&gt;</content><author><name></name></author><summary type="html">Опять про образование. Опять плохо. Как всегда</summary></entry><entry><title type="html">My Toolset</title><link href="/my-toolset/" rel="alternate" type="text/html" title="My Toolset" /><published>2019-04-25T22:59:59+03:00</published><updated>2019-04-25T22:59:59+03:00</updated><id>/my-toolset</id><content type="html" xml:base="/my-toolset/">&lt;p&gt;На чем, где и как я пишу этот и другие сайты. Моя коробочка с инструментами
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
