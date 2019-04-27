@@ -1,6 +1,6 @@
 ---
 title: Education
-date: 2019-04-27T12:23:06.784Z
+date: 2019-04-27T12:23:39.310Z
 thumbnail: /assets/img/uploads/desk.jpg
 ---
 Опять про образование. Опять плохо. Как всегда
