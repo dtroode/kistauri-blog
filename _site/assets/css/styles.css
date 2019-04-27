@@ -224,7 +224,8 @@ pre {
 
 code {
   font-family: 'Space Mono', monospace;
-  font-weight: 700; }
+  font-weight: 700;
+  white-space: normal; }
 
 picture.image {
   display: block;
@@ -255,6 +256,10 @@ hr {
   html {
     font-size: 12px; } }
 @media screen and (max-width: 750px) {
+  header section.post a, header section.post p.date-text {
+    font-size: 2.5rem;
+    letter-spacing: -0.1rem; }
+
   footer p.contacts-text {
     line-height: 2.3rem; }
 
@@ -266,9 +271,6 @@ hr {
       grid-template: 'news' auto 'articles' auto / 1fr; }
     section.post {
       grid-template: 'heading' auto 'content' auto 'hr' auto 'date' auto / 1fr; }
-      section.post a, section.post p.date-text {
-        font-size: 2.5rem;
-        letter-spacing: -0.1rem; }
     section.news {
       grid-template: 'heading' auto 'news' auto / 1fr; }
       section.news hr {
@@ -293,6 +295,9 @@ hr {
     width: auto;
     font-size: 1.83rem;
     line-height: 2.1rem; }
+
+  code {
+    font-size: 1.5rem; }
 
   picture.image {
     margin-top: 2.5rem; } }
