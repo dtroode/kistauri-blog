@@ -1,8 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <!-- HTML Meta Tags -->
-    <title>{{ page.title }}</title>
     <meta name="description" content="David Kistauri. Frontend developer, web designer, SMM specialist">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +17,7 @@
     <meta itemprop="image" content="https://dtroode.netlify.com/assets/img/preview.jpg">
 
     <!-- Facebook Meta Tags -->
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://dtroode.netlify.com">
     <meta property="og:type" content="website">
     <meta property="og:title" content="David Kistauri">
@@ -33,7 +33,5 @@
     {% include links.html %}
 
   </head>
-  <body>
     {{ content }}
-  </body>
 </html>

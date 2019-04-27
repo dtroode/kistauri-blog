@@ -6,6 +6,8 @@ thumbnail: /assets/img/uploads/desk.jpg
 ---
 Опять про образование. Опять плохо. Как всегда
 
+<!--more-->
+
 ## Мы живем в средневековье
 
 <a href="/assets/img/uploads/desk.jpg" class="image-link" title="Desk" target="_blank"><img src="/assets/img/uploads/desk.jpg" alt="Desk"></a>

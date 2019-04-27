@@ -5,6 +5,7 @@ defaults:
       type: "posts"
     values:
       layout: "blog"
+      excerpt_separator: "<!--more-->"
   -
     scope:
       path: ""
