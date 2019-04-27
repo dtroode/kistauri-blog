@@ -1,26 +1,12 @@
-<<<<<<< HEAD
 ---
-layout: blog
 title: Education
-date: 2019-04-27T10:56:52.341Z
+date: 2019-04-27T12:23:06.784Z
 thumbnail: /assets/img/uploads/desk.jpg
 ---
 Опять про образование. Опять плохо. Как всегда
 
 <!--more-->
 
-=======
----
-layout: blog
-title: Education
-date: 2019-04-27T10:56:52.341Z
-thumbnail: /assets/img/uploads/desk.jpg
----
-Опять про образование. Опять плохо. Как всегда
-
-<!--more-->
-
->>>>>>> 7b4a446580aa687bbdf85fb6e2c2c5df4a2274c9
 ## Мы живем в средневековье
 
 <a href="/assets/img/uploads/desk.jpg" class="image-link" title="Desk" target="_blank"><img src="/assets/img/uploads/desk.jpg" alt="Desk"></a>
