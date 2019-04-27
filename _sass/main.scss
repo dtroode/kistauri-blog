@@ -270,6 +270,9 @@ a {
       content: '⟵';
     }
   }
+  &.image-link::after, &.image-link:hover::after {
+    content: '';
+  }
 }
 
 ul, ol {
