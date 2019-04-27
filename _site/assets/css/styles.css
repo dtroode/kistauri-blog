@@ -195,6 +195,8 @@ a {
     color: var(--accent-blue); }
     a:hover:after {
       content: '⟵'; }
+  a.image-link::after, a.image-link:hover::after {
+    content: ''; }
 
 ul, ol {
   margin-block-start: 0.7rem;
