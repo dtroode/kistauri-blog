@@ -8,13 +8,14 @@ media_folder: "/assets/img/uploads"
 
 collections:
   - name: "blog"
-    label: "Blog"
+    tag: "Blog"
     folder: "_posts/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {tag: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {tag: "Title", name: "title", widget: "string"}
+      - {tag: "Publish Date", name: "date", widget: "datetime"}
+      - {tag: "Featured Image", name: "thumbnail", widget: "image"}
+      - {tag: "Categories", name: "categories", widget: "string"}
+      - {tag: "Body", name: "body", widget: "markdown"}

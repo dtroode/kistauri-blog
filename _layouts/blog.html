@@ -49,6 +49,12 @@
           <article class="links-content">
             <a href="/">Blog</a>
             <a href="/portfolio/">Portfolio</a>
+            <p class="tagname">
+              {% assign tag = site.tags | where: 'short_name', post.categories | first %}
+              {% if tag %}
+                <a href="{{ tag.url }}" id="{{ tag.short_name }}">{{ tag.name }}</a>
+              {% endif %}
+            </p>
             <hr>
           </article>
         </article>
@@ -61,7 +67,6 @@
       <article class="text">
         {{ content }}
       </article>
-      <article class="empty"></article>
     </section>
     {% include footer.html %}
   </body>

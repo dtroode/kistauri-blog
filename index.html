@@ -18,38 +18,31 @@ title: David Kistauri Blog
       </section>
     </header>
     <section class="blog">
-      <section class="news">
+      <section class="categories">
         <article class="heading">
-          <h2>About news</h2>
+          <h2>About categories</h2>
         </article>
-        <article class="content news">
-          <!-- <p>
-            <span class="link-span">0.4.</span>
-            <a href="https://cyxym.cf">CYXYM update.</a><br>
-            New update with dark and "dark" mode.
+        <article class="content categories">
+          <p class="tagname">
+            <a href="/tags/me" id="me">
+              Me
+            </a>
           </p>
-          <p>
-            <span class="link-span">0.3.</span>
-            <a href="https://secondschool.gq">Secondschool developing plans.</a><br>
-            Redesign, timetable, interactivity, other langs and more.
+          <p class="tagname">
+            <a href="/tags/works" id="works">
+              My works
+            </a>
           </p>
-          <p>
-            <span class="link-span">0.2.</span>
-            <a href="">Goig to TV.</a><br>
-            Iterview with me about Secondschool developing.
+          <p class="tagname">
+            <a href="/tags/news" id="news">
+              News
+            </a>
           </p>
-          <p>
-            <span class="link-span">0.1.</span>
-            <a href="https://masterbuket.com">Updates on Master Buket.</a><br>
-            News about beta version of Master Buket.
-          </p> -->
-          {% for post in site.news %}
-            <p>
-              <span class="link-span">0.1.</span>
-              <a href="{{ post.url }}">{{ post.title }}</a><br>
-              {{ post.excerpt }}
-            </p>
-          {% endfor %}
+          <p class="tagname">
+            <a href="/tags/thoughts" id="thoughts">
+              Thoughts
+            </a>
+          </p>
         </article>
         <hr>
       </section>
@@ -69,20 +62,7 @@ title: David Kistauri Blog
     </section>
     {% include footer.html %}
   </main>
-  <script>
-    function articleHeight() {
-      const articles = document.querySelectorAll('.page');
-      const articlesArray = [...articles];
-
-      articlesArray.forEach(a => {
-        let articleWidth = a.offsetWidth;
-        a.style.height = articleWidth + "px";
-      })
-    }
-
-    window.addEventListener('load', () => articleHeight());
-    window.addEventListener('resize', () => articleHeight());
-  </script>
+  <script src="/assets/js/articleHeight.js"></script>
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

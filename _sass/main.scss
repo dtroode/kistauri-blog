@@ -44,10 +44,34 @@ body {
 }
 
 header {
-  section.post {
-    a, p.date-text {
-      font-size: 2rem;
-      letter-spacing: -0.05rem;
+  section {
+    &.post, &.tag {
+      a, p {
+        display: inline-block;
+        font-size: 2rem;
+        letter-spacing: -0.05rem;
+        width: unset;
+        line-height: 2.4rem;
+      }
+    }
+  }
+  p.tagname {
+    vertical-align: bottom;
+    a {
+      line-height: calc(2.4rem - 8px);
+      color: var(--main-dark);
+      &#me {
+        background-color: var(--accent-red);
+      }
+      &#works {
+        background-color: var(--accent-yellow);
+      }
+      &#news {
+        background-color: var(--accent-blue);
+      }
+      &#thoughts {
+        background-color: var(--accent-green);
+      }
     }
   }
 }
@@ -73,24 +97,27 @@ section {
   &.portfolio {
     grid-template: 'heading text' / 1fr 1fr;
   }
-  &.blog {
-    grid-template: 'articles news' / 1fr 1fr;
+  &.blog, &.tag {
+    grid-template: 'articles categories' / 1fr 1fr;
   }
-  &.post {
-    grid-template: 'heading content' / 1fr 1fr;
+  &.post, &.tag {
+    justify-content: start;
     picture.image {
       width: 5rem;
       height: 5rem;
     }
   }
-  &.news, &.articles {
+  &.post {
+    grid-template: 'heading content' / 1fr 1fr;
+  }
+  &.categories, &.articles {
     align-content: start;
     padding: 0;
   }
-  &.news {
+  &.categories {
     display: grid;
-    grid-template: 'heading' auto 'news' 1fr 'empty' 1fr / 1fr;
-    grid-area: news;
+    grid-template: 'heading' auto 'categories' 1fr 'empty' 1fr / 1fr;
+    grid-area: categories;
     hr {
       display: none;
     }
@@ -107,23 +134,15 @@ article {
   &.works p:not(:first-child) {
     margin-top: 1rem;
   }
-  &.news p {
-    &:not(:first-child) {
-      margin-top: 1rem;
-    }
-    &:first-child {
-      margin-top: 1.25rem;
-    }
-  }
   &.page-content {
     h2, p {
       width: auto;
     }
     p {
-      margin-top: 1.25rem;
+      margin-top: 1.4rem;
     }
   }
-  &.page {
+  &.page, &.categories p a {
     transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   }
   &.text {
@@ -203,7 +222,6 @@ article {
   &.links {
     display: grid;
     align-items: end;
-    height: calc(4.375rem + 4px);
     hr {
       margin: 0;
     }
@@ -272,6 +290,49 @@ p, ul, ol {
   font-size: 1.22rem;
   line-height: 1.4rem;
   width: 75%;
+}
+
+p {
+  &.tagname {
+    &:not(:first-child) a {
+      margin-top: 0.7rem;
+    }
+    &:first-child a {
+      margin-top: 1.4rem;
+    }
+    a {
+      display: inline-block;
+      padding: 0.1rem;
+      text-decoration: none;
+      &#me {
+        border: 0.25rem solid var(--accent-red);
+        &:hover {
+          background-color: var(--accent-red);
+        }
+      }
+      &#works {
+        border: 0.25rem solid var(--accent-yellow);
+        &:hover {
+          background-color: var(--accent-yellow);
+        }
+      }
+      &#news {
+        border: 0.25rem solid var(--accent-blue);
+        &:hover {
+          background-color: var(--accent-blue);
+        }
+      }
+      &#thoughts {
+        border: 0.25rem solid var(--accent-green);
+        &:hover {
+          background-color: var(--accent-green);
+        }
+      }
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
 }
 
 a {
@@ -371,10 +432,13 @@ hr {
 
 @media screen and (max-width: 750px) {
   header {
-    section.post {
-      a, p.date-text {
-        font-size: 2.5rem;
-        letter-spacing: -0.1rem;
+    section {
+      &.post, &.tag {
+        a, p {
+          display: inline-block;
+          font-size: 2.5rem;
+          letter-spacing: -0.1rem;
+        }
       }
     }
   }
@@ -388,20 +452,22 @@ hr {
     &.portfolio {
       grid-template: 'heading' auto 'text' auto / auto;
     }
-    &.blog {
-      grid-template: 'news' auto 'articles' auto / 1fr;
+    &.blog, &.tag {
+      grid-template: 'categories' auto 'articles' auto / 1fr;
+    }
+    &.blog {  
+      section.articles {
+        padding-top: 2.5rem;
+      }
     }
     &.post {
-      grid-template: 'heading' auto 'content' auto 'hr' auto 'date' auto / 1fr;
+      grid-template: 'heading' auto 'content' auto / 1fr;
     }
-    &.news {
-      grid-template: 'heading' auto 'news' auto / 1fr;
+    &.categories {
+      grid-template: 'heading' auto 'categories' auto / 1fr;
       hr {
         display: block;
       }
-    }
-    &.articles {
-      padding-top: 2.5rem;
     }
   }
   article {
