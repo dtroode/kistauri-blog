@@ -84,6 +84,7 @@ section {
     }
   }
   &.news, &.articles {
+    align-content: start;
     padding: 0;
   }
   &.news {

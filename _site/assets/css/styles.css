@@ -33,6 +33,9 @@ header section.post a, header section.post p.date-text {
   font-size: 2rem;
   letter-spacing: -0.05rem; }
 
+header img, img.page-background {
+  pointer-events: none; }
+
 footer {
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
@@ -56,6 +59,7 @@ section {
       width: 5rem;
       height: 5rem; }
   section.news, section.articles {
+    align-content: start;
     padding: 0; }
   section.news {
     display: grid;
@@ -74,6 +78,8 @@ article.news p:not(:first-child) {
   margin-top: 1rem; }
 article.news p:first-child {
   margin-top: 1.25rem; }
+article.page-content h2, article.page-content p {
+  width: auto; }
 article.page-content p {
   margin-top: 1.25rem; }
 article.page {
