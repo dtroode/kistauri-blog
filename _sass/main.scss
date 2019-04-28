@@ -1,5 +1,6 @@
 // Additional fonts
 @import url('https://rsms.me/inter/inter.css');
+
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:700');
 
 html {
@@ -15,7 +16,6 @@ html {
 }
 
 // Selection
-
 * {
   &::selection, &::-moz-selection {
     background-color: var(--accent-red);
@@ -24,7 +24,6 @@ html {
 }
 
 // Main style settings
-
 body {
   margin: 0;
   background-color: var(--main-light);
@@ -43,44 +42,113 @@ body {
   }
 }
 
+header, main, footer {
+  display: grid;
+  padding-top: 2.5rem;
+  padding-right: 4.375rem;
+  padding-left: 4.375rem;
+}
+
 header {
-  section {
-    &.post, &.tag {
-      a, p {
-        display: inline-block;
-        font-size: 2rem;
-        letter-spacing: -0.05rem;
-        width: unset;
-        line-height: 2.5rem;
+  &.blog, &.tag, &.portfolio {
+    grid-template: 'heading' auto 'logo' auto 'links' auto / 1fr 1fr;
+  }
+  &.tag, &.post {
+    picture {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  &.blog, &.portfolio {
+    picture {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+  &.post {
+    grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 1fr 1fr;
+    h1 {
+      line-height: 5rem;
+    }
+  }
+  picture {
+    display: block;
+    border: 4px solid var(--main-dark);
+    img {
+      display: inherit;
+      width: inherit;
+      height: inherit;
+    }
+  }
+  nav {
+    a {
+      &.tagname {
+        line-height: calc(2.5rem - 8px);
+        text-transform: capitalize;
+        color: var(--main-dark);
+        &#me {
+          background-color: var(--accent-red);
+        }
+        &#works {
+          background-color: var(--accent-yellow);
+        }
+        &#news {
+          background-color: var(--accent-blue);
+        }
+        &#thoughts {
+          background-color: var(--accent-green);
+        }
       }
     }
   }
-  p.tagname {
-    vertical-align: bottom;
-    a {
-      line-height: calc(2.5rem - 8px);
-      text-transform: capitalize;
-      color: var(--main-dark);
-      &#me {
-        background-color: var(--accent-red);
-      }
-      &#works {
-        background-color: var(--accent-yellow);
-      }
-      &#news {
-        background-color: var(--accent-blue);
-      }
-      &#thoughts {
-        background-color: var(--accent-green);
-      }
-    }
+  a, p {
+    display: inline-block !important;
+    width: unset;
+    font-size: 2rem;
+    letter-spacing: -0.05rem;
+    line-height: 2.5rem;
   }
 }
+
 header img, img.page-background {
   pointer-events: none;
 }
 
+main {
+  &.blog {
+    grid-template: 'articles categories' / 1fr 1fr;
+    section {
+      &.articles {
+        grid-area: articles;
+      }
+      &.categories {
+        grid-area: categories;
+      }
+    }
+  }
+  &.post {
+    grid-template: 'text empty' / 1fr 1fr;
+  }
+  &.tag {
+    grid-template: 'articles empty' / 1fr 1fr;
+  }
+  &.portfolio {
+    grid-template: 'section' auto / 1fr;
+    section.content {
+      display: grid;
+      grid-template: 'sub-heading text' / 1fr 1fr;
+      &:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+      p:not(:first-child) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
 footer {
+  grid-template: 'heading links' / 1fr 1fr;
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
   background-color: var(--additional-light);
@@ -93,49 +161,36 @@ footer {
 }
 
 section {
-  display: grid;
-  padding: 2.5rem 4.375rem 0 4.375rem;
-  &.portfolio {
-    grid-template: 'heading text' / 1fr 1fr;
-  }
-  &.blog, &.tag {
-    grid-template: 'articles categories' / 1fr 1fr;
-  }
-  &.post, &.tag {
-    justify-content: start;
-    picture.image {
-      width: 5rem;
-      height: 5rem;
-    }
-  }
-  &.post {
-    grid-template: 'heading content' / 1fr 1fr;
-  }
-  &.categories, &.articles {
-    align-content: start;
-    padding: 0;
-  }
-  &.categories {
+  &.links {
     display: grid;
-    grid-template: 'heading' auto 'categories' 1fr 'empty' 1fr / 1fr;
-    grid-area: categories;
+    align-content: end;
+    height: calc(4.375rem + 4px);
     hr {
-      display: none;
+      margin: 0;
     }
-  }
-  &.articles {
-    grid-area: articles;
-  }
-  &.post {
-    grid-template: 'text empty' / 1fr 1fr;
-  }
-}
-
-article {
-  &.works p:not(:first-child) {
-    margin-top: 1rem;
+    a {
+      margin-right: 0.5rem;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      color: var(--accent-red);
+      &:hover {
+        color: inherit
+      }
+      &::after {
+        content: '→';
+      }
+      &:hover::after {
+        content: '←'
+      }
+    }
   }
   &.page-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+    background-color: var(--accent-red);
     h2, p {
       width: auto;
     }
@@ -143,10 +198,18 @@ article {
       margin-top: 1.4rem;
     }
   }
-  &.page, &.categories p a {
-    transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
+  &.date {
+    position: relative;
+    height: calc(4.375rem + 4px);
+    p {
+      position: absolute;
+      bottom: 5px;
+      left: 1rem;
+      font-weight: 700;
+    }
   }
   &.text {
+    justify-content: start;
     h1, h2, h3, p {
       width: 100%;
     }
@@ -170,15 +233,28 @@ article {
       width: 100%;
     }
   }
-  &.date {
-    position: relative;
-    height: calc(4.375rem + 4px);
-    p.date-text {
-      position: absolute;
-      bottom: 12px;
-      left: 1rem;
-      font-weight: 700;
+  &.post {
+    grid-template: 'text empty' / 1fr 1fr;
+  }
+  &.categories, &.articles {
+    align-content: start;
+    padding: 0;
+  }
+  &.categories {
+    display: grid;
+    grid-template: 'heading' auto 'categories' auto 'empty'auto / 1fr;
+    hr {
+      display: none;
     }
+  }
+}
+
+article {
+  &.works p:not(:first-child) {
+    margin-top: 1rem;
+  }
+  &.page, &.categories p a {
+    transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   }
   &.page {
     position: relative;
@@ -213,36 +289,6 @@ article {
   &.page:not(:first-child) {
     margin-top: 2.5rem;
   }
-  &.page-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 1.25rem;
-    background-color: var(--accent-red);
-  }
-  &.links {
-    display: grid;
-    align-items: end;
-    hr {
-      margin: 0;
-    }
-    a {
-      margin-right: 0.5rem;
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      color: var(--accent-red);
-      &:hover {
-        color: inherit
-      }
-      &::after {
-        content: '→';
-      }
-      &:hover::after {
-        content: '←'
-      }
-    }
-  }
 }
 
 button {
@@ -256,11 +302,6 @@ button:hover {
 
 h1, h2, p {
   margin: 0;
-}
-
-h2 {
-  font-weight: 700;
-  width: 75%;
 }
 
 h1 {
@@ -280,65 +321,21 @@ h1 {
 }
 
 h2 {
+  width: 75%;
   font-size: 3.125rem;
+  font-weight: 700;
   line-height: 3.125rem;
   word-spacing: -0.1rem;
   letter-spacing: -0.1rem;
 }
 
-p, ul, ol {
+p, a, ul, ol {
   font-weight: 600;
   font-size: 1.22rem;
   line-height: 1.4rem;
-  width: 75%;
-}
-
-p {
-  &.tagname {
-    &:not(:first-child) a {
-      margin-top: 0.7rem;
-    }
-    &:first-child a {
-      margin-top: 1.4rem;
-    }
-    a {
-      display: inline-block;
-      padding: 0.1rem;
-      text-decoration: none;
-      &#me {
-        border: 0.25rem solid var(--accent-red);
-        &:hover {
-          background-color: var(--accent-red);
-        }
-      }
-      &#works {
-        border: 0.25rem solid var(--accent-yellow);
-        &:hover {
-          background-color: var(--accent-yellow);
-        }
-      }
-      &#news {
-        border: 0.25rem solid var(--accent-blue);
-        &:hover {
-          background-color: var(--accent-blue);
-        }
-      }
-      &#thoughts {
-        border: 0.25rem solid var(--accent-green);
-        &:hover {
-          background-color: var(--accent-green);
-        }
-      }
-      &:hover {
-        color: inherit;
-      }
-    }
-  }
 }
 
 a {
-  font-weight: inherit;
-  font-size: inherit;
   font-style: italic;
   flex: inherit;
   color: inherit;
@@ -354,6 +351,44 @@ a {
   }
   &.image-link::after, &.image-link:hover::after {
     content: '';
+  }
+  &.tagname {
+    &:not(:first-child) {
+      margin-top: 0.7rem;
+    }
+    &:first-child {
+      margin-top: 1.4rem;
+    }
+    display: table;
+    padding: 0.1rem;
+    text-decoration: none;
+    &#me {
+      border: 0.25rem solid var(--accent-red);
+      &:hover {
+        background-color: var(--accent-red);
+      }
+    }
+    &#works {
+      border: 0.25rem solid var(--accent-yellow);
+      &:hover {
+        background-color: var(--accent-yellow);
+      }
+    }
+    &#news {
+      border: 0.25rem solid var(--accent-blue);
+      &:hover {
+        background-color: var(--accent-blue);
+      }
+    }
+    &#thoughts {
+      border: 0.25rem solid var(--accent-green);
+      &:hover {
+        background-color: var(--accent-green);
+      }
+    }
+    &:hover {
+      color: inherit;
+    }
   }
 }
 
@@ -395,17 +430,6 @@ code {
   white-space: normal;
 }
 
-picture.image {
-  display: block;
-  width: 8rem;
-  height: 8rem;
-  img {
-    display: inherit;
-    width: inherit;
-    height: inherit;
-  }
-}
-
 button {
   width: 200px;
   height: 100px;
@@ -416,6 +440,7 @@ button {
 
 hr {
   width: 100%;
+  height: 0;
   margin: 4.375rem 0 0 0;
   border-top: 2px solid var(--main-dark);
   border-right: none;
@@ -425,6 +450,16 @@ hr {
 }
 
 // Mobile style settings
+@media screen and (max-width: 1103px) {
+  header {
+    &.post {
+      section.links {
+        height: calc(5.3rem + 12px);
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 950px) {
   html {
     font-size: 12px;
@@ -432,42 +467,65 @@ hr {
 }
 
 @media screen and (max-width: 750px) {
+  header, main, footer {
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
   header {
-    section {
-      &.post, &.tag {
-        a, p {
-          display: inline-block;
-          font-size: 2.5rem;
-          letter-spacing: -0.1rem;
-        }
+    &.blog, &.tag, &.portfolio {
+      grid-template: 'heading' auto 'logo' auto 'links' auto / 1fr;
+    }
+    &.post {
+      grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 1fr; 
+    }
+    a, p {
+      font-size: 2.5rem;
+      letter-spacing: -0.1rem;
+    }
+  }
+  main {
+    &.blog {
+      grid-template: 'categories' auto 'articles' auto / 1fr;
+    }
+    &.post {
+      grid-template: 'text' auto 'empty' auto / 1fr;
+    }
+    &.tag {
+      grid-template: 'articles' auto 'empty' auto / 1fr;
+      section.articles {
+        padding-top: 0;
+      }
+    }
+    &.portfolio {
+      section.content {
+        grid-template: 'sub-heading' auto 'text' auto / 1fr;
       }
     }
   }
   footer {
+    grid-template: 'heading' auto 'links' auto / 1fr;
     p.contacts-text {
       line-height: 2.3rem;
     }
   }
   section {
-    padding: 2.5rem 2.5rem 0 2.5rem;
-    &.portfolio {
-      grid-template: 'heading' auto 'text' auto / auto;
+    &.links {
+      height: unset;
     }
-    &.blog, &.tag {
-      grid-template: 'categories' auto 'articles' auto / 1fr;
-    }
-    &.blog {  
-      section.articles {
-        padding-top: 2.5rem;
-      }
-    }
-    &.post {
-      grid-template: 'heading' auto 'content' auto / 1fr;
+    &.articles {
+      padding-top: 2.5rem;
     }
     &.categories {
-      grid-template: 'heading' auto 'categories' auto / 1fr;
       hr {
         display: block;
+      }
+    }
+    &.date {
+      p {
+        top: 6px;
+        bottom: unset;
+        left: 0;
       }
     }
   }
@@ -478,19 +536,12 @@ hr {
     &.empty {
       display: none;
     }
-    &.date {
-      p.date-text {
-        top: 6px;
-        bottom: unset;
-        left: 0;
-      }
-    }
   }
   h2 {
     width: auto;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.4rem;
   }
-  p, ul, ol {
+  p, a, ul, ol {
     width: auto;
     font-size: 1.83rem;
     line-height: 2.1rem;
@@ -498,8 +549,9 @@ hr {
   code {
     font-size: 1.5rem;
   }
-  picture.image {
+  picture {
     margin-top: 2.5rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -512,6 +564,11 @@ hr {
       opacity: 0.25;
     }
   }
+  header {
+    picture {
+      border: 4px solid var(--main-light);
+    }
+  }
   footer {
     background-color: var(--additional-dark);
     color: var(--additional-light);
@@ -521,7 +578,7 @@ hr {
       background-color: var(--additional-light);
     }
   }
-  article {
+  section {
     &.text {
       p:first-child, pre {
         background-color: var(--additional-dark);

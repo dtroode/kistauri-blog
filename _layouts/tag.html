@@ -2,45 +2,36 @@
 layout: default
 ---
 <body>
-  <main>
-    <header>
-      <section class="tag">
-        <article class="heading">
-          <h1>{{ page.name }}</h1>
-        </article>
-        <article class="content">
-          <picture class="image">
-            <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
-              <img src="/assets/img/avatar-light.png" alt="">
-          </picture>
-        </article>
-        <article class="links">
-          <article class="links-content">
-            <a href="/">Blog</a>
-            <a href="/portfolio/">Portfolio</a>
-            <hr>
-          </article>
-        </article>
-        <article></article>
-      </section>
-    </header>
-    <section class="tag">
-      <section class="articles">
-        {% assign filtered_posts = site.posts | where: 'categories', page.short_name %}
-        {% for post in filtered_posts %}
-          <article class="page">
-            <a href="{{ post.url }}" class="page-link">
-              <img src="{{ post.thumbnail }}" alt="" class="page-background">
-              <article class="page-content">
-                <h2>{{ post.title }}</h2>
-                {{ post.excerpt }}
-              </article>
-            </a>
-          </article>
-        {% endfor %}
-      </section>
+  <header class="tag">
+    <h1>{{ page.title }}</h1>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
+      <img src="/assets/img/avatar-light.png" alt="logo">
+    </picture>
+    <section class="links">
+      <nav>
+        <a href="/">Blog</a>
+        <a href="/portfolio/">Portfolio</a>
+        <hr>
+      </nav>
     </section>
-    {% include footer.html %}
+  </header>
+  <main class="tag">
+    <section class="articles">
+      {% assign filtered_posts = site.posts | where: 'categories', page.short_name %}
+      {% for post in filtered_posts %}
+        <article class="page">
+          <a href="{{ post.url }}" class="page-link">
+            <img src="{{ post.thumbnail }}" alt="" class="page-background">
+            <section class="page-content">
+              <h2>{{ post.title }}</h2>
+              {{ post.excerpt }}
+            </section>
+          </a>
+        </article>
+      {% endfor %}
+    </section>
   </main>
+  {% include footer.html %}
   <script src="/assets/js/articleHeight.js"></script>
 </body>

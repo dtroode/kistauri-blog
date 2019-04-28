@@ -65,34 +65,26 @@
 
   </head>
   <body>
-    <header>
-      <section class="post">
-        <article class="heading">
-          <h1 class="text-header">Education</h1>
-        </article>
-        <article class="content">
-          <picture class="image">
-            <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
-              <img src="/assets/img/avatar-light.png" alt="">
-          </picture>
-        </article>
-        <article class="links">
-          <article class="links-content">
-            <a href="/">Blog</a>
-            <a href="/portfolio/">Portfolio</a>
-            <p class="tagname">
-              <a href="/tags/thoughts" id="thoughts">thoughts</a>
-            </p>
-            <hr>
-          </article>
-        </article>
-        <article class="date">
-          <p class="date-text">27 Apr 2019</p>
-        </article>
+    <header class="post">
+      <h1>Education</h1>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
+        <img src="/assets/img/avatar-light.png" alt="logo">
+      </picture>
+      <section class="links">
+        <nav>
+          <a href="/">Blog</a>
+          <a href="/portfolio/">Portfolio</a>
+          <a href="/tags/thoughts" class="tagname" id="thoughts">thoughts</a>
+          <hr>
+        </nav>
+      </section>
+      <section class="date">
+        <p>27 Apr 2019</p>
       </section>
     </header>
-    <section class="post">
-      <article class="text">
+    <main class="post">
+      <section class="text">
         <p>Опять образование. Опять плохо. Каждый раз такое</p>
 
 <!--more-->
@@ -126,23 +118,19 @@
 
 <p>Будем жить, следить за этим и менять все в лучшую сторону.</p>
 
-      </article>
-    </section>
+      </section>
+    </main>
     <footer>
-  <section class="portfolio">
-    <article class="heading">
-      <h2>About contacts</h2>
-    </article>
-    <article class="content contacts">
-      <p class="contacts-text"><a href="/">Blog</a></p>
-      <p class="contacts-text"><a href="/portfolio">Portfolio</a></p>
-      <p class="contacts-text"><a href="https://github.com/dtroode">Github</a></p>
-      <p class="contacts-text"><a href="https://twitter.com/dtroode">Twitter</a></p>
-      <p class="contacts-text"><a href="https://instagram.com/dtroode">Instagram</a></p>
-      <p class="contacts-text"><a href="https://t.me/dtroode">Telegram</a></p>
-      <p class="contacts-text"><a href="https://t.me/dtroodechannel">Telegram channel</a></p>
-    </article>
-  </section>
+  <h2>About contacts</h2>
+  <nav>
+    <p class="contacts-text"><a href="/">Blog</a></p>
+    <p class="contacts-text"><a href="/portfolio">Portfolio</a></p>
+    <p class="contacts-text"><a href="https://github.com/dtroode">Github</a></p>
+    <p class="contacts-text"><a href="https://twitter.com/dtroode">Twitter</a></p>
+    <p class="contacts-text"><a href="https://instagram.com/dtroode">Instagram</a></p>
+    <p class="contacts-text"><a href="https://t.me/dtroode">Telegram</a></p>
+    <p class="contacts-text"><a href="https://t.me/dtroodechannel">Telegram channel</a></p>
+  </nav>
 </footer>
   </body>
 </html>

@@ -34,37 +34,29 @@
 
   </head>
   <body>
-    <header>
-      <section class="post">
-        <article class="heading">
-          <h1 class="text-header">{{ page.title }}</h1>
-        </article>
-        <article class="content">
-          <picture class="image">
-            <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
-              <img src="/assets/img/avatar-light.png" alt="">
-          </picture>
-        </article>
-        <article class="links">
-          <article class="links-content">
-            <a href="/">Blog</a>
-            <a href="/portfolio/">Portfolio</a>
-            <p class="tagname">
-              <a href="/tags/{{ page.categories }}" id="{{ page.categories }}">{{ page.categories }}</a>
-            </p>
-            <hr>
-          </article>
-        </article>
-        <article class="date">
-          <p class="date-text">{{ page.date | date_to_string }}</p>
-        </article>
+    <header class="post">
+      <h1>{{ page.title }}</h1>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
+        <img src="/assets/img/avatar-light.png" alt="logo">
+      </picture>
+      <section class="links">
+        <nav>
+          <a href="/">Blog</a>
+          <a href="/portfolio/">Portfolio</a>
+          <a href="/tags/{{ page.categories }}" class="tagname" id="{{ page.categories }}">{{ page.categories }}</a>
+          <hr>
+        </nav>
+      </section>
+      <section class="date">
+        <p>{{ page.date | date_to_string }}</p>
       </section>
     </header>
-    <section class="post">
-      <article class="text">
+    <main class="post">
+      <section class="text">
         {{ content }}
-      </article>
-    </section>
+      </section>
+    </main>
     {% include footer.html %}
   </body>
 </html>

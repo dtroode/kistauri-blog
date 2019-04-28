@@ -2,51 +2,42 @@
 title: David Kistauri
 ---
 <body class="portfolio">
-  <main>
-    <header>
-      <section class="portfolio">
-        <article class="heading">
-          <h1>David<br>Kistauri</h1>
-        </article>
-        <article class="content">
-          <picture class="image">
-            <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
-            <img src="/assets/img/avatar-light.png" alt="">
-          </picture>
-        </article>
+  <header class="portfolio">
+    <h1>David<br>Kistauri</h1>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
+      <img src="/assets/img/avatar-light.png" alt="logo">
+    </picture>
+    <section class="links">
+      <nav>
+        <a href="/">Blog</a>
         <hr>
-      </section>
-    </header>
-    <section class="portfolio">
-      <article class="heading">
-        <h2>About me</h2>
-      </article>
-      <article class="content about">
-        <p>
-          <span>0.1.</span>
-          I am frontend-developer. I write HTML, CSS, JS (learning) code.
-          I'm in the 10th grade. Abkhazia.
-          I started to code in 2018 and have already written several websites.
-          I have a Telegram channel (link below).
-          Digital! I have experience in SMM. Not native English speaker.
-        </p>
-      </article>
+      </nav>
+    </section>
+  </header>
+  <main class="portfolio">
+    <section class="content me">
+      <h2>About me</h2>
+      <p>
+        <span>0.1.</span>
+        I am frontend-developer. I write HTML, CSS, JS (learning) code.
+        I'm in the 10th grade. Abkhazia.
+        I started to code in 2018 and have already written several websites.
+        I have a Telegram channel (link below).
+        Digital! I have experience in SMM. Not native English speaker.
+      </p>
       <hr>
     </section>
-    <section class="portfolio">
-      <article class="heading">
-        <h2>About media</h2>
-      </article>
-      <article class="content media">
+    <section class="content media">
+      <h2>About media</h2>
+      <section>
         <p><span class="link-span">0.2. </span><a href="">Interview on local TV-channel about how I wrote the website for school</a></p>
-      </article>
+      </section>
       <hr>
     </section>
-    <section class="portfolio">
-      <article class="heading">
-        <h2>About works</h2>
-      </article>
-      <article class="content works">
+    <section class="content works">
+      <h2>About works</h2>
+      <section>
         <p>
           <span class="link-span">0.3.</span>
           <a href="https://cyxym.cf">CYXYM website.</a><br>
@@ -67,8 +58,8 @@ title: David Kistauri
           <a href="https://masterbuket.com">Floristic studio website and branding.</a><br>
           Website + logo, design system, social media accounts and offline branding.
         </p>
-      </article>
+      </section>
     </section>
-    {% include footer.html %}
   </main>
+  {% include footer.html %}
 </body>

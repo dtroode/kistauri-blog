@@ -65,34 +65,26 @@
 
   </head>
   <body>
-    <header>
-      <section class="post">
-        <article class="heading">
-          <h1 class="text-header">My Toolset</h1>
-        </article>
-        <article class="content">
-          <picture class="image">
-            <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
-              <img src="/assets/img/avatar-light.png" alt="">
-          </picture>
-        </article>
-        <article class="links">
-          <article class="links-content">
-            <a href="/">Blog</a>
-            <a href="/portfolio/">Portfolio</a>
-            <p class="tagname">
-              <a href="/tags/me" id="me">me</a>
-            </p>
-            <hr>
-          </article>
-        </article>
-        <article class="date">
-          <p class="date-text">25 Apr 2019</p>
-        </article>
+    <header class="post">
+      <h1>My Toolset</h1>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
+        <img src="/assets/img/avatar-light.png" alt="logo">
+      </picture>
+      <section class="links">
+        <nav>
+          <a href="/">Blog</a>
+          <a href="/portfolio/">Portfolio</a>
+          <a href="/tags/me" class="tagname" id="me">me</a>
+          <hr>
+        </nav>
+      </section>
+      <section class="date">
+        <p>25 Apr 2019</p>
       </section>
     </header>
-    <section class="post">
-      <article class="text">
+    <main class="post">
+      <section class="text">
         <p>Как я написал сайты? Моя коробочка с инструментами
 <!--more--></p>
 
@@ -143,23 +135,19 @@
 
 <p>Я полагаю, что это будет цикл статей, если нет, то заранее извинюсь. Планирую описать более подробно свой рабочий процесс. Лайк, шер, алишер.</p>
 
-      </article>
-    </section>
+      </section>
+    </main>
     <footer>
-  <section class="portfolio">
-    <article class="heading">
-      <h2>About contacts</h2>
-    </article>
-    <article class="content contacts">
-      <p class="contacts-text"><a href="/">Blog</a></p>
-      <p class="contacts-text"><a href="/portfolio">Portfolio</a></p>
-      <p class="contacts-text"><a href="https://github.com/dtroode">Github</a></p>
-      <p class="contacts-text"><a href="https://twitter.com/dtroode">Twitter</a></p>
-      <p class="contacts-text"><a href="https://instagram.com/dtroode">Instagram</a></p>
-      <p class="contacts-text"><a href="https://t.me/dtroode">Telegram</a></p>
-      <p class="contacts-text"><a href="https://t.me/dtroodechannel">Telegram channel</a></p>
-    </article>
-  </section>
+  <h2>About contacts</h2>
+  <nav>
+    <p class="contacts-text"><a href="/">Blog</a></p>
+    <p class="contacts-text"><a href="/portfolio">Portfolio</a></p>
+    <p class="contacts-text"><a href="https://github.com/dtroode">Github</a></p>
+    <p class="contacts-text"><a href="https://twitter.com/dtroode">Twitter</a></p>
+    <p class="contacts-text"><a href="https://instagram.com/dtroode">Instagram</a></p>
+    <p class="contacts-text"><a href="https://t.me/dtroode">Telegram</a></p>
+    <p class="contacts-text"><a href="https://t.me/dtroodechannel">Telegram channel</a></p>
+  </nav>
 </footer>
   </body>
 </html>

@@ -2,66 +2,45 @@
 title: David Kistauri Blog
 ---
 <body>
-  <main>
-    <header>
-      <section class="portfolio">
-        <article class="heading">
-          <h1>David<br>Kistauri<br><span>Blog</span></h1>
-        </article>
-        <article class="content">
-          <picture class="image">
-            <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
-              <img src="/assets/img/avatar-light.png" alt="">
-          </picture>
-        </article>
+  <header class="blog">
+    <h1>David<br>Kistauri<br><span>Blog</span></h1>
+		<picture>
+			<source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
+			<img src="/assets/img/avatar-light.png" alt="logo">
+    </picture>
+    <section class="links">
+      <nav>
+        <a href="/portfolio/">Portfolio</a>
         <hr>
-      </section>
-    </header>
-    <section class="blog">
-      <section class="categories">
-        <article class="heading">
-          <h2>About categories</h2>
-        </article>
-        <article class="content categories">
-          <p class="tagname">
-            <a href="/tags/me" id="me">
-              Me
-            </a>
-          </p>
-          <p class="tagname">
-            <a href="/tags/works" id="works">
-              My works
-            </a>
-          </p>
-          <p class="tagname">
-            <a href="/tags/news" id="news">
-              News
-            </a>
-          </p>
-          <p class="tagname">
-            <a href="/tags/thoughts" id="thoughts">
-              Thoughts
-            </a>
-          </p>
-        </article>
-        <hr>
-      </section>
-      <section class="articles">
-        {% for post in site.posts %}
-          <article class="page">
-            <a href="{{ post.url }}" class="page-link">
-              <img src="{{ post.thumbnail }}" alt="" class="page-background">
-              <article class="page-content">
-                <h2>{{ post.title }}</h2>
-                {{ post.excerpt }}
-              </article>
-            </a>
-          </article>
-        {% endfor %}
-      </section>
+      </nav>
     </section>
-    {% include footer.html %}
+  </header>
+  <main class="blog">
+    <section class="categories">
+      <h2>About categories</h2>
+      <nav>
+        <a href="/tags/me" class="tagname" id="me">Me</a>
+        <a href="/tags/works" class="tagname" id="works">Works</a>
+        <a href="/tags/news" class="tagname" id="news">News</a>
+        <a href="/tags/thoughts" class="tagname" id="thoughts">Thoughts</a>
+      </nav>
+      <hr>
+    </section>
+    <section class="articles">
+      {% for post in site.posts %}
+        <article class="page">
+          <a href="{{ post.url }}" class="page-link">
+            <img src="{{ post.thumbnail }}" alt="" class="page-background">
+            <section class="page-content">
+              <h2>{{ post.title }}</h2>
+              {{ post.excerpt }}
+            </section>
+          </a>
+        </article>
+      {% endfor %}
+    </section>
   </main>
+  {% include footer.html %}
   <script src="/assets/js/articleHeight.js"></script>
   <script>
     if (window.netlifyIdentity) {
