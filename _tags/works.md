@@ -1,4 +1,4 @@
 ---
 short_name: works
-name: My works
+name: Works
 ---

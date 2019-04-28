@@ -1,4 +1,5 @@
 ---
+categories: thoughts
 title: Education
 date: 2019-04-27T12:23:39.310Z
 thumbnail: /assets/img/uploads/desk.jpg

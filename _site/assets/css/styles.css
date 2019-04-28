@@ -34,11 +34,12 @@ header section.post a, header section.post p, header section.tag a, header secti
   font-size: 2rem;
   letter-spacing: -0.05rem;
   width: unset;
-  line-height: 2.4rem; }
+  line-height: 2.5rem; }
 header p.tagname {
   vertical-align: bottom; }
   header p.tagname a {
-    line-height: calc(2.4rem - 8px);
+    line-height: calc(2.5rem - 8px);
+    text-transform: capitalize;
     color: var(--main-dark); }
     header p.tagname a#me {
       background-color: var(--accent-red); }

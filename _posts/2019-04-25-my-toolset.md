@@ -30,7 +30,7 @@ for (var i = 0; i < u; i++) {
 
 ## Рабочая машинка и система(ы)
 
-<a href="/assets/img/uploads/toolset.jpg" class="image-link" title="My desktop" target="_blank"><img src="/assets/img/uploads/toolset.png" alt="My desktop"></a>
+<a href="/assets/img/uploads/toolset.jpg" class="image-link" title="My desktop" target="_blank"><img src="/assets/img/uploads/toolset.jpg" alt="My desktop"></a>
 
 У меня Dell Inspiron 13 на 256 GB SSD и 8 GB оперативки. Ну и i5 Intel. Да, я не тот крутой пользователь мака, который приходит домой, открывает одним пальцем свой ноутбук и наслаждается эксклюзивным софтом, а потом кидает в твиттер красивые скриншоты из программ.
 

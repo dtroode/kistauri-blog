@@ -50,10 +50,7 @@
             <a href="/">Blog</a>
             <a href="/portfolio/">Portfolio</a>
             <p class="tagname">
-              {% assign tag = site.tags | where: 'short_name', post.categories | first %}
-              {% if tag %}
-                <a href="{{ tag.url }}" id="{{ tag.short_name }}">{{ tag.name }}</a>
-              {% endif %}
+              <a href="/tags/{{ page.categories }}" id="{{ page.categories }}">{{ page.categories }}</a>
             </p>
             <hr>
           </article>
