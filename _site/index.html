@@ -8,14 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Tags and RSS support -->
-    <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.6.0 -->
 <title>David Kistauri Blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="David Kistauri Blog" />
 <meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"/","headline":"David Kistauri Blog","@context":"https://schema.org"}</script>
+{"@type":"WebSite","url":"http://localhost:4000/","headline":"David Kistauri Blog","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -108,6 +110,7 @@
         
           <article class="page">
             <a href="/education/" class="page-link">
+              <img src="/assets/img/uploads/desk.jpg" alt="" class="page-background">
               <article class="page-content">
                 <h2>Education</h2>
                 <p>Опять про образование. Опять плохо. Как всегда</p>
@@ -119,6 +122,7 @@
         
           <article class="page">
             <a href="/my-toolset/" class="page-link">
+              <img src="/assets/img/uploads/toolset.jpg" alt="" class="page-background">
               <article class="page-content">
                 <h2>My Toolset</h2>
                 <p>На чем, где и как я пишу этот и другие сайты. Моя коробочка с инструментами</p>
@@ -130,6 +134,7 @@
         
           <article class="page">
             <a href="/apple/" class="page-link">
+              <img src="/assets/img/uploads/tim.jpg" alt="" class="page-background">
               <article class="page-content">
                 <h2>Apple +</h2>
                 <p>Итоги мартовской презентации Эпл. Больше подписок!</p>
@@ -160,17 +165,11 @@
   </main>
   <script>
     function articleHeight() {
-      let articleWidth = 0;
-      if (window.innerWidth > 750) {
-        articleWidth = (window.innerWidth - 4.375*32) * 0.375;
-      } else {
-        articleWidth = window.innerWidth - 2.5*32;
-      }
-      
       const articles = document.querySelectorAll('.page');
       const articlesArray = [...articles];
 
       articlesArray.forEach(a => {
+        let articleWidth = a.offsetWidth;
         a.style.height = articleWidth + "px";
       })
     }

@@ -51,6 +51,7 @@ title: David Kistauri Blog
         {% for post in site.posts %}
           <article class="page">
             <a href="{{ post.url }}" class="page-link">
+              <img src="{{ post.thumbnail }}" alt="" class="page-background">
               <article class="page-content">
                 <h2>{{ post.title }}</h2>
                 {{ post.excerpt }}
@@ -64,17 +65,11 @@ title: David Kistauri Blog
   </main>
   <script>
     function articleHeight() {
-      let articleWidth = 0;
-      if (window.innerWidth > 750) {
-        articleWidth = (window.innerWidth - 4.375*32) * 0.375;
-      } else {
-        articleWidth = window.innerWidth - 2.5*32;
-      }
-      
       const articles = document.querySelectorAll('.page');
       const articlesArray = [...articles];
 
       articlesArray.forEach(a => {
+        let articleWidth = a.offsetWidth;
         a.style.height = articleWidth + "px";
       })
     }
