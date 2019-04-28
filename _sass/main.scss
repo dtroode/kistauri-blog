@@ -51,6 +51,9 @@ header {
     }
   }
 }
+header img, img.page-background {
+  pointer-events: none;
+}
 
 footer {
   margin-top: 4.375rem;
