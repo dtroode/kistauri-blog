@@ -42,14 +42,14 @@ header.tag picture, header.post picture {
   height: 5rem; }
 header.blog picture, header.portfolio picture {
   width: 8rem;
-  height: 8rem; }
+  height: 8rem;
+  border: 4px solid var(--main-dark); }
 header.post {
   grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 1fr 1fr; }
   header.post h1 {
     line-height: 5rem; }
 header picture {
-  display: block;
-  border: 4px solid var(--main-dark); }
+  display: block; }
   header picture img {
     display: inherit;
     width: inherit;
@@ -174,8 +174,6 @@ section.categories {
 
 article.works p:not(:first-child) {
   margin-top: 1rem; }
-article.page, article.categories p a {
-  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s; }
 article.page {
   position: relative;
   width: 75%;
@@ -202,6 +200,9 @@ article.page {
       opacity: 0.5; }
 article.page:not(:first-child) {
   margin-top: 2.5rem; }
+
+article.page, section.categories a {
+  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s; }
 
 button {
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s; }
@@ -401,7 +402,7 @@ hr {
     body.portfolio::before {
       opacity: 0.25; }
 
-  header picture {
+  header.blog picture, header.portfolio picture {
     border: 4px solid var(--main-light); }
 
   footer {
