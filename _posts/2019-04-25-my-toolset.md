@@ -1,9 +1,11 @@
 ---
+categories: workspace
 layout: blog
 title: My Toolset
 date: 2019-04-25T19:59:59.000Z
 thumbnail: /assets/img/uploads/toolset.jpg
 ---
+
 Как я написал сайты? Моя коробочка с инструментами
 <!--more-->
 
