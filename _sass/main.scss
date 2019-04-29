@@ -50,6 +50,9 @@ header, main, footer {
 }
 
 header {
+  &.blog, &.tag, &.post {
+    background-color: var(--additional-light);
+  }
   &.blog, &.tag, &.portfolio {
     grid-template: 'heading' auto 'logo' auto 'links' auto / 1fr 1fr;
   }
@@ -68,7 +71,6 @@ header {
   }
   &.post {
     grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 1fr 1fr;
-    background-color: var(--additional-light);
     h1 {
       line-height: 5rem;
     }
