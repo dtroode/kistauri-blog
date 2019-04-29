@@ -99,6 +99,9 @@ header {
         &#thoughts {
           background-color: var(--accent-green);
         }
+        &:hover {
+          color: var(--main-light);
+        }
       }
     }
   }

@@ -67,6 +67,8 @@ header nav a.tagname {
     background-color: var(--accent-blue); }
   header nav a.tagname#thoughts {
     background-color: var(--accent-green); }
+  header nav a.tagname:hover {
+    color: var(--main-light); }
 header a, header p {
   display: inline-block !important;
   width: unset;
