@@ -370,10 +370,12 @@ hr {
     padding-top: 2.5rem; }
   section.categories hr {
     display: block; }
-  section.date p {
-    top: 0;
-    bottom: unset;
-    left: 0; }
+  section.date {
+    height: 4rem; }
+    section.date p {
+      top: 0;
+      bottom: unset;
+      left: 0; }
 
   article.page {
     width: auto; }
