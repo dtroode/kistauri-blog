@@ -406,6 +406,8 @@ hr {
 
   header.blog picture, header.portfolio picture {
     border: 4px solid var(--main-light); }
+  header.post {
+    background-color: var(--main-dark); }
 
   footer {
     background-color: var(--additional-dark);

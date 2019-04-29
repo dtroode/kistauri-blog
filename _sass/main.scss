@@ -574,6 +574,9 @@ hr {
         border: 4px solid var(--main-light);
       }
     }
+    &.post {
+      background-color: var(--main-dark);
+    }
   }
   footer {
     background-color: var(--additional-dark);
