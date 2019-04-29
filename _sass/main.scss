@@ -574,13 +574,13 @@ hr {
     }
   }
   header {
+    &.blog, &.tag, &.post {
+      background-color: var(--additional-dark);
+    }
     &.blog, &.portfolio {
       picture {
         border: 4px solid var(--main-light);
       }
-    }
-    &.post {
-      background-color: var(--additional-dark);
     }
   }
   footer {

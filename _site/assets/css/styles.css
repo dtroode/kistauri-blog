@@ -35,6 +35,8 @@ header, main, footer {
   padding-right: 4.375rem;
   padding-left: 4.375rem; }
 
+header.blog, header.tag, header.post {
+  background-color: var(--additional-light); }
 header.blog, header.tag, header.portfolio {
   grid-template: 'heading' auto 'logo' auto 'links' auto / 1fr 1fr; }
 header.tag picture, header.post picture {
@@ -45,8 +47,7 @@ header.blog picture, header.portfolio picture {
   height: 8rem;
   border: 4px solid var(--main-dark); }
 header.post {
-  grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 1fr 1fr;
-  background-color: var(--additional-light); }
+  grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 1fr 1fr; }
   header.post h1 {
     line-height: 5rem; }
 header picture {
@@ -406,10 +407,10 @@ hr {
     body.portfolio::before {
       opacity: 0.25; }
 
+  header.blog, header.tag, header.post {
+    background-color: var(--additional-dark); }
   header.blog picture, header.portfolio picture {
     border: 4px solid var(--main-light); }
-  header.post {
-    background-color: var(--additional-dark); }
 
   footer {
     background-color: var(--additional-dark);
