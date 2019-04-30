@@ -1,8 +1,6 @@
 // Additional fonts
 @import url('https://rsms.me/inter/inter.css');
 
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:700');
-
 html {
   font-family: 'Inter', sans-serif;
   font-feature-settings: 'case' 1, 'frac' 1;
@@ -54,7 +52,7 @@ header {
     background-color: var(--additional-light);
   }
   &.blog, &.tag, &.portfolio {
-    grid-template: 'heading' auto 'logo' auto 'links' auto / 1fr 1fr;
+    grid-template: 'heading' auto 'logo' auto 'links' auto / 50% 50%;
   }
   &.tag, &.post {
     picture {
@@ -70,7 +68,7 @@ header {
     }
   }
   &.post {
-    grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 1fr 1fr;
+    grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 50% 50%;
     h1 {
       line-height: 5rem;
     }
@@ -122,7 +120,7 @@ header img, img.page-background {
 
 main {
   &.blog {
-    grid-template: 'articles categories' / 1fr 1fr;
+    grid-template: 'articles categories' / 50% 50%;
     section {
       &.articles {
         grid-area: articles;
@@ -133,16 +131,16 @@ main {
     }
   }
   &.post {
-    grid-template: 'text empty' / 1fr 1fr;
+    grid-template: 'text empty' / 50% 50%;
   }
   &.tag {
-    grid-template: 'articles empty' / 1fr 1fr;
+    grid-template: 'articles empty' / 50% 50%;
   }
   &.portfolio {
     grid-template: 'section' auto / 1fr;
     section.content {
       display: grid;
-      grid-template: 'sub-heading text' / 1fr 1fr;
+      grid-template: 'sub-heading text' / 50% 50%;
       &:not(:first-child) {
         margin-top: 2.5rem;
       }
@@ -154,7 +152,7 @@ main {
 }
 
 footer {
-  grid-template: 'heading links' / 1fr 1fr;
+  grid-template: 'heading links' / 50% 50%;
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
   background-color: var(--additional-light);
@@ -220,6 +218,7 @@ section {
     }
     h2 {
       margin-top: 1.75rem;
+      margin-bottom: 1.4rem;
     }
     p, ul, ol {
       font-weight: 500;
@@ -239,7 +238,7 @@ section {
     }
   }
   &.post {
-    grid-template: 'text empty' / 1fr 1fr;
+    grid-template: 'text empty' / 50% 50%;
   }
   &.categories, &.articles {
     align-content: start;
@@ -428,14 +427,16 @@ blockquote {
 pre {
   margin-top: 0.7rem;
   margin-bottom: 2.1rem;
-  padding: 18px;
-  background-color: var(--additional-light);
+  padding: 18px !important;
+  border: none !important;
+  overflow-x: scroll;
+  font-family: Inconsolata, Consolas, 'Courier New', Courier, monospace !important;
+  font-weight: 700;
+  background-color: var(--additional-dark);
 }
 
-code {
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
-  white-space: normal;
+pre::-webkit-scrollbar {
+  height: 0;
 }
 
 button {
@@ -555,7 +556,9 @@ hr {
     font-size: 1.83rem;
     line-height: 2.1rem;
   }
-  code {
+  pre {
+    width: calc(100vw - 5rem - 36px);
+    float: left;
     font-size: 1.5rem;
   }
   picture {

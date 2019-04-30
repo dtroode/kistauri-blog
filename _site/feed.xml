@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-30T00:26:04+03:00</updated><id>/feed.xml</id><entry><title type="html">Unix — best</title><link href="/thoughts/unix-best/" rel="alternate" type="text/html" title="Unix — best" /><published>2019-04-27T18:08:25+03:00</published><updated>2019-04-27T18:08:25+03:00</updated><id>/thoughts/unix%E2%80%94best</id><content type="html" xml:base="/thoughts/unix-best/">&lt;p&gt;Громкий заголовок с двумя причинами почему так&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-30T11:12:09+03:00</updated><id>/feed.xml</id><entry><title type="html">Unix — best</title><link href="/thoughts/unix-best/" rel="alternate" type="text/html" title="Unix — best" /><published>2019-04-27T18:08:25+03:00</published><updated>2019-04-27T18:08:25+03:00</updated><id>/thoughts/unix%E2%80%94best</id><content type="html" xml:base="/thoughts/unix-best/">&lt;p&gt;Громкий заголовок с двумя причинами почему так&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -47,7 +47,11 @@
 
 &lt;p&gt;Насчет дипломов. В сфере программирования уже почти не смотрят на диплом: приходи, докажи, что крут и работай (за деньги!). И это говорят не какие-то мелкие конторы, а такие компании, как Яндекс, ВК, Google и т. д.&lt;/p&gt;
 
-&lt;p&gt;Будем жить, следить за этим и менять все в лучшую сторону.&lt;/p&gt;</content><author><name></name></author><summary type="html">Опять образование. Опять плохо. Каждый раз такое</summary></entry><entry><title type="html">My Toolset</title><link href="/me/my-toolset/" rel="alternate" type="text/html" title="My Toolset" /><published>2019-04-25T22:59:59+03:00</published><updated>2019-04-25T22:59:59+03:00</updated><id>/me/my-toolset</id><content type="html" xml:base="/me/my-toolset/">&lt;p&gt;Как я написал сайты? Моя коробочка с инструментами
+&lt;p&gt;Будем жить, следить за этим и менять все в лучшую сторону.&lt;/p&gt;</content><author><name></name></author><summary type="html">Опять образование. Опять плохо. Каждый раз такое</summary></entry><entry><title type="html">My Toolset</title><link href="/me/my-toolset/" rel="alternate" type="text/html" title="My Toolset" /><published>2019-04-25T22:59:59+03:00</published><updated>2019-04-25T22:59:59+03:00</updated><id>/me/my-toolset</id><content type="html" xml:base="/me/my-toolset/">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;amp;skin=desert&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;addEventListener('load', function(event) { PR.prettyPrint(); }, false);&lt;/script&gt;
+
+&lt;p&gt;Как я написал сайты? Моя коробочка с инструментами
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;кто-я&quot;&gt;Кто я?&lt;/h2&gt;
@@ -64,10 +68,52 @@
   &lt;li&gt;До свидания&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;for (var i = 0; i &amp;lt; u; i++) {
-  console.log(i);
+&lt;pre class=&quot;prettyprint&quot;&gt;
+function arrayToList(arr) {
+  var list = {};
+  for (var i = 0; i &amp;lt; arr.length; i++) {
+    list.value = arr[i];
+    list.rest = writeRest();
+    function writeRest() {
+      if (i++ &amp;lt; arr.length - 1) {
+        return {value: arr[i], rest: writeRest()}
+      } else {
+        return null;
+      }
+    }
+  }
+  return list;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+function listToArray(list) {
+  var arr = [];
+  path = list;
+  while (path != null) {
+    arr.push(path.value);
+    path = path.rest;
+  }
+  return arr;
+}
+
+function prepend(value, rest) {
+  var list = {value: value, rest: rest};
+  return list;
+}
+
+function nth(list, position) {
+  path = list;
+  for (var i = 0; i &amp;lt; position; i++) {
+    path = path.rest;
+  }
+  return path.value;
+}
+
+console.log(arrayToList([10, 20]));
+console.log(listToArray(arrayToList([10, 20, 30])));
+console.log(prepend(10, prepend(20, null)));
+console.log(nth(arrayToList([10, 20, 30]), 1));
+}
+&lt;/pre&gt;
 
 &lt;h2 id=&quot;рабочая-машинка-и-системаы&quot;&gt;Рабочая машинка и система(ы)&lt;/h2&gt;
 

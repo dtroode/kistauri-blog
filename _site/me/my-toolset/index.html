@@ -83,7 +83,11 @@
     </header>
     <main class="post">
       <section class="text">
-        <p>Как я написал сайты? Моя коробочка с инструментами
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;skin=desert"></script>
+
+<script>addEventListener('load', function(event) { PR.prettyPrint(); }, false);</script>
+
+<p>Как я написал сайты? Моя коробочка с инструментами
 <!--more--></p>
 
 <h2 id="кто-я">Кто я?</h2>
@@ -100,10 +104,52 @@
   <li>До свидания</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for (var i = 0; i &lt; u; i++) {
-  console.log(i);
+<pre class="prettyprint">
+function arrayToList(arr) {
+  var list = {};
+  for (var i = 0; i &lt; arr.length; i++) {
+    list.value = arr[i];
+    list.rest = writeRest();
+    function writeRest() {
+      if (i++ &lt; arr.length - 1) {
+        return {value: arr[i], rest: writeRest()}
+      } else {
+        return null;
+      }
+    }
+  }
+  return list;
 }
-</code></pre></div></div>
+
+function listToArray(list) {
+  var arr = [];
+  path = list;
+  while (path != null) {
+    arr.push(path.value);
+    path = path.rest;
+  }
+  return arr;
+}
+
+function prepend(value, rest) {
+  var list = {value: value, rest: rest};
+  return list;
+}
+
+function nth(list, position) {
+  path = list;
+  for (var i = 0; i &lt; position; i++) {
+    path = path.rest;
+  }
+  return path.value;
+}
+
+console.log(arrayToList([10, 20]));
+console.log(listToArray(arrayToList([10, 20, 30])));
+console.log(prepend(10, prepend(20, null)));
+console.log(nth(arrayToList([10, 20, 30]), 1));
+}
+</pre>
 
 <h2 id="рабочая-машинка-и-системаы">Рабочая машинка и система(ы)</h2>
 
@@ -140,6 +186,7 @@
   <nav>
     <p class="contacts-text"><a href="/">Blog</a></p>
     <p class="contacts-text"><a href="/portfolio">Portfolio</a></p>
+    <p class="contacts-text"><a href="/feed.xml">RSS</a></p>
     <p class="contacts-text"><a href="https://github.com/dtroode">Github</a></p>
     <p class="contacts-text"><a href="https://twitter.com/dtroode">Twitter</a></p>
     <p class="contacts-text"><a href="https://instagram.com/dtroode">Instagram</a></p>
