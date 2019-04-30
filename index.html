@@ -29,7 +29,7 @@ title: David Kistauri Blog
     <section class="articles">
       {% for post in site.posts %}
         <article class="page">
-          <a href="/tags/{{ post.url }}" class="page-link">
+          <a href="{{ post.url }}" class="page-link">
             <img src="{{ post.thumbnail }}" alt="" class="page-background">
             <section class="page-content">
               <h2>{{ post.title }}</h2>
