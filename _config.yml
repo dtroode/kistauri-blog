@@ -21,6 +21,6 @@ defaults:
     values:
       layout: "default"
 
-permalink: /:categories/:title/
+permalink: /tags/:categories/:title/
 
 include: [.htaccess]
