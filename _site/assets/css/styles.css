@@ -424,7 +424,7 @@ hr {
       border-bottom: 2px solid var(--additional-light);
       background-color: var(--additional-light); }
 
-  section.text p:first-child, section.text pre {
+  section.text p:first-child {
     background-color: var(--additional-dark); }
 
   hr {

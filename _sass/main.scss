@@ -597,7 +597,7 @@ hr {
   }
   section {
     &.text {
-      p:first-child, pre {
+      p:first-child {
         background-color: var(--additional-dark);
       }
     }
