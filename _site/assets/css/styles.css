@@ -22,7 +22,7 @@ body {
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    background-image: url("/assets/img/bg.jpg");
+    background-image: url("/assets/img/bg-light.jpg");
     background-size: cover;
     background-position: left center;
     background-attachment: fixed;
@@ -409,7 +409,7 @@ hr {
     background-color: var(--main-dark);
     color: var(--main-light); }
     body.portfolio::before {
-      opacity: 0.25; }
+      background-image: url("/assets/img/bg-dark.jpg"); }
 
   header.blog, header.tag, header.post {
     background-color: var(--additional-dark); }
