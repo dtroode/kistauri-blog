@@ -10,12 +10,12 @@
     <!-- SEO Tags and RSS support -->
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.6.0 -->
-<title>David Kistauri Blog</title>
+<title>Posts archive</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="David Kistauri Blog" />
+<meta property="og:title" content="Posts archive" />
 <meta property="og:locale" content="en_US" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"/","headline":"David Kistauri Blog","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"/archive/","headline":"Posts archive","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -65,13 +65,14 @@
   </head>
     <body>
   <header class="blog">
-    <h1>David<br>Kistauri<br><span>Blog</span></h1>
-		<picture>
-			<source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
-			<img src="/assets/img/avatar-light.png" alt="logo">
+    <h1>David<br>Kistauri<br><span>Archive</span></h1>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
+      <img src="/assets/img/avatar-light.png" alt="logo">
     </picture>
     <section class="links">
       <nav>
+        <a href="/">Blog</a>
         <a href="/portfolio/">Portfolio</a>
         <hr>
       </nav>
@@ -90,61 +91,38 @@
     </section>
     <section class="articles">
       
-        <article class="page">
+        <article class="page archive-page">
           <a href="/tags/thoughts/unix-best/" class="page-link">
-            <img src="/assets/img/uploads/ubuntu.jpg" alt="" class="page-background">
             <section class="page-content">
               <h2>Unix — best</h2>
-              <p>Громкий заголовок с двумя причинами почему так</p>
-
-
             </section>
           </a>
         </article>
       
-        <article class="page">
+        <article class="page archive-page">
           <a href="/tags/thoughts/education/" class="page-link">
-            <img src="/assets/img/uploads/desk.jpg" alt="" class="page-background">
             <section class="page-content">
               <h2>Education</h2>
-              <p>Опять образование. Опять плохо. Каждый раз такое</p>
-
-
             </section>
           </a>
         </article>
       
-        <article class="page">
+        <article class="page archive-page">
           <a href="/tags/me/my-toolset/" class="page-link">
-            <img src="/assets/img/uploads/toolset.jpg" alt="" class="page-background">
             <section class="page-content">
               <h2>My Toolset</h2>
-              <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;skin=desert"></script>
-
-<script>addEventListener('load', function(event) { PR.prettyPrint(); }, false);</script>
-
-<p>Как я написал сайты? Моя коробочка с инструментами</p>
-
-
             </section>
           </a>
         </article>
       
-        <article class="page">
+        <article class="page archive-page">
           <a href="/tags/news/apple/" class="page-link">
-            <img src="/assets/img/uploads/tim.jpg" alt="" class="page-background">
             <section class="page-content">
               <h2>Apple +</h2>
-              <p>Итоги мартовской презентации Эпл. Больше подписок!</p>
-
-
             </section>
           </a>
         </article>
       
-      <a href="/archive" class="show-more">
-        More...
-      </a>
     </section>
   </main>
   <footer>
@@ -160,17 +138,5 @@
     <p class="contacts-text"><a href="https://t.me/dtroodechannel">Telegram channel</a></p>
   </nav>
 </footer>
-  <script src="/assets/js/articleHeight.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </body>
 </html>

@@ -44,7 +44,7 @@ header.tag picture, header.post picture {
 header.blog picture, header.portfolio picture {
   width: 8rem;
   height: 8rem;
-  border: 4px solid var(--main-dark); }
+  border: 0.25rem solid var(--main-dark); }
 header.post {
   grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 50% 50%; }
   header.post h1 {
@@ -113,7 +113,7 @@ footer {
 section.links {
   display: grid;
   align-content: end;
-  height: calc(4.375rem + 4px); }
+  height: calc(4.375rem + 0.25rem); }
   section.links hr {
     margin: 0; }
   section.links a {
@@ -194,7 +194,8 @@ article.page {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-style: normal; }
+    font-style: normal;
+    text-decoration: none; }
     article.page a.page-link:hover {
       color: inherit; }
     article.page a.page-link::after, article.page a.page-link:hover::after {
@@ -205,18 +206,13 @@ article.page {
       left: 0;
       height: 75%;
       opacity: 0.5; }
+  article.page.archive-page section.page-content {
+    position: static; }
 article.page:not(:first-child) {
   margin-top: 2.5rem; }
 
-article.page, section.categories a {
+article.page, section.categories a, a.show-more {
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s; }
-
-button {
-  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s; }
-
-button:hover {
-  transform: translateY(-0.5rem);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
 
 h1, h2, p {
   margin: 0; }
@@ -243,9 +239,9 @@ h2 {
   letter-spacing: -0.1rem; }
 
 p, a, ul, ol {
-  font-weight: 600;
   font-size: 1.22rem;
-  line-height: 1.4rem; }
+  line-height: 1.4rem;
+  font-weight: 600; }
 
 a {
   font-style: italic;
@@ -316,12 +312,28 @@ pre {
 pre::-webkit-scrollbar {
   height: 0; }
 
-button {
-  width: 200px;
-  height: 100px;
-  border: none;
-  background-color: var(--accent-red);
+a.show-more {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 0.25rem;
+  border: 0.25rem solid var(--accent-red);
+  width: auto;
+  height: auto;
+  font-size: 1.5em;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--additional-light);
   cursor: pointer; }
+
+a.show-more:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: inherit;
+  background-color: var(--accent-red); }
+
+a.show-more::after, a.show-more:hover::after {
+  content: ''; }
 
 hr {
   width: 100%;
@@ -384,6 +396,8 @@ hr {
 
   article.page {
     width: auto; }
+    article.page.archive-page h2 {
+      margin-bottom: 0; }
   article.empty {
     display: none; }
 
@@ -401,6 +415,10 @@ hr {
     float: left;
     font-size: 1.5rem; }
 
+  a.show-more {
+    display: block;
+    font-size: 2rem; }
+
   picture {
     margin-top: 2.5rem;
     margin-bottom: 1rem; } }
@@ -414,7 +432,7 @@ hr {
   header.blog, header.tag, header.post {
     background-color: var(--additional-dark); }
   header.blog picture, header.portfolio picture {
-    border: 4px solid var(--main-light); }
+    border: 0.25rem solid var(--main-light); }
 
   footer {
     background-color: var(--additional-dark);

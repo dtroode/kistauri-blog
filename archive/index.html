@@ -1,15 +1,16 @@
 ---
-title: David Kistauri Blog
+title: Posts archive
 ---
 <body>
   <header class="blog">
-    <h1>David<br>Kistauri<br><span>Blog</span></h1>
-		<picture>
-			<source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
-			<img src="/assets/img/avatar-light.png" alt="logo">
+    <h1>David<br>Kistauri<br><span>Archive</span></h1>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="/assets/img/avatar-dark.png">
+      <img src="/assets/img/avatar-light.png" alt="logo">
     </picture>
     <section class="links">
       <nav>
+        <a href="/">Blog</a>
         <a href="/portfolio/">Portfolio</a>
         <hr>
       </nav>
@@ -27,33 +28,16 @@ title: David Kistauri Blog
       <hr>
     </section>
     <section class="articles">
-      {% for post in site.posts limit:10 %}
-        <article class="page">
+      {% for post in site.posts %}
+        <article class="page archive-page">
           <a href="{{ post.url }}" class="page-link">
-            <img src="{{ post.thumbnail }}" alt="" class="page-background">
             <section class="page-content">
               <h2>{{ post.title }}</h2>
-              {{ post.excerpt }}
             </section>
           </a>
         </article>
       {% endfor %}
-      <a href="/archive" class="show-more">
-        More...
-      </a>
     </section>
   </main>
   {% include footer.html %}
-  <script src="/assets/js/articleHeight.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </body>
