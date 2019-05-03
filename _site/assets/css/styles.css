@@ -38,10 +38,10 @@ header.blog, header.tag, header.post {
   background-color: var(--additional-light); }
 header.blog, header.tag, header.portfolio {
   grid-template: 'heading' auto 'logo' auto 'links' auto / 50% 50%; }
-header.tag picture, header.post picture {
+header.tag svg, header.post svg {
   width: 5rem;
   height: 5rem; }
-header.blog picture, header.portfolio picture {
+header.blog svg, header.portfolio svg {
   width: 8rem;
   height: 8rem;
   border: 0.25rem solid var(--main-dark); }
@@ -49,12 +49,10 @@ header.post {
   grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 50% 50%; }
   header.post h1 {
     line-height: 5rem; }
-header picture {
+header svg {
   display: block; }
-  header picture img {
-    display: inherit;
-    width: inherit;
-    height: inherit; }
+  header svg g {
+    fill: var(--main-dark); }
 header nav a.tagname {
   line-height: calc(3rem - 8px);
   text-transform: capitalize;
@@ -419,7 +417,7 @@ hr {
     display: block;
     font-size: 2rem; }
 
-  picture {
+  svg {
     margin-top: 2.5rem;
     margin-bottom: 1rem; } }
 @media (prefers-color-scheme: dark) {
@@ -431,8 +429,10 @@ hr {
 
   header.blog, header.tag, header.post {
     background-color: var(--additional-dark); }
-  header.blog picture, header.portfolio picture {
+  header.blog svg, header.portfolio svg {
     border: 0.25rem solid var(--main-light); }
+    header.blog svg g, header.portfolio svg g {
+      fill: var(--main-light); }
 
   footer {
     background-color: var(--additional-dark);

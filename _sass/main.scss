@@ -55,13 +55,13 @@ header {
     grid-template: 'heading' auto 'logo' auto 'links' auto / 50% 50%;
   }
   &.tag, &.post {
-    picture {
+    svg {
       width: 5rem;
       height: 5rem;
     }
   }
   &.blog, &.portfolio {
-    picture {
+    svg {
       width: 8rem;
       height: 8rem;
       border: 0.25rem solid var(--main-dark);
@@ -73,12 +73,10 @@ header {
       line-height: 5rem;
     }
   }
-  picture {
+  svg {
     display: block;
-    img {
-      display: inherit;
-      width: inherit;
-      height: inherit;
+    g {
+      fill: var(--main-dark);
     }
   }
   nav {
@@ -585,7 +583,7 @@ hr {
     display: block;
     font-size: 2rem;
   }
-  picture {
+  svg {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
@@ -605,8 +603,11 @@ hr {
       background-color: var(--additional-dark);
     }
     &.blog, &.portfolio {
-      picture {
+      svg {
         border: 0.25rem solid var(--main-light);
+        g {
+          fill: var(--main-light);
+        }
       }
     }
   }

@@ -9,8 +9,6 @@
 //   '/assets/js/articleHeight.js',
 //   '/assets/img/bg-light.jpg',
 //   '/assets/img/bg-dark.jpg',
-//   '/assets/img/avatar-light.png',
-//   '/assets/img/avatar-dark.png',
 //   'https://rsms.me/inter/inter.css'
 // ];
 
