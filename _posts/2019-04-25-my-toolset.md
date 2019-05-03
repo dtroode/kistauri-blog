@@ -6,8 +6,7 @@ date: 2019-04-25T19:59:59.000Z
 thumbnail: /assets/img/uploads/toolset.jpg
 ---
 
-<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;skin=desert"></script>
-<script>addEventListener('load', function(event) { PR.prettyPrint(); }, false);</script>
+{% include code.html %}
 
 Как я написал сайты? Моя коробочка с инструментами
 <!--more-->
@@ -24,51 +23,53 @@ thumbnail: /assets/img/uploads/toolset.jpg
 * Основные программы
 * До свидания
 
-<pre class="prettyprint">
-function arrayToList(arr) {
-  var list = {};
-  for (var i = 0; i < arr.length; i++) {
-    list.value = arr[i];
-    list.rest = writeRest();
-    function writeRest() {
-      if (i++ < arr.length - 1) {
-        return {value: arr[i], rest: writeRest()}
-      } else {
-        return null;
+<pre>
+  <code>
+  function arrayToList(arr) {
+    var list = {};
+    for (var i = 0; i < arr.length; i++) {
+      list.value = arr[i];
+      list.rest = writeRest();
+      function writeRest() {
+        if (i++ < arr.length - 1) {
+          return {value: arr[i], rest: writeRest()}
+        } else {
+          return null;
+        }
       }
     }
+    return list;
   }
-  return list;
-}
 
-function listToArray(list) {
-  var arr = [];
-  path = list;
-  while (path != null) {
-    arr.push(path.value);
-    path = path.rest;
+  function listToArray(list) {
+    var arr = [];
+    path = list;
+    while (path != null) {
+      arr.push(path.value);
+      path = path.rest;
+    }
+    return arr;
   }
-  return arr;
-}
 
-function prepend(value, rest) {
-  var list = {value: value, rest: rest};
-  return list;
-}
-
-function nth(list, position) {
-  path = list;
-  for (var i = 0; i < position; i++) {
-    path = path.rest;
+  function prepend(value, rest) {
+    var list = {value: value, rest: rest};
+    return list;
   }
-  return path.value;
-}
 
-console.log(arrayToList([10, 20]));
-console.log(listToArray(arrayToList([10, 20, 30])));
-console.log(prepend(10, prepend(20, null)));
-console.log(nth(arrayToList([10, 20, 30]), 1));
-}
+  function nth(list, position) {
+    path = list;
+    for (var i = 0; i < position; i++) {
+      path = path.rest;
+    }
+    return path.value;
+  }
+
+  console.log(arrayToList([10, 20]));
+  console.log(listToArray(arrayToList([10, 20, 30])));
+  console.log(prepend(10, prepend(20, null)));
+  console.log(nth(arrayToList([10, 20, 30]), 1));
+  }
+  </code>
 </pre>
 
 ## Рабочая машинка и система(ы)

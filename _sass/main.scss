@@ -420,18 +420,24 @@ blockquote {
 }
 
 pre {
+  display: -moz-inline-grid;
+  display: inline-grid;
   margin-top: 0.7rem;
   margin-bottom: 2.1rem;
-  padding: 18px !important;
-  border: none !important;
   overflow-x: scroll;
-  font-family: Inconsolata, Consolas, 'Courier New', Courier, monospace !important;
-  font-weight: 700;
   background-color: var(--additional-dark);
+  code {
+    font-family: Inconsolata, Consolas, 'Courier New', Courier, monospace !important;
+    span {
+      font-weight: unset;
+    }
+  }
 }
 
-pre::-webkit-scrollbar {
-  height: 0;
+pre, code {
+  &::-webkit-scrollbar {
+    height: 0;
+  }
 }
 
 a.show-more {
@@ -575,9 +581,10 @@ hr {
     line-height: 2.1rem;
   }
   pre {
-    width: calc(100vw - 5rem - 36px);
-    float: left;
-    font-size: 1.5rem;
+    width: calc(100vw - 5rem);
+    code {
+      font-size: 1.5rem;
+    }
   }
   a.show-more {
     display: block;
