@@ -612,9 +612,11 @@ hr {
     &.blog, &.portfolio {
       svg {
         border: 0.25rem solid var(--main-light);
-        g {
-          fill: var(--main-light);
-        }
+      }
+    }
+    svg {
+      g {
+        fill: var(--main-light);
       }
     }
   }
@@ -633,6 +635,9 @@ hr {
         background-color: var(--additional-dark);
       }
     }
+  }
+  a.show-more {
+    background-color: var(--additional-dark);
   }
   hr {
     border-top: 2px solid var(--main-light);

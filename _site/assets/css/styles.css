@@ -433,8 +433,8 @@ hr {
     background-color: var(--additional-dark); }
   header.blog svg, header.portfolio svg {
     border: 0.25rem solid var(--main-light); }
-    header.blog svg g, header.portfolio svg g {
-      fill: var(--main-light); }
+  header svg g {
+    fill: var(--main-light); }
 
   footer {
     background-color: var(--additional-dark);
@@ -445,6 +445,9 @@ hr {
       background-color: var(--additional-light); }
 
   section.text p:first-child {
+    background-color: var(--additional-dark); }
+
+  a.show-more {
     background-color: var(--additional-dark); }
 
   hr {
