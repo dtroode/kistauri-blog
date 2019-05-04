@@ -201,22 +201,6 @@ var urlsToCache = [];
     urlsToCache.push('/')
   
 
-  
-    urlsToCache.push('/_site/amp/tags/news/apple')
-  
-
-  
-    urlsToCache.push('/_site/amp/tags/me/my-toolset')
-  
-
-  
-    urlsToCache.push('/_site/amp/tags/thoughts/education')
-  
-
-  
-    urlsToCache.push('/_site/amp/tags/thoughts/unix—best')
-  
-
 
 // Cache assets
 

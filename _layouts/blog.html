@@ -2,11 +2,6 @@
 <html lang="en">
   <head>
 
-    <!-- AMP Support -->
-    {% if page.path contains '_posts' %}
-      <link rel="amphtml" href="{{ page.id | prepend: '/YOURDIR' | prepend: site.baseurl | prepend: site.url | append: '.html' }}">
-    {% endif %}
-
     <!-- HTML Meta Tags -->
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta charset="utf-8">

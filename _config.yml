@@ -24,8 +24,3 @@ defaults:
 permalink: /tags/:categories/:title/
 
 include: [.htaccess]
-
-plugins:
-  - amp-jekyll
-
-ampdir: /_site/amp
