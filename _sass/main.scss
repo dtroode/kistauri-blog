@@ -16,7 +16,7 @@ html {
 // Selection
 * {
   &::selection, &::-moz-selection {
-    background-color: var(--accent-red);
+    background-color: var(--accent-blue);
     color: var(--main-dark);
   }
 }
@@ -175,7 +175,7 @@ section {
       font-weight: 700;
       font-style: normal;
       text-decoration: none;
-      color: var(--accent-red);
+      color: var(--accent-blue);
       &:hover {
         color: inherit
       }
@@ -192,7 +192,8 @@ section {
     bottom: 0;
     left: 0;
     padding: 1.25rem;
-    background-color: var(--accent-red);
+    color: var(--main-light);
+    background-color: var(--accent-blue);
     h2, p {
       width: auto;
     }
@@ -232,7 +233,8 @@ section {
       }
     }
     img, video {
-      width: 100%;
+      border: 0.25rem solid var(--accent-blue);
+      width: calc(100% - 0.5rem);
     }
   }
   &.post {
@@ -266,7 +268,7 @@ article {
   &.page {
     position: relative;
     width: 75%;
-    background-color: var(--accent-red);
+    background-color: var(--accent-blue);
     &:hover {
       transform: translateY(-0.5rem);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -321,7 +323,7 @@ h1 {
   font-weight: 700;
   width: 75%;
   span {
-    color: var(--accent-red);
+    color: var(--accent-blue);
   }
   &.text-header {
     line-height: 5rem;
@@ -424,6 +426,7 @@ pre {
   display: inline-grid;
   margin-top: 0.7rem;
   margin-bottom: 2.1rem;
+  border: 0.25rem solid var(--accent-blue);
   overflow-x: scroll;
   background-color: var(--additional-dark);
   code {
@@ -444,7 +447,7 @@ a.show-more {
   display: inline-block;
   margin-top: 2.5rem;
   padding: 0.25rem;
-  border: 0.25rem solid var(--accent-red);
+  border: 0.25rem solid var(--accent-blue);
   width: auto;
   height: auto;
   font-size: 1.5em;
@@ -458,8 +461,8 @@ a.show-more {
 a.show-more:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  color: inherit;
-  background-color: var(--accent-red);
+  color: var(--main-light);
+  background-color: var(--accent-blue);
 }
 
 a.show-more::after, a.show-more:hover::after {
@@ -535,6 +538,15 @@ hr {
     grid-template: 'heading' auto 'links' auto / 1fr;
     p.contacts-text {
       line-height: 2.3rem;
+      &:not(:first-child) {
+        margin-top: 0.7rem;
+      }
+      a {
+        height: 2rem;
+        padding: 0.25rem;
+        border: 0.25rem solid var(--accent-blue);
+        display: inline-block;
+      }
     }
   }
   section {
