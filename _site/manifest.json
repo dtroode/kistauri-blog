@@ -1,6 +1,11 @@
 {
   "name": "Kistauri",
   "short_name": "Kistauri",
+  "display": "standalone",
+  "background_color": "#F1F2F6",
+  "theme_color": "#FF4757",
+  "Scope": "/",
+  "start_url": "/",
   "icons": [{
       "src": "/assets/img/logo/icon-block.png",
       "sizes": "768x768",
@@ -25,8 +30,5 @@
       "src": "/assets/img/logo/icon-block-16.png",
       "sizes": "16x16",
       "type": "image/png"
-  }],
-  "display": "standalone",
-  "background_color": "#F1F2F6",
-  "theme_color": "#FF4757"
+  }]
 }
