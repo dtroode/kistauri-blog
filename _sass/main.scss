@@ -224,7 +224,7 @@ section {
     }
     p {
       margin-top: 1.4rem;
-      &:first-child {
+      &:first-of-type {
         margin: 0;
         padding: 18px;
         width: unset;
@@ -425,7 +425,6 @@ pre {
   display: -moz-inline-grid;
   display: inline-grid;
   margin-top: 0.7rem;
-  margin-bottom: 2.1rem;
   border: 0.25rem solid var(--accent-blue);
   overflow-x: scroll;
   background-color: var(--additional-dark);
