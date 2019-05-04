@@ -28,4 +28,4 @@ include: [.htaccess]
 plugins:
   - amp-jekyll
 
-ampdir: /amp
+ampdir: /_site/amp

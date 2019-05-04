@@ -202,19 +202,19 @@ var urlsToCache = [];
   
 
   
-    urlsToCache.push('/amp/tags/news/apple')
+    urlsToCache.push('/_site/amp/tags/news/apple')
   
 
   
-    urlsToCache.push('/amp/tags/me/my-toolset')
+    urlsToCache.push('/_site/amp/tags/me/my-toolset')
   
 
   
-    urlsToCache.push('/amp/tags/thoughts/education')
+    urlsToCache.push('/_site/amp/tags/thoughts/education')
   
 
   
-    urlsToCache.push('/amp/tags/thoughts/unix—best')
+    urlsToCache.push('/_site/amp/tags/thoughts/unix—best')
   
 
 
