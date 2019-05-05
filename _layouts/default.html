@@ -39,6 +39,11 @@
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/lazyload.js"></script>
 
+    <!-- Prerender -->
+    {% for post in site.posts limit:5 %}
+    <link rel="prerender" href="{{ post.url }}">
+    {% endfor %}
+
     <!-- Links to files -->
     <link rel="manifest" href="/manifest.json">
     {% include links.html %}
