@@ -45,15 +45,15 @@
     <meta name="twitter:image" content="https://dtroode.netlify.com/assets/img/uploads/ubuntu.jpg">
 
     <!-- Scripts -->
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/lazyload.js"></script>
+    <script async src="/assets/js/main.js"></script>
+    <script async src="/assets/js/lazyload.js"></script>
 
       <!-- Links -->
-  <link rel="preload" href="/assets/css/fonts.css" as="style">
-  <link rel="preload" href="/assets/css/colors.css" as="style">
-  <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/colors.css">
-  <link rel="stylesheet" href="/assets/css/fonts.css" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/mobile.css" media="none" onload="if(media!='(max-width: 750px)')media='(max-width: 750px)'">
+  <link rel="stylesheet" href="/assets/css/colors.css" media="none" onload="if(media!='all')media='all'">
+  <link rel="stylesheet" href="/assets/css/fonts.css" media="none" onload="if(media!='all')media='all'">
+  <link rel="stylesheet" href="/assets/css/dark.css" media="none" onload="if(media!='all')media='all'">
   <link rel="apple-touch-icon" sizes="256x256" href="/assets/img/logo/icon-block-256.png">
   <link rel="apple-touch-icon" sizes="128x128" href="/assets/img/logo/icon-block-128.png">
   <link rel="apple-touch-icon" sizes="64x64" href="/assets/img/logo/icon-block-64.png">

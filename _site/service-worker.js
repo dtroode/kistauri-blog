@@ -84,8 +84,16 @@ var urlsToCache = [];
   
     
   
+    
+  
+    
+  
 
   urlsToCache.push('/tags/thoughts/education/')
+  
+    
+  
+    
   
     
   
@@ -246,6 +254,10 @@ var urlsToCache = [];
   
     
   
+    
+  
+    
+  
 
 
 // Cache pages
@@ -281,7 +293,15 @@ var urlsToCache = [];
     
 
     
+      urlsToCache.push('/assets/css/dark.css')
+    
+
+    
       urlsToCache.push('/assets/css/fonts.css')
+    
+
+    
+      urlsToCache.push('/assets/css/mobile.css')
     
 
     

@@ -1,0 +1,100 @@
+/* Mobile style settings */
+@media screen and (max-width: 750px) {
+  header, main, footer {
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+  header a, header p {
+    font-size: 2.5rem;
+    letter-spacing: -0.1rem;
+  }
+  header.blog, header.tag, header.portfolio {
+    grid-template: 'heading' auto 'logo' auto 'links' auto / 1fr;
+  }
+  header.post {
+    grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 1fr; 
+  }
+  main.blog {
+    grid-template: 'categories' auto 'articles' auto / 1fr;
+  }
+  main.post {
+    grid-template: 'text' auto 'empty' auto / 1fr;
+  }
+  main.tag {
+    grid-template: 'articles' auto 'empty' auto / 1fr;
+  }
+  main.tag section.articles {
+    padding-top: 0;
+  }
+  main.portfolio section.content {
+    grid-template: 'sub-heading' auto 'text' auto / 1fr;
+  }
+  footer {
+    grid-template: 'heading' auto 'links' auto / 1fr;
+  }
+  footer p.contacts-text {
+    line-height: 2.3rem;
+  }
+  footer p.contacts-text:not(:first-child) {
+    margin-top: 0.7rem;
+  }
+  footer p.contacts-text a {
+    height: 2rem;
+    padding: 0.25rem;
+    border: 0.25rem solid var(--accent-blue);
+    display: inline-block;
+  }
+  section.links {
+    height: unset;
+  }
+  section.articles {
+    padding-top: 2.5rem;
+  }
+  section.categories hr {
+    display: block;
+  }
+  section.date {
+    height: 4rem;
+  }
+  section.date p {
+    top: 0;
+    bottom: unset;
+    left: 0;
+  }
+  article.page {
+    width: auto;
+  }
+  article.page.archive-page h2 {
+    margin-bottom: 0;
+  }
+  article.empty {
+    display: none;
+  }
+  h2 {
+    width: auto;
+    margin-bottom: 1.4rem;
+  }
+  p, a, ul, ol {
+    width: auto;
+    font-size: 1.83rem;
+    line-height: 2.1rem;
+  }
+  pre {
+    width: calc(100vw - 5rem);
+  }
+  pre code {
+    font-size: 1.5rem;
+  }
+  a.tagname {
+    padding: 0.25rem;
+  }
+  a.show-more {
+    display: block;
+    font-size: 2rem;
+  }
+  svg {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}

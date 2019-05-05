@@ -1,14 +1,16 @@
-
+/* Fonts list */
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 500;
+  font-display: swap;
   src: url("/assets/font/Inter-Medium.woff2?v=3.5") format("woff2");
 }
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
   font-weight: 500;
+  font-display: swap;
   src: url("/assets/font/Inter-MediumItalic.woff2?v=3.5") format("woff2");
 }
 
@@ -16,12 +18,14 @@
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 600;
+  font-display: swap;
   src: url("/assets/font/Inter-SemiBold.woff2?v=3.5") format("woff2");
 }
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
   font-weight: 600;
+  font-display: swap;
   src: url("/assets/font/Inter-SemiBoldItalic.woff2?v=3.5") format("woff2");
 }
 
@@ -29,12 +33,14 @@
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 700;
+  font-display: swap;
   src: url("/assets/font/Inter-Bold.woff2?v=3.5") format("woff2");
 }
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
   font-weight: 700;
+  font-display: swap;
   src: url("/assets/font/Inter-BoldItalic.woff2?v=3.5") format("woff2");
 }
 
@@ -52,6 +58,7 @@ Usage:
   font-weight: 100 900;
   font-style: normal;
   font-named-instance: 'Regular';
+  font-display: swap;
   src: url("/assets/font/Inter-upright.var.woff2?v=3.5") format("woff2");
 }
 @font-face {
@@ -59,6 +66,7 @@ Usage:
   font-weight: 100 900;
   font-style: italic;
   font-named-instance: 'Italic';
+  font-display: swap;
   src: url("/assets/font/Inter-italic.var.woff2?v=3.5") format("woff2");
 }
 
@@ -68,6 +76,7 @@ Usage:
   font-weight: 100 900;
   font-style: normal;
   font-named-instance: 'Regular';
+  font-display: swap;
   src: url("/assets/font/Inter-upright.var.woff2?v=3.5") format("woff2");
 }
 @font-face {
@@ -75,6 +84,7 @@ Usage:
   font-weight: 100 900;
   font-style: italic;
   font-named-instance: 'Italic';
+  font-display: swap;
   src: url("/assets/font/Inter-italic.var.woff2?v=3.5") format("woff2");
 }
 
@@ -96,5 +106,6 @@ explicitly, e.g.
   font-family: 'Inter var experimental';
   font-weight: 100 900;
   font-style: oblique 0deg 10deg;
+  font-display: swap;
   src: url("/assets/font/Inter.var.woff2?v=3.5") format("woff2");
 }

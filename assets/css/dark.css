@@ -1,0 +1,39 @@
+/* Dark color theme style settings */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--main-dark);
+    color: var(--main-light);
+  }
+  body.portfolio::before {
+    background-image: url('/assets/img/bg-dark.jpg');
+  }
+  header svg g {
+    fill: var(--main-light);
+  }
+  header.blog, header.tag, header.post {
+    background-color: var(--additional-dark);
+  }
+  header.blog svg, header.portfolio svg {
+    border: 0.25rem solid var(--main-light);
+  }
+  footer {
+    background-color: var(--additional-dark);
+    color: var(--additional-light);
+  }
+  footer hr {
+    border-top: 2px solid var(--additional-light);
+    border-bottom: 2px solid var(--additional-light);
+    background-color: var(--additional-light);
+  }
+  section.text p:first-of-type {
+    background-color: var(--additional-dark);
+  }
+  a.show-more {
+    background-color: var(--additional-dark);
+  }
+  hr {
+    border-top: 2px solid var(--main-light);
+    border-bottom: 2px solid var(--main-light);
+    background-color: var(--main-light);
+  }
+}
