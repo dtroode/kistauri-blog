@@ -9,7 +9,7 @@ html {
 @supports (font-variation-settings: normal) {
   html {
     font-family: 'Inter var', sans-serif;
-    font-display: block;
+    font-display: fallback;
   }
 }
 
@@ -293,6 +293,9 @@ article {
         left: 0;
         height: 75%;
         opacity: 0.5;
+      }
+      img.lazyload {
+        width: 100%;
       }
     }
     &.archive-page {

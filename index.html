@@ -51,7 +51,7 @@ title: David Kistauri Blog
       {% for post in site.posts limit:10 %}
         <article class="page">
           <a href="{{ post.url }}" class="page-link">
-            <img src="{{ post.thumbnail }}" alt="" class="page-background">
+            <img data-src="{{ post.thumbnail }}" alt="" class="page-background lazyload">
             <section class="page-content">
               <h2>{{ post.title }}</h2>
               {{ post.excerpt }}

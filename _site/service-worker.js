@@ -62,6 +62,8 @@ var urlsToCache = [];
   
     
   
+    
+  
 
   urlsToCache.push('/tags/thoughts/education/')
   
@@ -121,8 +123,12 @@ var urlsToCache = [];
   
     
   
+    
+  
 
   urlsToCache.push('/tags/me/my-toolset/')
+  
+    
   
     
   
@@ -292,6 +298,10 @@ var urlsToCache = [];
 
     
       urlsToCache.push('/assets/js/articleHeight.js')
+    
+
+    
+      urlsToCache.push('/assets/js/lazyload.js')
     
 
     

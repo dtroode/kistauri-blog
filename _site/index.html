@@ -3,7 +3,7 @@
   <head>
       
     <!-- Google Verification -->
-    <meta name="google-site-verification" content="VoK2q3VroEahQph7ziCc0_ADrkMii1Rsq_wtw1KCsp8" />
+    <!-- <meta name="google-site-verification" content="VoK2q3VroEahQph7ziCc0_ADrkMii1Rsq_wtw1KCsp8" /> -->
 
     <!-- HTML Meta Tags -->
     <meta name="description" content="David Kistauri. Frontend developer, web designer, SMM specialist">
@@ -45,6 +45,7 @@
     
     <!-- Scripts -->
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/lazyload.js"></script>
 
     <!-- Links to files -->
     <link rel="manifest" href="/manifest.json">
@@ -118,7 +119,7 @@
       
         <article class="page">
           <a href="/tags/thoughts/unix-best/" class="page-link">
-            <img src="/assets/img/uploads/ubuntu.jpg" alt="" class="page-background">
+            <img data-src="/assets/img/uploads/ubuntu.jpg" alt="" class="page-background lazyload">
             <section class="page-content">
               <h2>Unix — best</h2>
               <p>Громкий заголовок с двумя причинами почему так</p>
@@ -130,7 +131,7 @@
       
         <article class="page">
           <a href="/tags/thoughts/education/" class="page-link">
-            <img src="/assets/img/uploads/desk.jpg" alt="" class="page-background">
+            <img data-src="/assets/img/uploads/desk.jpg" alt="" class="page-background lazyload">
             <section class="page-content">
               <h2>Education</h2>
               <p>Опять образование. Опять плохо. Каждый раз такое</p>
@@ -142,7 +143,7 @@
       
         <article class="page">
           <a href="/tags/me/my-toolset/" class="page-link">
-            <img src="/assets/img/uploads/toolset.jpg" alt="" class="page-background">
+            <img data-src="/assets/img/uploads/toolset.jpg" alt="" class="page-background lazyload">
             <section class="page-content">
               <h2>My Toolset</h2>
               <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" />
@@ -160,7 +161,7 @@
       
         <article class="page">
           <a href="/tags/news/apple/" class="page-link">
-            <img src="/assets/img/uploads/tim.jpg" alt="" class="page-background">
+            <img data-src="/assets/img/uploads/tim.jpg" alt="" class="page-background lazyload">
             <section class="page-content">
               <h2>Apple +</h2>
               <p>Итоги мартовской презентации Эпл. Больше подписок!</p>

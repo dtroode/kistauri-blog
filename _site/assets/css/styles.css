@@ -7,7 +7,7 @@ html {
 @supports (font-variation-settings: normal) {
   html {
     font-family: 'Inter var', sans-serif;
-    font-display: block; } }
+    font-display: fallback; } }
 *::selection, *::-moz-selection {
   background-color: var(--accent-blue);
   color: var(--main-dark); }
@@ -206,6 +206,8 @@ article.page {
       left: 0;
       height: 75%;
       opacity: 0.5; }
+    article.page a.page-link img.lazyload {
+      width: 100%; }
   article.page.archive-page section.page-content {
     position: static; }
 article.page:not(:first-child) {
