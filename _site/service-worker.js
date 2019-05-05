@@ -64,8 +64,48 @@ var urlsToCache = [];
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
   urlsToCache.push('/tags/thoughts/education/')
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -186,6 +226,26 @@ var urlsToCache = [];
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
 
 // Cache pages
@@ -218,6 +278,28 @@ var urlsToCache = [];
 
     
       urlsToCache.push('/assets/css/colors.css')
+    
+
+    
+      urlsToCache.push('/assets/css/fonts.css')
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
