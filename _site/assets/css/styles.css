@@ -2,12 +2,12 @@
 @import url("https://rsms.me/inter/inter.css");
 html {
   font-family: 'Inter', sans-serif;
-  font-feature-settings: 'case' 1, 'frac' 1; }
+  font-feature-settings: 'case' 1, 'frac' 1;
+  font-display: swap; }
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: 'Inter var', sans-serif;
-    font-display: fallback; } }
+    font-family: 'Inter var', sans-serif; } }
 *::selection, *::-moz-selection {
   background-color: var(--accent-blue);
   color: var(--main-dark); }
