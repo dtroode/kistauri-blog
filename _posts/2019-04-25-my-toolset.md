@@ -6,8 +6,6 @@ date: 2019-04-25T19:59:59.000Z
 thumbnail: /assets/img/uploads/toolset.jpg
 ---
 
-{% include code.html %}
-
 Как я написал сайты? Моя коробочка с инструментами
 <!--more-->
 
@@ -23,6 +21,7 @@ thumbnail: /assets/img/uploads/toolset.jpg
 * Основные программы
 * До свидания
 
+{% include code.html %}
 <pre>
   <code>
   function arrayToList(arr) {
