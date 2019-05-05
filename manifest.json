@@ -3,7 +3,7 @@
   "short_name": "Kistauri",
   "display": "standalone",
   "background_color": "#F1F2F6",
-  "theme_color": "#FF4757",
+  "theme_color": "#3742FA",
   "Scope": "/",
   "start_url": "/",
   "icons": [{
