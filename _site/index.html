@@ -77,7 +77,7 @@
 <link rel="icon" type="img/png" sizes="16x16" href="/assets/img/logo/icon-16.png">
 
 <!-- CMS Script -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   </head>
     <body>
@@ -201,7 +201,7 @@
   </nav>
 </footer>
   <script src="/assets/js/articleHeight.js"></script>
-  <script>
+  <script async>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
