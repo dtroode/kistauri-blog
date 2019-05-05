@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-05T12:34:36+03:00</updated><id>/feed.xml</id><entry><title type="html">Unix — best</title><link href="/tags/thoughts/unix-best/" rel="alternate" type="text/html" title="Unix — best" /><published>2019-04-27T18:08:25+03:00</published><updated>2019-04-27T18:08:25+03:00</updated><id>/tags/thoughts/unix%E2%80%94best</id><content type="html" xml:base="/tags/thoughts/unix-best/">&lt;p&gt;Громкий заголовок с двумя причинами почему так&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-05T12:53:52+03:00</updated><id>/feed.xml</id><entry><title type="html">Unix — best</title><link href="/tags/thoughts/unix-best/" rel="alternate" type="text/html" title="Unix — best" /><published>2019-04-27T18:08:25+03:00</published><updated>2019-04-27T18:08:25+03:00</updated><id>/tags/thoughts/unix%E2%80%94best</id><content type="html" xml:base="/tags/thoughts/unix-best/">&lt;p&gt;Громкий заголовок с двумя причинами почему так&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -49,7 +49,7 @@
 
 &lt;p&gt;Будем жить, следить за этим и менять все в лучшую сторону.&lt;/p&gt;</content><author><name></name></author><summary type="html">Опять образование. Опять плохо. Каждый раз такое</summary></entry><entry><title type="html">My Toolset</title><link href="/tags/me/my-toolset/" rel="alternate" type="text/html" title="My Toolset" /><published>2019-04-25T22:59:59+03:00</published><updated>2019-04-25T22:59:59+03:00</updated><id>/tags/me/my-toolset</id><content type="html" xml:base="/tags/me/my-toolset/">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css&quot; /&gt;
 
-&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+&lt;script defer=&quot;&quot; src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
 

@@ -306,6 +306,7 @@ pre {
   display: inline-grid;
   margin-top: 0.7rem;
   border: 0.25rem solid var(--accent-blue);
+  width: calc(100% - 0.5rem);
   overflow-x: scroll;
   background-color: var(--additional-dark); }
   pre code {
