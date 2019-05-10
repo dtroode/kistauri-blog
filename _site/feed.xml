@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-07T21:28:06+03:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Unix — best</title><link href="http://localhost:4000/tags/thoughts/unix-best/" rel="alternate" type="text/html" title="Unix — best" /><published>2019-04-27T18:08:25+03:00</published><updated>2019-04-27T18:08:25+03:00</updated><id>http://localhost:4000/tags/thoughts/unix%E2%80%94best</id><content type="html" xml:base="http://localhost:4000/tags/thoughts/unix-best/">&lt;p&gt;Громкий заголовок с двумя причинами почему так&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-10T22:59:47+03:00</updated><id>/feed.xml</id><entry><title type="html">Unix — best</title><link href="/tags/thoughts/unix-best/" rel="alternate" type="text/html" title="Unix — best" /><published>2019-04-27T18:08:25+03:00</published><updated>2019-04-27T18:08:25+03:00</updated><id>/tags/thoughts/unix%E2%80%94best</id><content type="html" xml:base="/tags/thoughts/unix-best/">&lt;p&gt;Громкий заголовок с двумя причинами почему так&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -16,7 +16,7 @@
 
 &lt;h2 id=&quot;тут-должен-быть-вывод-и-он-будет&quot;&gt;Тут должен быть вывод и он будет&lt;/h2&gt;
 
-&lt;p&gt;Я переношу основную работу на Unix.&lt;/p&gt;</content><author><name></name></author><summary type="html">Громкий заголовок с двумя причинами почему так</summary></entry><entry><title type="html">Education</title><link href="http://localhost:4000/tags/thoughts/education/" rel="alternate" type="text/html" title="Education" /><published>2019-04-27T15:23:39+03:00</published><updated>2019-04-27T15:23:39+03:00</updated><id>http://localhost:4000/tags/thoughts/education</id><content type="html" xml:base="http://localhost:4000/tags/thoughts/education/">&lt;p&gt;Опять образование. Опять плохо. Каждый раз такое&lt;/p&gt;
+&lt;p&gt;Я переношу основную работу на Unix.&lt;/p&gt;</content><author><name></name></author><summary type="html">Громкий заголовок с двумя причинами почему так</summary></entry><entry><title type="html">Education</title><link href="/tags/thoughts/education/" rel="alternate" type="text/html" title="Education" /><published>2019-04-27T15:23:39+03:00</published><updated>2019-04-27T15:23:39+03:00</updated><id>/tags/thoughts/education</id><content type="html" xml:base="/tags/thoughts/education/">&lt;p&gt;Опять образование. Опять плохо. Каждый раз такое&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -47,7 +47,7 @@
 
 &lt;p&gt;Насчет дипломов. В сфере программирования уже почти не смотрят на диплом: приходи, докажи, что крут и работай (за деньги!). И это говорят не какие-то мелкие конторы, а такие компании, как Яндекс, ВК, Google и т. д.&lt;/p&gt;
 
-&lt;p&gt;Будем жить, следить за этим и менять все в лучшую сторону.&lt;/p&gt;</content><author><name></name></author><summary type="html">Опять образование. Опять плохо. Каждый раз такое</summary></entry><entry><title type="html">My Toolset</title><link href="http://localhost:4000/tags/me/my-toolset/" rel="alternate" type="text/html" title="My Toolset" /><published>2019-04-25T22:59:59+03:00</published><updated>2019-04-25T22:59:59+03:00</updated><id>http://localhost:4000/tags/me/my-toolset</id><content type="html" xml:base="http://localhost:4000/tags/me/my-toolset/">&lt;p&gt;Как я написал сайты? Моя коробочка с инструментами
+&lt;p&gt;Будем жить, следить за этим и менять все в лучшую сторону.&lt;/p&gt;</content><author><name></name></author><summary type="html">Опять образование. Опять плохо. Каждый раз такое</summary></entry><entry><title type="html">My Toolset</title><link href="/tags/me/my-toolset/" rel="alternate" type="text/html" title="My Toolset" /><published>2019-04-25T22:59:59+03:00</published><updated>2019-04-25T22:59:59+03:00</updated><id>/tags/me/my-toolset</id><content type="html" xml:base="/tags/me/my-toolset/">&lt;p&gt;Как я написал сайты? Моя коробочка с инструментами
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;кто-я&quot;&gt;Кто я?&lt;/h2&gt;
@@ -66,7 +66,7 @@
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css&quot; /&gt;
 
-&lt;script defer=&quot;&quot; src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
 
@@ -145,7 +145,7 @@
 
 &lt;h2 id=&quot;до-свидания&quot;&gt;До свидания&lt;/h2&gt;
 
-&lt;p&gt;Я полагаю, что это будет цикл статей, если нет, то заранее извинюсь. Планирую описать более подробно свой рабочий процесс. Лайк, шер, алишер.&lt;/p&gt;</content><author><name></name></author><summary type="html">Как я написал сайты? Моя коробочка с инструментами</summary></entry><entry><title type="html">Apple +</title><link href="http://localhost:4000/tags/news/apple/" rel="alternate" type="text/html" title="Apple +" /><published>2019-03-25T21:45:00+03:00</published><updated>2019-03-25T21:45:00+03:00</updated><id>http://localhost:4000/tags/news/apple</id><content type="html" xml:base="http://localhost:4000/tags/news/apple/">&lt;p&gt;Итоги мартовской презентации Эпл. Больше подписок!&lt;/p&gt;
+&lt;p&gt;Я полагаю, что это будет цикл статей, если нет, то заранее извинюсь. Планирую описать более подробно свой рабочий процесс. Лайк, шер, алишер.&lt;/p&gt;</content><author><name></name></author><summary type="html">Как я написал сайты? Моя коробочка с инструментами</summary></entry><entry><title type="html">Apple +</title><link href="/tags/news/apple/" rel="alternate" type="text/html" title="Apple +" /><published>2019-03-25T21:45:00+03:00</published><updated>2019-03-25T21:45:00+03:00</updated><id>/tags/news/apple</id><content type="html" xml:base="/tags/news/apple/">&lt;p&gt;Итоги мартовской презентации Эпл. Больше подписок!&lt;/p&gt;
 
 &lt;!--more--&gt;
 

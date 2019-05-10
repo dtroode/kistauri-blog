@@ -10,10 +10,20 @@
     letter-spacing: -0.1rem;
   }
   header.blog, header.tag, header.portfolio {
-    grid-template: 'heading' auto 'logo' auto 'links' auto / 1fr;
+    grid-template: 'heading' auto 'links' auto 'hr' auto / 1fr;
+  }
+  header nav {
+    margin-top: 1.25rem;
+  }
+  header nav a.tagname {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  header hr {
+    margin-top: 0;
   }
   header.post {
-    grid-template: 'heading' auto 'logo' auto 'links' auto 'date' auto / 1fr; 
+    grid-template: 'heading' auto 'links' auto 'hr' auto 'date' auto / 1fr; 
   }
   main.blog {
     grid-template: 'categories' auto 'articles' auto / 1fr;
@@ -33,23 +43,18 @@
   footer {
     grid-template: 'heading' auto 'links' auto / 1fr;
   }
-  footer p.contacts-text {
-    line-height: 2.3rem;
-  }
-  footer p.contacts-text:not(:first-child) {
-    margin-top: 0.7rem;
-  }
-  footer p.contacts-text a {
-    height: 2rem;
-    padding: 0.25rem;
+  footer a.contacts-text {
     border: 0.25rem solid var(--accent-blue);
-    display: inline-block;
+    text-decoration: none;
   }
-  section.links {
-    height: unset;
+  footer a.contacts-text:not(:first-child) {
+    margin-top: 0.7rem;
   }
   section.articles {
     padding-top: 2.5rem;
+  }
+  section.categories a:first-child {
+    margin-top: 0;
   }
   section.categories hr {
     display: block;
@@ -78,7 +83,6 @@
   p, a, ul, ol {
     width: auto;
     font-size: 1.83rem;
-    line-height: 2.1rem;
   }
   pre {
     width: calc(100vw - 5rem);
@@ -86,15 +90,8 @@
   pre code {
     font-size: 1.5rem;
   }
-  a.tagname {
-    padding: 0.25rem;
-  }
   a.show-more {
-    display: block;
+    width: unset;
     font-size: 2rem;
-  }
-  svg {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
   }
 }
