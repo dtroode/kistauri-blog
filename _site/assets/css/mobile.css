@@ -82,7 +82,12 @@
   }
   p, a, ul, ol {
     width: auto;
+  }
+  a, ul, ol {
     font-size: 1.83rem;
+  }
+  p {
+    font-size: 1.5rem;
   }
   pre {
     width: calc(100vw - 5rem);
