@@ -95,6 +95,7 @@ header {
         content: '←'
       }
       &.tagname {
+        border-radius: 2rem 4px 4px 2rem;
         line-height: calc(3rem - 8px);
         text-transform: capitalize;
         color: var(--main-light);
@@ -112,6 +113,9 @@ header {
         }
         &:hover {
           color: var(--main-light);
+        }
+        &::before {
+          content: '• ';
         }
       }
     }

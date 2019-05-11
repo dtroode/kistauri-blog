@@ -69,6 +69,7 @@ header nav a {
   header nav a:hover::after {
     content: "←"; }
   header nav a.tagname {
+    border-radius: 2rem 4px 4px 2rem;
     line-height: calc(3rem - 8px);
     text-transform: capitalize;
     color: var(--main-light); }
@@ -82,6 +83,8 @@ header nav a {
       background-color: var(--accent-green); }
     header nav a.tagname:hover {
       color: var(--main-light); }
+    header nav a.tagname::before {
+      content: '• '; }
 header nav hr {
   margin: 0; }
 header a, header p {
