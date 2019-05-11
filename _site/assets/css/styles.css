@@ -37,9 +37,23 @@ header.blog, header.tag, header.post {
 header.blog, header.tag, header.portfolio {
   grid-template: 'heading' auto 'links' auto 'hr' auto / 50% 50%; }
 header.post {
-  grid-template: 'heading' auto 'links' auto 'hr' auto 'date' auto / 50% 50%; }
+  grid-template: 'heading links' auto 'hr date' auto / 50% 50%; }
   header.post h1 {
+    grid-area: heading;
     line-height: 5rem; }
+  header.post nav, header.post section.date p {
+    background-color: var(--main-light); }
+  header.post nav {
+    grid-area: links;
+    padding: 0.25rem 1rem 0 1rem;
+    border-radius: 4px 4px 0 0; }
+  header.post hr {
+    grid-area: hr; }
+  header.post section.date {
+    grid-area: date; }
+    header.post section.date p {
+      padding: 0 1rem 0.25rem 1rem;
+      border-radius: 0 0 4px 4px; }
 header nav a {
   margin-right: 0.5rem;
   font-weight: 700;
@@ -69,7 +83,6 @@ header nav a {
 header nav hr {
   margin: 0; }
 header a, header p {
-  display: inline-block !important;
   width: unset;
   font-size: 2rem;
   letter-spacing: -0.05rem;

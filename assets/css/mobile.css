@@ -23,7 +23,7 @@
     margin-top: 0;
   }
   header.post {
-    grid-template: 'heading' auto 'links' auto 'hr' auto 'date' auto / 1fr; 
+    grid-template: 'heading' auto 'links' auto 'date' auto 'hr' auto / 1fr; 
   }
   main.blog {
     grid-template: 'categories' auto 'articles' auto / 1fr;

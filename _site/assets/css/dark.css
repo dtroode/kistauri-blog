@@ -10,6 +10,9 @@
   header.blog, header.tag, header.post {
     background-color: var(--additional-dark);
   }
+  header.post nav, header.post section.date p {
+    background-color: var(--main-dark);
+  }
   footer {
     background-color: var(--additional-dark);
     color: var(--additional-light);

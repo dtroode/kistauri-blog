@@ -52,9 +52,28 @@ header {
     grid-template: 'heading' auto 'links' auto 'hr' auto / 50% 50%;
   }
   &.post {
-    grid-template: 'heading' auto 'links' auto 'hr' auto 'date' auto / 50% 50%;
+    grid-template: 'heading links' auto 'hr date' auto / 50% 50%;
     h1 {
+      grid-area: heading;
       line-height: 5rem;
+    }
+    nav, section.date p {
+      background-color: var(--main-light);
+    }
+    nav {
+      grid-area: links;
+      padding: 0.25rem 1rem 0 1rem;
+      border-radius: 4px 4px 0 0;
+    }
+    hr {
+      grid-area: hr;
+    }
+    section.date {
+      grid-area: date;
+      p {
+        padding: 0 1rem 0.25rem 1rem;
+        border-radius: 0 0 4px 4px;
+      }
     }
   }
   nav {
@@ -99,7 +118,6 @@ header {
     }
   }
   a, p {
-    display: inline-block !important;
     width: unset;
     font-size: 2rem;
     letter-spacing: -0.05rem;
