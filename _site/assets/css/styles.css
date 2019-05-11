@@ -41,17 +41,19 @@ header.post {
   header.post h1 {
     grid-area: heading;
     line-height: 5rem; }
-  header.post nav, header.post section.date p {
+  header.post nav, header.post section.date-author p {
     background-color: var(--main-light); }
   header.post nav {
     grid-area: links;
     padding: 0.25rem 1rem 0 1rem;
     border-radius: 4px 4px 0 0; }
   header.post hr {
-    grid-area: hr; }
-  header.post section.date {
-    grid-area: date; }
-    header.post section.date p {
+    grid-area: hr;
+    place-self: end; }
+  header.post section.date-author {
+    grid-area: date;
+    padding-bottom: 2.5rem; }
+    header.post section.date-author p {
       padding: 0 1rem 0.25rem 1rem;
       border-radius: 0 0 4px 4px; }
 header nav a {
@@ -133,9 +135,9 @@ section.page-content {
     width: auto; }
   section.page-content p {
     margin-top: 1.4rem; }
-section.date {
+section.date-author {
   position: relative; }
-  section.date p {
+  section.date-author p {
     font-weight: 700; }
 section.text {
   justify-content: start; }

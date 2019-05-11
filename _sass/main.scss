@@ -57,7 +57,7 @@ header {
       grid-area: heading;
       line-height: 5rem;
     }
-    nav, section.date p {
+    nav, section.date-author p {
       background-color: var(--main-light);
     }
     nav {
@@ -67,9 +67,11 @@ header {
     }
     hr {
       grid-area: hr;
+      place-self: end;
     }
-    section.date {
+    section.date-author {
       grid-area: date;
+      padding-bottom: 2.5rem;
       p {
         padding: 0 1rem 0.25rem 1rem;
         border-radius: 0 0 4px 4px;
@@ -190,7 +192,7 @@ section {
       margin-top: 1.4rem;
     }
   }
-  &.date {
+  &.date-author {
     position: relative;
     p {
       font-weight: 700;

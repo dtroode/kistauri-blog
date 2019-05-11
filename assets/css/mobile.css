@@ -59,10 +59,7 @@
   section.categories hr {
     display: block;
   }
-  section.date {
-    height: 4rem;
-  }
-  section.date p {
+  section.date-author p {
     top: 0;
     bottom: unset;
     left: 0;
