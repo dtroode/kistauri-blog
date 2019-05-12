@@ -410,6 +410,10 @@ li:not(:first-child) {
   margin-top: 0.7rem;
 }
 
+img {
+  height: auto;
+}
+
 span {
   font-feature-settings: 'ss01' 1;
   font-weight: 700;

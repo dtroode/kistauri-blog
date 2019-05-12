@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
 
+    <!-- AMP -->
+    <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url | append: '.html' }}">
+
     <!-- HTML Meta Tags -->
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta charset="utf-8">
@@ -36,6 +39,9 @@
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/lazyload.js"></script>
 
+    <!-- Links -->
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css">
     {% include links.html %}
 
   </head>

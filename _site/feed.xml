@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-11T23:13:19+03:00</updated><id>/feed.xml</id><entry><title type="html">Unix — best</title><link href="/tags/thoughts/unix-best/" rel="alternate" type="text/html" title="Unix — best" /><published>2019-04-27T18:08:25+03:00</published><updated>2019-04-27T18:08:25+03:00</updated><id>/tags/thoughts/unix%E2%80%94best</id><content type="html" xml:base="/tags/thoughts/unix-best/">&lt;p&gt;Громкий заголовок с двумя причинами почему так&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-12T16:47:31+03:00</updated><id>/feed.xml</id><entry><title type="html">Unix — best</title><link href="/tags/thoughts/unix-best/" rel="alternate" type="text/html" title="Unix — best" /><published>2019-04-27T18:08:25+03:00</published><updated>2019-04-27T18:08:25+03:00</updated><id>/tags/thoughts/unix%E2%80%94best</id><content type="html" xml:base="/tags/thoughts/unix-best/">&lt;p&gt;Громкий заголовок с двумя причинами почему так&lt;/p&gt;
 
 &lt;!--more--&gt;
 
 &lt;h2 id=&quot;электрон&quot;&gt;Электрон&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/ubuntu.jpg&quot; class=&quot;image-link&quot; title=&quot;Ubuntu&quot; target=&quot;_blank&quot;&gt;&lt;img data-src=&quot;/assets/img/uploads/ubuntu.jpg&quot; class=&quot;lazyload&quot; alt=&quot;Ubuntu&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/ubuntu.jpg&quot; class=&quot;image-link&quot; title=&quot;Ubuntu&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/ubuntu.jpg&quot; width=&quot;3&quot; height=&quot;2&quot; layout=&quot;responsive&quot; alt=&quot;Ubuntu&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Я очень часто пользуюсь электрон-приложениями: VS Code, Slack, Figma (электрон же?) и Hyper. Многие знают, что электрон — очень глючная и медленная вещь, которая по скорости работы сильно уступает нативным приложениям, но их легче писать, а значит есть время заняться дизайном, поэтому они красивые.&lt;/p&gt;
 
@@ -22,7 +22,7 @@
 
 &lt;h2 id=&quot;мы-живем-в-средневековье&quot;&gt;Мы живем в средневековье&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/desk.jpg&quot; class=&quot;image-link&quot; title=&quot;Desk&quot; target=&quot;_blank&quot;&gt;&lt;img data-src=&quot;/assets/img/uploads/desk.jpg&quot; class=&quot;lazyload&quot; alt=&quot;Desk&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/desk.jpg&quot; class=&quot;image-link&quot; title=&quot;Desk&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/desk.jpg&quot; width=&quot;3&quot; height=&quot;2&quot; layout=&quot;responsive&quot; alt=&quot;Desk&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Опять решил поговорить на тему образования, так мною излюбленную. И это, наверное, потому, что сейчас для меня очень актуально.&lt;/p&gt;
 
@@ -63,8 +63,6 @@
   &lt;li&gt;Основные программы&lt;/li&gt;
   &lt;li&gt;До свидания&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css&quot; /&gt;
 
 &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js&quot;&gt;&lt;/script&gt;
 
@@ -121,7 +119,7 @@
 
 &lt;h2 id=&quot;рабочая-машинка-и-системаы&quot;&gt;Рабочая машинка и система(ы)&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/toolset.jpg&quot; class=&quot;image-link&quot; title=&quot;My desktop&quot; target=&quot;_blank&quot;&gt;&lt;img data-src=&quot;/assets/img/uploads/toolset.jpg&quot; class=&quot;lazyload&quot; alt=&quot;My desktop&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/toolset.jpg&quot; class=&quot;image-link&quot; title=&quot;My desktop&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/toolset.jpg&quot; width=&quot;16&quot; height=&quot;9&quot; layout=&quot;responsive&quot; alt=&quot;My desktop&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;У меня Dell Inspiron 13 на 256 GB SSD и 8 GB оперативки. Ну и i5 Intel. Да, я не тот крутой пользователь мака, который приходит домой, открывает одним пальцем свой ноутбук и наслаждается эксклюзивным софтом, а потом кидает в твиттер красивые скриншоты из программ.&lt;/p&gt;
 
@@ -151,7 +149,7 @@
 
 &lt;h2 id=&quot;больше-плюсов&quot;&gt;Больше плюсов&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/tim.jpg&quot; class=&quot;image-link&quot; title=&quot;Tim Cook&quot; target=&quot;_blank&quot;&gt;&lt;img data-src=&quot;/assets/img/uploads/tim.jpg&quot; class=&quot;lazyload&quot; alt=&quot;Tim Cook&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/tim.jpg&quot; class=&quot;image-link&quot; title=&quot;Tim Cook&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/tim.jpg&quot; width=&quot;3&quot; height=&quot;2&quot; layout=&quot;responsive&quot; alt=&quot;Tim Cook&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Сначала скажу, + или -. Как по мне, +. Мне понравилось. Смотрел в оригинале.&lt;/p&gt;
 

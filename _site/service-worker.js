@@ -279,6 +279,22 @@ var urlsToCache = [];
     urlsToCache.push('/')
   
 
+  
+    urlsToCache.push('/amp/tags/news/apple')
+  
+
+  
+    urlsToCache.push('/amp/tags/me/my-toolset')
+  
+
+  
+    urlsToCache.push('/amp/tags/thoughts/education')
+  
+
+  
+    urlsToCache.push('/amp/tags/thoughts/unix—best')
+  
+
 
 // Cache assets
 

@@ -10,7 +10,7 @@ thumbnail: /assets/img/uploads/desk.jpg
 
 ## Мы живем в средневековье
 
-<a href="/assets/img/uploads/desk.jpg" class="image-link" title="Desk" target="_blank"><img data-src="/assets/img/uploads/desk.jpg" class="lazyload" alt="Desk"></a>
+<a href="/assets/img/uploads/desk.jpg" class="image-link" title="Desk" target="_blank"><img src="/assets/img/uploads/desk.jpg" width="3" height="2" layout="responsive" alt="Desk"></a>
 
 Опять решил поговорить на тему образования, так мною излюбленную. И это, наверное, потому, что сейчас для меня очень актуально.
 

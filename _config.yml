@@ -1,3 +1,6 @@
+plugins:
+  - amp-jekyll
+
 collections:
   tags:
     output: true
@@ -20,6 +23,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+ampdir: /amp
 
 permalink: /tags/:categories/:title/
 
