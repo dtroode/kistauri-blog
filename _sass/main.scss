@@ -158,10 +158,10 @@ main {
     section.content {
       display: grid;
       grid-template: 'sub-heading text' / 50% 50%;
-      &:not(:first-child) {
+      &:not(:first-of-type) {
         margin-top: 2.5rem;
       }
-      p:not(:first-child) {
+      p:not(:first-of-type) {
         margin-top: 1rem;
       }
     }
@@ -243,10 +243,10 @@ section {
       display: none;
     }
     a {
-      &:not(:first-child) {
+      &:not(:first-of-type) {
         margin-top: 0.7rem;
       }
-      &:first-child {
+      &:first-of-type {
         margin-top: 1.4rem;
       }
     }
@@ -262,7 +262,7 @@ section.page-content, article.page, a.page-link, a.tagname, a.show-more, a.conta
 }
 
 article {
-  &.works p:not(:first-child) {
+  &.works p:not(:first-of-type) {
     margin-top: 1rem;
   }
   &.page {
@@ -304,7 +304,7 @@ article {
       }
     }
   }
-  &.page:not(:first-child) {
+  &.page:not(:first-of-type) {
     margin-top: 2.5rem;
   }
 }
@@ -406,7 +406,7 @@ ul, ol {
   padding-inline-start: 20px;
 }
 
-li:not(:first-child) {
+li:not(:first-of-type) {
   margin-top: 0.7rem;
 }
 

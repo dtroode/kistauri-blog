@@ -111,9 +111,9 @@ main.portfolio {
   main.portfolio section.content {
     display: grid;
     grid-template: 'sub-heading text' / 50% 50%; }
-    main.portfolio section.content:not(:first-child) {
+    main.portfolio section.content:not(:first-of-type) {
       margin-top: 2.5rem; }
-    main.portfolio section.content p:not(:first-child) {
+    main.portfolio section.content p:not(:first-of-type) {
       margin-top: 1rem; }
 
 footer {
@@ -172,9 +172,9 @@ section.categories {
   grid-template: "heading" auto "categories" auto "empty" auto/1fr; }
   section.categories hr {
     display: none; }
-  section.categories a:not(:first-child) {
+  section.categories a:not(:first-of-type) {
     margin-top: 0.7rem; }
-  section.categories a:first-child {
+  section.categories a:first-of-type {
     margin-top: 1.4rem; }
 
 section.categories a, article.page, a.show-more {
@@ -183,7 +183,7 @@ section.categories a, article.page, a.show-more {
 section.page-content, article.page, a.page-link, a.tagname, a.show-more, a.contacts-text, section.text img, section.text video, p:first-of-type, blockquote, pre {
   border-radius: 0.25rem; }
 
-article.works p:not(:first-child) {
+article.works p:not(:first-of-type) {
   margin-top: 1rem; }
 article.page {
   position: relative;
@@ -214,7 +214,7 @@ article.page {
       width: 100%; }
   article.page.archive-page section.page-content {
     position: static; }
-article.page:not(:first-child) {
+article.page:not(:first-of-type) {
   margin-top: 2.5rem; }
 
 h1, h2, p {
@@ -290,7 +290,7 @@ ul, ol {
   margin-block-end: 2.1rem;
   padding-inline-start: 20px; }
 
-li:not(:first-child) {
+li:not(:first-of-type) {
   margin-top: 0.7rem; }
 
 img {
