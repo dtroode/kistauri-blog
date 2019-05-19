@@ -5,4 +5,5 @@ Disallow: /_layouts
 Disallow: /_posts
 Disallow: /_sass
 Disallow: /.netlify
+Disallow: /assets
 Disallow: /admin

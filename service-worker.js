@@ -1,5 +1,7 @@
 ---
 layout: null
+sitemap:
+  exclude: 'yes'
 ---
 var CACHE_NAME = 'Kistauri';
 var urlsToCache = [];

@@ -1,60 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>/tags/news/apple/</loc>
-<lastmod>2019-03-25T21:45:00+03:00</lastmod>
-</url>
-<url>
-<loc>/tags/me/my-toolset/</loc>
-<lastmod>2019-04-25T22:59:59+03:00</lastmod>
-</url>
-<url>
-<loc>/tags/thoughts/education/</loc>
-<lastmod>2019-04-27T15:23:39+03:00</lastmod>
-</url>
-<url>
-<loc>/tags/thoughts/unix-best/</loc>
-<lastmod>2019-04-27T18:08:25+03:00</lastmod>
-</url>
-<url>
-<loc>/tags/me/</loc>
-<lastmod>2019-05-19T13:09:19+03:00</lastmod>
-</url>
-<url>
-<loc>/tags/news/</loc>
-<lastmod>2019-05-19T13:09:19+03:00</lastmod>
-</url>
-<url>
-<loc>/tags/thoughts/</loc>
-<lastmod>2019-05-19T13:09:19+03:00</lastmod>
-</url>
-<url>
-<loc>/tags/works/</loc>
-<lastmod>2019-05-19T13:09:19+03:00</lastmod>
-</url>
-<url>
-<loc>/archive/</loc>
-</url>
-<url>
-<loc>/portfolio/</loc>
-</url>
-<url>
-<loc>/</loc>
-</url>
-<url>
-<loc>/amp/tags/news/apple</loc>
-</url>
-<url>
-<loc>/amp/tags/me/my-toolset</loc>
-</url>
-<url>
-<loc>/amp/tags/thoughts/education</loc>
-</url>
-<url>
-<loc>/amp/tags/thoughts/unix%E2%80%94best</loc>
-</url>
-<url>
-<loc>/admin/</loc>
-<lastmod>2019-04-26T20:00:45+03:00</lastmod>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/tags/thoughts/unix-best/</loc>
+      
+        <lastmod>2019-04-27T18:08:25+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/tags/thoughts/education/</loc>
+      
+        <lastmod>2019-04-27T15:23:39+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/tags/me/my-toolset/</loc>
+      
+        <lastmod>2019-04-25T22:59:59+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/tags/news/apple/</loc>
+      
+        <lastmod>2019-03-25T21:45:00+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/404.html</loc>
+      
+        <lastmod>2019-05-19T13:18:26+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/archive/</loc>
+      
+        <lastmod>2019-05-19T13:18:26+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/portfolio/</loc>
+      
+        <lastmod>2019-05-19T13:18:26+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/</loc>
+      
+        <lastmod>2019-05-19T13:18:26+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/amp/tags/news/apple</loc>
+      
+        <lastmod>2019-03-25T21:45:00+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/amp/tags/me/my-toolset</loc>
+      
+        <lastmod>2019-04-25T22:59:59+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/amp/tags/thoughts/education</loc>
+      
+        <lastmod>2019-04-27T15:23:39+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/amp/tags/thoughts/unix—best</loc>
+      
+        <lastmod>2019-04-27T18:08:25+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dtroode.netlify.com/feed.xml</loc>
+      
+        <lastmod>2019-05-19T13:18:26+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
 </urlset>
