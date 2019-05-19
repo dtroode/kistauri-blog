@@ -3,10 +3,10 @@ categories: thoughts
 title: Education
 date: 2019-04-27T12:23:39.310Z
 thumbnail: /assets/img/uploads/desk.jpg
+description: Опять образование. Опять плохо. Каждый раз такое
 ---
 Опять образование. Опять плохо. Каждый раз такое
 
-<!--more-->
 
 ## Мы живем в средневековье
 

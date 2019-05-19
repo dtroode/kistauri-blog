@@ -131,6 +131,7 @@ section.page-content {
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   padding: 1.25rem;
   color: var(--main-light);
   background-color: var(--accent-blue); }

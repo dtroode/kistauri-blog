@@ -4,10 +4,10 @@ layout: blog
 title: My Toolset
 date: 2019-04-25T19:59:59.000Z
 thumbnail: /assets/img/uploads/toolset.jpg
+description: Как я написал сайты? Моя коробочка с инструментами
 ---
 
 Как я написал сайты? Моя коробочка с инструментами
-<!--more-->
 
 ## Кто я?
 

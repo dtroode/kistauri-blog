@@ -3,10 +3,10 @@
   <head>
 
     <!-- AMP -->
-    <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url | append: '.html' }}">
+    <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url | append: '/' }}">
 
     <!-- HTML Meta Tags -->
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{{ page.description }}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +18,14 @@
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="David Kistauri">
+    <meta itemprop="description" content="{{ page.description }}">
     <meta itemprop="image" content="https://dtroode.netlify.com{{ page.thumbnail }}">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:description" content="{{ page.description }}">
     <meta property="og:url" content="https://dtroode.netlify.com{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:image" content="https://dtroode.netlify.com{{ page.thumbnail }}">
@@ -32,7 +33,7 @@
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:description" content="{{ page.description }}">
     <meta name="twitter:image" content="https://dtroode.netlify.com{{ page.thumbnail }}">
 
     <!-- Scripts -->

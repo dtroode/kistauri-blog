@@ -15,6 +15,7 @@ collections:
     fields:
       - {tag: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {tag: "Title", name: "title", widget: "string"}
+      - {tag: "Description", name: "description", widget: "description"}
       - {tag: "Publish Date", name: "date", widget: "datetime"}
       - {tag: "Featured Image", name: "thumbnail", widget: "image"}
       - {tag: "Categories", name: "categories", widget: "string"}
