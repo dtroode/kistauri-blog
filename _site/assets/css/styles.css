@@ -7,7 +7,7 @@ html {
   html {
     font-family: 'Inter var', sans-serif; } }
 *::selection, *::-moz-selection {
-  background-color: var(--accent-blue);
+  background: var(--accent-blue);
   color: var(--main-dark); }
 
 body {

@@ -13,7 +13,7 @@ html {
 // Selection
 * {
   &::selection, &::-moz-selection {
-    background-color: var(--accent-blue);
+    background: var(--accent-blue);
     color: var(--main-dark);
   }
 }
