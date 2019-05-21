@@ -88,6 +88,8 @@ var urlsToCache = [];
   
     
   
+    
+  
 
   urlsToCache.push('/tags/thoughts/education/')
   
@@ -173,8 +175,12 @@ var urlsToCache = [];
   
     
   
+    
+  
 
   urlsToCache.push('/tags/me/my-toolset/')
+  
+    
   
     
   
@@ -400,6 +406,10 @@ var urlsToCache = [];
 
     
       urlsToCache.push('/assets/img/uploads/desk.jpg')
+    
+
+    
+      urlsToCache.push('/assets/img/uploads/ios-ui-apps.png')
     
 
     

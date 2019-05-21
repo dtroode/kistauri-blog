@@ -18,9 +18,5 @@ collections:
       - {tag: "Description", name: "description", widget: "text"}
       - {tag: "Publish Date", name: "date", widget: "datetime"}
       - {tag: "Featured Image", name: "thumbnail", widget: "image"}
-      - {tag: "Categories", name: "categories", widget: "select", options:
-                                                                    - { label: "Me", value: "me" }
-                                                                    - { label: "Works", value: "works" }
-                                                                    - { label: "News", value: "news" }
-                                                                    - { label: "Thoughts", value: "thoughts" }}
+      - {tag: "Categories", name: "categories", widget: "select", options: ["me", "works", "news", "thoughts"]}
       - {tag: "Body", name: "body", widget: "markdown"}
