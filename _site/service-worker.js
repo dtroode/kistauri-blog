@@ -4,6 +4,93 @@ var urlsToCache = [];
 // Cache posts
 // Limited for 3
 
+  urlsToCache.push('/tags/thoughts/ios-apps/')
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
   urlsToCache.push('/tags/thoughts/unix-best/')
   
     
@@ -178,93 +265,6 @@ var urlsToCache = [];
     
   
 
-  urlsToCache.push('/tags/me/my-toolset/')
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
 
 // Cache pages
 // Do nothing if it's either an AMP page (as these are served via Googles cache) or the blog page
@@ -299,6 +299,10 @@ var urlsToCache = [];
 
   
     urlsToCache.push('/amp/tags/thoughts/unix—best')
+  
+
+  
+    urlsToCache.push('/amp/tags/thoughts/ios-apps')
   
 
 
