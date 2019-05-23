@@ -160,6 +160,8 @@ section.text {
       width: unset;
       font-style: italic;
       background-color: var(--additional-light); }
+  section.text a {
+    font-size: inherit; }
   section.text img, section.text video {
     border: 0.25rem solid var(--accent-blue);
     width: calc(100% - 0.5rem); }
