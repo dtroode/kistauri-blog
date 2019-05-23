@@ -348,6 +348,12 @@ p, a, ul, ol {
   font-weight: 600;
 }
 
+p {
+  a {
+    font-size: inherit;
+  }
+}
+
 a {
   font-style: italic;
   flex: inherit;

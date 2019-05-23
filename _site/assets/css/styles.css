@@ -249,6 +249,9 @@ p, a, ul, ol {
   line-height: 1.33em;
   font-weight: 600; }
 
+p a {
+  font-size: inherit; }
+
 a {
   font-style: italic;
   flex: inherit;
