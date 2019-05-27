@@ -12,11 +12,11 @@
   header.blog, header.tag, header.portfolio {
     grid-template: 'heading' auto 'links' auto 'hr' auto / 1fr;
   }
-  header.blog nav, header.tag nav {
+  header.blog nav, header.tag nav, header.portfolio nav {
     margin-bottom: 2.5rem;
   }
   header nav {
-    margin-top: 1.25rem;
+    margin-top: 2.5rem;
   }
   header nav a.tagname {
     padding-top: 0.25rem;

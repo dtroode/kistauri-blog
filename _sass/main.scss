@@ -45,17 +45,17 @@ header, main, footer {
 }
 
 header {
-  &.blog, &.tag, &.post {
-    background-color: var(--additional-light);
+  align-items: start;
+  &.blog, &.tag, &.post, &.portfolio {
     nav {
-      display: table;
       background-color: var(--main-light);
     }
   }
+  &.blog, &.tag, &.post {
+    background-color: var(--additional-light);
+  }
   &.blog, &.tag, &.portfolio {
     grid-template: 'heading' auto 'links' auto 'hr' auto / 50% 50%;
-  }
-  &.blog, &.tag {
     nav {
       padding: 0.25rem 1rem;
       border-radius: 0.4rem;
@@ -258,7 +258,7 @@ section {
   }
   &.articles {
     display: grid;
-    grid-template: 'article article' / 1fr 1fr;
+    grid-template: 'article article article' / 1fr 1fr 1fr;
     grid-gap: 2.5rem;
     align-items: start;
     padding: 0;
@@ -515,7 +515,7 @@ hr {
 }
 
 // Mobile style settings
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
   html {
     font-size: 12px;
   }
