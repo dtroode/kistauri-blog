@@ -47,18 +47,25 @@ header, main, footer {
 header {
   &.blog, &.tag, &.post {
     background-color: var(--additional-light);
+    nav {
+      display: table;
+      background-color: var(--main-light);
+    }
   }
   &.blog, &.tag, &.portfolio {
     grid-template: 'heading' auto 'links' auto 'hr' auto / 50% 50%;
+  }
+  &.blog, &.tag {
+    nav {
+      padding: 0.25rem 1rem;
+      border-radius: 0.4rem;
+    }
   }
   &.post {
     grid-template: 'heading links' auto 'hr date' auto / 50% 50%;
     h1 {
       grid-area: heading;
       line-height: 5rem;
-    }
-    nav, section.date-author p {
-      background-color: var(--main-light);
     }
     nav {
       grid-area: links;
@@ -75,11 +82,12 @@ header {
       p {
         padding: 0 1rem 0.25rem 1rem;
         border-radius: 0 0 0.4rem 0.4rem;
+        background-color: var(--main-light);
       }
     }
   }
   nav {
-    a, button {
+    a, span.tags-span {
       margin-right: 0.5rem;
       font-weight: 700;
       font-style: normal;
@@ -104,19 +112,19 @@ header {
         color: var(--main-light);
         &#me {
           border: 0.25rem solid var(--accent-red);
-          background-color: var(--accent-red);
+          color: var(--accent-red);
         }
         &#works {
           border: 0.25rem solid var(--accent-yellow);
-          background-color: var(--accent-yellow);
+          color: var(--accent-yellow);
         }
         &#news {
           border: 0.25rem solid var(--accent-blue);
-          background-color: var(--accent-blue);
+          color: var(--accent-blue);
         }
         &#thoughts {
           border: 0.25rem solid var(--accent-green);
-          background-color: var(--accent-green);
+          color: var(--accent-green);
         }
         &:hover {
           color: var(--main-light);
@@ -127,22 +135,17 @@ header {
       }
     }
     ul {
-      position: absolute;
-      margin-block-start: 0;
+      margin-block-start: 0.5rem;
       margin-block-end: 0;
       padding-inline-start: 0;
       border-radius: 0 0 0.4rem 0.4rem;
       list-style-type: none;
-      background-color: var(--accent-blue);
-      li {
-        display: none;
-      }
     }
     hr {
       margin: 0;
     }
   }
-  a, p, button {
+  a, p, span.tags-span {
     width: unset;
     font-size: 2rem;
     letter-spacing: -0.05rem;
@@ -156,13 +159,10 @@ header img, img.page-background {
 
 main {
   &.blog {
-    grid-template: 'articles categories' / 50% 50%;
+    grid-template: 'articles' / 1fr;
     section {
       &.articles {
         grid-area: articles;
-      }
-      &.categories {
-        grid-area: categories;
       }
     }
   }
@@ -170,7 +170,7 @@ main {
     grid-template: 'text empty' / 50% 50%;
   }
   &.tag {
-    grid-template: 'articles empty' / 50% 50%;
+    grid-template: 'articles' / 1fr;
   }
   &.portfolio {
     grid-template: 'section' auto / 1fr;
@@ -256,63 +256,32 @@ section {
   &.post {
     grid-template: 'text empty' / 50% 50%;
   }
-  &.categories, &.articles {
-    align-content: start;
+  &.articles {
+    display: grid;
+    grid-template: 'article article' / 1fr 1fr;
+    grid-gap: 2.5rem;
+    align-items: start;
     padding: 0;
   }
   &.tags {
-    button {
-      padding: 0.25rem;
-      border: 0.25rem solid var(--accent-blue);
-      border-radius: 0.4rem;
-      line-height: 2.5rem;
-      background-color: var(--accent-blue);
-      color: var(--main-light);
-      &::after {
-        content: '↓';
-      }
-      &.tags-name {
-        border-radius: 0.4rem 0.4rem 0 0;
-        &::after {
-          content: '↑';
-        }
-        & + ul {
-          li {
-            display: block;
+    span {
+      & + ul {
+        li {
+          display: inline-block;
+          margin: 0;
+          a {
             margin: 0;
-            a {
-              display: list-item;
-              margin: 0;
-            }
-            &:last-of-type a {
-              border-radius: 0 0 0.4rem 0.4rem;
-            }
-            &:not(:last-of-type) a {
-              border-radius: 0;
-            }
+            border-radius: 0.4rem;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
           }
         }
       }
     }
   }
-  &.categories {
-    display: grid;
-    grid-template: 'heading' auto 'categories' auto 'empty'auto / 1fr;
-    hr {
-      display: none;
-    }
-    a {
-      &:not(:first-of-type) {
-        margin-top: 0.7rem;
-      }
-      &:first-of-type {
-        margin-top: 1.4rem;
-      }
-    }
-  }
 }
 
-section.categories a, article.page, a.show-more, a.contacts-text {
+article.page, a.show-more, a.contacts-text {
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
 }
 
@@ -326,7 +295,7 @@ article {
   }
   &.page {
     position: relative;
-    width: 75%;
+    width: 100%;
     background-color: var(--accent-blue);
     &:hover {
       transform: translateY(-0.5rem);
@@ -357,14 +326,11 @@ article {
         width: 100%;
       }
     }
-    &.archive-page {
+    &.archive-page, &.tag-page {
       section.page-content {
         position: static;
       }
     }
-  }
-  &.page:not(:first-of-type) {
-    margin-top: 2.5rem;
   }
 }
 
@@ -516,9 +482,8 @@ pre, code {
 
 a.show-more {
   display: block;
-  margin-top: 2.5rem;
   border: 0.25rem solid var(--accent-blue);
-  width: calc(75% - 1rem);
+  width: calc(100% - 1rem);
   height: auto;
   font-size: 1.5em;
   font-style: normal;

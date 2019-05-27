@@ -6,22 +6,12 @@ title: Posts archive
     <h1>David<br>Kistauri<br><span>Archive</span></h1>
     <nav>
       <a href="/">Blog</a>
-      <br>
       <a href="/portfolio/">Portfolio</a>
+      {% include tags.html %}
     </nav>
     <hr>
   </header>
   <main class="blog">
-    <section class="categories">
-      <h2>About categories</h2>
-      <nav>
-        <a href="/tags/me" class="tagname" id="me">Me</a>
-        <a href="/tags/works" class="tagname" id="works">Works</a>
-        <a href="/tags/news" class="tagname" id="news">News</a>
-        <a href="/tags/thoughts" class="tagname" id="thoughts">Thoughts</a>
-      </nav>
-      <hr>
-    </section>
     <section class="articles">
       {% for post in site.posts %}
         <article class="page archive-page">

@@ -7,21 +7,11 @@ title: David Kistauri Blog
     <nav>
       <a href="/portfolio/">Portfolio</a>
       <a href="/archive/">Archive</a>
-      {% include categories.html %}
+      {% include tags.html %}
     </nav>
     <hr>
   </header>
   <main class="blog">
-    <section class="categories">
-      <h2>About categories</h2>
-      <nav>
-        <a href="/tags/me" class="tagname" id="me">Me</a>
-        <a href="/tags/works" class="tagname" id="works">Works</a>
-        <a href="/tags/news" class="tagname" id="news">News</a>
-        <a href="/tags/thoughts" class="tagname" id="thoughts">Thoughts</a>
-      </nav>
-      <hr>
-    </section>
     <section class="articles">
       {% for post in site.posts limit:10 %}
         <article class="page">

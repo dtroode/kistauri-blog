@@ -14,12 +14,10 @@ layout: default
     <section class="articles">
       {% assign filtered_posts = site.posts | where: 'categories', page.short_name %}
       {% for post in filtered_posts %}
-        <article class="page">
+        <article class="page tag-page">
           <a href="{{ post.url }}" class="page-link">
-            <img src="{{ post.thumbnail }}" alt="" class="page-background">
             <section class="page-content">
               <h2>{{ post.title }}</h2>
-              <p>{{ post.description }}</p>
             </section>
           </a>
         </article>
@@ -27,5 +25,4 @@ layout: default
     </section>
   </main>
   {% include footer.html %}
-  <script src="/assets/js/articleHeight.js"></script>
 </body>

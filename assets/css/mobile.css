@@ -5,12 +5,15 @@
     padding-right: 2.5rem;
     padding-left: 2.5rem;
   }
-  header a, header p {
+  header a, header p, header span.tags-span {
     font-size: 2.5rem;
     letter-spacing: -0.1rem;
   }
   header.blog, header.tag, header.portfolio {
     grid-template: 'heading' auto 'links' auto 'hr' auto / 1fr;
+  }
+  header.blog nav, header.tag nav {
+    margin-bottom: 2.5rem;
   }
   header nav {
     margin-top: 1.25rem;
@@ -43,24 +46,22 @@
   footer {
     grid-template: 'heading' auto 'links' auto / 1fr;
   }
-  section.articles {
-    padding-top: 2.5rem;
-  }
-  section.categories a:first-child {
-    margin-top: 0;
-  }
-  section.categories hr {
-    display: block;
+  section.tags span + ul li a {
+    font-size: 2rem;
+    line-height: 2rem;
   }
   section.date-author p {
     top: 0;
     bottom: unset;
     left: 0;
   }
+  section.articles {
+    grid-template: 'article' / 1fr;
+  }
   article.page {
     width: auto;
   }
-  article.page.archive-page h2 {
+  article.page.archive-page h2, article.page.tag-page h2 {
     margin-bottom: 0;
   }
   article.empty {
