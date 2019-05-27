@@ -33,4 +33,8 @@
     border-bottom: 2px solid var(--main-light);
     background-color: var(--main-light);
   }
+  section.text img, section.text video, section.text pre {
+    border: 0.25rem solid var(--additional-dark);
+    background-color: var(--additional-dark);
+  }
 }

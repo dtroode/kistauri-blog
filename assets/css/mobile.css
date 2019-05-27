@@ -43,13 +43,6 @@
   footer {
     grid-template: 'heading' auto 'links' auto / 1fr;
   }
-  footer a.contacts-text {
-    border: 0.25rem solid var(--accent-blue);
-    text-decoration: none;
-  }
-  footer a.contacts-text:not(:first-child) {
-    margin-top: 0.7rem;
-  }
   section.articles {
     padding-top: 2.5rem;
   }
