@@ -18,10 +18,6 @@
   header nav {
     margin-top: 2.5rem;
   }
-  header nav a.tagname {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
   header hr {
     margin-top: 0;
   }
@@ -46,7 +42,7 @@
   footer {
     grid-template: 'heading' auto 'links' auto / 1fr;
   }
-  section.tags span + ul li a {
+  section.tags span + ul li a, a.contacts-text {
     font-size: 2rem;
     line-height: 2rem;
   }

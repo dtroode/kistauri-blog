@@ -10,7 +10,7 @@ description: Опять образование. Опять плохо. Кажд�
 
 ## Мы живем в средневековье
 
-<a href="/assets/img/uploads/desk.jpg" class="image-link" title="Desk" target="_blank"><img src="/assets/img/uploads/desk.jpg" width="3" height="2" layout="responsive" alt="Desk"></a>
+<a href="/assets/img/uploads/desk.jpg" class="image-link" title="Desk" target="_blank"><img src="/assets/img/uploads/desk.jpg" width="3000" height="2000" layout="responsive" alt="Desk"></a>
 
 Опять решил поговорить на тему образования, так мною излюбленную. И это, наверное, потому, что сейчас для меня очень актуально.
 

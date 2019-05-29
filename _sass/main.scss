@@ -193,11 +193,6 @@ footer {
   padding-bottom: 4.375rem;
   background-color: var(--additional-light);
   color: var(--additional-dark);
-  hr {
-    border-top: 2px solid var(--additional-dark);
-    border-bottom: 2px solid var(--additional-dark);
-    background-color: var(--additional-dark);
-  }
 }
 
 section {
@@ -270,7 +265,8 @@ section {
           display: inline-block;
           margin: 0;
           a {
-            margin: 0;
+            margin-right: 0;
+            margin-left: 0;
             border-radius: 0.4rem;
             font-size: 1.5rem;
             line-height: 1.5rem;
@@ -393,7 +389,8 @@ a {
     content: '';
   }
   &.tagname, &.contacts-text {
-    display: table;
+    display: inline-block;
+    margin-bottom: 0.4rem;
   }
   &.tagname {
     text-decoration: none;
@@ -414,11 +411,12 @@ a {
     }
   }
   &.contacts-text {
-    border-bottom: 0.25rem solid var(--accent-blue);
+    padding: 0.25rem;
+    border: 0.25rem solid var(--accent-blue);
+    border-radius: 0.4rem;
     text-decoration: none;
-    &:not(:first-of-type) {
-      margin-top: 0.7rem;
-    }
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   &.show-more {
     padding: 0 0.25rem;
