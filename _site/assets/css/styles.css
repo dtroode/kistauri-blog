@@ -63,8 +63,6 @@ header {
   header nav a {
     margin-right: 0.5rem;
     font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
     color: var(--accent-blue); }
   header nav a:hover {
     color: inherit; }
@@ -105,7 +103,7 @@ header {
       display: inline; }
   header a, header p {
     width: unset;
-    font-size: 2rem;
+    font-size: 1.83rem;
     letter-spacing: -0.05rem;
     line-height: 3rem; }
   header hr {
@@ -136,11 +134,22 @@ main {
 
 footer {
   flex-shrink: 0;
-  grid-template: 'heading links' / 50% 50%;
+  grid-template: 'heading' auto 'links-container' auto / 1fr 1fr;
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
   background-color: var(--additional-light);
   color: var(--additional-dark); }
+  footer section.links-container {
+    display: grid;
+    grid-template: 'paragraph paragraph' auto 'links social' auto / 1fr 1fr; }
+    footer section.links-container p {
+      grid-area: paragraph; }
+    footer section.links-container nav {
+      margin-top: 1rem; }
+      footer section.links-container nav:nth-of-type(1) {
+        grid-area: links; }
+      footer section.links-container nav:nth-of-type(2) {
+        grid-area: social; }
 
 section.page-content {
   position: absolute;
@@ -171,7 +180,10 @@ section.text {
       width: unset;
       background-color: var(--additional-light); }
   section.text a {
-    font-size: inherit; }
+    font-size: inherit;
+    color: var(--accent-blue); }
+    section.text a:hover {
+      color: inherit; }
   section.text img, section.text video {
     border: 0.25rem solid var(--additional-light);
     width: calc(100% - 0.5rem);
@@ -205,9 +217,7 @@ article.page {
     display: block;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    font-style: normal;
-    text-decoration: none; }
+    overflow: hidden; }
     article.page a.page-link:hover {
       color: inherit; }
     article.page a.page-link::after, article.page a.page-link:hover::after {
@@ -256,7 +266,7 @@ h2 {
   line-height: 2.125rem;
   letter-spacing: -0.05rem; }
 
-p, a, ul, ol {
+p, a, ul, ol, blockquote {
   font-size: 1.22rem;
   line-height: 1.33em;
   font-weight: 600; }
@@ -265,30 +275,28 @@ p a {
   font-size: inherit; }
 
 a {
-  font-style: italic;
   flex: inherit;
-  color: inherit; }
+  color: inherit;
+  text-decoration: none; }
   a:after {
-    content: '⟶';
-    text-decoration: none; }
+    content: '⟶'; }
   a:hover {
     color: var(--accent-blue); }
     a:hover:after {
       content: '⟵'; }
-  a.tagname, a.contacts-text {
-    display: inline-block;
-    margin-bottom: 0.4rem; }
-  a.tagname {
-    text-decoration: none; }
-    a.tagname:hover {
-      color: inherit; }
+  a.tagname, a.contacts-text:not(:last-of-type) {
+    margin-bottom: 0.25rem; }
+  a.tagname:hover {
+    color: inherit; }
   a.contacts-text {
-    padding: 0.25rem;
-    border: 0.25rem solid var(--accent-blue);
+    display: table;
+    padding: 0.25rem 0.5rem;
     border-radius: 0.4rem;
-    text-decoration: none;
     font-size: 1.125rem;
-    line-height: 1.125rem; }
+    background-color: var(--accent-blue);
+    color: var(--main-light); }
+    a.contacts-text:hover {
+      background-color: var(--main-dark); }
   a.show-more {
     padding: 0 0.25rem; }
 
@@ -306,17 +314,16 @@ img {
 span {
   font-feature-settings: 'ss01' 1;
   font-weight: 700; }
-  span.link-span {
-    font-style: italic; }
   span.nickname {
-    color: var(--accent-blue);
-    opacity: 0.5; }
+    color: var(--accent-blue); }
 
 blockquote {
-  margin-block-start: 0.7em;
-  margin-block-end: 2.1em;
+  margin-block-start: 1rem;
+  margin-block-end: 0;
   margin-inline-start: 0;
-  margin-inline-end: 0; }
+  margin-inline-end: 0;
+  padding: 1rem;
+  background-color: var(--additional-light); }
 
 pre {
   display: -moz-inline-grid;
@@ -340,8 +347,6 @@ a.show-more {
   width: calc(100% - 1rem);
   height: auto;
   font-size: 1.5em;
-  font-style: normal;
-  text-decoration: none;
   text-align: center;
   background-color: var(--additional-light);
   cursor: pointer; }

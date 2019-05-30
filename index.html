@@ -18,7 +18,10 @@ title: David Kistauri Blog
             <img data-src="{{ post.thumbnail }}" alt="" class="page-background lazyload">
             <section class="page-content">
               <h2>{{ post.title }}</h2>
-              <p class="date">{{ post.date | date_to_string }}</p>
+              <p class="date-mins">{{ post.date | date_to_string }} •
+                  {% assign words = include.content | strip_html | number_of_words %}
+                  {{ words | divided_by: 180 | plus: 1 }} min read.
+              </p>
             </section>
           </a>
         </article>

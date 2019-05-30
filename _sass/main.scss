@@ -87,8 +87,6 @@ header {
     a {
       margin-right: 0.5rem;
       font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
       color: var(--accent-blue);
     }
     a {
@@ -152,7 +150,7 @@ header {
   }
   a, p {
     width: unset;
-    font-size: 2rem;
+    font-size: 1.83rem;
     letter-spacing: -0.05rem;
     line-height: 3rem;
   }
@@ -198,11 +196,27 @@ main {
 
 footer {
   flex-shrink: 0;
-  grid-template: 'heading links' / 50% 50%;
+  grid-template: 'heading' auto 'links-container' auto / 1fr 1fr;
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
   background-color: var(--additional-light);
   color: var(--additional-dark);
+  section.links-container {
+    display: grid;
+    grid-template: 'paragraph paragraph' auto 'links social' auto / 1fr 1fr;
+    p {
+      grid-area: paragraph;
+    }
+    nav {
+      margin-top: 1rem;
+      &:nth-of-type(1) {
+        grid-area: links;
+      }
+      &:nth-of-type(2) {
+        grid-area: social;
+      }
+    }
+  }
 }
 
 section {
@@ -244,6 +258,10 @@ section {
     }
     a {
       font-size: inherit;
+      color: var(--accent-blue);
+      &:hover {
+        color: inherit;
+      }
     }
     img, video {
       border: 0.25rem solid var(--additional-light);
@@ -289,8 +307,6 @@ article {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      font-style: normal;
-      text-decoration: none;
       &:hover {
         color: inherit;
       }
@@ -363,7 +379,7 @@ h2 {
   letter-spacing: -0.05rem;
 }
 
-p, a, ul, ol {
+p, a, ul, ol, blockquote {
   font-size: 1.22rem;
   line-height: 1.33em;
   font-weight: 600;
@@ -376,12 +392,11 @@ p {
 }
 
 a {
-  font-style: italic;
   flex: inherit;
   color: inherit;
+  text-decoration: none;
   &:after {
     content: '⟶';
-    text-decoration: none;
   }
   &:hover {
     color: var(--accent-blue);
@@ -389,23 +404,22 @@ a {
       content: '⟵';
     }
   }
-  &.tagname, &.contacts-text {
-    display: inline-block;
-    margin-bottom: 0.4rem;
+  &.tagname, &.contacts-text:not(:last-of-type) {
+    margin-bottom: 0.25rem;
   }
-  &.tagname {
-    text-decoration: none;
-    &:hover {
-      color: inherit;
-    }
+  &.tagname:hover {
+    color: inherit;
   }
   &.contacts-text {
-    padding: 0.25rem;
-    border: 0.25rem solid var(--accent-blue);
+    display: table;
+    padding: 0.25rem 0.5rem;
     border-radius: 0.4rem;
-    text-decoration: none;
     font-size: 1.125rem;
-    line-height: 1.125rem;
+    background-color: var(--accent-blue);
+    color: var(--main-light);
+    &:hover {
+      background-color: var(--main-dark);
+    }
   }
   &.show-more {
     padding: 0 0.25rem;
@@ -429,20 +443,18 @@ img {
 span {
   font-feature-settings: 'ss01' 1;
   font-weight: 700;
-  &.link-span {
-    font-style: italic;
-  }
   &.nickname {
     color: var(--accent-blue);
-    opacity: 0.5;
   }
 }
 
 blockquote {
-  margin-block-start: 0.7em;
-  margin-block-end: 2.1em;
+  margin-block-start: 1rem;
+  margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  padding: 1rem;
+  background-color: var(--additional-light);
 }
 
 pre {
@@ -473,8 +485,6 @@ a.show-more {
   width: calc(100% - 1rem);
   height: auto;
   font-size: 1.5em;
-  font-style: normal;
-  text-decoration: none;
   text-align: center;
   background-color: var(--additional-light);
   cursor: pointer;
