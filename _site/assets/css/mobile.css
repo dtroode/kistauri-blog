@@ -42,7 +42,10 @@
     grid-template: 'sub-heading' auto 'text' auto / 1fr;
   }
   footer {
-    grid-template: 'heading' auto 'links' auto / 1fr;
+    grid-template: 'heading' auto 'links-container' auto / 1fr;
+  }
+  footer section.links-container {
+    grid-template: 'paragraph' auto 'links' auto 'social' auto / 1fr;
   }
   section.date-author p {
     top: 0;
@@ -65,14 +68,17 @@
     width: auto;
     margin-bottom: 1.4rem;
   }
-  p, a, ul, ol {
+  p, a, ul, ol, blockquote {
     width: auto;
   }
   a, ul, ol {
     font-size: 1.83rem;
   }
-  p {
+  p, blockquote {
     font-size: 1.5rem;
+  }
+  blockquote {
+    background-color: var(--additional-dark);
   }
   pre {
     width: calc(100vw - 5rem);
@@ -83,5 +89,8 @@
   a.show-more {
     width: unset;
     font-size: 2rem;
+  }
+  a.contacts-text {
+    font-size: 1.5rem;
   }
 }
