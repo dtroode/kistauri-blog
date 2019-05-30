@@ -161,7 +161,7 @@ section.text {
   section.text h2 {
     margin-top: 1.75rem;
     margin-bottom: 1rem; }
-  section.text p, section.text ul, section.text ol {
+  section.text p, section.text ul, section.text ol, section.text a {
     font-weight: 500; }
   section.text p {
     margin-top: 1rem; }
