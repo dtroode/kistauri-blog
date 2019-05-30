@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-29T21:32:22+03:00</updated><id>/feed.xml</id><entry><title type="html">iOS apps</title><link href="/tags/thoughts/ios-apps/" rel="alternate" type="text/html" title="iOS apps" /><published>2019-05-21T21:48:59+03:00</published><updated>2019-05-21T21:48:59+03:00</updated><id>/tags/thoughts/ios-apps</id><content type="html" xml:base="/tags/thoughts/ios-apps/">&lt;p&gt;If your app in this list — it’s time to celebrate it!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-30T16:09:36+03:00</updated><id>/feed.xml</id><entry><title type="html">iOS apps</title><link href="/tags/thoughts/ios-apps/" rel="alternate" type="text/html" title="iOS apps" /><published>2019-05-21T21:48:59+03:00</published><updated>2019-05-21T21:48:59+03:00</updated><id>/tags/thoughts/ios-apps</id><content type="html" xml:base="/tags/thoughts/ios-apps/">&lt;p&gt;If your app in this list — it’s time to celebrate it!&lt;/p&gt;
 
 &lt;h2 id=&quot;best-apps&quot;&gt;Best apps&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/ios-ui-apps.png&quot; class=&quot;image-link&quot; title=&quot;Good apps&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/ios-ui-apps.png&quot; width=&quot;3000&quot; height=&quot;2000&quot; layout=&quot;responsive&quot; alt=&quot;Good apps&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/uploads/ios-ui-apps.png&quot; alt=&quot;Good apps&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In iOS 11 Apple finally realesed new UI. Previously they tested it in Apple Music app. I am talking about this new design of standard apps with big (very big headers). There’s a lot of people who hate this design, but I really love it. This is because iOS using very good font — San Francisco.&lt;/p&gt;
 
@@ -30,7 +30,7 @@
 
 &lt;h2 id=&quot;электрон&quot;&gt;Электрон&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/ubuntu.jpg&quot; class=&quot;image-link&quot; title=&quot;Ubuntu&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/ubuntu.jpg&quot; width=&quot;3000&quot; height=&quot;2000&quot; layout=&quot;responsive&quot; alt=&quot;Ubuntu&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/uploads/ubuntu.jpg&quot; alt=&quot;Ubuntu&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Я очень часто пользуюсь электрон-приложениями: VS Code, Slack, Figma (электрон же?) и Hyper. Многие знают, что электрон — очень глючная и медленная вещь, которая по скорости работы сильно уступает нативным приложениям, но их легче писать, а значит есть время заняться дизайном, поэтому они красивые.&lt;/p&gt;
 
@@ -46,7 +46,7 @@
 
 &lt;h2 id=&quot;мы-живем-в-средневековье&quot;&gt;Мы живем в средневековье&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/desk.jpg&quot; class=&quot;image-link&quot; title=&quot;Desk&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/desk.jpg&quot; width=&quot;3000&quot; height=&quot;2000&quot; layout=&quot;responsive&quot; alt=&quot;Desk&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/uploads/desk.jpg&quot; alt=&quot;Desk&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Опять решил поговорить на тему образования, так мною излюбленную. И это, наверное, потому, что сейчас для меня очень актуально.&lt;/p&gt;
 
@@ -142,7 +142,7 @@
 
 &lt;h2 id=&quot;рабочая-машинка-и-системаы&quot;&gt;Рабочая машинка и система(ы)&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/toolset.jpg&quot; class=&quot;image-link&quot; title=&quot;My desktop&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/toolset.jpg&quot; width=&quot;1600&quot; height=&quot;900&quot; layout=&quot;responsive&quot; alt=&quot;My desktop&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/uploads/toolset.jpg&quot; alt=&quot;My desktop&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;У меня Dell Inspiron 13 на 256 GB SSD и 8 GB оперативки. Ну и i5 Intel. Да, я не тот крутой пользователь мака, который приходит домой, открывает одним пальцем свой ноутбук и наслаждается эксклюзивным софтом, а потом кидает в твиттер красивые скриншоты из программ.&lt;/p&gt;
 
@@ -170,7 +170,7 @@
 
 &lt;h2 id=&quot;больше-плюсов&quot;&gt;Больше плюсов&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/uploads/tim.jpg&quot; class=&quot;image-link&quot; title=&quot;Tim Cook&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/uploads/tim.jpg&quot; width=&quot;3000&quot; height=&quot;200&quot; layout=&quot;responsive&quot; alt=&quot;Tim Cook&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/uploads/tim.jpg&quot; alt=&quot;Tim Cook&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Сначала скажу, + или -. Как по мне, +. Мне понравилось. Смотрел в оригинале.&lt;/p&gt;
 

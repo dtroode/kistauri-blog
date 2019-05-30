@@ -1,0 +1,60 @@
+---
+title: Article tags
+---
+<body>
+  <header class="blog">
+    <h1>Article Tags</h1>
+    <nav>
+      <a href="/" class="back">Blog</a>
+    </nav>
+    <hr>
+  </header>
+  <main class="blog">
+    <section class="articles">
+      <article class="page tag-list-page tag-list-page-me">
+        <a href="/tags/me" class="page-link">
+          <section class="page-content">
+            <h2>Me</h2>
+            <p>Articles about me, how I work, my setup</p>
+          </section>
+        </a>
+      </article>
+      <article class="page tag-list-page tag-list-page-works">
+        <a href="/tags/works" class="page-link">
+          <section class="page-content">
+            <h2>Works</h2>
+            <p>News about my works like redesign of project</p>
+          </section>
+        </a>
+      </article>
+      <article class="page tag-list-page tag-list-page-news">
+        <a href="/tags/news" class="page-link">
+          <section class="page-content">
+            <h2>News</h2>
+            <p>My reaction on events what happening around me</p>
+          </section>
+        </a>
+      </article>
+      <article class="page tag-list-page tag-list-page-thoughts">
+        <a href="/tags/thoughts" class="page-link">
+          <section class="page-content">
+            <h2>Thoughts</h2>
+            <p>Thoughts about things in world</p>
+          </section>
+        </a>
+      </article>
+    </section>
+  </main>
+  {% include footer.html %}
+  <script async>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>

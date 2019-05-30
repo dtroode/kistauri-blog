@@ -90,8 +90,28 @@ var urlsToCache = [];
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
   urlsToCache.push('/tags/thoughts/unix-best/')
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -264,6 +284,16 @@ var urlsToCache = [];
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
 
 // Cache pages
@@ -279,6 +309,10 @@ var urlsToCache = [];
 
   
     urlsToCache.push('/portfolio/')
+  
+
+  
+    urlsToCache.push('/tags/')
   
 
   
@@ -409,11 +443,27 @@ var urlsToCache = [];
     
 
     
+      urlsToCache.push('/assets/img/uploads/apple.png')
+    
+
+    
       urlsToCache.push('/assets/img/uploads/desk.jpg')
     
 
     
+      urlsToCache.push('/assets/img/uploads/education.png')
+    
+
+    
+      urlsToCache.push('/assets/img/uploads/ios-apps.png')
+    
+
+    
       urlsToCache.push('/assets/img/uploads/ios-ui-apps.png')
+    
+
+    
+      urlsToCache.push('/assets/img/uploads/my-toolset.png')
     
 
     
@@ -426,6 +476,10 @@ var urlsToCache = [];
 
     
       urlsToCache.push('/assets/img/uploads/ubuntu.jpg')
+    
+
+    
+      urlsToCache.push('/assets/img/uploads/unix—best.png')
     
 
     

@@ -15,12 +15,12 @@
     <!-- SEO Tags and RSS support -->
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.6.0 -->
-<title>David Kistauri</title>
+<title>Article tags</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="David Kistauri" />
+<meta property="og:title" content="Article tags" />
 <meta property="og:locale" content="en_US" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"/portfolio/","headline":"David Kistauri","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"/tags/","headline":"Article tags","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -83,58 +83,48 @@
     <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   </head>
-    <body class="portfolio">
-  <header class="portfolio">
-    <h1>David Kistauri<br>>_<</h1>
+    <body>
+  <header class="blog">
+    <h1>Article Tags</h1>
     <nav>
       <a href="/" class="back">Blog</a>
     </nav>
     <hr>
   </header>
-  <main class="portfolio">
-    <section class="content me">
-      <h2>About me</h2>
-      <p>
-        <span>0.1.</span>
-        I am frontend-developer. I write HTML, CSS, JS, React (learning) code.
-        I'm in the 10th grade. Abkhazia.
-        I started to code in 2018 and have already written several websites.
-        I have a Telegram channel (link below).
-        Digital! I have experience in SMM. Not native English speaker.
-      </p>
-      <hr>
-    </section>
-    <section class="content media">
-      <h2>About media</h2>
-      <section>
-        <p><span class="link-span">0.2. </span><a href="https://youtu.be/vGIBBduGjvc">Interview on local TV-channel about how I wrote the website for school</a></p>
-      </section>
-      <hr>
-    </section>
-    <section class="content works">
-      <h2>About works</h2>
-      <section>
-        <p>
-          <span class="link-span">0.3.</span>
-          <a href="https://cyxym.cf">CYXYM website</a><br>
-          This is website for my cite Sukhum. Wrote because no one else did.
-        </p>
-        <p>
-          <span class="link-span">0.4.</span>
-          <a href="https://secondschool.gq">School website</a><br>
-          This is redesign because old one is ugly.
-        </p>
-        <p>
-          <span class="link-span">0.5.</span>
-          <a href="https://constantvalues.tk">Constant values website</a><br>
-          A lot of tables for easy learning.
-        </p>
-        <p>
-          <span class="link-span">0.6.</span>
-          <a href="https://masterbuket.com">Floristic studio website and branding</a><br>
-          Website + logo, design system, social media accounts and offline branding.
-        </p>
-      </section>
+  <main class="blog">
+    <section class="articles">
+      <article class="page tag-list-page tag-list-page-me">
+        <a href="/tags/me" class="page-link">
+          <section class="page-content">
+            <h2>Me</h2>
+            <p>Articles about me, how I work, my setup</p>
+          </section>
+        </a>
+      </article>
+      <article class="page tag-list-page tag-list-page-works">
+        <a href="/tags/works" class="page-link">
+          <section class="page-content">
+            <h2>Works</h2>
+            <p>News about my works like redesign of project</p>
+          </section>
+        </a>
+      </article>
+      <article class="page tag-list-page tag-list-page-news">
+        <a href="/tags/news" class="page-link">
+          <section class="page-content">
+            <h2>News</h2>
+            <p>My reaction on events what happening around me</p>
+          </section>
+        </a>
+      </article>
+      <article class="page tag-list-page tag-list-page-thoughts">
+        <a href="/tags/thoughts" class="page-link">
+          <section class="page-content">
+            <h2>Thoughts</h2>
+            <p>Thoughts about things in world</p>
+          </section>
+        </a>
+      </article>
     </section>
   </main>
   <footer>
@@ -150,5 +140,16 @@
     <a href="https://t.me/dtroodechannel" class="contacts-text">Telegram channel</a>
   </nav>
 </footer>
+  <script async>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>

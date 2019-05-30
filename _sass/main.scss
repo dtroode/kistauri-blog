@@ -19,7 +19,14 @@ html, button {
 }
 
 // Main style settings
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   background-color: var(--main-light);
   color: var(--main-dark);
@@ -62,32 +69,26 @@ header {
     }
   }
   &.post {
-    grid-template: 'heading links' auto 'hr date' auto / 50% 50%;
+    grid-template: 'heading links' auto 'hr empty' auto / 50% 50%;
     h1 {
       grid-area: heading;
-      line-height: 5rem;
+      font-size: 3rem;
+      line-height: 3rem;
+      word-spacing: 0;
+      letter-spacing: -0.1rem;
     }
     nav {
       grid-area: links;
-      padding: 0.25rem 1rem 0 1rem;
-      border-radius: 0.4rem 0.4rem 0 0;
+      padding: 0.25rem 1rem;
+      border-radius: 0.4rem;
     }
     hr {
       grid-area: hr;
       place-self: end;
     }
-    section.date-author {
-      grid-area: date;
-      padding-bottom: 2.5rem;
-      p {
-        padding: 0 1rem 0.25rem 1rem;
-        border-radius: 0 0 0.4rem 0.4rem;
-        background-color: var(--main-light);
-      }
-    }
   }
   nav {
-    a, span.tags-span {
+    a {
       margin-right: 0.5rem;
       font-weight: 700;
       font-style: normal;
@@ -104,26 +105,34 @@ header {
       &:hover::after {
         content: '←'
       }
+      &.back {
+        &:hover {
+          &::before {
+            content: '→'
+          }
+        }
+        &::before {
+          content: '←'
+        }
+        &::after {
+          content: '';
+        }
+      }
       &.tagname {
-        padding: 0.25rem;
-        border-radius: 2rem 0.4rem 0.4rem 2rem;
-        line-height: calc(3rem - 8px);
+        margin: 0;
+        border: 0;
         text-transform: capitalize;
         color: var(--main-light);
         &#me {
-          border: 0.25rem solid var(--accent-red);
           color: var(--accent-red);
         }
         &#works {
-          border: 0.25rem solid var(--accent-yellow);
           color: var(--accent-yellow);
         }
         &#news {
-          border: 0.25rem solid var(--accent-blue);
           color: var(--accent-blue);
         }
         &#thoughts {
-          border: 0.25rem solid var(--accent-green);
           color: var(--accent-green);
         }
         &:hover {
@@ -140,16 +149,19 @@ header {
       padding-inline-start: 0;
       border-radius: 0 0 0.4rem 0.4rem;
       list-style-type: none;
-    }
-    hr {
-      margin: 0;
+      li {
+        display: inline;
+      }
     }
   }
-  a, p, span.tags-span {
+  a, p {
     width: unset;
     font-size: 2rem;
     letter-spacing: -0.05rem;
     line-height: 3rem;
+  }
+  hr {
+    margin: 2.5rem 0 0 0;
   }
 }
 
@@ -158,6 +170,7 @@ header img, img.page-background {
 }
 
 main {
+  flex: 1 0 auto;
   &.blog {
     grid-template: 'articles' / 1fr;
     section {
@@ -188,6 +201,7 @@ main {
 }
 
 footer {
+  flex-shrink: 0;
   grid-template: 'heading links' / 50% 50%;
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
@@ -211,12 +225,6 @@ section {
       margin-top: 1.4rem;
     }
   }
-  &.date-author {
-    position: relative;
-    p {
-      font-weight: 700;
-    }
-  }
   &.text {
     justify-content: start;
     h1, h2, h3, p {
@@ -233,9 +241,8 @@ section {
       margin-top: 1.4rem;
       &:first-of-type {
         margin: 0;
-        padding: 18px;
+        padding: 1rem;
         width: unset;
-        font-style: italic;
         background-color: var(--additional-light);
       }
     }
@@ -253,31 +260,14 @@ section {
   }
   &.articles {
     display: grid;
-    grid-template: 'article article article' / 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 2.5rem;
     align-items: start;
     padding: 0;
   }
-  &.tags {
-    span {
-      & + ul {
-        li {
-          display: inline-block;
-          margin: 0;
-          a {
-            margin-right: 0;
-            margin-left: 0;
-            border-radius: 0.4rem;
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-          }
-        }
-      }
-    }
-  }
 }
 
-article.page, a.show-more, a.contacts-text {
+section.text a, article.page, a.show-more, a.contacts-text {
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
 }
 
@@ -312,19 +302,42 @@ article {
         content: '';
       }
       img.page-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 75%;
+        width: 100%;
         opacity: 0.5;
       }
       img.lazyload {
         width: 100%;
       }
     }
-    &.archive-page, &.tag-page {
+    &.archive-page, &.tag-list-page, &.tag-page {
       section.page-content {
         position: static;
+      }
+    }
+    &.tag-list-page {
+      &.tag-list-page-me {
+        background-color: var(--accent-red);
+        section.page-content {
+          background-color: var(--accent-red);
+        }
+      }
+      &.tag-list-page-works {
+        background-color: var(--accent-yellow);
+        section.page-content {
+          background-color: var(--accent-yellow);
+        }
+      }
+      &.tag-list-page-news {
+        background-color: var(--accent-blue);
+        section.page-content {
+          background-color: var(--accent-blue);
+        }
+      }
+      &.tag-list-page-thoughts {
+        background-color: var(--accent-green);
+        section.page-content {
+          background-color: var(--accent-green);
+        }
       }
     }
   }
@@ -344,9 +357,6 @@ h1 {
   width: 75%;
   span {
     color: var(--accent-blue);
-  }
-  &.text-header {
-    line-height: 5rem;
   }
 }
 
@@ -385,27 +395,12 @@ a {
       content: '⟵';
     }
   }
-  &.image-link::after, &.image-link:hover::after {
-    content: '';
-  }
   &.tagname, &.contacts-text {
     display: inline-block;
     margin-bottom: 0.4rem;
   }
   &.tagname {
     text-decoration: none;
-    &#me {
-      border-bottom: 0.25rem solid var(--accent-red);
-    }
-    &#works {
-      border-bottom: 0.25rem solid var(--accent-yellow);
-    }
-    &#news {
-      border-bottom: 0.25rem solid var(--accent-blue);
-    }
-    &#thoughts {
-      border-bottom: 0.25rem solid var(--accent-green);
-    }
     &:hover {
       color: inherit;
     }

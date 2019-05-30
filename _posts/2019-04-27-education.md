@@ -2,7 +2,7 @@
 categories: thoughts
 title: Education
 date: 2019-04-27T12:23:39.310Z
-thumbnail: /assets/img/uploads/desk.jpg
+thumbnail: /assets/img/uploads/education.png
 description: Опять образование. Опять плохо. Каждый раз такое
 ---
 Опять образование. Опять плохо. Каждый раз такое
@@ -10,7 +10,7 @@ description: Опять образование. Опять плохо. Кажд�
 
 ## Мы живем в средневековье
 
-<a href="/assets/img/uploads/desk.jpg" class="image-link" title="Desk" target="_blank"><img src="/assets/img/uploads/desk.jpg" width="3000" height="2000" layout="responsive" alt="Desk"></a>
+<img src="/assets/img/uploads/desk.jpg" alt="Desk">
 
 Опять решил поговорить на тему образования, так мною излюбленную. И это, наверное, потому, что сейчас для меня очень актуально.
 

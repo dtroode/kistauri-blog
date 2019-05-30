@@ -1,4 +1,4 @@
-function articleHeight() {
+function findArticleHeight() {
   const articles = document.querySelectorAll('.page');
   const articlesArray = [...articles];
 
@@ -8,5 +8,9 @@ function articleHeight() {
   })
 }
 
-window.addEventListener('load', () => articleHeight());
-window.addEventListener('resize', () => articleHeight());
+window.addEventListener('load', () => {
+  findArticleHeight();
+});
+window.addEventListener('resize', () => {
+  findArticleHeight();
+});

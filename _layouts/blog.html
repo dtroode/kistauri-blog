@@ -50,18 +50,14 @@
     <header class="post">
       <h1>{{ page.title }}</h1>
       <nav>
-        <a href="/">Blog</a>
-        <a href="/portfolio/">Portfolio</a>
-        <br>
+        <a href="/" class="back">Blog</a>
         <a href="/tags/{{ page.categories }}" class="tagname" id="{{ page.categories }}">{{ page.categories }}</a>
       </nav>
       <hr>
-      <section class="date-author">
-        <p>{{ page.date | date_to_string }} • David Kistauri</p>
-      </section>
     </header>
     <main class="post">
       <section class="text">
+        <p>{{ page.date | date_to_string }}</p>
         {{ content }}
       </section>
     </main>

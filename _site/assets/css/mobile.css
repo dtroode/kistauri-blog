@@ -12,11 +12,13 @@
   header.blog, header.tag, header.portfolio {
     grid-template: 'heading' auto 'links' auto 'hr' auto / 1fr;
   }
-  header.blog nav, header.tag nav, header.portfolio nav {
-    margin-bottom: 2.5rem;
+  header.blog nav a.tagname {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
   }
   header nav {
-    margin-top: 2.5rem;
+    margin: 2.5rem 0;
   }
   header hr {
     margin-top: 0;
@@ -41,10 +43,6 @@
   }
   footer {
     grid-template: 'heading' auto 'links' auto / 1fr;
-  }
-  section.tags span + ul li a, a.contacts-text {
-    font-size: 2rem;
-    line-height: 2rem;
   }
   section.date-author p {
     top: 0;

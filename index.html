@@ -3,11 +3,10 @@ title: David Kistauri Blog
 ---
 <body>
   <header class="blog">
-    <h1>David<br>Kistauri<br><span>Blog</span></h1>
+    <h1>David Kistauri<br><span>Blog</span></h1>
     <nav>
       <a href="/portfolio/">Portfolio</a>
-      <a href="/archive/">Archive</a>
-      {% include tags.html %}
+      <a href="/tags/">Tags</a>
     </nav>
     <hr>
   </header>
@@ -19,7 +18,7 @@ title: David Kistauri Blog
             <img data-src="{{ post.thumbnail }}" alt="" class="page-background lazyload">
             <section class="page-content">
               <h2>{{ post.title }}</h2>
-              <p>{{ post.description }}</p>
+              <p class="date">{{ post.date | date_to_string }}</p>
             </section>
           </a>
         </article>
