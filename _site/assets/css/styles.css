@@ -52,11 +52,7 @@ header {
   header.post {
     grid-template: 'heading links' auto 'hr empty' auto / 50% 50%; }
     header.post h1 {
-      grid-area: heading;
-      font-size: 3rem;
-      line-height: 3rem;
-      word-spacing: 0;
-      letter-spacing: -0.1rem; }
+      grid-area: heading; }
     header.post nav {
       grid-area: links;
       padding: 0.25rem 1rem;
@@ -157,18 +153,18 @@ section.page-content {
   section.page-content h2, section.page-content p {
     width: auto; }
   section.page-content p {
-    margin-top: 1.4rem; }
+    margin-top: 1rem; }
 section.text {
   justify-content: start; }
-  section.text h1, section.text h2, section.text h3, section.text p {
+  section.text h1, section.text h2, section.text p {
     width: 100%; }
   section.text h2 {
     margin-top: 1.75rem;
-    margin-bottom: 1.4rem; }
+    margin-bottom: 1rem; }
   section.text p, section.text ul, section.text ol {
     font-weight: 500; }
   section.text p {
-    margin-top: 1.4rem; }
+    margin-top: 1rem; }
     section.text p:first-of-type {
       margin: 0;
       padding: 1rem;
@@ -245,10 +241,9 @@ h1, h2, p {
 
 h1 {
   display: block;
-  font-size: 5rem;
-  line-height: 4rem;
-  word-spacing: -0.2rem;
-  letter-spacing: -0.2rem;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.1rem;
   font-weight: 700;
   width: 75%; }
   h1 span {
@@ -256,11 +251,10 @@ h1 {
 
 h2 {
   width: 75%;
-  font-size: 3.125rem;
+  font-size: 2.125rem;
   font-weight: 700;
-  line-height: 3.125rem;
-  word-spacing: -0.1rem;
-  letter-spacing: -0.1rem; }
+  line-height: 2.125rem;
+  letter-spacing: -0.05rem; }
 
 p, a, ul, ol {
   font-size: 1.22rem;
@@ -293,8 +287,8 @@ a {
     border: 0.25rem solid var(--accent-blue);
     border-radius: 0.4rem;
     text-decoration: none;
-    font-size: 1.5rem;
-    line-height: 1.5rem; }
+    font-size: 1.125rem;
+    line-height: 1.125rem; }
   a.show-more {
     padding: 0 0.25rem; }
 

@@ -1,6 +1,6 @@
 ---
 categories: thoughts
-title: Education
+title: Why education in CIS is worst
 date: 2019-04-27T12:23:39.310Z
 thumbnail: /assets/img/uploads/education.png
 description: Опять образование. Опять плохо. Каждый раз такое

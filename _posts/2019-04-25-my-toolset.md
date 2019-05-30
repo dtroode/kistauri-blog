@@ -1,7 +1,7 @@
 ---
 categories: me
 layout: blog
-title: My Toolset
+title: How and what and why I do
 date: 2019-04-25T19:59:59.000Z
 thumbnail: /assets/img/uploads/my-toolset.png
 description: Как я написал сайты? Моя коробочка с инструментами

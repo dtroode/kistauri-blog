@@ -72,10 +72,6 @@ header {
     grid-template: 'heading links' auto 'hr empty' auto / 50% 50%;
     h1 {
       grid-area: heading;
-      font-size: 3rem;
-      line-height: 3rem;
-      word-spacing: 0;
-      letter-spacing: -0.1rem;
     }
     nav {
       grid-area: links;
@@ -222,23 +218,23 @@ section {
       width: auto;
     }
     p {
-      margin-top: 1.4rem;
+      margin-top: 1rem;
     }
   }
   &.text {
     justify-content: start;
-    h1, h2, h3, p {
+    h1, h2, p {
       width: 100%;
     }
     h2 {
       margin-top: 1.75rem;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1rem;
     }
     p, ul, ol {
       font-weight: 500;
     }
     p {
-      margin-top: 1.4rem;
+      margin-top: 1rem;
       &:first-of-type {
         margin: 0;
         padding: 1rem;
@@ -349,10 +345,9 @@ h1, h2, p {
 
 h1 {
   display: block;
-  font-size: 5rem;
-  line-height: 4rem;
-  word-spacing: -0.2rem;
-  letter-spacing: -0.2rem;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.1rem;
   font-weight: 700;
   width: 75%;
   span {
@@ -362,11 +357,10 @@ h1 {
 
 h2 {
   width: 75%;
-  font-size: 3.125rem;
+  font-size: 2.125rem;
   font-weight: 700;
-  line-height: 3.125rem;
-  word-spacing: -0.1rem;
-  letter-spacing: -0.1rem;
+  line-height: 2.125rem;
+  letter-spacing: -0.05rem;
 }
 
 p, a, ul, ol {
@@ -410,8 +404,8 @@ a {
     border: 0.25rem solid var(--accent-blue);
     border-radius: 0.4rem;
     text-decoration: none;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
   }
   &.show-more {
     padding: 0 0.25rem;
