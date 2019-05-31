@@ -12,13 +12,12 @@
   header.blog, header.tag, header.portfolio {
     grid-template: 'heading' auto 'links' auto 'hr' auto / 1fr;
   }
-  header.blog nav a.tagname {
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-bottom: 0.5rem;
-  }
   header nav {
     margin: 2.5rem 0;
+  }
+  header nav a, a.contacts-text {
+    font-size: 1.5rem;
+    line-height: 1.33em;
   }
   header hr {
     margin-top: 0;
@@ -89,8 +88,5 @@
   a.show-more {
     width: unset;
     font-size: 2rem;
-  }
-  a.contacts-text {
-    font-size: 1.5rem;
   }
 }
