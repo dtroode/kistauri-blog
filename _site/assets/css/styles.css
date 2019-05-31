@@ -54,11 +54,16 @@ header {
       grid-area: hr;
       place-self: end; }
   header nav a {
-    margin-right: 0.5rem;
-    font-weight: 700;
-    color: var(--accent-blue); }
+    display: inline;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 1.125rem;
+    line-height: 3rem;
+    background-color: var(--accent-blue);
+    color: var(--main-light); }
     header nav a:hover {
-      color: inherit; }
+      background-color: var(--main-dark);
+      color: var(--main-light); }
       header nav a:hover::after {
         content: '←'; }
     header nav a::after {
@@ -108,19 +113,6 @@ header {
     list-style-type: none; }
     header nav ul li {
       display: inline; }
-  header nav a {
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.4rem;
-    background-color: var(--accent-blue);
-    color: var(--main-light); }
-    header nav a:hover {
-      background-color: var(--main-dark);
-      color: var(--main-light); }
-  header a, header p {
-    width: unset;
-    font-size: 1.83rem;
-    letter-spacing: -0.05rem; }
   header hr {
     margin: 2.5rem 0 0 0; }
 

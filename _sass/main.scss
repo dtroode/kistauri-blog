@@ -74,11 +74,16 @@ header {
   }
   nav {
     a {
-      margin-right: 0.5rem;
-      font-weight: 700;
-      color: var(--accent-blue);
+      display: inline;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.4rem;
+      font-size: 1.125rem;
+      line-height: 3rem;
+      background-color: var(--accent-blue);
+      color: var(--main-light);
       &:hover {
-        color: inherit;
+        background-color: var(--main-dark);
+        color: var(--main-light);
         &::after {
           content: '←';
         }
@@ -157,22 +162,6 @@ header {
         display: inline;
       }
     }
-  }
-  nav a {
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.4rem;
-    background-color: var(--accent-blue);
-    color: var(--main-light);
-    &:hover {
-      background-color: var(--main-dark);
-      color: var(--main-light);
-    }
-  }
-  a, p {
-    width: unset;
-    font-size: 1.83rem;
-    letter-spacing: -0.05rem;
   }
   hr {
     margin: 2.5rem 0 0 0;
