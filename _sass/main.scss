@@ -59,12 +59,12 @@ header {
   }
   nav {
     grid-area: links;
+    margin-bottom: 1rem;
     a {
-      display: inline;
+      display: inline-block;
       padding: 0.25rem 0.5rem;
       border-radius: 0.4rem;
       font-size: 1.125rem;
-      line-height: 3.5rem;
       background-color: var(--accent-blue);
       color: var(--main-light);
       &:hover {
