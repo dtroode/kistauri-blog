@@ -57,10 +57,10 @@ header {
     background-color: var(--additional-light);
   }
   &.blog, &.tag, &.portfolio {
-    grid-template: 'heading' auto 'links' auto 'hr' auto / 50% 50%;
+    grid-template: 'heading' auto 'links' auto 'hr' auto / 1fr 1fr;
   }
   &.post {
-    grid-template: 'heading links' auto 'hr empty' auto / 50% 50%;
+    grid-template: 'heading links' auto 'hr empty' auto / 1fr 1fr;
     h1 {
       grid-area: heading;
     }
@@ -183,7 +183,7 @@ main {
     }
   }
   &.post {
-    grid-template: 'text empty' / 50% 50%;
+    grid-template: 'text empty' / 1fr 1fr;
   }
   &.tag {
     grid-template: 'articles' / 1fr;
@@ -192,7 +192,7 @@ main {
     grid-template: 'section' auto / 1fr;
     section.content {
       display: grid;
-      grid-template: 'sub-heading text' / 50% 50%;
+      grid-template: 'sub-heading text' / 1fr 1fr;
       &:not(:first-of-type) {
         margin-top: 2.5rem;
       }
@@ -276,9 +276,6 @@ section {
       width: calc(100% - 0.5rem);
       background-color: var(--additional-light);
     }
-  }
-  &.post {
-    grid-template: 'text empty' / 50% 50%;
   }
   &.articles {
     display: grid;

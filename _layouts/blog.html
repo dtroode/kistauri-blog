@@ -58,7 +58,7 @@
     <main class="post">
       <section class="text">
         {% assign words = page.content | strip_html | number_of_words %}
-        <p>{{ page.date | date_to_string }} • {{ words | divided_by: 180 | plus: 1 }} min read.</p>
+        <p>{{ page.date | date_to_string }} • {{ words | divided_by: 180 | plus: 1 }} min read</p>
         {{ content }}
       </section>
     </main>

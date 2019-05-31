@@ -43,9 +43,9 @@ header {
   header.blog, header.tag, header.post {
     background-color: var(--additional-light); }
   header.blog, header.tag, header.portfolio {
-    grid-template: 'heading' auto 'links' auto 'hr' auto / 50% 50%; }
+    grid-template: 'heading' auto 'links' auto 'hr' auto / 1fr 1fr; }
   header.post {
-    grid-template: 'heading links' auto 'hr empty' auto / 50% 50%; }
+    grid-template: 'heading links' auto 'hr empty' auto / 1fr 1fr; }
     header.post h1 {
       grid-area: heading; }
     header.post nav {
@@ -126,14 +126,14 @@ main {
     main.blog section.articles {
       grid-area: articles; }
   main.post {
-    grid-template: 'text empty' / 50% 50%; }
+    grid-template: 'text empty' / 1fr 1fr; }
   main.tag {
     grid-template: 'articles' / 1fr; }
   main.portfolio {
     grid-template: 'section' auto / 1fr; }
     main.portfolio section.content {
       display: grid;
-      grid-template: 'sub-heading text' / 50% 50%; }
+      grid-template: 'sub-heading text' / 1fr 1fr; }
       main.portfolio section.content:not(:first-of-type) {
         margin-top: 2.5rem; }
       main.portfolio section.content p:not(:first-of-type) {
@@ -194,8 +194,6 @@ section.text {
     border: 0.25rem solid var(--additional-light);
     width: calc(100% - 0.5rem);
     background-color: var(--additional-light); }
-section.post {
-  grid-template: 'text empty' / 50% 50%; }
 section.articles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

@@ -21,7 +21,7 @@ title: David Kistauri Blog
               <h2>{{ post.title }}</h2>
               {% assign words = post.content | strip_html | number_of_words %}
               <p class="date-mins">{{ post.date | date_to_string }} • 
-                  {{ words | divided_by: 180 | plus: 1 }} min read.
+                  {{ words | divided_by: 180 | plus: 1 }} min read
               </p>
             </section>
           </a>
