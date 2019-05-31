@@ -13,7 +13,8 @@ title: David Kistauri Blog
   <main class="blog">
     <section class="articles">
       {% for post in site.posts limit:10 %}
-        <article class="page">
+      {% assign tag = post.categories %}
+        <article class="page {{tag}}">
           <a href="{{ post.url }}" class="page-link">
             <img data-src="{{ post.thumbnail }}" alt="" class="page-background lazyload">
             <section class="page-content">

@@ -101,7 +101,7 @@ var urlsToCache = [];
     
   
 
-  urlsToCache.push('/tags/thoughts/unix-best/')
+  urlsToCache.push('/tags/me/unix-best/')
   
     
   
@@ -332,7 +332,7 @@ var urlsToCache = [];
   
 
   
-    urlsToCache.push('/amp/tags/thoughts/unix—best')
+    urlsToCache.push('/amp/tags/me/unix—best')
   
 
   

@@ -40,23 +40,16 @@ header, main, footer {
 
 header {
   align-items: start; }
-  header.blog nav, header.tag nav, header.post nav, header.portfolio nav {
-    background-color: var(--main-light); }
   header.blog, header.tag, header.post {
     background-color: var(--additional-light); }
   header.blog, header.tag, header.portfolio {
     grid-template: 'heading' auto 'links' auto 'hr' auto / 50% 50%; }
-    header.blog nav, header.tag nav, header.portfolio nav {
-      padding: 0.25rem 1rem;
-      border-radius: 0.4rem; }
   header.post {
     grid-template: 'heading links' auto 'hr empty' auto / 50% 50%; }
     header.post h1 {
       grid-area: heading; }
     header.post nav {
-      grid-area: links;
-      padding: 0.25rem 1rem;
-      border-radius: 0.4rem; }
+      grid-area: links; }
     header.post hr {
       grid-area: hr;
       place-self: end; }
@@ -64,35 +57,49 @@ header {
     margin-right: 0.5rem;
     font-weight: 700;
     color: var(--accent-blue); }
-  header nav a:hover {
-    color: inherit; }
-  header nav a::after {
-    content: '→'; }
-  header nav a:hover::after {
-    content: "←"; }
-  header nav a.back:hover::before {
-    content: "→"; }
-  header nav a.back::before {
-    content: "←"; }
-  header nav a.back::after {
-    content: ''; }
-  header nav a.tagname {
-    margin: 0;
-    border: 0;
-    text-transform: capitalize;
-    color: var(--main-light); }
-    header nav a.tagname#me {
-      color: var(--accent-red); }
-    header nav a.tagname#works {
-      color: var(--accent-yellow); }
-    header nav a.tagname#news {
-      color: var(--accent-blue); }
-    header nav a.tagname#thoughts {
-      color: var(--accent-green); }
-    header nav a.tagname:hover {
+    header nav a:hover {
+      color: inherit; }
+      header nav a:hover::after {
+        content: '←'; }
+    header nav a::after {
+      content: '→'; }
+    header nav a.back:hover::before {
+      content: "→"; }
+    header nav a.back::before {
+      content: "←"; }
+    header nav a.back::after {
+      content: ''; }
+    header nav a.long-back:hover::before {
+      content: "⟶"; }
+    header nav a.long-back::before {
+      content: "⟵"; }
+    header nav a.long-back::after {
+      content: ''; }
+    header nav a.tagname {
+      margin: 0;
+      border: 0;
+      text-transform: capitalize;
       color: var(--main-light); }
-    header nav a.tagname::before {
-      content: '• '; }
+      header nav a.tagname#me {
+        background-color: var(--accent-red); }
+        header nav a.tagname#me:hover {
+          background-color: var(--main-dark);
+          color: var(--main-light); }
+      header nav a.tagname#works {
+        background-color: var(--accent-yellow); }
+        header nav a.tagname#works:hover {
+          background-color: var(--main-dark);
+          color: var(--main-light); }
+      header nav a.tagname#news {
+        background-color: var(--accent-blue); }
+        header nav a.tagname#news:hover {
+          background-color: var(--main-dark);
+          color: var(--main-light); }
+      header nav a.tagname#thoughts {
+        background-color: var(--accent-green); }
+        header nav a.tagname#thoughts:hover {
+          background-color: var(--main-dark);
+          color: var(--main-light); }
   header nav ul {
     margin-block-start: 0.5rem;
     margin-block-end: 0;
@@ -101,11 +108,19 @@ header {
     list-style-type: none; }
     header nav ul li {
       display: inline; }
+  header nav a {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.4rem;
+    background-color: var(--accent-blue);
+    color: var(--main-light); }
+    header nav a:hover {
+      background-color: var(--main-dark);
+      color: var(--main-light); }
   header a, header p {
     width: unset;
     font-size: 1.83rem;
-    letter-spacing: -0.05rem;
-    line-height: 3rem; }
+    letter-spacing: -0.05rem; }
   header hr {
     margin: 2.5rem 0 0 0; }
 
@@ -157,8 +172,7 @@ section.page-content {
   left: 0;
   right: 0;
   padding: 1.25rem;
-  color: var(--main-light);
-  background-color: var(--accent-blue); }
+  color: var(--main-light); }
   section.page-content h2, section.page-content p {
     width: auto; }
   section.page-content p {
@@ -197,9 +211,6 @@ section.articles {
   align-items: start;
   padding: 0; }
 
-section.text a, article.page, a.show-more, a.contacts-text {
-  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s; }
-
 section.page-content, article.page, a.page-link, header a.tagname, a.show-more, section.text img, section.text video, p:first-of-type, blockquote, pre {
   border-radius: 0.4rem; }
 
@@ -207,11 +218,26 @@ article.works p:not(:first-of-type) {
   margin-top: 1rem; }
 article.page {
   position: relative;
-  width: 100%;
-  background-color: var(--accent-blue); }
+  width: 100%; }
   article.page:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
+  article.page.me {
+    background-color: var(--accent-red); }
+    article.page.me section.page-content {
+      background-color: var(--accent-red); }
+  article.page.works {
+    background-color: var(--accent-yellow); }
+    article.page.works section.page-content {
+      background-color: var(--accent-yellow); }
+  article.page.news {
+    background-color: var(--accent-blue); }
+    article.page.news section.page-content {
+      background-color: var(--accent-blue); }
+  article.page.thoughts {
+    background-color: var(--accent-green); }
+    article.page.thoughts section.page-content {
+      background-color: var(--accent-green); }
   article.page a.page-link {
     position: relative;
     display: block;
@@ -246,6 +272,9 @@ article.page {
     article.page.tag-list-page.tag-list-page-thoughts section.page-content {
       background-color: var(--accent-green); }
 
+article.page, a {
+  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s; }
+
 h1, h2, p {
   margin: 0; }
 
@@ -276,14 +305,14 @@ p a {
 
 a {
   flex: inherit;
-  color: inherit;
+  color: var(--accent-blue);
   text-decoration: none; }
-  a:after {
-    content: '⟶'; }
   a:hover {
-    color: var(--accent-blue); }
-    a:hover:after {
+    color: inherit; }
+    a:hover::after {
       content: '⟵'; }
+  a::after {
+    content: '⟶'; }
   a.tagname, a.contacts-text:not(:last-of-type) {
     margin-bottom: 0.25rem; }
   a.tagname:hover {

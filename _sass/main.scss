@@ -53,20 +53,11 @@ header, main, footer {
 
 header {
   align-items: start;
-  &.blog, &.tag, &.post, &.portfolio {
-    nav {
-      background-color: var(--main-light);
-    }
-  }
   &.blog, &.tag, &.post {
     background-color: var(--additional-light);
   }
   &.blog, &.tag, &.portfolio {
     grid-template: 'heading' auto 'links' auto 'hr' auto / 50% 50%;
-    nav {
-      padding: 0.25rem 1rem;
-      border-radius: 0.4rem;
-    }
   }
   &.post {
     grid-template: 'heading links' auto 'hr empty' auto / 50% 50%;
@@ -75,8 +66,6 @@ header {
     }
     nav {
       grid-area: links;
-      padding: 0.25rem 1rem;
-      border-radius: 0.4rem;
     }
     hr {
       grid-area: hr;
@@ -88,16 +77,14 @@ header {
       margin-right: 0.5rem;
       font-weight: 700;
       color: var(--accent-blue);
-    }
-    a {
       &:hover {
-        color: inherit
+        color: inherit;
+        &::after {
+          content: '←';
+        }
       }
       &::after {
         content: '→';
-      }
-      &:hover::after {
-        content: '←'
       }
       &.back {
         &:hover {
@@ -112,28 +99,51 @@ header {
           content: '';
         }
       }
+      &.long-back {
+        &:hover {
+          &::before {
+            content: '⟶'
+          }
+        }
+        &::before {
+          content: '⟵'
+        }
+        &::after {
+          content: '';
+        }
+      }
       &.tagname {
         margin: 0;
         border: 0;
         text-transform: capitalize;
         color: var(--main-light);
         &#me {
-          color: var(--accent-red);
+          background-color: var(--accent-red);
+          &:hover {
+            background-color: var(--main-dark);
+            color: var(--main-light);
+          }
         }
         &#works {
-          color: var(--accent-yellow);
+          background-color: var(--accent-yellow);
+          &:hover {
+            background-color: var(--main-dark);
+            color: var(--main-light);
+          }
         }
         &#news {
-          color: var(--accent-blue);
+          background-color: var(--accent-blue);
+          &:hover {
+            background-color: var(--main-dark);
+            color: var(--main-light);
+          }
         }
         &#thoughts {
-          color: var(--accent-green);
-        }
-        &:hover {
-          color: var(--main-light);
-        }
-        &::before {
-          content: '• ';
+          background-color: var(--accent-green);
+          &:hover {
+            background-color: var(--main-dark);
+            color: var(--main-light);
+          }
         }
       }
     }
@@ -148,11 +158,21 @@ header {
       }
     }
   }
+  nav a {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.4rem;
+    background-color: var(--accent-blue);
+    color: var(--main-light);
+    &:hover {
+      background-color: var(--main-dark);
+      color: var(--main-light);
+    }
+  }
   a, p {
     width: unset;
     font-size: 1.83rem;
     letter-spacing: -0.05rem;
-    line-height: 3rem;
   }
   hr {
     margin: 2.5rem 0 0 0;
@@ -227,7 +247,6 @@ section {
     right: 0;
     padding: 1.25rem;
     color: var(--main-light);
-    background-color: var(--accent-blue);
     h2, p {
       width: auto;
     }
@@ -281,10 +300,6 @@ section {
   }
 }
 
-section.text a, article.page, a.show-more, a.contacts-text {
-  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
-}
-
 section.page-content, article.page, a.page-link, header a.tagname, a.show-more, section.text img, section.text video, p:first-of-type, blockquote, pre {
   border-radius: 0.4rem;
 }
@@ -296,10 +311,33 @@ article {
   &.page {
     position: relative;
     width: 100%;
-    background-color: var(--accent-blue);
     &:hover {
       transform: translateY(-0.5rem);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    &.me {
+      background-color: var(--accent-red);
+      section.page-content {
+        background-color: var(--accent-red);
+      }
+    }
+    &.works {
+      background-color: var(--accent-yellow);
+      section.page-content {
+        background-color: var(--accent-yellow);
+      }
+    }
+    &.news {
+      background-color: var(--accent-blue);
+      section.page-content {
+        background-color: var(--accent-blue);
+      }
+    }
+    &.thoughts {
+      background-color: var(--accent-green);
+      section.page-content {
+        background-color: var(--accent-green);
+      }
     }
     a.page-link {
       position: relative;
@@ -355,6 +393,10 @@ article {
   }
 }
 
+article.page, a {
+  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
+}
+
 h1, h2, p {
   margin: 0;
 }
@@ -393,16 +435,16 @@ p {
 
 a {
   flex: inherit;
-  color: inherit;
+  color: var(--accent-blue);
   text-decoration: none;
-  &:after {
-    content: '⟶';
-  }
   &:hover {
-    color: var(--accent-blue);
-    &:after {
+    color: inherit;
+    &::after {
       content: '⟵';
     }
+  }
+  &::after {
+    content: '⟶';
   }
   &.tagname, &.contacts-text:not(:last-of-type) {
     margin-bottom: 0.25rem;
