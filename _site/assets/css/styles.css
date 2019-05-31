@@ -58,7 +58,7 @@ header {
     padding: 0.25rem 0.5rem;
     border-radius: 0.4rem;
     font-size: 1.125rem;
-    line-height: 3rem;
+    line-height: 3.5rem;
     background-color: var(--accent-blue);
     color: var(--main-light); }
     header nav a:hover {
