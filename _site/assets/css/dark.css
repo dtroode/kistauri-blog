@@ -10,6 +10,9 @@
   header.blog, header.tag, header.post {
     background-color: var(--additional-dark);
   }
+  header.blog nav, header.tag nav, header.post nav, header.post section.date-author p, header.portfolio nav {
+    background-color: var(--main-dark);
+  }
   footer {
     background-color: var(--additional-dark);
     color: var(--additional-light);
@@ -22,7 +25,7 @@
   section.text p:first-of-type {
     background-color: var(--additional-dark);
   }
-  a.show-more {
+  a.show-more:hover {
     background-color: var(--additional-dark);
   }
   hr {

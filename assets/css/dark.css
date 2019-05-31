@@ -25,7 +25,7 @@
   section.text p:first-of-type {
     background-color: var(--additional-dark);
   }
-  a.show-more {
+  a.show-more:hover {
     background-color: var(--additional-dark);
   }
   hr {

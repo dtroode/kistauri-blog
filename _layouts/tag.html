@@ -14,7 +14,8 @@ layout: default
     <section class="articles">
       {% assign filtered_posts = site.posts | where: 'categories', page.short_name %}
       {% for post in filtered_posts %}
-        <article class="page tag-page">
+      {% assign tag = post.categories %}
+        <article class="page {{tag}} tag-page">
           <a href="{{ post.url }}" class="page-link">
             <section class="page-content">
               <h2>{{ post.title }}</h2>

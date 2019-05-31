@@ -12,7 +12,8 @@ title: Posts archive
   <main class="blog">
     <section class="articles">
       {% for post in site.posts %}
-        <article class="page archive-page">
+      {% assign tag = post.categories %}
+        <article class="page {{tag}} archive-page">
           <a href="{{ post.url }}" class="page-link">
             <section class="page-content">
               <h2>{{ post.title }}</h2>

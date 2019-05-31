@@ -218,6 +218,7 @@ article.works p:not(:first-of-type) {
   margin-top: 1rem; }
 article.page {
   position: relative;
+  align-self: stretch;
   width: 100%; }
   article.page:hover {
     transform: translateY(-0.5rem);
@@ -327,7 +328,24 @@ a {
     a.contacts-text:hover {
       background-color: var(--main-dark); }
   a.show-more {
-    padding: 0 0.25rem; }
+    display: block;
+    width: calc(100% - 1rem);
+    height: auto;
+    padding: 0 0.25rem;
+    border: 0.25rem solid var(--accent-blue);
+    font-size: 1.5em;
+    text-align: center;
+    background-color: var(--accent-blue);
+    color: var(--main-light);
+    cursor: pointer; }
+    a.show-more:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      background-color: var(--additional-light);
+      color: var(--main-dark); }
+      a.show-more:hover::after {
+        content: ''; }
+    a.show-more::after {
+      content: ''; }
 
 ul, ol {
   margin-block-start: 0.7rem;
@@ -369,24 +387,6 @@ pre {
 
 pre::-webkit-scrollbar, code::-webkit-scrollbar {
   height: 0; }
-
-a.show-more {
-  display: block;
-  border: 0.25rem solid var(--accent-blue);
-  width: calc(100% - 1rem);
-  height: auto;
-  font-size: 1.5em;
-  text-align: center;
-  background-color: var(--additional-light);
-  cursor: pointer; }
-
-a.show-more:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  color: var(--main-light);
-  background-color: var(--accent-blue); }
-
-a.show-more::after, a.show-more:hover::after {
-  content: ''; }
 
 hr {
   width: 100%;
