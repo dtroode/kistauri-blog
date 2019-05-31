@@ -177,7 +177,7 @@ section.text {
     margin-top: 1.75rem;
     margin-bottom: 1rem; }
   section.text p, section.text ul, section.text ol, section.text a {
-    font-weight: 500; }
+    font-weight: 450; }
   section.text p {
     margin-top: 1rem; }
     section.text p:first-of-type {
