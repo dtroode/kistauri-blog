@@ -39,81 +39,77 @@ header, main, footer {
   padding-left: 4.375rem; }
 
 header {
+  grid-template: 'links empty empty' auto 'heading empty empty' auto 'hr empty empty' auto / 1fr 1fr;
   align-items: start; }
   header.blog, header.tag, header.post {
     background-color: var(--additional-light); }
-  header.blog, header.tag, header.portfolio {
-    grid-template: 'heading' auto 'links' auto 'hr' auto / 1fr 1fr; }
-  header.post {
-    grid-template: 'heading links' auto 'hr empty' auto / 1fr 1fr; }
-    header.post h1 {
-      grid-area: heading; }
-    header.post nav {
-      grid-area: links; }
-    header.post hr {
-      grid-area: hr;
-      place-self: end; }
-  header nav a {
-    display: inline;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.4rem;
-    font-size: 1.125rem;
-    line-height: 3.5rem;
-    background-color: var(--accent-blue);
-    color: var(--main-light); }
-    header nav a:hover {
-      background-color: var(--main-dark);
+  header nav {
+    grid-area: links; }
+    header nav a {
+      display: inline;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.4rem;
+      font-size: 1.125rem;
+      line-height: 3.5rem;
+      background-color: var(--accent-blue);
       color: var(--main-light); }
-      header nav a:hover::after {
-        content: '←'; }
-    header nav a::after {
-      content: '→'; }
-    header nav a.back:hover::before {
-      content: "→"; }
-    header nav a.back::before {
-      content: "←"; }
-    header nav a.back::after {
-      content: ''; }
-    header nav a.long-back:hover::before {
-      content: "⟶"; }
-    header nav a.long-back::before {
-      content: "⟵"; }
-    header nav a.long-back::after {
-      content: ''; }
-    header nav a.tagname {
-      margin: 0;
-      border: 0;
-      text-transform: capitalize;
-      color: var(--main-light); }
-      header nav a.tagname#me {
-        background-color: var(--accent-red); }
-        header nav a.tagname#me:hover {
-          background-color: var(--main-dark);
-          color: var(--main-light); }
-      header nav a.tagname#works {
-        background-color: var(--accent-yellow); }
-        header nav a.tagname#works:hover {
-          background-color: var(--main-dark);
-          color: var(--main-light); }
-      header nav a.tagname#news {
-        background-color: var(--accent-blue); }
-        header nav a.tagname#news:hover {
-          background-color: var(--main-dark);
-          color: var(--main-light); }
-      header nav a.tagname#thoughts {
-        background-color: var(--accent-green); }
-        header nav a.tagname#thoughts:hover {
-          background-color: var(--main-dark);
-          color: var(--main-light); }
-  header nav ul {
-    margin-block-start: 0.5rem;
-    margin-block-end: 0;
-    padding-inline-start: 0;
-    border-radius: 0 0 0.4rem 0.4rem;
-    list-style-type: none; }
-    header nav ul li {
-      display: inline; }
+      header nav a:hover {
+        background-color: var(--main-dark);
+        color: var(--main-light); }
+        header nav a:hover::after {
+          content: '←'; }
+      header nav a::after {
+        content: '→'; }
+      header nav a.back:hover::before {
+        content: "→"; }
+      header nav a.back::before {
+        content: "←"; }
+      header nav a.back::after {
+        content: ''; }
+      header nav a.long-back:hover::before {
+        content: "⟶"; }
+      header nav a.long-back::before {
+        content: "⟵"; }
+      header nav a.long-back::after {
+        content: ''; }
+      header nav a.tagname {
+        margin: 0;
+        border: 0;
+        text-transform: capitalize;
+        color: var(--main-light); }
+        header nav a.tagname#me {
+          background-color: var(--accent-red); }
+          header nav a.tagname#me:hover {
+            background-color: var(--main-dark);
+            color: var(--main-light); }
+        header nav a.tagname#works {
+          background-color: var(--accent-yellow); }
+          header nav a.tagname#works:hover {
+            background-color: var(--main-dark);
+            color: var(--main-light); }
+        header nav a.tagname#news {
+          background-color: var(--accent-blue); }
+          header nav a.tagname#news:hover {
+            background-color: var(--main-dark);
+            color: var(--main-light); }
+        header nav a.tagname#thoughts {
+          background-color: var(--accent-green); }
+          header nav a.tagname#thoughts:hover {
+            background-color: var(--main-dark);
+            color: var(--main-light); }
+    header nav ul {
+      margin-block-start: 0.5rem;
+      margin-block-end: 0;
+      padding-inline-start: 0;
+      border-radius: 0 0 0.4rem 0.4rem;
+      list-style-type: none; }
+      header nav ul li {
+        display: inline; }
+  header h1 {
+    grid-area: heading; }
   header hr {
+    grid-area: hr;
+    place-self: end;
     margin: 2.5rem 0 0 0; }
 
 header img, img.page-background {

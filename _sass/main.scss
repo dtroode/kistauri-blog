@@ -52,27 +52,13 @@ header, main, footer {
 }
 
 header {
+  grid-template: 'links empty empty' auto 'heading empty empty' auto 'hr empty empty' auto / 1fr 1fr;
   align-items: start;
   &.blog, &.tag, &.post {
     background-color: var(--additional-light);
   }
-  &.blog, &.tag, &.portfolio {
-    grid-template: 'heading' auto 'links' auto 'hr' auto / 1fr 1fr;
-  }
-  &.post {
-    grid-template: 'heading links' auto 'hr empty' auto / 1fr 1fr;
-    h1 {
-      grid-area: heading;
-    }
-    nav {
-      grid-area: links;
-    }
-    hr {
-      grid-area: hr;
-      place-self: end;
-    }
-  }
   nav {
+    grid-area: links;
     a {
       display: inline;
       padding: 0.25rem 0.5rem;
@@ -163,7 +149,12 @@ header {
       }
     }
   }
+  h1 {
+    grid-area: heading;
+  }
   hr {
+    grid-area: hr;
+    place-self: end;
     margin: 2.5rem 0 0 0;
   }
 }
