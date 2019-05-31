@@ -151,6 +151,8 @@ footer {
       margin-top: 1rem; }
       footer section.links-container nav:nth-of-type(1) {
         grid-area: links; }
+        footer section.links-container nav:nth-of-type(1) a::after {
+          content: "→"; }
       footer section.links-container nav:nth-of-type(2) {
         grid-area: social; }
 
@@ -296,10 +298,8 @@ a {
   text-decoration: none; }
   a:hover {
     color: inherit; }
-    a:hover::after {
-      content: '⟵'; }
   a::after {
-    content: '⟶'; }
+    content: '↗'; }
   a.tagname, a.contacts-text:not(:last-of-type) {
     margin-bottom: 0.25rem; }
   a.tagname:hover {
