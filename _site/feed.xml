@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <description></description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Jun 2019 12:51:51 +0300</pubDate>
-    <lastBuildDate>Sat, 01 Jun 2019 12:51:51 +0300</lastBuildDate>
+    <title>David Kistauri Blog</title>
+    <description>David Kistauri. Frontend developer, web designer, SMM specialist</description>
+    <link>dtroode.netlify.com</link>
+    <atom:link href="https://dtroode.ntlify.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 01 Jun 2019 12:58:25 +0300</pubDate>
+    <lastBuildDate>Sat, 01 Jun 2019 12:58:25 +0300</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
 
     
