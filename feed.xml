@@ -6,7 +6,7 @@ layout: null
   <channel>
     <title>David Kistauri Blog</title>
     <description>David Kistauri. Frontend developer, web designer, SMM specialist</description>
-    <link>dtroode.netlify.com/</link>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="dtroode.netlify.com/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
