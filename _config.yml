@@ -28,3 +28,7 @@ ampdir: /amp
 permalink: /tags/:categories/:title/
 
 include: [.htaccess]
+
+title: "David Kistauri Blog"
+description: "David Kistauri. Frontend developer, web designer, SMM specialist"
+url: "dtroode.netlify.com"
