@@ -90,18 +90,6 @@ var urlsToCache = [];
   
     
   
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
 
   urlsToCache.push('/tags/me/unix-best/')
   
@@ -189,32 +177,8 @@ var urlsToCache = [];
   
     
   
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
 
   urlsToCache.push('/tags/thoughts/education/')
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
   
     
   
@@ -418,30 +382,6 @@ var urlsToCache = [];
 
     
       urlsToCache.push('/assets/img/logo/icon-64.png')
-    
-
-    
-      urlsToCache.push('/assets/img/logo/icon-block-128.png')
-    
-
-    
-      urlsToCache.push('/assets/img/logo/icon-block-16.png')
-    
-
-    
-      urlsToCache.push('/assets/img/logo/icon-block-256.png')
-    
-
-    
-      urlsToCache.push('/assets/img/logo/icon-block-32.png')
-    
-
-    
-      urlsToCache.push('/assets/img/logo/icon-block-64.png')
-    
-
-    
-      urlsToCache.push('/assets/img/logo/icon-block.png')
     
 
     

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>David Kistauri Blog</title>
-    <description>David Kistauri. Frontend developer, web designer, SMM specialist</description>
-    <link>dtroode.netlify.com/</link>
-    <atom:link href="dtroode.netlify.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Jun 2019 12:41:36 +0300</pubDate>
-    <lastBuildDate>Sat, 01 Jun 2019 12:41:36 +0300</lastBuildDate>
+    <title></title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 01 Jun 2019 12:51:51 +0300</pubDate>
+    <lastBuildDate>Sat, 01 Jun 2019 12:51:51 +0300</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
 
     
@@ -43,8 +43,8 @@
 &lt;p&gt;If you can recommend some, please write to me in &lt;a href=&quot;https://t.me/dtroode&quot;&gt;Telegram&lt;/a&gt; or mention me in &lt;a href=&quot;https://twitter.com/dtroode&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 May 2019 21:48:59 +0300</pubDate>
-        <link>dtroode.netlify.com/tags/thoughts/ios-apps/</link>
-        <guid isPermaLink="true">dtroode.netlify.com/tags/thoughts/ios-apps/</guid>
+        <link>/tags/thoughts/ios-apps/</link>
+        <guid isPermaLink="true">/tags/thoughts/ios-apps/</guid>
         
         
         <category>thoughts</category>
@@ -73,8 +73,8 @@
 &lt;p&gt;Я переношу основную работу на Unix.&lt;/p&gt;
 </description>
         <pubDate>Sat, 27 Apr 2019 18:08:25 +0300</pubDate>
-        <link>dtroode.netlify.com/tags/me/unix-best/</link>
-        <guid isPermaLink="true">dtroode.netlify.com/tags/me/unix-best/</guid>
+        <link>/tags/me/unix-best/</link>
+        <guid isPermaLink="true">/tags/me/unix-best/</guid>
         
         
         <category>me</category>
@@ -115,8 +115,8 @@
 &lt;p&gt;Будем жить, следить за этим и менять все в лучшую сторону.&lt;/p&gt;
 </description>
         <pubDate>Sat, 27 Apr 2019 15:23:39 +0300</pubDate>
-        <link>dtroode.netlify.com/tags/thoughts/education/</link>
-        <guid isPermaLink="true">dtroode.netlify.com/tags/thoughts/education/</guid>
+        <link>/tags/thoughts/education/</link>
+        <guid isPermaLink="true">/tags/thoughts/education/</guid>
         
         
         <category>thoughts</category>
@@ -223,8 +223,8 @@
 &lt;p&gt;Я полагаю, что это будет цикл статей, если нет, то заранее извинюсь. Планирую описать более подробно свой рабочий процесс. Лайк, шер, алишер.&lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Apr 2019 22:59:59 +0300</pubDate>
-        <link>dtroode.netlify.com/tags/me/my-toolset/</link>
-        <guid isPermaLink="true">dtroode.netlify.com/tags/me/my-toolset/</guid>
+        <link>/tags/me/my-toolset/</link>
+        <guid isPermaLink="true">/tags/me/my-toolset/</guid>
         
         
         <category>me</category>
@@ -250,8 +250,8 @@
 &lt;p&gt;+&lt;/p&gt;
 </description>
         <pubDate>Mon, 25 Mar 2019 21:45:00 +0300</pubDate>
-        <link>dtroode.netlify.com/tags/news/apple/</link>
-        <guid isPermaLink="true">dtroode.netlify.com/tags/news/apple/</guid>
+        <link>/tags/news/apple/</link>
+        <guid isPermaLink="true">/tags/news/apple/</guid>
         
         
         <category>news</category>
