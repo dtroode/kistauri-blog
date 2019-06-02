@@ -60,11 +60,11 @@
   p, a, ul, ol, blockquote {
     width: auto;
   }
-  a, ul, ol {
-    font-size: 1.83rem;
-  }
-  p, blockquote {
+  p, ul, ol, blockquote {
     font-size: 1.5rem;
+  }
+  a {
+    font-size: 1.83rem;
   }
   blockquote {
     background-color: var(--additional-dark);
