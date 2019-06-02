@@ -217,6 +217,9 @@ footer {
       }
       &:nth-of-type(2) {
         grid-area: social;
+        a::after {
+          content: '↓';
+        }
       }
     }
   }
@@ -420,9 +423,6 @@ a {
   text-decoration: none;
   &:hover {
     color: inherit;
-  }
-  &::after {
-    content: '↗';
   }
   &.tagname, &.contacts-text:not(:last-of-type) {
     margin-bottom: 0.25rem;

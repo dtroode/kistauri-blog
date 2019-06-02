@@ -155,6 +155,8 @@ footer {
           content: "→"; }
       footer section.links-container nav:nth-of-type(2) {
         grid-area: social; }
+        footer section.links-container nav:nth-of-type(2) a::after {
+          content: '↓'; }
 
 section.page-content {
   position: absolute;
@@ -298,8 +300,6 @@ a {
   text-decoration: none; }
   a:hover {
     color: inherit; }
-  a::after {
-    content: '↗'; }
   a.tagname, a.contacts-text:not(:last-of-type) {
     margin-bottom: 0.25rem; }
   a.tagname:hover {

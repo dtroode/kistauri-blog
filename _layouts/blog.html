@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
 
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
     <!-- AMP -->
     <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url | append: '/' }}">
 
