@@ -30,18 +30,6 @@ body {
   margin: 0;
   background-color: var(--main-light);
   color: var(--main-dark);
-  &.portfolio::before {
-    content: '';
-    position: fixed;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('/assets/img/bg-light.jpg');
-    background-size: cover;
-    background-position: left center;
-    background-attachment: fixed;
-    opacity: 0.75;
-  }
 }
 
 header, main, footer {
@@ -159,7 +147,7 @@ header {
   }
 }
 
-header img, img.page-background {
+img.page-background {
   pointer-events: none;
 }
 
@@ -211,14 +199,24 @@ footer {
       margin-top: 1rem;
       &:nth-of-type(1) {
         grid-area: links;
-        a::after {
-          content: '→'
+        a {
+          &:hover::after {
+            content: '←';
+          }
+          &::after {
+            content: '→';
+          }
         }
       }
       &:nth-of-type(2) {
         grid-area: social;
-        a::after {
-          content: '↓';
+        a {
+          &:hover::after {
+            content: '↑';
+          }
+          &::after {
+            content: '↓';
+          }
         }
       }
     }

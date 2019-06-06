@@ -20,17 +20,6 @@ body {
   margin: 0;
   background-color: var(--main-light);
   color: var(--main-dark); }
-  body.portfolio::before {
-    content: '';
-    position: fixed;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("/assets/img/bg-light.jpg");
-    background-size: cover;
-    background-position: left center;
-    background-attachment: fixed;
-    opacity: 0.75; }
 
 header, main, footer {
   display: grid;
@@ -112,7 +101,7 @@ header {
     place-self: end;
     margin: 2.5rem 0 0 0; }
 
-header img, img.page-background {
+img.page-background {
   pointer-events: none; }
 
 main {
@@ -151,10 +140,14 @@ footer {
       margin-top: 1rem; }
       footer section.links-container nav:nth-of-type(1) {
         grid-area: links; }
+        footer section.links-container nav:nth-of-type(1) a:hover::after {
+          content: '←'; }
         footer section.links-container nav:nth-of-type(1) a::after {
-          content: "→"; }
+          content: '→'; }
       footer section.links-container nav:nth-of-type(2) {
         grid-area: social; }
+        footer section.links-container nav:nth-of-type(2) a:hover::after {
+          content: '↑'; }
         footer section.links-container nav:nth-of-type(2) a::after {
           content: '↓'; }
 

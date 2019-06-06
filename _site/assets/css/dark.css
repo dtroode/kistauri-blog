@@ -4,9 +4,6 @@
     background-color: var(--main-dark);
     color: var(--main-light);
   }
-  body.portfolio::before {
-    background-image: url('/assets/img/bg-dark.jpg');
-  }
   header.blog, header.tag, header.post {
     background-color: var(--additional-dark);
   }

@@ -86,10 +86,6 @@ var urlsToCache = [];
   
     
   
-    
-  
-    
-  
 
   urlsToCache.push('/tags/me/unix-best/')
   
@@ -173,16 +169,8 @@ var urlsToCache = [];
   
     
   
-    
-  
-    
-  
 
   urlsToCache.push('/tags/thoughts/education/')
-  
-    
-  
-    
   
     
   
@@ -354,14 +342,6 @@ var urlsToCache = [];
 
     
 
-    
-
-    
-      urlsToCache.push('/assets/img/bg-dark.jpg')
-    
-
-    
-      urlsToCache.push('/assets/img/bg-light.jpg')
     
 
     
