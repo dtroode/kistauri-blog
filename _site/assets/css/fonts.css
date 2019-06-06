@@ -87,6 +87,22 @@ Usage:
   font-display: swap;
   src: url("/assets/font/Inter-italic.var.woff2?v=3.5") format("woff2");
 }
+@font-face {
+  font-family: 'New York';
+  font-weight: normal;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  font-display: swap;
+  src: url("/assets/font/NewYorkMedium-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: 'New York';
+  font-weight: normal;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  font-display: swap;
+  src: url("/assets/font/NewYorkMedium-RegularItalic.otf") format("otf");
+}
 
 
 /* --------------------------------------------------------------------------
