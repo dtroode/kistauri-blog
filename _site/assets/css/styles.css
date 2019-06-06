@@ -170,7 +170,7 @@ section.text {
     margin-top: 1.75rem;
     margin-bottom: 1rem; }
   section.text p, section.text ul, section.text ol, section.text a {
-    font-family: 'New York';
+    font-family: 'New York', serif;
     font-weight: normal; }
   section.text p {
     margin-top: 1rem; }
