@@ -93,7 +93,7 @@ Usage:
   font-style: normal;
   font-named-instance: 'Regular';
   font-display: swap;
-  src: url("/assets/font/NewYorkMedium-Medium.woff2?v=3.5") format("woff2");
+  src: url("/assets/font/NewYorkMedium-Regular.woff2?v=3.5") format("woff2");
 }
 @font-face {
   font-family: 'New York';
@@ -101,7 +101,7 @@ Usage:
   font-style: italic;
   font-named-instance: 'Italic';
   font-display: swap;
-  src: url("/assets/font/NewYorkMedium-MediumItalic.woff2?v=3.5") format("woff2");
+  src: url("/assets/font/NewYorkMedium-RegularItalic.woff2?v=3.5") format("woff2");
 }
 
 
