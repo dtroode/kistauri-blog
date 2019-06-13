@@ -30,8 +30,6 @@ header, main, footer {
 header {
   grid-template: 'links empty empty' auto 'heading empty empty' auto 'hr empty empty' auto / 1fr 1fr;
   align-items: start; }
-  header.blog, header.tag, header.post {
-    background-color: var(--additional-light); }
   header nav {
     grid-area: links;
     margin-bottom: 1rem; }
@@ -101,28 +99,8 @@ header {
     place-self: end;
     margin: 2.5rem 0 0 0; }
 
-img.page-background {
-  pointer-events: none; }
-
 main {
   flex: 1 0 auto; }
-  main.blog {
-    grid-template: 'articles' / 1fr; }
-    main.blog section.articles {
-      grid-area: articles; }
-  main.post {
-    grid-template: 'text empty' / 1fr 1fr; }
-  main.tag {
-    grid-template: 'articles' / 1fr; }
-  main.portfolio {
-    grid-template: 'section' auto / 1fr; }
-    main.portfolio section.content {
-      display: grid;
-      grid-template: 'sub-heading text' / 1fr 1fr; }
-      main.portfolio section.content:not(:first-of-type) {
-        margin-top: 2.5rem; }
-      main.portfolio section.content p:not(:first-of-type) {
-        margin-top: 1rem; }
 
 footer {
   flex-shrink: 0;
@@ -151,113 +129,13 @@ footer {
         footer section.links-container nav:nth-of-type(2) a::after {
           content: '↓'; }
 
-section.page-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.25rem;
-  color: var(--main-light); }
-  section.page-content h2, section.page-content p {
-    width: auto; }
-  section.page-content p {
-    margin-top: 1rem; }
-section.text {
-  justify-content: start; }
-  section.text h1, section.text h2, section.text p {
-    width: 100%; }
-  section.text h2 {
-    margin-top: 1.75rem;
-    margin-bottom: 1rem; }
-  section.text p, section.text ul, section.text ol, section.text a {
-    font-family: 'New York', serif;
-    font-weight: normal; }
-  section.text p {
-    margin-top: 1rem; }
-    section.text p:first-of-type {
-      margin: 0;
-      padding: 1rem;
-      width: unset;
-      background-color: var(--additional-light); }
-  section.text a {
-    font-size: inherit;
-    color: var(--accent-blue); }
-    section.text a:hover {
-      color: inherit; }
-  section.text img, section.text video {
-    border: 0.25rem solid var(--additional-light);
-    width: calc(100% - 0.5rem);
-    background-color: var(--additional-light); }
-section.articles {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 2.5rem;
-  align-items: start;
-  padding: 0; }
-
-section.page-content, article.page, a.page-link, header a.tagname, a.show-more, section.text img, section.text video, p:first-of-type, blockquote, pre {
+header a.tagname, section.text img, section.text video, p:first-of-type, blockquote, pre {
   border-radius: 0.4rem; }
 
 article.works p:not(:first-of-type) {
   margin-top: 1rem; }
-article.page {
-  position: relative;
-  align-self: stretch;
-  width: 100%; }
-  article.page:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
-  article.page.me {
-    background-color: var(--accent-red); }
-    article.page.me section.page-content {
-      background-color: var(--accent-red); }
-  article.page.works {
-    background-color: var(--accent-yellow); }
-    article.page.works section.page-content {
-      background-color: var(--accent-yellow); }
-  article.page.news {
-    background-color: var(--accent-blue); }
-    article.page.news section.page-content {
-      background-color: var(--accent-blue); }
-  article.page.thoughts {
-    background-color: var(--accent-green); }
-    article.page.thoughts section.page-content {
-      background-color: var(--accent-green); }
-  article.page a.page-link {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; }
-    article.page a.page-link:hover {
-      color: inherit; }
-    article.page a.page-link::after, article.page a.page-link:hover::after {
-      content: ''; }
-    article.page a.page-link img.page-background {
-      width: 100%;
-      opacity: 0.5; }
-    article.page a.page-link img.lazyload {
-      width: 100%; }
-  article.page.archive-page section.page-content, article.page.tag-list-page section.page-content, article.page.tag-page section.page-content {
-    position: static; }
-  article.page.tag-list-page.tag-list-page-me {
-    background-color: var(--accent-red); }
-    article.page.tag-list-page.tag-list-page-me section.page-content {
-      background-color: var(--accent-red); }
-  article.page.tag-list-page.tag-list-page-works {
-    background-color: var(--accent-yellow); }
-    article.page.tag-list-page.tag-list-page-works section.page-content {
-      background-color: var(--accent-yellow); }
-  article.page.tag-list-page.tag-list-page-news {
-    background-color: var(--accent-blue); }
-    article.page.tag-list-page.tag-list-page-news section.page-content {
-      background-color: var(--accent-blue); }
-  article.page.tag-list-page.tag-list-page-thoughts {
-    background-color: var(--accent-green); }
-    article.page.tag-list-page.tag-list-page-thoughts section.page-content {
-      background-color: var(--accent-green); }
 
-article.page, a {
+a {
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s; }
 
 h1, h2, p {
@@ -307,25 +185,6 @@ a {
     color: var(--main-light); }
     a.contacts-text:hover {
       background-color: var(--main-dark); }
-  a.show-more {
-    display: block;
-    width: calc(100% - 1rem);
-    height: auto;
-    padding: 0 0.25rem;
-    border: 0.25rem solid var(--accent-blue);
-    font-size: 1.5em;
-    text-align: center;
-    background-color: var(--accent-blue);
-    color: var(--main-light);
-    cursor: pointer; }
-    a.show-more:hover {
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      background-color: var(--additional-light);
-      color: var(--main-dark); }
-      a.show-more:hover::after {
-        content: ''; }
-    a.show-more::after {
-      content: ''; }
 
 ul, ol {
   margin-block-start: 0.7rem;

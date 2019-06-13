@@ -86,16 +86,8 @@ var urlsToCache = [];
   
     
   
-    
-  
-    
-  
 
   urlsToCache.push('/tags/me/unix-best/')
-  
-    
-  
-    
   
     
   
@@ -260,10 +252,6 @@ var urlsToCache = [];
   
     
   
-    
-  
-    
-  
 
 
 // Cache pages
@@ -319,10 +307,6 @@ var urlsToCache = [];
     
 
     
-      urlsToCache.push('/assets/css/brutalist.css')
-    
-
-    
       urlsToCache.push('/assets/css/colors.css')
     
 
@@ -332,10 +316,6 @@ var urlsToCache = [];
 
     
       urlsToCache.push('/assets/css/fonts.css')
-    
-
-    
-      urlsToCache.push('/assets/css/mobile.css')
     
 
     

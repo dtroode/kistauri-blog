@@ -1,82 +1,71 @@
-/* Mobile style settings */
 @media screen and (max-width: 750px) {
-  header, main, footer {
+  footer, header, main {
     padding-top: 2.5rem;
     padding-right: 2.5rem;
-    padding-left: 2.5rem;
-  }
+    padding-left: 2.5rem; }
+
   header {
-    grid-template: 'links' auto 'heading' auto 'hr' auto / 1fr;
-  }
-  header a, header p, header span.tags-span {
-    font-size: 2.5rem;
-    letter-spacing: -0.1rem;
-  }
-  header nav a, a.contacts-text {
-    font-size: 1.5rem;
-  }
+    grid-template: 'links' auto 'heading' auto 'hr' auto/1fr; }
+    header a, header p, header span.tags-span {
+      font-size: 2.5rem;
+      letter-spacing: -.1rem; }
+    header nav a {
+      font-size: 1.5rem; }
+
+  a.contacts-text {
+    font-size: 1.5rem; }
+
   main.blog {
-    grid-template: 'categories' auto 'articles' auto / 1fr;
-  }
+    grid-template: 'categories' auto 'articles' auto/1fr; }
   main.post {
-    grid-template: 'text' auto 'empty' auto / 1fr;
-  }
+    grid-template: 'text' auto 'empty' auto/1fr; }
   main.tag {
-    grid-template: 'articles' auto 'empty' auto / 1fr;
-  }
-  main.tag section.articles {
-    padding-top: 0;
-  }
+    grid-template: 'articles' auto 'empty' auto/1fr; }
+    main.tag section.articles {
+      padding-top: 0; }
   main.portfolio section.content {
-    grid-template: 'sub-heading' auto 'text' auto / 1fr;
-  }
+    grid-template: 'sub-heading' auto 'text' auto/1fr; }
+
   footer {
-    grid-template: 'heading' auto 'links-container' auto / 1fr;
-  }
-  footer section.links-container {
-    grid-template: 'paragraph' auto 'links' auto 'social' auto / 1fr;
-  }
+    grid-template: 'heading' auto 'links-container' auto/1fr; }
+    footer section.links-container {
+      grid-template: 'paragraph' auto 'links' auto 'social' auto/1fr; }
+
   section.date-author p {
     top: 0;
     bottom: unset;
-    left: 0;
-  }
+    left: 0; }
   section.articles {
-    grid-template: 'article' / 1fr;
-  }
+    grid-template: 'article'/1fr; }
+
   article.page {
-    width: auto;
-  }
-  article.page.archive-page h2, article.page.tag-page h2 {
-    margin-bottom: 0;
-  }
+    width: auto; }
+    article.page.archive-page h2, article.page.tag-page h2 {
+      margin-bottom: 0; }
   article.empty {
-    display: none;
-  }
+    display: none; }
+
   h2 {
     width: auto;
-    margin-bottom: 1.4rem;
-  }
-  p, a, ul, ol, blockquote {
-    width: auto;
-  }
-  p, ul, ol, blockquote {
-    font-size: 1.5rem;
-  }
+    margin-bottom: 1.4rem; }
+
+  a, blockquote, ol, p, ul {
+    width: auto; }
+
+  blockquote, ol, p, ul {
+    font-size: 1.5rem; }
+
   a {
-    font-size: 1.83rem;
-  }
+    font-size: 1.83rem; }
+
   blockquote {
-    background-color: var(--additional-dark);
-  }
+    background-color: var(--additional-dark); }
+
   pre {
-    width: calc(100vw - 5rem);
-  }
-  pre code {
-    font-size: 1.5rem;
-  }
+    width: calc(100vw - 5rem); }
+    pre code {
+      font-size: 1.5rem; }
+
   a.show-more {
     width: unset;
-    font-size: 2rem;
-  }
-}
+    font-size: 2rem; } }
