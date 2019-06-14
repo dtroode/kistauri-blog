@@ -86,6 +86,8 @@ var urlsToCache = [];
   
     
   
+    
+  
 
   urlsToCache.push('/tags/me/unix-best/')
   
@@ -169,8 +171,12 @@ var urlsToCache = [];
   
     
   
+    
+  
 
   urlsToCache.push('/tags/thoughts/education/')
+  
+    
   
     
   
@@ -424,6 +430,10 @@ var urlsToCache = [];
       urlsToCache.push('/manifest.json')
     
 
+    
+
+    
+      urlsToCache.push('/package-lock.json')
     
 
     
