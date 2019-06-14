@@ -8,17 +8,6 @@
     &.blog, &.post, &.tag {
       background-color: var(--additional-dark);
     }
-    &.blog nav, &.tag nav {
-      background-color: var(--main-dark);
-    }
-    &.post {
-      nav, section.date-author p {
-        background-color: var(--main-dark);
-      }
-    }
-    &.portfolio nav {
-      background-color: var(--main-dark);
-    }
   }
 
   footer {

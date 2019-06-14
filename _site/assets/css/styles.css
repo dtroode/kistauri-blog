@@ -1,11 +1,11 @@
 @charset "UTF-8";
 html, button {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-feature-settings: 'case' 1, 'frac' 1; }
 
 @supports (font-variation-settings: normal) {
   html, button {
-    font-family: 'Inter var', sans-serif; } }
+    font-family: 'Inter var', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
 *::selection, *::-moz-selection {
   background: var(--accent-blue);
   color: var(--main-dark); }

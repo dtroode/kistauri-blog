@@ -41,12 +41,8 @@
     }
   }
   section {
-    &.date-author p {
-      top: 0;
-      bottom: unset;
-      left: 0;
-    }
     &.articles {
+      grid-template-columns: unset;
       grid-template: 'article'/1fr;
     }
   }

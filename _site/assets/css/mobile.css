@@ -31,11 +31,8 @@
     footer section.links-container {
       grid-template: 'paragraph' auto 'links' auto 'social' auto/1fr; }
 
-  section.date-author p {
-    top: 0;
-    bottom: unset;
-    left: 0; }
   section.articles {
+    grid-template-columns: unset;
     grid-template: 'article'/1fr; }
 
   article.page {
