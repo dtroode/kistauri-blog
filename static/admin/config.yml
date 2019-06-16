@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: master
 
 publish_mode: editorial_workflow
 
