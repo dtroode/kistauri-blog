@@ -3,14 +3,14 @@ categories: news
 layout: blog
 title: My + thoughts + about + Apple + March + event
 date: 2019-03-25T18:45:00.000Z
-hero: /apple.png
+hero: /img/apple.png
 description: Итоги мартовской презентации Эпл. Больше подписок!
 ---
 Итоги мартовской презентации Эпл. Больше подписок!
 
 ## Больше плюсов
 
-![Tim Cook](/tim.jpg)
+![Tim Cook](/img/tim.jpg)
 
 Сначала скажу, + или -. Как по мне, +. Мне понравилось. Смотрел в оригинале.
 

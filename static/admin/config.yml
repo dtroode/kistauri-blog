@@ -3,13 +3,13 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: src/images
-public_folder: assets
+media_folder: static/img
+public_folder: img
 
 collections:
   - name: blog
     label: Blog
-    folder: src/pages/posts
+    folder: src/pages/blog
     create: true
     fields:
       - {tag: "Layout", name: "layout", widget: "hidden", default: "blog"}

@@ -3,14 +3,14 @@ layout: blog
 title: Want to build a perfect iOS app? Do like they
 description: If your app in this list — it's time to celebrate it!
 date: 2019-05-21T18:48:59.664Z
-hero: /ios-apps.png
+hero: /img/ios-apps.png
 categories: thoughts
 ---
 If your app in this list — it's time to celebrate it!
 
 ## Best apps
 
-![Good apps](/ios-ui-apps.png)
+![Good apps](/img/ios-ui-apps.png)
 
 In iOS 11 Apple finally realesed new UI. Previously they tested it in Apple Music app. I am talking about this new design of standard apps with big (very big headers). There's a lot of people who hate this design, but I really love it. This is because iOS using very good font — San Francisco.
 
