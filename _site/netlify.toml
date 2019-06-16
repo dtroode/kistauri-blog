@@ -1,4 +1,0 @@
-[build]
-  command = "bundle exec jekyll build"
-  functions = "functions"
-  publish = "_site"

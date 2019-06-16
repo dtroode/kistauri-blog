@@ -1,0 +1,30 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--main-dark);
+    color: var(--main-light);
+  }
+  header.blog, header.post, header.tag {
+    background-color: var(--additional-dark) !important;
+  }
+  footer {
+    background-color: var(--additional-dark);
+    color: var(--additional-light);
+  }
+  footer hr {
+    border-top: 2px solid var(--additional-light);
+    border-bottom: 2px solid var(--additional-light);
+    background-color: var(--additional-light);
+  }
+  a.show-more:hover, section.text p.date-mins {
+    background-color: var(--additional-dark);
+  }
+  hr {
+    border-top: 2px solid var(--main-light);
+    border-bottom: 2px solid var(--main-light);
+    background-color: var(--main-light);
+  }
+  section.text img, section.text pre, section.text video {
+    border: 0.25rem solid var(--additional-dark);
+    background-color: var(--additional-dark);
+  }
+}
