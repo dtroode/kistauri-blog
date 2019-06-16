@@ -3,13 +3,13 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: static/img
-public_folder: img
+media_folder: "static/img"
+public_folder: "img"
 
 collections:
-  - name: blog
-    label: Blog
-    folder: src/pages/blog
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
     create: true
     slug: "{{slug}}"
     fields:
