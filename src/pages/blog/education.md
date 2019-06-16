@@ -1,4 +1,6 @@
 ---
+templateKey: 'blog-page'
+path: /blog
 categories: thoughts
 title: Why education in CIS is worst
 date: 2019-04-27T12:23:39.310Z

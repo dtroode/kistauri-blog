@@ -1,5 +1,6 @@
 ---
-layout: blog
+templateKey: 'blog-page'
+path: /blog
 title: Want to build a perfect iOS app? Do like they
 description: If your app in this list — it's time to celebrate it!
 date: 2019-05-21T18:48:59.664Z

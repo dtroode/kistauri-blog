@@ -1,6 +1,7 @@
 ---
+templateKey: 'blog-page'
+path: /blog
 categories: me
-layout: blog
 title: How and what and why I do
 date: 2019-04-25T19:59:59.000Z
 hero: /img/my-toolset.png

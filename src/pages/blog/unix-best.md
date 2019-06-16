@@ -1,6 +1,7 @@
 ---
+templateKey: 'blog-page'
+path: /blog
 categories: me
-layout: blog
 title: Unix or Windows? Of course first
 date: 2019-04-27T15:08:25.347Z
 hero: /img/unix—best.png
