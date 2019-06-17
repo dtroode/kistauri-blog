@@ -12,7 +12,7 @@ const ArchivePage = (props) => {
     <Layout pageClass="archive" title="David Kistauri Archive">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Archive</title>
+        <title>Blog Archive</title>
         <link rel="canonical" href="http://dtroode.netlify.com/archive" />
       </Helmet>
       <section className="articles">
