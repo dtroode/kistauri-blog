@@ -8,36 +8,24 @@ const ListLink = props => (
 
 const Navbar = props => {
   let nav = '';
-  let color = '';
-  let categoryLink = "/" + props.category;
 
   if (props.className === 'post') {
-    if (props.category === 'me') {
-      color = 'var(--accent-red)'
-    } else if (props.category === 'works') {
-      color = 'var(--accent-yellow)'
-    } else if (props.category === 'news') {
-      color = 'var(--accent-blue)'
-    } else {
-      color = 'var(--accent-green)'
-    }
     nav = (
       <nav>
-        <ListLink to="/" className="long-back">Blog</ListLink>
-        <ListLink to={categoryLink} className="back" backgroundColor={color}>{props.category}</ListLink>
+        <ListLink to="/blog" className="back">Blog</ListLink>
+        <ListLink to="/" className="non-arrow">Portfolio</ListLink>
       </nav>
     )
   } else if (props.className === 'blog') {
     nav = (
       <nav>
-        <ListLink to="/portfolio">Portfolio</ListLink>
-        <ListLink to="/tags">Tags</ListLink>
+        <ListLink to="/" className="non-arrow">Portfolio</ListLink>
       </nav>
     ) 
   } else {
     nav = (
       <nav>
-        <ListLink to="/" className="back">Blog</ListLink>
+        <ListLink to="/blog" className="non-arrow">Blog</ListLink>
       </nav>
     )
   }

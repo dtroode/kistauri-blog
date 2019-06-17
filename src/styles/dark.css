@@ -3,7 +3,7 @@
     background-color: var(--main-dark);
     color: var(--main-light);
   }
-  header.blog, header.post, header.tag {
+  header.blog, header.post, header.archive {
     background-color: var(--additional-dark) !important;
   }
   footer {

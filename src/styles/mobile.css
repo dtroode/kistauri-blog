@@ -7,7 +7,7 @@
   header {
     grid-template: 'links' auto 'heading' auto 'hr' auto/1fr;
   }
-  header a, header p, header span.tags-span {
+  header a {
     font-size: 2.5rem;
     letter-spacing: -0.1rem;
   }
@@ -23,13 +23,13 @@
   main.post {
     grid-template: 'text' auto 'empty' auto/1fr;
   }
-  main.tag {
+  main.archive {
     grid-template: 'articles' auto 'empty' auto/1fr;
   }
   main.portfolio {
     grid-template: 'section' auto / 1fr;
   }
-  main.tag section.articles {
+  main.archive section.articles {
     padding-top: 0;
   }
   main.portfolio section.content {
@@ -48,7 +48,7 @@
   article.page {
     width: auto;
   }
-  article.page.archive-page h2, article.page.tag-page h2 {
+  article.page.archive-page h2 {
     margin-bottom: 0;
   }
   article.empty {

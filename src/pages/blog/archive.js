@@ -1,19 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import "../styles/tags.css"
-import "../styles/mobile.css"
-import "../styles/dark.css"
-import Layout from "../components/layout"
+import "../../styles/archive.css"
+import "../../styles/mobile.css"
+import "../../styles/dark.css"
+import Layout from "../../components/layout"
 
-const NewsPage = (props) => {
+const ArchivePage = (props) => {
   const postList = props.data.allMarkdownRemark;
   return (
-    <Layout pageClass="tag" title="News">
+    <Layout pageClass="archive" title="David Kistauri Archive">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>News</title>
-        <link rel="canonical" href="https://dtroode.netlify.com/news" />
+        <title>Archive</title>
+        <link rel="canonical" href="http://dtroode.netlify.com/archive" />
       </Helmet>
       <section className="articles">
         {postList.edges.map(({ node }) => (
@@ -21,7 +21,9 @@ const NewsPage = (props) => {
             <Link to={node.fields.slug} className="page-link" >
               <section className="page-content">
                 <h2>{node.frontmatter.title}</h2>
-                <p>{node.frontmatter.date}</p>
+                <p className="date-mins">
+                  {node.frontmatter.date} • {node.timeToRead} min read
+                </p>
               </section>
             </Link>
           </article>
@@ -31,11 +33,11 @@ const NewsPage = (props) => {
   )
 }
 
-export default NewsPage
+export default ArchivePage
 
-export const newsQuery = graphql`
-  query NewsQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { categories: { eq: "news" } } }) {
+export const archiveQuery = graphql`
+  query ArchiveQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           fields{

@@ -11,9 +11,9 @@ const Footer = (props) => (
     <section className="links-container">
       <p>You can find me in social media by username <span className="nickname">@dtroode</span></p>
       <nav>
-        <ListLink to="/" className="contacts-text">Blog</ListLink>
-        <ListLink to="/archive" className="contacts-text">Archive</ListLink>
-        <ListLink to="/portfolio" className="contacts-text">Portfolio</ListLink>
+        <ListLink to="/" className="contacts-text">Portfolio</ListLink>
+        <ListLink to="/blog" className="contacts-text">Blog</ListLink>
+        <ListLink to="/blog/archive" className="contacts-text">Archive</ListLink>
         <ListLink to="/rss.xml" className="contacts-text">RSS</ListLink>
       </nav>
       <nav>

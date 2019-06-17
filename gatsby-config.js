@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `David Kistauri Blog`,
+    title: `David Kistauri`,
     description: `David Kistauri. Frontend developer, web designer, SMM specialist`,
     author: `David Kistauri`,
-    siteUrl: `https://dtroode.netlify.com/`
+    siteUrl: `https://dtroode.netlify.com/`,
+    blogUrl: `https://dtroode.netlify.com/blog/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -72,8 +73,8 @@ module.exports = {
               siteMetadata {
                 title
                 description
-                siteUrl
-                site_url: siteUrl
+                blogUrl
+                site_url: blogUrl
               }
             }
           }

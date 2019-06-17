@@ -64,48 +64,14 @@ header nav a.back::before {
 header nav a.back::after {
   content: '';
 }
-header nav a.long-back:hover::before {
-  content: '⟶';
-}
-header nav a.long-back::before {
-  content: '⟵';
-}
-header nav a.long-back::after {
+header nav a.non-arrow:hover::before {
   content: '';
 }
-header nav a.tagname {
-  margin: 0;
-  border: 0;
-  text-transform: capitalize;
-  color: var(--main-light);
+header nav a.non-arrow::before {
+  content: '';
 }
-header nav a.tagname#me {
-  background-color: var(--accent-red);
-}
-header nav a.tagname#me:hover {
-  background-color: var(--main-dark);
-  color: var(--main-light);
-}
-header nav a.tagname#works {
-  background-color: var(--accent-yellow);
-}
-header nav a.tagname#works:hover {
-  background-color: var(--main-dark);
-  color: var(--main-light);
-}
-header nav a.tagname#news {
-  background-color: var(--accent-blue);
-}
-header nav a.tagname#news:hover {
-  background-color: var(--main-dark);
-  color: var(--main-light);
-}
-header nav a.tagname#thoughts {
-  background-color: var(--accent-green);
-}
-header nav a.tagname#thoughts:hover {
-  background-color: var(--main-dark);
-  color: var(--main-light);
+header nav a.non-arrow::after {
+  content: '';
 }
 header nav ul {
   margin-block-start: 0.5rem;
@@ -164,7 +130,7 @@ footer section.links-container nav:nth-of-type(2) a:hover::after {
 footer section.links-container nav:nth-of-type(2) a::after {
   content: '↓';
 }
-header a.tagname, section.text img, section.text video, p:first-of-type, blockquote, pre {
+section.text img, section.text video, p:first-of-type, blockquote, pre {
   border-radius: 0.4rem;
 }
 article.works p:not(:first-of-type) {
@@ -210,11 +176,8 @@ a {
 a:hover {
   color: inherit;
 }
-a.tagname, a.contacts-text:not(:last-of-type) {
+a.contacts-text:not(:last-of-type) {
   margin-bottom: 0.25rem;
-}
-a.tagname:hover {
-  color: inherit;
 }
 a.contacts-text {
   display: table;
