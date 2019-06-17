@@ -46,7 +46,7 @@ header nav a {
   color: var(--main-light);
 }
 header nav a:hover {
-  background-color: var(--main-dark) !important;
+  background-color: var(--main-dark);
   color: var(--main-light);
 }
 header nav a:hover::after {

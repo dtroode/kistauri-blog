@@ -1,12 +1,12 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
-import "../../styles/archive.css"
-import "../../styles/mobile.css"
-import "../../styles/dark.css"
-import Layout from "../../components/layout"
+import React from "react";
+import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
+import "../../styles/archive.css";
+import "../../styles/mobile.css";
+import "../../styles/dark.css";
+import Layout from "../../components/layout";
 
-const ArchivePage = (props) => {
+const ArchivePage = props => {
   const postList = props.data.allMarkdownRemark;
   return (
     <Layout pageClass="archive" title="David Kistauri Archive">
@@ -18,7 +18,7 @@ const ArchivePage = (props) => {
       <section className="articles">
         {postList.edges.map(({ node }) => (
           <article className={node.frontmatter.categories}>
-            <Link to={node.fields.slug} className="page-link" >
+            <Link to={node.fields.slug} className="page-link">
               <section className="page-content">
                 <h2>{node.frontmatter.title}</h2>
                 <p className="date-mins">
@@ -30,17 +30,17 @@ const ArchivePage = (props) => {
         ))}
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default ArchivePage
+export default ArchivePage;
 
 export const archiveQuery = graphql`
   query ArchiveQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          fields{
+          fields {
             slug
           }
           frontmatter {
@@ -53,4 +53,4 @@ export const archiveQuery = graphql`
       }
     }
   }
-`
+`;
