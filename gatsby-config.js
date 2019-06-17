@@ -54,17 +54,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     {
-      resolve: `gatsby-plugin-amp`,
-      options: {
-        canonicalBaseUrl: 'https://dtroode.netlify.com/',
-        components: ['amp-form'],
-        excludedPaths: ['/404*', '/'],
-        pathIdentifier: '/amp/',
-        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
-        useAmpClientIdApi: true,
-      },
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
