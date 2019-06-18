@@ -9,7 +9,6 @@ const ErrorPage = props => {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
         <link rel="canonical" href="https://dtroode.netlify.com/404" />
       </Helmet>
       <SEO title="404" description=">404<" image="/img/preview.jpg"/>

@@ -11,7 +11,6 @@ const PortfolioPage = () => {
   return (
     <Layout pageClass="portfolio" title="David Kistauri >_<">
       <Helmet>
-        <meta charSet="utf-8" />
         <link rel="canonical" href="https://dtroode.netlify.com/" />
       </Helmet>
       <SEO title="Portfolio" description="Just David Kistauri's portfolio. Name any word and i'll make a website about it" image="/img/preview.jpg"/>

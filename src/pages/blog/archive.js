@@ -13,7 +13,6 @@ const ArchivePage = props => {
   return (
     <Layout pageClass="archive" title="David Kistauri Archive">
       <Helmet>
-        <meta charSet="utf-8" />
         <link rel="canonical" href="https://dtroode.netlify.com/blog/archive" />
       </Helmet>
       <SEO title="Archive" description="You just now find the archive of David Kistauri's blog. Be careful!" image="/img/preview.jpg"/>

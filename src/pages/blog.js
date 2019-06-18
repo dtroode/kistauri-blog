@@ -14,7 +14,6 @@ const IndexPage = props => {
   return (
     <Layout pageClass="blog" title="David Kistauri Blog">
       <Helmet>
-        <meta charSet="utf-8" />
         <link rel="canonical" href="https://dtroode.netlify.com/blog" />
       </Helmet>
       <SEO title="Blog" description="Whoa! Welcome to my, David Kistauri's Blog! Name any word and i'll make an article about it" image="/img/preview.jpg"/>
