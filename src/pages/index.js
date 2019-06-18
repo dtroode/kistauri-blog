@@ -18,7 +18,7 @@ const PortfolioPage = () => {
       <section className="content me">
         <h2>About me</h2>
         <p>
-          <span>0.1.</span>I am frontend-developer. I write HTML, CSS, JS, React
+          <span>0.1. </span>I am frontend-developer. I write HTML, CSS, JS, React
           (learning) code. I'm in the 10th grade. Abkhazia. I started to code in
           2018 and have already written several websites. I have a Telegram
           channel (link below). Digital! I have experience in SMM. Not native
