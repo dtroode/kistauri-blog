@@ -24,7 +24,6 @@
     background-color: var(--main-light);
   }
   section.text img, section.text pre, section.text video {
-    border: 0.25rem solid var(--additional-dark);
     background-color: var(--additional-dark);
   }
   a.show-more:hover {
