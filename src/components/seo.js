@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
 function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
@@ -24,14 +24,14 @@ function SEO({ description, lang, meta, title, image }) {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
@@ -39,47 +39,47 @@ function SEO({ description, lang, meta, title, image }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:title`,
-          content: title,
+          content: title
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `website`
         },
         {
           property: `og:image`,
-          content: image,
+          content: image
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary`
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.author
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           name: `twitter:image`,
-          content: image,
-        },
+          content: image
+        }
       ].concat(meta)}
     />
-  )
+  );
 }
 
 SEO.defaultProps = {
@@ -88,13 +88,13 @@ SEO.defaultProps = {
   description: ``,
   title: `David Kistauri`,
   image: `/img/preview.jpg`
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-}
+  title: PropTypes.string.isRequired
+};
 
-export default SEO
+export default SEO;

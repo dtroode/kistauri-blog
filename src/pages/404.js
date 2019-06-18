@@ -10,7 +10,7 @@ const ErrorPage = props => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <link rel="canonical" href="http://dtroode.netlify.com" />
+        <link rel="canonical" href="https://dtroode.netlify.com/404" />
       </Helmet>
       <SEO title="404" description=">404<" image="/img/preview.jpg"/>
       <section
@@ -35,7 +35,7 @@ const ErrorPage = props => {
               className="page-background"
               fill="none"
               viewBox="0 0 839 559"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <rect width="839" height="559" fill="#FF4757" />
               <g filter="url(#b)">
