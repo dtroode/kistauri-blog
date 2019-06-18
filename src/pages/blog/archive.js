@@ -13,7 +13,7 @@ const ArchivePage = props => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Blog Archive</title>
-        <link rel="canonical" href="http://dtroode.netlify.com/archive" />
+        <link rel="canonical" href="https://dtroode.netlify.com/blog/archive" />
       </Helmet>
       <section className="articles">
         {postList.edges.map(({ node }) => (

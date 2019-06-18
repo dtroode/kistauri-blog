@@ -14,7 +14,7 @@ const IndexPage = props => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Blog</title>
-        <link rel="canonical" href="http://dtroode.netlify.com" />
+        <link rel="canonical" href="https://dtroode.netlify.com/blog" />
       </Helmet>
       <section className="articles">
         {postList.edges.map(({ node }) => (

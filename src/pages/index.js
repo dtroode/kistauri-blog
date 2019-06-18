@@ -12,7 +12,7 @@ const PortfolioPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>{title}</title>
-        <link rel="canonical" href="https://dtroode.netlify.com/portfolio" />
+        <link rel="canonical" href="https://dtroode.netlify.com/" />
       </Helmet>
       <section className="content me">
         <h2>About me</h2>
