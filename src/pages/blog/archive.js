@@ -5,6 +5,7 @@ import "../../styles/archive.css";
 import "../../styles/mobile.css";
 import "../../styles/dark.css";
 import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 
 const ArchivePage = props => {
   const postList = props.data.allMarkdownRemark;
@@ -12,9 +13,9 @@ const ArchivePage = props => {
     <Layout pageClass="archive" title="David Kistauri Archive">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Blog Archive</title>
         <link rel="canonical" href="https://dtroode.netlify.com/blog/archive" />
       </Helmet>
+      <SEO title="Archive" description="You just now find the archive of David Kistauri's blog. Be careful!" image="/img/preview.jpg"/>
       <section className="articles">
         {postList.edges.map(({ node }) => (
           <article className={node.frontmatter.categories}>

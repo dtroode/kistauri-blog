@@ -4,6 +4,7 @@ import "../styles/mobile.css";
 import "../styles/dark.css";
 import Layout from "../components/layout";
 import { Helmet } from "react-helmet";
+import SEO from "../components/seo";
 
 const PortfolioPage = () => {
   const title = "Portfolio";
@@ -11,9 +12,9 @@ const PortfolioPage = () => {
     <Layout pageClass="portfolio" title="David Kistauri >_<">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title}</title>
         <link rel="canonical" href="https://dtroode.netlify.com/" />
       </Helmet>
+      <SEO title="Portfolio" description="Just David Kistauri's portfolio. Name any word and i'll make a website about it" image="/img/preview.jpg"/>
       <section className="content me">
         <h2>About me</h2>
         <p>

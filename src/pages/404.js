@@ -3,15 +3,16 @@ import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import "../styles/blog.css";
 import "../styles/dark.css";
+import SEO from "../components/seo";
 
 const ErrorPage = props => {
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>David Kistauri Blog</title>
         <link rel="canonical" href="http://dtroode.netlify.com" />
       </Helmet>
+      <SEO title="404" description=">404<" image="/img/preview.jpg"/>
       <section
         className="articles"
         style={{

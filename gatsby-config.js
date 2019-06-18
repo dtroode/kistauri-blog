@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `David Kistauri`,
-    description: `David Kistauri. Frontend developer, web designer, SMM specialist`,
+    description: `Name any word and i'll make a website about it`,
     author: `David Kistauri`,
+    image: `/img/preview.jpg`,
     siteUrl: `https://dtroode.netlify.com/`,
     blogUrl: `https://dtroode.netlify.com/blog/`
   },
@@ -118,6 +119,7 @@ module.exports = {
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
       },
     },
-    `gatsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sitemap`
   ],
 }

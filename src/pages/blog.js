@@ -6,6 +6,7 @@ import "../styles/mobile.css";
 import "../styles/dark.css";
 import Layout from "../components/layout";
 import Img from "gatsby-image";
+import SEO from "../components/seo";
 
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark;
@@ -13,9 +14,9 @@ const IndexPage = props => {
     <Layout pageClass="blog" title="David Kistauri Blog">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Blog</title>
         <link rel="canonical" href="https://dtroode.netlify.com/blog" />
       </Helmet>
+      <SEO title="Blog" description="Whoa! Welcome to my, David Kistauri's Blog! Name any word and i'll make an article about it" image="/img/preview.jpg"/>
       <section className="articles">
         {postList.edges.map(({ node }) => (
           <article className={node.frontmatter.categories}>

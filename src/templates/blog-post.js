@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import "../styles/post.css"
+import SEO from "../components/seo";
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -11,9 +12,9 @@ export default ({ data }) => {
     <Layout pageClass="post" title={post.frontmatter.title} category={post.frontmatter.categories}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{post.frontmatter.title}</title>
         <link rel="canonical" href={link} />
       </Helmet>
+      <SEO title={post.frontmatter.title} description={post.frontmatter.description} image={post.frontmatter.hero.childImageSharp.fluid.src}/>
      <section className="text">
        <p className="date-mins">{post.frontmatter.date} • {post.timeToRead} min read</p>
        <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -34,6 +35,14 @@ export const query = graphql`
         title
         date(formatString: "DD MMMM YYYY")
         categories
+        description
+        hero {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
       }
     }
   }
