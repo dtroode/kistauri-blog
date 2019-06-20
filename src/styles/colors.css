@@ -1,13 +1,13 @@
 /* Root colors */
 :root {
-  --main-light: #F1F2F6;
-  --main-dark: #2F3542;
-
-  --additional-light: #DFE4EA;
-  --additional-dark: #57606F;
-
-  --accent-red: #FF4757;
-  --accent-green: #2ED573;
-  --accent-blue: #3742FA;
-  --accent-yellow: #ECCC68;
+  --main-light: #F2F2F7;
+  --main-dark: #1C1C1E;
+  
+  --additional-light: #E5E5EA;
+  --additional-dark: #2C2C2E;
+  
+  --accent-red: #FF3B30;
+  --accent-green: #3BC759;
+  --accent-blue: #007AFF;
+  --accent-yellow: #FFCC00;
 }
