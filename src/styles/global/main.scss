@@ -46,8 +46,6 @@ header {
     a {
       display: inline-block;
       margin-right: 0.25rem;
-      padding: 0.25rem 0.5rem;
-      border-radius: 0.4rem;
       font-size: 1.125rem;
       background-color: var(--accent-blue);
       color: var(--main-light);
@@ -82,7 +80,6 @@ header {
       margin-block-start: 0.5rem;
       margin-block-end: 0;
       padding-inline-start: 0;
-      border-radius: 0 0 0.4rem 0.4rem;
       list-style-type: none;
       li {
         display: inline;
@@ -144,22 +141,16 @@ footer {
   }
 }
 
-section.text {
-  img, video {
-    border-radius: 0.4rem;
-  }
+header a, a.contacts-text, a.show-more {
+  padding: 0.5rem;
 }
 
-p:first-of-type, blockquote, pre {
-  border-radius: 0.4rem;
+p:first-of-type, blockquote, pre, a {
+  border-radius: .5rem;
 }
 
 article.works p:not(:first-of-type) {
   margin-top: 1rem;
-}
-
-a {
-  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
 }
 
 h1, h2, p {
@@ -173,9 +164,6 @@ h1 {
   letter-spacing: -0.1rem;
   font-weight: 700;
   width: 75%;
-  span {
-    color: var(--accent-blue);
-  }
 }
 
 h2 {
@@ -186,10 +174,13 @@ h2 {
   letter-spacing: -0.05rem;
 }
 
-p, a, ul, ol, blockquote {
+p, a {
   font-size: 1.22rem;
-  line-height: 1.33em;
   font-weight: 600;
+}
+
+p {
+  line-height: 1.33em;
 }
 
 p a {
@@ -200,6 +191,9 @@ a {
   flex: inherit;
   color: var(--accent-blue);
   text-decoration: none;
+  font-size: 1.125rem;
+  line-height: 1em;
+  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
     color: inherit;
   }
@@ -208,9 +202,6 @@ a {
       margin-bottom: 0.25rem;
     }
     display: table;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.4rem;
-    font-size: 1.125rem;
     background-color: var(--accent-blue);
     color: var(--main-light);
     &:hover {
@@ -252,12 +243,9 @@ blockquote {
 
 hr {
   width: 100%;
-  height: 0;
+  height: 4px;
   margin: 4.375rem 0 0 0;
-  border-top: 2px solid var(--main-dark);
-  border-right: none;
-  border-bottom: 2px solid var(--main-dark);
-  border-left: none;
+  border: 0;
   background-color: var(--main-dark);
 }
 

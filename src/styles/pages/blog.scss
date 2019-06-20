@@ -14,10 +14,6 @@ main.blog {
   }
 }
 
-a.show-more {
-  border-radius: 0.4rem;
-}
-
 div.page-background {
   position: absolute !important;
   width: 100%;
@@ -31,9 +27,8 @@ section.articles article a.page-link:hover {
 
 a.show-more {
   display: block;
-  width: calc(100% - 0.5rem);
+  width: calc(100% - 1rem);
   height: auto;
-  padding: .25rem;
   font-size: 1.5em;
   text-align: center;
   background-color: var(--accent-blue);

@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import "../styles/pages/post.scss";
+import "../styles/media.scss";
 import SEO from "../components/seo";
 
 export default ({ data }) => {

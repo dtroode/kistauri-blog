@@ -6,12 +6,9 @@
   }
   header {
     grid-template: 'links' auto 'heading' auto 'hr' auto/1fr;
-    a {
-      font-size: 2.5rem;
-      letter-spacing: -0.1rem;
-    }
     nav a {
       font-size: 1.5rem;
+      letter-spacing: -0.05rem;
     }
   }
   a.contacts-text {
@@ -62,9 +59,6 @@
     width: auto;
     margin-bottom: 1.4rem;
   }
-  a, blockquote, ol, p, ul {
-    width: auto;
-  }
   blockquote, ol, p, ul {
     font-size: 1.5rem;
   }
@@ -72,13 +66,12 @@
     font-size: 1.83rem;
   }
   pre {
-    width: calc(100vw - 7.5rem);
+    width: calc(100vw - 7rem);
     code {
       font-size: 1.5rem;
     }
   }
   a.show-more {
     width: unset;
-    font-size: 2rem;
   }
 }

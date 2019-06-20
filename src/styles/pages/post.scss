@@ -18,7 +18,9 @@ section.text {
     margin-top: 1.75rem;
     margin-bottom: 1rem;
   }
-  a, ol, p, ul {
+  p, a, ul, ol, blockquote {
+    font-size: 1.22rem;
+    line-height: 1.33em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
   }
@@ -39,6 +41,7 @@ section.text {
     }
   }
   img, video {
+    border-radius: 0.4rem;
     box-shadow: none !important;
     background-color: var(--additional-light);
   }
