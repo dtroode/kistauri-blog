@@ -1,0 +1,13 @@
+main.portfolio {
+  grid-template: "section" (auto / 1fr);
+  section.content {
+    display: grid;
+    grid-template: ("sub-heading text" / 1fr) 1fr;
+    &:not(:first-of-type) {
+      margin-top: 2.5rem;
+    }
+    p:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+  }
+}

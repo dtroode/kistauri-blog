@@ -1,0 +1,69 @@
+header.post {
+  background-color: var(--additional-light);
+  nav a {
+    text-transform: capitalize;
+  }
+}
+
+main.post {
+  grid-template: ("text empty" / 1fr) 1fr;
+}
+
+section.text {
+  justify-content: start;
+  h1, h2, p {
+    width: 100%;
+  }
+  h2 {
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  a, ol, p, ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+  }
+  p {
+    margin-top: 1rem;
+    &.date-mins {
+      margin: 0;
+      padding: 1rem;
+      width: unset;
+      background-color: var(--additional-light);
+    }
+  }
+  a {
+    font-size: inherit;
+    color: var(--accent-blue);
+    &:hover {
+      color: inherit;
+    }
+  }
+  img, video {
+    box-shadow: none !important;
+    background-color: var(--additional-light);
+  }
+}
+
+span.gatsby-resp-image-background-image {
+  border-radius: 0.4rem;
+}
+
+pre {
+  margin-top: .7rem;
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  overflow-x: scroll;
+  background-color: var(--additional-light);
+  code {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.22rem;
+    span {
+      font-weight: unset;
+    }
+  }
+}
+
+code::-webkit-scrollbar, pre::-webkit-scrollbar {
+  height: 0;
+}

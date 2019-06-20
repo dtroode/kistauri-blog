@@ -15,7 +15,7 @@ const ListLink = props => (
 const Navbar = props => {
   let nav = "";
 
-  if (props.className === "post") {
+  if (props.className === "post" || props.className === 'archive') {
     nav = (
       <nav>
         <ListLink to="/blog" className="back">

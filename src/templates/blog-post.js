@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
-import "../styles/post.css";
+import "../styles/pages/post.scss";
 import SEO from "../components/seo";
 
 export default ({ data }) => {

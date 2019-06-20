@@ -1,13 +1,11 @@
 import React from "react";
-import "../styles/portfolio.css";
-import "../styles/mobile.css";
-import "../styles/dark.css";
+import "../styles/pages/portfolio.scss";
+import "../styles/media.scss";
 import Layout from "../components/layout";
 import { Helmet } from "react-helmet";
 import SEO from "../components/seo";
 
 const PortfolioPage = () => {
-  const title = "Portfolio";
   return (
     <Layout pageClass="portfolio" title="David Kistauri >_<">
       <Helmet>

@@ -1,0 +1,84 @@
+@media screen and (max-width: 750px) {
+  footer, header, main {
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+  header {
+    grid-template: 'links' auto 'heading' auto 'hr' auto/1fr;
+    a {
+      font-size: 2.5rem;
+      letter-spacing: -0.1rem;
+    }
+    nav a {
+      font-size: 1.5rem;
+    }
+  }
+  a.contacts-text {
+    font-size: 1.5rem;
+  }
+  main {
+    &.blog {
+      grid-template: 'categories' auto 'articles' auto/1fr;
+    }
+    &.post {
+      grid-template: 'text' auto 'empty' auto/1fr;
+    }
+    &.archive {
+      grid-template: 'articles' auto 'empty' auto/1fr;
+    }
+    &.portfolio {
+      grid-template: 'section' auto / 1fr;
+    }
+    &.archive section.articles {
+      padding-top: 0;
+    }
+    &.portfolio section.content {
+      grid-template: 'sub-heading' auto 'text' auto/1fr !important;
+    }
+  }
+  footer {
+    grid-template: 'heading' auto 'links-container' auto/1fr;
+    section.links-container {
+      grid-template: 'paragraph' auto 'links' auto 'social' auto/1fr;
+    }
+  }
+  section.articles {
+    grid-template-columns: unset !important;
+    grid-template: 'article'/1fr;
+  }
+  article {
+    &.page {
+      width: auto;
+      &.archive-page h2 {
+        margin-bottom: 0;
+      }
+    }
+    &.empty {
+      display: none;
+    }
+  }
+  h2 {
+    width: auto;
+    margin-bottom: 1.4rem;
+  }
+  a, blockquote, ol, p, ul {
+    width: auto;
+  }
+  blockquote, ol, p, ul {
+    font-size: 1.5rem;
+  }
+  a {
+    font-size: 1.83rem;
+  }
+  pre {
+    width: calc(100vw - 7.5rem);
+    code {
+      font-size: 1.5rem;
+    }
+  }
+  a.show-more {
+    width: unset;
+    font-size: 2rem;
+  }
+}

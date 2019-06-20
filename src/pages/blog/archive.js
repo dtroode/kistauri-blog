@@ -2,9 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
-import "../../styles/archive.css";
-import "../../styles/mobile.css";
-import "../../styles/dark.css";
+import "../../styles/pages/archive.scss";
+import "../../styles/media.scss";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 

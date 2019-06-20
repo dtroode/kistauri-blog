@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
-import "../styles/blog.css";
-import "../styles/dark.css";
+import "../styles/pages/blog.scss";
+import "../styles/media/dark.scss";
 import SEO from "../components/seo";
 
 const ErrorPage = props => {
@@ -11,7 +11,7 @@ const ErrorPage = props => {
       <Helmet>
         <link rel="canonical" href="https://dtroode.netlify.com/404" />
       </Helmet>
-      <SEO title="404" description=">404<" image="/img/preview.jpg"/>
+      <SEO title="404" description=">404<" image="/img/preview.jpg" />
       <section
         className="articles"
         style={{

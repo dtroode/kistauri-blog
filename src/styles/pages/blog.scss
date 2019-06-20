@@ -1,0 +1,52 @@
+@import "../articles.scss";
+
+header.blog {
+  background-color: var(--additional-light);
+}
+
+main.blog {
+  grid-template: "articles" / 1fr;
+  section.articles article a {
+    padding-bottom: 100%;
+    section.page-content {
+      position: absolute;
+    }
+  }
+}
+
+a.show-more {
+  border-radius: 0.4rem;
+}
+
+div.page-background {
+  position: absolute !important;
+  width: 100%;
+  opacity: .5;
+  pointer-events: none;
+}
+
+section.articles article a.page-link:hover {
+  color: inherit;
+}
+
+a.show-more {
+  display: block;
+  width: calc(100% - 0.5rem);
+  height: auto;
+  padding: .25rem;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: var(--accent-blue);
+  color: var(--main-light);
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: var(--additional-dark);
+    &::after {
+      content: '';
+    }
+  }
+  &::after {
+    content: '';
+  }
+}

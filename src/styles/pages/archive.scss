@@ -1,0 +1,13 @@
+@import "../articles.scss";
+
+header.archive {
+  background-color: var(--additional-light)
+}
+
+main.archive {
+  grid-template: 'articles'/1fr;
+}
+
+section.articles article a.page-link section.page-content {
+  position: static;
+}

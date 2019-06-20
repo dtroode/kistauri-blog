@@ -3,17 +3,19 @@
     background-color: var(--main-dark);
     color: var(--main-light);
   }
-  header.blog, header.post, header.archive {
-    background-color: var(--additional-dark) !important;
+  header {
+    &.blog, &.post, &.archive {
+      background-color: var(--additional-dark) !important;
+    }
   }
   footer {
     background-color: var(--additional-dark);
     color: var(--additional-light);
-  }
-  footer hr {
-    border-top: 2px solid var(--additional-light);
-    border-bottom: 2px solid var(--additional-light);
-    background-color: var(--additional-light);
+    hr {
+      border-top: 2px solid var(--additional-light);
+      border-bottom: 2px solid var(--additional-light);
+      background-color: var(--additional-light);
+    }
   }
   section.text p.date-mins {
     background-color: var(--additional-dark);
@@ -23,8 +25,10 @@
     border-bottom: 2px solid var(--main-light);
     background-color: var(--main-light);
   }
-  section.text img, section.text pre, section.text video {
-    background-color: var(--additional-dark);
+  section.text {
+    img, pre, video {
+      background-color: var(--additional-dark);
+    }
   }
   a.show-more:hover {
     background-color: var(--additional-light);
