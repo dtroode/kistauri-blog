@@ -32,7 +32,6 @@ a.show-more {
   text-align: center;
   background-color: var(--accent-blue);
   color: var(--main-light);
-  cursor: pointer;
   &:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     background-color: var(--additional-dark);
