@@ -7,11 +7,17 @@ header.blog {
 main.blog {
   grid-template: "articles" / 1fr;
   section.articles article a {
-    padding-bottom: 33.33%;
+    padding-bottom: 100%;
     section.page-content {
       position: absolute;
     }
   }
+}
+
+section.page-content-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 div.page-background, img.page-background {

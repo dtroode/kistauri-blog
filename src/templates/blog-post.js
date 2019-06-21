@@ -7,7 +7,6 @@ import SEO from "../components/seo";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  const link = "https://dtroode.netlify.com" + post.fields.slug;
   return (
     <Layout
       pageClass="post"
