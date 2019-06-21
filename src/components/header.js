@@ -53,7 +53,7 @@ const Header = props => {
       localStorage.setItem('themeSwitch', 'dark');
     } else {
       document.body.removeAttribute('data-theme');
-      localStorage.removeItem('themeSwitch');
+      localStorage.setItem('themeSwitch', 'light');
     }
   }
 

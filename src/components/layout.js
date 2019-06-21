@@ -10,7 +10,7 @@ const Layout = props => {
   function checkTheme() {
     let isThemeDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     
-    (isThemeDark === true && localStorage.getItem('themeSwitch') === 'dark') ? document.body.setAttribute('data-theme', 'dark') : (isThemeDark === false && localStorage.getItem('themeSwitch')) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
+    (isThemeDark === true && localStorage.getItem('themeSwitch') === null) ? document.body.setAttribute('data-theme', 'dark') : (isThemeDark === false && localStorage.getItem('themeSwitch')) ? document.body.setAttribute('data-theme', 'dark') : (isThemeDark === true && localStorage.getItem('themeSwitch') === 'dark') ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
   }
 
   return (
