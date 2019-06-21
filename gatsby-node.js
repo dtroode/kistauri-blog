@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
       createPage({
-        path: `${node.fields.slug}/amp/`,
+        path: `${node.fields.slug}amp/`,
         component: path.resolve(`./src/templates/blog-post.amp.js`),
         context: {
           // Data passed to context is available

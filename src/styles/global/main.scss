@@ -12,7 +12,7 @@ html, button {
 * {
   &::selection, &::-moz-selection {
     background: var(--accent-blue);
-    color: var(--main-dark);
+    color: var(--main-fg);
   }
 }
 
@@ -26,8 +26,38 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background-color: var(--main-light);
-  color: var(--main-dark);
+  background-color: var(--main-bg);
+  color: var(--main-fg);
+  &[data-theme="dark"] {
+    button {
+      span {
+        &.dark {
+          display: none;
+        }
+        &.light {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  button {
+    position: relative;
+    justify-self: end;
+    outline: 0;
+    cursor: pointer;
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      &.light {
+        display: none;
+      }
+      &.dark {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 header, main, footer {
@@ -38,7 +68,7 @@ header, main, footer {
 }
 
 header {
-  grid-template: 'links empty empty' auto 'heading empty empty' auto 'hr empty empty' auto / 1fr 1fr;
+  grid-template: 'links color' auto 'heading empty' auto 'hr empty' auto / 1fr 1fr;
   align-items: start;
   nav {
     grid-area: links;
@@ -48,10 +78,10 @@ header {
       margin-right: 0.25rem;
       font-size: 1.125rem;
       background-color: var(--accent-blue);
-      color: var(--main-light);
+      color: var(--main-bg);
       &:hover {
-        background-color: var(--main-dark);
-        color: var(--main-light);
+        background-color: var(--main-fg);
+        color: var(--main-bg);
         &::after {
           content: '←';
         }
@@ -86,6 +116,13 @@ header {
       }
     }
   }
+  button {
+    grid-area: color;
+    border: none;
+    height: 2.125rem;
+    width: 2.125rem;
+    background-color: var(--accent-blue);
+  }
   h1 {
     grid-area: heading;
   }
@@ -105,8 +142,8 @@ footer {
   grid-template: 'heading' auto 'links-container' auto / 1fr 1fr;
   margin-top: 4.375rem;
   padding-bottom: 4.375rem;
-  background-color: var(--additional-light);
-  color: var(--additional-dark);
+  background-color: var(--additional-bg);
+  color: var(--additional-fg);
   section.links-container {
     display: grid;
     grid-template: 'paragraph paragraph' auto 'links social' auto / 1fr 1fr;
@@ -141,11 +178,11 @@ footer {
   }
 }
 
-header a, a.contacts-text, a.show-more {
+header nav a, a.contacts-text, a.show-more {
   padding: 0.5rem;
 }
 
-p:first-of-type, blockquote, pre, a {
+header button, p:first-of-type, blockquote, pre, a {
   border-radius: .5rem;
 }
 
@@ -203,9 +240,9 @@ a {
     }
     display: table;
     background-color: var(--accent-blue);
-    color: var(--main-light);
+    color: var(--main-bg);
     &:hover {
-      background-color: var(--main-dark);
+      background-color: var(--main-fg);
     }
   }
 }
@@ -238,7 +275,7 @@ blockquote {
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding: 1rem;
-  background-color: var(--additional-light);
+  background-color: var(--additional-bg);
 }
 
 hr {
@@ -246,7 +283,7 @@ hr {
   height: 4px;
   margin: 4.375rem 0 0 0;
   border: 0;
-  background-color: var(--main-dark);
+  background-color: var(--main-fg);
 }
 
 @media screen and (max-width: 1000px) {

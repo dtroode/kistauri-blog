@@ -1,5 +1,5 @@
 header.post {
-  background-color: var(--additional-light);
+  background-color: var(--additional-bg);
   nav a {
     text-transform: capitalize;
   }
@@ -30,7 +30,7 @@ section.text {
       margin: 0;
       padding: 1rem;
       width: unset;
-      background-color: var(--additional-light);
+      background-color: var(--additional-bg);
     }
   }
   a {
@@ -43,7 +43,7 @@ section.text {
   img, video {
     width: 100%;
     border-radius: 0.4rem;
-    background-color: var(--additional-light);
+    background-color: var(--additional-bg);
   }
 }
 
@@ -56,7 +56,7 @@ pre {
   padding: 1rem;
   width: calc(100% - 2rem);
   overflow-x: scroll;
-  background-color: var(--additional-light);
+  background-color: var(--additional-bg);
   code {
     font-family: monospace;
     font-weight: bold;

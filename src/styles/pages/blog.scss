@@ -1,7 +1,7 @@
 @import "../articles.scss";
 
 header.blog {
-  background-color: var(--additional-light);
+  background-color: var(--additional-bg);
 }
 
 main.blog {
@@ -36,10 +36,10 @@ a.show-more {
   height: auto;
   text-align: center;
   background-color: var(--accent-blue);
-  color: var(--main-light);
+  color: var(--main-bg);
   &:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background-color: var(--additional-dark);
+    background-color: var(--additional-fg);
     &::after {
       content: '';
     }

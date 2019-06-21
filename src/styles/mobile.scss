@@ -5,10 +5,14 @@
     padding-left: 2.5rem;
   }
   header {
-    grid-template: 'links' auto 'heading' auto 'hr' auto/1fr;
+    grid-template: 'links color' auto 'heading heading' auto 'hr hr' auto/1fr 1fr;
     nav a {
       font-size: 1.5rem;
       letter-spacing: -0.05rem;
+    }
+    button {
+      height: 2.5rem;
+      width: 2.5rem;
     }
   }
   a.contacts-text {
