@@ -41,6 +41,7 @@ section.text {
     }
   }
   img, video {
+    width: 100%;
     border-radius: 0.4rem;
     box-shadow: none !important;
     background-color: var(--additional-light);

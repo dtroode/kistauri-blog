@@ -11,7 +11,8 @@ If your app in this list — it's time to celebrate it!
 
 ## Best apps
 
-![Good apps](/img/ios-ui-apps.png)
+<!-- ![Good apps](/img/ios-ui-apps.png) -->
+<img src="/img/ios-ui-apps.png" alt="Good apps" width="3000" height="2000">
 
 In iOS 11 Apple finally realesed new UI. Previously they tested it in Apple Music app. I am talking about this new design of standard apps with big (very big headers). There's a lot of people who hate this design, but I really love it. This is because iOS using very good font — San Francisco.
 
