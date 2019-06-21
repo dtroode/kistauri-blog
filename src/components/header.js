@@ -60,7 +60,7 @@ const Header = props => {
   return (
     <header className={props.pageClass}>
       <Navbar className={props.pageClass} category={props.category} />
-      <button className="switch-theme" onClick={() => swicthTheme()}><span className="dark" role="img">🌙</span><span className="light" role="img">🌞</span></button>
+      <button className="switch-theme" onClick={() => swicthTheme()}><span className="dark" role="img">🌙</span><span className="light" role="img">☀️</span></button>
       <h1>{props.title}</h1>
       <hr />
     </header>
