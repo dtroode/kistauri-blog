@@ -40,8 +40,15 @@
       grid-template: 'paragraph' auto 'links' auto 'social' auto/1fr;
     }
   }
-  section.articles {
-    grid-template: 'article'/1fr;
+  section {
+    &.articles {
+      grid-template: 'article'/1fr;
+    }
+    &.text {
+      blockquote, ol, p, ul, a {
+        font-size: 1.5rem;
+      }
+    }
   }
   article {
     &.page {
@@ -58,7 +65,7 @@
     width: auto;
     margin-bottom: 1.4rem;
   }
-  blockquote, ol, p, ul, a {
+  p {
     font-size: 1.5rem;
   }
   pre {
