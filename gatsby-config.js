@@ -72,7 +72,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-amp`,
       options: {
-        canonicalBaseUrl: 'http://dtroode.netlify.com/',
+        canonicalBaseUrl: 'https://dtroode.netlify.com/',
         components: ['amp-form'],
         excludedPaths: ['/404*', '/'],
         pathIdentifier: '/amp/',
