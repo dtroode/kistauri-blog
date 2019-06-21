@@ -31,7 +31,7 @@
       padding-top: 0;
     }
     &.portfolio section.content {
-      grid-template: 'sub-heading' auto 'text' auto/1fr !important;
+      grid-template: 'sub-heading' auto 'text' auto/1fr;
     }
   }
   footer {
@@ -41,7 +41,6 @@
     }
   }
   section.articles {
-    grid-template-columns: unset !important;
     grid-template: 'article'/1fr;
   }
   article {

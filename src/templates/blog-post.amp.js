@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import "../styles/pages/post.scss";
 import "../styles/media.scss";
@@ -15,9 +14,6 @@ export default ({ data }) => {
       title={post.frontmatter.title}
       category={post.frontmatter.categories}
     >
-      <Helmet>
-        <link rel="canonical" href={link} />
-      </Helmet>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
