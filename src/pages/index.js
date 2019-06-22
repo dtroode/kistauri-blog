@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/pages/portfolio.scss";
-import "../styles/mobile.scss";
+import "../styles/media.scss";
 import Layout from "../components/layout";
 import { Helmet } from "react-helmet";
 import SEO from "../components/seo";

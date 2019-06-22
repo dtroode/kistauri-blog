@@ -5,7 +5,7 @@
     padding-left: 2.5rem;
   }
   header {
-    grid-template: 'links color' auto 'heading heading' auto 'hr hr' auto/1fr 1fr;
+    grid-template: 'links' auto 'heading' auto 'hr' auto/1fr;
     nav a {
       font-size: 1.5rem;
       letter-spacing: -0.05rem;

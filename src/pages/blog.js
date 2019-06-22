@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import "../styles/pages/blog.scss";
-import "../styles/mobile.scss";
+import "../styles/media.scss";
 import Layout from "../components/layout";
 import Img from "gatsby-image";
 import SEO from "../components/seo";

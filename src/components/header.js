@@ -46,27 +46,13 @@ const Navbar = props => {
   return nav;
 };
 
-const Header = props => {
-  function swicthTheme() {
-    if (document.body.getAttribute('data-theme') === null) {
-      document.body.setAttribute('data-theme', 'dark');
-      localStorage.setItem('themeSwitch', 'dark');
-    } else {
-      document.body.removeAttribute('data-theme');
-      localStorage.setItem('themeSwitch', 'light');
-    }
-  }
-
-  return (
-    <header className={props.pageClass}>
-      <Navbar className={props.pageClass} category={props.category} />
-      <button className="switch-theme" onClick={() => swicthTheme()}><span className="dark" role="img">🌙</span><span className="light" role="img">☀️</span></button>
-      <h1>{props.title}</h1>
-      <hr />
-    </header>
-  );
-}
-
+const Header = props => (
+  <header className={props.pageClass}>
+    <Navbar className={props.pageClass} category={props.category} />
+    <h1>{props.title}</h1>
+    <hr />
+  </header>
+);
 Header.propTypes = {
   siteTitle: PropTypes.string
 };

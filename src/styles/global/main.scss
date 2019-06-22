@@ -40,24 +40,6 @@ body {
       }
     }
   }
-  button {
-    position: relative;
-    justify-self: end;
-    outline: 0;
-    cursor: pointer;
-    span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate3d(-50%, -50%, 0);
-      &.light {
-        display: none;
-      }
-      &.dark {
-        display: inline-block;
-      }
-    }
-  }
 }
 
 header, main, footer {
@@ -68,7 +50,7 @@ header, main, footer {
 }
 
 header {
-  grid-template: 'links color' auto 'heading empty' auto 'hr empty' auto / 1fr 1fr;
+  grid-template: 'links empty' auto 'heading empty' auto 'hr empty' auto / 1fr 1fr;
   align-items: start;
   nav {
     grid-area: links;
