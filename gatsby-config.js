@@ -74,7 +74,7 @@ module.exports = {
       options: {
         canonicalBaseUrl: 'https://dtroode.netlify.com/',
         components: ['amp-form'],
-        excludedPaths: ['/404*', '/'],
+        excludedPaths: ['/404*', '/', '/blog', '/blog/archive'],
         pathIdentifier: '/amp/',
         relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
         useAmpClientIdApi: true,
