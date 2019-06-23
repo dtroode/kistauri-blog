@@ -70,17 +70,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-amp`,
-      options: {
-        canonicalBaseUrl: 'https://dtroode.netlify.com/',
-        components: ['amp-form'],
-        excludedPaths: ['/404*', '/', '/blog', '/blog/archive'],
-        pathIdentifier: '/amp/',
-        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
-        useAmpClientIdApi: true,
-      },
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `

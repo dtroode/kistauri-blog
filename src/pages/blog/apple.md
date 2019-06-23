@@ -10,7 +10,7 @@ Results of Apple March event. Subscriptions!
 
 ## More plusses
 
-<img src="/img/tim.jpg" alt="Tim" width="3000" height="2000">
+![Tim](/img/tim.jpg)
 
 First things first. Plus.
 

@@ -11,7 +11,7 @@ What I replaced after a year and half of developing?
 
 ## Let's start with a list
 
-<img src="/img/vscode.png" alt="VS Code" width="3000" height="2000">
+![VS Code](/img/vscode.png)
 
 * **Atom → Sublime Text → VS Code.** I started to code on [codecademy](https://www.codecademy.com/) (it's first in [Google](https://www.google.com/search?client=firefox-b-d&q=learn+to+code)). My first HTML code I copied to Atom and saved on a computer. I have chosen Atom because a long time ago I've searched for a good text editor and see a lot of recommendations. Next, I switched to Sublime Text and loved it. I write a lot of non-realise websites and some realized. Next, I heard about the VS Code. It's been very complicated for me but after a few weeks, I completely switched.
 * **Beautify → Prettier.** It's very hard to format code by hands, so I need to automize this process. I have used Beautify but recently switched to Prettier with config files.

@@ -10,7 +10,7 @@ How I wrote websites? My Toolbox
 
 ## Who am I?
 
-<img src="/img/toolset.jpg" alt="My Toobox" width="3000" height="2000">
+![My Toolbox](/img/toolset.jpg)
 
 Firstly who am I. I am starting at web development: HTML, CSS, JS, playing with React.
 
