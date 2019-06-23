@@ -32,11 +32,6 @@ section.text {
       width: unset;
       background-color: var(--additional-bg);
     }
-    code {
-      padding: 0.25rem 0.5rem;
-      border-radius: 0.5rem;
-      background-color: var(--additional-bg);
-    }
   }
   a {
     font-size: inherit;
@@ -53,7 +48,6 @@ section.text {
   span.gatsby-resp-image-background-image {
     border-radius: 0.4rem;
   }
-
   pre {
     margin-top: .7rem;
     padding: 1rem;
@@ -61,7 +55,6 @@ section.text {
     overflow-x: scroll;
     background-color: var(--additional-bg);
   }
-
   code {
     font-family: monospace;
     font-weight: bold;
@@ -70,8 +63,12 @@ section.text {
       font-weight: unset;
     }
   }
-
   code::-webkit-scrollbar, pre::-webkit-scrollbar {
     height: 0;
+  }
+  p code, a code, li code, span code {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--additional-bg);
   }
 }
