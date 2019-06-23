@@ -32,6 +32,11 @@ section.text {
       width: unset;
       background-color: var(--additional-bg);
     }
+    code {
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+      background-color: var(--additional-bg);
+    }
   }
   a {
     font-size: inherit;
@@ -45,18 +50,18 @@ section.text {
     border-radius: 0.4rem;
     background-color: var(--additional-bg);
   }
-}
+  span.gatsby-resp-image-background-image {
+    border-radius: 0.4rem;
+  }
 
-span.gatsby-resp-image-background-image {
-  border-radius: 0.4rem;
-}
+  pre {
+    margin-top: .7rem;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    overflow-x: scroll;
+    background-color: var(--additional-bg);
+  }
 
-pre {
-  margin-top: .7rem;
-  padding: 1rem;
-  width: calc(100% - 2rem);
-  overflow-x: scroll;
-  background-color: var(--additional-bg);
   code {
     font-family: monospace;
     font-weight: bold;
@@ -65,8 +70,8 @@ pre {
       font-weight: unset;
     }
   }
-}
 
-code::-webkit-scrollbar, pre::-webkit-scrollbar {
-  height: 0;
+  code::-webkit-scrollbar, pre::-webkit-scrollbar {
+    height: 0;
+  }
 }
