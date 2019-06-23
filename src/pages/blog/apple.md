@@ -1,24 +1,23 @@
 ---
-templateKey: 'blog-page'
+title: My thoughts about Apple March event
+description: Results of Apple March event. Subscriptions!
 path: /blog
-categories: news
-title: My + thoughts + about + Apple + March + event
 date: 2019-03-25T18:45:00.000Z
 hero: /img/apple.png
-description: Итоги мартовской презентации Эпл. Больше подписок!
+categories: news
 ---
-Итоги мартовской презентации Эпл. Больше подписок!
+Results of Apple March event. Subscriptions!
 
-## Больше плюсов
+## More plusses
 
 <img src="/img/tim.jpg" alt="Tim" width="3000" height="2000">
 
-Сначала скажу, + или -. Как по мне, +. Мне понравилось. Смотрел в оригинале.
+First things first. Plus.
 
-Мне понравилось сама презентация, но посыл продуктов до меня дошел слабо. Журналы по подписке? У нас все равно далеко не скоро. Карта? Также. Игры по подписке вообще сомнительная вещь, ну может быть кинцо прикольно. Но я не тот человек, кто платит за кино. В силу места проживания, я даже в кинотеатры не хожу. Поэтому все это не для меня.
+I love presentation but don't love new products. Magazines by subscriptions? I live in Abkhazia and use Russian AppStore account. Apple News + in Russia not soon. Games by subscription is a doubtful thing. Just the cinema is good.
 
-Но очень понравились ролики и шуточные моменты
+Presentation videos are best as common. And Dinesh from Silicon Valley!
 
-А я как всегда побежал смотреть на новые лендинги.
+Going to look at new landing pages.
 
 +
