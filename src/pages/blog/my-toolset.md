@@ -1,100 +1,41 @@
 ---
-templateKey: 'blog-page'
-path: /blog
-categories: me
 title: How and what and why I do
+description: Как я написал сайты? Моя коробочка с инструментами
+path: /blog
 date: 2019-04-25T19:59:59.000Z
 hero: /img/my-toolset.png
-description: Как я написал сайты? Моя коробочка с инструментами
+categories: me
 ---
+How I wrote websites? My Toolbox
 
-Как я написал сайты? Моя коробочка с инструментами
+## Who am I?
 
-## Кто я?
+<img src="/img/toolset.jpg" alt="My Toobox" width="3000" height="2000">
 
-Для начала кто я такой, что вообще пишу про свой сетап? Я начинающий веб-разработчик, пишу на HTML, CSS (знаю, что это не языки программирования!) и на JS (учусь). Занимаюсь всеми этими развлечениями уже год, очень лениво.
+Firstly who am I. I am starting at web development: HTML, CSS, JS, playing with React.
 
-[youtube.com](youtube.com)
+## Table of content
 
-## Содержание, что-ли
+* [Hardware setup](#hardware)
+* [Software setup](#software)
+* [Programs](#programs)
 
-* Рабочая машинка и система(ы)
-* Основные программы
-* До свидания
+<h2 name="hardware">Hardware setup</h2>
+I am using a Dell Inspiron 13 with 256 GB SSD, 8 GB RAM, and Intel Core i5. Yes, I am not that cool user of Mac, which coming home, opening the laptop with just one finger and using exclusive paid software and after tweet beautiful screenshots of programs.
 
-<pre>
-  <code>
-  function arrayToList(arr) {
-    var list = {};
-    for (var i = 0; i < arr.length; i++) {
-      list.value = arr[i];
-      list.rest = writeRest();
-      function writeRest() {
-        if (i++ < arr.length - 1) {
-          return {value: arr[i], rest: writeRest()}
-        } else {
-          return null;
-        }
-      }
-    }
-    return list;
-  }
+<h2 name="software">Software setup</h2>
 
-  function listToArray(list) {
-    var arr = [];
-    path = list;
-    while (path != null) {
-      arr.push(path.value);
-      path = path.rest;
-    }
-    return arr;
-  }
+I am using two systems — Windows 10 and Ubuntu (always latest versions). Windows is taking 200 GB, other space is for Ubuntu. Why? Because I love Unix, but Linux is not so independent system, as I want.
 
-  function prepend(value, rest) {
-    var list = {value: value, rest: rest};
-    return list;
-  }
+<h2 name="programs">Programs</h2>
 
-  function nth(list, position) {
-    path = list;
-    for (var i = 0; i < position; i++) {
-      path = path.rest;
-    }
-    return path.value;
-  }
+Now is time for most interesting. Do you still remember who am I? Frontend developer. Let's look at the main root of building a website/web app:
 
-  console.log(arrayToList([10, 20]));
-  console.log(listToArray(arrayToList([10, 20, 30])));
-  console.log(prepend(10, prepend(20, null)));
-  console.log(nth(arrayToList([10, 20, 30]), 1));
-  }
-  </code>
-</pre>
+* Firstly I need to design. For these purposes, I use two programs: Affinity Photo and Figma (mostly second). I don't like Adobe's software.
+* Next is writing that drow. Here I don't need an IDE. I have Visual Studio Code — beautiful and powerful replacing of IDE. This is like something between the code editor and IDE. There is one minus — Electron. But VS Code is for projects. If I want to write a few strings of code, I am opening a little brother of Visual Studio Code — Sublime Text. Sublime is the fastest code editor and looks nice.
+* Often I need to plan my work. Here we go with Notion and Google Keep. Notion mostly for texts and boards; Keep for task list.
+* Other tools:
+  		- Terminal — VS Code's built in.
+  		- Browsers — Chrome and Firefox.
 
-## Рабочая машинка и система(ы)
-
-<img src="/img/toolset.jpg" alt="My desktop" width="16000" height="9000">
-
-У меня Dell Inspiron 13 на 256 GB SSD и 8 GB оперативки. Ну и i5 Intel. Да, я не тот крутой пользователь мака, который приходит домой, открывает одним пальцем свой ноутбук и наслаждается эксклюзивным софтом, а потом кидает в твиттер красивые скриншоты из программ.
-
-Я использую две системы: Windows 10, Ubuntu (последняя которая). Основной у меня стоит винда на 200 GB, а все, что наскреб от оставшегося выделил под убунту. Почему так? Потому что мне нравится юникс, но линукс все еще не такая полноценная, чтоб отделиться ото всех. Если бы у меня был мак, то я бы, скорее всего, не ставил бы ни всякие дистрибутивы линукс, ни винду; ну может быть только накатил бы виртуальную версию системы от майкрософт.
-
-## Основные программы
-
-Теперь наверное самое интересное. Вы еще не забыли, чем я занимаюсь? Сайты делаю. Так вот, пробежимся по основному пути. 
-
-Сперва надо задизайнить всю историю, тут мне помогают две программы: Affinity Photo и Figma. Так уж повелось, что софт адоби мне вообще не нравится (как и многим). Фигму использую в качестве веб версии и с установленным фирменным помощником, чтоб у меня работали все системные шрифты в вебе. 
-
-Следующий этап — написание кода. Ну тут мне нужен IDE и какой-нибудь легкий редактор. У меня конечно есть Visual Studio, которым я пока не пользуюсь, но полноценные IDE я не люблю. Их интерфейс для меня слишком громоздкий и не такой приятный, как у редакторов. Некрасиво, одним словом. Поэтому в качестве мощной программы для написания и отладки кода я использую Visual Studio Code. Он более привлекательный, хоть и написан на электроне, что сильно замедляет его работу, в особенности на виндоус. Его возможностей мне в полной мере хватает: работа с файлами, естественно, гит, дебаггер и встроенная консоль. У этого редактора на максималках нашелся младший брат на моем ноутбуке — Sublime Text. Он самый быстрый из тех, что мне удалось повидать и приятный на вид. Поэтому, если мне надо записать какой-то фрагмент кода, к примеру, найденный в интернете, то я использую именно эту программу.
-
-На протяжение всей работы я иногда составляю план. Все заметки подобного рода или просто какой-то немаленький текст для публикации я записываю в Notion. Так как его нет на линукс дистрибутивах, я ипользую чаще веб версию, чем программу. Этот текст я, кстати, пишу тоже в ноушн. Описывать нечего, это как Visual Studio Code в мире обычных текстовых редакторов/заметочников.
-
-Среди прочего у меня есть эмулятор терминала Hyper. Он красивый (не то что стандартная консоль винды) и кастомизируемый. Единственная его беда — все тот же електрон. У меня стоит подпсистема убунту, чтоб нормально использовать bash в виндоус.
-
-Браузеры — Chrome, Chrome Canary и Firefox Nightly (ну я же тру девелопер).
-
-Все остальное как у обычных людей.
-
-## До свидания
-
-Я полагаю, что это будет цикл статей, если нет, то заранее извинюсь. Планирую описать более подробно свой рабочий процесс. Лайк, шер, алишер.
+That's all. Hope, you've found something interesting!
