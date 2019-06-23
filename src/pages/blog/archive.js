@@ -44,7 +44,7 @@ export const archiveQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM YYYY")
+            date(formatString: "MMMM D, YYYY")
             title
             categories
           }
