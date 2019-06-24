@@ -1,1 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@font-face {
+  font-family: 'Inconsolata';
+  font-weight: normal;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  font-display: swap;
+  src: url("/fonts/Inconsolata-Regular.woff2") format("woff2");
+}
