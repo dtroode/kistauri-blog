@@ -15,7 +15,7 @@ const ListLink = props => (
 const Navbar = props => {
   let nav = "";
   let githubLink = "https://github.com/dtroode/Kistauri/tree/master/src/pages" + props.link;
-  githubLink = githubLinkstr(0, link.length - 1) + ".md";
+  githubLink = githubLink.substr(0, githubLink.length - 1) + ".md";
 
   if (props.className === "post" || props.className === 'archive') {
     nav = (
