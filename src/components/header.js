@@ -14,6 +14,8 @@ const ListLink = props => (
 
 const Navbar = props => {
   let nav = "";
+  let githubLink = "https://github.com/dtroode/Kistauri/tree/master/src/pages" + props.link;
+  link = link.substr(0, link.length - 1) + ".md";
 
   if (props.className === "post" || props.className === 'archive') {
     nav = (
@@ -24,6 +26,9 @@ const Navbar = props => {
         <ListLink to="/" className="non-arrow">
           Portfolio
         </ListLink>
+        <a href={githubLink} className="non-arrow">
+          On Github
+        </a>
       </nav>
     );
   } else if (props.className === "blog") {
@@ -48,7 +53,7 @@ const Navbar = props => {
 
 const Header = props => (
   <header className={props.pageClass}>
-    <Navbar className={props.pageClass} category={props.category} />
+    <Navbar className={props.pageClass} category={props.category} link={props.link}/>
     <h1>{props.title}</h1>
     <hr />
   </header>

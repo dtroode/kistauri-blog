@@ -12,6 +12,7 @@ export default ({ data }) => {
       pageClass="post"
       title={post.frontmatter.title}
       category={post.frontmatter.categories}
+      link={post.fields.slug}
     >
       <SEO
         title={post.frontmatter.title}

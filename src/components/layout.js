@@ -21,6 +21,7 @@ const Layout = props => (
           title={props.title}
           pageClass={props.pageClass}
           category={props.category}
+          link={props.link}
         />
         <main className={props.pageClass}>{props.children}</main>
         <Footer />
