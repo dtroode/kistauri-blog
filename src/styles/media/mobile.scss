@@ -24,8 +24,9 @@
     }
     &.portfolio {
       grid-template: 'section' auto / 1fr;
-    }ortfolio section.content {
-      grid-template: 'sub-heading' auto 'text' auto/1fr;
+      section.content {
+        grid-template: 'sub-heading' auto 'text' auto/1fr;
+      }
     }
   }
   footer {
