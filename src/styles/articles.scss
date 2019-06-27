@@ -5,12 +5,20 @@ section.articles {
   grid-gap: 2.5rem;
   align-items: start;
   padding: 0;
-  section.first-articles article a {
+  &.first-articles article a {
     padding-bottom: 100%;
     section.page-content-container {
-      position: static;
+      position: absolute;
       section.page-content {
         position: absolute;
+      }
+    }
+  }
+  &.remaining-articles article {
+    align-self: stretch;
+    a {
+      section.page-content-container {
+        position: static;
       }
     }
   }
@@ -47,14 +55,6 @@ section.articles {
         background-color: var(--accent-green);
       }
     }
-    section.remaining-articles article {
-      align-self: stretch;
-      a {
-        section.page-content-container {
-          position: static;
-        }
-      }
-    }
     section.page-content-container {
       width: 100%;
       height: 100%;
@@ -64,7 +64,7 @@ section.articles {
       opacity: .5;
       pointer-events: none;
     }
-    a.page-link {
+    a {
       position: relative;
       display: block;
       width: 100%;
