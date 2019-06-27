@@ -9,15 +9,17 @@ import Img from "gatsby-image";
 import SEO from "../components/seo";
 
 const IndexPage = props => {
-  const postList = props.data.allMarkdownRemark;
+  const firstPostsList = props.data.firstPosts.edges;
+  const remainingPostsList = props.data.remainingPosts.edges;
   return (
     <Layout pageClass="blog" title="David Kistauri Blog">
       <Helmet>
         <link rel="canonical" href="https://dtroode.netlify.com/blog" />
       </Helmet>
       <SEO title="Blog" description="Whoa! Welcome to my, David Kistauri's Blog! Name any word and i'll make an article about it" image="/img/preview.jpg"/>
-      <section className="articles">
-        {postList.edges.map(({ node }) => (
+      <h2>Posts</h2>
+      <section className="articles first-articles">
+        {firstPostsList.map(({ node }) => (
           <article className={node.frontmatter.categories}>
             <Link to={node.fields.slug} className="page-link">
               <section className="page-content-container">
@@ -36,9 +38,24 @@ const IndexPage = props => {
             </Link>
           </article>
         ))}
-        <Link to="/blog/archive" className="show-more">
-          More...
-        </Link>
+        <hr />
+      </section>
+      <h2>Older Posts</h2>
+      <section className="articles remaining-articles">
+        {remainingPostsList.map(({ node }) => (
+          <article className={node.frontmatter.categories}>
+            <Link to={node.fields.slug} className="page-link">
+              <section className="page-content-container">
+                <section className="page-content">
+                  <h2>{node.frontmatter.title}</h2>
+                  <p className="date-mins">
+                    {node.frontmatter.date} • {node.timeToRead} min read
+                  </p>
+                </section>
+              </section>
+            </Link>
+          </article>
+        ))}
       </section>
     </Layout>
   );
@@ -47,10 +64,10 @@ const IndexPage = props => {
 export default IndexPage;
 
 export const listQuery = graphql`
-  query ListQuery {
-    allMarkdownRemark(
+  query {
+    firstPosts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 20
+      limit: 4
     ) {
       edges {
         node {
@@ -58,8 +75,8 @@ export const listQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM D, YYYY")
             title
+            date(formatString: "MMMM D, YYYY")
             categories
             hero {
               childImageSharp {
@@ -68,6 +85,24 @@ export const listQuery = graphql`
                 }
               }
             }
+          }
+          timeToRead
+        }
+      }
+    }
+    remainingPosts: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] },
+      skip: 4
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(formatString: "MMMM D, YYYY")
+            categories
           }
           timeToRead
         }

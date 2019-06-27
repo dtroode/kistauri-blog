@@ -17,7 +17,7 @@ const Navbar = props => {
   let githubLink = "https://github.com/dtroode/Kistauri/tree/master/src/pages" + props.link;
   githubLink = githubLink.substr(0, githubLink.length - 1) + ".md";
 
-  if (props.className === "post" || props.className === 'archive') {
+  if (props.className === "post") {
     nav = (
       <nav>
         <ListLink to="/blog" className="back">

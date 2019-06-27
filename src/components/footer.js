@@ -22,11 +22,11 @@ const Footer = props => (
         <ListLink to="/blog" className="contacts-text">
           Blog
         </ListLink>
-        <ListLink to="/blog/archive" className="contacts-text">
-          Archive
-        </ListLink>
         <ListLink to="/rss.xml" className="contacts-text">
           RSS
+        </ListLink>
+        <ListLink to="/sitemap.xml" className="contacts-text">
+          Sitemap
         </ListLink>
       </nav>
       <nav>

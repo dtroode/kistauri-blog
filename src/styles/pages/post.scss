@@ -6,6 +6,7 @@ header.post {
 }
 
 main.post {
+  display: grid;
   grid-template: ("text empty" / 1fr) 1fr;
 }
 
@@ -36,6 +37,7 @@ section.text {
   a {
     font-size: inherit;
     color: var(--accent-blue);
+    text-decoration: underline;
     &:hover {
       color: inherit;
     }

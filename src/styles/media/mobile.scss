@@ -25,16 +25,9 @@
     &.post {
       grid-template: 'text' auto 'empty' auto/1fr;
     }
-    &.archive {
-      grid-template: 'articles' auto 'empty' auto/1fr;
-    }
     &.portfolio {
       grid-template: 'section' auto / 1fr;
-    }
-    &.archive section.articles {
-      padding-top: 0;
-    }
-    &.portfolio section.content {
+    }ortfolio section.content {
       grid-template: 'sub-heading' auto 'text' auto/1fr;
     }
   }
@@ -47,6 +40,9 @@
   section {
     &.articles {
       grid-template: 'article'/1fr;
+      hr {
+        grid-column-end: 2;
+      }
     }
     &.text {
       blockquote, ol, p, ul, a {
@@ -57,9 +53,6 @@
   article {
     &.page {
       width: auto;
-      &.archive-page h2 {
-        margin-bottom: 0;
-      }
     }
     &.empty {
       display: none;
@@ -77,8 +70,5 @@
     code {
       font-size: 1.5rem;
     }
-  }
-  a.show-more {
-    width: unset;
   }
 }

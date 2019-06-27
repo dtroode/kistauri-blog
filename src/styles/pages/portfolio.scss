@@ -1,4 +1,5 @@
 main.portfolio {
+  display: grid;
   grid-template: "section" (auto / 1fr);
   section.content {
     display: grid;

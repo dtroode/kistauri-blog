@@ -43,10 +43,13 @@ body {
 }
 
 header, main, footer {
-  display: grid;
   padding-top: 2.5rem;
   padding-right: 4.375rem;
   padding-left: 4.375rem;
+}
+
+header, footer {
+  display: grid;
 }
 
 header {
@@ -161,7 +164,7 @@ footer {
   }
 }
 
-header nav a, a.contacts-text, a.show-more {
+header nav a, a.contacts-text {
   padding: 0.5rem;
 }
 
