@@ -19,9 +19,6 @@
     font-size: 1.5rem;
   }
   main {
-    &.blog {
-      grid-template: 'categories' auto 'articles' auto/1fr;
-    }
     &.post {
       grid-template: 'text' auto 'empty' auto/1fr;
     }
@@ -38,11 +35,8 @@
     }
   }
   section {
-    &.articles {
-      grid-template: 'article'/1fr;
-      hr {
-        grid-column-end: 2;
-      }
+    &.articles hr {
+      grid-column-end: 2;
     }
     &.text {
       blockquote, ol, p, ul, a {
