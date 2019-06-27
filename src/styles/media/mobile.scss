@@ -35,9 +35,6 @@
     }
   }
   section {
-    &.articles hr {
-      grid-column-end: 2;
-    }
     &.text {
       blockquote, ol, p, ul, a {
         font-size: 1.5rem;
