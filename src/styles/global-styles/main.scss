@@ -197,6 +197,14 @@ h2 {
   letter-spacing: -0.05rem;
 }
 
+h3 {
+  width: 75%;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: -0.05rem;
+}
+
 p, a {
   font-size: 1.22rem;
   font-weight: 600;
@@ -234,13 +242,9 @@ a {
 }
 
 ul, ol {
-  margin-block-start: 0.7rem;
-  margin-block-end: 2.1rem;
+  margin-block-start: 0;
+  margin-block-end: 1rem;
   padding-inline-start: 20px;
-}
-
-li:not(:first-of-type) {
-  margin-top: 0.7rem;
 }
 
 img {
