@@ -1,9 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import "../styles/fonts/serif.scss";
-import "../styles/fonts/mono.scss";
-import "../styles/pages/post.scss";
+import "../styles/fonts-styles/mono.scss";
+import "../styles/pages-styles/post.scss";
 import "../styles/media.scss";
 import SEO from "../components/seo";
 

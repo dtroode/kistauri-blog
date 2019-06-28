@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/pages/portfolio.scss";
+import "../styles/pages-styles/portfolio.scss";
 import "../styles/media.scss";
 import Layout from "../components/layout";
 import { Helmet } from "react-helmet";

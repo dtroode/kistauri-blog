@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
-import "../styles/pages/blog.scss";
+import "../styles/pages-styles/blog.scss";
 import "../styles/media.scss";
 import Layout from "../components/layout";
 import Img from "gatsby-image";

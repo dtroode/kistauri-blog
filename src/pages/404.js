@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import "../styles/pages/blog.scss";
-import "../styles/media/dark.scss"
+import "../styles/pages-styles/blog.scss";
+import "../styles/media-styles/dark.scss"
 import SEO from "../components/seo";
 
 const ErrorPage = props => (
