@@ -43,6 +43,9 @@
       blockquote, ol, p, ul, a {
         font-size: 1.5rem;
       }
+      pre {
+        width: calc(100vw - 7rem);
+      }
     }
   }
   article {
@@ -59,11 +62,5 @@
   }
   p, a {
     font-size: 1.5rem;
-  }
-  pre {
-    width: calc(100vw - 7rem);
-    code {
-      font-size: 1.5rem;
-    }
   }
 }

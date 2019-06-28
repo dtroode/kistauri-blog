@@ -57,9 +57,12 @@ section.text {
     background-color: var(--additional-bg);
   }
   code {
-    font-family: Inconsolata, monospace;
-    font-weight: bold;
-    font-size: 1.22rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.22em;
+    line-height: 1.33em;
+    font-feature-settings: 'ss02' 1, 'zero' 1;
+    text-shadow: none;
+    color: var(--main-fg);
     span {
       font-weight: unset;
     }
