@@ -13,11 +13,9 @@ html {
   }
 }
 
-* {
-  &::selection, &::-moz-selection, &::-webkit-selection {
-    background-color: var(--accent-blue);
-    color: var(--main-fg);
-  }
+::selection, ::-moz-selection, ::-webkit-selection {
+  background-color: var(--accent-blue);
+  color: var(--main-fg);
 }
 
 html {
