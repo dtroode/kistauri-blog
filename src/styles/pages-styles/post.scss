@@ -12,7 +12,7 @@ main.post {
 
 section.text {
   justify-content: start;
-  h1, h2, h3, h4, p {
+  h1, h2, h3, p {
     width: 100%;
   }
   h2 {
@@ -22,33 +22,17 @@ section.text {
   h2 + h3 {
     margin-top: 0;
   }
-  h2 + h4 {
-    margin-top: 0;
-  }
   h2 + p {
     margin-top: 0;
   }
   h3 {
-    margin-top: 2.25rem;
-    margin-bottom: 0.75rem;
-  }
-  h3 + h4 {
-    margin-top: 0;
-  }
-  h3 + p {
-    margin-top: 0.75rem;
-  }
-  h3 + p a.gatsby-resp-image-link {
-    margin-top: 1.125rem;
-  }
-  h4 {
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
     margin-bottom: 0.5rem;
   }
-  h4 + p {
+  h3 + p {
     margin-top: 0.5rem;
   }
-  h4 + p a.gatsby-resp-image-link {
+  h3 + p a.gatsby-resp-image-link {
     margin-top: 0.75rem;
   }
   p, a, ul, ol, blockquote {
