@@ -82,7 +82,7 @@ section.articles {
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 1.25rem;
+        padding: var(--third-padding);
         color: #F2F2F7;
         h3 {
           width: auto;
