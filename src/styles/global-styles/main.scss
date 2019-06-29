@@ -14,8 +14,8 @@ html {
 }
 
 * {
-  &::selection, &::-moz-selection {
-    background: var(--accent-blue);
+  &::selection, &::-moz-selection, &::-webkit-selection {
+    background-color: var(--accent-blue);
     color: var(--main-fg);
   }
 }
