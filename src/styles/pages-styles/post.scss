@@ -48,7 +48,6 @@ section.text {
   p, a, ul, ol, blockquote {
     line-height: 1.4em;
     font-weight: 400;
-    letter-spacing: -0.017em;
   }
   p {
     margin-top: 1em;
@@ -62,7 +61,6 @@ section.text {
   a {
     font-size: inherit;
     color: var(--accent-blue);
-    text-decoration: underline;
     &:hover {
       color: inherit;
     }

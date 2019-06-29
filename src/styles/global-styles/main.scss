@@ -178,11 +178,15 @@ h1, h2, p {
   margin: 0;
 }
 
+h1, h2 {
+  font-size: 2rem;
+  letter-spacing: -0.022em;
+}
+
 h1 {
   display: block;
   font-size: 3rem;
   line-height: 3rem;
-  letter-spacing: -0.1rem;
   font-weight: 700;
   width: 75%;
 }
@@ -192,20 +196,14 @@ h2, h3, h4 {
   line-height: 1em;
 }
 
-h2, h3 {
-  letter-spacing: -0.05rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
 h3 {
   font-size: 1.5rem;
+  letter-spacing: -0.021em;
 }
 
-p, a, h4 {
+h4, p, a, ul, ol, blockquote {
   font-size: 1rem;
+  letter-spacing: -0.017em;
 }
 
 p, a {
