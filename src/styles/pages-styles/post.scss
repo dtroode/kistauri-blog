@@ -46,8 +46,9 @@ section.text {
     }
   }
   p, a, ul, ol, blockquote {
-    line-height: 1.5em;
+    line-height: 1.4em;
     font-weight: 400;
+    letter-spacing: -0.014em;
   }
   p {
     margin-top: 1em;
@@ -87,7 +88,7 @@ section.text {
   code {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.4em;
     font-feature-settings: 'ss02' 1, 'zero' 1;
     text-shadow: none;
     color: var(--main-fg);

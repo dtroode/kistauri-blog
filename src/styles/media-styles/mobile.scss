@@ -39,6 +39,9 @@
       grid-template-columns: 1fr;
     }
     &.text {
+      p, a, ul, ol, blockquote {
+        letter-spacing: -0.011em;
+      }
       pre {
         width: calc(100vw - 6rem);
       }
