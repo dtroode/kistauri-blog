@@ -1,3 +1,12 @@
+*::selection {
+  background: var(--accent-blue);
+  color: var(--main-bg);
+}
+*::-moz-selection {
+  background: var(--accent-blue);
+  color: var(--main-bg);
+}
+
 html, button {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -11,11 +20,6 @@ html {
     font-family: 'Inter var', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-feature-settings: 'case' 1, 'frac' 1;
   }
-}
-
-::selection, ::-moz-selection, ::-webkit-selection {
-  background-color: var(--accent-blue);
-  color: var(--main-fg);
 }
 
 html {
