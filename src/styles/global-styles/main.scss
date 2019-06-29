@@ -68,7 +68,6 @@ header {
       display: inline-block;
       margin-right: 0.25rem;
       margin-bottom: 0.25rem;
-      font-size: 1.125rem;
       background-color: var(--accent-blue);
       color: var(--main-bg);
       &:hover {
@@ -185,8 +184,8 @@ h1, h2 {
 
 h1 {
   display: block;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   font-weight: 700;
   width: 75%;
 }
@@ -222,7 +221,6 @@ a {
   flex: inherit;
   color: var(--accent-blue);
   text-decoration: none;
-  font-size: 1.125rem;
   line-height: 1em;
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
