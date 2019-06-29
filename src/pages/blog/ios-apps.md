@@ -29,7 +29,7 @@ Procreate is an app for creators (wow). They have also a pocket version for iPho
 
 Very good app from PSPDFKit team. Using it almost every day when I have school lessons because I refused to use "classic" books and downloaded them in PDF format. I've found this app from [Federico Viticci](https://twitter.com/viticci) twitter account. They have a lot of functionality (probably more, than in a lot of desktop PDF viewers) and customization (dark theme included!). Fast and handy app. Also with tabs support in the free version.
 
-### Whatsapp
+### WhatsApp
 
 I hate WhatsApp (sorry Zuckerberg), because we have Telegram, but they support iOS UI Kit and I can't fail to mention them in this list.
 
