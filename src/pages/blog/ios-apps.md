@@ -17,19 +17,19 @@ In iOS 11 Apple finally released new UI. Previously they tested it in Apple Musi
 
 After two years a lot of developers redesigned their apps to match new design guidelines, but a lot of devs created a UI that similar to iOS, but not the same. Wrong fonts, wrong text size, and wrong animation... That's because I wrote this article about good apps to say their developers "Thanks!"
 
-## Memento
+### Memento
 
 Very good example. This is a reminder app that connects to default iOS awful Reminders app. Different themes, some little customization and a little more. This is a paid app, but worth it.
 
-## Procreate
+### Procreate
 
 Procreate is an app for creators (wow). They have also a pocket version for iPhone, but both pocket and full version match iOS UI Kit. I haven't bought any of version, but I saw screenshots and good reviews from users (just follow [Procreate](https://twitter.com/Procreate) in twitter).
 
-## PDF Viewer
+### PDF Viewer
 
 Very good app from PSPDFKit team. Using it almost every day when I have school lessons because I refused to use "classic" books and downloaded them in PDF format. I've found this app from [Federico Viticci](https://twitter.com/viticci) twitter account. They have a lot of functionality (probably more, than in a lot of desktop PDF viewers) and customization (dark theme included!). Fast and handy app. Also with tabs support in the free version.
 
-## Whatsapp
+### Whatsapp
 
 I hate WhatsApp (sorry Zuckerberg), because we have Telegram, but they support iOS UI Kit and I can't fail to mention them in this list.
 
