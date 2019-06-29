@@ -5,7 +5,7 @@ main.portfolio {
     display: grid;
     grid-template: ("sub-heading text" / 1fr) 1fr;
     &:not(:first-of-type) {
-      margin-top: 2.5rem;
+      margin-top: var(--second-padding);
     }
     p:not(:first-of-type) {
       margin-top: 1rem;
