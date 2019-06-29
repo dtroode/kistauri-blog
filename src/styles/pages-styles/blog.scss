@@ -7,6 +7,6 @@ header.blog {
 main.blog h2 {
   margin-bottom: 1rem;
   &:nth-of-type(2) {
-    margin-top: 2.5rem;
+    margin-top: var(--second-padding);
   }
 }

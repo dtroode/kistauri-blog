@@ -1,22 +1,17 @@
 @media screen and (max-width: 835px) {
-  footer, header, main {
-    padding-top: 2.5rem;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
+  :root {
+    --first-padding: 2.4rem;
+    --second-padding: 1.5rem;
   }
   header {
     grid-template: 'links' auto 'heading' auto 'hr' auto/1fr;
     nav a {
-      font-size: 1.5rem;
       letter-spacing: -0.05rem;
     }
     button {
       height: 2.5rem;
       width: 2.5rem;
     }
-  }
-  a.contacts-text {
-    font-size: 1.5rem;
   }
   main {
     &.post {
@@ -37,14 +32,11 @@
   }
   section {
     &.articles {
-      grid-template: 'articles'/1fr;
+      grid-template-columns: 1fr;
     }
     &.text {
-      blockquote, ol, p, ul, a {
-        font-size: 1.5rem;
-      }
       pre {
-        width: calc(100vw - 7rem);
+        width: calc(100vw - 6rem);
       }
     }
   }
@@ -59,8 +51,5 @@
   h2 {
     width: auto;
     margin-bottom: 1.4rem;
-  }
-  p, a {
-    font-size: 1.5rem;
   }
 }

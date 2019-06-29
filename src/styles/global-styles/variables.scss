@@ -1,4 +1,4 @@
-/* Root colors */
+/* Root variables */
 :root {
   --main-bg: #F2F2F7;
   --main-fg: #1C1C1E;
@@ -10,4 +10,7 @@
   --accent-green: #34C759;
   --accent-blue: #007AFF;
   --accent-yellow: #FFCC00;
+
+  --first-padding: 4rem;
+  --second-padding: 2.5rem;
 }

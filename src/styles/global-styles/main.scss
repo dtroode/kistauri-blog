@@ -43,9 +43,9 @@ body {
 }
 
 header, main, footer {
-  padding-top: 2.5rem;
-  padding-right: 4.375rem;
-  padding-left: 4.375rem;
+  padding-top: var(--second-padding);
+  padding-right: var(--second-padding);
+  padding-left: var(--second-padding);
 }
 
 header, footer {
@@ -115,7 +115,6 @@ header {
   hr {
     grid-area: hr;
     place-self: end;
-    margin: 2.5rem 0 0 0;
   }
 }
 
@@ -126,8 +125,8 @@ main {
 footer {
   flex-shrink: 0;
   grid-template: 'heading' auto 'links-container' auto / 1fr 1fr;
-  margin-top: 4.375rem;
-  padding-bottom: 4.375rem;
+  margin-top: var(--first-padding);
+  padding-bottom: var(--first-padding);
   background-color: var(--additional-bg);
   color: var(--additional-fg);
   section.links-container {
@@ -182,31 +181,40 @@ h1, h2, p {
 
 h1 {
   display: block;
-  font-size: 3.5rem;
-  line-height: 3.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
   letter-spacing: -0.1rem;
   font-weight: 700;
   width: 75%;
 }
 
+h2, h3, h4 {
+  letter-spacing: -0.05rem;
+}
+
 h2 {
   width: 75%;
-  font-size: 2.125rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 2.125rem;
-  letter-spacing: -0.05rem;
+  line-height: 2.5rem;
 }
 
 h3 {
   width: 75%;
-  font-size: 1.9rem;
+  margin: 0;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 1.3em;
-  letter-spacing: -0.05rem;
+  line-height: 1em;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1em;
 }
 
 p, a {
-  font-size: 1.22rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -271,13 +279,7 @@ blockquote {
 hr {
   width: 100%;
   height: 4px;
-  margin: 4.375rem 0 0 0;
+  margin: var(--first-padding) 0 0 0;
   border: 0;
   background-color: var(--main-fg);
-}
-
-@media screen and (max-width: 1000px) {
-  html {
-    font-size: 12px;
-  }
 }
