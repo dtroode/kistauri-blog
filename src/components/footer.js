@@ -40,7 +40,7 @@ const Footer = props => (
           Telegram
         </a>
         <a href="https://t.me/dtroodechannel" className="contacts-text">
-          Telegram channel
+          TG channel
         </a>
       </nav>
     </section>

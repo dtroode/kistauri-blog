@@ -29,7 +29,7 @@ const IndexPage = props => {
                   alt={node.frontmatter.title}
                 />
                 <section className="page-content">
-                  <h3>{node.frontmatter.title}</h3>
+                  <h2>{node.frontmatter.title}</h2>
                   <p className="date-mins">
                     {node.frontmatter.date} • {node.timeToRead} min read
                   </p>
@@ -47,7 +47,7 @@ const IndexPage = props => {
             <Link to={node.fields.slug} className="page-link">
               <section className="page-content-container">
                 <section className="page-content">
-                  <h3>{node.frontmatter.title}</h3>
+                  <h2>{node.frontmatter.title}</h2>
                   <p className="date-mins">
                     {node.frontmatter.date} • {node.timeToRead} min read
                   </p>

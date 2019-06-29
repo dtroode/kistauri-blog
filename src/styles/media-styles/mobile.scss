@@ -4,6 +4,9 @@
     --second-padding: 1.5rem;
     --third-padding: 1rem;
   }
+  html {
+    font-size: 16px;
+  }
   header {
     grid-template: 'links' auto 'heading' auto 'hr' auto/1fr;
     nav a {
