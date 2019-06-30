@@ -5,7 +5,7 @@ description: What I replaced after a year and half of developing?
 path: /blog
 date: 2019-06-22T10:44:34.021Z
 hero: /img/replace.png
-categories: me
+categories: advices
 ---
 What I replaced after a year and half of developing?
 

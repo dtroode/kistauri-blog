@@ -4,7 +4,7 @@ description: Как я написал сайты? Моя коробочка с �
 path: /blog
 date: 2019-04-25T19:59:59.000Z
 hero: /img/my-toolset.png
-categories: me
+categories: work
 ---
 How I wrote websites? My Toolbox
 

@@ -31,22 +31,10 @@ section.articles {
       transform: translateY(-0.5rem);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
-    &.me {
+    &.work {
       background-color: var(--accent-red);
       section.page-content {
         background-color: var(--accent-red);
-      }
-    }
-    &.works {
-      background-color: var(--accent-yellow);
-      section.page-content {
-        background-color: var(--accent-yellow);
-      }
-    }
-    &.news {
-      background-color: var(--accent-blue);
-      section.page-content {
-        background-color: var(--accent-blue);
       }
     }
     &.thoughts {
@@ -55,13 +43,24 @@ section.articles {
         background-color: var(--accent-green);
       }
     }
+    &.advices {
+      background-color: var(--accent-yellow);
+      section.page-content {
+        background-color: var(--accent-yellow);
+      }
+    }
+    &.learning {
+      background-color: var(--accent-blue);
+      section.page-content {
+        background-color: var(--accent-blue);
+      }
+    }
     section.page-content-container {
       width: 100%;
       height: 100%;
     }
     div.page-background, img.page-background {
       width: 100%;
-      opacity: .5;
       pointer-events: none;
     }
     a {
@@ -83,7 +82,7 @@ section.articles {
         left: 0;
         right: 0;
         padding: var(--third-padding);
-        color: #F2F2F7;
+        color: #1C1C1E;
         h3 {
           width: auto;
           margin: 0 0 0.5em 0;

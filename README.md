@@ -12,9 +12,9 @@ I am frontend developer. Work with **HTML**, **CSS**, **JS**, playing with **Rea
 This is repository of my **[blog](https://dtroode.netlify.com/blog)** and portfolio.\
 Here you can find my notes about:
 - How I **work**
-- My **projects**
 - My **thoughts** about everything in dev world
-- **News**
+- My **advices**
+- My **learning process** notes
 
 ![Blog](https://i.imgur.com/KLBgeu6.png)
 
