@@ -64,6 +64,9 @@ section.text {
     &:hover {
       color: inherit;
     }
+    &:visited {
+      color: var(--accent-indigo);
+    }
     &.gatsby-resp-image-link {
       margin-top: 1.5em;
     }
