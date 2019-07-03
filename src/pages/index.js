@@ -19,10 +19,11 @@ const PortfolioPage = () => {
       <section className="content me">
         <h2>About me</h2>
         <p>
-          <span>0.1. </span>I am frontend-developer. I write HTML, CSS and JS code. Playing with React and Next.js. I'm in the 10th grade. Abkhazia. I started to
-          code in 2018 and have already written several websites. I have a
-          Telegram channel (link below). Digital! I have some experience in SMM. Not a
-          native English speaker.
+          <span>0.1. </span>I am frontend-developer. I write HTML, CSS and JS
+          code. Playing with React and Next.js. I'm in the 10th grade. Abkhazia.
+          I started to code in 2018 and have already written several websites.
+          Contribute to open source. I have a Telegram channel (link below).
+          Digital! I have some experience in SMM. Not a native English speaker.
         </p>
         <hr />
       </section>
