@@ -1,22 +1,22 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
+const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const slug = createFilePath({ node, getNode, basePath: `pages` });
     createNodeField({
       node,
       name: `slug`,
-      value: slug,
-    })
+      value: slug
+    });
   }
   fmImagesToRelative(node);
-}
+};
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
   return graphql(`
     {
       allMarkdownRemark {
@@ -37,9 +37,9 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
-          slug: node.fields.slug,
-        },
-      })
-    })
-  })
-}
+          slug: node.fields.slug
+        }
+      });
+    });
+  });
+};
