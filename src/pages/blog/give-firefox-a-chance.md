@@ -24,7 +24,7 @@ Now, most of the developers choose between Chrome and Firefox. And in 2017 Mozil
 
 ![Firefox Quantum vs Chrome](/static/firefox-vs-chrome.jpg)
 
-Firefox using their own new engine with new Quantum CSS and Quantum DOM rendering. A lot of explanations [here](https://hacks.mozilla.org/2017/11/entering-the-quantum-era-how-firefox-got-fast-again-and-where-its-going-to-get-faster/). And Chrome uses a lot of memory, Firefox — less.
+Firefox using their own new engine with new Quantum CSS and Quantum DOM rendering. A lot of explanations [in Mozilla's post](https://hacks.mozilla.org/2017/11/entering-the-quantum-era-how-firefox-got-fast-again-and-where-its-going-to-get-faster/). And Chrome uses a lot of memory, Firefox — less.
 
 Also, Firefox has a lot of useful features like [showing useless CSS rules](https://twitter.com/nicolaschevobbe/status/1135798960361263104) and supports [prefers-color-scheme: dark](https://hacks.mozilla.org/2019/05/firefox-67-dark-mode-css-webrender/) media rules, that Chrome supports only in beta now.
 
