@@ -61,11 +61,14 @@ module.exports = {
             resolve: `gatsby-remark-relative-images`,
           },  
           {
-            resolve: 'gatsby-remark-images',
+            resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 970,
             },
           },
+          {
+            resolve: `gatsby-remark-prismjs`
+          }
         ],
       },
     },

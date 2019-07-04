@@ -36,7 +36,7 @@ section.text {
     & + p {
       margin-top: 0;
     }
-    & + p a.gatsby-resp-image-link {
+    & + p a.gatsby-resp-image-link, & + pre {
       margin-top: 1.125em;
     }
   }
@@ -45,7 +45,7 @@ section.text {
     & + p {
       margin-top: 0;
     }
-    & + p a.gatsby-resp-image-link {
+    & + p a.gatsby-resp-image-link, & + pre {
       margin-top: 0.75em;
     }
   }
@@ -89,18 +89,16 @@ section.text {
     border-radius: 0.4rem;
   }
   pre {
-    margin-top: 0.7rem;
+    margin-top: 1.5rem;
     padding: 1rem;
     width: calc(100% - 2rem);
     overflow-x: scroll;
-    background-color: var(--additional-bg);
   }
   code {
     font-family: Inconsolata, monospace;
     font-size: 1em;
     line-height: 1.4em;
     text-shadow: none;
-    color: var(--main-fg);
     span {
       font-weight: unset;
     }
