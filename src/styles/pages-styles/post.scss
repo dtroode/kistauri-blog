@@ -65,6 +65,9 @@ section.text {
       width: unset;
       background-color: var(--additional-bg);
     }
+    code {
+      color: var(--main-dark);
+    }
   }
   a {
     font-size: inherit;
