@@ -17,7 +17,7 @@ html {
 
 @supports (font-variation-settings: normal) {
   html, button {
-    font-family: 'Inter var', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Inter var', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-feature-settings: 'case' 1, 'frac' 1;
   }
 }
