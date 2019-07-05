@@ -21,7 +21,7 @@ html {
   button {
     font-family: "Inter var", Inter, "Helvetica Neue", Helvetica, Arial,
       sans-serif;
-    font-feature-settings: "case" 1, "frac" 1;
+    font-feature-settings: "case" 1, "frac" 1, "cv08" 1;
   }
 }
 
@@ -162,10 +162,10 @@ footer {
           background-color: var(--main-fg);
         }
         &:hover::after {
-          content: "→";
+          content: "←";
         }
         &::after {
-          content: "←";
+          content: "→";
         }
       }
     }
@@ -177,11 +177,11 @@ footer nav a {
   padding: 0.5rem;
 }
 
-header button,
+header a,
+footer a,
 p:first-of-type,
 blockquote,
-pre,
-a {
+pre {
   border-radius: 0.5rem;
 }
 
