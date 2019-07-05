@@ -162,10 +162,10 @@ footer {
           background-color: var(--main-fg);
         }
         &:hover::after {
-          content: "⟵";
+          content: "→";
         }
         &::after {
-          content: "⟶";
+          content: "←";
         }
       }
     }
