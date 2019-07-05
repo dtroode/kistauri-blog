@@ -79,8 +79,10 @@ section.main__art-cont {
   a {
     font-size: inherit;
     color: var(--accent-blue);
+    text-decoration: underline var(--accent-blue-50);
     &:hover {
       color: inherit;
+      text-decoration: underline var(--main-fg-50);
     }
     &:visited {
       color: var(--accent-indigo);
