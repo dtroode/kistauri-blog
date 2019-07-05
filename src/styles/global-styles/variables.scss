@@ -1,19 +1,27 @@
 /* Root variables */
 :root {
-  --main-bg: #F2F2F7;
-  --main-fg: #1C1C1E;
-  
-  --additional-bg: #E5E5EA;
-  --additional-fg: #2C2C2E;
-  
-  --accent-red: #FF3B30;
-  --accent-green: #34C759;
-  --accent-blue: #007AFF;
-  --accent-yellow: #FFCC00;
+  --main-bg: #f2f2f7;
+  --main-fg: #1c1c1e;
 
-  --accent-pink: #FF2D55;
-  --accent-indigo: #5856D6;
-  --accent-orange: #FF9500;
+  --additional-bg: #e5e5ea;
+  --additional-fg: #2c2c2e;
+
+  --accent-red: #ff3b30;
+  --accent-green: #34c759;
+  --accent-blue: #007aff;
+  --accent-yellow: #ffcc00;
+
+  --accent-pink: #ff2d55;
+  --accent-indigo: #5856d6;
+  --accent-orange: #ff9500;
+
+  --main-bg-50: rgba(242, 242, 247, 0.5);
+  --main-fg-50: rgba(28, 28, 30, 0.5);
+
+  --accent-red-50: rgba(255, 59, 48, 0.5);
+  --accent-green-50: rgba(52, 199, 89, 0.5);
+  --accent-blue-50: rgba(0, 122, 255, 0.5);
+  --accent-yellow-50: rgba(255, 204, 0, 0.5);
 
   --first-padding: 4rem;
   --second-padding: 2.5rem;
