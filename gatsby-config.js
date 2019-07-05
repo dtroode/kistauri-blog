@@ -12,22 +12,22 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/img`,
-        name: `images`,
-      },
+        name: `images`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages",
-      },
+        name: "pages"
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -38,8 +38,8 @@ module.exports = {
         background_color: `#F1F2F6`,
         theme_color: `#3742FA`,
         display: `minimal-ui`,
-        icon: `src/images/logo/icon.png`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/logo/icon.png` // This path is relative to the root of the site.
+      }
     },
     {
       resolve: `gatsby-plugin-netlify`,
@@ -50,27 +50,27 @@ module.exports = {
         mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
         mergeCachingHeaders: true, // boolean to turn off the default caching headers
         transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
-      },
+        generateMatchPathRewrites: true // boolean to turn off automatic creation of redirect rules for client only paths
+      }
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images`,
-          },  
+            resolve: `gatsby-remark-relative-images`
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 970,
-            },
+              maxWidth: 970
+            }
           },
           {
             resolve: `gatsby-remark-prismjs`
           }
-        ],
-      },
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -96,9 +96,9 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
+                  custom_elements: [{ "content:encoded": edge.node.html }]
+                });
+              });
             },
             query: `
               {
@@ -120,10 +120,10 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Hey! RSS link",
-          },
-        ],
-      },
-    },
-  ],
-}
+            title: "Hey! RSS link"
+          }
+        ]
+      }
+    }
+  ]
+};
