@@ -22,7 +22,7 @@ export default ({ data }) => {
         image={post.frontmatter.hero.childImageSharp.fluid.src}
       />
       <section className="main__art-cont">
-        <p className=".main__art-cont__inf">
+        <p className="main__art-cont__inf">
           {post.frontmatter.date} • {post.timeToRead} min read
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
