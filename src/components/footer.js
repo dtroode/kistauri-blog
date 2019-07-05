@@ -10,38 +10,22 @@ const ListLink = props => (
 const Footer = props => (
   <footer>
     <h2>About contacts</h2>
-    <section className="links-container">
+    <section className="foot__cont">
       <p>
         You can find me in social media by username{" "}
         <span className="nickname">@dtroode</span>
       </p>
-      <nav>
-        <ListLink to="/" className="contacts-text">
-          Portfolio
-        </ListLink>
-        <ListLink to="/blog" className="contacts-text">
-          Blog
-        </ListLink>
-        <ListLink to="/rss.xml" className="contacts-text">
-          RSS
-        </ListLink>
-        <ListLink to="/sitemap.xml" className="contacts-text">
-          Sitemap
-        </ListLink>
+      <nav className="foot__cont__nav foot__cont__nav--page-links">
+        <ListLink to="/">Portfolio</ListLink>
+        <ListLink to="/blog">Blog</ListLink>
+        <ListLink to="/rss.xml">RSS</ListLink>
+        <ListLink to="/sitemap.xml">Sitemap</ListLink>
       </nav>
-      <nav>
-        <a href="https://github.com/dtroode" className="contacts-text">
-          Github
-        </a>
-        <a href="https://twitter.com/dtroode" className="contacts-text">
-          Twitter
-        </a>
-        <a href="https://t.me/dtroode" className="contacts-text">
-          Telegram
-        </a>
-        <a href="https://t.me/dtroodechannel" className="contacts-text">
-          TG channel
-        </a>
+      <nav className="foot__cont__nav foot__cont__nav--other-links">
+        <a href="https://github.com/dtroode">Github</a>
+        <a href="https://twitter.com/dtroode">Twitter</a>
+        <a href="https://t.me/dtroode">Telegram</a>
+        <a href="https://t.me/dtroodechannel">TG channel</a>
       </nav>
     </section>
   </footer>

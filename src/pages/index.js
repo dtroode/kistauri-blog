@@ -16,7 +16,7 @@ const PortfolioPage = () => {
         description="Just David Kistauri's portfolio. Name any word and i'll make a website about it"
         image="/img/preview.jpg"
       />
-      <section className="content me">
+      <section className="main__content">
         <h2>About me</h2>
         <p>
           <span>0.1. </span>I am frontend-developer. I write HTML, CSS and JS
@@ -27,18 +27,18 @@ const PortfolioPage = () => {
         </p>
         <hr />
       </section>
-      <section className="content media">
+      <section className="main__content">
         <h2>About media</h2>
         <section>
           <p>
-            <span className="link-span">0.2. </span>
+            <span>0.2. </span>
             <a href="https://youtu.be/vGIBBduGjvc">
               Interview on local TV-channel about how I wrote the website for
               school
             </a>
           </p>
           <p>
-            <span className="link-span">0.3. </span>
+            <span>0.3. </span>
             <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
               My article on Hackernews
             </a>
@@ -46,28 +46,28 @@ const PortfolioPage = () => {
         </section>
         <hr />
       </section>
-      <section className="content works">
+      <section className="main__content">
         <h2>About works</h2>
         <section>
           <p>
-            <span className="link-span">0.4. </span>
+            <span>0.4. </span>
             <a href="https://cyxym.cf">CYXYM website</a>
             <br />
             This is website for my cite Sukhum. Wrote because no one else did.
           </p>
           <p>
-            <span className="link-span">0.5. </span>
+            <span>0.5. </span>
             <a href="https://secondschool.gq">School website</a>
             <br />
             This is redesign because old one is ugly.
           </p>
           <p>
-            <span className="link-span">0.6. </span>
+            <span>0.6. </span>
             <a href="https://constantvalues.tk">Constant values website</a>
             <br />A lot of tables for easy learning.
           </p>
           <p>
-            <span className="link-span">0.7. </span>
+            <span>0.7. </span>
             <a href="https://masterbuket.com">
               Floristic studio website and branding
             </a>

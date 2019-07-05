@@ -1,7 +1,7 @@
-main.portfolio {
+main.main--portfolio {
   display: grid;
   grid-template: "section" (auto / 1fr);
-  section.content {
+  section.main__content {
     display: grid;
     grid-template: ("sub-heading text" / 1fr) 1fr;
     &:not(:first-of-type) {

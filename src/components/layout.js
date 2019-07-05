@@ -23,7 +23,7 @@ const Layout = props => (
           category={props.category}
           link={props.link}
         />
-        <main className={props.pageClass}>{props.children}</main>
+        <main className={`main--${props.pageClass}`}>{props.children}</main>
         <Footer />
       </>
     )}

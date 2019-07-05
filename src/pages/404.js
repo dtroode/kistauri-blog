@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
-import "../styles/pages-styles/blog.scss";
-import "../styles/media-styles/dark.scss"
+import "../styles/articles.scss";
+import "../styles/media-styles/dark.scss";
 import SEO from "../components/seo";
 
 const ErrorPage = props => (
   <>
     <SEO title="404" description=">404<" image="/img/preview.jpg" />
     <section
-      className="articles"
+      className="main__arts main__arts--error"
       style={{
         display: `block`,
         position: `absolute`,
@@ -20,14 +20,11 @@ const ErrorPage = props => (
         maxWidth: `500px`
       }}
     >
-      <article
-        className="error"
-        style={{ backgroundColor: `var(--accent-red)` }}
-      >
-        <Link to="/" className="page-link" style={{ paddingBottom: `100%` }}>
-          <section className="page-content-container">
+      <article style={{ backgroundColor: `var(--accent-red)` }}>
+        <Link to="/" style={{ paddingBottom: `100%` }}>
+          <section className="art__cont">
             <svg
-              className="page-background"
+              className="art__cont__bg"
               fill="none"
               viewBox="0 0 839 559"
               xmlns="https://www.w3.org/2000/svg"
@@ -134,7 +131,10 @@ const ErrorPage = props => (
                 </filter>
               </defs>
             </svg>
-            <section className="page-content" style={{ position: `absolute` }}>
+            <section
+              className="art__cont__txt"
+              style={{ position: `absolute` }}
+            >
               <h2>Don't worry. Just an ẸЯЯ0Я</h2>
               <p>Go back by tapping here</p>
             </section>

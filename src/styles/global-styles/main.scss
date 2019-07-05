@@ -7,8 +7,9 @@
   color: var(--main-bg);
 }
 
-html, button {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+html,
+button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -16,9 +17,11 @@ html {
 }
 
 @supports (font-variation-settings: normal) {
-  html, button {
-    font-family: 'Inter var', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-feature-settings: 'case' 1, 'frac' 1;
+  html,
+  button {
+    font-family: "Inter var", Inter, "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-feature-settings: "case" 1, "frac" 1;
   }
 }
 
@@ -48,23 +51,26 @@ body {
   }
 }
 
-header, main, footer {
+header,
+main,
+footer {
   padding-top: var(--second-padding);
   padding-right: var(--second-padding);
   padding-left: var(--second-padding);
 }
 
-header, footer {
+header,
+footer {
   display: grid;
 }
 
 header {
-  grid-template: 'links empty' auto 'heading empty' auto 'hr empty' auto / 1fr 1fr;
+  grid-template: "links empty" auto "heading empty" auto "hr empty" auto / 1fr 1fr;
   align-items: start;
   nav {
     grid-area: links;
     margin-bottom: 0.75rem;
-    a {
+    a.nav__a {
       display: inline-block;
       margin-right: 0.25rem;
       margin-bottom: 0.25rem;
@@ -73,27 +79,23 @@ header {
       &:hover {
         background-color: var(--main-fg);
         color: var(--main-bg);
-        &::after {
-          content: '←';
-        }
       }
-      &::after {
-        content: '→';
-      }
-      &.back {
+      &--back {
         &:hover::before {
-          content: '→';
+          content: "→";
         }
         &::before {
-          content: '←';
+          content: "←";
         }
         &::after {
-          content: '';
+          content: "";
         }
       }
       &.non-arrow {
-        &:hover::before, &::before, &::after {
-          content: '';
+        &:hover::before,
+        &::before,
+        &::after {
+          content: "";
         }
       }
     }
@@ -130,54 +132,71 @@ main {
 
 footer {
   flex-shrink: 0;
-  grid-template: 'heading' auto 'links-container' auto / 1fr 1fr;
+  grid-template: "heading" auto "foot__cont" auto / 1fr 1fr;
   margin-top: var(--first-padding);
   padding-bottom: var(--first-padding);
   background-color: var(--additional-bg);
   color: var(--additional-fg);
-  section.links-container {
+  section.foot__cont {
     display: grid;
-    grid-template: 'paragraph paragraph' auto 'links social' auto / 1fr 1fr;
+    grid-template: "paragraph paragraph" auto "links social" auto / 1fr 1fr;
     p {
       grid-area: paragraph;
     }
-    nav {
+    nav.foot__cont__nav {
       margin-top: 1rem;
-      &:nth-of-type(1) {
+      &--page-links {
         grid-area: links;
       }
-      &:nth-of-type(2) {
+      &--other-links {
         grid-area: social;
       }
       a {
+        display: table;
+        background-color: var(--accent-blue);
+        color: var(--main-bg);
+        &:not(:last-of-type) {
+          margin-bottom: 0.25rem;
+        }
+        &:hover {
+          background-color: var(--main-fg);
+        }
         &:hover::after {
-          content: '⟵';
+          content: "⟵";
         }
         &::after {
-          content: '⟶';
+          content: "⟶";
         }
       }
     }
   }
 }
 
-header nav a, a.contacts-text {
+header nav a,
+footer nav a {
   padding: 0.5rem;
 }
 
-header button, p:first-of-type, blockquote, pre, a {
-  border-radius: .5rem;
+header button,
+p:first-of-type,
+blockquote,
+pre,
+a {
+  border-radius: 0.5rem;
 }
 
 article.works p:not(:first-of-type) {
   margin-top: 1rem;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 2rem;
   letter-spacing: -0.022em;
 }
@@ -190,7 +209,9 @@ h1 {
   width: 75%;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-weight: 700;
   line-height: 1em;
 }
@@ -200,12 +221,18 @@ h3 {
   letter-spacing: -0.021em;
 }
 
-h4, p, a, ul, ol, blockquote {
+h4,
+p,
+a,
+ul,
+ol,
+blockquote {
   font-size: 1rem;
   letter-spacing: -0.017em;
 }
 
-p, a {
+p,
+a {
   font-weight: 600;
 }
 
@@ -226,20 +253,10 @@ a {
   &:hover {
     color: inherit;
   }
-  &.contacts-text {
-    &:not(:last-of-type) {
-      margin-bottom: 0.25rem;
-    }
-    display: table;
-    background-color: var(--accent-blue);
-    color: var(--main-bg);
-    &:hover {
-      background-color: var(--main-fg);
-    }
-  }
 }
 
-ul, ol {
+ul,
+ol {
   margin-block-start: 0;
   margin-block-end: 1rem;
   padding-inline-start: 20px;
@@ -250,7 +267,7 @@ img {
 }
 
 span {
-  font-feature-settings: 'ss01' 1;
+  font-feature-settings: "ss01" 1;
   font-weight: 700;
   &.nickname {
     color: var(--accent-blue);

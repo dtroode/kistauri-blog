@@ -16,21 +16,25 @@ const IndexPage = props => {
       <Helmet>
         <link rel="canonical" href="https://dtroode.netlify.com/blog" />
       </Helmet>
-      <SEO title="Blog" description="Whoa! Welcome to my, David Kistauri's Blog! Name any word and i'll make an article about it" image="/img/preview.jpg"/>
+      <SEO
+        title="Blog"
+        description="Whoa! Welcome to my, David Kistauri's Blog! Name any word and i'll make an article about it"
+        image="/img/preview.jpg"
+      />
       <h2>Posts</h2>
-      <section className="articles first-articles">
+      <section className="main__arts main__arts--first">
         {firstPostsList.map(({ node }) => (
-          <article className={node.frontmatter.categories}>
-            <Link to={node.fields.slug} className="page-link">
-              <section className="page-content-container">
+          <article id={node.frontmatter.categories}>
+            <Link to={node.fields.slug}>
+              <section className="art__cont">
                 <Img
                   fluid={node.frontmatter.hero.childImageSharp.fluid}
-                  className="page-background"
+                  className="art__cont__bg"
                   alt={node.frontmatter.title}
                 />
-                <section className="page-content">
+                <section className="art__cont__txt">
                   <h3>{node.frontmatter.title}</h3>
-                  <p className="date-mins">
+                  <p>
                     {node.frontmatter.date} • {node.timeToRead} min read
                   </p>
                 </section>
@@ -41,14 +45,14 @@ const IndexPage = props => {
         <hr />
       </section>
       <h2>Older Posts</h2>
-      <section className="articles remaining-articles">
+      <section className="main__arts main__arts--remaining">
         {remainingPostsList.map(({ node }) => (
-          <article className={node.frontmatter.categories}>
-            <Link to={node.fields.slug} className="page-link">
-              <section className="page-content-container">
-                <section className="page-content">
+          <article id={node.frontmatter.categories}>
+            <Link to={node.fields.slug}>
+              <section className="art__cont">
+                <section className="art__cont__txt">
                   <h3>{node.frontmatter.title}</h3>
-                  <p className="date-mins">
+                  <p>
                     {node.frontmatter.date} • {node.timeToRead} min read
                   </p>
                 </section>
@@ -91,7 +95,7 @@ export const listQuery = graphql`
       }
     }
     remainingPosts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
+      sort: { order: DESC, fields: [frontmatter___date] }
       skip: 4
     ) {
       edges {
