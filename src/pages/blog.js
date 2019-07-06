@@ -71,7 +71,7 @@ export const listQuery = graphql`
   query {
     firstPosts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 4
+      limit: 5
     ) {
       edges {
         node {
@@ -96,7 +96,7 @@ export const listQuery = graphql`
     }
     remainingPosts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      skip: 4
+      skip: 5
     ) {
       edges {
         node {
