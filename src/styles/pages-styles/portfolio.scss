@@ -3,7 +3,7 @@ main.main--portfolio {
   grid-template: "section" (auto / 1fr);
   section.main__content {
     display: grid;
-    grid-template: ("sub-heading text" / 1fr) 1fr;
+    grid-template: "sub-heading" auto "text" auto / 1fr 1fr;
     &:not(:first-of-type) {
       margin-top: var(--second-padding);
     }
