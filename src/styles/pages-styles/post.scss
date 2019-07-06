@@ -86,6 +86,7 @@ section.main__art-cont {
     }
     &:visited {
       color: var(--accent-indigo);
+      text-decoration: underline var(--accent-indigo-50);
     }
     &.gatsby-resp-image-link {
       margin-top: 1.5em;
@@ -99,6 +100,9 @@ section.main__art-cont {
   }
   span.gatsby-resp-image-background-image {
     border-radius: 0.4rem;
+  }
+  blockquote p:first-child {
+    margin-top: 0;
   }
   pre {
     margin-top: 1.5rem;
