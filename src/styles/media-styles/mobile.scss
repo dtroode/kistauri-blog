@@ -23,7 +23,7 @@
     }
     &.main--portfolio {
       grid-template: "section" auto / 1fr;
-      section.content {
+      section.main__content {
         grid-template: "sub-heading" auto "text" auto/1fr;
       }
     }
