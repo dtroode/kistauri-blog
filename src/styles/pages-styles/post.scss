@@ -103,6 +103,9 @@ section.main__art-cont {
   }
   blockquote {
     min-width: 100%;
+    p:first-child {
+      margin-top: 0;
+    }
   }
   twitter-widget {
     width: 100% !important;
