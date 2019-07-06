@@ -22,9 +22,8 @@ const PortfolioPage = () => {
           <span>0.1. </span>Develop adaptive websites, landing pages and
           web-apps with compression technology — websites load fast. Work remote
           from Abkhazia. Use HTML, CSS, JS, React, Gatsby. Learn Next.js,
-          Svelte. Contribute to opensource. Write articles to blog and{" "}
-          <a href="https://dev.to/dtroode">dev.to</a> about useful tricks for
-          frontend-developers. Have a{" "}
+          Svelte. Contribute to opensource. Write articles to blog and dev.to
+          about useful tricks for frontend-developers. Have a{" "}
           <a href="https://t.me/dtroodechannel">Telegram Channel</a>.
         </p>
         <hr />
