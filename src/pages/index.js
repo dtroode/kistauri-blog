@@ -19,11 +19,13 @@ const PortfolioPage = () => {
       <section className="main__content">
         <h2>About me</h2>
         <p>
-          <span>0.1. </span>I am frontend-developer. I write HTML, CSS and JS
-          code. Playing with React and Next.js. I'm in the 10th grade. Abkhazia.
-          I started to code in 2018 and have already written several websites.
-          Contribute to open source. I have a Telegram channel (link below).
-          Digital! I have some experience in SMM. Not a native English speaker.
+          <span>0.1. </span>Develop adaptive websites, landing pages and
+          web-apps with compression technology — websites load fast. Work remote
+          from Abkhazia. Use HTML, CSS, JS, React, Gatsby. Learn Next.js,
+          Svelte. Contribute to opensource. Write articles to blog and{" "}
+          <a href="https://dev.to/dtroode">dev.to</a> about useful tricks for
+          frontend-developers. Have a{" "}
+          <a href="https://t.me/dtroodechannel">Telegram Channel</a>.
         </p>
         <hr />
       </section>
@@ -32,15 +34,8 @@ const PortfolioPage = () => {
         <section>
           <p>
             <span>0.2. </span>
-            <a href="https://youtu.be/vGIBBduGjvc">
-              Interview on local TV-channel about how I wrote the website for
-              school
-            </a>
-          </p>
-          <p>
-            <span>0.3. </span>
             <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
-              My article on Hackernews
+              My article about Firefox on Hackernews
             </a>
           </p>
         </section>
@@ -50,24 +45,27 @@ const PortfolioPage = () => {
         <h2>About works</h2>
         <section>
           <p>
-            <span>0.4. </span>
+            <span>0.5. </span>
             <a href="https://cyxym.cf">CYXYM website</a>
             <br />
-            This is website for my cite Sukhum. Wrote because no one else did.
-          </p>
-          <p>
-            <span>0.5. </span>
-            <a href="https://secondschool.gq">School website</a>
-            <br />
-            This is redesign because old one is ugly.
+            This is the website for my city Sukhum. Wrote because no one else
+            did.
           </p>
           <p>
             <span>0.6. </span>
-            <a href="https://constantvalues.tk">Constant values website</a>
-            <br />A lot of tables for easy learning.
+            <a href="https://secondschool.gq">School website</a>
+            <br />
+            This is a redesign of the school website because the old one is
+            ugly.
           </p>
           <p>
             <span>0.7. </span>
+            <a href="https://constantvalues.tk">Constant values website</a>
+            <br />A lot of Maths, Physics and Chemistry tables for easy
+            learning.
+          </p>
+          <p>
+            <span>0.8. </span>
             <a href="https://masterbuket.com">
               Floristic studio website and branding
             </a>
