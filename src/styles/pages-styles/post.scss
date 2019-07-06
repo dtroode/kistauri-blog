@@ -101,8 +101,8 @@ section.main__art-cont {
   span.gatsby-resp-image-background-image {
     border-radius: 0.4rem;
   }
-  blockquote p:first-child {
-    margin-top: 0;
+  blockquote {
+    min-width: 100%;
   }
   pre {
     margin-top: 1.5rem;
