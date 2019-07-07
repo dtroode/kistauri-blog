@@ -1,5 +1,5 @@
 import { Link } from "gatsby";
-import React from "react";
+import React, { useEffect } from "react";
 
 const ListLink = props => (
   <Link to={props.to} className={props.className}>
@@ -8,8 +8,13 @@ const ListLink = props => (
 );
 
 const Footer = props => {
-  const title = document.title;
-  const location = window.location.href;
+  const title = "";
+  const location = "";
+
+  useEffect(() => {
+    title = window.document.title;
+    location = window.location.href;
+  });
 
   let share = "";
 
