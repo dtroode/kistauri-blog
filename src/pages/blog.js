@@ -33,7 +33,7 @@ const IndexPage = props => {
                   alt={node.frontmatter.title}
                 />
                 <section className="art__cont__txt">
-                  <h3>{node.frontmatter.title}</h3>
+                  <span>{node.frontmatter.title}</span>
                   <p>
                     {node.frontmatter.date} • {node.timeToRead} min read
                   </p>
@@ -51,7 +51,7 @@ const IndexPage = props => {
             <Link to={node.fields.slug}>
               <section className="art__cont">
                 <section className="art__cont__txt">
-                  <h3>{node.frontmatter.title}</h3>
+                  <span>{node.frontmatter.title}</span>
                   <p>
                     {node.frontmatter.date} • {node.timeToRead} min read
                   </p>

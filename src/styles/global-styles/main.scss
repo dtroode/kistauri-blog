@@ -13,7 +13,7 @@ button {
 }
 
 html {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @supports (font-variation-settings: normal) {
@@ -59,12 +59,8 @@ footer {
   padding-left: var(--second-padding);
 }
 
-header,
-footer {
-  display: grid;
-}
-
 header {
+  display: grid;
   grid-template: "links empty" auto "heading empty" auto "hr empty" auto / 1fr 1fr;
   align-items: start;
   nav {
@@ -132,40 +128,53 @@ main {
 
 footer {
   flex-shrink: 0;
-  grid-template: "heading" auto "foot__cont" auto / 1fr 1fr;
-  margin-top: var(--first-padding);
+  margin-top: var(--second-padding);
   padding-bottom: var(--first-padding);
   background-color: var(--additional-bg);
   color: var(--additional-fg);
-  section.foot__cont {
-    display: grid;
-    grid-template: "paragraph paragraph" auto "links social" auto / 1fr 1fr;
-    p {
-      grid-area: paragraph;
-    }
-    nav.foot__cont__nav {
+  h2 {
+    grid-area: heading;
+  }
+  section {
+    nav {
       margin-top: 1rem;
-      &--page-links {
-        grid-area: links;
-      }
-      &--other-links {
-        grid-area: social;
-      }
       a {
         display: table;
-        background-color: var(--accent-blue);
-        color: var(--main-bg);
         &:not(:last-of-type) {
           margin-bottom: 0.25rem;
         }
-        &:hover {
-          background-color: var(--main-fg);
+      }
+    }
+    &.foot__cont,
+    &.foot__share {
+      display: grid;
+      grid-template: "heading" auto "cont" auto / 1fr 1fr;
+    }
+    &.foot__cont__cont {
+      display: grid;
+      grid-template: "paragraph paragraph" auto "links social" auto / 1fr 1fr;
+      p {
+        grid-area: paragraph;
+      }
+      nav.foot__cont__cont__nav {
+        &--page-links {
+          grid-area: links;
         }
-        &:hover::after {
-          content: "←";
+        &--other-links {
+          grid-area: social;
         }
-        &::after {
-          content: "→";
+        a {
+          background-color: var(--accent-blue);
+          color: var(--main-bg);
+          &:hover {
+            background-color: var(--main-fg);
+          }
+          &:hover::after {
+            content: "←";
+          }
+          &::after {
+            content: "→";
+          }
         }
       }
     }
@@ -209,19 +218,10 @@ h1 {
   width: 75%;
 }
 
-h2,
-h3,
-h4 {
+h2 {
   font-weight: 700;
   line-height: 1em;
 }
-
-h3 {
-  font-size: 1.5rem;
-  letter-spacing: -0.021em;
-}
-
-h4,
 p,
 a,
 ul,
@@ -237,7 +237,7 @@ a {
 }
 
 p {
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 
 p a {

@@ -86,9 +86,14 @@ section.main__arts {
         right: 0;
         padding: var(--third-padding);
         color: #1c1c1e;
-        h3 {
+        span {
+          display: block;
           width: auto;
           margin: 0 0 0.5em 0;
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 1em;
+          letter-spacing: -0.021em;
         }
         p {
           width: auto;
