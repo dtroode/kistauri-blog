@@ -13,8 +13,8 @@ const Footer = props => {
   let share = "";
 
   useEffect(() => {
-    title = window.document.title;
-    location = window.location.href;
+    title = document.title;
+    location = document.location.href;
   });
 
   if (props.pageClass === "post") {

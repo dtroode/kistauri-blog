@@ -1,9 +1,14 @@
 {
-  "name": "gatsby-starter-default",
+  "browserslist": [
+    "> 0.25%",
+    "not dead",
+    "last 2 versions"
+  ],
+  "name": "david-kistauri",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Name any word and i'll make a website about it",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "David Kistauri <davidkis113@gmail.com>",
   "dependencies": {
     "gatsby": "^2.9.4",
     "gatsby-image": "^2.1.4",

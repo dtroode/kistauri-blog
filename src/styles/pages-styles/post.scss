@@ -150,8 +150,8 @@ section {
         font-weight: unset;
       }
     }
-    code::-webkit-scrollbar,
-    pre::-webkit-scrollbar {
+    code::scrollbar,
+    pre::scrollbar {
       height: 0;
     }
     p code,
