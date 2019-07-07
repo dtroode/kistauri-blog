@@ -8,7 +8,11 @@ const ListLink = props => (
 );
 
 const Footer = props => {
+  const title = document.title;
+  const location = window.location.href;
+
   let share = "";
+
   if (props.pageClass === "post") {
     share = (
       <>
@@ -18,7 +22,7 @@ const Footer = props => {
             <p>Like? Share it in social media</p>
             <nav>
               <a
-                href={`https://twitter.com/intent/tweet?text=${document.title} by @dtroode&url=${window.location.href}`}
+                href={`https://twitter.com/intent/tweet?text=${title} by @dtroode&url=${location}`}
                 className="twitter-share-button"
               >
                 <svg
@@ -30,7 +34,7 @@ const Footer = props => {
                 Tweet
               </a>
               <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}&amp;src=sdkpreparse`}
+                href={`https://www.facebook.com/sharer/sharer.php?u=${location}&amp;src=sdkpreparse`}
                 className="facebook-share-button"
               >
                 <svg
@@ -42,7 +46,7 @@ const Footer = props => {
                 Share
               </a>
               <a
-                href={`https://telegram.me/share/url?url=${window.location.href}>&text=${document.title} by @dtroode`}
+                href={`https://telegram.me/share/url?url=${location}>&text=${title} by @dtroode`}
                 className="telegram-share-button"
               >
                 <svg
