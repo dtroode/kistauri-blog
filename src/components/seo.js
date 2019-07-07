@@ -78,7 +78,9 @@ function SEO({ description, lang, meta, title, image }) {
           content: image
         }
       ].concat(meta)}
-    />
+    >
+      <link rel="me" href="https://twitter.com/dtroode" />
+    </Helmet>
   );
 }
 
