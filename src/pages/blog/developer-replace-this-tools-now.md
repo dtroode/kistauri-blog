@@ -8,9 +8,7 @@ hero: /img/replace.png
 categories: advices
 ---
 
-What I replaced after a year and half of developing?
-
-## Let's start with a list
+Still use this? Replace now. List of things, that I replaced after a yearn and half of working as front-end developer.
 
 ![VS Code](/img/vscode.jpg)
 

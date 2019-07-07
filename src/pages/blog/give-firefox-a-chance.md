@@ -1,5 +1,5 @@
 ---
-templateKey: 'blog-page'
+templateKey: "blog-page"
 path: /blog
 title: Why you need to give Firefox a chance?
 description: We live in the era of browser monopoly. So look at another browser!
@@ -8,7 +8,7 @@ hero: /img/firefox.png
 categories: thoughts
 ---
 
-We live in the era of browser monopoly. So look at another browser!
+Use Chrome? Have a bad news for you. In era of browser monopoly we need to look at another browsers, so let's do that.
 
 ## Situation
 
