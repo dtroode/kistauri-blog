@@ -10,7 +10,7 @@ Results of Apple March event. Subscriptions!
 
 ## More plusses
 
-![Apple](/img/tim.jpg)
+![Apple](/img/tim.jpg "Apple")
 
 First things first. Plus.
 
