@@ -1,5 +1,5 @@
 import { Link } from "gatsby";
-import React, { useEffect } from "react";
+import React from "react";
 
 const ListLink = props => (
   <Link to={props.to} className={props.className}>
@@ -8,14 +8,9 @@ const ListLink = props => (
 );
 
 const Footer = props => {
-  let title = "";
-  let location = "";
+  const title = props.title;
+  const link = props.link;
   let share = "";
-
-  useEffect(() => {
-    title = document.title;
-    location = document.location.href;
-  });
 
   if (props.pageClass === "post") {
     share = (
@@ -26,7 +21,7 @@ const Footer = props => {
             <p>Like? Share it in social media</p>
             <nav>
               <a
-                href={`https://twitter.com/intent/tweet?text=${title} by @dtroode&url=${location}`}
+                href={`https://twitter.com/intent/tweet?text=${title} by @dtroode&url=${link}`}
                 className="tw-share-button"
               >
                 <svg
@@ -38,7 +33,7 @@ const Footer = props => {
                 Tweet
               </a>
               <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${location}&amp;src=sdkpreparse`}
+                href={`https://www.facebook.com/sharer/sharer.php?u=${link}&amp;src=sdkpreparse`}
                 className="facebook-share-button"
               >
                 <svg
@@ -50,7 +45,7 @@ const Footer = props => {
                 Share
               </a>
               <a
-                href={`https://telegram.me/share/url?url=${location}>&text=${title} by @dtroode`}
+                href={`https://telegram.me/share/url?url=${link}>&text=${title} by @dtroode`}
                 className="telegram-share-button"
               >
                 <svg

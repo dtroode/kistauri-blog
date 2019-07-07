@@ -20,11 +20,14 @@ const Layout = props => (
         <Header
           title={props.title}
           pageClass={props.pageClass}
-          category={props.category}
           link={props.link}
         />
         <main className={`main--${props.pageClass}`}>{props.children}</main>
-        <Footer pageClass={props.pageClass} />
+        <Footer
+          title={props.title}
+          pageClass={props.pageClass}
+          link={props.link}
+        />
       </>
     )}
   />
