@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-page"
 path: /blog
-title: Why you need to give Firefox a chance?
+title: Why You Need to Give Firefox a Chance?
 description: We live in the era of browser monopoly. So look at another browser!
 date: 2019-05-22T12:48:59.664Z
 hero: /img/firefox.png

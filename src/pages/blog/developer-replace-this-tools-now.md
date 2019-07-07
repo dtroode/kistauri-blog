@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Developer? Replace this tools now
+title: Developer? Replace This Tools Now
 description: What I replaced after a year and half of developing?
 path: /blog
 date: 2019-06-22T10:44:34.021Z

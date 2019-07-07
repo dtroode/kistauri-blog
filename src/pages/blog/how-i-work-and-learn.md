@@ -32,7 +32,7 @@ _General principles of bookmarks location:_
 
 **Social media and news websites.** My main social media is Twitter. Also, I use local popular VK, but not so often. Twitter I open 10+ times per day every day, that's because Twitter is on the bar, VK isn't.
 
-News I getting from _Dev.to_, _Hackernews_ and _Reddit_. But I use them not so frequently, because of all useful content duplicates in Twitter by official accounts or by some users.
+News I getting from _Dev.to,_ _Hackernews_ and _Reddit_. But I use them not so frequently, because of all useful content duplicates in Twitter by official accounts or by some users.
 
 **Tools.** In front end dev world we need a lot of tools like color palette, online code formatters, admin panels, and documentation. But most of these instruments using only when starting a new project or when supporting it. I don't have these tools on the bookmarks bar.
 
@@ -67,7 +67,7 @@ What about caching? Most of the websites now support Instant View — a Telegram
 
 In the modern world of front end and programming, devs need to learn something every time and renew base of knowledge, that's because I learn something new and repeat something old.
 
-In the last time, I have opened the new, although primitive way for remembering — write. I write documentation and parallelly in neighbor window writing it. Important! _Writing by my own words_, not copy, otherwise, it's just another documentation. Because I am not a native English speaker, learning docs in English and especially writing helps for improving English skills.
+In the last time, I have opened the new, although primitive way for remembering — write. I write documentation and parallelly in neighbor window writing it. Important! _Writing by my own words,_ not copy, otherwise, it's just another documentation. Because I am not a native English speaker, learning docs in English and especially writing helps for improving English skills.
 
 For every new material, I create a new folder for code examples with file `learn.md` for writing. All files I contain in Markdown and regularly backup.
 

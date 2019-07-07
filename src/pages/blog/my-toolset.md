@@ -1,7 +1,8 @@
 ---
-title: How and what and why I do
-description: Как я написал сайты? Моя коробочка с инструментами
+templateKey: "blog-page"
 path: /blog
+title: How and what and why I do
+description: How I wrote websites. My Toolbox
 date: 2019-04-25T19:59:59.000Z
 hero: /img/my-toolset.png
 categories: work
