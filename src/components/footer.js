@@ -9,7 +9,7 @@ const ListLink = props => (
 
 const Footer = props => {
   const title = props.title;
-  const link = props.link;
+  const link = `https://dtroode.netlify.com${props.link}`;
   let share = "";
 
   if (props.pageClass === "post") {
