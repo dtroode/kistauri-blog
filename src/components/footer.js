@@ -8,15 +8,14 @@ const ListLink = props => (
 );
 
 const Footer = props => {
-  const title = "";
-  const location = "";
+  let title = "";
+  let location = "";
+  let share = "";
 
   useEffect(() => {
     title = window.document.title;
     location = window.location.href;
   });
-
-  let share = "";
 
   if (props.pageClass === "post") {
     share = (
