@@ -7,7 +7,7 @@ import "../styles/media.scss";
 import "../styles/code.scss";
 import SEO from "../components/seo";
 
-const Post = ({ data }) => {
+export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Layout
@@ -55,5 +55,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default Post;
