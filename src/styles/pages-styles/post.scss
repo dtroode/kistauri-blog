@@ -94,6 +94,14 @@ section {
         color: var(--main-dark);
       }
     }
+    p code,
+    a code,
+    li code,
+    span code {
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      background-color: var(--additional-bg);
+    }
     p {
       margin-top: 1em;
       &.main__art-cont__inf {
@@ -137,7 +145,8 @@ section {
       width: 100% !important;
     }
     pre {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
+      margin-bottom: 0;
       padding: 1rem;
       width: calc(100% - 2rem);
       overflow-x: scroll;
@@ -150,17 +159,20 @@ section {
         font-weight: unset;
       }
     }
-    code::scrollbar,
-    pre::scrollbar {
+    code::-webkit-scrollbar,
+    pre::-webkit-scrollbar {
       height: 0;
     }
-    p code,
-    a code,
-    li code,
-    span code {
-      padding: 0.25rem 0.5rem;
-      border-radius: 0.25rem;
-      background-color: var(--additional-bg);
+    table {
+      width: 100%;
+      margin-top: 1rem;
+      empty-cells: show;
+      border-spacing: 0;
+      border-collapse: collapse;
+      th,
+      td {
+        padding: 0.25rem;
+      }
     }
   }
 }

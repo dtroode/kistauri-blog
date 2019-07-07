@@ -1,7 +1,6 @@
 code[class*="language-"] {
   direction: ltr;
   text-align: left;
-  white-space: pre;
   word-spacing: normal;
   word-break: normal;
   tab-size: 4;
@@ -153,7 +152,6 @@ pre > code.highlight {
 code[class*="language-"] {
   direction: ltr;
   text-align: left;
-  white-space: pre;
   word-spacing: normal;
   word-break: normal;
   tab-size: 4;
@@ -305,7 +303,7 @@ pre > code.highlight {
   margin-right: -1em;
   margin-left: -1em;
   padding-right: 1em;
-  padding-left: 0.25em;
+  padding-left: 0.75em;
   border-left: 0.25em solid #c4b9fe;
   background-color: #3c3949;
 }
