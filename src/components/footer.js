@@ -27,7 +27,7 @@ const Footer = props => {
             <nav>
               <a
                 href={`https://twitter.com/intent/tweet?text=${title} by @dtroode&url=${location}`}
-                className="twitter-share-button"
+                className="tw-share-button"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
