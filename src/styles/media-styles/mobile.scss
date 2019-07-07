@@ -4,9 +4,6 @@
     --second-padding: 1.5rem;
     --third-padding: 1rem;
   }
-  html {
-    font-size: 16px;
-  }
   header {
     grid-template: "links" auto "heading" auto "hr" auto/1fr;
     nav a {
@@ -30,8 +27,14 @@
   }
   footer {
     grid-template: "heading" auto "foot__cont" auto/1fr;
+    section.foot__share {
+      grid-template: "heading" auto "cont" auto/1fr;
+    }
     section.foot__cont {
-      grid-template: "paragraph" auto "links" auto "social" auto/1fr;
+      grid-template: "heading" auto "cont" auto/1fr;
+      section.foot__cont__cont {
+        grid-template: "paragraph" auto "links" auto "social" auto / 1fr;
+      }
     }
   }
   section {
