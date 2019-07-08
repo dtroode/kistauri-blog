@@ -21,7 +21,7 @@ const IndexPage = props => {
         description="Whoa! Welcome to my, David Kistauri's Blog! Name any word and i'll make an article about it"
         image="/img/preview.jpg"
       />
-      <h2>Posts</h2>
+      <h2>Latest Posts</h2>
       <section className="main__arts main__arts--first">
         {firstPostsList.map(({ node }) => (
           <article id={node.frontmatter.categories}>
@@ -37,6 +37,7 @@ const IndexPage = props => {
                   <p>
                     {node.frontmatter.date} • {node.timeToRead} min read
                   </p>
+                  <p>{node.frontmatter.description}</p>
                 </section>
               </section>
             </Link>
@@ -81,6 +82,7 @@ export const listQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMMM D, YYYY")
+            description
             categories
             hero {
               childImageSharp {
