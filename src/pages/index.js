@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/pages-styles/portfolio.scss";
 import "../styles/media.scss";
 import Layout from "../components/layout";
 import { Helmet } from "react-helmet";
@@ -12,8 +11,8 @@ const PortfolioPage = () => {
         <link rel="canonical" href="https://dtroode.netlify.com/" />
       </Helmet>
       <SEO
-        title="Portfolio"
-        description="Just David Kistauri's portfolio. Name any word and i'll make a website about it"
+        title=">_<"
+        description="Just David Kistauri's website. Name any word and i'll make a website about it"
         image="/img/preview.jpg"
       />
       <section className="main__content">

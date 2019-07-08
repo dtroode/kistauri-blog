@@ -1,64 +1,64 @@
-header.head,
-footer.foot {
-  &--post > * {
-    width: calc(835px - 4.5rem);
-  }
-}
-
 header.head--post {
   background-color: var(--additional-bg);
 }
 
-main.main--post section.main__art-cont {
-  width: calc(835px - 4.5rem);
-}
-
 footer.foot--post {
   section {
-    &.foot__share {
-      grid-area: share;
-      a {
-        height: 1rem;
-        border-radius: 0.5rem;
-        background-color: var(--main-bg);
-        &.tw-share-button {
-          color: #1da1f2;
-          &:hover {
-            background-color: rgba(29, 161, 242, 0.25);
-          }
-          svg {
-            fill: #1da1f2;
-          }
-        }
-        &.facebook-share-button {
-          color: #1877f2;
-          &:hover {
-            background-color: rgba(17, 120, 242, 0.25);
-          }
-          svg {
-            fill: #1877f2;
-          }
-        }
-        &.telegram-share-button {
-          color: #2ea6d9;
-          &:hover {
-            background-color: rgba(46, 166, 217, 0.25);
-          }
-          svg {
-            fill: #2ea6d9;
-          }
-        }
-        svg {
-          width: 1rem;
+    grid-template-columns: auto auto auto;
+    h2:nth-of-type(2) {
+      margin-top: var(--secondary-padding);
+    }
+    nav {
+      &.foot__share {
+        display: block;
+        a {
           height: 1rem;
-          margin-right: 0.25rem;
-          vertical-align: top;
+          border-radius: 0.5rem;
+          background-color: var(--main-bg);
+          &.tw-share-button {
+            color: #1da1f2;
+            &:hover {
+              background-color: rgba(29, 161, 242, 0.25);
+            }
+            svg {
+              fill: #1da1f2;
+            }
+          }
+          &.facebook-share-button {
+            color: #1877f2;
+            &:hover {
+              background-color: rgba(17, 120, 242, 0.25);
+            }
+            svg {
+              fill: #1877f2;
+            }
+          }
+          &.vk-share-button {
+            color: #4680c2;
+            &:hover {
+              background-color: rgba(70, 128, 194, 0.25);
+            }
+            svg {
+              fill: #4680c2;
+            }
+          }
+          &.telegram-share-button {
+            color: #2ea6d9;
+            &:hover {
+              background-color: rgba(46, 166, 217, 0.25);
+            }
+            svg {
+              fill: #2ea6d9;
+            }
+          }
+          svg {
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.25rem;
+            vertical-align: top;
+          }
         }
       }
-    }
-    &.foot__cont {
-      grid-area: links;
-      margin-top: 0.5rem;
     }
   }
 }
@@ -72,7 +72,6 @@ section {
     }
     h2 {
       margin-top: 2rem;
-      margin-bottom: 1rem;
     }
     p,
     a,
@@ -113,12 +112,16 @@ section {
       color: var(--accent-blue);
       text-decoration: underline var(--accent-blue-50);
       &:hover {
-        color: inherit;
+        color: var(--main-fg);
         text-decoration: underline var(--main-fg-50);
       }
       &:visited {
         color: var(--accent-indigo);
         text-decoration: underline var(--accent-indigo-50);
+        &:hover {
+          color: var(--main-fg);
+          text-decoration: underline var(--main-fg-50);
+        }
       }
     }
     img,

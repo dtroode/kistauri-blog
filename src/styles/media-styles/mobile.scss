@@ -1,8 +1,6 @@
 @media screen and (max-width: 835px) {
   :root {
-    --first-padding: 3rem;
-    --second-padding: 1.5rem;
-    --third-padding: 0.75rem;
+    --side-padding: 1.5rem;
   }
   header.head,
   footer.foot {
@@ -24,33 +22,25 @@
       letter-spacing: -0.05rem;
     }
   }
-  main {
-    &.main--post {
-      grid-template: "text" auto "empty" auto/1fr;
-      section.main__art-cont {
-        width: 100%;
-      }
-    }
-    &.main--portfolio {
-      grid-template: "section" auto / 1fr;
-      section.main__content {
-        grid-template-columns: 1fr;
-      }
-    }
-  }
   footer {
-    &.foot--portfolio,
-    &.foot--blog {
-      display: block;
-    }
     section {
-      &.foot__share,
-      &.foot__cont {
+      grid-template-columns: unset;
+      grid-template-rows: auto auto;
+      nav {
         display: block;
-        nav:nth-of-type(2) {
-          margin-top: 0.25rem;
+        margin-top: 0.5rem;
+        margin-right: 0;
+        &.foot__cont {
+          display: block;
+          &--site-links {
+            float: unset;
+          }
         }
       }
+    }
+    &.foot--post section {
+      grid-template-columns: unset;
+      grid-template-rows: auto auto auto;
     }
   }
   section {

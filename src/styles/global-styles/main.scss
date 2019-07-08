@@ -50,16 +50,47 @@ body {
 header,
 main,
 footer {
-  padding-top: var(--second-padding);
-  padding-right: var(--second-padding);
-  padding-left: var(--second-padding);
+  padding-top: var(--side-padding);
+  padding-right: var(--side-padding);
+  padding-left: var(--side-padding);
+  & > * {
+    max-width: calc(835px - 4.5rem);
+  }
+}
+
+header nav a,
+footer nav a {
+  padding: 0.5rem;
+  font-weight: 600;
+  color: var(--main-bg);
+  text-decoration: none;
+  &:hover {
+    color: var(--main-bg);
+    text-decoration: none;
+  }
+  &:visited {
+    color: var(--main-bg);
+    text-decoration: none;
+    &:hover {
+      color: var(--main-bg);
+      text-decoration: none;
+    }
+  }
+}
+
+header a,
+footer a,
+p:first-of-type,
+blockquote,
+pre {
+  border-radius: 0.5rem;
 }
 
 header {
   align-items: start;
+  background-color: var(--additional-bg);
   nav {
-    grid-area: links;
-    margin-bottom: 0.75rem;
+    margin-bottom: var(--third-padding);
     a {
       display: inline-block;
       margin-right: 0.25rem;
@@ -69,24 +100,6 @@ header {
       &:hover {
         background-color: var(--main-fg);
         color: var(--main-bg);
-      }
-      &--back {
-        &:hover::before {
-          content: "→";
-        }
-        &::before {
-          content: "←";
-        }
-        &::after {
-          content: "";
-        }
-      }
-      &.non-arrow {
-        &:hover::before,
-        &::before,
-        &::after {
-          content: "";
-        }
       }
     }
     ul {
@@ -112,42 +125,43 @@ header {
   hr {
     grid-area: hr;
     place-self: end;
-    margin-top: var(--second-padding);
   }
+}
+
+main,
+footer {
+  padding-bottom: var(--side-padding);
 }
 
 main {
   flex: 1 0 auto;
+  & > h2:not(:first-child) {
+    margin-top: var(--secondary-padding);
+  }
+  *:not(:first-of-type) {
+    h2 {
+      margin-top: var(--secondary-padding);
+    }
+  }
 }
 
 footer {
   flex-shrink: 0;
-  margin-top: var(--second-padding);
-  padding-bottom: var(--second-padding);
   background-color: var(--additional-bg);
   color: var(--additional-fg);
   section {
-    nav {
-      margin-top: 0.5rem;
-      a {
-        display: table;
-        &:not(:last-of-type) {
-          margin-bottom: 0.25rem;
-        }
-      }
+    h2 {
+      margin-bottom: var(--third-padding);
     }
-    &.foot__cont {
-      display: grid;
-      grid-template: "paragraph paragraph" auto "links social" auto / 1fr 1fr;
-      p {
-        grid-area: paragraph;
-      }
-      nav.foot__cont__nav {
-        &--page-links {
-          grid-area: links;
+    nav {
+      vertical-align: top;
+      &.foot__cont {
+        display: inline-block;
+        &--site-links {
+          float: right;
         }
-        &--other-links {
-          grid-area: social;
+        p {
+          grid-area: paragraph;
         }
         a {
           background-color: var(--accent-blue);
@@ -164,30 +178,16 @@ footer {
         }
       }
     }
+    a {
+      display: inline-block;
+      margin-top: 0.25rem;
+      margin-right: 0.25rem;
+    }
   }
-}
-
-header nav a,
-footer nav a {
-  padding: 0.5rem;
-}
-
-header a,
-footer a,
-p:first-of-type,
-blockquote,
-pre {
-  border-radius: 0.5rem;
 }
 
 article.works p:not(:first-of-type) {
   margin-top: 1rem;
-}
-
-h1,
-h2,
-p {
-  margin: 0;
 }
 
 h1,
@@ -197,17 +197,22 @@ h2 {
 
 h1 {
   display: block;
+  width: 75%;
+  margin: 0;
   font-size: 2rem;
   line-height: 2rem;
   font-weight: 700;
-  width: 75%;
 }
 
 h2 {
+  margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1em;
+  & + p {
+    margin-top: var(--third-padding);
+  }
 }
 p,
 a,
@@ -220,11 +225,16 @@ blockquote {
 
 p,
 a {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 p {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.5em;
+  &:not(:first-child) {
+    margin-top: var(--third-padding);
+  }
 }
 
 p a {
@@ -234,11 +244,20 @@ p a {
 a {
   flex: inherit;
   color: var(--accent-blue);
-  text-decoration: none;
   line-height: 1em;
+  text-decoration: underline var(--accent-blue-50);
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
-    color: inherit;
+    color: var(--main-fg);
+    text-decoration: underline var(--main-fg-50);
+  }
+  &:visited {
+    color: var(--accent-indigo);
+    text-decoration: underline var(--accent-indigo-50);
+    &:hover {
+      color: var(--main-fg);
+      text-decoration: underline var(--main-fg-50);
+    }
   }
 }
 
@@ -273,7 +292,7 @@ blockquote {
 hr {
   width: 100%;
   height: 4px;
-  margin: var(--first-padding) 0 0 0;
+  margin: var(--primary-padding) 0 0 0;
   border: 0;
   background-color: var(--main-fg);
 }

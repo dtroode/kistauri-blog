@@ -1,8 +1,9 @@
 section.main__arts {
-  grid-area: articles;
   display: grid;
+  grid-area: articles;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: var(--second-padding);
+  grid-gap: var(--primary-padding);
+  // min-width: 100%;
   align-items: start;
   padding: 0;
   &--first article a,
@@ -72,6 +73,7 @@ section.main__arts {
       height: 100%;
       border-radius: 0.5rem;
       overflow: hidden;
+      text-decoration: none;
       &:hover {
         color: inherit;
       }
@@ -84,25 +86,23 @@ section.main__arts {
         bottom: 0;
         left: 0;
         right: 0;
-        padding: var(--third-padding);
+        padding: var(--secondary-padding);
         color: #1c1c1e;
         span {
           display: block;
           width: auto;
-          margin: 0 0 0.5em 0;
+          margin: 0 0 0.5rem 0;
           font-size: 1.5rem;
           font-weight: 700;
-          line-height: 1em;
+          line-height: 1.1em;
           letter-spacing: -0.021em;
         }
         p {
           width: auto;
+          margin-top: 0.5rem;
           &:nth-of-type(1) {
+            font-weight: 600;
             font-style: italic;
-          }
-          &:nth-of-type(2) {
-            margin-top: 1em;
-            font-weight: 500;
           }
         }
       }
@@ -110,6 +110,6 @@ section.main__arts {
   }
   hr {
     grid-column-start: 1;
-    margin-top: 1.875rem;
+    margin-top: 0;
   }
 }
