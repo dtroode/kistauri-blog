@@ -1,6 +1,6 @@
 @media screen and (max-width: 835px) {
   :root {
-    --side-padding: 1.5rem;
+    --side-padding: 1rem;
   }
   header.head,
   footer.foot {
@@ -28,7 +28,7 @@
       grid-template-rows: auto auto;
       nav {
         display: block;
-        margin-top: 0.5rem;
+        margin-top: var(--third-padding);
         margin-right: 0;
         &.foot__cont {
           display: block;

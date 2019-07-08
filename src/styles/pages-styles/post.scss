@@ -94,7 +94,7 @@ section {
     a code,
     li code,
     span code {
-      padding: 0.25rem 0.5rem;
+      padding: 0.25rem var(--third-padding);
       border-radius: 0.25rem;
       background-color: rgba(0, 122, 255, 0.125);
       color: var(--accent-blue);
