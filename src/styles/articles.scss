@@ -1,8 +1,8 @@
 section.main__arts {
   grid-area: articles;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
-  grid-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: var(--second-padding);
   align-items: start;
   padding: 0;
   &--first article a,
@@ -97,6 +97,13 @@ section.main__arts {
         }
         p {
           width: auto;
+          &:nth-of-type(1) {
+            font-style: italic;
+          }
+          &:nth-of-type(2) {
+            margin-top: 1em;
+            font-weight: 500;
+          }
         }
       }
     }

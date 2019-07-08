@@ -1,9 +1,13 @@
+header.head--portfolio hr {
+  width: 50%;
+}
+
 main.main--portfolio {
   display: grid;
   grid-template: "section" (auto / 1fr);
   section.main__content {
     display: grid;
-    grid-template: "sub-heading" auto "text" auto / 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     &:not(:first-of-type) {
       margin-top: var(--second-padding);
     }
@@ -11,4 +15,9 @@ main.main--portfolio {
       margin-top: 1rem;
     }
   }
+}
+
+footer.foot--portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

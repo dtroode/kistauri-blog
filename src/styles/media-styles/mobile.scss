@@ -1,39 +1,55 @@
 @media screen and (max-width: 835px) {
   :root {
-    --first-padding: 2.4rem;
+    --first-padding: 3rem;
     --second-padding: 1.5rem;
-    --third-padding: 1rem;
+    --third-padding: 0.75rem;
+  }
+  header.head,
+  footer.foot {
+    &--post > * {
+      width: 100%;
+    }
   }
   header {
-    grid-template: "links" auto "heading" auto "hr" auto/1fr;
+    grid-template-columns: 1fr;
+    &.head {
+      &--portfolio,
+      &--blog {
+        hr {
+          width: 100%;
+        }
+      }
+    }
     nav a {
       letter-spacing: -0.05rem;
-    }
-    button {
-      height: 2.5rem;
-      width: 2.5rem;
     }
   }
   main {
     &.main--post {
       grid-template: "text" auto "empty" auto/1fr;
+      section.main__art-cont {
+        width: 100%;
+      }
     }
     &.main--portfolio {
       grid-template: "section" auto / 1fr;
       section.main__content {
-        grid-template: "sub-heading" auto "text" auto/1fr;
+        grid-template-columns: 1fr;
       }
     }
   }
   footer {
-    grid-template: "heading" auto "foot__cont" auto/1fr;
-    section.foot__share {
-      grid-template: "heading" auto "cont" auto/1fr;
+    &.foot--portfolio,
+    &.foot--blog {
+      display: block;
     }
-    section.foot__cont {
-      grid-template: "heading" auto "cont" auto/1fr;
-      section.foot__cont__cont {
-        grid-template: "paragraph" auto "links" auto "social" auto / 1fr;
+    section {
+      &.foot__share,
+      &.foot__cont {
+        display: block;
+        nav:nth-of-type(2) {
+          margin-top: 0.25rem;
+        }
       }
     }
   }
@@ -43,7 +59,7 @@
     }
     &.main__art-cont {
       pre {
-        width: calc(100vw - 6rem);
+        width: calc(100vw - 3rem);
       }
     }
   }
@@ -51,10 +67,6 @@
   h2,
   h3 {
     letter-spacing: -0.019em;
-  }
-  h2 {
-    width: auto;
-    margin-bottom: 1rem;
   }
   h4,
   p,

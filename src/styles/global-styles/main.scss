@@ -56,13 +56,11 @@ footer {
 }
 
 header {
-  display: grid;
-  grid-template: "links empty" auto "heading empty" auto "hr empty" auto / 1fr 1fr;
   align-items: start;
   nav {
     grid-area: links;
     margin-bottom: 0.75rem;
-    a.nav__a {
+    a {
       display: inline-block;
       margin-right: 0.25rem;
       margin-bottom: 0.25rem;
@@ -125,15 +123,12 @@ main {
 footer {
   flex-shrink: 0;
   margin-top: var(--second-padding);
-  padding-bottom: var(--first-padding);
+  padding-bottom: var(--second-padding);
   background-color: var(--additional-bg);
   color: var(--additional-fg);
-  h2 {
-    grid-area: heading;
-  }
   section {
     nav {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       a {
         display: table;
         &:not(:last-of-type) {
@@ -141,18 +136,13 @@ footer {
         }
       }
     }
-    &.foot__cont,
-    &.foot__share {
-      display: grid;
-      grid-template: "heading" auto "cont" auto / 1fr 1fr;
-    }
-    &.foot__cont__cont {
+    &.foot__cont {
       display: grid;
       grid-template: "paragraph paragraph" auto "links social" auto / 1fr 1fr;
       p {
         grid-area: paragraph;
       }
-      nav.foot__cont__cont__nav {
+      nav.foot__cont__nav {
         &--page-links {
           grid-area: links;
         }
@@ -202,19 +192,20 @@ p {
 
 h1,
 h2 {
-  font-size: 2rem;
   letter-spacing: -0.022em;
 }
 
 h1 {
   display: block;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: 700;
   width: 75%;
 }
 
 h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1em;
 }
