@@ -38,6 +38,10 @@ function SEO({ description, lang, meta, title, image }) {
       image={site.siteMetadata.image}
       meta={[
         {
+          name: `google-site-verification`,
+          content: `VoK2q3VroEahQph7ziCc0_ADrkMii1Rsq_wtw1KCsp8`
+        },
+        {
           name: `description`,
           content: metaDescription
         },
