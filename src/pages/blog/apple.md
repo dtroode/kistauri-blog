@@ -4,6 +4,7 @@ description: Results of Apple March event. Subscriptions!
 path: /blog
 date: 2019-03-25T18:45:00.000Z
 hero: /img/apple.png
+categories: thoughts
 ---
 
 Results of Apple March event. Subscriptions!

@@ -5,6 +5,7 @@ title: How and what and why I do
 description: How I wrote websites. My Toolbox
 date: 2019-04-25T19:59:59.000Z
 hero: /img/my-toolset.png
+categories: work
 ---
 
 Firstly who am I. I am starting at web development: HTML, CSS, JS, playing with React.

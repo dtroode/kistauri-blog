@@ -5,6 +5,7 @@ description: What I replaced after a year and half of developing?
 path: /blog
 date: 2019-06-22T10:44:34.021Z
 hero: /img/replace.png
+categories: advices
 ---
 
 Still use this? Replace now. List of things, that I replaced after a yearn and half of working as front-end developer.

@@ -19,10 +19,11 @@ const PortfolioPage = () => {
         <h2>About me</h2>
         <p>
           <span>0.1. </span>Develop adaptive websites, landing pages and
-          web-apps with compression technology websites load fast. Work remote
+          web-apps with compression technology — websites load fast. Work remote
           from Abkhazia. Use HTML, CSS, JS, React, Gatsby. Learn Next.js,
           Svelte. Contribute to opensource. Write articles to blog and dev.to
-          about useful tricks for frontend-developers.
+          about useful tricks for frontend-developers. Have a{" "}
+          <a href="https://t.me/dtroodechannel">Telegram Channel</a>.
         </p>
         <hr />
       </section>
@@ -45,71 +46,30 @@ const PortfolioPage = () => {
             <span>0.5. </span>
             <a href="https://cyxym.cf">CYXYM website</a>
             <br />
-            This is the website for my city Sukhum.
-            <br />
-            <i>Because no one did.</i>
-            <ul>
-              <li>Idea</li>
-              <li>Code all project</li>
-              <li>Design all project</li>
-              <li>Write text for people and guide sections</li>
-            </ul>
+            This is the website for my city Sukhum. Wrote because no one else
+            did.
           </p>
           <p>
             <span>0.6. </span>
-            <a href="https://secondschool.gq">Secondschool website</a>
+            <a href="https://secondschool.gq">School website</a>
             <br />
-            This is a redesign of the school website.
-            <br />
-            <i>Because it was ugly.</i>
-            <ul>
-              <li>Idea</li>
-              <li>Code all project</li>
-              <li>Design all project</li>
-              <li>
-                Rewrite text for history section. Write text for all other
-                sections
-              </li>
-            </ul>
+            This is a redesign of the school website because the old one is
+            ugly.
           </p>
           <p>
             <span>0.7. </span>
-            <a href="https://constantvalues.tk">Constant Values website</a>
-            <br />
-            Website with math, physics and chemistry constant values.
-            <br />
-            <i>Science interest.</i>
-            <ul>
-              <li>Idea</li>
-              <li>Code all project</li>
-              <li>Design all project</li>
-              <li>Content</li>
-            </ul>
+            <a href="https://constantvalues.tk">Constant values website</a>
+            <br />A lot of Maths, Physics and Chemistry tables for easy
+            learning.
           </p>
           <p>
             <span>0.8. </span>
-            <a href="https://masterbuket.com">Master Buket</a>
-            <br />
-            Website + branding for floristic studio.
-            <br />
-            <ul>
-              <li>Design brand</li>
-              <li>Design website</li>
-              <li>Code website</li>
-              <li>Work with social media accounts</li>
-            </ul>
-          </p>
-        </section>
-        <hr />
-      </section>
-      <section className="main__content">
-        <h2>About other</h2>
-        <section>
-          <p>
-            <span>0.9. </span>
-            <a href="https://t.me/s/dtroodechannel">
-              Telegram channel about technology and design
+            <a href="https://masterbuket.com">
+              Floristic studio website and branding
             </a>
+            <br />
+            Website + logo, design system, social media accounts and offline
+            branding.
           </p>
         </section>
       </section>

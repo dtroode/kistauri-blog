@@ -5,6 +5,7 @@ title: Why You Need to Give Firefox a Chance?
 description: We live in the era of browser monopoly. So look at another browser!
 date: 2019-05-22T12:48:59.664Z
 hero: /img/firefox.png
+categories: thoughts
 ---
 
 Use Chrome? Have a bad news for you. In era of browser monopoly we need to look at another browsers, so let's do that.
