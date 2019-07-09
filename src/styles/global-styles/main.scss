@@ -54,7 +54,7 @@ footer {
   padding-right: var(--side-padding);
   padding-left: var(--side-padding);
   & > * {
-    max-width: calc(835px - 4.5rem);
+    max-width: calc(835px - 5rem);
   }
 }
 
@@ -129,6 +129,9 @@ main {
   flex: 1 0 auto;
   & > h2:not(:first-child) {
     margin-top: var(--secondary-padding);
+  }
+  &.main--portfolio section ul {
+    margin-bottom: 0;
   }
   *:not(:first-of-type) {
     h2 {
@@ -263,7 +266,6 @@ ol {
 ul {
   list-style-type: none;
 }
-
 img {
   height: auto;
 }
