@@ -48,13 +48,13 @@ const PortfolioPage = () => {
             This is the website for my city Sukhum.
             <br />
             <i>Because no one did.</i>
-            <ul>
-              <li>Idea</li>
-              <li>Code all project</li>
-              <li>Design all project</li>
-              <li>Write text for people and guide sections</li>
-            </ul>
           </p>
+          <ul>
+            <li>Idea</li>
+            <li>Code all project</li>
+            <li>Design all project</li>
+            <li>Write text for people and guide sections</li>
+          </ul>
           <p>
             <span>0.6. </span>
             <a href="https://secondschool.gq">Secondschool website</a>
@@ -62,16 +62,16 @@ const PortfolioPage = () => {
             This is a redesign of the school website.
             <br />
             <i>Because it was ugly.</i>
-            <ul>
-              <li>Idea</li>
-              <li>Code all project</li>
-              <li>Design all project</li>
-              <li>
-                Rewrite text for history section. Write text for all other
-                sections
-              </li>
-            </ul>
           </p>
+          <ul>
+            <li>Idea</li>
+            <li>Code all project</li>
+            <li>Design all project</li>
+            <li>
+              Rewrite text for history section. Write text for all other
+              sections
+            </li>
+          </ul>
           <p>
             <span>0.7. </span>
             <a href="https://constantvalues.tk">Constant Values website</a>
@@ -79,26 +79,26 @@ const PortfolioPage = () => {
             Website with math, physics and chemistry constant values.
             <br />
             <i>Science interest.</i>
-            <ul>
-              <li>Idea</li>
-              <li>Code all project</li>
-              <li>Design all project</li>
-              <li>Content</li>
-            </ul>
           </p>
+          <ul>
+            <li>Idea</li>
+            <li>Code all project</li>
+            <li>Design all project</li>
+            <li>Content</li>
+          </ul>
           <p>
             <span>0.8. </span>
             <a href="https://masterbuket.com">Master Buket</a>
             <br />
             Website + branding for floristic studio.
             <br />
-            <ul>
-              <li>Design brand</li>
-              <li>Design website</li>
-              <li>Code website</li>
-              <li>Work with social media accounts</li>
-            </ul>
           </p>
+          <ul>
+            <li>Design brand</li>
+            <li>Design website</li>
+            <li>Code website</li>
+            <li>Work with social media accounts</li>
+          </ul>
         </section>
         <hr />
       </section>

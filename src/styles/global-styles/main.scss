@@ -133,10 +133,8 @@ main {
   &.main--portfolio section ul {
     margin-bottom: 0;
   }
-  *:not(:first-of-type) {
-    h2 {
-      margin-top: var(--secondary-padding);
-    }
+  hr {
+    margin-bottom: var(--secondary-padding);
   }
 }
 
@@ -176,7 +174,10 @@ footer {
     a {
       display: inline-block;
       margin-top: 0.25rem;
-      margin-right: 0.25rem;
+
+      &:not(:last-of-type) {
+        margin-right: 0.25rem;
+      }
     }
   }
 }
@@ -219,14 +220,19 @@ blockquote {
 }
 
 p,
-a {
+a,
+ul {
   font-weight: 500;
+}
+
+p,
+ul {
+  line-height: 1.5em;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.5em;
   &:not(:first-child) {
     margin-top: var(--third-padding);
   }
