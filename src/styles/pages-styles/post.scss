@@ -134,12 +134,23 @@ section {
     }
     blockquote {
       max-width: 100%;
-
       &.faktoid {
         position: absolute;
         left: calc(835px + 0.5rem);
         max-width: 300px;
+        margin-top: 0;
         margin-right: 2.5rem;
+        float: right;
+        a,
+        img {
+          display: block;
+        }
+        a {
+          text-decoration: none;
+        }
+        img {
+          margin-bottom: 1rem;
+        }
       }
 
       p:first-child {
@@ -182,9 +193,11 @@ section {
   }
 }
 
-@media screen and (max-width: 1030px) {
-  // 985px + 2.5rem (--side-padding)
+@media screen and (max-width: 1080px) {
+  // 1035px + 2.5rem (--side-padding)
   section.main__art-cont blockquote.faktoid {
     position: static;
+    margin-right: 0;
+    margin-left: 1rem;
   }
 }

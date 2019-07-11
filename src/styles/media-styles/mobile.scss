@@ -56,7 +56,12 @@
     }
     &.main__art-cont {
       pre {
-        width: calc(100vw - 3rem);
+        width: calc(100% - 2rem);
+      }
+      blockquote.faktoid {
+        float: unset;
+        margin-top: 1rem;
+        margin-left: 0;
       }
     }
   }
