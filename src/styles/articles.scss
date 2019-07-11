@@ -27,15 +27,9 @@ section.main__arts {
       text-decoration: none;
       padding: var(--secondary-padding);
       color: #1c1c1e;
-      // span {
-      //   display: block;
-      //   width: auto;
-      //   margin: 0 0 1rem 0;
-      //   font-size: 1.5rem;
-      //   font-weight: 700;
-      //   line-height: 1.1em;
-      //   letter-spacing: -0.021em;
-      // }
+      &:hover {
+        color: #1c1c1e;
+      }
       p {
         width: auto;
         margin-top: var(--third-padding);

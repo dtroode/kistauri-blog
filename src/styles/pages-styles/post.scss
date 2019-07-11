@@ -110,14 +110,14 @@ section {
       text-decoration: underline var(--accent-blue-50);
       &:hover {
         color: var(--main-fg);
-        text-decoration: underline var(--main-fg-50);
+        text-decoration: underline var(--main-fg);
       }
       &:visited {
         color: var(--accent-indigo);
         text-decoration: underline var(--accent-indigo-50);
         &:hover {
           color: var(--main-fg);
-          text-decoration: underline var(--main-fg-50);
+          text-decoration: underline var(--main-fg);
         }
       }
     }
