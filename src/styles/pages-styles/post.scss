@@ -90,7 +90,7 @@ section {
     a code,
     li code,
     span code {
-      padding: 0.25rem var(--third-padding);
+      padding: 0.125rem;
       border-radius: 0.25rem;
       background-color: rgba(0, 122, 255, 0.125);
       color: var(--accent-blue);
@@ -175,6 +175,7 @@ section {
         font-weight: unset;
       }
     }
+    section.album::-webkit-scrollbar,
     code::-webkit-scrollbar,
     pre::-webkit-scrollbar {
       height: 0;
@@ -189,6 +190,17 @@ section {
       td {
         padding: 0.25rem;
       }
+    }
+  }
+  &.album {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+    border-radius: 0.5rem;
+    img {
+      scroll-snap-align: center;
+      border-radius: 0;
+      object-fit: contain;
     }
   }
 }
