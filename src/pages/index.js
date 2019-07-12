@@ -24,6 +24,15 @@ const PortfolioPage = () => {
           Svelte. Contribute to opensource. Write articles to blog and dev.to
           about useful tricks for frontend-developers.
         </p>
+        <p>
+          I make a contribution to high-quality developing, want to make the
+          process easier for staring and advanced programmers: from developer to
+          developer.
+        </p>
+        <p>
+          Work only remote. Accept full plan with prepaid and material to get to
+          work right away.
+        </p>
         <hr />
       </section>
       <section className="main__content">
