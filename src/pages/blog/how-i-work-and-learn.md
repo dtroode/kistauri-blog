@@ -10,13 +10,7 @@ categories: learning
 
 Save it, learn it, write it — only in this order. Today I want to tell you about my work-learn process. Work and learn are coupled because in programming world to work good we need to learn good and learn a lot.
 
-I can divide an article into the parts. _How I store:_
-
-- Bookmarks
-- Links
-- Knowledges
-
-## Bookmarks
+## An effective way to store bookmarks
 
 I am using Chrome and Firefox and in both of them, I have constantly opened bookmarks bar. On it I have only websites that I use now, that's because the bar is dynamic and updates frequently.
 
@@ -44,7 +38,7 @@ As my task manager, I use _Google Keep_. It helps me and I used to manage all of
 
 For example: recently I've learned React and have official docs in my bookmarks bar and some additional links. After this, I decided to repeat OOP in JS and added one course and one article about OOP in ES6.
 
-## Links storages
+## The unobvious place for links
 
 Despite the fact that my links in bookmarks are very shorted, I love minimalism and short their quantity.
 
@@ -60,7 +54,7 @@ What about caching? Most of the websites now support Instant View — a Telegram
 
 **Links.** This channel updates rare and only by articles and videos, that I don't need soon. I can store here an article about something, that I want to learn in the future or link for use as an argument in the dispute.
 
-## How I learn
+## How to not forget, what you've learned yesterday
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yesterday started learning <a href="https://twitter.com/sveltejs?ref_src=twsrc%5Etfw">@sveltejs</a>. Writing all to markdown file. All text is written by me, code from examples. You can see the bold and italic text (red on the left): this is my own thoughts for better memorization <a href="https://t.co/MPMCrqcOLk">pic.twitter.com/MPMCrqcOLk</a></p>&mdash; David Kistauri (@dtroode) <a href="https://twitter.com/dtroode/status/1138419790631055360?ref_src=twsrc%5Etfw">June 11, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js"></script>

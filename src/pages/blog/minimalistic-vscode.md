@@ -2,17 +2,17 @@
 templateKey: "blog-page"
 path: /blog
 title: How to Use VS Code If You Are a Writer
-description: Want to concentrate on writing text in VS Code? Use this minimalistic setup. No exntensions.
+description: Want to concentrate on writing text in VS Code? Use this minimalistic setup. No extensions needed.
 date: 2019-07-11
 hero: /img/minimalistic-vscode.jpg
 categories: advices
 ---
 
-Every second web-developer recommend use VS Code as a code editor. It has high functionality: live server for web apps, debug, source control, built-in terminal. Laso it has minimalistic design: only needed elements are visible. I love the VS Code too 💛
+Every second developer uses Visual Studio Code (according to Stack Overflow's 2019 [survey results](https://insights.stackoverflow.com/survey/2019#development-environments-and-tools)). I've moved to VS Code from Sublime Text one year ago and love it — high functionality: live server for web apps, debug, source control, built-in terminal, — minimalistic design, monthly updates an much more. The problem appears when I need to write plain text, like this, for the blog. Here are some tricks to make VS Code better for writing.
 
 <p><blockquote class="faktoid">VS Code settings has two interfaces: common settings menu and JSON file, when you write all rules by hand.</blockquote></p>
 
-And what if you need a text editor. I am also sometimes writing to blog and tried to use VS Code as a text editor, but for this VS Code has a lot of excess elements, which interfere with focus. That's because I decided to set up the editor for writing text. Very useful is to set up VS Code through JSON: separate rule for every element. It makes the process of transformation easier.
+VS Code has a lot of excess elements, which interfere with focus. That's because I decided to set up the editor for writing text. Very useful is to set up VS Code through JSON: separate rule for every element. It makes the process of transformation easier.
 
 Changes that I did is disable some options and hiding elements.
 
@@ -112,6 +112,6 @@ Apply this changes to settings. Settings icon at the left-bottom corner → 'Set
 }
 ```
 
-![Result](/img/vscode-text.jpg "Result")
+![Result](/img/vscode-transform.png "Result")
 
 You can access to a lot of functions through Command Palette `Ctrl + Shif + P`

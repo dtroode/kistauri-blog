@@ -8,7 +8,7 @@ hero: /img/replace.png
 categories: advices
 ---
 
-Still use this? Replace now. List of things, that I replaced after a yearn and half of working as front-end developer.
+Do you still use this? I've refused and became more productive as a front-end developer. List of the things that you need to replace _now._
 
 ![VS Code](/img/vscode.jpg)
 
