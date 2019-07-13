@@ -25,13 +25,13 @@ const PortfolioPage = () => {
           about useful tricks for frontend-developers.
         </p>
         <p>
-          I make a contribution to high-quality developing, want to make the
-          process easier for staring and advanced programmers: from developer to
-          developer.
+          <span>0.2. </span>I make a contribution to high-quality developing,
+          want to make the process easier for staring and advanced programmers:
+          from developer to developer.
         </p>
         <p>
-          Work only remote. Accept full plan with prepaid and material to get to
-          work right away.
+          <span>0.3. </span>Work only remote. Accept full plan with prepaid and
+          material to get to work right away.
         </p>
         <hr />
       </section>
@@ -39,7 +39,7 @@ const PortfolioPage = () => {
         <h2>About media</h2>
         <section>
           <p>
-            <span>0.2. </span>
+            <span>0.1. </span>
             <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
               My article about Firefox on Hackernews
             </a>
@@ -51,7 +51,7 @@ const PortfolioPage = () => {
         <h2>About works</h2>
         <section>
           <p>
-            <span>0.5. </span>
+            <span>0.1. </span>
             <a href="https://cyxym.cf">CYXYM website</a>
             <br />
             This is the website for my city Sukhum.
@@ -65,7 +65,7 @@ const PortfolioPage = () => {
             <li>Write text for people and guide sections</li>
           </ul>
           <p>
-            <span>0.6. </span>
+            <span>0.2. </span>
             <a href="https://secondschool.gq">Secondschool website</a>
             <br />
             This is a redesign of the school website.
@@ -82,7 +82,7 @@ const PortfolioPage = () => {
             </li>
           </ul>
           <p>
-            <span>0.7. </span>
+            <span>0.3. </span>
             <a href="https://constantvalues.tk">Constant Values website</a>
             <br />
             Website with math, physics and chemistry constant values.
@@ -96,7 +96,7 @@ const PortfolioPage = () => {
             <li>Content</li>
           </ul>
           <p>
-            <span>0.8. </span>
+            <span>0.4. </span>
             <a href="https://masterbuket.com">Master Buket</a>
             <br />
             Website + branding for floristic studio.
