@@ -29,7 +29,8 @@ const IndexPage = props => {
               <section className="art__cont">
                 <h2>{node.frontmatter.title}</h2>
                 <p>
-                  {node.frontmatter.date} • {node.timeToRead} min read
+                  <span>{node.frontmatter.date}</span> •{" "}
+                  <span>{node.timeToRead}</span> min read
                 </p>
                 <p>{node.frontmatter.description}</p>
               </section>

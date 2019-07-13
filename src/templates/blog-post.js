@@ -23,7 +23,8 @@ export default ({ data }) => {
       />
       <section className="main__art-cont">
         <p className="main__art-cont__inf">
-          {post.frontmatter.date} • {post.timeToRead} min read
+          <span>{post.frontmatter.date}</span> • <span>{post.timeToRead}</span>{" "}
+          min read
         </p>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
