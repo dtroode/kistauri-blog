@@ -130,8 +130,14 @@ main {
   & > h2:not(:first-child) {
     margin-top: var(--secondary-padding);
   }
-  &.main--portfolio section ul {
-    margin-bottom: 0;
+  &.main--portfolio section {
+    ul {
+      margin-bottom: 0;
+    }
+    span {
+      font-feature-settings: "ss01" 1;
+      font-weight: 700;
+    }
   }
   hr {
     margin-bottom: var(--secondary-padding);
@@ -271,14 +277,6 @@ ol {
 
 img {
   height: auto;
-}
-
-span {
-  font-feature-settings: "ss01" 1;
-  font-weight: 700;
-  &.nickname {
-    color: var(--accent-blue);
-  }
 }
 
 blockquote {
