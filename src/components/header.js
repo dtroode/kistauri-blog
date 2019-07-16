@@ -20,21 +20,21 @@ const Navbar = props => {
   if (props.className === "post") {
     nav = (
       <nav>
-        <ListLink to="/blog">Blog</ListLink>
-        <ListLink to="/">Portfolio</ListLink>
-        <a href={githubLink}>On Github</a>
+        <ListLink to="/blog">Блог</ListLink>
+        <ListLink to="/">Портфолио</ListLink>
+        <a href={githubLink}>На Гитхабе</a>
       </nav>
     );
   } else if (props.className === "blog") {
     nav = (
       <nav>
-        <ListLink to="/">Portfolio</ListLink>
+        <ListLink to="/">Портфолио</ListLink>
       </nav>
     );
   } else {
     nav = (
       <nav>
-        <ListLink to="/blog">Blog</ListLink>
+        <ListLink to="/blog">Блог</ListLink>
       </nav>
     );
   }

@@ -6,9 +6,9 @@
   ],
   "name": "david-kistauri",
   "private": true,
-  "description": "Name any word and i'll make a website about it",
+  "description": "Назови любое слово и я сделаю об этом сайт.",
   "version": "0.1.0",
-  "author": "David Kistauri <davidkis113@gmail.com>",
+  "author": "Давид Кистаури <davidkis113@gmail.com>",
   "dependencies": {
     "gatsby": "^2.9.4",
     "gatsby-image": "^2.1.4",

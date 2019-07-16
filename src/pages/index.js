@@ -6,120 +6,99 @@ import SEO from "../components/seo";
 
 const PortfolioPage = () => {
   return (
-    <Layout pageClass="portfolio" title="David Kistauri >_<">
+    <Layout pageClass="portfolio" title="Давид Кистаури >_<">
       <Helmet>
         <link rel="canonical" href="https://dtroode.netlify.com/" />
       </Helmet>
       <SEO
         title=">_<"
-        description="Just David Kistauri's website. Name any word and i'll make a website about it"
+        description="Сайт Давида Кистаури. Назови любое слово и я сделаю о нем сайт."
         image="/img/preview.jpg"
       />
       <section className="main__content">
-        <h2>About me</h2>
-        <p>
-          <span>0.1. </span>Develop adaptive websites, landing pages and
-          web-apps with compression technology websites load fast. Work remote
-          from Abkhazia. Use HTML, CSS, JS, React, Gatsby. Learn Next.js,
-          Svelte. Contribute to opensource. Write articles to blog and dev.to
-          about useful tricks for frontend-developers.
-        </p>
-        <p>
-          <span>0.2. </span>I make a contribution to high-quality developing,
-          want to make the process easier for staring and advanced programmers:
-          from developer to developer.
-        </p>
-        <p>
-          <span>0.3. </span>Work only remote. Accept full plan with prepaid and
-          material to get to work right away.
-        </p>
+        <h2>Обо мне</h2>
+        <ol>
+          <li>
+            Разрабатываю адаптивные сайт, лэндинги и веб-приложения, оптимизирую
+            их — сайты грузятся быстро. Пишу на HTML, CSS, JS, React, Gatsby.
+            Учу Next.js, Svelte. Вкладываю в опен-сорс. Пишу статьи в блог и на
+            английском на Дев о полезных вещах для разработчиков и тех, кто
+            хочет им стать.
+          </li>
+          <li>
+            Развиваю качественную разработку, хочу сделать ее проще для новичков
+            и опытных программистов: from dev to dev.
+          </li>
+          <li>
+            Работаю только удаленно. Принимаю полный план с предоплатой и
+            материалом, чтоб сразу начать работу.
+          </li>
+        </ol>
         <hr />
       </section>
       <section className="main__content">
-        <h2>About media</h2>
+        <h2>О медиа</h2>
         <section>
-          <p>
-            <span>0.1. </span>
-            <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
-              My article about Firefox on Hackernews
-            </a>
-          </p>
-        </section>
-        <hr />
-      </section>
-      <section className="main__content">
-        <h2>About works</h2>
-        <section>
-          <p>
-            <span>0.1. </span>
-            <a href="https://cyxym.cf">CYXYM website</a>
-            <br />
-            This is the website for my city Sukhum.
-            <br />
-            <i>Because no one did.</i>
-          </p>
-          <ul>
-            <li>Idea</li>
-            <li>Code all project</li>
-            <li>Design all project</li>
-            <li>Write text for people and guide sections</li>
-          </ul>
-          <p>
-            <span>0.2. </span>
-            <a href="https://secondschool.gq">Secondschool website</a>
-            <br />
-            This is a redesign of the school website.
-            <br />
-            <i>Because it was ugly.</i>
-          </p>
-          <ul>
-            <li>Idea</li>
-            <li>Code all project</li>
-            <li>Design all project</li>
+          <ol>
             <li>
-              Rewrite text for history section. Write text for all other
-              sections
+              <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
+                Моя статья о Файерфоксе.
+              </a>
             </li>
-          </ul>
-          <p>
-            <span>0.3. </span>
-            <a href="https://constantvalues.tk">Constant Values website</a>
-            <br />
-            Website with math, physics and chemistry constant values.
-            <br />
-            <i>Science interest.</i>
-          </p>
-          <ul>
-            <li>Idea</li>
-            <li>Code all project</li>
-            <li>Design all project</li>
-            <li>Content</li>
-          </ul>
-          <p>
-            <span>0.4. </span>
-            <a href="https://masterbuket.com">Master Buket</a>
-            <br />
-            Website + branding for floristic studio.
-            <br />
-          </p>
-          <ul>
-            <li>Design brand</li>
-            <li>Design website</li>
-            <li>Code website</li>
-            <li>Work with social media accounts</li>
-          </ul>
+          </ol>
         </section>
         <hr />
       </section>
       <section className="main__content">
-        <h2>About other</h2>
+        <h2>О работах</h2>
         <section>
-          <p>
-            <span>0.9. </span>
-            <a href="https://t.me/s/dtroodechannel">
-              Telegram channel about technology and design
-            </a>
-          </p>
+          <ol>
+            <li>
+              <p>
+                <a href="https://cyxym.cf">Сайт CYXYM</a>
+                <br />
+                Придумал проект. Задизайнил сайт. Написал сайт. Написал текст
+                про места и людей.
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="https://secondschool.gq">Сайт второй школы</a>
+                <br />
+                Придумал проект. Задизайнил сайт. Написал сайт. Отредактировал
+                текст про историю. Написал остальной текст.
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="https://constantvalues.tk">Сайт Постоянные Величины</a>
+                <br />
+                Придумал проект. Задизайнил сайт. Написал сайт. Заполнил
+                контентом.
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="https://masterbuket.com">Мастер Букет</a>
+                <br />
+                Задизайнил бренд. Задизайнил сайт. Написал сайт. Поддерживаю
+                сайт. Работал с соц. сетями.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <hr />
+      </section>
+      <section className="main__content">
+        <h2>Об остальном</h2>
+        <section>
+          <ol>
+            <li>
+              <a href="https://t.me/s/dtroodechannel">
+                Телеграм канал о технологиях и дизайне
+              </a>
+            </li>
+          </ol>
         </section>
       </section>
     </Layout>

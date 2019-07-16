@@ -63,16 +63,17 @@ const Footer = props => {
     <footer className={`foot--${props.pageClass}`}>
       <section>
         {share}
-        <h2>About Contacts</h2>
+        <h2>О контактах</h2>
         <nav className="foot__cont">
-          <a href="https://github.com/dtroode">Github</a>
-          <a href="https://twitter.com/dtroode">Twitter</a>
-          <a href="https://t.me/dtroode">Telegram</a>
-          <a href="https://t.me/dtroodechannel">TG channel</a>
+          <a href="https://github.com/dtroode">Гитхаб</a>
+          <a href="https://twitter.com/dtroode">Твиттер</a>
+          <a href="https://t.me/dtroode">Телеграм</a>
+          <a href="https://t.me/dtroodechannel">ТГ канал</a>
+          <a href="https://dev.to/dtroode">Дев</a>
         </nav>
         <nav className="foot__cont foot__cont--site-links">
-          <ListLink to="/rss.xml">RSS</ListLink>
-          <ListLink to="/sitemap.xml">Sitemap</ListLink>
+          <ListLink to="/rss.xml">РСС</ListLink>
+          <ListLink to="/sitemap.xml">Сайтмап</ListLink>
         </nav>
       </section>
     </footer>
