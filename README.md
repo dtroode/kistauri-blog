@@ -1,5 +1,6 @@
 # <a href="https://dtroode.netlify.com/">Kistauri</a>
 
+
 <img 
   align="right" 
   src="https://dtroode.netlify.com/icons/icon-144x144.png" 
@@ -10,20 +11,11 @@
 Hello, I am **David Kistauri**.\
 I am frontend developer. Work with **HTML,** **CSS,** **JS,** playing with **React**.\
 This is repository of my **[blog](https://dtroode.netlify.com/blog)** and portfolio.\
-<<<<<<< Updated upstream
 I write notes about:
 - How I **work** on new apps and websites to show you my experience
 - My **thoughts** about everything in the dev world
 - My **advice** to help you grow faster and easier
 - My **learning process** notes, maybe you can find something useful there
-=======
-Here you can find my notes about:
-
-- How I **work**
-- My **thoughts** about everything in dev world
-- My **advices**
-- My **learning process** notes
->>>>>>> Stashed changes
 
 ![Blog](https://i.imgur.com/KLBgeu6.png)
 
