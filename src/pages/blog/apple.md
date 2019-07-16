@@ -1,24 +1,24 @@
 ---
-title: My Thoughts About Apple March Event
-description: Results of Apple March event. Subscriptions!
+title: Мои мысли о мартовском ивенте Эппл
+description: Результаты мартовского ивента Эппл. Подписки!
 path: /blog
 date: 2019-03-25T18:45:00.000Z
 hero: /img/apple.png
 categories: thoughts
 ---
 
-Results of Apple March event. Subscriptions!
+Результаты мартовского ивента Эппл. Подписки!
 
 ## More plusses
 
 ![Apple](/img/tim.jpg "Apple")
 
-First things first. Plus.
+First things first. Плюсы.
 
-I love presentation but don't love new products. Magazines by subscriptions? I live in Abkhazia and use Russian AppStore account. Apple News + in Russia not soon. Games by subscription is a doubtful thing. Just the cinema is good.
+Мне понравилась презентация, но не понравились новые продукты. Журналы по подписке? До России это не скоро дойдет. Игры по подписке вообще сомнительная вещь, хоть я и слышу, что многие ждут и активно высказываются об этом в Твиттере. Вот эксклюзивное кино — это круто, но тоже под сомнением в России.
 
-Presentation videos are best as common. And Dinesh from Silicon Valley!
+Видео с презентации, как обычно, крутые. И Динеш из Кремниевой Долины.
 
-Going to look at new landing pages.
+Пойду смотреть лендинги — часто нахожу там ошибки и просто через девтулз исправляю.
 
 +

@@ -1,25 +1,25 @@
 ---
 layout: blog
-title: Developer? Replace This Tools Now
-description: What I replaced after a year and half of developing?
+title: Разработчик? Замени это сейчас
+description: Что я заменил после полутра лет разработки
 path: /blog
 date: 2019-06-22T10:44:34.021Z
 hero: /img/replace.png
 categories: advices
 ---
 
-Do you still use this? I've refused and became more productive as a front-end developer. List of the things that you need to replace _now._
+До сих пор используешь это? Я отказался и теперь более продуктивный как фронтенд разработчик. Спсисок вещей, которые тебе надо заменить _сейчас._
 
 ![VS Code](/img/vscode.jpg)
 
-Working tools, that I replaced list:
+**Список инструментов, которые я больше не использую**
 
-- **Atom → Sublime Text → VS Code.** I started to code on [Codecademy](https://www.codecademy.com/) (it's first in [Google](https://www.google.com/search?client=firefox-b-d&q=learn+to+code)). My first HTML code I copied to Atom and saved on a computer. I have chosen Atom because a long time ago I've searched for a good text editor and see a lot of recommendations. Next, I switched to Sublime Text and loved it. I write a lot of non-release websites and some realized. Next, I heard about the VS Code. It's been very complicated for me but after a few weeks, I completely switched.
-- **Beautify → Prettier.** It's very hard to format code by hands, so I need to automize this process. I have used Beautify but recently switched to Prettier with config files.
-- **Default monospace font → Fira Code.** The font is a very important thing in the development process. I didn't think much of it before. And once I saw in Twitter some interesting font with a new thing for me — ligatures support. It was Fira Code. Now it's a very popular font.
-- **jQuery → clean JS.** I started to code in JS from jQuery tutorial on YouTube. The tutorial said that jQuery is cleaner, smaller, easier and with jQuery you can write a solution for the task in a few strings that take in JS 200 strings. But after some time I've understand that clean JS has more support, cleaner, easier and takes a minimum of space with default support in browsers.
-- **CSS → SASS.** Just love this `parent { child }` syntax.
-- **Jekyll → Gatsby.** Gatsby is a more progressive static site generator with a lot of default optimizations.
-- **Lighthouse → PageSpeed Insights.** So I love green scores in Lighthouse and love it. Recently Google moved Lighthouse to the web with more stability.
+- _Atom → Sublime Text → VS Code._ Я начал кодить с [Codecademy](https://www.codecademy.com) (они первые в [гугле](https://www.google.com/search?client=firefox-b-d&q=learn+to+code)). Мой первый HTML код я скопировал в Atom и сохранил на компьютер. Я выбрал его, потому что давно, когда искал текстовый редактор, натыкался на Атом и в описании у него было что-то связанное с кодом. Потом я перешел на Sublime Text и он был хорош. Я написал в нем много вышедших и невышедших сайтов. Потом я услышал о VS Code — он был для меня слишком сложным после Sublime, но я полностью перешел
+- _Beautify → Prettier._ Форматировать код вручную очень тяжело, поэтому я решил автоматизировать этот процесс. Сперва использовал расширение Beautify, но потом перешел на Prettier с его конфигурационными файлами
+- _Стандартный моноширинный шрифт → Fira Code._ Шрифт даже для разработчика очень важен. Раньше я не обращал на это внимания и однажды я увидел в твиттере один интересный шрифт с новой функцией для меня — лигатурами. Это был Fira Code. Сейчас он очень популярен
+- _jQuery → чистый JS._ Я начал писать на JavaScript с туториала по jQuery на ютубе. Там говорилось, что jQuery чище, меньше, легче и позволяет решать задачи в несколько строк, которые в JavaScript пишутся в 200. Но после я понял, что у чистого JS больше поддержки, он чище, легче и занимает меньше места со стандартной поддержкой браузера
+- _CSS → SASS._ Просто нравится синтаксис `родитель { ребенок {} }`
+- _Jekyll → Gatsby._ Gatsby более прогрессивен и имеет много оптимизация из коробки
+- _Lighthouse → PageSpeed Insights._ Просто более стабильно
 
-If I remember more, I'll extend an article.
+Статья будет дополняться _вечно._
