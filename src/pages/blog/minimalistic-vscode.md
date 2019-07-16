@@ -10,17 +10,15 @@ categories: advices
 
 Every second developer uses Visual Studio Code (according to Stack Overflow's 2019 [survey results](https://insights.stackoverflow.com/survey/2019#development-environments-and-tools)). I've moved to VS Code from Sublime Text one year ago and love it — high functionality: live server for web apps, debug, source control, built-in terminal, — minimalistic design, monthly updates an much more. The problem appears when I need to write plain text, like this, for the blog. Here are some tricks to make VS Code better for writing.
 
-<p><blockquote class="faktoid">VS Code settings has two interfaces: common settings menu and JSON file, when you write all rules by hand.</blockquote></p>
-
 VS Code has a lot of excess elements, which interfere with focus. That's because I decided to set up the editor for writing text. Very useful is to set up VS Code through JSON: separate rule for every element. It makes the process of transformation easier.
 
-Changes that I did is disable some options and hiding elements.
+Changes that I did is disable some options and hiding elements
 
-- Hide the activity bar. I do this in all of the apps in which can.
+- Hide the activity bar. I do this in all of the apps in which can
 - Hide the side bar
 - Hide the status bar
 - Edit window title
-- Hide tabs. Still can access them by `Ctrl + Tab` on Windows and `⌘ + ⌥ + Tab` on macOS.
+- Hide tabs. Still can access them by `Ctrl + Tab` on Windows and `⌘ + ⌥ + Tab` on macOS
 - Did a lot of changes in editor section (turned off different highlights, removed line numbers, disabled mini-map etс.)
 - Work with fonts. I didn't change monospace to sans-serif, but I increase size and weight
 

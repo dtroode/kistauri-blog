@@ -18,11 +18,7 @@ I am using Chrome and Firefox and in both of them, I have constantly opened book
 
 Besides, I don't love overfill bar and I've to save bookmarks without names, only with icons. Another proof of icons importance.
 
-_General principles of bookmarks location:_
-
-- Social media and news websites
-- Tools
-- Materials for learning
+_General principles of bookmarks location:_ social media and news websites, tools, materials for learning
 
 **Social media and news websites.** My main social media is Twitter. Also, I use local popular VK, but not so often. Twitter I open 10+ times per day every day, that's because Twitter is on the bar, VK isn't.
 
