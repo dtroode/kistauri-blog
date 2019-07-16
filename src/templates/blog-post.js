@@ -24,7 +24,7 @@ export default ({ data }) => {
       <section className="main__art-cont">
         <p className="main__art-cont__inf">
           <span>{post.frontmatter.date}</span> • <span>{post.timeToRead}</span>{" "}
-          min read
+          мин.
         </p>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
@@ -42,7 +42,7 @@ export const query = graphql`
       timeToRead
       frontmatter {
         title
-        date(formatString: "MMMM D, YYYY")
+        date(formatString: "D MMMM YYYY", locale: "ru")
         description
         hero {
           childImageSharp {
