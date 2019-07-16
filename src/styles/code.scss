@@ -1,3 +1,8 @@
+pre,
+code {
+  font-feature-settings: "case" 0, "frac" 0, "cv08" 0;
+}
+
 code[class*="language-"] {
   direction: ltr;
   text-align: left;
