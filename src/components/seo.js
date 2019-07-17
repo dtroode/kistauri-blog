@@ -59,7 +59,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: image
+          content: `https://dtroode.netlify.com${image}`
         },
         {
           name: `twitter:card`,
@@ -79,7 +79,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:image`,
-          content: image
+          content: `https://dtroode.netlify.com${image}`
         }
       ].concat(meta)}
     >
@@ -93,7 +93,7 @@ SEO.defaultProps = {
   meta: [],
   description: ``,
   title: `David Kistauri`,
-  image: `/img/preview.jpg`
+  image: `https://dtroode.netlify.com/img/preview.jpg`
 };
 
 SEO.propTypes = {
