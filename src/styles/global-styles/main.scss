@@ -10,7 +10,7 @@ button {
 }
 
 html {
-  font-size: 18px;
+  font-size: 100%;
 }
 
 @supports (font-variation-settings: normal) {
@@ -256,6 +256,14 @@ a {
     &:hover {
       color: var(--main-fg);
       text-decoration: underline var(--main-fg);
+    }
+  }
+  &.a--back {
+    &:hover::before {
+      content: "→ ";
+    }
+    &::before {
+      content: "← ";
     }
   }
 }
