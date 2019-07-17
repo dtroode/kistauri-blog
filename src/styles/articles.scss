@@ -4,11 +4,11 @@ section.main__arts {
   grid-gap: var(--secondary-padding);
   article {
     position: relative;
-    border-radius: 0.5rem;
+    border-radius: var(--fourth-padding);
     transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
     &:hover {
-      transform: translateY(-0.5rem);
-      box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+      transform: translateY(-0.6rem);
+      box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
     }
     &#work {
       background-color: var(--accent-red-50);
@@ -24,17 +24,17 @@ section.main__arts {
     }
     a {
       display: block;
-      height: calc(100% - 2*var(--secondary-padding));
+      height: calc(100% - 2 * var(--third-padding));
       border-radius: 0.5rem;
       text-decoration: none;
-      padding: var(--secondary-padding);
+      padding: var(--third-padding);
       color: #1c1c1e;
       &:hover {
         color: #1c1c1e;
       }
       p {
         width: auto;
-        margin-top: 1em;
+        margin-top: var(--third-padding);
         &:nth-of-type(1) {
           font-weight: 600;
           font-style: italic;

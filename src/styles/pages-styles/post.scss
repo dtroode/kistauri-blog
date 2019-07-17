@@ -8,8 +8,7 @@ footer.foot--post {
       &.foot__share {
         display: block;
         a {
-          height: 1rem;
-          border-radius: 0.5rem;
+          border-radius: var(--fourth-padding);
           background-color: var(--main-bg);
           &.tw-share-button {
             color: #1da1f2;
@@ -67,7 +66,7 @@ section {
       width: 100%;
     }
     h2 {
-      margin-top: 2rem;
+      margin-top: var(--primary-padding);
     }
     p,
     a,
@@ -96,7 +95,7 @@ section {
       color: var(--additional-fg);
     }
     p {
-      margin-top: 1em;
+      margin-top: var(--third-padding);
       &.main__art-cont__inf {
         margin: 0;
         width: unset;
@@ -128,22 +127,22 @@ section {
       background-color: var(--additional-bg);
     }
     figcaption {
-      margin-top: 0.5rem;
+      margin-top: var(--fourth-padding);
       font-size: 0.75rem;
     }
     span.gatsby-resp-image-background-image {
       display: block;
-      margin-top: 1.6rem;
       border-radius: 0.4rem;
     }
     blockquote {
       max-width: 100%;
       &.faktoid {
         position: absolute;
-        left: calc(835px + 0.5rem);
+        left: 835px;
         max-width: 300px;
-        margin-top: 0;
+        margin-top: var(--third-padding);
         margin-right: var(--side-padding);
+        margin-inline-start: 0;
         float: right;
         a,
         img {
@@ -151,9 +150,6 @@ section {
         }
         a {
           text-decoration: none;
-        }
-        img {
-          margin-bottom: 1rem;
         }
       }
 
@@ -165,10 +161,10 @@ section {
       width: 100% !important;
     }
     pre {
-      margin-top: 1rem;
+      margin-top: var(--third-padding);
       margin-bottom: 0;
-      padding: 1rem;
-      width: calc(100% - 2rem);
+      padding: var(--third-padding);
+      width: calc(100% - 2 * var(--third-padding));
       overflow-x: scroll;
     }
     code {
@@ -189,13 +185,13 @@ section {
     }
     table {
       width: 100%;
-      margin-top: 1rem;
+      margin-top: var(--third-padding);
       empty-cells: show;
       border-spacing: 0;
       border-collapse: collapse;
       th,
       td {
-        padding: 0.25rem;
+        padding: var(--fifth-padding);
       }
     }
   }
@@ -203,7 +199,7 @@ section {
     scroll-snap-type: x mandatory;
     display: flex;
     overflow-x: scroll;
-    border-radius: 0.5rem;
+    border-radius: var(--fourth-padding);
     img {
       scroll-snap-align: center;
       border-radius: 0;
@@ -217,6 +213,6 @@ section {
   section.main__art-cont blockquote.faktoid {
     position: static;
     margin-right: 0;
-    margin-left: 1rem;
+    margin-left: var(--third-padding);
   }
 }
