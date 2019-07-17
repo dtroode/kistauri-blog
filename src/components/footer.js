@@ -73,7 +73,6 @@ const Footer = props => {
         </nav>
         <nav className="foot__cont foot__cont--site-links">
           <ListLink to="/rss.xml">РСС</ListLink>
-          <ListLink to="/sitemap.xml">Сайтмап</ListLink>
         </nav>
       </section>
     </footer>
