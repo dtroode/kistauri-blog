@@ -24,7 +24,7 @@ section.main__arts {
     }
     a {
       display: block;
-      height: calc(100% - var(--secondary-padding));
+      height: calc(100% - 2*var(--secondary-padding));
       border-radius: 0.5rem;
       text-decoration: none;
       padding: var(--secondary-padding);
