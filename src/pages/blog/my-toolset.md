@@ -1,34 +1,34 @@
 ---
 templateKey: "blog-page"
 path: /blog
-title: How and what and why I do
-description: How I wrote websites. My Toolbox
+title: Как и чем я занимаюсь
+description: Как я написал первые сайты. Моя коробочка с инструментами
 date: 2019-04-25T19:59:59.000Z
 hero: /img/my-toolset.png
 categories: work
 ---
 
-Firstly who am I. I am starting at web development: HTML, CSS, JS, playing with React.
+Сперва, кто я — уже полтора года начинающий веб-разработчик, пишу на HTML, CSS, JS, учу React.
 
-## Hardware setup
+## Технический сетап
 
-I am using a Dell Inspiron 13 with 256 GB SSD, 8 GB RAM, and Intel Core i5. Yes, I am not that cool user of Mac, which coming home, opening the laptop with just one finger and using exclusive paid software and after tweet beautiful screenshots of programs.
+Я использую Dell Inspiron 13 с 256 ГБ SSD, 8 ГБ RAM и Intel Core i5. Да, я не тот крутой пользователь Мака, который приходит домой, открывает свой ноутбук одним пальцем, использует эксклюзивный платный софт и потом твитит красивые скриншоты программ с тенями.
 
-## Software setup
+## Софтверный сетап
 
-I am using two systems — Windows 10 and Ubuntu (always latest versions). Windows is taking 200 GB, other space is for Ubuntu. Why? Because I love Unix, but Linux is not so independent system, as I want.
+Я установил на ноутбук две системы — Windows 10 и Ubuntu — всегда последние версии. Windows занимает 200 ГБ, остальное место под Ubuntu. Потому что мне нравится Unix, но Linux пока что не такая независимая система.
 
-![My Toolbox](/img/toolset.jpg)
+![Моя коробочка с инструментами](/img/toolset.jpg "Моя коробочка с инструментами")
 
-## Programs
+## Программы
 
-Now is time for most interesting. Do you still remember who am I? Frontend developer. Let's look at the main root of building a website/web app:
+Настало время самого интересного. Давайте посмотрим на весь путь создания сайта
 
-- Firstly I need to design. For these purposes, I use two programs: Affinity Photo and Figma (mostly second). I don't like Adobe's software.
-- Next is writing that drow. Here I don't need an IDE. I have Visual Studio Code — beautiful and powerful replacing of IDE. This is like something between the code editor and IDE. There is one minus — Electron. But VS Code is for projects. If I want to write a few strings of code, I am opening a little brother of Visual Studio Code — Sublime Text. Sublime is the fastest code editor and looks nice.
-- Often I need to plan my work. Here we go with Notion and Google Keep. Notion mostly for texts and boards; Keep for task list.
-- Other tools:
-  - Terminal — VS Code's built in.
-  - Browsers — Chrome and Firefox.
+- Сперва надо задизайнить. Для этих целей я использую две программы Affinity Photo и Figma. Чаще вторую. Я не люблю софт от Adobe
+- Дальше надо написать то, что нарисовал. Я не использую IDE — вместо этого есть Visual Studio Code — мощная и красивая замена. VS Code — что-то между текстовым редактором и IDE. Если мне надо быстро записать несколько строк, то я открываю его младшего брата — Sublime Text. Он самый быстрый редакатор и выглядит хорошо
+- Часто мне надо спланировать работу. Для этого я использую Notion и Google Keep. Notion — для текстов, Keep — для списка задач.
+- Остальные инструменты:
+  - Терминал — встроенный в VS Code
+  - Браузеры — Chrome и Firefox
 
-That's all. Hope, you've found something interesting!
+На этом все. Надеюсь, вы нашли что-нибудь интересное здесь.
