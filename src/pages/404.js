@@ -40,14 +40,14 @@ const ErrorPage = props => {
           </Link>
         </article>
         <article key="main__arts__portfolio">
-          <Link
+          <a
             to={`mailto:davidkis113@gmail.com?subject=Я нашел ошибку на сайте`}
           >
             <section className="art__cont">
               <h2>Сообщить об ошибке</h2>
               <p>А еще можно сообщить автору об ошибке нажав на этот блок.</p>
             </section>
-          </Link>
+          </a>
         </article>
         <article key="main__arts__portfolio">
           <Link to="/">
