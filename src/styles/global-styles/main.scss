@@ -1,3 +1,65 @@
+@keyframes glitch-anim {
+  0% {
+    clip: rect(4px, 330px, 25px, 0);
+  }
+  10% {
+    clip: rect(8px, 310px, 34px, 0);
+  }
+  20% {
+    clip: rect(15px, 250px, 3px, 0);
+  }
+  30% {
+    clip: rect(27px, 280px, 78px, 0);
+  }
+  40% {
+    clip: rect(7px, 370px, 13px, 0);
+  }
+  50% {
+    clip: rect(32px, 250px, 5px, 0);
+  }
+  60% {
+    clip: rect(2px, 130px, 3px, 0);
+  }
+  70% {
+    clip: rect(87px, 260px, 76px, 0);
+  }
+  80% {
+    clip: rect(56px, 78px, 95px, 0);
+  }
+  90% {
+    clip: rect(32px, 197px, 32px, 0);
+  }
+  100% {
+    clip: rect(78px, 220px, 75px, 0);
+  }
+}
+
+*.glitch {
+  position: relative;
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--accent-red);
+    background: var(--accent-red);
+    clip: rect(16px, 248px, 22px, 0);
+    animation: glitch-anim 2s infinite linear alternate-reverse;
+  }
+  &::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--accent-blue);
+    background: var(--accent-red);
+    animation: glitch-anim 2s infinite linear alternate-reverse;
+  }
+}
+
 *::selection {
   background: var(--accent-blue);
   color: var(--main-bg);
@@ -90,6 +152,14 @@ pre {
 header {
   align-items: start;
   background-color: var(--additional-bg);
+  &.head--error nav a {
+    background-color: var(--additional-fg);
+    color: var(--additional-fg);
+    &:hover {
+      background-color: var(--accent-red);
+      color: var(--accent-red);
+    }
+  }
   nav {
     margin-bottom: var(--fourth-padding);
     a {
@@ -127,6 +197,21 @@ footer {
 
 main {
   flex: 1 0 auto;
+  &.main--error section.main__arts article {
+    background-color: var(--main-fg);
+    &:hover {
+      background-color: var(--accent-red);
+      a {
+        color: var(--accent-red);
+      }
+    }
+    &:first-of-type {
+      background-color: var(--accent-red);
+    }
+    a {
+      color: var(--main-fg);
+    }
+  }
   section.main__content:last-of-type {
     ol,
     ul {
@@ -142,6 +227,20 @@ footer {
   flex-shrink: 0;
   background-color: var(--additional-bg);
   color: var(--additional-fg);
+  &.foot--error section {
+    h2 {
+      display: table;
+      background-color: var(--additional-fg);
+    }
+    nav.foot__cont a {
+      background-color: var(--additional-fg);
+      color: var(--additional-fg);
+      &:hover {
+        background-color: var(--accent-red);
+        color: var(--accent-red);
+      }
+    }
+  }
   section {
     h2 {
       margin-bottom: var(--fourth-padding);

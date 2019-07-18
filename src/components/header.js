@@ -35,10 +35,17 @@ const Navbar = props => {
         <ListLink to="/">Портфолио</ListLink>
       </nav>
     );
+  } else if (props.className === "portfolio") {
+    nav = (
+      <nav>
+        <ListLink to="/blog">Блог</ListLink>
+      </nav>
+    );
   } else {
     nav = (
       <nav>
         <ListLink to="/blog">Блог</ListLink>
+        <ListLink to="/">Портфолио</ListLink>
       </nav>
     );
   }

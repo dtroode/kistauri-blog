@@ -19,7 +19,7 @@ const IndexPage = props => {
         description="Блог Давида Кистаури. Назови любое слово и я сделаю о нем сайт."
         image="/img/preview.jpg"
       />
-      <section className="main__arts main__arts--first">
+      <section className="main__arts">
         {PostsList.map(({ node }) => (
           <article
             id={node.frontmatter.categories}
