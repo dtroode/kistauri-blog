@@ -99,7 +99,7 @@ export const listQuery = graphql`
   query {
     LatestPosts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 3
+      limit: 2
     ) {
       edges {
         node {
