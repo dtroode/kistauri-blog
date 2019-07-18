@@ -41,7 +41,7 @@ const ErrorPage = props => {
         </article>
         <article key="main__arts__portfolio">
           <a
-            to={`mailto:davidkis113@gmail.com?subject=Я нашел ошибку на сайте`}
+            href={`mailto:davidkis113@gmail.com?subject=Я нашел ошибку на сайте`}
           >
             <section className="art__cont">
               <h2>Сообщить об ошибке</h2>
