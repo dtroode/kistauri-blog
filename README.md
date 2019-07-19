@@ -8,7 +8,7 @@
   alt="Blog Logo">
 
 Hello, I am **David Kistauri**.\
-This is repository of my **[blog](https://dtroode.netlify.com/blog)** and portfolio.
+This is repository of my personal website with **[blog](https://dtroode.netlify.com/blog).**
 
 You can
 - **Review** my code
@@ -19,8 +19,3 @@ You can
 To run locally, clone, them `nmp install`, then yarn `nmp dev`, then go to https://localhost:8000.
 
 **All blog posts in [/src/pages/blog/all](https://github.com/dtroode/kistauri/blob/master/src/pages/blog/all/)**
-
-## My contacts
-
-- [Telegram](https://t.me/dtroode)
-- [Twitter](https://twitter.com/dtroode)
