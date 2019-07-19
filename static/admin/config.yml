@@ -26,10 +26,11 @@ collections:
           widget: "select",
           options: ["work", "thoughts", "advices", "learning"],
         }
-      - { tag: "Tags", name: "tags", widget: "object",
-          fields: 
-          - {label: "Street Address", name: "street", widget: "string"}
-          - {label: "City", name: "city", widget: "string"}
-          - {label: "Postal Code", name: "post-code", widget: "string"}
-        }
+      - tag: "Tags"
+        name: "tags"
+        widget: "object"
+        fields:
+          - { label: "Street Address", name: "street", widget: "string" }
+          - { label: "City", name: "city", widget: "string" }
+          - { label: "Postal Code", name: "post-code", widget: "string" }
       - { tag: "Body", name: "body", widget: "markdown" }
