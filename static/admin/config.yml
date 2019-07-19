@@ -10,15 +10,26 @@ public_folder: img
 collections:
   - name: "blog"
     label: "Blog"
-    folder: src/pages/blog
+    folder: src/pages/blog/all
     create: true
     slug: "{{slug}}"
     fields:
-      - {tag: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {tag: "Title", name: "title", widget: "string"}
-      - {tag: "Description", name: "description", widget: "text"}
-      - {tag: "Path", name: "path", widget: "select", options: ["/", "/blog"]}
-      - {tag: "Publish Date", name: "date", widget: "datetime"}
-      - {tag: "Featured Image", name: "hero", widget: "image"}
-      - {tag: "Categories", name: "categories", widget: "select", options: ["work", "thoughts", "advices", "learning"]}
-      - {tag: "Body", name: "body", widget: "markdown"}
+      - { tag: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { tag: "Title", name: "title", widget: "string" }
+      - { tag: "Description", name: "description", widget: "text" }
+      - { tag: "Path", name: "path", widget: "select", options: ["/", "/blog"] }
+      - { tag: "Publish Date", name: "date", widget: "datetime" }
+      - { tag: "Featured Image", name: "hero", widget: "image" }
+      - {
+          tag: "Categories",
+          name: "categories",
+          widget: "select",
+          options: ["work", "thoughts", "advices", "learning"],
+        }
+      - { tag: "Tags", name: "tags", widget: "object",
+          fields: 
+          - {label: "Street Address", name: "street", widget: "string"}
+          - {label: "City", name: "city", widget: "string"}
+          - {label: "Postal Code", name: "post-code", widget: "string"}
+        }
+      - { tag: "Body", name: "body", widget: "markdown" }
