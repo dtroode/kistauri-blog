@@ -20,11 +20,13 @@ const Navbar = props => {
   if (props.className === "post") {
     nav = (
       <nav>
-        <ListLink to="/blog" className="a--back">
+        <ListLink to="/" className="a--primary">
+          {">_<"} Давид Кистаури
+        </ListLink>
+        <ListLink to="/blog" className="a--primary">
           Блог
         </ListLink>
-        <ListLink to="/">Портфолио</ListLink>
-        <a href={githubLink} title="На Гитхабе">
+        <a href={githubLink} title="На Гитхабе" className="a--primary">
           Редактировать
         </a>
       </nav>
@@ -32,20 +34,48 @@ const Navbar = props => {
   } else if (props.className === "blog") {
     nav = (
       <nav>
-        <ListLink to="/">Портфолио</ListLink>
+        <ListLink to="/" className="a--primary">
+          {">_<"}
+        </ListLink>
+        <ListLink to="/blog/tags" className="a--primary">
+          Теги
+        </ListLink>
       </nav>
     );
   } else if (props.className === "portfolio") {
     nav = (
       <nav>
-        <ListLink to="/blog">Блог</ListLink>
+        <ListLink to="/" className="a--primary">
+          {">_<"}
+        </ListLink>
+        <ListLink to="/blog" className="a--primary">
+          Блог
+        </ListLink>
+      </nav>
+    );
+  } else if (props.className === "tag") {
+    nav = (
+      <nav>
+        <ListLink to="/" className="a--primary">
+          {">_<"} Давид Кистаури
+        </ListLink>
+        <ListLink to="/blog" className="a--primary">
+          Блог
+        </ListLink>
+        <ListLink to="/blog/tags" className="a--primary">
+          Теги
+        </ListLink>
       </nav>
     );
   } else {
     nav = (
       <nav>
-        <ListLink to="/blog">Блог</ListLink>
-        <ListLink to="/">Портфолио</ListLink>
+        <ListLink to="/" className="a--primary">
+          {">_<"}
+        </ListLink>
+        <ListLink to="/blog" className="a--primary">
+          Блог
+        </ListLink>
       </nav>
     );
   }

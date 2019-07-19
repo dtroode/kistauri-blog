@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import { Helmet } from "react-helmet";
 import SEO from "../components/seo";
 
-const PortfolioPage = () => {
+const IndexPage = () => {
   return (
     <Layout pageClass="portfolio" title="Давид Кистаури >_<">
       <Helmet>
@@ -57,8 +57,8 @@ const PortfolioPage = () => {
               <p>
                 <a href="https://cyxym.cf">Сайт CYXYM</a>
                 <br />
-                Придумал проект. Задизайнил сайт. Написал сайт. Написал текст
-                о местах и людях.
+                Придумал проект. Задизайнил сайт. Написал сайт. Написал текст о
+                местах и людях.
               </p>
             </li>
             <li>
@@ -105,4 +105,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default IndexPage;

@@ -1,11 +1,12 @@
 ---
 templateKey: "blog-page"
-path: /blog
+path: /blog/all
 title: Want to Build a Perfect iOS App? Do Like They
 description: If your app in this list — it's time to celebrate it!
 date: 2019-05-21T18:48:59.664Z
 hero: /img/ios-apps.png
 categories: advices
+tags: ["Айос", "Дизайн", "UI"]
 ---
 
 If your app in this list — it's time to celebrate it! If not — read this article and do like developers of these apps.

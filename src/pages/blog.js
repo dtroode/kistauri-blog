@@ -7,7 +7,7 @@ import "../styles/media.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const IndexPage = props => {
+const BlogPage = props => {
   const PostsList = props.data.Posts.edges;
   return (
     <Layout pageClass="blog" title="Давид Кистаури. Блог">
@@ -37,17 +37,21 @@ const IndexPage = props => {
             </Link>
           </article>
         ))}
+        <Link to="/blog/all" className="main__arts__all a--secondary">
+          Все посты
+        </Link>
       </section>
     </Layout>
   );
 };
 
-export default IndexPage;
+export default BlogPage;
 
 export const listQuery = graphql`
   query {
     Posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 20
     ) {
       edges {
         node {

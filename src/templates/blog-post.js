@@ -1,11 +1,19 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Link } from "gatsby";
 import Layout from "../components/layout";
+import kebabCase from "lodash/kebabCase";
 import "../styles/fonts-styles/mono.scss";
 import "../styles/pages-styles/post.scss";
 import "../styles/media.scss";
 import "../styles/code.scss";
 import SEO from "../components/seo";
+
+const ListLink = props => (
+  <Link to={props.to} className={props.className}>
+    {props.children}
+  </Link>
+);
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -25,6 +33,12 @@ export default ({ data }) => {
         <p className="main__art-cont__inf">
           <span>{post.frontmatter.date}</span> • <span>{post.timeToRead}</span>{" "}
           мин.
+          <br />
+          {post.frontmatter.tags.map(tag => (
+            <>
+              <ListLink to={`/blog/tags/${kebabCase(tag)}`}>{tag}</ListLink>
+            </>
+          ))}
         </p>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
@@ -44,6 +58,7 @@ export const query = graphql`
         title
         date(formatString: "D MMMM YYYY", locale: "ru")
         description
+        tags
         hero {
           childImageSharp {
             fluid {

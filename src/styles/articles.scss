@@ -6,6 +6,7 @@ section.main__arts {
     position: relative;
     border-radius: var(--fourth-padding);
     transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
+    background-color: var(--accent-blue-50);
     &:hover {
       transform: translateY(-0.6rem);
       box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
@@ -42,8 +43,13 @@ section.main__arts {
       }
     }
   }
-  hr {
-    grid-column-start: 1;
-    margin-top: 0;
+  a.main__arts__all {
+    justify-self: start;
+    background-color: var(--additional-bg);
+    color: var(--accent-blue);
+    &:hover {
+      background-color: var(--accent-blue-50);
+      color: var(--additional-fg);
+    }
   }
 }

@@ -49,7 +49,7 @@ footer.foot--post {
           svg {
             width: 1rem;
             height: 1rem;
-            margin-right: 0.25rem;
+            margin-right: var(--fifth-padding);
             vertical-align: top;
           }
         }
@@ -66,7 +66,7 @@ section {
       width: 100%;
     }
     h2 {
-      margin-top: var(--primary-padding);
+      margin-top: var(--secondary-padding);
     }
     p,
     a,
@@ -90,7 +90,7 @@ section {
     li code,
     span code {
       padding: 0.125rem;
-      border-radius: 0.25rem;
+      border-radius: var(--fifth-padding);
       background-color: var(--additional-bg);
       color: var(--additional-fg);
     }
@@ -101,6 +101,16 @@ section {
         width: unset;
         font-weight: 600;
         font-style: italic;
+        a {
+          margin-right: var(--fourth-padding);
+          font-weight: 600;
+          color: inherit;
+          text-decoration-color: var(--main-fg-50);
+          &:hover {
+            color: var(--accent-blue);
+            text-decoration-color: var(--accent-blue-50);
+          }
+        }
       }
     }
     a {
@@ -109,14 +119,14 @@ section {
       text-decoration: underline var(--accent-blue-50);
       &:hover {
         color: var(--main-fg);
-        text-decoration: underline var(--main-fg);
+        text-decoration: underline var(--main-fg-50);
       }
       &:visited {
         color: var(--accent-indigo);
         text-decoration: underline var(--accent-indigo-50);
         &:hover {
           color: var(--main-fg);
-          text-decoration: underline var(--main-fg);
+          text-decoration: underline var(--main-fg-50);
         }
       }
     }
@@ -191,7 +201,8 @@ section {
       border-collapse: collapse;
       th,
       td {
-        padding: var(--fifth-padding);
+        padding: 0 var(--fourth-padding) var(--fifth-padding) 0;
+        vertical-align: top;
       }
     }
   }

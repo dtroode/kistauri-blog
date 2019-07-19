@@ -1,11 +1,12 @@
 ---
 templateKey: "blog-page"
-path: /blog
+path: /blog/all
 title: Why You Need to Give Firefox a Chance?
 description: We live in the era of browser monopoly. So look at another browser!
 date: 2019-06-22T12:48:59.664Z
 hero: /img/firefox.png
 categories: thoughts
+tags: ["Веб", "Хром", "Файерфокс"]
 ---
 
 Use Chrome? Have a bad news for you. In era of browser monopoly we need to look at another browsers, so let's do that.

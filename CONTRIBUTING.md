@@ -2,6 +2,7 @@
 
 You can contribute to this repository to help me improve my website.
 There are some options for contributing:
+
 - Contribute to articles
 - Contribute to engine code
 
@@ -11,7 +12,7 @@ You can help me fix errors in articles. If you found one, just press this button
 
 ![On Github](https://i.imgur.com/2dPCZGo.png?2)
 
-By tapping this button you're going to page's Github repository. You can manually find page in the [/src/pages/blog](https://github.com/dtroode/kistauri/blob/master/src/pages/blog/) folder.
+By tapping this button you're going to page's Github repository. You can manually find page in the [/src/pages/blog/all](https://github.com/dtroode/kistauri/blob/master/src/pages/blog/all/) folder.
 Next fork, fix an error, create a Pull request.
 
 All steps:

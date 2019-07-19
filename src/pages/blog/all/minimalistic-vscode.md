@@ -1,11 +1,12 @@
 ---
 templateKey: "blog-page"
-path: /blog
+path: /blog/all
 title: How to Use VS Code If You Are a Writer
 description: Want to concentrate on writing text in VS Code? Use this minimalistic setup. No extensions needed.
 date: 2019-07-11
 hero: /img/minimalistic-vscode.jpg
 categories: advices
+tags: ["Текст", "ВС Код", "Настройка"]
 ---
 
 Every second developer uses Visual Studio Code (according to Stack Overflow's 2019 [survey results](https://insights.stackoverflow.com/survey/2019#development-environments-and-tools)). I've moved to VS Code from Sublime Text one year ago and love it — high functionality: live server for web apps, debug, source control, built-in terminal, — minimalistic design, monthly updates an much more. The problem appears when I need to write plain text, like this, for the blog. Here are some tricks to make VS Code better for writing.

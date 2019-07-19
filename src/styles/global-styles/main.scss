@@ -64,7 +64,7 @@ html {
   button {
     font-family: "Inter var", Inter, "Helvetica Neue", Helvetica, Arial,
       sans-serif;
-    font-feature-settings: "case" 1, "frac" 1, "cv08" 1;
+    font-feature-settings: "cv08" 1;
   }
 }
 
@@ -74,23 +74,14 @@ html {
 
 body {
   height: 100%;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   margin: 0;
   background-color: var(--main-bg);
   color: var(--main-fg);
-  &[data-theme="dark"] {
-    button {
-      span {
-        &.dark {
-          display: none;
-        }
-        &.light {
-          display: inline-block;
-        }
-      }
-    }
+  div div {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
   }
 }
 
@@ -103,34 +94,6 @@ footer {
   & > * {
     max-width: calc(835px - 5rem);
   }
-}
-
-header nav a,
-footer nav a {
-  padding: var(--fourth-padding);
-  font-weight: 600;
-  color: var(--main-bg);
-  text-decoration: none;
-  &:hover {
-    color: var(--main-bg);
-    text-decoration: none;
-  }
-  &:visited {
-    color: var(--main-bg);
-    text-decoration: none;
-    &:hover {
-      color: var(--main-bg);
-      text-decoration: none;
-    }
-  }
-}
-
-header a,
-footer a,
-p:first-of-type,
-blockquote,
-pre {
-  border-radius: var(--fourth-padding);
 }
 
 header {
@@ -148,8 +111,8 @@ header {
     margin-bottom: var(--fourth-padding);
     a {
       display: inline-block;
-      margin-right: 0.25rem;
-      margin-bottom: 0.25rem;
+      margin-right: var(--fifth-padding);
+      margin-bottom: var(--fifth-padding);
       background-color: var(--accent-blue);
       color: var(--main-bg);
       &:hover {
@@ -157,20 +120,6 @@ header {
         color: var(--main-bg);
       }
     }
-  }
-  button {
-    grid-area: color;
-    border: none;
-    height: 2.125rem;
-    width: 2.125rem;
-    background-color: var(--accent-blue);
-  }
-  h1 {
-    grid-area: heading;
-  }
-  hr {
-    grid-area: hr;
-    place-self: end;
   }
 }
 
@@ -180,7 +129,6 @@ footer {
 }
 
 main {
-  flex: 1 0 auto;
   &.main--error section.main__arts article {
     background-color: var(--main-fg);
     &:hover {
@@ -220,7 +168,6 @@ main {
 }
 
 footer {
-  flex-shrink: 0;
   background-color: var(--additional-bg);
   color: var(--additional-fg);
   &.foot--error section {
@@ -289,6 +236,9 @@ h1 {
   font-size: 2rem;
   line-height: 2rem;
   font-weight: 700;
+  span {
+    font-weight: 900;
+  }
 }
 
 h2 {
@@ -300,7 +250,11 @@ h2 {
   & + p {
     margin-top: var(--third-padding);
   }
+  &.main__content__tag-header {
+    margin-bottom: var(--fourth-padding);
+  }
 }
+
 p,
 a,
 ul,
@@ -329,6 +283,16 @@ p {
   &:not(:first-child) {
     margin-top: var(--third-padding);
   }
+  &.main__content__tag-container {
+    margin-top: 0;
+  }
+}
+
+p:first-of-type,
+a.a--primary,
+blockquote,
+pre {
+  border-radius: var(--fourth-padding);
 }
 
 p a {
@@ -343,22 +307,46 @@ a {
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
     color: var(--main-fg);
-    text-decoration: underline var(--main-fg);
+    text-decoration: underline var(--main-fg-50);
   }
   &:visited {
     color: var(--accent-indigo);
     text-decoration: underline var(--accent-indigo-50);
     &:hover {
       color: var(--main-fg);
-      text-decoration: underline var(--main-fg);
+      text-decoration: underline var(--main-fg-50);
     }
   }
-  &.a--back {
-    &:hover::before {
-      content: "→ ";
+  &.a--primary,
+  &.a--secondary {
+    display: inline-block;
+    padding: var(--fourth-padding);
+    border-radius: var(--fourth-padding);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  &.a--primary {
+    color: var(--main-bg);
+    &:hover {
+      color: var(--main-bg);
+      text-decoration: none;
     }
-    &::before {
-      content: "← ";
+    &:visited {
+      color: var(--main-bg);
+      text-decoration: none;
+      &:hover {
+        color: var(--main-bg);
+        text-decoration: none;
+      }
+    }
+  }
+  &.a--secondary {
+    margin-top: var(--fifth-padding);
+    margin-right: var(--fifth-padding);
+    background-color: var(--additional-bg);
+    &:hover {
+      background-color: var(--accent-blue-50);
+      color: var(--additional-fg);
     }
   }
 }
