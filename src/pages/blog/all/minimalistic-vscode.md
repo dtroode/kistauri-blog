@@ -1,82 +1,79 @@
 ---
 templateKey: "blog-page"
 path: /blog/all
-title: How to Use VS Code If You Are a Writer
-description: Want to concentrate on writing text in VS Code? Use this minimalistic setup. No extensions needed.
+title: Как использовать ВС Код, если ты писатель
+description: Минималистичный ВС Код для писателей. Переходим с Sublime Text. Расширения не нужны.
 date: 2019-07-11
 hero: /img/minimalistic-vscode.jpg
 categories: advices
 tags: ["Текст", "ВС Код", "Настройка"]
 ---
 
-Every second developer uses Visual Studio Code (according to Stack Overflow's 2019 [survey results](https://insights.stackoverflow.com/survey/2019#development-environments-and-tools)). I've moved to VS Code from Sublime Text one year ago and love it — high functionality: live server for web apps, debug, source control, built-in terminal, — minimalistic design, monthly updates an much more. The problem appears when I need to write plain text, like this, for the blog. Here are some tricks to make VS Code better for writing.
+Каждый второй разработчик использует Visual Studio Code (из результатов ][опроса](https://insights.stackoverflow.com/survey/2019#development-environments-and-tools) Стэковерфлоу). Я перешел на ВС Код с Саблайм Текста год назад и теперь влюблен в новый редактор — высокая функциональность: лайв запуск сайтов, дебаг, гит, терминал, — минималистичный дизайн, ежемесячные обновления и много другого. Проблема появляется, когда мне надо написать простой текст, как этот, для блога. Здесь пригодятся некоторые фишки, для настройки.
 
-VS Code has a lot of excess elements, which interfere with focus. That's because I decided to set up the editor for writing text. Very useful is to set up VS Code through JSON: separate rule for every element. It makes the process of transformation easier.
+В ВС Коде много лишних элементов — они полезны для разработки, но писателя они отвлекают. Поэтому я решил настроить его. Очень удобно настраивать через JSON: отдельное правило для каждого элемента и все легко копируется и вставляется. Чтоб не переключаться между настройками, я установил отдельную инсайдерскую версию, которая работает также стабильно и записал в нее новые правила.
 
-Changes that I did is disable some options and hiding elements
+Изменения, которые я внес, отключают функции и прячут элементы
 
-- Hide the activity bar. I do this in all of the apps in which can
-- Hide the side bar
-- Hide the status bar
-- Edit window title
-- Hide tabs. Still can access them by `Ctrl + Tab` on Windows and `⌘ + ⌥ + Tab` on macOS
-- Did a lot of changes in editor section (turned off different highlights, removed line numbers, disabled mini-map etс.)
-- Work with fonts. I didn't change monospace to sans-serif, but I increase size and weight
+- Скрыл верхнюю панель с кнопками. Я делаю это везде, где могу
+- Скрыл боковую панель с большими кнопками
+- Скрыл нижнюю статусную панель
+- Отредактировал название окна, чтоб не захламлять. Оставил только имя файла и свои символы
+- Спрятал вкладки. Они все равно доступны по сочетаниям `Ctrl + Tab` в Виндоус и `⌘ + ⌥ + Tab` в Маке
+- Внес изменения в редактор: отключил лишние подсвечивания, убрал номера строк, отключил мини-карту и т. д.)
+- Поработал со шрифтом: не стал убирать моноширинный, но изменил размер
 
-Apply this changes to settings. Settings icon at the left-bottom corner → 'Settings' → `{}` icon at the right-top corner. Save your main settings (maybe, you want revent in the future) and replace them by this code:
+Применять настройки можно в соответствующем меню: иконка настроек в левом нижнем углу → иконка `{}` в правом верхнем углу. Сохраните свои нынешние настройки, может быть, вы захотите вернуться, и вставьте эти:
 
 ```javascript
 {
-  // Window
-  "window.menuBarVisibility": "toggle", // Hide menu bar.
-  // Can be accessible by press Alt key
-  "window.title": "${dirty}${activeEditorShort} ⚡ >_<", // Change Window Title
-  "window.zoomLevel": 0, // Default zoom level
+  // Окно
+  "window.menuBarVisibility": "toggle", // Скрываю меню бар.
+  // Доступен по нажатию Alt.
+  "window.title": "${dirty}${activeEditorShort} ⚡ >_<", // Изменяю название окна
 
-  // Editor
-  "editor.cursorSmoothCaretAnimation": true, // Smoth cursor mooving animation
+  // Редактор
+  "editor.cursorSmoothCaretAnimation": true, // Включаю плавную анимацию движения курсора
   "editor.fontFamily": "'Fira Code',\
-  Consolas, 'Courier New', monospace", // My font setup. You can paste your own.
+  Consolas, 'Courier New', monospace", // Моя настройка шрифтов. Можно вставить свою.
   // Fira Code <3
-  "editor.fontLigatures": true, // Enable ligatures.
-  // Works only if your font support them
-  "editor.fontWeight": "500", // Font weight. I love using semi-bold
-  "editor.fontSize": 16, // Font size. Set to 16 to better visibility of text
-  "editor.lineNumbers": "off", // Remove line numbers
-  "editor.wordWrap": "on", // Enable Word wrapping for no gorizontall scrolling
-  "editor.minimap.enabled": false, // Remove minimap
-  "editor.renderWhitespace": "none", // Remove whitespace characters
-  "editor.renderIndentGuides": false, // Remove indent guides
-  "editor.renderLineHighlight": "none", // Remove line height
-  "editor.overviewRulerBorder": false, // Remove border on scrollbar
-  // (try to enable and disable and look at scrollbar. You can see changes)
-  "editor.hideCursorInOverviewRuler": true, // Hide cursor position on scrollbar
-  "editor.folding": false, // Remove folding feature
-  // (try to enable and hover left side of editor by cursor. You can see buttons for folding)
-  "editor.occurrencesHighlight": false, // Remove highlights occurrences
-  // (works when you select a word)
-  "editor.glyphMargin": false, // Remove the space for glyphs like `edit` and
-  // `debug` at the left side of editor.
+  "editor.fontLigatures": true, // Включаю лигатуры.
+  // Работает только, если ваш шрифт поддерживает их.
+  "editor.fontWeight": "500", // Меняю ширину шрифта.
+  // Люблю жирные, но для большого текста неудобно, поэтому полужирный.
+  "editor.fontSize": 16, // Меняю размер шрифта.
+  // Поставил на 16, чтоб побольше.
+  "editor.lineNumbers": "off", // Убираю нумерацию строк.
+  "editor.wordWrap": "on", // Включаю перенос слов.
+  "editor.minimap.enabled": false, // Убираю мини-карту.
+  "editor.renderWhitespace": "none", // Убираю символы,
+  // которые отображаются вместо пробелов.
+  "editor.renderIndentGuides": false, // Убираю линию,
+  // которая помогает определять вложенность в коде.
+  "editor.renderLineHighlight": "none", // Убираю подсветку линий.
+  "editor.overviewRulerBorder": false, // Убираю рамку у скроллбара.
+  // Попробуйте включить и отключить и посмотрите на спроллбар справа.
+  "editor.hideCursorInOverviewRuler": true, // Прячу отображение курсора на скроллбаре.
+  "editor.folding": false, // Убираю функцию вложенности.
+  // Если функция включена — слева можно навести мышкой и увидить иконки.
+  "editor.occurrencesHighlight": false, // Убираю другую подсветку.
+  // Все равно работает при выборе слов.
+  "editor.glyphMargin": false, // Убираю место под иконки редактирования и дебага.
 
-  // Workbench
-  "workbench.sideBar.location": "left", // Default side bar position
-  "workbench.tree.renderIndentGuides": "none", // Remove indent guides
-  "workbench.editor.showTabs": false, // Remove tabs
-  // (only showing one active in full-width)
-  "workbench.activityBar.visible": false, // Remove activity bar
-  // (bar with big icons at the left)
-  // (you can acces them via Command palette
-  // or you can access to default icons by hot keys)
-  "workbench.editor.showIcons": false, // Remove icon from tab title
-  "workbench.statusBar.visible": false, // Remove status bar
-  // (panel at the bottom)
-  "workbench.colorTheme": "Material Theme Palenight", // My color theme.
-  // You can paste your own
-  // by downloading from extensions marketplace and enabling
-  "workbench.iconTheme": "material-icon-theme", // My icon theme.
-  // You can paste your own
-  // by downloading from extensions marketplace and enabling
-  "workbench.colorCustomizations": { // Custom accent color settings
+  // Воркбенч
+  "workbench.tree.renderIndentGuides": "none", // Убираю линию,
+  // которая помогает определять вложенность в папках.
+  "workbench.editor.showTabs": false, // Отключаю вкладки.
+  // Отображается только активная на всю ширину.
+  "workbench.activityBar.visible": false, // Убираю панель с большими иконками слева.
+  // Можно получать доступ к вкладкам по сочетаниям клавиш (смотреть в настройках).
+  "workbench.editor.showIcons": false, // Убираю иконки из вкладок.
+  "workbench.statusBar.visible": false, // Убираю нижнюю панель.
+  "workbench.colorTheme": "Material Theme Palenight", // Ставлю кастомную тему.
+  // Устанавливается из магазина расширений.
+  "workbench.iconTheme": "material-icon-theme", // Ставлю кастомную тему иконок.
+  // Устанавливается из магазина расширений.
+  "workbench.colorCustomizations": { // Ставлю кастомный цвет акцента.
     "activityBarBadge.background": "#FFA000",
     "list.activeSelectionForeground": "#FFA000",
     "list.inactiveSelectionForeground": "#FFA000",
@@ -99,18 +96,19 @@ Apply this changes to settings. Settings icon at the left-bottom corner → 'Set
   },
 
   // Breadcrumbs
-  "breadcrumbs.enabled": false, // Remove breadcrumbs
+  "breadcrumbs.enabled": false, // Убираю Breadcrubms.
+  // Полоска над редактором со вложенностью.
 
-  // Languages
-  "markdown.preview.fontFamily": "Inter, Helvetica Neue, Helvetica, sans-serif",
-  // Change default font for markdown preview. Inter <3
+  // Языки
+  "markdown.preview.fontFamily": "Inter, Helvetica Neue, Helvetica, sans-serif", 
+  // Меняю шрифт превью маркдауна.
+  // Inter <3
 
-  // Explorer
-  "explorer.openEditors.visible": 0 // Remove open editors from explorer.
-  // You can access them by `Ctrl + Tab` in Windows and `⌘ + ⌥ + Tab` in macOS.
+  // Эксплорер
+  "explorer.openEditors.visible": 0 // Убираю список активных файлов.
 }
 ```
 
-![Result](/img/vscode-transform.png "Result")
+![Результат](/img/vscode-transform.png "Результат")
 
-You can access to a lot of functions through Command Palette `Ctrl + Shif + P`
+Многие функции все еще можно получить из Коммандной строки ВС Кода, `Ctrl + Shif + P`

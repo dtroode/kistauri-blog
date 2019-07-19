@@ -303,18 +303,15 @@ a {
   flex: inherit;
   color: var(--accent-blue);
   line-height: 1em;
-  text-decoration: underline var(--accent-blue-50);
+  text-decoration: underline;
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
     color: var(--main-fg);
-    text-decoration: underline var(--main-fg-50);
   }
   &:visited {
     color: var(--accent-indigo);
-    text-decoration: underline var(--accent-indigo-50);
     &:hover {
       color: var(--main-fg);
-      text-decoration: underline var(--main-fg-50);
     }
   }
   &.a--primary,
@@ -329,14 +326,11 @@ a {
     color: var(--main-bg);
     &:hover {
       color: var(--main-bg);
-      text-decoration: none;
     }
     &:visited {
       color: var(--main-bg);
-      text-decoration: none;
       &:hover {
         color: var(--main-bg);
-        text-decoration: none;
       }
     }
   }

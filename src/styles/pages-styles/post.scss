@@ -105,10 +105,8 @@ section {
           margin-right: var(--fourth-padding);
           font-weight: 600;
           color: inherit;
-          text-decoration-color: var(--main-fg-50);
           &:hover {
             color: var(--accent-blue);
-            text-decoration-color: var(--accent-blue-50);
           }
         }
       }
@@ -116,17 +114,13 @@ section {
     a {
       font-size: inherit;
       color: var(--accent-blue);
-      text-decoration: underline var(--accent-blue-50);
       &:hover {
         color: var(--main-fg);
-        text-decoration: underline var(--main-fg-50);
       }
       &:visited {
         color: var(--accent-indigo);
-        text-decoration: underline var(--accent-indigo-50);
         &:hover {
           color: var(--main-fg);
-          text-decoration: underline var(--main-fg-50);
         }
       }
     }
@@ -137,7 +131,7 @@ section {
       background-color: var(--additional-bg);
     }
     figcaption {
-      margin-top: var(--fourth-padding);
+      margin-top: var(--fifth-padding);
       font-size: 0.75rem;
     }
     span.gatsby-resp-image-background-image {
