@@ -8,7 +8,7 @@
   alt="Blog Logo">
 
 Hello, I am **David Kistauri**.\
-This is repository of my **[blog](https://dtroode.netlify.com/blog)** and portfolio.\
+This is repository of my **[blog](https://dtroode.netlify.com/blog)** and portfolio.
 
 You can
 - **Review** my code
