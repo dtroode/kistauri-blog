@@ -1,6 +1,6 @@
 @media screen and (max-width: 835px) {
   :root {
-    --side-padding: 4.6%;
+    --side-padding: 1.5rem;
   }
   header,
   main,
@@ -56,7 +56,7 @@
     }
     &.main__art-cont {
       pre {
-        max-width: 100%;
+        width: calc(100vw - 2 * var(--side-padding) - 2 * var(--third-padding));
       }
       blockquote.faktoid {
         float: unset;

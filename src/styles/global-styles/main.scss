@@ -78,7 +78,7 @@ body {
   margin: 0;
   background-color: var(--main-bg);
   color: var(--main-fg);
-  div div {
+  & > div > div {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
