@@ -21,7 +21,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink to="/" className="a--primary">
-          {">_<"} Давид Кистаури
+          {">_<"}
         </ListLink>
         <ListLink to="/blog" className="a--primary">
           Блог
@@ -57,7 +57,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink to="/" className="a--primary">
-          {">_<"} Давид Кистаури
+          {">_<"}
         </ListLink>
         <ListLink to="/blog" className="a--primary">
           Блог
