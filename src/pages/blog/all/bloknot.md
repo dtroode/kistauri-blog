@@ -4,7 +4,7 @@ title: "Спустя много лет: как документировать"
 description: Заметки по дням. Как оценивать свой день и получать опыт отовсюду
 path: /blog/all
 date: 2019-07-18
-hero: /img/daily-notes.jpg
+hero: /img/bloknot.jpg
 categories: advices
 tags: ["Текст", "Продуктивность", "ВС Код"]
 ---

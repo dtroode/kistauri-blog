@@ -93,7 +93,7 @@ SEO.defaultProps = {
   meta: [],
   description: ``,
   title: `David Kistauri`,
-  image: `https://dtroode.netlify.com/img/preview.jpg`
+  image: `/img/preview.jpg`
 };
 
 SEO.propTypes = {
