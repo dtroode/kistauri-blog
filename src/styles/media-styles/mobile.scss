@@ -56,7 +56,7 @@
     }
     &.main__art-cont {
       pre {
-        width: calc(100% - 2 * var(--third-padding));
+        max-width: 100%;
       }
       blockquote.faktoid {
         float: unset;

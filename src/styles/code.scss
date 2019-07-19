@@ -303,6 +303,10 @@ pre > code.highlight {
   );
 }
 
+.gatsby-highlight {
+  min-width: 100%;
+}
+
 .gatsby-highlight-code-line {
   display: block;
   margin-right: -1em;
