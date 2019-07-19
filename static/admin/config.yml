@@ -26,7 +26,7 @@ collections:
           widget: "select",
           options: ["work", "thoughts", "advices", "learning"],
         }
-      - tag: "Tags"
+      - label: "Tags"
         name: "tags"
         widget: "object"
         fields:
