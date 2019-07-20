@@ -168,6 +168,7 @@ section {
       margin-top: var(--third-padding);
       margin-bottom: 0;
       padding: var(--third-padding);
+      overflow-x: scroll;
     }
     code {
       font-family: Inconsolata, monospace;
