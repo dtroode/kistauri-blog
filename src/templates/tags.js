@@ -12,7 +12,7 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = (
     <>
       {totalCount}{" "}
-      {totalCount === 1 ? "пост" : 2 || 3 || 4 ? "поста" : "постов"} с тэгом{" "}
+      {totalCount === 1 ? "пост" : 2 || 3 || 4 ? "поста" : "постов"} с тегом{" "}
       <span>{tag}</span>
     </>
   );
@@ -21,7 +21,7 @@ const Tags = ({ pageContext, data }) => {
     <Layout pageClass="tag" title={tagHeader}>
       <SEO
         title={tag}
-        description={`Блог Давида Кистаури. Тэг: ${tag}`}
+        description={`Блог Давида Кистаури. тег: ${tag}`}
         image="/img/preview.jpg"
       />
       <section className="main__arts">
