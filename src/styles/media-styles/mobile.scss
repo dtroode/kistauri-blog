@@ -55,6 +55,11 @@
       grid-template-columns: 1fr;
     }
     &.main__art-cont {
+      pre {
+        max-width: calc(
+          100vw - 2 * var(--third-padding) - 2 * var(--side-padding)
+        );
+      }
       blockquote.faktoid {
         float: unset;
         margin-top: var(--third-padding);
