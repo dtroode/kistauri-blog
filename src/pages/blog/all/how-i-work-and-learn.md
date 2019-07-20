@@ -17,6 +17,8 @@ I am using Chrome and Firefox and in both of them, I have constantly opened book
 
 ![Bookmarks](/img/chrome-bookmarks.jpg)
 
+<figcaption>Bookmarks in my browser</figcaption>
+
 Besides, I don't love overfill bar and I've to save bookmarks without names, only with icons. Another proof of icons importance.
 
 _General principles of bookmarks location:_ social media and news websites, tools, materials for learning

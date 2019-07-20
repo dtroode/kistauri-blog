@@ -92,7 +92,7 @@ footer {
   padding-right: var(--side-padding);
   padding-left: var(--side-padding);
   & > * {
-    max-width: calc(835px - 5rem);
+    max-width: calc(800px - 5rem);
   }
 }
 
@@ -227,14 +227,14 @@ footer {
 h1,
 h2 {
   letter-spacing: -0.022em;
+  line-height: 1.15em;
 }
 
 h1 {
   display: block;
   width: 75%;
   margin: 0;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 2.25em;
   font-weight: 700;
   span {
     font-weight: 900;
@@ -244,9 +244,8 @@ h1 {
 h2 {
   margin-top: 0;
   margin-bottom: var(--third-padding);
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 700;
-  line-height: 1em;
   & + p {
     margin-top: var(--third-padding);
   }
@@ -259,7 +258,8 @@ p,
 a,
 ul,
 ol,
-blockquote {
+blockquote,
+table {
   font-size: 1rem;
   letter-spacing: -0.017em;
 }
@@ -273,7 +273,10 @@ ol {
 
 p,
 ul,
-ol {
+ol,
+blockquote,
+table,
+figcaption {
   line-height: 1.5em;
 }
 

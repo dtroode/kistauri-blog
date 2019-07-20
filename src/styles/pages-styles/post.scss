@@ -66,7 +66,7 @@ section {
       width: 100%;
     }
     h2 {
-      margin-top: var(--secondary-padding);
+      margin-top: 2rem;
     }
     p,
     a,
@@ -132,7 +132,7 @@ section {
     }
     figcaption {
       margin-top: var(--fifth-padding);
-      font-size: 0.75rem;
+      font-size: 0.8em;
     }
     span.gatsby-resp-image-background-image {
       display: block;
@@ -142,7 +142,7 @@ section {
       max-width: 100%;
       &.faktoid {
         position: absolute;
-        left: 835px;
+        left: 800px;
         max-width: 300px;
         margin-top: var(--third-padding);
         margin-right: var(--side-padding);
@@ -168,8 +168,6 @@ section {
       margin-top: var(--third-padding);
       margin-bottom: 0;
       padding: var(--third-padding);
-      width: calc(100% - 2 * var(--third-padding));
-      overflow-x: scroll;
     }
     code {
       font-family: Inconsolata, monospace;
@@ -213,8 +211,8 @@ section {
   }
 }
 
-@media screen and (max-width: 1078.2px) {
-  // 835px + 200px + 43.2 (--side-padding)
+@media screen and (max-width: 1043.2px) {
+  // 800px + 200px + 43.2 (--side-padding)
   section.main__art-cont blockquote.faktoid {
     position: static;
     margin-right: 0;

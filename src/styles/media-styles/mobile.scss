@@ -1,4 +1,4 @@
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 800px) {
   :root {
     --side-padding: 1.5rem;
   }
@@ -55,9 +55,6 @@
       grid-template-columns: 1fr;
     }
     &.main__art-cont {
-      pre {
-        width: calc(100vw - 2 * var(--side-padding) - 2 * var(--third-padding));
-      }
       blockquote.faktoid {
         float: unset;
         margin-top: var(--third-padding);
