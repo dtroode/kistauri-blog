@@ -71,9 +71,6 @@ const Footer = props => {
           <a href="https://t.me/dtroode" className="a--primary">
             Телеграм
           </a>
-          <a href="https://t.me/dtroodechannel" className="a--primary">
-            ТГ канал
-          </a>
           <a href="https://dev.to/dtroode" className="a--primary">
             Дев
           </a>

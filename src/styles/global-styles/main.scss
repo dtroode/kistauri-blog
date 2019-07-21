@@ -1,49 +1,3 @@
-@keyframes glitch-anim {
-  0% {
-    clip: rect(4px, 330px, 23px, 0);
-  }
-  20% {
-    clip: rect(8px, 280px, 34px, 0);
-  }
-  40% {
-    clip: rect(15px, 250px, 3px, 0);
-  }
-  60% {
-    clip: rect(27px, 180px, 78px, 0);
-  }
-  80% {
-    clip: rect(7px, 220px, 13px, 0);
-  }
-  100% {
-    clip: rect(62px, 450px, 75px, 0);
-  }
-}
-
-*.glitch {
-  position: relative;
-  &::before,
-  &::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    animation: glitch-anim 2s infinite linear alternate-reverse;
-  }
-  &::before {
-    left: 2px;
-    text-shadow: -2px 0 var(--accent-red);
-    background-color: var(--accent-red);
-    clip: rect(16px, 248px, 22px, 0);
-  }
-  &::after {
-    left: -2px;
-    text-shadow: -2px 0 var(--accent-blue);
-    background-color: var(--accent-red);
-  }
-}
-
 *::selection {
   background: var(--accent-blue);
   color: var(--main-bg);
@@ -92,7 +46,7 @@ footer {
   padding-right: var(--side-padding);
   padding-left: var(--side-padding);
   & > * {
-    max-width: calc(800px - 5rem);
+    max-width: calc(1000px - 2 * var(--side-padding));
   }
 }
 
@@ -106,15 +60,19 @@ header {
       background-color: var(--accent-red);
       color: var(--accent-red);
     }
+    &:visited {
+      background-color: var(--additional-fg);
+      color: var(--additional-fg);
+      &:hover {
+        background-color: var(--accent-red);
+        color: var(--accent-red);
+      }
+    }
   }
   nav {
     margin-bottom: var(--fourth-padding);
     a {
-      display: inline-block;
-      margin-right: var(--fifth-padding);
       margin-bottom: var(--fifth-padding);
-      background-color: var(--accent-blue);
-      color: var(--main-bg);
       &:hover {
         background-color: var(--main-fg);
         color: var(--main-bg);
@@ -171,10 +129,6 @@ footer {
   background-color: var(--additional-bg);
   color: var(--additional-fg);
   &.foot--error section {
-    h2 {
-      display: table;
-      background-color: var(--additional-fg);
-    }
     nav.foot__cont a {
       background-color: var(--additional-fg);
       color: var(--additional-fg);
@@ -202,11 +156,6 @@ footer {
           grid-area: paragraph;
         }
         a {
-          background-color: var(--accent-blue);
-          color: var(--main-bg);
-          &:hover {
-            background-color: var(--main-fg);
-          }
           &:hover::after {
             content: "←";
           }
@@ -232,7 +181,6 @@ h2 {
 
 h1 {
   display: block;
-  width: 75%;
   margin: 0;
   font-size: 2.25em;
   font-weight: 700;
@@ -254,6 +202,11 @@ h2 {
   }
 }
 
+h3 {
+  margin-bottom: 0;
+}
+
+h3,
 p,
 a,
 ul,
@@ -309,25 +262,28 @@ a {
   text-decoration: underline;
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
-    color: var(--main-fg);
+    color: var(--accent-red);
   }
   &:visited {
     color: var(--accent-indigo);
     &:hover {
-      color: var(--main-fg);
+      color: var(--accent-red);
     }
   }
   &.a--primary,
   &.a--secondary {
     display: inline-block;
+    margin-right: var(--fifth-padding);
     padding: var(--fourth-padding);
     border-radius: var(--fourth-padding);
     font-weight: 600;
     text-decoration: none;
   }
   &.a--primary {
+    background-color: var(--accent-blue);
     color: var(--main-bg);
     &:hover {
+      background-color: var(--accent-red);
       color: var(--main-bg);
     }
     &:visited {
@@ -339,10 +295,9 @@ a {
   }
   &.a--secondary {
     margin-top: var(--fifth-padding);
-    margin-right: var(--fifth-padding);
     background-color: var(--additional-bg);
     &:hover {
-      background-color: var(--accent-blue-50);
+      background-color: var(--accent-red-50);
       color: var(--additional-fg);
     }
   }

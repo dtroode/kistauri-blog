@@ -60,13 +60,19 @@ footer.foot--post {
 
 section {
   &.main__art-cont {
-    justify-content: start;
+    max-width: 700px;
     h2,
     p {
       width: 100%;
     }
     h2 {
-      margin-top: 2rem;
+      margin-top: 3rem;
+    }
+    h3 {
+      margin-top: 1rem;
+      & + p {
+        margin-top: 0;
+      }
     }
     p,
     a,
@@ -131,12 +137,18 @@ section {
       background-color: var(--additional-bg);
     }
     figcaption {
-      margin-top: var(--fifth-padding);
+      margin-top: -0.5rem;
+      margin-bottom: var(--secondary-padding);
       font-size: 0.8em;
     }
-    span.gatsby-resp-image-background-image {
-      display: block;
-      border-radius: 0.4rem;
+    span {
+      &.gatsby-resp-image-wrapper {
+        margin-bottom: var(--secondary-padding);
+      }
+      &.gatsby-resp-image-background-image {
+        display: block;
+        border-radius: 0.4rem;
+      }
     }
     blockquote {
       max-width: 100%;
@@ -212,8 +224,8 @@ section {
   }
 }
 
-@media screen and (max-width: 1043.2px) {
-  // 800px + 200px + 43.2 (--side-padding)
+@media screen and (max-width: 938.4px) {
+  // 700px + 200px + 38.4 (--side-padding)
   section.main__art-cont blockquote.faktoid {
     position: static;
     margin-right: 0;

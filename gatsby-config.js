@@ -119,8 +119,8 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
-            title: "Hey! RSS link"
+            output: "/blog/rss/index.xml",
+            title: "РСС"
           }
         ]
       }

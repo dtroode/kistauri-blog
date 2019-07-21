@@ -10,12 +10,12 @@ import SEO from "../components/seo";
 const ErrorPage = props => {
   const PostsList = props.data.LatestPosts.edges;
   return (
-    <Layout pageClass="error" title="404">
+    <Layout pageClass="error" title="404. Страница не найдена">
       <Helmet>
         <link rel="canonical" href="https://dtroode.netlify.com/404" />
       </Helmet>
       <SEO
-        title="404"
+        title="404. Страница не найдена"
         description="404. Сайт не получился."
         image="/img/preview.jpg"
       />
@@ -23,14 +23,8 @@ const ErrorPage = props => {
         <article key="main__arts__inf">
           <Link to="/">
             <section className="art__cont">
-              <h2 data-text="Ты столкнулся с ошибкой" className="glitch">
-                Ты столкнулся с ошибкой
-              </h2>
-              <p
-                data-text="Что произошло: возможно, ты ошибся ссылкой или перешел
-                по удаленной странице. Но отсюда нет выхода."
-                className="glitch"
-              >
+              <h2>Ты столкнулся с ошибкой</h2>
+              <p>
                 Что произошло: возможно, ты ошибся ссылкой или перешел по
                 удаленной странице.
                 <br />

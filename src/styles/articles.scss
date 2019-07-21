@@ -45,11 +45,5 @@ section.main__arts {
   }
   a.main__arts__all {
     justify-self: start;
-    background-color: var(--additional-bg);
-    color: var(--accent-blue);
-    &:hover {
-      background-color: var(--accent-blue-50);
-      color: var(--additional-fg);
-    }
   }
 }

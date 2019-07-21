@@ -34,69 +34,62 @@ const IndexPage = () => {
             материалом, чтоб сразу начать работу.
           </li>
         </ol>
-        <hr />
       </section>
+      <hr />
       <section className="main__content">
         <h2>О медиа</h2>
-        <section>
-          <ol>
-            <li>
-              <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
-                Моя статья о Файерфоксе.
-              </a>
-            </li>
-          </ol>
-        </section>
-        <hr />
+        <ol>
+          <li>
+            <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
+              Моя статья о Файерфоксе.
+            </a>
+          </li>
+        </ol>
       </section>
+      <hr />
       <section className="main__content">
         <h2>О работах</h2>
-        <section>
-          <ol>
-            <li>
-              <a href="https://cyxym.cf">Сайт CYXYM</a>
-              <br />
-              Придумал проект. Задизайнил сайт. Написал сайт. Написал текст о
-              местах и людях.
-            </li>
-            <li>
-              <a href="https://secondschool.gq">Сайт второй школы</a>
-              <br />
-              Придумал проект. Задизайнил сайт. Написал сайт. Отредактировал
-              текст об истории. Написал остальной текст.
-            </li>
-            <li>
-              <a href="https://constantvalues.tk">Сайт Постоянные Величины</a>
-              <br />
-              Придумал проект. Задизайнил сайт. Написал сайт. Заполнил
-              контентом.
-            </li>
-            <li>
-              <a href="https://masterbuket.com">Мастер Букет</a>
-              <br />
-              Задизайнил бренд. Задизайнил сайт. Написал сайт. Поддерживаю сайт.
-              Работал с соц. сетями.
-            </li>
-            <li>
-              <a href="https://dtroode.netlify.com/blog">Блог</a>
-              <br />
-              Сделал себе блог: задизайнил, написал, продолжаю писать.
-            </li>
-          </ol>
-        </section>
-        <hr />
+        <ol>
+          <li>
+            <a href="https://cyxym.cf">Сайт CYXYM</a>
+            <br />
+            Придумал проект. Задизайнил сайт. Написал сайт. Написал текст о
+            местах и людях.
+          </li>
+          <li>
+            <a href="https://secondschool.gq">Сайт второй школы</a>
+            <br />
+            Придумал проект. Задизайнил сайт. Написал сайт. Отредактировал текст
+            об истории. Написал остальной текст.
+          </li>
+          <li>
+            <a href="https://constantvalues.tk">Сайт Постоянные Величины</a>
+            <br />
+            Придумал проект. Задизайнил сайт. Написал сайт. Заполнил контентом.
+          </li>
+          <li>
+            <a href="https://masterbuket.com">Мастер Букет</a>
+            <br />
+            Задизайнил бренд. Задизайнил сайт. Написал сайт. Поддерживаю сайт.
+            Работал с соц. сетями.
+          </li>
+          <li>
+            <a href="https://dtroode.netlify.com/blog">Блог</a>
+            <br />
+            Сделал себе блог: задизайнил, написал, продолжаю писать.
+          </li>
+        </ol>
       </section>
+      <hr />
       <section className="main__content">
         <h2>Об остальном</h2>
-        <section>
-          <ol>
-            <li>
-              <a href="https://t.me/s/dtroodechannel">
-                Телеграм канал о технологиях и дизайне
-              </a>
-            </li>
-          </ol>
-        </section>
+        <ol>
+          <li>
+            <a href="https://t.me/s/dtroodechannel">
+              Телеграм канал о технологиях и дизайне
+            </a>
+          </li>
+        </ol>
       </section>
     </Layout>
   );

@@ -23,17 +23,23 @@ Besides, I don't love overfill bar and I've to save bookmarks without names, onl
 
 _General principles of bookmarks location:_ social media and news websites, tools, materials for learning
 
-**Social media and news websites.** My main social media is Twitter. Also, I use local popular VK, but not so often. Twitter I open 10+ times per day every day, that's because Twitter is on the bar, VK isn't.
+### Social media and news websites
+
+My main social media is Twitter. Also, I use local popular VK, but not so often. Twitter I open 10+ times per day every day, that's because Twitter is on the bar, VK isn't.
 
 News I getting from _Dev.to,_ _Hackernews_ and _Reddit_. But I use them not so frequently, because of all useful content duplicates in Twitter by official accounts or by some users.
 
-**Tools.** In front end dev world we need a lot of tools like color palette, online code formatters, admin panels, and documentation. But most of these instruments using only when starting a new project or when supporting it. I don't have these tools on the bookmarks bar.
+### Tools
+
+In front end dev world we need a lot of tools like color palette, online code formatters, admin panels, and documentation. But most of these instruments using only when starting a new project or when supporting it. I don't have these tools on the bookmarks bar.
 
 I only have something like cloud storage, task and source manager.
 
 As my task manager, I use _Google Keep_. It helps me and I used to manage all of my projects in it. I create a new board for every new project, add tasks and subtasks and sort them by emojis.
 
-**Material for learning.** This is the most inconstant part of the bookmarks bar, because I add new material, that I learning now and remove old. More often it's courses, articles and — most important — documentation. It's important because it was written by authors of learning object and updates often.
+### Material for learning
+
+This is the most inconstant part of the bookmarks bar, because I add new material, that I learning now and remove old. More often it's courses, articles and — most important — documentation. It's important because it was written by authors of learning object and updates often.
 
 For example: recently I've learned React and have official docs in my bookmarks bar and some additional links. After this, I decided to repeat OOP in JS and added one course and one article about OOP in ES6.
 
@@ -45,13 +51,19 @@ So I need to store useful links and links, that I want to read later somewhere. 
 
 In Telegram, I have two private channels: Inbox and Links.
 
-**Inbox.** In this channel, I store different materials that I want to read/learn soon. That list I update often and not so often check.
+### Inbox
+
+In this channel, I store different materials that I want to read/learn soon. That list I update often and not so often check.
 
 ![Telegram Inbox](/img/telegram-inbox.jpg)
 
+<figcaption>Мой канал Инбокс в телеграме для хранения ссылок</figcaption>
+
 What about caching? Most of the websites now support Instant View — a Telegram technology, that allows to open articles from websites fast and change reading mode. This feature automatically caches all links even if I shared a link from the notebook and didn't open it on mobile.
 
-**Links.** This channel updates rare and only by articles and videos, that I don't need soon. I can store here an article about something, that I want to learn in the future or link for use as an argument in the dispute.
+### Links
+
+This channel updates rare and only by articles and videos, that I don't need soon. I can store here an article about something, that I want to learn in the future or link for use as an argument in the dispute.
 
 ## How to not forget, what you've learned yesterday
 

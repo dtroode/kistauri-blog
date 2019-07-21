@@ -27,7 +27,7 @@ const Navbar = props => {
           Блог
         </ListLink>
         <a href={githubLink} title="На Гитхабе" className="a--primary">
-          Редактировать
+          Исправить
         </a>
       </nav>
     );
