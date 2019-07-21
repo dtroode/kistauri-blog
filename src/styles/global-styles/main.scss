@@ -308,15 +308,17 @@ ol {
   margin-block-start: 0;
   margin: 0;
   padding: 0;
+  li {
+    padding-left: var(--primary-padding);
+  }
 }
 
 ol li {
-  list-style: decimal outside;
+  list-style: decimal inside;
 }
 
 ul li {
   list-style: none;
-  padding-left: var(--primary-padding);
 }
 
 li {
