@@ -15,7 +15,7 @@ Save it, learn it, write it — only in this order. Today I want to tell you abo
 
 I am using Chrome and Firefox and in both of them, I have constantly opened bookmarks bar. On it I have only websites that I use now, that's because the bar is dynamic and updates frequently.
 
-![Bookmarks](/img/chrome-bookmarks.jpg)
+![Закладки](/img/chrome-bookmarks.jpg "Закладки")
 
 <figcaption>Bookmarks in my browser</figcaption>
 
@@ -55,7 +55,7 @@ In Telegram, I have two private channels: Inbox and Links.
 
 In this channel, I store different materials that I want to read/learn soon. That list I update often and not so often check.
 
-![Telegram Inbox](/img/telegram-inbox.jpg)
+![Телеграм Инбокс](/img/telegram-inbox.jpg "Телеграм Инбокс")
 
 <figcaption>Мой канал Инбокс в телеграме для хранения ссылок</figcaption>
 

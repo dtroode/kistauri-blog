@@ -85,7 +85,7 @@ const IndexPage = () => {
         <h2>Об остальном</h2>
         <ol>
           <li>
-            <a href="https://t.me/s/dtroodechannel">
+            <a href="https://t.me/s/dtroode_channel">
               Телеграм канал о технологиях и дизайне
             </a>
           </li>
