@@ -121,12 +121,12 @@ section {
       font-size: inherit;
       color: var(--accent-blue);
       &:hover {
-        color: var(--main-fg);
+        color: var(--accent-red);
       }
       &:visited {
         color: var(--accent-indigo);
         &:hover {
-          color: var(--main-fg);
+          color: var(--accent-red);
         }
       }
     }
@@ -215,8 +215,14 @@ section {
       border-collapse: collapse;
       th,
       td {
-        padding: 0 var(--fourth-padding) var(--fifth-padding) 0;
+        text-align: left;
         vertical-align: top;
+      }
+      th {
+        padding: 0 var(--third-padding) 0 0;
+      }
+      td {
+        padding: 0 var(--third-padding) var(--fifth-padding) 0;
       }
     }
   }

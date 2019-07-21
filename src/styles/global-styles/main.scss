@@ -306,16 +306,21 @@ a {
 ul,
 ol {
   margin-block-start: 0;
-  margin-block-end: var(--third-padding);
-  padding-inline-start: var(--third-padding);
+  margin: 0;
+  padding: 0;
 }
 
-ul {
-  list-style-type: none;
+ol li {
+  list-style: decimal outside;
 }
 
-li:not(:first-of-type) {
-  margin-top: var(--fourth-padding);
+ul li {
+  list-style: none;
+  padding-left: var(--primary-padding);
+}
+
+li {
+  margin-bottom: var(--fourth-padding);
 }
 
 img {
