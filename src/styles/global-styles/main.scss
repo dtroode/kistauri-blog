@@ -312,6 +312,11 @@ ol {
   margin-top: 0;
   margin: 0;
   padding: 0;
+  hr {
+    margin-top: var(--fourth-padding);
+    margin-bottom: var(--fourth-padding);
+    background-color: var(--additional-bg);
+  }
 }
 
 ol li {

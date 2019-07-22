@@ -41,7 +41,7 @@ const IndexPage = () => {
         <ol>
           <li>
             <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
-              Моя статья о Файерфоксе.
+              Моя статья о Файерфоксе
             </a>
           </li>
         </ol>
@@ -83,6 +83,7 @@ const IndexPage = () => {
               </section>
             </section>
           </li>
+          <hr />
           <li>
             <a href="https://secondschool.gq">Сайт второй школы</a>
             <section className="section--table">
@@ -117,6 +118,7 @@ const IndexPage = () => {
               </section>
             </section>
           </li>
+          <hr />
           <li>
             <a href="https://constantvalues.tk">Сайт Постоянные Величины</a>
             <section className="section--table">
@@ -146,6 +148,7 @@ const IndexPage = () => {
               </section>
             </section>
           </li>
+          <hr />
           <li>
             <a href="https://masterbuket.com">Мастер Букет</a>
             <section className="section--table">
@@ -176,6 +179,7 @@ const IndexPage = () => {
               </section>
             </section>
           </li>
+          <hr />
           <li>
             <a href="https://dtroode.netlify.com/blog">Блог</a>
             <br />
