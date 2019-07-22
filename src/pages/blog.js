@@ -37,7 +37,7 @@ const BlogPage = props => {
             </Link>
           </article>
         ))}
-        <Link to="/blog/all" className="main__arts__all a--secondary">
+        <Link className="main__arts__all a--secondary" to="/blog/all">
           Все посты
         </Link>
       </section>

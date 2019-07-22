@@ -24,7 +24,7 @@ const AllPage = props => {
         <p className="main__content__tag-container">
           {AllPostsList.map(({ node }) => (
             <>
-              <Link to={node.fields.slug} className="a--secondary">
+              <Link className="a--secondary" to={node.fields.slug}>
                 {node.frontmatter.title}
               </Link>
               <br />

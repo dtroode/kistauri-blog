@@ -5,8 +5,8 @@ section.main__arts {
   article {
     position: relative;
     border-radius: var(--fourth-padding);
-    transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
     background-color: var(--accent-blue-50);
+    transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
     &:hover {
       transform: translateY(-0.6rem);
       box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
@@ -26,9 +26,9 @@ section.main__arts {
     a {
       display: block;
       height: calc(100% - 2 * var(--third-padding));
+      padding: var(--third-padding);
       border-radius: 0.5rem;
       text-decoration: none;
-      padding: var(--third-padding);
       color: #1c1c1e;
       &:hover {
         color: #1c1c1e;
@@ -37,8 +37,8 @@ section.main__arts {
         width: auto;
         margin-top: var(--third-padding);
         &:nth-of-type(1) {
-          font-weight: 600;
           font-style: italic;
+          font-weight: 600;
         }
       }
     }

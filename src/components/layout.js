@@ -18,14 +18,14 @@ const Layout = props => (
     render={data => (
       <>
         <Header
-          title={props.title}
           pageClass={props.pageClass}
+          title={props.title}
           link={props.link}
         />
         <main className={`main--${props.pageClass}`}>{props.children}</main>
         <Footer
-          title={props.title}
           pageClass={props.pageClass}
+          title={props.title}
           link={props.link}
         />
       </>

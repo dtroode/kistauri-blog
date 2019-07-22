@@ -3,8 +3,8 @@ import React from "react";
 
 const ListLink = props => (
   <Link
-    to={props.to}
     className={props.className}
+    to={props.to}
     style={{ backgroundColor: props.backgroundColor }}
   >
     {props.children}
@@ -20,13 +20,13 @@ const Navbar = props => {
   if (props.className === "post") {
     nav = (
       <nav>
-        <ListLink to="/" className="a--primary">
+        <ListLink className="a--primary" to="/">
           {">_<"}
         </ListLink>
-        <ListLink to="/blog" className="a--primary">
+        <ListLink className="a--primary" to="/blog">
           Блог
         </ListLink>
-        <a href={githubLink} title="На Гитхабе" className="a--primary">
+        <a className="a--primary" href={githubLink} title="На Гитхабе">
           Исправить
         </a>
       </nav>
@@ -34,10 +34,10 @@ const Navbar = props => {
   } else if (props.className === "blog") {
     nav = (
       <nav>
-        <ListLink to="/" className="a--primary">
+        <ListLink className="a--primary" to="/">
           {">_<"}
         </ListLink>
-        <ListLink to="/blog/tags" className="a--primary">
+        <ListLink className="a--primary" to="/blog/tags">
           Теги
         </ListLink>
       </nav>
@@ -45,10 +45,10 @@ const Navbar = props => {
   } else if (props.className === "portfolio") {
     nav = (
       <nav>
-        <ListLink to="/" className="a--primary">
+        <ListLink className="a--primary" to="/">
           {">_<"}
         </ListLink>
-        <ListLink to="/blog" className="a--primary">
+        <ListLink className="a--primary" to="/blog">
           Блог
         </ListLink>
       </nav>
@@ -56,13 +56,13 @@ const Navbar = props => {
   } else if (props.className === "tag") {
     nav = (
       <nav>
-        <ListLink to="/" className="a--primary">
+        <ListLink className="a--primary" to="/">
           {">_<"}
         </ListLink>
-        <ListLink to="/blog" className="a--primary">
+        <ListLink className="a--primary" to="/blog">
           Блог
         </ListLink>
-        <ListLink to="/blog/tags" className="a--primary">
+        <ListLink className="a--primary" to="/blog/tags">
           Теги
         </ListLink>
       </nav>
@@ -70,10 +70,10 @@ const Navbar = props => {
   } else {
     nav = (
       <nav>
-        <ListLink to="/" className="a--primary">
+        <ListLink className="a--primary" to="/">
           {">_<"}
         </ListLink>
-        <ListLink to="/blog" className="a--primary">
+        <ListLink className="a--primary" to="/blog">
           Блог
         </ListLink>
       </nav>

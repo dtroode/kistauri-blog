@@ -47,10 +47,10 @@ footer.foot--post {
             }
           }
           svg {
+            vertical-align: top;
             width: 1rem;
             height: 1rem;
             margin-right: var(--fifth-padding);
-            vertical-align: top;
           }
         }
       }
@@ -80,8 +80,8 @@ section {
     ol,
     code,
     blockquote {
-      line-height: 1.5em;
       font-weight: 400;
+      line-height: 1.5em;
     }
     p,
     a,
@@ -97,16 +97,16 @@ section {
     span code {
       padding: 0.125rem;
       border-radius: var(--fifth-padding);
-      background-color: var(--additional-bg);
       color: var(--additional-fg);
+      background-color: var(--additional-bg);
     }
     p {
       margin-top: var(--third-padding);
       &.main__art-cont__inf {
-        margin: 0;
         width: unset;
-        font-weight: 600;
+        margin: 0;
         font-style: italic;
+        font-weight: 600;
         a {
           margin-right: var(--fourth-padding);
           font-weight: 600;
@@ -158,11 +158,11 @@ section {
       &.faktoid {
         position: absolute;
         left: 800px;
+        float: right;
         max-width: 300px;
         margin-top: var(--third-padding);
         margin-right: var(--side-padding);
-        margin-inline-start: 0;
-        float: right;
+        margin-left: 0;
         a,
         img {
           display: block;
@@ -180,15 +180,14 @@ section {
       width: 100% !important;
     }
     pre {
+      overflow-x: scroll;
       margin-top: var(--third-padding);
       margin-bottom: 0;
       padding: var(--third-padding);
-      overflow-x: scroll;
     }
     code {
-      font-family: Inconsolata, monospace;
       font-size: 1em;
-      text-shadow: none;
+      font-family: Inconsolata, monospace;
       span {
         font-weight: unset;
       }
@@ -207,34 +206,16 @@ section {
     li p {
       margin-top: 0;
     }
-    table {
-      width: 100%;
-      margin-top: var(--third-padding);
-      empty-cells: show;
-      border-spacing: 0;
-      border-collapse: collapse;
-      th,
-      td {
-        text-align: left;
-        vertical-align: top;
-      }
-      th {
-        padding: 0 var(--third-padding) 0 0;
-      }
-      td {
-        padding: 0 var(--third-padding) var(--fifth-padding) 0;
-      }
-    }
   }
   &.album {
-    scroll-snap-type: x mandatory;
     display: flex;
     overflow-x: scroll;
     border-radius: var(--fourth-padding);
+    scroll-snap-type: x mandatory;
     img {
-      scroll-snap-align: center;
       border-radius: 0;
       object-fit: contain;
+      scroll-snap-align: center;
     }
   }
 }

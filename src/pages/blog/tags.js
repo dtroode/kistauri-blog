@@ -29,8 +29,8 @@ const TagsPage = ({
         <p className="main__content__tag-container">
           {group.map(tag => (
             <Link
-              to={`/blog/tags/${kebabCase(tag.fieldValue)}/`}
               className="a--secondary"
+              to={`/blog/tags/${kebabCase(tag.fieldValue)}/`}
             >
               ({tag.totalCount}) {tag.fieldValue}
             </Link>
