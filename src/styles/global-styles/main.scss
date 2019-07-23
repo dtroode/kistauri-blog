@@ -125,6 +125,12 @@ main {
       display: grid;
       grid-gap: var(--fourth-padding);
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      span {
+        display: block;
+        &:not(:last-of-type) {
+          padding-bottom: var(--fifth-padding);
+        }
+      }
     }
   }
   hr {

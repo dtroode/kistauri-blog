@@ -51,139 +51,117 @@ const IndexPage = () => {
         <h2>О работах</h2>
         <ol>
           <li>
-            <a href="https://cyxym.cf">Сайт CYXYM</a>
-            <section className="section--table">
-              <section>
-                <strong>Как разработчик</strong>
-                <br />
-                Написал все страницы сайта <br />
-                Выложил сайт на хостинг
-                <br />
-                Администрирую сайт
-              </section>
-              <section>
-                <strong>Как редактор</strong>
-                <br /> Написал текст о местах и людях
-                <br />
-                Отредактировал текст об истории
-              </section>
-              <section>
-                <strong>Как руководитель</strong>
-                <br />
-                Придумал проект
-                <br />
-                Спланировал проект
-                <br />
-                Руководил командой
-              </section>
-              <section>
-                <strong>Как дизайнер</strong>
-                <br />
-                Придумал дизайн
-              </section>
-            </section>
-          </li>
-          <hr />
-          <li>
-            <a href="https://secondschool.gq">Сайт второй школы</a>
-            <section className="section--table">
-              <section>
-                <strong>Как разработчик</strong>
-                <br />
-                Написал все страницы сайта <br />
-                Выложил сайт на хостинг
-                <br />
-                Администрировал сайт
-              </section>
-              <section>
-                <strong>Как редактор</strong>
-                <br />
-                Отредактировал текст об истории
-                <br />
-                Написал остальной текст
-              </section>
-              <section>
-                <strong>Как руководитель</strong>
-                <br />
-                Придумал проект
-                <br />
-                Спланировал проект
-                <br />
-                Собрал весь материал
-              </section>
-              <section>
-                <strong>Как дизайнер</strong>
-                <br />
-                Придумал редизайн
-              </section>
-            </section>
-          </li>
-          <hr />
-          <li>
-            <a href="https://constantvalues.tk">Сайт Постоянные Величины</a>
-            <section className="section--table">
-              <section>
-                <strong>Как разработчик</strong>
-                <br />
-                Написал все страницы сайта <br />
-                Выложил сайт на хостинг
-                <br />
-                Администрирую сайт
-              </section>
-              <section>
-                <strong>Как редактор</strong>
-                <br /> Написал текст
-              </section>
-              <section>
-                <strong>Как руководитель</strong>
-                <br />
-                Придумал проект
-                <br />
-                Спланировал проект
-              </section>
-              <section>
-                <strong>Как дизайнер</strong>
-                <br />
-                Придумал дизайн
-              </section>
-            </section>
-          </li>
-          <hr />
-          <li>
-            <a href="https://masterbuket.com">Мастер Букет</a>
-            <section className="section--table">
-              <section>
-                <strong>Как разработчик</strong>
-                <br />
-                Написал все страницы сайта <br />
-                Выложил сайт на хостинг
-                <br />
-                Администрирую сайт
-              </section>
-              <section>
-                <strong>Как редактор</strong>
-                <br /> Написал текст
-                <br /> Занимался соц. сетями
-              </section>
-              <section>
-                <strong>Как руководитель</strong>
-                <br />
-                Спланировал проект
-              </section>
-              <section>
-                <strong>Как дизайнер</strong>
-                <br />
-                Придумал дизайн бренда
-                <br />
-                Придумал дизайн сайта
-              </section>
-            </section>
-          </li>
-          <hr />
-          <li>
-            <a href="https://dtroode.netlify.com/blog">Блог</a>
+            <a href="https://dtroode.netlify.com/blog">Блог</a> — 2019
             <br />
-            Сделал себе блог: задизайнил, написал, продолжаю писать.
+            <span>
+              Сделал себе блог: задизайнил, написал, продолжаю писать.
+            </span>
+          </li>
+          <hr />
+          <li>
+            <a href="https://masterbuket.com">Мастер Букет</a> — 2018
+            <section className="section--table">
+              <section>
+                <strong>Как разработчик</strong>
+                <span>Написал все страницы сайта</span>
+                <span>Выложил сайт на хостинг</span>
+                <span> Администрирую сайт</span>
+              </section>
+              <section>
+                <strong>Как редактор</strong>
+                <span>Написал текст</span>
+                <span>Занимался соц. сетями</span>
+              </section>
+              <section>
+                <strong>Как руководитель</strong>
+                <span>Спланировал проект</span>
+              </section>
+              <section>
+                <strong>Как дизайнер</strong>
+                <span>Придумал дизайн бренда</span>
+                <span>Придумал дизайн сайта</span>
+              </section>
+            </section>
+          </li>
+          <hr />
+          <li>
+            <a href="https://constantvalues.tk">Сайт Постоянные Величины</a> —
+            2018
+            <section className="section--table">
+              <section>
+                <strong>Как разработчик</strong>
+                <span>Написал все страницы сайта</span>
+                <span>Выложил сайт на хостинг</span>
+                <span>Администрирую сайт</span>
+              </section>
+              <section>
+                <strong>Как редактор</strong>
+                <span>Написал текст</span>
+              </section>
+              <section>
+                <strong>Как руководитель</strong>
+                <span>Придумал проект</span>
+                <span>Спланировал проект</span>
+              </section>
+              <section>
+                <strong>Как дизайнер</strong>
+                <span>Придумал дизайн</span>
+              </section>
+            </section>
+          </li>
+          <hr />
+          <li>
+            <a href="https://secondschool.gq">Сайт второй школы</a> — 2018
+            <section className="section--table">
+              <section>
+                <strong>Как разработчик</strong>
+                <span>Написал все страницы сайта</span>
+                <span>Выложил сайт на хостинг</span>
+                <span>Администрировал сайт</span>
+              </section>
+              <section>
+                <strong>Как редактор</strong>
+                <span>Отредактировал текст об истории</span>
+                <span>Написал остальной текст</span>
+              </section>
+              <section>
+                <strong>Как руководитель</strong>
+                <span>Придумал проект</span>
+                <span>Спланировал проект</span>
+                <span>Собрал весь материал</span>
+              </section>
+              <section>
+                <strong>Как дизайнер</strong>
+                <span>Придумал редизайн</span>
+              </section>
+            </section>
+          </li>
+          <hr />
+          <li>
+            <a href="https://cyxym.cf">Сайт CYXYM</a> — 2018
+            <section className="section--table">
+              <section>
+                <strong>Как разработчик</strong>
+                <span>Написал все страницы сайта</span>
+                <span>Выложил сайт на хостинг</span>
+                <span>Администрирую сайт</span>
+              </section>
+              <section>
+                <strong>Как редактор</strong>
+                <span>Написал текст о местах и людях</span>
+                <span>Отредактировал текст об истории</span>
+              </section>
+              <section>
+                <strong>Как руководитель</strong>
+                <span>Придумал проект</span>
+                <span>Спланировал проект</span>
+                <span>Руководил командой</span>
+              </section>
+              <section>
+                <strong>Как дизайнер</strong>
+                <span>Придумал дизайн</span>
+              </section>
+            </section>
           </li>
         </ol>
       </section>
