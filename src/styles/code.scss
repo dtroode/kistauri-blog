@@ -1,6 +1,7 @@
 pre,
 code {
   font-feature-settings: "case" 0, "frac" 0, "cv08" 0;
+  white-space: pre;
 }
 
 code[class*="language-"] {
@@ -18,7 +19,6 @@ code[class*="language-"] {
 pre[class*="language-"] {
   direction: ltr;
   text-align: left;
-  white-space: pre;
   word-spacing: normal;
   word-break: normal;
   tab-size: 4;
