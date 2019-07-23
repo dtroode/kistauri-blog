@@ -6,7 +6,7 @@ description: Save it, learn it, write it.
 date: 2019-07-06T21:48:59.664Z
 hero: /img/work-and-learn.png
 categories: learning
-tags: ["Учеба", "Работа", "Ссылки"]
+tags: ["учеба", "работа", "ссылки"]
 ---
 
 Save it, learn it, write it — only in this order. Today I want to tell you about my work-learn process. Work and learn are coupled because in programming world to work good we need to learn good and learn a lot.

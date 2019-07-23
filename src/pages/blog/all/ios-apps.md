@@ -6,7 +6,7 @@ description: If your app in this list — it's time to celebrate it!
 date: 2019-05-21T18:48:59.664Z
 hero: /img/ios-apps.png
 categories: advices
-tags: ["Айос", "Дизайн", "UI"]
+tags: ["айос", "дизайн", "ui"]
 ---
 
 If your app in this list — it's time to celebrate it! If not — read this article and do like developers of these apps.

@@ -5,7 +5,7 @@ path: /blog/all
 date: 2019-03-25T18:45:00.000Z
 hero: /img/apple.jpg
 categories: thoughts
-tags: ["Apple"]
+tags: ["apple"]
 ---
 
 Результаты мартовского ивента Эппл. Подписки!
