@@ -121,17 +121,6 @@ main {
         margin-bottom: 0;
       }
     }
-    &.section--table {
-      display: grid;
-      grid-gap: var(--fourth-padding);
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      span {
-        display: block;
-        &:not(:last-of-type) {
-          padding-bottom: var(--fifth-padding);
-        }
-      }
-    }
   }
   hr {
     margin-bottom: var(--secondary-padding);
@@ -325,11 +314,11 @@ ol {
   }
 }
 
-ol li {
+ol > li {
   list-style: decimal outside;
 }
 
-ul li {
+ul > li {
   padding-left: var(--primary-padding);
   list-style: none;
 }

@@ -46,9 +46,6 @@
           margin-left: 0;
         }
       }
-      &.section--table {
-        grid-template-columns: 1fr;
-      }
     }
   }
   footer {
@@ -86,7 +83,7 @@
   blockquote {
     letter-spacing: -0.011em;
   }
-  ol li {
+  ol > li {
     list-style: decimal inside;
   }
 }
