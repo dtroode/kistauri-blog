@@ -136,18 +136,20 @@ section {
       border-radius: 0.4rem;
       background-color: var(--additional-bg);
     }
+    ul,
+    ol {
+      li {
+        padding-left: var(--primary-padding);
+      }
+    }
     figcaption {
-      margin-top: -0.5rem;
-      margin-bottom: var(--secondary-padding);
+      margin-top: 0.3rem;
       font-size: 0.8em;
       &:last-child {
         margin-bottom: 0;
       }
     }
     span {
-      &.gatsby-resp-image-wrapper {
-        margin-bottom: var(--secondary-padding);
-      }
       &.gatsby-resp-image-background-image {
         display: block;
         border-radius: 0.4rem;
