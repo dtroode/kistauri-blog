@@ -1,44 +1,44 @@
 ---
 templateKey: "blog-page"
 path: /blog/all
-title: Why You Need to Give Firefox a Chance?
-description: We live in the era of browser monopoly. So look at another browser!
+title: Почему надо дать Файерфоксу шанс
+description: Мы живем в эре браузерной монополии. Давайте взглянем на другой браузер
 date: 2019-06-22T12:48:59.664Z
 hero: /img/firefox.png
 categories: thoughts
 tags: ["веб", "хром", "файерфокс"]
 ---
 
-Use Chrome? Have a bad news for you. In era of browser monopoly we need to look at another browsers, so let's do that.
+Используешь Хром? У меня плохие новости для тебя. В эру браузерной монополии мы должны оглядываться на другие браузеры, давайте сделаем это.
 
-## Situation
+## Ситуация
 
-Google occupied the whole web by its Chrome. Chrome has more than 50% of users.
+Гугл оккупировал весь веб Хромом. У него больше половины всех юзеров.
 
-![Browsers top](/img/browser-stats.jpg)
+![Топ браузеров](/img/browser-stats.jpg "Топ браузеров")
 
 <figcaption>Инфографика популярности браузеров на всех платформах</figcaption>
 
-Safari is on the second place just because of macOS popularity.
+Сафари на втором месте только из-за популярности АйОС и МакОС.
 
-## Firefox's update
+## Обновление Файерфокса
 
-Now, most of the developers choose between Chrome and Firefox. And in 2017 Mozilla released their updated version of Firefox — Firefox Quantum with new customization settings, better extensions support, privacy and what's more important — speed. 2x faster than old Firefox and faster than Chrome.
+Сейчас большинство разработчиков выбирают между Хромом и Файерфоксом. В 2017 году Мозилла выпустила обновленную версию своего браузера — Файерфокс Квантум с новыми настройками внешнего вида, улучшенной поддержкой расширений, приватностью и, что самое главное, скоростью. В два раза быстрее, чем старый Файерфокс и быстрее, чем Хром.
 
-![Firefox Quantum vs Chrome](/static/firefox-vs-chrome.jpg)
+![Файерфокс Квантум и Хром](/img/firefox-vs-chrome.jpg "Файерфокс Квантум и Хром")
 
 <figcaption>Сравнение скорости Файерфокса Квантум и Гугл Хрома</figcaption>
 
-Firefox using their own new engine with new Quantum CSS and Quantum DOM rendering. A lot of explanations [in Mozilla's post](https://hacks.mozilla.org/2017/11/entering-the-quantum-era-how-firefox-got-fast-again-and-where-its-going-to-get-faster/). And Chrome uses a lot of memory, Firefox — less.
+Файерфокс ипсользует собственный движок с новым Квантум ЦСС и Квантум DOM рендерингом. Много объяснений в [блоге Мозиллы](https://hacks.mozilla.org/2017/11/entering-the-quantum-era-how-firefox-got-fast-again-and-where-its-going-to-get-faster/). Хром использует больше оперативной памяти, чем Фаейрфокс.
 
-Also, Firefox has a lot of useful features like [showing useless CSS rules](https://twitter.com/nicolaschevobbe/status/1135798960361263104) and supports [prefers-color-scheme: dark](https://hacks.mozilla.org/2019/05/firefox-67-dark-mode-css-webrender/) media rules, that Chrome supports only in beta now.
+Также,  Файерфокс имеет много полезных фишек, как [отображение ненужных ЦСС правил](https://twitter.com/nicolaschevobbe/status/1135798960361263104) и поддержка [prefers-color-scheme: dark](https://hacks.mozilla.org/2019/05/firefox-67-dark-mode-css-webrender/) медиа правил, которые у Хрома только в бете.
 
-![](firefox-dark.png)
+![Темная тема Файерфокса](/img/firefox-dark.png "Темная тема Файерфокса")
 
 <figcaption>Демонстрация темного режима в новом Файерфоксе</figcaption>
 
-Do you scare about extensions? Now, most developers write their extensions for both Chrome and Firefox.
+Боитесь насчет расширений? Сейчас большинство разработчиков пишут расширения для одинаково Хрома и Файерфокса.
 
-And the final reason — stop the monopoly. Give a chance to other companies that smaller and you can see how frontend develops.
+Последняя причина — антимонополия. Надо давать шанс другим компаниям, которые меньше и тогда станет заметно, как развивается фронтенд.
 
-Move all your bookmarks in Firefox for one week and try.
+Перенесите все свои закладки в Файферфокс на неделю и попробуйте его.
