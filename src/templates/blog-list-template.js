@@ -7,8 +7,30 @@ import "../styles/media.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const BlogPage = props => {
+const BlogList = props => {
   const PostsList = props.data.Posts.edges;
+  const currentPage = props.pageContext.currentPage;
+  const numPages = props.pageContext.numPages;
+  const previousPageLink =
+    currentPage === 1 ? (
+      ""
+    ) : currentPage === 2 ? (
+      <Link className="a--secondary" to="/blog/">
+        ←
+      </Link>
+    ) : (
+      <Link className="a--secondary" to={`/blog/${currentPage - 1}`}>
+        ←
+      </Link>
+    );
+  const nextPageLink =
+    currentPage === numPages ? (
+      ""
+    ) : (
+      <Link className="a--secondary" to={`/blog/${currentPage + 1}`}>
+        →
+      </Link>
+    );
   return (
     <Layout pageClass="blog" title="Давид Кистаури. Блог">
       <Helmet>
@@ -37,21 +59,23 @@ const BlogPage = props => {
             </Link>
           </article>
         ))}
-        <Link className="main__arts__all a--secondary" to="/blog/all">
-          Все посты
-        </Link>
+        <section className="main__arts__pages">
+          {previousPageLink}
+          {nextPageLink}
+        </section>
       </section>
     </Layout>
   );
 };
 
-export default BlogPage;
+export default BlogList;
 
-export const listQuery = graphql`
-  query {
+export const blogListQuery = graphql`
+  query blogListQuery($skip: Int!, $limit: Int!) {
     Posts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 20
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
     ) {
       edges {
         node {

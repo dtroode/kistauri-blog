@@ -38,6 +38,8 @@ exports.createPages = ({ graphql, actions }) => {
     }
   `).then(result => {
     const posts = result.data.allMarkdownRemark.edges;
+    const postsPerPage = 20;
+    const numPages = Math.ceil(posts.length / postsPerPage);
 
     posts.forEach(({ node }) => {
       createPage({
@@ -53,6 +55,19 @@ exports.createPages = ({ graphql, actions }) => {
       if (_.get(edge, "node.frontmatter.tags")) {
         tags = tags.concat(edge.node.frontmatter.tags);
       }
+    });
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+        component: path.resolve("./src/templates/blog-list-template.js"),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1
+        }
+      });
     });
 
     // Eliminate duplicate tags
