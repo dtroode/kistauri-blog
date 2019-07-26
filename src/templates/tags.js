@@ -12,7 +12,7 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = (
     <>
       {totalCount}{" "}
-      {totalCount === 1 ? "пост" : 2 || 3 || 4 ? "поста" : "постов"} с тегом{" "}
+      {totalCount === 1 ? "пост" : 2 || 3 || 4 ? "поста" : "постов"} с тегом<br/>
       <span>{tag}</span>
     </>
   );

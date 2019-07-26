@@ -31,8 +31,10 @@ export default ({ data }) => {
       />
       <section className="main__art-cont">
         <p className="main__art-cont__inf">
-          <span>{post.frontmatter.date}</span> • <span>{post.timeToRead}</span>{" "}
-          мин.
+          <span datetime={post.frontmatter.date} itemProp="datePublished">
+            {post.frontmatter.date}
+          </span>{" "}
+          • <span>{post.timeToRead}</span> мин.
           <br />
           {post.frontmatter.tags.map(tag => (
             <>
