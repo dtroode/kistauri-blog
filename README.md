@@ -16,6 +16,6 @@ You can
 - **Fork** repository
 - Submit **changes in articles**
 
-To run locally, clone, them `nmp install`, then `nmp dev`, then go to https://localhost:8000.
+To run locally, clone, then `nmp install`, then `nmp dev`, then go to https://localhost:8000.
 
 **All blog posts in [/src/pages/blog/all](https://github.com/dtroode/kistauri/blob/master/src/pages/blog/all/)**
