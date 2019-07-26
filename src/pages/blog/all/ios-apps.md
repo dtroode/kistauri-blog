@@ -1,42 +1,42 @@
 ---
 templateKey: "blog-page"
 path: /blog/all
-title: Want to Build a Perfect iOS App? Do Like They
-description: If your app in this list — it's time to celebrate it!
+title: Хочешь сделать лучшее АйОС приложение? Делай как они
+description: Если твое приложение в этом списке, то время праздновать!
 date: 2019-05-21T18:48:59.664Z
 hero: /img/ios-apps.png
 categories: advices
 tags: ["айос", "дизайн", "ui"]
 ---
 
-If your app in this list — it's time to celebrate it! If not — read this article and do like developers of these apps.
+Если твое приложение в этом списке, то время праздновать! Если нет — читай статью и делай, как эти разработчики.
 
-## Best apps
+## Лучшие приложения
 
-In iOS 11 Apple finally released new UI. Previously they tested it in Apple Music app. I am talking about this new design of standard apps with big (very big headers). There's a lot of people who hate this design, but I really love it. This is because iOS using very good font — San Francisco.
+В АйОС 11 Эппл наконец выпустили новую дизайн систему, которую они до этого тестировали в Эппл Музыке. Я говорю про новые стандарты дизайна приложений с большими заголовками. Очень много людей, которые хейтят такой дизайн, но мне он очень нравится. Это заслуга хорошей типографики — шрифт Сан Франциско крут.
 
-![iOS UI](/img/ios-ui-apps.png)
+![АйОС ЮАй](/img/ios-ui-apps.png "АйОС ЮАй")
 
 <figcaption>Memento, PDF Viewer и WhatsApp</figcaption>
 
-After two years a lot of developers redesigned their apps to match new design guidelines, but a lot of devs created a UI that similar to iOS, but not the same. Wrong fonts, wrong text size, and wrong animation... That's because I wrote this article about good apps to say their developers "Thanks!"
+После двух лет много разработчиков перешли на новый дизайн, но многие из них делают не такой дизайн, как рекомендует Эппл, а лишь похожий. Это выглядит еще хуже, чем если бы они делали полностью свой дизайн. неправильные шрифты, размеры текст, анимация... Поэтому я и пишу эту статью, чтоб сказать спасибо разработчикам, которые стараются и показать другим, как надо это делать.
 
 ### Memento
 
-Very good example. This is a reminder app that connects to default iOS awful Reminders app. Different themes, some little customization and a little more. This is a paid app, but worth it.
+Очень хороший пример. Это приложение напоминаний, которое работает вместе со стандартным Айфоновским, короторое до сих пор ужасно. Различные темы оформления, кастомизации интерфейсся и многое другое. Это приложение платное, но того стоит.
 
 ### Procreate
 
-Procreate is an app for creators (wow). They have also a pocket version for iPhone, but both pocket and full version match iOS UI Kit. I haven't bought any of version, but I saw screenshots and good reviews from users (just follow [Procreate](https://twitter.com/Procreate) in twitter).
+Procreate — приложение для креаторов (уау). У них есть и карманная версия для Айфона и обе версии соответствуют дизайн гайдлайнам. Я не использую это приложение, но я видел скриншоты, видео и много хороший отзывов — просто подпишитесь на них в [Твиттере](https://twitter.com/Procreate)
 
 ### PDF Viewer
 
-Very good app from PSPDFKit team. Using it almost every day when I have school lessons because I refused to use "classic" books and downloaded them in PDF format. I've found this app from [Federico Viticci](https://twitter.com/viticci) twitter account. They have a lot of functionality (probably more, than in a lot of desktop PDF viewers) and customization (dark theme included!). Fast and handy app. Also with tabs support in the free version.
+Очень хорошее приложение от команды ПСПДФКит. Использую почти каждый день, потому что в школе удобнее открывать ПДФки, вместо таскания учебников. Я нашел это приложение у [Федерико Витичи](https://twitter.com/viticci) в Твиттере. У него очень много функций, возможно, даже больше, чем во многих десктопных приложениях, и есть кастомные темы. Есть платная версия, но мне и бесплатной достаточно. Также поддерживаются вкладки.
 
 ### WhatsApp
 
-I hate WhatsApp (sorry Zuckerberg), because we have Telegram, but they support iOS UI Kit and I can't fail to mention them in this list.
+Я не люблю Вотсап, потому что есть Телеграм, но они поддерживают этот дизайн, поэтому я не могу не упомянуть их тут.
 
-There is a lot of other apps like Scriptable (fix search bar, please), Jayson, Pretext and apps, that I didn't use, like Timery and MindNode.
+Также много других приложений, как Scriptable — пожалуйста, почини поисковое меню, — Jayson, Pretext и много других, которые я не использую, как Timery и MindNode.
 
-If you can recommend some, please write to me in [Telegram](https://t.me/dtroode) or mention me on [Twitter](https://twitter.com/dtroode).
+Если вы можете предложить еще, то напишите мне в [Телеграм](https://t.me/dtroode) или [Твиттер](https://twitter.com/dtroode)
