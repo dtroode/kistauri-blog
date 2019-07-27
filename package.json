@@ -31,7 +31,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "sharp": "^0.22.1"
+    "sharp": "^0.22.1",
+    "typeface-inconsolata": "0.0.72"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

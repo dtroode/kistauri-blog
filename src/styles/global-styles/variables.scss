@@ -1,36 +1,34 @@
 /* Root variables */
 :root {
+  // Main Background and Foreground colors
   --main-bg: #f2f2f7;
   --main-fg: #1c1c1e;
 
+  // Additional Background and Foreground colors
   --additional-bg: #e5e5ea;
   --additional-fg: #2c2c2e;
 
+  // Accent colors
   --accent-red: #ff3b30;
   --accent-green: #34c759;
   --accent-blue: #007aff;
   --accent-yellow: #ffcc00;
-
-  --main-fg-50: #87878a;
-
-  --accent-pink: #ff2d55;
   --accent-indigo: #5856d6;
-  --accent-orange: #ff9500;
 
+  // Accent 50% colors
   --accent-red-50: #f99793;
   --accent-green-50: #93dda8;
   --accent-blue-50: #79b6fb;
   --accent-yellow-50: #f9df7b;
-
-  --accent-pink-50: #f990a6;
   --accent-indigo-50: #a5a4e6;
-  --accent-orange-50: #f9c47b;
 
+  // Paddings
   --primary-padding: 2.4rem;
   --secondary-padding: 1.5rem;
   --third-padding: 1rem;
   --fourth-padding: 0.6rem;
   --fifth-padding: 0.4rem;
 
+  // Side padding
   --side-padding: 2.4rem;
 }
