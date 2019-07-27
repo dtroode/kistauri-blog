@@ -96,14 +96,6 @@ main {
       }
       a {
         color: var(--accent-red);
-        *.glitch {
-          &::before,
-          &::after {
-            display: none;
-            background-color: transparent;
-            animation: unset;
-          }
-        }
       }
     }
     &:nth-of-type(1),
