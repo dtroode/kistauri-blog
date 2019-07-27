@@ -1,81 +1,79 @@
 ---
 templateKey: "blog-page"
 path: /blog/all
-title: How I Work and Learn
-description: Save it, learn it, write it.
+title: "Эффективность: как работать и учиться"
+description: Сохани, учи, записывай
 date: 2019-07-06T21:48:59.664Z
 hero: /img/work-and-learn.png
 categories: learning
 tags: ["учеба", "работа", "ссылки"]
 ---
 
-Save it, learn it, write it — only in this order. Today I want to tell you about my work-learn process. Work and learn are coupled because in programming world to work good we need to learn good and learn a lot.
+Сохрани, учи, записывай — только в этом порядке. Сегодня я хочу рассказать о моем процессе учебы и работы. Учеба и работа связаны, потому что в мире программирования, чтоб работать хорошо, надо учиться хорошо и учиться много.
 
-## An effective way to store bookmarks
+## Эффективный способ хранить закладки
 
-I am using Chrome and Firefox and in both of them, I have constantly opened bookmarks bar. On it I have only websites that I use now, that's because the bar is dynamic and updates frequently.
+Я использую Хром и Файерфокс и в обоих у меня всегда включена панель закладок. На ней я всегда сохраняю только те сайты, которые использую сейчас, поэтому панель динамична и часто обновляется.
 
 ![Закладки](/img/chrome-bookmarks.jpg "Закладки")
 
-<figcaption>Bookmarks in my browser</figcaption>
+<figcaption>Закладки в моем браузере</figcaption>
 
-Besides, I don't love overfill bar and I've to save bookmarks without names, only with icons. Another proof of icons importance.
+Хоть я и не переполняю панель, я храню закладки без имен — оставляю только иконки. Еще одно доказательство пользы иконок.
 
-_General principles of bookmarks location:_ social media and news websites, tools, materials for learning
+_Главный принцип расположения закладок:_ соц. сети и новостные сайты, инструменты, материала для изучения.
 
-### Social media and news websites
+### Социальные сети и новостные сайты
 
-My main social media is Twitter. Also, I use local popular VK, but not so often. Twitter I open 10+ times per day every day, that's because Twitter is on the bar, VK isn't.
+Моя основная соц. сеть — Твиттер. Еще я использую популярный у меня ВК, но редко. Твиттер я открываю больше десяти раз за день, поэтому Твиттер среди закладок, ВК — нет.
 
-News I getting from _Dev.to,_ _Hackernews_ and _Reddit_. But I use them not so frequently, because of all useful content duplicates in Twitter by official accounts or by some users.
+Новости я получаю из _Дев,_ _Хакерньюз_ и _Реддита,_ но использую их не так часто, потому что полезный контент часто дублируется в Твиттере официальными аккаунтами или юзерами.
 
-### Tools
+### Инструменты
 
-In front end dev world we need a lot of tools like color palette, online code formatters, admin panels, and documentation. But most of these instruments using only when starting a new project or when supporting it. I don't have these tools on the bookmarks bar.
+В фронтенде надо использовать много веб инструментов: цветовую палитру, форматтеры кода, сайты для администраторов и документации, — но многие из них нужны только на старте проекта или при его поддержке, поэтому они не на панели закладок.
 
-I only have something like cloud storage, task and source manager.
+Я сохраняю только хранилище, как Гугл Драйв, Гугл Кип и Гитхаб.
 
-As my task manager, I use _Google Keep_. It helps me and I used to manage all of my projects in it. I create a new board for every new project, add tasks and subtasks and sort them by emojis.
+Я использую Гугл Кип как тудушник для проектов. потому что мне надо создать доску для проекта, записать туда задачи и отсортировать все. Для сортировки я использую эмоджи.
 
-### Material for learning
+### Материал для изучения
 
-This is the most inconstant part of the bookmarks bar, because I add new material, that I learning now and remove old. More often it's courses, articles and — most important — documentation. It's important because it was written by authors of learning object and updates often.
+Это самая непостоянная часть панели закладок, потому что я добавляю новый материал, который учу сейчас и удаляю старый. Обычно это курсы, статьи и — самое важное — документация. Она важна, потому что написана авторами проекта и обновляется чаще.
 
-For example: recently I've learned React and have official docs in my bookmarks bar and some additional links. After this, I decided to repeat OOP in JS and added one course and one article about OOP in ES6.
+Пример: недавно я учил Реакт и в закладках у меня была документация и несколько дополнительных ссылок. После я решил повторить ООП в Джаваскрипте и добавил один курс и статью об ООП в ЕS6.
 
-## The unobvious place for links
+## Необычное место для ссылок
 
-Despite the fact that my links in bookmarks are very shorted, I love minimalism and short their quantity.
+Хоть ссылки и сокращены, я люблю минимализм и много закладок не создаю. Поэтому мне нужно другое место для полезных ссылок и материала «на потом». Для этих целея я использую Телеграм. Он хорошо как мессенджер, но и хорош как облачное хранилище.
 
-So I need to store useful links and links, that I want to read later somewhere. For those purposes I use Telegram. Telegram as good in storing links as a messenger.
-
-In Telegram, I have two private channels: Inbox and Links.
+В Телеграме у меня два канала: Inbox и Links.
 
 ### Inbox
 
-In this channel, I store different materials that I want to read/learn soon. That list I update often and not so often check.
+В этом канале я храню разные материалы, которые я хочу прочитать или выучить скоро. Этот список частно пополняется и не так часто очищается.
 
 ![Телеграм Инбокс](/img/telegram-inbox.jpg "Телеграм Инбокс")
 
 <figcaption>Мой канал Инбокс в телеграме для хранения ссылок</figcaption>
 
-What about caching? Most of the websites now support Instant View — a Telegram technology, that allows to open articles from websites fast and change reading mode. This feature automatically caches all links even if I shared a link from the notebook and didn't open it on mobile.
+Кэширование. Большинство сайтов со статьями сейчас поддерживают Инстант Вью — технологию Телеграма, которая позволяет открывать статьи в своем интерфейсе моментально и изменять режим чтения. Эта функция автоматически кэширует все ссылки, даже если я сохранил их с ноутбука и не открывал на телефоне.
 
 ### Links
 
-This channel updates rare and only by articles and videos, that I don't need soon. I can store here an article about something, that I want to learn in the future or link for use as an argument in the dispute.
+Этот канал пополняется редко и только статьями и видео, которые мне не нужны скоро. Я могу сохранить туда что-то, что мне понадобиться в будущем при изучении чего-либо или что мне понадобится в спорах как аргумент.
 
-## How to not forget, what you've learned yesterday
+## Как не забыть, что ты выучил вчера
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yesterday started learning <a href="https://twitter.com/sveltejs?ref_src=twsrc%5Etfw">@sveltejs</a>. Writing all to markdown file. All text is written by me, code from examples. You can see the bold and italic text (red on the left): this is my own thoughts for better memorization <a href="https://t.co/MPMCrqcOLk">pic.twitter.com/MPMCrqcOLk</a></p>&mdash; David Kistauri (@dtroode) <a href="https://twitter.com/dtroode/status/1138419790631055360?ref_src=twsrc%5Etfw">June 11, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js"></script>
 
-In the modern world of front end and programming, devs need to learn something every time and renew base of knowledge, that's because I learn something new and repeat something old.
+Мне надо постоянно пополнять свои знания новым материалом, выкидывать ненужные знания и повторять нужные.
 
-In the last time, I have opened the new, although primitive way for remembering — write. I write documentation and parallelly in neighbor window writing it. Important! _Writing by my own words,_ not copy, otherwise, it's just another documentation. Because I am not a native English speaker, learning docs in English and especially writing helps for improving English skills.
+В последнее время я для себя открыл новый, хоть и примитивный и очевидный, способ запоминания — запись. Я читаю документацию и в соседнем окне записываю ее. Важное: _записывать надо своими словами,_ не копировать, иначе это просто еще одна версия документации. Я учу английский, поэтому изучение документация и записывание ее помогает расширять знания языка и набирать опыт.
 
-For every new material, I create a new folder for code examples with file `learn.md` for writing. All files I contain in Markdown and regularly backup.
+Для каждого нового материала: язык, фреймворк, технология — я создаю новую папку; в ней находится папка с примерами кода и файл `learn.md` для записи. Все файлы храню в Маркдауне, потому что удобно смотреть превью в ВС Коде, и регулярно бекаплю.
 
-## Conclusion
+## Заключение
 
-My collection needs new links, send me to [Twitter](https://twitter.com/dtroode) or to [Telegram](https://t.me/dtroode).
+Моя коллекция нуждается в новых ссылках, отправляйте мне в [Твиттер](https://twitter.com/dtroode) или в [Телеграм](https://t.me/dtroode)
