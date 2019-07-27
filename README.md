@@ -1,16 +1,17 @@
-# <a href="https://dtroode.netlify.com/">Kistauri</a>
+# <a href="https://david-kistauri.dtroode.now.sh/">Kistauri</a>
 
 <img 
   align="right" 
-  src="https://dtroode.netlify.com/icons/icon-144x144.png" 
+  src="https://david-kistauri.dtroode.now.sh/icons/icon-144x144.png" 
   width="100px"
   height="100px"
   alt="Blog Logo">
 
 Hello, I am **David Kistauri**.\
-This is repository of my personal website with **[blog](https://dtroode.netlify.com/blog).**
+This is repository of my personal website with **[blog](https://david-kistauri.dtroode.now.sh/blog).**
 
 You can
+
 - **Review** my code
 - Submit **best solutions** to me
 - **Fork** repository

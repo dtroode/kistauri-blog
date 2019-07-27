@@ -36,7 +36,7 @@ const BlogList = ({ pageContext, data }) => {
   return (
     <Layout pageClass="blog" title="Давид Кистаури. Блог">
       <Helmet>
-        <link rel="canonical" href="https://dtroode.netlify.com/blog" />
+        <link rel="canonical" href="https://david-kistauri.dtroode.now.sh/blog" />
       </Helmet>
       <SEO
         title="Блог"

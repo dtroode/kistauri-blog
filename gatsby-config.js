@@ -4,8 +4,8 @@ module.exports = {
     description: `Назови любое слово и я сделаю об этом сайт`,
     author: `Давид Кистаури`,
     image: `/img/preview.jpg`,
-    siteUrl: `https://dtroode.netlify.com/`,
-    blogUrl: `https://dtroode.netlify.com/blog/`
+    siteUrl: `https://david-kistauri.dtroode.now.sh/`,
+    blogUrl: `https://david-kistauri.dtroode.now.sh/blog/`
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -13,7 +13,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     "gatsby-plugin-offline",
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -39,18 +38,6 @@ module.exports = {
         theme_color: `#3742FA`,
         display: `minimal-ui`,
         icon: `src/images/logo/icon.png` // This path is relative to the root of the site.
-      }
-    },
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
-        allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
-        mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
-        mergeCachingHeaders: true, // boolean to turn off the default caching headers
-        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-        generateMatchPathRewrites: true // boolean to turn off automatic creation of redirect rules for client only paths
       }
     },
     {

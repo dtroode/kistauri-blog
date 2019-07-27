@@ -8,7 +8,7 @@ const IndexPage = () => {
   return (
     <Layout pageClass="portfolio" title="Давид Кистаури >_<">
       <Helmet>
-        <link rel="canonical" href="https://dtroode.netlify.com/" />
+        <link rel="canonical" href="https://david-kistauri.dtroode.now.sh/" />
       </Helmet>
       <SEO
         title=">_<"
@@ -60,7 +60,7 @@ const IndexPage = () => {
         <h2>О работах</h2>
         <ol>
           <li>
-            <a href="https://dtroode.netlify.com/blog">Блог</a> — 2019
+            <a href="https://david-kistauri.dtroode.now.sh/blog">Блог</a> — 2019
             <ul>
               <li>
                 <strong>Как никто</strong>
