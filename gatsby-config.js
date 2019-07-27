@@ -60,6 +60,14 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: `https://kistauri.dtroode.now.sh/`,
+        sitemap: `https://kistauri.dtroode.now.sh/sitemap.xml`,
+        policy: [{ userAgent: "*", allow: "/" }]
+      }
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `

@@ -7,5 +7,6 @@
       "use": "@now/static-build",
       "config": { "distDir": "public" }
     }
-  ]
+  ],
+  "routes": [{ "src": "/*", "status": 404, "dest": "/404" }]
 }
