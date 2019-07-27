@@ -22,6 +22,7 @@ const AllPage = props => {
       <section className="main__content">
         <h2 className="main__content__tag-header">Посты за все время</h2>
         <p className="main__content__tag-container">
+          {/* All posts list */}
           {AllPostsList.map(({ node }) => (
             <>
               <Link className="a--secondary" to={node.fields.slug}>

@@ -9,20 +9,13 @@ import "../styles/media.scss";
 import "../styles/code.scss";
 import SEO from "../components/seo";
 
-const ListLink = props => (
-  <Link to={props.to} className={props.className}>
-    {props.children}
-  </Link>
-);
-
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Layout
       pageClass="post"
       title={post.frontmatter.title}
-      category={post.frontmatter.categories}
-      link={post.fields.slug}
+      link={post.fields.slug} // Link to this page for using in header and footer
     >
       <SEO
         title={post.frontmatter.title}
@@ -31,21 +24,31 @@ export default ({ data }) => {
       />
       <section className="main__art-cont">
         <p className="main__art-cont__inf">
-          <time datetime="">{post.frontmatter.date}</time> •{" "}
+          {/* Date of post written */}
+          <time dateTime="">{post.frontmatter.date}</time> •{" "}
+          {/* Post read time */}
           <span>{post.timeToRead}</span> мин.
           <br />
+          {/* All tags for this post */}
           {post.frontmatter.tags.map(tag => (
             <>
-              <ListLink to={`/blog/tags/${kebabCase(tag)}`}>{tag}</ListLink>
+              <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
             </>
           ))}
         </p>
+        {/* Content of post converted to HTML */}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
     </Layout>
   );
 };
 
+// Getting all information for this post:
+// Title
+// Date written
+// Description
+// All tags list
+// Title image
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {

@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
+// Component for using Client Side Routing with classname
 const ListLink = props => (
   <Link className={props.className} to={props.to}>
     {props.children}
@@ -9,9 +10,12 @@ const ListLink = props => (
 
 const Footer = props => {
   const title = props.title;
+  // Link of page
   const link = `https://dtroode.netlify.com${props.link}`;
+  // Variable with share content. Uses only for posts
   let share = "";
 
+  // If page is post writing links to `share` variable
   if (props.pageClass === "post") {
     share = (
       <>
@@ -62,8 +66,14 @@ const Footer = props => {
   return (
     <footer className={`foot--${props.pageClass}`}>
       <section>
+        {/*
+        Passing `share` variable.
+        If page is post, variable contains social media share links.
+        If not, variable is empty.
+       */}
         {share}
         <h2>О контактах</h2>
+        {/* Nav for links to social media */}
         <nav className="foot__cont">
           <a className="a--primary" href="https://twitter.com/dtroode">
             Твиттер
@@ -78,6 +88,7 @@ const Footer = props => {
             Гитхаб
           </a>
         </nav>
+        {/* Nav for technical links like RSS feed */}
         <nav className="foot__cont foot__cont--site-links">
           <ListLink className="a--primary" to="/rss.xml">
             РСС

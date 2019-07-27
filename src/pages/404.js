@@ -68,6 +68,7 @@ const ErrorPage = props => {
             </section>
           </Link>
         </article>
+        {/* Two latest posts */}
         {PostsList.map(({ node }) => (
           <article key={node.frontmatter.title}>
             <Link to={node.fields.slug}>

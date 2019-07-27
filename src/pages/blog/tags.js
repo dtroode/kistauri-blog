@@ -13,6 +13,7 @@ const TagsPage = ({
     allMarkdownRemark: { group }
   }
 }) => {
+  // Sorting tags by number of posts that use them
   group.sort((a, b) => b.totalCount - a.totalCount);
   return (
     <Layout pageClass="tags" title="Давид Кистаури. Теги">
@@ -27,6 +28,7 @@ const TagsPage = ({
       <section className="main__content">
         <h2 className="main__content__tag-header">Теги по количеству постов</h2>
         <p className="main__content__tag-container">
+          {/* All tags sorted */}
           {group.map(tag => (
             <Link
               className="a--secondary"
@@ -43,6 +45,7 @@ const TagsPage = ({
 
 export default TagsPage;
 
+// Getting 2000 latest posts tags
 export const pageQuery = graphql`
   query {
     site {

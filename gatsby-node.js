@@ -3,6 +3,7 @@ const _ = require("lodash");
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 
+// Creating slug from page name
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
@@ -16,11 +17,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   fmImagesToRelative(node);
 };
 
+// Creating posts from md, blog pages and tag pages
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
+  // Template files for creating new pages
   const blogPostTemplate = path.resolve("src/templates/blog-post.js");
   const tagTemplate = path.resolve("src/templates/tags.js");
+  const blogListTemplate = path.resolve("src/templates/blog-list-template.js");
 
+  // Getting all markdown posts
   return graphql(`
     {
       allMarkdownRemark {
@@ -37,10 +42,11 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    const posts = result.data.allMarkdownRemark.edges;
-    const postsPerPage = 20;
-    const numPages = Math.ceil(posts.length / postsPerPage);
+    const posts = result.data.allMarkdownRemark.edges; // Posts list
+    const postsPerPage = 20; // Posts per blog page number
+    const numPages = Math.ceil(posts.length / postsPerPage); // Getting number of blog pages
 
+    // Creating posts pages
     posts.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
@@ -51,16 +57,18 @@ exports.createPages = ({ graphql, actions }) => {
       });
     });
     let tags = [];
+    // Getting tags from pages, writing to `tags` variable
     _.each(posts, edge => {
       if (_.get(edge, "node.frontmatter.tags")) {
         tags = tags.concat(edge.node.frontmatter.tags);
       }
     });
 
+    // Creating blog pages templates. [pagination]
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-        component: path.resolve("./src/templates/blog-list-template.js"),
+        component: blogListTemplate,
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
@@ -73,6 +81,7 @@ exports.createPages = ({ graphql, actions }) => {
     // Eliminate duplicate tags
     tags = _.uniq(tags);
 
+    // Creating tags pages for each tag we get from posts
     tags.forEach(tag => {
       createPage({
         path: `/blog/tags/${_.kebabCase(tag)}/`,

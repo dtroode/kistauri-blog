@@ -13,10 +13,13 @@ const ListLink = props => (
 
 const Navbar = props => {
   let nav = "";
+  // Creating github link using repository link and page slug. Using only for post pages
   let githubLink =
     "https://github.com/dtroode/Kistauri/tree/master/src/pages" + props.link;
+  // Removing latest slash from slug and adding `.md` extension
   githubLink = githubLink.substr(0, githubLink.length - 1) + ".md";
 
+  // Creating different header links for different page types
   if (props.className === "post") {
     nav = (
       <nav>

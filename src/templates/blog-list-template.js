@@ -7,11 +7,12 @@ import "../styles/media.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const BlogList = props => {
-  const PostsList = props.data.Posts.edges;
-  const currentPage = props.pageContext.currentPage;
-  const numPages = props.pageContext.numPages;
-  const previousPageLink =
+const BlogList = ({ pageContext, data }) => {
+  const PostsList = data.Posts.edges;
+  const currentPage = pageContext.currentPage;
+  const numPages = pageContext.numPages;
+  // Creating link to next page according to current page number
+  const nextPageLink =
     currentPage === 1 ? (
       ""
     ) : currentPage === 2 ? (
@@ -23,7 +24,8 @@ const BlogList = props => {
         ←
       </Link>
     );
-  const nextPageLink =
+  // Creating link to previous page according to pages count
+  const previousPageLink =
     currentPage === numPages ? (
       ""
     ) : (
@@ -42,6 +44,7 @@ const BlogList = props => {
         image="/img/preview.jpg"
       />
       <section className="main__arts">
+        {/* Displaying all articles according to limit */}
         {PostsList.map(({ node }) => (
           <article
             id={node.frontmatter.categories}
@@ -60,8 +63,8 @@ const BlogList = props => {
           </article>
         ))}
         <section className="main__arts__pages">
-          {previousPageLink}
           {nextPageLink}
+          {previousPageLink}
         </section>
       </section>
     </Layout>
@@ -70,6 +73,7 @@ const BlogList = props => {
 
 export default BlogList;
 
+// Getting limited amount of articles according to blog page number
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     Posts: allMarkdownRemark(
