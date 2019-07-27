@@ -12,7 +12,7 @@ const AllPage = props => {
   return (
     <Layout pageClass="posts" title="Давид Кистаури. Посты">
       <Helmet>
-        <link rel="canonical" href="https://david-kistauri.dtroode.now.sh/blog" />
+        <link rel="canonical" href="https://kistauri.dtroode.now.sh/blog" />
       </Helmet>
       <SEO
         title="Посты"

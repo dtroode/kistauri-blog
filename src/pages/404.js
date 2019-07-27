@@ -12,7 +12,7 @@ const ErrorPage = props => {
   return (
     <Layout pageClass="error" title="404. Страница не найдена">
       <Helmet>
-        <link rel="canonical" href="https://david-kistauri.dtroode.now.sh/404" />
+        <link rel="canonical" href="https://kistauri.dtroode.now.sh/404" />
       </Helmet>
       <SEO
         title="404. Страница не найдена"
