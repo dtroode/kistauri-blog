@@ -115,7 +115,7 @@ module.exports = {
               }
             `,
             output: "/blog/rss/index.xml",
-            title: "РСС"
+            title: "Дэтруд | Блог Давида Кистаури"
           }
         ]
       }
