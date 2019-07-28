@@ -77,7 +77,7 @@ module.exports = {
                 title
                 description
                 blogUrl
-                site_url: blogUrl
+                site_url: siteUrl
               }
             }
           }
@@ -89,8 +89,8 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  url: edge.node.fields.slug,
+                  guid: edge.node.fields.slug,
                   custom_elements: [{ "content:encoded": edge.node.html }]
                 });
               });
