@@ -1,5 +1,5 @@
 *::selection {
-  background-color: var(--accent-blue);
+  background-color: var(--accent-red);
   color: var(--main-bg);
 }
 
@@ -311,6 +311,9 @@ ol {
 
 ul > li {
   list-style: none;
+  &:before {
+    content: "— ";
+  }
 }
 
 ol > li {

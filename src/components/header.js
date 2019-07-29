@@ -24,7 +24,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink className="a--primary" to="/">
-          {">_<"}
+          @dtroode
         </ListLink>
         <ListLink className="a--primary" to="/blog">
           Блог
@@ -38,7 +38,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink className="a--primary" to="/">
-          {">_<"}
+          @dtroode
         </ListLink>
         <ListLink className="a--primary" to="/blog/tags">
           Теги
@@ -49,7 +49,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink className="a--primary" to="/">
-          {">_<"}
+          @dtroode
         </ListLink>
         <ListLink className="a--primary" to="/blog">
           Блог
@@ -60,7 +60,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink className="a--primary" to="/">
-          {">_<"}
+          @dtroode
         </ListLink>
         <ListLink className="a--primary" to="/blog">
           Блог
@@ -74,7 +74,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink className="a--primary" to="/">
-          {">_<"}
+          @dtroode
         </ListLink>
         <ListLink className="a--primary" to="/blog">
           Блог

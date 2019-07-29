@@ -23,6 +23,9 @@ section.main__arts {
     &#learning {
       background-color: var(--accent-blue-50);
     }
+    &#product {
+      background: linear-gradient(135deg, var(--accent-yellow-50), transparent);
+    }
     a {
       display: block;
       height: calc(100% - 2 * var(--third-padding));
