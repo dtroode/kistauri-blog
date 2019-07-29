@@ -4,7 +4,7 @@ path: /blog/all
 title: Почему надо дать Файерфоксу шанс
 description: Мы живем в эре браузерной монополии. Давайте взглянем на другой браузер
 date: 2019-06-22T12:48:59.664Z
-hero: /img/firefox.png
+hero: /img/preview/firefox.jpg
 categories: thoughts
 tags: ["веб", "хром", "файерфокс"]
 ---
@@ -31,7 +31,7 @@ tags: ["веб", "хром", "файерфокс"]
 
 Файерфокс ипсользует собственный движок с новым Квантум ЦСС и Квантум DOM рендерингом. Много объяснений в [блоге Мозиллы](https://hacks.mozilla.org/2017/11/entering-the-quantum-era-how-firefox-got-fast-again-and-where-its-going-to-get-faster/). Хром использует больше оперативной памяти, чем Фаейрфокс.
 
-Также,  Файерфокс имеет много полезных фишек, как [отображение ненужных ЦСС правил](https://twitter.com/nicolaschevobbe/status/1135798960361263104) и поддержка [prefers-color-scheme: dark](https://hacks.mozilla.org/2019/05/firefox-67-dark-mode-css-webrender/) медиа правил, которые у Хрома только в бете.
+Также, Файерфокс имеет много полезных фишек, как [отображение ненужных ЦСС правил](https://twitter.com/nicolaschevobbe/status/1135798960361263104) и поддержка [prefers-color-scheme: dark](https://hacks.mozilla.org/2019/05/firefox-67-dark-mode-css-webrender/) медиа правил, которые у Хрома только в бете.
 
 ![Темная тема Файерфокса](/img/firefox-dark.png "Темная тема Файерфокса")
 

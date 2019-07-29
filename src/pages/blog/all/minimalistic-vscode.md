@@ -4,7 +4,7 @@ path: /blog/all
 title: Как использовать ВС Код, если ты писатель
 description: Минималистичный ВС Код для писателей. Переходим с Sublime Text. Расширения не нужны.
 date: 2019-07-11
-hero: /img/minimalistic-vscode.jpg
+hero: /img/preview/minimalistic-vscode.jpg
 categories: advices
 tags: ["текст", "вс код", "настройка"]
 ---

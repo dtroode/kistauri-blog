@@ -4,7 +4,7 @@ title: Разработчик? Замени это сейчас
 description: Что я заменил после полутра лет разработки
 path: /blog/all
 date: 2019-06-22T10:44:34.021Z
-hero: /img/replace.png
+hero: /img/preview/developer-replace.jpg
 categories: advices
 tags: ["фронтенд", "веб", "инструменты"]
 ---

@@ -4,7 +4,7 @@ path: /blog/all
 title: Как делать рассылки, чтоб не терять клиентов
 description: Решил отписаться от рассылки, но процесс оказался сложным — перестал пользоваться продуктом.
 date: 2019-07-23
-hero: /img/otpisalsya.jpg
+hero: /img/preview/otpisalsya.jpg
 categories: work
 tags: ["почта", "подписки", "интерфейс"]
 ---

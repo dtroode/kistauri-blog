@@ -4,7 +4,7 @@ path: /blog/all
 title: Как и чем я занимаюсь
 description: Как я написал первые сайты. Моя коробочка с инструментами
 date: 2019-04-25T19:59:59.000Z
-hero: /img/my-toolset.png
+hero: /img/preview/my-toolset.jpg
 categories: work
 tags: ["сетап", "инструменты"]
 ---

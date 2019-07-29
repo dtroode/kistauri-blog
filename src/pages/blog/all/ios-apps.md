@@ -4,7 +4,7 @@ path: /blog/all
 title: Хочешь сделать лучшее АйОС приложение? Делай как они
 description: Если твое приложение в этом списке, то время праздновать!
 date: 2019-05-21T18:48:59.664Z
-hero: /img/ios-apps.png
+hero: /img/preview/ios-apps.jpg
 categories: advices
 tags: ["айос", "дизайн", "ui"]
 ---
