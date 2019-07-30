@@ -5,7 +5,7 @@ section.main__arts {
   article {
     position: relative;
     border-radius: var(--fourth-padding);
-    background-color: var(--accent-blue-50);
+    background-color: #e5e5ea;
     transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
     &:hover {
       transform: translateY(-0.6rem);
