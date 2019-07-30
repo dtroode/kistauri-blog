@@ -82,6 +82,18 @@ function SEO({ description, lang, meta, title, image }) {
         {
           name: `twitter:image`,
           content: `https://kistauri.dtroode.now.sh${image}`
+        },
+        {
+          name: `apple-mobile-web-app-capable`,
+          content: `yes`
+        },
+        {
+          name: `apple-mobile-web-app-status-bar-style`,
+          content: `black`
+        },
+        {
+          name: `apple-mobile-web-app-title`,
+          content: title
         }
       ].concat(meta)}
     >

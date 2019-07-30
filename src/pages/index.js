@@ -98,8 +98,7 @@ const IndexPage = () => {
           </li>
           <hr />
           <li>
-            <a href="https://constantvalues.tk">Сайт Постоянные Величины</a> —
-            2018
+            <a href="https://postvel.now.sh">Сайт Пост Величины</a> — 2018
             <ul>
               <li>
                 <strong>Как руководитель</strong>
