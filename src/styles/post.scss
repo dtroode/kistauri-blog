@@ -197,6 +197,11 @@ section {
         margin-top: 0;
       }
     }
+    section.album,
+    code,
+    pre {
+      scrollbar-width: none;
+    }
     section.album::-webkit-scrollbar,
     code::-webkit-scrollbar,
     pre::-webkit-scrollbar {
