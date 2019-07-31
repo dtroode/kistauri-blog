@@ -31,11 +31,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `David Kistauri`,
-        short_name: `David`,
+        name: `Давид Кистаури`,
+        short_name: `Давид`,
         start_url: `/`,
-        background_color: `#F1F2F6`,
-        theme_color: `#3742FA`,
+        background_color: `#f2f2f7`,
+        theme_color: `#ff3b30`,
         display: `minimal-ui`,
         icon: `src/images/logo/icon.png` // This path is relative to the root of the site.
       }
@@ -50,7 +50,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 970
+              maxWidth: 1000,
+              showCaptions: true,
+              backgroundColor: `#e5e5ea`,
+              quality: 60
             }
           },
           {

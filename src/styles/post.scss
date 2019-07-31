@@ -112,7 +112,7 @@ section {
           font-weight: 600;
           color: inherit;
           &:hover {
-            color: var(--accent-blue);
+            color: var(--accent-red);
           }
         }
       }
@@ -141,6 +141,9 @@ section {
       li {
         padding-left: var(--primary-padding);
       }
+    }
+    figure {
+      margin: 1rem 0 0 0;
     }
     figcaption {
       margin-top: 0.3rem;
@@ -197,29 +200,16 @@ section {
         margin-top: 0;
       }
     }
-    section.album,
     code,
     pre {
       scrollbar-width: none;
     }
-    section.album::-webkit-scrollbar,
     code::-webkit-scrollbar,
     pre::-webkit-scrollbar {
       height: 0;
     }
     li p {
       margin-top: 0;
-    }
-  }
-  &.album {
-    display: flex;
-    overflow-x: scroll;
-    border-radius: var(--fourth-padding);
-    scroll-snap-type: x mandatory;
-    img {
-      border-radius: 0;
-      object-fit: contain;
-      scroll-snap-align: center;
     }
   }
 }

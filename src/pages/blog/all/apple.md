@@ -12,9 +12,7 @@ tags: ["apple"]
 
 ## More plusses
 
-![Apple](/img/tim.jpg "Apple")
-
-<figcaption>Выход Тима Кука</figcaption>
+![Выход Тима Кука](/img/tim.jpg "Выход Тима Кука")
 
 First things first. Плюсы.
 
