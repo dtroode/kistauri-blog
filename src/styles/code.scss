@@ -13,7 +13,7 @@ code[class*="language-"] {
   hyphens: none;
   hyphens: none;
   color: #afa0fe;
-  background: #2a2734;
+  background-color: #2a2734;
 }
 
 pre[class*="language-"] {
@@ -25,13 +25,13 @@ pre[class*="language-"] {
   hyphens: none;
   hyphens: none;
   color: #afa0fe;
-  background: #2a2734;
+  background-color: #2a2734;
 }
 
 pre[class*="language-"]::selection,
 code[class*="language-"]::selection {
   text-shadow: none;
-  background: #6a51e6;
+  background-color: var(--accent-red-50);
 }
 
 .token {
@@ -137,7 +137,7 @@ pre > code.highlight {
 }
 
 .line-highlight {
-  background: rgba(224, 145, 66, 0.2);
+  background-color: rgba(224, 145, 66, 0.2);
   background: gradient(
     linear,
     left top,
