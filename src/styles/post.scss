@@ -28,15 +28,6 @@ footer.foot--post {
               fill: #1877f2;
             }
           }
-          &.vk-share-button {
-            color: #4680c2;
-            &:hover {
-              background-color: rgba(70, 128, 194, 0.25);
-            }
-            svg {
-              fill: #4680c2;
-            }
-          }
           &.telegram-share-button {
             color: #2ea6d9;
             &:hover {
@@ -171,9 +162,6 @@ section {
         a,
         img {
           display: block;
-        }
-        a {
-          text-decoration: none;
         }
       }
 

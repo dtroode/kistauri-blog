@@ -249,7 +249,7 @@ p a {
 a {
   flex: inherit;
   line-height: 1em;
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--accent-blue);
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
@@ -268,7 +268,6 @@ a {
     padding: var(--fourth-padding);
     border-radius: var(--fourth-padding);
     font-weight: 600;
-    text-decoration: none;
   }
   &.a--primary {
     color: var(--main-bg);
@@ -324,10 +323,6 @@ li {
   margin-bottom: var(--fourth-padding);
 }
 
-img {
-  height: auto;
-}
-
 blockquote {
   margin-top: var(--third-padding);
   margin-right: 0;
@@ -352,6 +347,10 @@ table {
   td {
     padding: 0 var(--third-padding) var(--fifth-padding) 0;
   }
+}
+
+img {
+  height: auto;
 }
 
 hr {
