@@ -16,7 +16,7 @@ const TagsPage = ({
   // Sorting tags by number of posts that use them
   group.sort((a, b) => b.totalCount - a.totalCount);
   return (
-    <Layout pageClass="tags" title="Давид Кистаури. Теги">
+    <Layout pageClass="tags" title="Давид Кистаури. Блог. Теги">
       <Helmet>
         <link rel="canonical" href="https://kistauri.dtroode.now.sh/blog" />
       </Helmet>

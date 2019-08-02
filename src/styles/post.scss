@@ -149,6 +149,10 @@ section {
         border-radius: 0.4rem;
       }
     }
+    blockquote,
+    pre {
+      border-radius: var(--fourth-padding);
+    }
     blockquote {
       max-width: 100%;
       &.faktoid {

@@ -10,7 +10,7 @@ import SEO from "../../components/seo";
 const AllPage = props => {
   const AllPostsList = props.data.AllPosts.edges;
   return (
-    <Layout pageClass="posts" title="Давид Кистаури. Посты">
+    <Layout pageClass="posts" title="Давид Кистаури. Блог. Всё">
       <Helmet>
         <link rel="canonical" href="https://kistauri.dtroode.now.sh/blog" />
       </Helmet>

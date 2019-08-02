@@ -235,13 +235,6 @@ p {
   }
 }
 
-p:first-of-type,
-a.a--primary,
-blockquote,
-pre {
-  border-radius: var(--fourth-padding);
-}
-
 p a {
   font-size: inherit;
 }
@@ -290,6 +283,9 @@ a {
       color: var(--additional-fg);
       background-color: var(--accent-red-50);
     }
+  }
+  &.a--active:hover {
+    background-color: var(--accent-blue);
   }
 }
 

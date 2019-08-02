@@ -24,7 +24,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink className="a--primary" to="/">
-          @dtroode
+          {">_<"}
         </ListLink>
         <ListLink className="a--primary" to="/blog">
           Блог
@@ -38,7 +38,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink className="a--primary" to="/">
-          @dtroode
+          {">_<"}
         </ListLink>
         <ListLink className="a--primary" to="/blog/tags">
           Теги
@@ -48,9 +48,7 @@ const Navbar = props => {
   } else if (props.className === "portfolio") {
     nav = (
       <nav>
-        <ListLink className="a--primary" to="/">
-          @dtroode
-        </ListLink>
+        <a className="a--primary a--active">{">_<"}</a>
         <ListLink className="a--primary" to="/blog">
           Блог
         </ListLink>
@@ -60,7 +58,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink className="a--primary" to="/">
-          @dtroode
+          {">_<"}
         </ListLink>
         <ListLink className="a--primary" to="/blog">
           Блог
@@ -74,7 +72,7 @@ const Navbar = props => {
     nav = (
       <nav>
         <ListLink className="a--primary" to="/">
-          @dtroode
+          {">_<"}
         </ListLink>
         <ListLink className="a--primary" to="/blog">
           Блог

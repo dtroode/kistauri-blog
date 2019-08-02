@@ -6,7 +6,7 @@ import SEO from "../components/seo";
 
 const IndexPage = () => {
   return (
-    <Layout pageClass="portfolio" title="Давид Кистаури >_<">
+    <Layout pageClass="portfolio" title="Давид Кистаури">
       <Helmet>
         <link rel="canonical" href="https://kistauri.dtroode.now.sh/" />
       </Helmet>
