@@ -23,6 +23,7 @@
     "gatsby-remark-images": "^3.0.16",
     "gatsby-remark-prismjs": "^3.3.1",
     "gatsby-remark-relative-images": "^0.2.2",
+    "gatsby-remark-smartypants": "^2.1.2",
     "gatsby-source-filesystem": "^2.0.39",
     "gatsby-transformer-remark": "^2.5.0",
     "gatsby-transformer-sharp": "^2.1.21",
@@ -33,7 +34,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "sharp": "^0.22.1",
-    "typeface-inconsolata": "0.0.72"
+    "typeface-inconsolata": "0.0.72",
+    "typograf": "^6.8.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
