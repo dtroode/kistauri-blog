@@ -295,7 +295,7 @@ ol {
   margin: 0;
   padding: 0;
   li {
-    padding-left: 0;
+    list-style-position: inside;
   }
   hr {
     margin-top: var(--fourth-padding);
@@ -306,13 +306,6 @@ ol {
 
 ul > li {
   list-style: none;
-  &:before {
-    content: "— ";
-  }
-}
-
-ol > li {
-  list-style-position: inside;
 }
 
 li {

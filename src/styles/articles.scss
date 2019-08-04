@@ -55,6 +55,9 @@ section.main__arts {
 
 ol.main__arts > li {
   margin-bottom: 0;
+  padding: var(--third-padding);
+  border-radius: var(--fourth-padding);
+  background-color: var(--additional-bg);
   & > ul li:last-child {
     margin-bottom: 0;
   }

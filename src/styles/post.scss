@@ -129,8 +129,9 @@ section {
     }
     ul,
     ol {
+      padding-left: var(--primary-padding);
       li {
-        padding-left: var(--primary-padding);
+        list-style-position: outside;
       }
     }
     figure {
