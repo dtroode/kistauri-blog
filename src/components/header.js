@@ -48,7 +48,9 @@ const Navbar = props => {
   } else if (props.className === "portfolio") {
     nav = (
       <nav>
-        <a className="a--primary a--active">{">_<"}</a>
+        <ListLink className="a--primary a--active" to="/">
+          {">_<"}
+        </ListLink>
         <ListLink className="a--primary" to="/blog">
           Блог
         </ListLink>

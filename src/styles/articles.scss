@@ -1,7 +1,13 @@
-section.main__arts {
+section.main__arts,
+ol.main__arts {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: var(--secondary-padding);
+  grid-gap: var(--third-padding);
+}
+section.main__arts {
+  &__pages {
+    align-self: end;
+  }
   article {
     position: relative;
     border-radius: var(--fourth-padding);
@@ -45,7 +51,11 @@ section.main__arts {
       }
     }
   }
-  &__pages {
-    align-self: end;
+}
+
+ol.main__arts > li {
+  margin-bottom: 0;
+  & > ul li:last-child {
+    margin-bottom: 0;
   }
 }
