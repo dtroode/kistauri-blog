@@ -36,7 +36,7 @@ section.main__arts {
       display: block;
       height: calc(100% - 2 * var(--third-padding));
       padding: var(--third-padding);
-      border-radius: 0.5rem;
+      border-radius: var(--fourth-padding);
       color: #1c1c1e;
       &:hover {
         color: #1c1c1e;

@@ -124,7 +124,7 @@ section {
     img,
     video {
       width: 100%;
-      border-radius: 0.4rem;
+      border-radius: var(--fourth-padding);
       background-color: var(--additional-bg);
     }
     ul,
@@ -146,7 +146,7 @@ section {
     span {
       &.gatsby-resp-image-background-image {
         display: block;
-        border-radius: 0.4rem;
+        border-radius: var(--fourth-padding);
       }
     }
     blockquote,

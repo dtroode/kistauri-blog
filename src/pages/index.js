@@ -61,7 +61,10 @@ const IndexPage = () => {
         <h2>О работах</h2>
         <ol className="main__arts">
           <li>
-            <a href="https://kistauri.dtroode.now.sh/blog">Блог</a> — 2019
+            <a href="https://kistauri.dtroode.now.sh/blog">
+              <strong>Блог</strong>
+            </a>{" "}
+            — 2019
             <br />
             Сделал себе сайт портфолио-блог.
             <ul>
@@ -90,7 +93,10 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <a href="https://masterbuket.com">Мастер Букет</a> — 2018
+            <a href="https://masterbuket.com">
+              <strong>Мастер Букет</strong>
+            </a>{" "}
+            — 2018
             <br />
             Сделал сайт и брендинг цветочной студии Мастер Букет.
             <ul>
@@ -127,7 +133,10 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <a href="https://postvel.now.sh">Сайт Пост Величины</a> — 2018
+            <a href="https://postvel.now.sh">
+              <strong>Сайт Пост Величины</strong>
+            </a>{" "}
+            — 2018
             <br />
             Сделал сайт с таблицами по математике, физике и химии.
             <ul>
@@ -167,7 +176,10 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <a href="https://secondschool.gq">Сайт второй школы</a> — 2018
+            <a href="https://secondschool.gq">
+              <strong>Сайт второй школы</strong>
+            </a>{" "}
+            — 2018
             <br />
             Сделал редизайн сайта школы с нуля по информации со старого сайта.
             <ul>
@@ -209,7 +221,10 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <a href="https://cyxym.cf">Сайт CYXYM</a> — 2018
+            <a href="https://cyxym.cf">
+              <strong>Сайт CYXYM</strong>
+            </a>{" "}
+            — 2018
             <br />
             Сделал сайт с командой про город Сухум.
             <ul>
