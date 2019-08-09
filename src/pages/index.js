@@ -22,7 +22,7 @@ const IndexPage = () => {
           <li>
             Разрабатываю адаптивные сайты, лэндинги и веб-приложения,
             оптимизирую их — сайты грузятся быстро. Пишу на HTML, CSS, JS,
-            React, Gatsby. Учу Next.js, Svelte. Вкладываю в опен-сорс.
+            React, Gatsby. Учу Next.js, Svelte. Вкладываю в опен сорс.
           </li>
           <li>
             Пишу текст{" "}
@@ -176,7 +176,7 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <a href="https://secondschool.gq">
+            <a href="https://secondschool.now.sh/">
               <strong>Сайт второй школы</strong>
             </a>{" "}
             — 2018
