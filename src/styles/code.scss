@@ -1,10 +1,16 @@
+@font-face {
+  font-family: "Roboto Mono";
+  font-weight: normal;
+  src: url(../fonts/RobotoMono-Regular.woff2?v=3.5) format("woff2");
+}
+
 pre,
 code {
-  font-feature-settings: "case" 0, "frac" 0, "cv08" 0;
   white-space: pre;
 }
 
 code[class*="language-"] {
+  font-family: "Roboto Mono", monospace;
   direction: ltr;
   text-align: left;
   word-spacing: normal;
@@ -14,6 +20,7 @@ code[class*="language-"] {
   hyphens: none;
   color: #afa0fe;
   background-color: #2a2734;
+  text-shadow: none;
 }
 
 pre[class*="language-"] {
@@ -26,6 +33,7 @@ pre[class*="language-"] {
   hyphens: none;
   color: #afa0fe;
   background-color: #2a2734;
+  text-shadow: none;
 }
 
 pre[class*="language-"]::selection,

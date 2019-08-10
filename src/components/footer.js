@@ -41,7 +41,7 @@ const Footer = props => {
           </a>
           <a
             className="a--secondary telegram-share-button"
-            href={`https://telegram.me/share/url?url=${link}>&text=${title} | @dtroode`}
+            href={`https://telegram.me/share/url?url=${link}&text=${title} | @dtroode`}
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.918 54.832">
               <path d="M61.889.103L.933 23.34c-1.228.477-1.245 2.384-.047 2.931L16.5 32.675l5.815 18.34a1.488 1.488 0 0 0 2.372.639l8.931-8.311 16.979 11.261a1.488 1.488 0 0 0 2.248-.965l11.04-51.852c.236-1.154-.899-2.11-1.996-1.684zM25.183 36.148l-.992 9.428-4.714-14.513L52.722 9.231 25.183 36.148z" />

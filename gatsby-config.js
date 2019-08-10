@@ -50,15 +50,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1000,
+              maxWidth: 700,
               showCaptions: true,
               backgroundColor: `#e5e5ea`,
-              quality: 60
+              quality: 80,
+              tracedSVG: true
             }
           },
-          {
-            resolve: `gatsby-remark-prismjs`
-          }
+          `gatsby-remark-prismjs`
         ]
       }
     },

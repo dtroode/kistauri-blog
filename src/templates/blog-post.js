@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import kebabCase from "lodash/kebabCase";
-import "typeface-inconsolata";
 import "../styles/post.scss";
 import "../styles/media.scss";
 import "../styles/code.scss";
