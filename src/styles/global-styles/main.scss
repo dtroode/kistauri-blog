@@ -176,7 +176,7 @@ h1 {
   font-size: 2.25em;
   font-weight: 700;
   span {
-    font-weight: 900;
+    opacity: 0.5;
   }
 }
 
@@ -232,6 +232,16 @@ p {
   }
   &.main__content__tag-container {
     margin-top: 0;
+  }
+  &.time-tags {
+    font-style: italic;
+    a {
+      margin-right: var(--fourth-padding);
+      color: inherit;
+      &:hover {
+        color: var(--accent-red);
+      }
+    }
   }
 }
 

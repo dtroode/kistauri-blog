@@ -43,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
     }
   `).then(result => {
     const posts = result.data.allMarkdownRemark.edges; // Posts list
-    const postsPerPage = 20; // Posts per blog page number
+    const postsPerPage = 10; // Posts per blog page number
     const numPages = Math.ceil(posts.length / postsPerPage); // Getting number of blog pages
 
     // Creating posts pages

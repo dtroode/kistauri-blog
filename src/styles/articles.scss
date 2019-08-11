@@ -32,7 +32,7 @@ section.main__arts {
     &#product {
       background: linear-gradient(135deg, var(--accent-red-50), #e5e5ea);
     }
-    a {
+    & > a {
       display: block;
       height: calc(100% - 2 * var(--third-padding));
       padding: var(--third-padding);
@@ -46,7 +46,7 @@ section.main__arts {
         margin-top: var(--third-padding);
         &:nth-of-type(1) {
           font-style: italic;
-          font-weight: 600;
+          opacity: 0.8;
         }
       }
     }

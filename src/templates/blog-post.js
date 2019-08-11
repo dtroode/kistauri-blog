@@ -22,7 +22,7 @@ export default ({ data }) => {
         image={post.frontmatter.hero.childImageSharp.fluid.src}
       />
       <section className="main__art-cont">
-        <p className="main__art-cont__inf">
+        <p className="time-tags">
           {/* Date of post written */}
           <time dateTime="">{post.frontmatter.date}</time> •{" "}
           {/* Post read time */}

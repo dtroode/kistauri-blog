@@ -93,13 +93,11 @@ section {
     }
     p {
       margin-top: var(--third-padding);
-      &.main__art-cont__inf {
+      &.time-tags {
         width: unset;
         margin: 0;
-        font-style: italic;
         font-weight: 600;
         a {
-          margin-right: var(--fourth-padding);
           font-weight: 600;
           color: inherit;
           &:hover {

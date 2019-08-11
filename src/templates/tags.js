@@ -12,10 +12,12 @@ const Tags = ({ pageContext, data }) => {
   // Formatting text according to posts count
   const tagHeader = (
     <>
-      {totalCount}{" "}
-      {totalCount === 1 ? "пост" : 2 || 3 || 4 ? "поста" : "постов"} с тегом
+      <span>
+        {totalCount}{" "}
+        {totalCount === 1 ? "пост" : 2 || 3 || 4 ? "поста" : "постов"} с тегом
+      </span>
       <br />
-      <span>{tag}</span>
+      {tag}
     </>
   );
 
