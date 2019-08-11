@@ -29,7 +29,10 @@ const Navbar = props => {
         <ListLink className="a--primary" to="/blog">
           Блог
         </ListLink>
-        <a className="a--primary" href={githubLink} title="На Гитхабе">
+        <ListLink className="a--secondary" to="/blog/rss">
+          Подписаться
+        </ListLink>
+        <a className="a--secondary" href={githubLink} title="На Гитхабе">
           Исправить
         </a>
       </nav>
@@ -42,6 +45,9 @@ const Navbar = props => {
         </ListLink>
         <ListLink className="a--primary" to="/blog/tags">
           Теги
+        </ListLink>
+        <ListLink className="a--secondary" to="/blog/rss">
+          Подписаться
         </ListLink>
       </nav>
     );

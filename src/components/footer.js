@@ -79,12 +79,6 @@ const Footer = props => {
             Гитхаб
           </a>
         </nav>
-        {/* Nav for technical links like RSS feed */}
-        <nav className="foot__cont foot__cont--site-links">
-          <ListLink className="a--primary" to="/blog/rss/">
-            РСС
-          </ListLink>
-        </nav>
       </section>
     </footer>
   );

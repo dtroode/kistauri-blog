@@ -51,12 +51,6 @@
         display: block;
         margin-top: var(--fourth-padding);
         margin-right: 0;
-        &.foot__cont {
-          display: block;
-          &--site-links {
-            float: unset;
-          }
-        }
       }
     }
     &.foot--post section {

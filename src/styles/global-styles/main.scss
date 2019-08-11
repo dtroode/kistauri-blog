@@ -77,6 +77,10 @@ header {
         color: var(--main-bg);
         background-color: var(--main-fg);
       }
+      &.a--secondary {
+        margin-top: 0;
+        background-color: var(--main-bg);
+      }
     }
   }
 }
@@ -138,21 +142,12 @@ footer {
     }
     nav {
       vertical-align: top;
-      &.foot__cont {
-        display: inline-block;
-        &--site-links {
-          float: right;
-          a:last-of-type {
-            margin-right: 0;
-          }
+      &.foot__cont a {
+        &:hover::after {
+          content: "←";
         }
-        a {
-          &:hover::after {
-            content: "←";
-          }
-          &::after {
-            content: "→";
-          }
+        &::after {
+          content: "→";
         }
       }
       a {
