@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "kistauri",
+  "alias": "davidkistauri.now.sh",
   "builds": [
     {
       "src": "package.json",
