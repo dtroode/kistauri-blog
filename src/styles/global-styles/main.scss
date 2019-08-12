@@ -228,10 +228,13 @@ p {
   &.main__content__tag-container {
     margin-top: 0;
   }
-  &.time-tags {
-    font-style: italic;
+  &.date-tags {
+    font-size: 0.8rem;
+    * {
+      margin-right: var(--fifth-padding);
+    }
     a {
-      margin-right: var(--fourth-padding);
+      text-decoration: underline;
       color: inherit;
       &:hover {
         color: var(--accent-red);

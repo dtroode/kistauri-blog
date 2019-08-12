@@ -34,6 +34,7 @@ const BlogList = ({ pageContext, data }) => {
         →
       </Link>
     );
+  const date = new Date();
   return (
     <Layout pageClass="blog" title="Давид Кистаури. Блог">
       <Helmet>
@@ -54,19 +55,27 @@ const BlogList = ({ pageContext, data }) => {
             <Link to={node.fields.slug}>
               <section className="art__cont">
                 <h2>{node.frontmatter.title}</h2>
-                <p className="time-tags">
+                <p>{node.frontmatter.description}</p>
+                <p className="date-tags">
                   {/* Date of post written */}
-                  <span>{node.frontmatter.date}</span> • {/* Post read time */}
-                  <span>{node.timeToRead}</span> мин.
-                  <br />
+                  <span title={node.frontmatter.date}>
+                    {(() => {
+                      switch (true) {
+                        case node.frontmatter.date.endsWith(date.getFullYear()):
+                          return node.frontmatter.date.slice(
+                            0,
+                            node.frontmatter.date.length - 5
+                          );
+                        default:
+                          return node.frontmatter.date;
+                      }
+                    })()}
+                  </span>
                   {/* All tags for this post */}
                   {node.frontmatter.tags.map(tag => (
-                    <>
-                      <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
-                    </>
+                    <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
                   ))}
                 </p>
-                <p>{node.frontmatter.description}</p>
               </section>
             </Link>
           </article>
@@ -102,7 +111,6 @@ export const blogListQuery = graphql`
             categories
             tags
           }
-          timeToRead
         }
       }
     }

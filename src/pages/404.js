@@ -5,10 +5,12 @@ import { graphql } from "gatsby";
 import "../styles/articles.scss";
 import "../styles/media.scss";
 import Layout from "../components/layout";
+import kebabCase from "lodash/kebabCase";
 import SEO from "../components/seo";
 
 const ErrorPage = props => {
   const PostsList = props.data.LatestPosts.edges;
+  const date = new Date();
   return (
     <Layout pageClass="error" title="404. Страница не найдена">
       <Helmet>
@@ -74,11 +76,27 @@ const ErrorPage = props => {
             <Link to={node.fields.slug}>
               <section className="art__cont">
                 <h2>{node.frontmatter.title}</h2>
-                <p>
-                  <span>{node.frontmatter.date}</span> •{" "}
-                  <span>{node.timeToRead}</span> мин.
-                </p>
                 <p>{node.frontmatter.description}</p>
+                <p className="date-tags">
+                  {/* Date of post written */}
+                  <span title={node.frontmatter.date}>
+                    {(() => {
+                      switch (true) {
+                        case node.frontmatter.date.endsWith(date.getFullYear()):
+                          return node.frontmatter.date.slice(
+                            0,
+                            node.frontmatter.date.length - 5
+                          );
+                        default:
+                          return node.frontmatter.date;
+                      }
+                    })()}
+                  </span>
+                  {/* All tags for this post */}
+                  {node.frontmatter.tags.map(tag => (
+                    <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
+                  ))}
+                </p>
               </section>
             </Link>
           </article>
@@ -106,8 +124,8 @@ export const listQuery = graphql`
             date(formatString: "D MMMM YYYY", locale: "ru")
             description
             categories
+            tags
           }
-          timeToRead
         }
       }
     }

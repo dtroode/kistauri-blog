@@ -52,6 +52,9 @@ footer.foot--post {
 section {
   &.main__art-cont {
     max-width: 700px;
+    section > p:first-child {
+      margin-top: 0;
+    }
     h2,
     p {
       width: 100%;
@@ -93,12 +96,9 @@ section {
     }
     p {
       margin-top: var(--third-padding);
-      &.time-tags {
+      &.date-tags {
         width: unset;
-        margin: 0;
-        font-weight: 600;
         a {
-          font-weight: 600;
           color: inherit;
           &:hover {
             color: var(--accent-red);

@@ -1,12 +1,4 @@
-import { Link } from "gatsby";
 import React from "react";
-
-// Component for using Client Side Routing with classname
-const ListLink = props => (
-  <Link className={props.className} to={props.to}>
-    {props.children}
-  </Link>
-);
 
 const Footer = props => {
   const title = props.title;
