@@ -292,8 +292,12 @@ a {
       background-color: var(--accent-red-50);
     }
   }
-  &.a--active:hover {
-    background-color: var(--accent-blue);
+  &.a--active {
+    pointer-events: none;
+    cursor: default;
+    &:hover {
+      background-color: var(--accent-blue);
+    }
   }
 }
 
