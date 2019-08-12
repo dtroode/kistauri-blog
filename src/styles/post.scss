@@ -89,10 +89,7 @@ section {
     a code,
     li code,
     span code {
-      padding: 0.25rem;
-      border-radius: var(--fifth-padding);
-      color: var(--additional-fg);
-      background-color: var(--additional-bg);
+      background-color: unset;
     }
     p {
       margin-top: var(--third-padding);
@@ -154,23 +151,13 @@ section {
     }
     blockquote {
       max-width: 100%;
-      &.faktoid {
-        position: absolute;
-        left: 800px;
-        float: right;
-        max-width: 300px;
-        margin-top: var(--third-padding);
-        margin-right: var(--side-padding);
-        margin-left: 0;
-        a,
-        img {
-          display: block;
-        }
-      }
-
       p:first-child {
         margin-top: 0;
       }
+    }
+    twitter-widget {
+      width: 100% !important;
+      margin-top: 1rem !important;
     }
     pre {
       overflow-x: scroll;
@@ -201,14 +188,5 @@ section {
     li p {
       margin-top: 0;
     }
-  }
-}
-
-@media screen and (max-width: 938.4px) {
-  // 700px + 200px + 38.4 (--side-padding)
-  section.main__art-cont blockquote.faktoid {
-    position: static;
-    margin-right: 0;
-    margin-left: var(--third-padding);
   }
 }
