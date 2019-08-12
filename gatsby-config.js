@@ -4,8 +4,8 @@ module.exports = {
     description: `Назови любое слово и я сделаю об этом сайт`,
     author: `Давид Кистаури`,
     image: `/img/preview.jpg`,
-    siteUrl: `https://kistauri.dtroode.now.sh/`,
-    blogUrl: `https://kistauri.dtroode.now.sh/blog/`
+    siteUrl: `https://davidkistauri.now.sh/`,
+    blogUrl: `https://davidkistauri.now.sh/blog/`
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -64,8 +64,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: `https://kistauri.dtroode.now.sh/`,
-        sitemap: `https://kistauri.dtroode.now.sh/sitemap.xml`,
+        host: `https://davidkistauri.now.sh/`,
+        sitemap: `https://davidkistauri.now.sh/sitemap.xml`,
         policy: [{ userAgent: "*", allow: "/" }]
       }
     },

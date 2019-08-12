@@ -9,7 +9,7 @@ const IndexPage = () => {
   return (
     <Layout pageClass="portfolio" title="Давид Кистаури">
       <Helmet>
-        <link rel="canonical" href="https://kistauri.dtroode.now.sh/" />
+        <link rel="canonical" href="https://davidkistauri.now.sh/" />
       </Helmet>
       <SEO
         title=">_<"
@@ -61,7 +61,7 @@ const IndexPage = () => {
         <h2>О работах</h2>
         <ol className="main__arts">
           <li>
-            <a href="https://kistauri.dtroode.now.sh/blog">
+            <a href="https://davidkistauri.now.sh/blog">
               <strong>Блог</strong>
             </a>{" "}
             — 2019
@@ -121,7 +121,7 @@ const IndexPage = () => {
                 <strong>Как дизайнер</strong>
                 <br />
                 Придумал дизайн бренда, придумал дизайн сайта,{" "}
-                <a href="https://kistauri.dtroode.now.sh/blog/all/masterbuket-2/">
+                <a href="https://davidkistauri.now.sh/blog/all/masterbuket-2/">
                   придумал редизайн сайта.
                 </a>
               </li>

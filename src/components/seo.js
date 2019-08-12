@@ -61,7 +61,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: `https://kistauri.dtroode.now.sh${image}`
+          content: `https://davidkistauri.now.sh${image}`
         },
         {
           name: `twitter:card`,
@@ -81,7 +81,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:image`,
-          content: `https://kistauri.dtroode.now.sh${image}`
+          content: `https://davidkistauri.now.sh${image}`
         },
         {
           name: `apple-mobile-web-app-capable`,

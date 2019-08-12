@@ -11,7 +11,7 @@ const ListLink = props => (
 const Footer = props => {
   const title = props.title;
   // Link of page
-  const link = `https://kistauri.dtroode.now.sh${props.link}`;
+  const link = `https://davidkistauri.now.sh${props.link}`;
   // Variable with share content. Uses only for posts
   let share = "";
 
