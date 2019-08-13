@@ -30,36 +30,31 @@
     }
   }
   main {
-    section.main__art-cont {
+    section.main__sect--text {
       pre {
         max-width: calc(
           100vw - 2 * var(--third-padding) - 2 * var(--side-padding)
         );
       }
-      blockquote.faktoid {
-        float: unset;
-        margin-top: var(--third-padding);
-        margin-left: 0;
-      }
     }
   }
   footer {
-    section {
+    section.foot__sect {
       grid-template-columns: unset;
       grid-template-rows: auto auto;
-      nav {
+      nav.foot__sect__nav {
         display: block;
         margin-top: var(--fourth-padding);
         margin-right: 0;
       }
     }
-    &.foot--post section {
+    &.foot--post section.foot__sect {
       grid-template-columns: unset;
       grid-template-rows: auto auto auto;
     }
   }
-  section.main__arts,
-  ol.main__arts {
+  section.main__sect--arts,
+  ol.main__ol--arts {
     grid-template-columns: 1fr;
   }
   h1,

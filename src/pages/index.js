@@ -16,7 +16,7 @@ const IndexPage = () => {
         description="Сайт Давида Кистаури. Назови любое слово и я сделаю о нем сайт."
         image="/img/preview.jpg"
       />
-      <section className="main__content">
+      <section className="main__sect--content">
         <h2>Обо мне</h2>
         <ol>
           <li>
@@ -47,7 +47,7 @@ const IndexPage = () => {
         </ol>
       </section>
       <hr />
-      <section className="main__content">
+      <section className="main__sect--content">
         <h2>О медиа</h2>
         <ol>
           <li>
@@ -58,9 +58,9 @@ const IndexPage = () => {
         </ol>
       </section>
       <hr />
-      <section className="main__content">
+      <section className="main__sect--content">
         <h2>О работах</h2>
-        <ol className="main__arts">
+        <ol className="main__ol--arts">
           <li>
             <a href="https://davidkistauri.now.sh/blog">
               <strong>Блог</strong>
@@ -269,7 +269,7 @@ const IndexPage = () => {
         </ol>
       </section>
       <hr />
-      <section className="main__content">
+      <section className="main__sect--content">
         <h2>Об остальном</h2>
         <ol>
           <li>

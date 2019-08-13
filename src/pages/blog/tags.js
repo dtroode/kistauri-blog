@@ -25,14 +25,17 @@ const TagsPage = ({
         description="Блог Давида Кистаури. Теги"
         image="/img/preview.jpg"
       />
-      <section className="main__content">
-        <h2 className="main__content__tag-header">Теги по количеству постов</h2>
-        <p className="main__content__tag-container">
+      <section className="main__sect--content">
+        <h2 className="main__sect--content__header">
+          Теги по количеству постов
+        </h2>
+        <p className="main__sect--content__container">
           {/* All tags sorted */}
           {group.map(tag => (
             <Link
-              className="a--secondary"
               to={`/blog/tags/${kebabCase(tag.fieldValue)}/`}
+              key={tag.fieldValue}
+              className="a--secondary"
             >
               ({tag.totalCount}) {tag.fieldValue}
             </Link>

@@ -5,7 +5,7 @@ footer.foot--post {
       margin-top: var(--secondary-padding);
     }
     nav {
-      &.foot__share {
+      &.foot__sect__nav--share {
         display: block;
         a {
           background-color: var(--main-bg);
@@ -49,7 +49,7 @@ footer.foot--post {
 }
 
 section {
-  &.main__art-cont {
+  &.main__sect--text {
     max-width: 700px;
     section {
       & > p:not(:first-child) {
@@ -64,7 +64,7 @@ section {
       }
       h3 {
         margin-top: 1rem;
-        & + p {
+        & + p:not(:first-child) {
           margin-top: 0;
         }
       }
@@ -100,10 +100,10 @@ section {
           }
         }
       }
-
       a {
         font-size: inherit;
         color: var(--accent-blue);
+        text-decoration: none;
         &:hover {
           color: var(--accent-red);
         }

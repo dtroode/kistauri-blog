@@ -17,10 +17,10 @@ const ErrorPage = () => {
         description="404. Сайт не получился."
         image="/img/preview.jpg"
       />
-      <section className="main__arts">
-        <article key="main__arts__inf">
-          <Link to="/">
-            <section className="art__cont">
+      <section className="main__sect--arts">
+        <article className="main__sect--arts__art">
+          <Link to="/" className="main__sect--arts__art__link">
+            <section className="main__sect--arts__art__link__sect">
               <h2>Ты столкнулся с ошибкой</h2>
               <p>
                 Что произошло: возможно, ты ошибся ссылкой или перешел по
@@ -31,11 +31,12 @@ const ErrorPage = () => {
             </section>
           </Link>
         </article>
-        <article key="main__arts__portfolio">
+        <article className="main__sect--arts__art">
           <a
             href={`mailto:davidkis113@gmail.com?subject=Я нашел ошибку на сайте`}
+            className="main__sect--arts__art__link"
           >
-            <section className="art__cont">
+            <section className="main__sect--arts__art__link__sect">
               <h2>Сообщить об ошибке</h2>
               <p>А еще можно сообщить автору об ошибке нажав на этот блок.</p>
             </section>

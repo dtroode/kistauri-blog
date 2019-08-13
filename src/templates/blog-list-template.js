@@ -44,15 +44,16 @@ const BlogList = ({ pageContext, data }) => {
         description="Блог Давида Кистаури. Назови любое слово и я сделаю о нем сайт."
         image="/img/preview.jpg"
       />
-      <section className="main__arts">
+      <section className="main__sect--arts">
         {/* Displaying all articles according to limit */}
         {PostsList.map(({ node }) => (
           <article
             id={node.frontmatter.categories}
             key={node.frontmatter.title}
+            className="main__sect--arts__art"
           >
-            <Link to={node.fields.slug}>
-              <section className="art__cont">
+            <Link to={node.fields.slug} className="main__sect--arts__art__link">
+              <section className="main__sect--arts__art__link__sect">
                 <h2>{node.frontmatter.title}</h2>
                 <p>{node.frontmatter.description}</p>
                 <p className="date-tags">
@@ -73,14 +74,14 @@ const BlogList = ({ pageContext, data }) => {
                   <span>·</span>
                   {/* All tags for this post */}
                   {node.frontmatter.tags.map(tag => (
-                    <span>{tag}</span>
+                    <span key={tag}>{tag}</span>
                   ))}
                 </p>
               </section>
             </Link>
           </article>
         ))}
-        <section className="main__arts__pages">
+        <section className="main__sect--arts__pages">
           {nextPageLink}
           {previousPageLink}
         </section>

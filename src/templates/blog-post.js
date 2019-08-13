@@ -22,7 +22,7 @@ export default ({ data }) => {
         description={post.frontmatter.description}
         image={post.frontmatter.hero.childImageSharp.fluid.src}
       />
-      <section className="main__art-cont">
+      <section className="main__sect--text">
         {/* Content of post converted to HTML */}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <p className="date-tags">
@@ -43,7 +43,13 @@ export default ({ data }) => {
           <span>·</span>
           {/* All tags for this post */}
           {post.frontmatter.tags.map(tag => (
-            <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
+            <Link
+              to={`/blog/tags/${kebabCase(tag)}`}
+              key={tag}
+              className="date-tags__a"
+            >
+              {tag}
+            </Link>
           ))}
         </p>
       </section>

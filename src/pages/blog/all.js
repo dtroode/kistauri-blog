@@ -43,16 +43,16 @@ const AllPage = props => {
         description="Блог Давида Кистаури. Посты"
         image="/img/preview.jpg"
       />
-      <section className="main__content">
-        <h2 className="main__content__tag-header">
+      <section className="main__sect--content">
+        <h2 className="main__sect--content__header">
           {props.data.AllPosts.totalCount}{" "}
           {postsOnNumbers(props.data.AllPosts.totalCount)}
         </h2>
-        <p className="main__content__tag-container">
+        <p className="main__sect--content__container">
           {/* All posts list */}
           {AllPostsList.map(({ node }) => (
             <React.Fragment key={node.frontmatter.title}>
-              <Link className="a--secondary" to={node.fields.slug}>
+              <Link to={node.fields.slug} className="a--secondary">
                 {node.frontmatter.title}
               </Link>
               <br />

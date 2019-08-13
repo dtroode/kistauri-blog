@@ -10,6 +10,7 @@ button {
 }
 
 html {
+  height: 100%;
   font-size: 100%;
 }
 
@@ -20,10 +21,6 @@ html {
       sans-serif;
     font-feature-settings: "cv08" 1;
   }
-}
-
-html {
-  height: 100%;
 }
 
 body {
@@ -53,7 +50,7 @@ footer {
 header {
   align-items: start;
   background-color: var(--additional-bg);
-  &.head--error nav a {
+  &.head--error a.head__nav__a {
     color: var(--additional-fg);
     background-color: var(--additional-fg);
     &:hover {
@@ -69,13 +66,12 @@ header {
       }
     }
   }
-  nav {
+  nav.head__nav {
     margin-bottom: var(--fourth-padding);
-    a {
+    a.head__nav__a {
       margin-bottom: var(--fifth-padding);
       &:hover {
         color: var(--main-bg);
-        background-color: var(--main-fg);
       }
       &.a--secondary {
         margin-top: 0;
@@ -86,6 +82,16 @@ header {
       }
     }
   }
+
+  h1.head__header {
+    display: block;
+    margin: 0;
+    font-size: 2.25em;
+    font-weight: 700;
+    span.head__header__span {
+      opacity: 0.5;
+    }
+  }
 }
 
 main,
@@ -94,7 +100,10 @@ footer {
 }
 
 main {
-  &.main--error section.main__arts article {
+  &.main--portfolio a {
+    text-decoration: none;
+  }
+  &.main--error article.main__sect--arts__art {
     background-color: var(--accent-red);
     &:hover {
       background-color: var(--accent-red);
@@ -106,12 +115,15 @@ main {
       transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
     }
   }
-  section {
-    &.main__content:last-of-type {
+  section.main__sect--content {
+    &:last-of-type {
       ol,
       ul {
         margin-bottom: 0;
       }
+    }
+    h2.main__sect--content__header {
+      margin-bottom: var(--fourth-padding);
     }
   }
   a.a--secondary {
@@ -129,23 +141,20 @@ main {
 footer {
   color: var(--additional-fg);
   background-color: var(--additional-bg);
-  &.foot--error section {
-    nav.foot__cont a {
-      color: var(--additional-fg);
-      background-color: var(--additional-fg);
-      &:hover {
-        color: var(--accent-red);
-        background-color: var(--accent-red);
-      }
+  &.foot--error nav.foot__sect__nav--links a {
+    color: var(--additional-fg);
+    background-color: var(--additional-fg);
+    &:hover {
+      color: var(--accent-red);
+      background-color: var(--accent-red);
     }
   }
-  section {
-    h2 {
+  section.foot__sect {
+    h2.foot__sect__header {
       margin-bottom: var(--fourth-padding);
     }
-    nav {
-      vertical-align: top;
-      &.foot__cont a {
+    nav.foot__sect__nav {
+      &--links a {
         &:hover::after {
           content: "←";
         }
@@ -153,7 +162,7 @@ footer {
           content: "→";
         }
       }
-      a {
+      a.foot__sect__nav__a {
         margin-top: var(--fifth-padding);
       }
     }
@@ -166,16 +175,6 @@ h2 {
   letter-spacing: -0.022em;
 }
 
-h1 {
-  display: block;
-  margin: 0;
-  font-size: 2.25em;
-  font-weight: 700;
-  span {
-    opacity: 0.5;
-  }
-}
-
 h2 {
   margin-top: 0;
   margin-bottom: var(--third-padding);
@@ -183,9 +182,6 @@ h2 {
   font-weight: 700;
   & + p {
     margin-top: var(--third-padding);
-  }
-  &.main__content__tag-header {
-    margin-bottom: var(--fourth-padding);
   }
 }
 
@@ -225,7 +221,7 @@ p {
   &:not(:first-child) {
     margin-top: var(--third-padding);
   }
-  &.main__content__tag-container {
+  &.main__sect--content__container {
     margin-top: 0;
   }
   &.date-tags {
@@ -233,7 +229,7 @@ p {
     * {
       margin-right: var(--fifth-padding);
     }
-    a {
+    a.date-tags__a {
       text-decoration: underline;
       color: inherit;
       &:hover {
@@ -250,7 +246,6 @@ p a {
 a {
   flex: inherit;
   line-height: 1em;
-  text-decoration: none;
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
     color: var(--accent-red);
@@ -270,6 +265,7 @@ a {
     margin-right: var(--fifth-padding);
     padding: var(--fourth-padding);
     border-radius: var(--fourth-padding);
+    text-decoration: none;
     font-weight: 600;
   }
   &.a--primary {

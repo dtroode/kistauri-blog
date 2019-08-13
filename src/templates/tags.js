@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import "../styles/articles.scss";
 import "../styles/media.scss";
 import Layout from "../components/layout";
-import kebabCase from "lodash/kebabCase";
 import SEO from "../components/seo";
 
 function postsOnNumbers(number) {
@@ -33,7 +32,7 @@ const Tags = ({ pageContext, data }) => {
   // Formatting text according to posts count
   const tagHeader = (
     <>
-      <span>
+      <span className="head__header__span">
         {totalCount} {postsOnNumbers(totalCount)} с тегом
       </span>
       <br />
@@ -48,16 +47,20 @@ const Tags = ({ pageContext, data }) => {
         description={`Блог Давида Кистаури. тег: ${tag}`}
         image="/img/preview.jpg"
       />
-      <section className="main__arts">
+      <section className="main__sect--arts">
         {/* Displaying all articles, that match this tag */}
         {edges.map(({ node }) => {
           return (
             <article
               id={node.frontmatter.categories}
               key={node.frontmatter.title}
+              className="main__sect--arts__art"
             >
-              <Link to={node.fields.slug}>
-                <section className="art__cont">
+              <Link
+                to={node.fields.slug}
+                className="main__sect--arts__art__link"
+              >
+                <section className="main__sect--arts__art__link__sect">
                   <h2>{node.frontmatter.title}</h2>
                   <p>{node.frontmatter.description}</p>
                   <p className="date-tags">
@@ -80,7 +83,7 @@ const Tags = ({ pageContext, data }) => {
                     <span>·</span>
                     {/* All tags for this post */}
                     {node.frontmatter.tags.map(tag => (
-                      <span>{tag}</span>
+                      <span key={tag}>{tag}</span>
                     ))}
                   </p>
                 </section>
