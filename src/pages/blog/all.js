@@ -9,35 +9,20 @@ import SEO from "../../components/seo";
 
 function postsOnNumbers(number) {
   const names = ["пост", "поста", "постов"];
-  const numbersRange = [
-    "0",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "11",
-    "12",
-    "13",
-    "14",
-    "15",
-    "16",
-    "17",
-    "18",
-    "19"
-  ];
   const numberStringified = number.toString();
   return names[
-    numbersRange.forEach(numb => {
-      return numberStringified.endsWith(numb);
-    })
-      ? 2
-      : numberStringified.endsWith("1")
-      ? 0
+    numberStringified.endsWith("1")
+      ? numberStringified.endsWith("11")
+        ? 2
+        : 0
       : numberStringified.endsWith("2") ||
         numberStringified.endsWith("3") ||
         numberStringified.endsWith("4")
-      ? 1
+      ? numberStringified.endsWith("12") ||
+        numberStringified.endsWith("13") ||
+        numberStringified.endsWith("14")
+        ? 2
+        : 1
       : 2
   ];
 }
@@ -66,12 +51,12 @@ const AllPage = props => {
         <p className="main__content__tag-container">
           {/* All posts list */}
           {AllPostsList.map(({ node }) => (
-            <>
+            <React.Fragment key={node.frontmatter.title}>
               <Link className="a--secondary" to={node.fields.slug}>
                 {node.frontmatter.title}
               </Link>
               <br />
-            </>
+            </React.Fragment>
           ))}
         </p>
       </section>
