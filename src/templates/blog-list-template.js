@@ -5,7 +5,6 @@ import { graphql } from "gatsby";
 import "../styles/articles.scss";
 import "../styles/media.scss";
 import Layout from "../components/layout";
-import kebabCase from "lodash/kebabCase";
 import SEO from "../components/seo";
 
 const BlogList = ({ pageContext, data }) => {
@@ -71,9 +70,10 @@ const BlogList = ({ pageContext, data }) => {
                       }
                     })()}
                   </span>
+                  <span>·</span>
                   {/* All tags for this post */}
                   {node.frontmatter.tags.map(tag => (
-                    <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
+                    <span>{tag}</span>
                   ))}
                 </p>
               </section>

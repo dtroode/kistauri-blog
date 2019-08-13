@@ -80,6 +80,9 @@ header {
       &.a--secondary {
         margin-top: 0;
         background-color: var(--main-bg);
+        &:hover {
+          color: var(--main-fg);
+        }
       }
     }
   }
@@ -92,22 +95,15 @@ footer {
 
 main {
   &.main--error section.main__arts article {
-    background-color: var(--main-fg);
+    background-color: var(--accent-red);
     &:hover {
       background-color: var(--accent-red);
-      &:nth-of-type(2) a h2 {
-        color: var(--main-fg);
-      }
-      a {
+      &:nth-of-type(2) a p {
         color: var(--accent-red);
       }
     }
-    &:nth-of-type(1),
-    &:nth-of-type(2) {
-      background-color: var(--accent-red);
-    }
-    a {
-      color: var(--main-fg);
+    a p {
+      transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
     }
   }
   section {
@@ -116,6 +112,13 @@ main {
       ul {
         margin-bottom: 0;
       }
+    }
+  }
+  a.a--secondary {
+    margin-top: var(--fifth-padding);
+    background-color: var(--additional-bg);
+    &:hover {
+      color: var(--additional-fg);
     }
   }
   hr {
@@ -151,9 +154,7 @@ footer {
         }
       }
       a {
-        display: inline-block;
         margin-top: var(--fifth-padding);
-        margin-right: var(--fifth-padding);
       }
     }
   }
@@ -204,7 +205,6 @@ table {
 }
 
 p,
-a,
 ul,
 ol {
   font-weight: 500;
@@ -251,7 +251,6 @@ a {
   flex: inherit;
   line-height: 1em;
   text-decoration: none;
-  color: var(--accent-blue);
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
     color: var(--accent-red);
@@ -261,6 +260,9 @@ a {
     &:hover {
       color: var(--accent-red);
     }
+  }
+  &:not(.a--primary) {
+    color: var(--accent-blue);
   }
   &.a--primary,
   &.a--secondary {
@@ -284,13 +286,8 @@ a {
       }
     }
   }
-  &.a--secondary {
-    margin-top: var(--fifth-padding);
-    background-color: var(--additional-bg);
-    &:hover {
-      color: var(--additional-fg);
-      background-color: var(--accent-red-50);
-    }
+  &.a--secondary:hover {
+    background-color: var(--accent-red-50);
   }
   &.a--active {
     pointer-events: none;

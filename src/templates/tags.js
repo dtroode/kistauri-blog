@@ -77,9 +77,10 @@ const Tags = ({ pageContext, data }) => {
                         }
                       })()}
                     </span>
+                    <span>·</span>
                     {/* All tags for this post */}
                     {node.frontmatter.tags.map(tag => (
-                      <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
+                      <span>{tag}</span>
                     ))}
                   </p>
                 </section>

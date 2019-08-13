@@ -11,7 +11,6 @@ section.main__arts {
   article {
     position: relative;
     border-radius: var(--fourth-padding);
-    background-color: #e5e5ea;
     transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
     &:hover {
       transform: translateY(-0.6rem);
@@ -34,13 +33,15 @@ section.main__arts {
       height: calc(100% - 2 * var(--third-padding));
       padding: var(--third-padding);
       border-radius: var(--fourth-padding);
-      color: #1c1c1e;
       &:hover {
         color: #1c1c1e;
       }
-      p {
-        width: auto;
-        margin-top: var(--third-padding);
+      section {
+        color: #1c1c1e;
+        p {
+          width: auto;
+          margin-top: var(--third-padding);
+        }
       }
     }
   }

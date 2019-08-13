@@ -8,7 +8,6 @@ footer.foot--post {
       &.foot__share {
         display: block;
         a {
-          border-radius: var(--fourth-padding);
           background-color: var(--main-bg);
           &.tw-share-button {
             color: #1da1f2;
@@ -52,48 +51,47 @@ footer.foot--post {
 section {
   &.main__art-cont {
     max-width: 700px;
-    section > p:first-child {
-      margin-top: 0;
-    }
-    h2,
-    p {
-      width: 100%;
-    }
-    h2 {
-      margin-top: 3rem;
-    }
-    h3 {
-      margin-top: 1rem;
-      & + p {
-        margin-top: 0;
+    section {
+      & > p:not(:first-child) {
+        margin-top: var(--third-padding);
       }
-    }
-    p,
-    a,
-    ul,
-    ol,
-    code,
-    blockquote {
-      font-weight: 400;
-      line-height: 1.5em;
-    }
-    p,
-    a,
-    ul,
-    ol {
-      code {
-        color: var(--main-dark);
+      h2,
+      p {
+        width: 100%;
       }
-    }
-    p code,
-    a code,
-    li code,
-    span code {
-      background-color: unset;
-    }
-    p {
-      margin-top: var(--third-padding);
-      &.date-tags {
+      h2 {
+        margin-top: 3rem;
+      }
+      h3 {
+        margin-top: 1rem;
+        & + p {
+          margin-top: 0;
+        }
+      }
+      p,
+      a,
+      ul,
+      ol,
+      code,
+      blockquote {
+        font-weight: 400;
+        line-height: 1.5em;
+      }
+      p,
+      a,
+      ul,
+      ol {
+        code {
+          color: var(--main-dark);
+        }
+      }
+      p code,
+      a code,
+      li code,
+      span code {
+        background-color: unset;
+      }
+      p.date-tags {
         width: unset;
         a {
           color: inherit;
@@ -102,91 +100,92 @@ section {
           }
         }
       }
-    }
-    a {
-      font-size: inherit;
-      color: var(--accent-blue);
-      &:hover {
-        color: var(--accent-red);
-      }
-      &:visited {
-        color: var(--accent-indigo);
+
+      a {
+        font-size: inherit;
+        color: var(--accent-blue);
         &:hover {
           color: var(--accent-red);
         }
+        &:visited {
+          color: var(--accent-indigo);
+          &:hover {
+            color: var(--accent-red);
+          }
+        }
       }
-    }
-    img,
-    video {
-      width: 100%;
-      border-radius: var(--fourth-padding);
-      background-color: var(--additional-bg);
-    }
-    ul,
-    ol {
-      padding-left: var(--primary-padding);
-      li {
-        list-style-position: outside;
+      img,
+      video {
+        width: 100%;
+        border-radius: var(--fourth-padding);
+        background-color: var(--additional-bg);
       }
-    }
-    figure {
-      margin: 1rem 0 0 0;
-    }
-    figcaption {
-      margin-top: 0.3rem;
-      font-size: 0.8em;
-      &:last-child {
-        margin-bottom: 0;
+      ul,
+      ol {
+        padding-left: var(--primary-padding);
+        li {
+          list-style-position: outside;
+        }
       }
-    }
-    span {
-      &.gatsby-resp-image-background-image {
-        display: block;
+      figure {
+        margin: 1rem 0 0 0;
+      }
+      figcaption {
+        margin-top: 0.3rem;
+        font-size: 0.8em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      span {
+        &.gatsby-resp-image-background-image {
+          display: block;
+          border-radius: var(--fourth-padding);
+        }
+      }
+      blockquote,
+      pre {
         border-radius: var(--fourth-padding);
       }
-    }
-    blockquote,
-    pre {
-      border-radius: var(--fourth-padding);
-    }
-    blockquote {
-      max-width: 100%;
-      p:first-child {
+      blockquote {
+        max-width: 100%;
+        p:first-child {
+          margin-top: 0;
+        }
+      }
+      twitter-widget {
+        width: 100% !important;
+        margin-top: 1rem !important;
+      }
+      pre {
+        overflow-x: scroll;
+        margin-top: var(--third-padding);
+        margin-bottom: 0;
+        padding: var(--third-padding);
+      }
+      code {
+        font-size: 1em;
+        span {
+          font-weight: unset;
+        }
+      }
+      hr + * {
+        margin-top: 0;
+        & > * {
+          margin-top: 0;
+        }
+      }
+      code,
+      pre {
+        scrollbar-width: none;
+      }
+      code::-webkit-scrollbar,
+      pre::-webkit-scrollbar {
+        height: 0;
+      }
+      li p {
         margin-top: 0;
       }
-    }
-    twitter-widget {
-      width: 100% !important;
-      margin-top: 1rem !important;
-    }
-    pre {
-      overflow-x: scroll;
-      margin-top: var(--third-padding);
-      margin-bottom: 0;
-      padding: var(--third-padding);
-    }
-    code {
-      font-size: 1em;
-      span {
-        font-weight: unset;
-      }
-    }
-    hr + * {
-      margin-top: 0;
-      & > * {
-        margin-top: 0;
-      }
-    }
-    code,
-    pre {
-      scrollbar-width: none;
-    }
-    code::-webkit-scrollbar,
-    pre::-webkit-scrollbar {
-      height: 0;
-    }
-    li p {
-      margin-top: 0;
     }
   }
 }

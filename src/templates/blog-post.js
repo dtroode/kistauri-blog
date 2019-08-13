@@ -40,6 +40,7 @@ export default ({ data }) => {
               }
             })()}
           </span>
+          <span>·</span>
           {/* All tags for this post */}
           {post.frontmatter.tags.map(tag => (
             <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
