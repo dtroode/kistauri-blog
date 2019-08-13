@@ -7,6 +7,41 @@ import Layout from "../components/layout";
 import kebabCase from "lodash/kebabCase";
 import SEO from "../components/seo";
 
+function postsOnNumbers(number) {
+  const names = ["пост", "поста", "постов"];
+  const numbersRange = [
+    "0",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19"
+  ];
+  const numberStringified = number.toString();
+  return names[
+    numbersRange.forEach(numb => {
+      return numberStringified.endsWith(numb);
+    })
+      ? 2
+      : numberStringified.endsWith("1")
+      ? 0
+      : numberStringified.endsWith("2") ||
+        numberStringified.endsWith("3") ||
+        numberStringified.endsWith("4")
+      ? 1
+      : 2
+  ];
+}
+
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext; // Getting tag from context in graphql
   const { edges, totalCount } = data.allMarkdownRemark;
@@ -14,8 +49,7 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = (
     <>
       <span>
-        {totalCount}{" "}
-        {totalCount === 1 ? "пост" : 2 || 3 || 4 ? "поста" : "постов"} с тегом
+        {totalCount} {postsOnNumbers(totalCount)} с тегом
       </span>
       <br />
       {tag}
