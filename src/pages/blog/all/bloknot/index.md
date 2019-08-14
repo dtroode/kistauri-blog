@@ -1,8 +1,6 @@
 ---
-layout: blog
 title: "Спустя много лет: как документировать"
 description: Заметки по дням. Как оценивать свой день и получать опыт отовсюду
-path: /blog/all
 date: 2019-07-18
 hero: /img/preview/bloknot.jpg
 categories: advices
