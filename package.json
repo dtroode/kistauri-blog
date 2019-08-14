@@ -60,7 +60,8 @@
       "name": "Critical Blog",
       "path": "public/blog/index.html",
       "running": false,
-      "webpack": false
+      "webpack": false,
+      "limit": "9 KB"
     },
     {
       "name": "Full",
