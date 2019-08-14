@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
-import "../styles/articles.scss";
+import "../styles/article.scss";
 import "../styles/media.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";

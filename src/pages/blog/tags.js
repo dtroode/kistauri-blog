@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
-import "../../styles/articles.scss";
 import "../../styles/media.scss";
 import kebabCase from "lodash/kebabCase";
 import Layout from "../../components/layout";

@@ -1,0 +1,38 @@
+article.main__sect--arts__art {
+  position: relative;
+  border-radius: var(--fourth-padding);
+  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
+  &:hover {
+    transform: translateY(-0.6rem);
+    box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  &#work {
+    background-color: var(--accent-red-50);
+  }
+  &#thoughts {
+    background-color: var(--accent-green-50);
+  }
+  &#advices {
+    background-color: var(--accent-yellow-50);
+  }
+  &#learning {
+    background-color: var(--accent-blue-50);
+  }
+  a.main__sect--arts__art__link {
+    display: block;
+    height: calc(100% - 2 * var(--third-padding));
+    padding: var(--third-padding);
+    border-radius: var(--fourth-padding);
+    text-decoration: none;
+    &:hover {
+      color: #1c1c1e;
+    }
+    section.main__sect--arts__art__link__sect {
+      color: #1c1c1e;
+      p {
+        width: auto;
+        margin-top: var(--third-padding);
+      }
+    }
+  }
+}

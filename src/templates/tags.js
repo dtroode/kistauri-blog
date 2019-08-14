@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
 import { graphql } from "gatsby";
-import "../styles/articles.scss";
 import "../styles/media.scss";
 import Layout from "../components/layout";
+import Article from "../components/article";
 import SEO from "../components/seo";
 
 function postsOnNumbers(number) {
@@ -39,7 +38,6 @@ const Tags = ({ pageContext, data }) => {
       {tag}
     </>
   );
-  const date = new Date();
   return (
     <Layout pageClass="tag" title={tagHeader}>
       <SEO
@@ -50,46 +48,7 @@ const Tags = ({ pageContext, data }) => {
       <section className="main__sect--arts">
         {/* Displaying all articles, that match this tag */}
         {edges.map(({ node }) => {
-          return (
-            <article
-              id={node.frontmatter.categories}
-              key={node.frontmatter.title}
-              className="main__sect--arts__art"
-            >
-              <Link
-                to={node.fields.slug}
-                className="main__sect--arts__art__link"
-              >
-                <section className="main__sect--arts__art__link__sect">
-                  <h2>{node.frontmatter.title}</h2>
-                  <p>{node.frontmatter.description}</p>
-                  <p className="date-tags">
-                    {/* Date of post written */}
-                    <span title={node.frontmatter.date}>
-                      {(() => {
-                        switch (true) {
-                          case node.frontmatter.date.endsWith(
-                            date.getFullYear()
-                          ):
-                            return node.frontmatter.date.slice(
-                              0,
-                              node.frontmatter.date.length - 5
-                            );
-                          default:
-                            return node.frontmatter.date;
-                        }
-                      })()}
-                    </span>
-                    <span>·</span>
-                    {/* All tags for this post */}
-                    {node.frontmatter.tags.map(tag => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </p>
-                </section>
-              </Link>
-            </article>
-          );
+          return <Article node={node} key={node.frontmatter.title} />;
         })}
       </section>
     </Layout>
