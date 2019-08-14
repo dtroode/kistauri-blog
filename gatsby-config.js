@@ -3,7 +3,7 @@ module.exports = {
     title: `Давид Кистаури`,
     description: `Назови любое слово и я сделаю об этом сайт`,
     author: `Давид Кистаури`,
-    image: `/img/preview.jpg`,
+    image: `/img//src/images/preview.jpg`,
     siteUrl: `https://davidkistauri.now.sh/`,
     blogUrl: `https://davidkistauri.now.sh/blog/`
   },
@@ -38,7 +38,7 @@ module.exports = {
         background_color: `#f2f2f7`,
         theme_color: `#ff3b30`,
         display: `minimal-ui`,
-        icon: `src/images/logo/icon.png` // This path is relative to the root of the site.
+        icon: `src/images/icon.png` // This path is relative to the root of the site.
       }
     },
     {

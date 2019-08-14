@@ -49,7 +49,7 @@ const BlogList = ({ pageContext, data }) => {
       <SEO
         title="Блог"
         description="Блог Давида Кистаури. Назови любое слово и я сделаю о нем сайт."
-        image="/img/preview.jpg"
+        image="/img//src/images/preview.jpg"
       />
       <section className="main__sect--arts">
         {/* Displaying all articles according to limit */}

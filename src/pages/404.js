@@ -15,7 +15,7 @@ const ErrorPage = () => {
       <SEO
         title="404. Страница не найдена"
         description="404. Сайт не получился."
-        image="/img/preview.jpg"
+        image="/img//src/images/preview.jpg"
       />
       <section className="main__sect--arts">
         <article className="main__sect--arts__art">

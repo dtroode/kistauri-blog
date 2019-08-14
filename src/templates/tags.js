@@ -43,7 +43,7 @@ const Tags = ({ pageContext, data }) => {
       <SEO
         title={tag}
         description={`Блог Давида Кистаури. тег: ${tag}`}
-        image="/img/preview.jpg"
+        image="/img//src/images/preview.jpg"
       />
       <section className="main__sect--arts">
         {/* Displaying all articles, that match this tag */}
