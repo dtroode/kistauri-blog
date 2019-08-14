@@ -1,8 +1,6 @@
 ---
-layout: blog
 title: Мастер Букет 2
 description: "Что нового у Мастер Букета: список, причины, процесс, результаты"
-path: /blog/all
 date: 2019-07-31
 hero: /img/preview/masterbuket-2.jpg
 categories: work

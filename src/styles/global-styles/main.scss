@@ -78,6 +78,7 @@ header {
         background-color: var(--main-bg);
         &:hover {
           color: var(--main-fg);
+          background-color: var(--accent-red-50);
         }
       }
     }
