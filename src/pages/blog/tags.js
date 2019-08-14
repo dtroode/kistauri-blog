@@ -22,7 +22,7 @@ const TagsPage = ({
       <SEO
         title="Теги"
         description="Блог Давида Кистаури. Теги"
-        image="/img//src/images/preview.jpg"
+        image="/static/img/preview.jpg"
       />
       <section className="main__sect--content">
         <h2 className="main__sect--content__header">

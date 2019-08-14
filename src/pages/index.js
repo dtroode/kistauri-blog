@@ -13,7 +13,7 @@ const IndexPage = () => {
       <SEO
         title=">_<"
         description="Сайт Давида Кистаури. Назови любое слово и я сделаю о нем сайт."
-        image="/img//src/images/preview.jpg"
+        image="/static/img/preview.jpg"
       />
       <section className="main__sect--content">
         <h2>Обо мне</h2>
