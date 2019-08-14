@@ -40,7 +40,7 @@ const AllPage = props => {
       <SEO
         title="Посты"
         description="Блог Давида Кистаури. Посты"
-        image="/static/img/preview.jpg"
+        image="/img/preview.jpg"
       />
       <section className="main__sect--content">
         <h2 className="main__sect--content__header">

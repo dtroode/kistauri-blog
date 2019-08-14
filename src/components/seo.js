@@ -107,7 +107,7 @@ SEO.defaultProps = {
   meta: [],
   description: `Назови любое слово и я сделаю об этом сайт.`,
   title: `Давид Кистаури`,
-  image: `/static/img/preview.jpg`
+  image: `/img/preview.jpg`
 };
 
 export default SEO;
