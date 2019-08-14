@@ -173,17 +173,13 @@ footer {
     h2.foot__sect__header {
       margin-bottom: var(--fourth-padding);
     }
-    nav.foot__sect__nav {
-      &--links a {
-        &:hover::after {
-          content: "←";
-        }
-        &::after {
-          content: "→";
-        }
-      }
-      a.foot__sect__nav__a {
-        margin-top: var(--fifth-padding);
+    a.foot__sect__nav__a {
+      margin-top: var(--fifth-padding);
+      svg.foot__sect__nav__a__svg {
+        vertical-align: top;
+        width: 1rem;
+        height: 1rem;
+        margin-right: var(--fifth-padding);
       }
     }
   }

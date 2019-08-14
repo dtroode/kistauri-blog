@@ -4,43 +4,35 @@ footer.foot--post {
     h2:nth-of-type(2) {
       margin-top: var(--secondary-padding);
     }
-    nav {
-      &.foot__sect__nav--share {
-        display: block;
-        a {
-          background-color: var(--main-bg);
-          &.tw-share-button {
-            color: #1da1f2;
-            &:hover {
-              background-color: rgba(29, 161, 242, 0.25);
-            }
-            svg {
-              fill: #1da1f2;
-            }
+    nav.foot__sect__nav--share {
+      display: block;
+      a.foot__sect__nav__a {
+        background-color: var(--main-bg);
+        &--twitter {
+          color: #1da1f2;
+          &:hover {
+            background-color: rgba(29, 161, 242, 0.25);
           }
-          &.facebook-share-button {
-            color: #1877f2;
-            &:hover {
-              background-color: rgba(17, 120, 242, 0.25);
-            }
-            svg {
-              fill: #1877f2;
-            }
+          svg.foot__sect__nav__a__svg--twitter {
+            fill: #1da1f2;
           }
-          &.telegram-share-button {
-            color: #2ea6d9;
-            &:hover {
-              background-color: rgba(46, 166, 217, 0.25);
-            }
-            svg {
-              fill: #2ea6d9;
-            }
+        }
+        &--facebook {
+          color: #1877f2;
+          &:hover {
+            background-color: rgba(17, 120, 242, 0.25);
           }
-          svg {
-            vertical-align: top;
-            width: 1rem;
-            height: 1rem;
-            margin-right: var(--fifth-padding);
+          svg.foot__sect__nav__a__svg--facebook {
+            fill: #1877f2;
+          }
+        }
+        &--telegram {
+          color: #2ea6d9;
+          &:hover {
+            background-color: rgba(46, 166, 217, 0.25);
+          }
+          svg.foot__sect__nav__a__svg--telegram {
+            fill: #2ea6d9;
           }
         }
       }
