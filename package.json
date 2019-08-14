@@ -38,6 +38,8 @@
     "typograf": "^6.8.2"
   },
   "devDependencies": {
+    "@size-limit/preset-app": "^2.0.2",
+    "@size-limit/webpack": "^2.0.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -53,12 +55,25 @@
     "gatsby"
   ],
   "license": "MIT",
+  "size-limit": [
+    {
+      "name": "Critical Blog",
+      "path": "public/blog/index.html",
+      "running": false,
+      "webpack": false
+    },
+    {
+      "name": "Full",
+      "path": "public/app-*.js"
+    }
+  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "size": "npm run build && size-limit",
     "now-build": "npm run build"
   },
   "repository": {

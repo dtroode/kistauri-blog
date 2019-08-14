@@ -16,11 +16,11 @@ const BlogList = ({ pageContext, data }) => {
     currentPage === 1 ? (
       ""
     ) : currentPage === 2 ? (
-      <Link className="a--secondary" to="/blog/">
+      <Link to="/blog/" className="a--secondary">
         ←
       </Link>
     ) : (
-      <Link className="a--secondary" to={`/blog/${currentPage - 1}`}>
+      <Link to={`/blog/${currentPage - 1}`} className="a--secondary">
         ←
       </Link>
     );
@@ -29,9 +29,17 @@ const BlogList = ({ pageContext, data }) => {
     currentPage === numPages ? (
       ""
     ) : (
-      <Link className="a--secondary" to={`/blog/${currentPage + 1}`}>
+      <Link to={`/blog/${currentPage + 1}`} className="a--secondary">
         →
       </Link>
+    );
+  const allPostsLink =
+    numPages > 1 ? (
+      <Link to="/blog/all" className="a--secondary">
+        Все посты
+      </Link>
+    ) : (
+      ""
     );
   return (
     <Layout pageClass="blog" title="Давид Кистаури. Блог">
@@ -51,6 +59,7 @@ const BlogList = ({ pageContext, data }) => {
         <section className="main__sect--arts__pages">
           {nextPageLink}
           {previousPageLink}
+          {allPostsLink}
         </section>
       </section>
     </Layout>
