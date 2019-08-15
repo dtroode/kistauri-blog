@@ -53,8 +53,8 @@ module.exports = {
             options: {
               maxWidth: 700,
               showCaptions: true,
-              backgroundColor: `#e5e5ea`,
-              quality: 80,
+              backgroundColor: `transparent`,
+              quality: 75,
               tracedSVG: true
             }
           },
