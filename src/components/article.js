@@ -14,7 +14,7 @@ const Article = props => {
         <section className="main__sect--arts__art__link__sect">
           <h2>{props.node.frontmatter.title}</h2>
           <p>{props.node.frontmatter.description}</p>
-          <p className="date-tags">
+          <p className="post-links">
             {/* Date of post written */}
             <span title={props.node.frontmatter.date}>
               {(() => {

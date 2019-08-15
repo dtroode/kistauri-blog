@@ -241,12 +241,12 @@ p {
   &.main__sect--content__container {
     margin-top: 0;
   }
-  &.date-tags {
+  &.post-links {
     font-size: 0.8rem;
     * {
       margin-right: var(--fifth-padding);
     }
-    a.date-tags__a {
+    a.post-links__a {
       text-decoration: underline;
       color: inherit;
       &:hover {

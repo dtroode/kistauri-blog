@@ -8,9 +8,11 @@ import "../styles/media.scss";
 import "../styles/code.scss";
 import SEO from "../components/seo";
 
-export default ({ data }) => {
+export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
   const date = new Date();
+  const { prev, next } = pageContext;
+
   return (
     <Layout
       pageClass="post"
@@ -25,9 +27,9 @@ export default ({ data }) => {
       <section className="main__sect--text">
         {/* Content of post converted to HTML */}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <p className="date-tags">
+        <p className="post-links">
           {/* Date of post written */}
-          <span title={post.frontmatter.date}>
+          <span title={post.frontmatter.date} className="post-links__span">
             {(() => {
               switch (true) {
                 case post.frontmatter.date.endsWith(date.getFullYear()):
@@ -40,17 +42,33 @@ export default ({ data }) => {
               }
             })()}
           </span>
-          <span>·</span>
+          <span className="post-links__span">·</span>
           {/* All tags for this post */}
           {post.frontmatter.tags.map(tag => (
             <Link
               to={`/blog/tags/${kebabCase(tag)}`}
               key={tag}
-              className="date-tags__a"
+              className="post-links__a"
             >
               {tag}
             </Link>
           ))}
+          <br />
+          {/* Links to next and previous pages */}
+          {prev ? (
+            <Link to={prev.node.fields.slug} className="post-links__a">
+              {prev.node.frontmatter.title} ←
+            </Link>
+          ) : (
+            <span className="post-links__span--inact">←</span>
+          )}
+          {next ? (
+            <Link to={next.node.fields.slug} className="post-links__a">
+              → {next.node.frontmatter.title}
+            </Link>
+          ) : (
+            <span className="post-links__span--inact">→</span>
+          )}
         </p>
       </section>
     </Layout>

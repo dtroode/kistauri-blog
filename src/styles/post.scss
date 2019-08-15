@@ -83,15 +83,6 @@ section {
       span code {
         background-color: unset;
       }
-      p.date-tags {
-        width: unset;
-        a {
-          color: inherit;
-          &:hover {
-            color: var(--accent-red);
-          }
-        }
-      }
       a {
         font-size: inherit;
         color: var(--accent-blue);
@@ -177,6 +168,20 @@ section {
       }
       li p {
         margin-top: 0;
+      }
+    }
+  }
+  p.post-links {
+    width: unset;
+    span.post-links__span {
+      &--inact {
+        opacity: 0.25;
+      }
+    }
+    a.post-links__a {
+      color: inherit;
+      &:hover {
+        color: var(--accent-red);
       }
     }
   }
