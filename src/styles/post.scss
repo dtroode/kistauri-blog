@@ -42,10 +42,15 @@ footer.foot--post {
 
 section {
   &.main__sect--text {
-    max-width: 700px;
     section {
       & > p:not(:first-child) {
         margin-top: var(--third-padding);
+      }
+      h2,
+      h3,
+      p,
+      blockquote {
+        max-width: 700px;
       }
       h2,
       p {
@@ -98,19 +103,25 @@ section {
         }
       }
       img,
-      video {
+      video,
+      iframe {
         width: 100%;
         border-radius: var(--fourth-padding);
         background-color: var(--additional-bg);
       }
+      iframe {
+        height: 500px;
+      }
       ul,
       ol {
+        max-width: calc(700px - var(--primary-padding));
         padding-left: var(--primary-padding);
         li {
           list-style-position: outside;
         }
       }
-      figure {
+      figure,
+      iframe {
         margin: 1rem 0 0 0;
       }
       figcaption {
