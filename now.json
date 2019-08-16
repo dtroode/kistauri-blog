@@ -9,7 +9,7 @@
       "config": { "distDir": "public" }
     }
   ],
-  "headers": [
+  "routes": [
     {
       "source": "**/*.@(html)",
       "headers": [
