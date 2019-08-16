@@ -8,7 +8,6 @@ module.exports = {
     blogUrl: `https://davidkistauri.now.sh/blog/`
   },
   plugins: [
-    `gatsby-plugin-csp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -16,6 +15,14 @@ module.exports = {
     "gatsby-plugin-offline",
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-twitter`,
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        directives: {
+          "content-src": "'self' https://twitter.com/ https://youtube.com"
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
