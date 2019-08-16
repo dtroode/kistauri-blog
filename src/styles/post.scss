@@ -9,8 +9,8 @@ footer.foot--post {
       a.foot__sect__nav__a {
         background-color: var(--main-bg);
         &--twitter {
-          color: #1da1f2;
           &:hover {
+            color: #1da1f2;
             background-color: rgba(29, 161, 242, 0.25);
           }
           svg.foot__sect__nav__a__svg--twitter {
@@ -18,8 +18,8 @@ footer.foot--post {
           }
         }
         &--facebook {
-          color: #1877f2;
           &:hover {
+            color: #1877f2;
             background-color: rgba(17, 120, 242, 0.25);
           }
           svg.foot__sect__nav__a__svg--facebook {
@@ -27,8 +27,8 @@ footer.foot--post {
           }
         }
         &--telegram {
-          color: #2ea6d9;
           &:hover {
+            color: #2ea6d9;
             background-color: rgba(46, 166, 217, 0.25);
           }
           svg.foot__sect__nav__a__svg--telegram {

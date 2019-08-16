@@ -267,13 +267,15 @@ a {
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:not(.a--primary) {
     color: var(--accent-blue);
-    &:hover {
-      color: var(--accent-red);
-    }
     &:visited {
       color: var(--accent-indigo);
-      &:hover {
-        color: var(--accent-red);
+      &:not(.a--secondary) {
+        &:hover {
+          color: var(--accent-red);
+        }
+        &:visited:hover {
+          color: var(--accent-red);
+        }
       }
     }
   }
