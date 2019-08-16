@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
+import { format, isToday, isYesterday, isThisYear } from "date-fns";
 import Layout from "../components/layout";
 import kebabCase from "lodash/kebabCase";
 import "../styles/post.scss";
@@ -10,8 +11,8 @@ import SEO from "../components/seo";
 
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
-  const date = new Date();
   const { prev, next } = pageContext;
+  const ruLocale = require("date-fns/locale/ru");
 
   return (
     <Layout
@@ -29,16 +30,32 @@ export default ({ data, pageContext }) => {
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <p className="post-links">
           {/* Date of post written */}
-          <span title={post.frontmatter.date} className="post-links__span">
+          <span
+            title={
+              format(post.frontmatter.date, "dddd, D MMMM YYYY", {
+                locale: ruLocale
+              })
+                .charAt(0)
+                .toUpperCase() +
+              format(post.frontmatter.date, "dddd, D MMMM YYYY", {
+                locale: ruLocale
+              }).slice(1)
+            }
+            className="post-links__span"
+          >
             {(() => {
-              switch (true) {
-                case post.frontmatter.date.endsWith(date.getFullYear()):
-                  return post.frontmatter.date.slice(
-                    0,
-                    post.frontmatter.date.length - 5
-                  );
-                default:
-                  return post.frontmatter.date;
+              if (isToday(post.frontmatter.date)) {
+                return "сегодня";
+              } else if (isYesterday(post.frontmatter.date)) {
+                return "вчера";
+              } else if (isThisYear(post.frontmatter.date)) {
+                return format(post.frontmatter.date, "D MMMM", {
+                  locale: ruLocale
+                });
+              } else {
+                return format(post.frontmatter.date, "D MMMM YYYY", {
+                  locale: ruLocale
+                });
               }
             })()}
           </span>
@@ -91,7 +108,7 @@ export const query = graphql`
       timeToRead
       frontmatter {
         title
-        date(formatString: "D MMMM YYYY", locale: "ru")
+        date
         description
         tags
         hero {

@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
+import { format, isToday, isYesterday, isThisYear } from "date-fns";
 import "../styles/article.scss";
 
 const Article = props => {
-  const date = new Date();
+  const ruLocale = require("date-fns/locale/ru");
   return (
     <article
       id={props.node.frontmatter.categories}
@@ -16,23 +17,41 @@ const Article = props => {
           <p>{props.node.frontmatter.description}</p>
           <p className="post-links">
             {/* Date of post written */}
-            <span title={props.node.frontmatter.date}>
+            <span
+              title={
+                format(props.node.frontmatter.date, "dddd, D MMMM YYYY", {
+                  locale: ruLocale
+                })
+                  .charAt(0)
+                  .toUpperCase() +
+                format(props.node.frontmatter.date, "dddd, D MMMM YYYY", {
+                  locale: ruLocale
+                }).slice(1)
+              }
+              className="post-links__span"
+            >
               {(() => {
-                switch (true) {
-                  case props.node.frontmatter.date.endsWith(date.getFullYear()):
-                    return props.node.frontmatter.date.slice(
-                      0,
-                      props.node.frontmatter.date.length - 5
-                    );
-                  default:
-                    return props.node.frontmatter.date;
+                if (isToday(props.node.frontmatter.date)) {
+                  return "сегодня";
+                } else if (isYesterday(props.node.frontmatter.date)) {
+                  return "вчера";
+                } else if (isThisYear(props.node.frontmatter.date)) {
+                  return format(props.node.frontmatter.date, "D MMMM", {
+                    locale: ruLocale
+                  });
+                } else {
+                  return format(props.node.frontmatter.date, "D MMMM YYYY", {
+                    locale: ruLocale
+                  });
                 }
               })()}
             </span>
-            <span>·</span>
+            <span className="post-links__span">·</span>
             {/* All tags for this post */}
             {props.node.frontmatter.tags.map(tag => (
-              <span key={tag}>{tag}</span>
+              <span key={tag} className="post-links__span">
+                {tag}
+              </span>
             ))}
           </p>
         </section>
