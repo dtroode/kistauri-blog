@@ -42,12 +42,13 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "sharp": "^0.22.1",
+    "typescript": "^3.5.3",
     "typograf": "^6.8.2"
   },
   "devDependencies": {
     "@size-limit/preset-app": "^2.0.2",
     "@size-limit/webpack": "^2.0.2",
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^9.0.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^5.0.0",
