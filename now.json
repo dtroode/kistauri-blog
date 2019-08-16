@@ -12,41 +12,20 @@
   "routes": [
     {
       "src": "**/*.@(html)",
-      "headers": [
-        {
-          "key": "Referrer-Policy",
-          "value": "no-referrer"
-        },
-        {
-          "key": "Content-Security-Policy",
-          "value": "default-src https:; img-src 'self'; script-src 'self'; style-src 'self'"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
-          "key": "Feature-Policy",
-          "value": "geolocation 'self'; notifications 'self'; push 'self'; microphone 'self'; camera 'self'"
-        }
-      ]
+      "headers": {
+        "Referrer-Policy": "no-referrer",
+        "Content-Security-Policy": "default-src https:; img-src 'self'; script-src 'self'; style-src 'self'",
+        "X-XSS-Protection": "1; mode=block",
+        "Feature-Policy": "geolocation 'self'; notifications 'self'; push 'self'; microphone 'self'; camera 'self'"
+      }
     },
     {
       "src": "*",
-      "headers": [
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=63072000"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        }
-      ]
+      "headers": {
+        "Strict-Transport-Security": "max-age=63072000",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN"
+      }
     }
   ]
 }
