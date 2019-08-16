@@ -15,7 +15,6 @@
       "headers": {
         "Strict-Transport-Security": "max-age=31536000",
         "X-Content-Type-Options": "nosniff",
-        "Content-Security-Policy": "default-src https:; img-src 'self'; script-src 'sha256-EPsNyO5/IUI0j63vrMZ3brgjR0DDUxa68g1R4Yhr9fE=' 'sha256-IJzgyNUnf9cHeO6ED44fScW1mCwu7t+wDZemJFaJqaQ=' 'sha256-kph574c6YOrSKHLqbn0epPu3iZhHeodANNjm4WVvcOU=' 'sha256-PoQ22kWfARn0yuQXCM8hTEPmUnnIDPnyM+UiybkFgs8=' 'sha256-gOqPv3uLsRwniJqFILDO2TDJLGydIaiXScbtwLrY4TU=' 'sha256-LCDpMCn/9j6ly2BDr53dyylp6oI59mmIkWKGuOuaPyo=' 'sha256-rbWwVp19rhFKUa18fAB1VAlKoOBp0B7uq0cNgTDBmIA=' 'self'; style-src 'sha256-jOE+z77AbC+twx575l1OzF7a3VSDD+RjuP0VahXqDrw=' 'sha256-jxDjGrXvjU7NJXoZtp7OjFdM9ak6PFIjQTcKr/clk1I=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA=' 'sha256-hsiOqp4YNTRS4i3ydqF95I+dwyaYube8MphaSAcmXLY='",
         "Referrer-Policy": "no-referrer",
         "X-XSS-Protection": "1; mode=block",
         "X-Frame-Options": "SAMEORIGIN"
