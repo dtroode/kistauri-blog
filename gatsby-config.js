@@ -16,14 +16,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-twitter`,
     {
-      resolve: `gatsby-plugin-csp`,
-      options: {
-        directives: {
-          "content-src": "'self' https://twitter.com/ https://youtube.com"
-        }
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/img`,

@@ -15,6 +15,7 @@
       "headers": {
         "Strict-Transport-Security": "max-age=31536000",
         "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src https:; img-src 'self'; script-src default-src: https: 'unsafe-inline'; style-src https: 'unsafe-inline'",
         "Referrer-Policy": "no-referrer",
         "X-XSS-Protection": "1; mode=block",
         "X-Frame-Options": "SAMEORIGIN"
