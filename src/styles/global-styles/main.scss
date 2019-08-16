@@ -265,17 +265,17 @@ a {
   flex: inherit;
   line-height: 1em;
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
-  &:hover {
-    color: var(--accent-red);
-  }
-  &:visited {
-    color: var(--accent-indigo);
+  &:not(.a--primary) {
+    color: var(--accent-blue);
     &:hover {
       color: var(--accent-red);
     }
-  }
-  &:not(.a--primary) {
-    color: var(--accent-blue);
+    &:visited {
+      color: var(--accent-indigo);
+      &:hover {
+        color: var(--accent-red);
+      }
+    }
   }
   &.a--primary,
   &.a--secondary {
