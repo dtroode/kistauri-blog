@@ -71,19 +71,11 @@ header {
     margin-bottom: var(--fourth-padding);
     a.head__nav__a {
       margin-bottom: var(--fifth-padding);
-      &:hover {
-        color: var(--main-bg);
-      }
       &.a--secondary {
-        margin-top: 0;
         background-color: var(--main-bg);
-        &:hover {
-          background-color: var(--accent-red-50);
-        }
       }
     }
   }
-
   h1.head__header {
     display: block;
     margin: 0;
@@ -150,9 +142,6 @@ main {
   a.a--secondary {
     margin-top: var(--fifth-padding);
     background-color: var(--additional-bg);
-    &:hover {
-      color: var(--additional-bg);
-    }
   }
   hr {
     margin-bottom: var(--secondary-padding);
@@ -301,11 +290,13 @@ a {
   }
   &.a--secondary {
     &:hover {
-      color: var(--additional-bg);
-      background-color: var(--accent-red-50);
+      color: var(--accent-red);
     }
     &:visited {
       color: var(--accent-blue);
+      &:hover {
+        color: var(--accent-red);
+      }
     }
   }
   &.a--active {
