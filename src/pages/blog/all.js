@@ -6,23 +6,7 @@ import "../../styles/media.scss";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 
-function postsOnNumbers(number) {
-  const names = ["пост", "поста", "постов"];
-  const twoFour = ["2", "3", "4"];
-  const twentyFourteen = ["12", "13", "14"];
-  const numberStringified = number.toString();
-  return names[
-    numberStringified.endsWith("1")
-      ? numberStringified.endsWith("11")
-        ? 2
-        : 0
-      : twoFour.some(n => numberStringified.endsWith(n))
-      ? twentyFourteen.some(n => numberStringified.endsWith(n))
-        ? 2
-        : 1
-      : 2
-  ];
-}
+const counter = require("../../scripts/counter");
 
 const AllPage = props => {
   const AllPostsList = props.data.AllPosts.edges;
@@ -43,7 +27,7 @@ const AllPage = props => {
       <section className="main__sect--content">
         <h2 className="main__sect--content__header">
           {props.data.AllPosts.totalCount}{" "}
-          {postsOnNumbers(props.data.AllPosts.totalCount)}
+          {counter(props.data.AllPosts.totalCount)}
         </h2>
         <p className="main__sect--content__container">
           {/* All posts list */}

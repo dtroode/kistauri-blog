@@ -5,23 +5,7 @@ import Layout from "../components/layout";
 import Article from "../components/article";
 import SEO from "../components/seo";
 
-function postsOnNumbers(number) {
-  const names = ["пост", "поста", "постов"];
-  const twoFour = ["2", "3", "4"];
-  const twentyFourteen = ["12", "13", "14"];
-  const numberStringified = number.toString();
-  return names[
-    numberStringified.endsWith("1")
-      ? numberStringified.endsWith("11")
-        ? 2
-        : 0
-      : twoFour.some(n => numberStringified.endsWith(n))
-      ? twentyFourteen.some(n => numberStringified.endsWith(n))
-        ? 2
-        : 1
-      : 2
-  ];
-}
+const counter = require("../scripts/counter");
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext; // Getting tag from context in graphql
@@ -30,7 +14,7 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = (
     <>
       <span className="head__header__span">
-        {totalCount} {postsOnNumbers(totalCount)} с тегом
+        {totalCount} {counter(totalCount)} с тегом
       </span>
       <br />
       {tag}
