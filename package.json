@@ -72,7 +72,8 @@
     },
     {
       "name": "Full",
-      "path": "public/app-*.js"
+      "path": "public/app-*.js",
+      "limit": "70 KB"
     }
   ],
   "scripts": {
