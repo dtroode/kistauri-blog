@@ -221,7 +221,7 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <a href="https://cyxym.cf">
+            <a href="https://cyxym.netlify.com">
               <strong>Сайт CYXYM</strong>
             </a>{" "}
             — 2018
