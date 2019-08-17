@@ -12,7 +12,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    "gatsby-plugin-offline",
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-twitter`,
     {
@@ -46,7 +46,6 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-relative-images`,
-          `gatsby-remark-smartypants`,
           `gatsby-remark-typography`,
           {
             resolve: `gatsby-remark-images`,
@@ -61,14 +60,6 @@ module.exports = {
           },
           `gatsby-remark-prismjs`
         ]
-      }
-    },
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: `https://davidkistauri.now.sh/`,
-        sitemap: `https://davidkistauri.now.sh/sitemap.xml`,
-        policy: [{ userAgent: "*", allow: "/" }]
       }
     },
     {
