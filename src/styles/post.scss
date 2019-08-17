@@ -48,8 +48,7 @@ section {
       }
       h2,
       h3,
-      p,
-      blockquote {
+      p {
         max-width: 700px;
       }
       h2,
@@ -113,8 +112,12 @@ section {
         height: 500px;
       }
       ul,
-      ol {
+      ol,
+      blockquote {
         max-width: calc(700px - var(--primary-padding));
+      }
+      ul,
+      ol {
         padding-left: var(--primary-padding);
         li {
           list-style-position: outside;
@@ -142,17 +145,13 @@ section {
         border-radius: var(--fourth-padding);
       }
       blockquote {
-        max-width: 100%;
         p:first-child {
           margin-top: 0;
         }
       }
-      twitter-widget {
-        width: 100% !important;
-        margin-top: 1rem !important;
-      }
       pre {
         overflow-x: scroll;
+        max-width: calc(700px - 2 * var(--third-padding));
         margin-top: var(--third-padding);
         margin-bottom: 0;
         padding: var(--third-padding);
@@ -161,12 +160,6 @@ section {
         font-size: 1em;
         span {
           font-weight: unset;
-        }
-      }
-      hr + * {
-        margin-top: 0;
-        & > * {
-          margin-top: 0;
         }
       }
       code,
@@ -179,6 +172,16 @@ section {
       }
       li p {
         margin-top: 0;
+      }
+      twitter-widget {
+        width: 100% !important;
+        margin-top: 1rem !important;
+      }
+      hr + * {
+        margin-top: 0;
+        & > * {
+          margin-top: 0;
+        }
       }
     }
   }
