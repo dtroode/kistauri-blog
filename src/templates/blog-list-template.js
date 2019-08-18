@@ -1,11 +1,14 @@
 import React from "react";
+
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
-import "../styles/media.scss";
+
 import Layout from "../components/layout";
 import Article from "../components/article";
 import SEO from "../components/seo";
+
+import "../styles/media.scss";
 
 const BlogList = ({ pageContext, data }) => {
   const PostsList = data.Posts.edges;

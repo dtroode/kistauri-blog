@@ -55,6 +55,7 @@ module.exports = {
               backgroundColor: "transparent",
               quality: 75,
               tracedSVG: true,
+              withWebp: true,
               loading: "lazy"
             }
           },

@@ -1,13 +1,16 @@
 import React from "react";
+
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
 import { format, isToday, isYesterday, isThisYear } from "date-fns";
+
 import Layout from "../components/layout";
 import kebabCase from "lodash/kebabCase";
+import SEO from "../components/seo";
+
 import "../styles/post.scss";
 import "../styles/media.scss";
 import "../styles/code.scss";
-import SEO from "../components/seo";
 
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark;

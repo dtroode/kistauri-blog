@@ -177,9 +177,10 @@ section {
         width: 100% !important;
         margin-top: 1rem !important;
       }
-      hr + * {
-        margin-top: 0;
-        & > * {
+      hr {
+        height: 0.15rem;
+        opacity: 0.2;
+        + * {
           margin-top: 0;
         }
       }

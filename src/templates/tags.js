@@ -1,9 +1,12 @@
 import React from "react";
+
 import { graphql } from "gatsby";
-import "../styles/media.scss";
+
 import Layout from "../components/layout";
 import Article from "../components/article";
 import SEO from "../components/seo";
+
+import "../styles/media.scss";
 
 const counter = require("../scripts/counter");
 
