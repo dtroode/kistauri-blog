@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  className="head--portfolio"
+>
+  <nav
+    className="head__nav"
+  >
+    <a
+      className="head__nav__a a--primary a--active"
+      href="/"
+      style={
+        Object {
+          "backgroundColor": undefined,
+        }
+      }
+    >
+      &gt;_&lt;
+    </a>
+    <a
+      className="head__nav__a a--primary"
+      href="/blog"
+      style={
+        Object {
+          "backgroundColor": undefined,
+        }
+      }
+    >
+      Блог
+    </a>
+  </nav>
+  <h1
+    className="head__header"
+  >
+    Давид Кистаури &gt;_&lt;
+  </h1>
+  <hr />
+</header>
+`;
