@@ -16,6 +16,11 @@ export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
   const { prev, next } = pageContext;
   const ruLocale = require("date-fns/locale/ru");
+  // Creating github link using repository link and page slug. Using only for post pages
+  let githubLink =
+    "https://github.com/dtroode/Kistauri/tree/master/src/pages" +
+    post.fields.slug +
+    "/index.md";
 
   return (
     <Layout
@@ -73,6 +78,14 @@ export default ({ data, pageContext }) => {
               {tag}
             </Link>
           ))}
+          <span className="post-links__span">·</span>
+          <a
+            href={githubLink}
+            title="Редактировать на Гитхабе"
+            className="post-links__a"
+          >
+            редактировать
+          </a>
           <br />
           {/* Links to next and previous pages */}
           {prev ? (

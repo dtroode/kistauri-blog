@@ -13,11 +13,6 @@ const ListLink = props => (
 
 const Navbar = props => {
   let nav = "";
-  // Creating github link using repository link and page slug. Using only for post pages
-  let githubLink =
-    "https://github.com/dtroode/Kistauri/tree/master/src/pages" +
-    props.link +
-    "/index.md";
 
   // Creating different header links for different page types
   if (props.className === "post") {
@@ -29,39 +24,29 @@ const Navbar = props => {
         <ListLink className="head__nav__a a--primary" to="/blog">
           Блог
         </ListLink>
-        <ListLink className="head__nav__a a--secondary" to="/blog/rss.xml">
-          Подписаться
-        </ListLink>
-        <a
-          className="head__nav__a a--secondary"
-          href={githubLink}
-          title="На Гитхабе"
-        >
-          Исправить
-        </a>
       </nav>
     );
   } else if (props.className === "blog") {
     nav = (
       <nav className="head__nav">
-        <ListLink className="head__nav__a a--primary" to="/">
+        <ListLink to="/" className="head__nav__a a--primary">
           {">_<"}
         </ListLink>
-        <ListLink className="head__nav__a a--primary" to="/blog/tags">
+        <ListLink to="/blog/tags" className="head__nav__a a--primary">
           Теги
         </ListLink>
-        <ListLink className="head__nav__a a--secondary" to="/blog/rss.xml">
+        <a href="/blog/rss.xml" className="head__nav__a a--secondary">
           Подписаться
-        </ListLink>
+        </a>
       </nav>
     );
   } else if (props.className === "portfolio") {
     nav = (
       <nav className="head__nav">
-        <ListLink className="head__nav__a a--primary a--active" to="/">
+        <ListLink to="/" className="head__nav__a a--primary a--active">
           {">_<"}
         </ListLink>
-        <ListLink className="head__nav__a a--primary" to="/blog">
+        <ListLink to="/blog" className="head__nav__a a--primary">
           Блог
         </ListLink>
       </nav>
@@ -69,13 +54,13 @@ const Navbar = props => {
   } else if (props.className === "tag") {
     nav = (
       <nav className="head__nav">
-        <ListLink className="head__nav__a a--primary" to="/">
+        <ListLink to="/" className="head__nav__a a--primary">
           {">_<"}
         </ListLink>
-        <ListLink className="head__nav__a a--primary" to="/blog">
+        <ListLink to="/blog" className="head__nav__a a--primary">
           Блог
         </ListLink>
-        <ListLink className="head__nav__a a--primary" to="/blog/tags">
+        <ListLink to="/blog/tags" className="head__nav__a a--primary">
           Теги
         </ListLink>
       </nav>
@@ -83,10 +68,10 @@ const Navbar = props => {
   } else {
     nav = (
       <nav className="head__nav">
-        <ListLink className="head__nav__a a--primary" to="/">
+        <ListLink to="/" className="head__nav__a a--primary">
           {">_<"}
         </ListLink>
-        <ListLink className="head__nav__a a--primary" to="/blog">
+        <ListLink to="/blog" className="head__nav__a a--primary">
           Блог
         </ListLink>
       </nav>
@@ -97,7 +82,7 @@ const Navbar = props => {
 
 const Header = props => (
   <header className={`head--${props.pageClass}`}>
-    <Navbar className={props.pageClass} link={props.link} />
+    <Navbar link={props.link} className={props.pageClass} />
     <h1 className="head__header">{props.title}</h1>
     <hr />
   </header>
