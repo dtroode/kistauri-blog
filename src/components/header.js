@@ -82,7 +82,7 @@ const Navbar = props => {
 
 const Header = props => (
   <header className={`head--${props.pageClass}`}>
-    <Navbar link={props.link} className={props.pageClass} />
+    <Navbar className={props.pageClass} />
     <h1 className="head__header">{props.title}</h1>
     <hr />
   </header>
