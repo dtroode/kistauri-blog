@@ -1,6 +1,8 @@
 import React from "react";
+
 import { Link } from "gatsby";
 import { format, isToday, isYesterday, isThisYear } from "date-fns";
+
 import "../styles/article.scss";
 
 const Article = props => {
@@ -14,8 +16,10 @@ const Article = props => {
       <Link to={props.node.fields.slug} className="main__sect--arts__art__link">
         <section className="main__sect--arts__art__link__sect">
           <h2>{props.node.frontmatter.title}</h2>
-          <p>{props.node.frontmatter.description}</p>
-          <p className="post-links">
+          <p className="main__sect--arts__art__link__sect__p">
+            {props.node.frontmatter.description}
+          </p>
+          <p className="main__sect--arts__art__link__sect__p post-links">
             {/* Date of post written */}
             <span
               title={

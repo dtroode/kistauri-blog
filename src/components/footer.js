@@ -86,7 +86,7 @@ const Footer = props => {
   }
 
   return (
-    <footer className={`foot--${props.pageClass}`}>
+    <footer className={`foot foot--${props.pageClass}`}>
       <section className="foot__sect">
         {/*
         Passing `share` variable.

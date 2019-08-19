@@ -3,20 +3,15 @@
   color: var(--main-bg);
 }
 
-html,
-button {
+html {
+  height: 100%;
+  font-size: 100%;
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-html {
-  height: 100%;
-  font-size: 100%;
-}
-
 @supports (font-variation-settings: normal) {
-  html,
-  button {
+  html {
     font-family: "Inter var", Inter, "Helvetica Neue", Helvetica, Arial,
       sans-serif;
     font-feature-settings: "cv08" 1;

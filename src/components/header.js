@@ -1,5 +1,6 @@
-import { Link } from "gatsby";
 import React from "react";
+
+import { Link } from "gatsby";
 
 const ListLink = props => (
   <Link
@@ -81,7 +82,7 @@ const Navbar = props => {
 };
 
 const Header = props => (
-  <header className={`head--${props.pageClass}`}>
+  <header className={`head head--${props.pageClass}`}>
     <Navbar className={props.pageClass} />
     <h1 className="head__header">{props.title}</h1>
     <hr />
