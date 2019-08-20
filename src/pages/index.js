@@ -180,9 +180,9 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <a href="https://secondschool.now.sh/">
+            <Link to="/projects/secondschool-website">
               <strong>Сайт второй школы</strong>
-            </a>{" "}
+            </Link>{" "}
             — 2018
             <br />
             Сделал редизайн сайта школы с нуля по информации со старого сайта.
@@ -225,7 +225,7 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <Link to="/projects/cyxym">
+            <Link to="/projects/cyxym-website">
               <strong>Сайт CYXYM</strong>
             </Link>{" "}
             — 2018

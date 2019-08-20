@@ -22,6 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   // Template files for creating new pages
   const blogPostTemplate = path.resolve("src/templates/blog-post.js");
+  const projectTemplate = path.resolve("src/templates/project.js");
   const tagTemplate = path.resolve("src/templates/tags.js");
   const blogListTemplate = path.resolve("src/templates/blog-list-template.js");
 
@@ -48,7 +49,7 @@ exports.createPages = ({ graphql, actions }) => {
       if (node.frontmatter.posttype === "project") {
         createPage({
           path: node.fields.slug,
-          component: blogPostTemplate,
+          component: projectTemplate,
           context: {
             slug: node.fields.slug
           }
