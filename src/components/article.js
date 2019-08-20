@@ -7,6 +7,26 @@ import "../styles/article.scss";
 
 const Article = props => {
   const ruLocale = require("date-fns/locale/ru");
+
+  function tagsRender() {
+    if (props.node.frontmatter.tags) {
+      return (
+        <>
+          <span className="post-links__span">·</span>
+          {props.node.frontmatter.tags.map(tag => (
+            <span key={tag} className="post-links__span">
+              {tag}
+            </span>
+          ))}
+        </>
+      );
+    } else {
+      return "";
+    }
+  }
+  
+  const tags = tagsRender();
+
   return (
     <article
       id={props.node.frontmatter.categories}
@@ -50,13 +70,8 @@ const Article = props => {
                 }
               })()}
             </span>
-            <span className="post-links__span">·</span>
             {/* All tags for this post */}
-            {props.node.frontmatter.tags.map(tag => (
-              <span key={tag} className="post-links__span">
-                {tag}
-              </span>
-            ))}
+            {tags}
           </p>
         </section>
       </Link>

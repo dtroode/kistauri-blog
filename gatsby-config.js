@@ -30,6 +30,20 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/blog/all`,
+        name: "posts"
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/projects`,
+        name: "projects"
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Давид Кистаури`,
@@ -55,7 +69,6 @@ module.exports = {
               backgroundColor: "transparent",
               quality: 75,
               tracedSVG: true,
-              withWebp: true,
               loading: "lazy"
             }
           },
@@ -80,7 +93,7 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
+            serialize: ({ query: { allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,

@@ -27,11 +27,15 @@
     &:hover {
       color: #1c1c1e;
     }
-    .main__sect--arts__art__link__sect {
+    &__sect {
       color: #1c1c1e;
-      .main__sect--arts__art__link__sect__p {
+      &__p {
         margin-top: var(--third-padding);
       }
+    }
+    &__img {
+      margin-bottom: var(--third-padding);
+      border-radius: var(--fourth-padding);
     }
   }
 }

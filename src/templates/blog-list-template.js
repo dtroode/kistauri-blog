@@ -75,6 +75,7 @@ export default BlogList;
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     Posts: allMarkdownRemark(
+      filter: { frontmatter: { posttype: { ne: "project" } } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip

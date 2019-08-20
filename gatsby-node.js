@@ -37,62 +37,77 @@ exports.createPages = ({ graphql, actions }) => {
             frontmatter {
               tags
               title
+              posttype
             }
           }
         }
       }
     }
   `).then(result => {
-    const posts = result.data.allMarkdownRemark.edges; // Posts list
-    const postsPerPage = 10; // Posts per blog page number
-    const numPages = Math.ceil(posts.length / postsPerPage); // Getting number of blog pages
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      if (node.frontmatter.posttype === "project") {
+        createPage({
+          path: node.fields.slug,
+          component: blogPostTemplate,
+          context: {
+            slug: node.fields.slug
+          }
+        });
+      } else {
+        const posts = result.data.allMarkdownRemark.edges.filter(
+          ({ node }) => !node.frontmatter.posttype
+        ); // Posts list
+        const postsPerPage = 10; // Posts per blog page number
+        const numPages = Math.ceil(posts.length / postsPerPage); // Getting number of blog pages
 
-    // Creating posts pages
-    posts.forEach(({ node }, index) => {
-      createPage({
-        path: node.fields.slug,
-        component: blogPostTemplate,
-        context: {
-          slug: node.fields.slug,
-          prev: index === 0 ? null : posts[index - 1],
-          next: index === result.length - 1 ? null : posts[index + 1]
-        }
-      });
-    });
-    let tags = [];
-    // Getting tags from pages, writing to `tags` variable
-    _.each(posts, edge => {
-      if (_.get(edge, "node.frontmatter.tags")) {
-        tags = tags.concat(edge.node.frontmatter.tags);
+        // Creating posts pages
+        posts.forEach(({ node }, index) => {
+          createPage({
+            path: node.fields.slug,
+            component: blogPostTemplate,
+            context: {
+              slug: node.fields.slug,
+              prev: index === 0 ? null : posts[index - 1],
+              next: index === result.length - 1 ? null : posts[index + 1]
+            }
+          });
+        });
+        let tags = [];
+        // Getting tags from pages, writing to `tags` variable
+        _.each(posts, edge => {
+          if (_.get(edge, "node.frontmatter.tags")) {
+            tags = tags.concat(edge.node.frontmatter.tags);
+          }
+        });
+
+        // Creating blog pages templates. [pagination]
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+            component: blogListTemplate,
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages,
+              currentPage: i + 1
+            }
+          });
+        });
+
+        // Eliminate duplicate tags
+        tags = _.uniq(tags);
+
+        // Creating tags pages for each tag we get from posts
+        tags.forEach(tag => {
+          createPage({
+            path: `/blog/tags/${_.kebabCase(tag)}/`,
+            component: tagTemplate,
+            context: {
+              tag
+            }
+          });
+        });
       }
-    });
-
-    // Creating blog pages templates. [pagination]
-    Array.from({ length: numPages }).forEach((_, i) => {
-      createPage({
-        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-        component: blogListTemplate,
-        context: {
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          numPages,
-          currentPage: i + 1
-        }
-      });
-    });
-
-    // Eliminate duplicate tags
-    tags = _.uniq(tags);
-
-    // Creating tags pages for each tag we get from posts
-    tags.forEach(tag => {
-      createPage({
-        path: `/blog/tags/${_.kebabCase(tag)}/`,
-        component: tagTemplate,
-        context: {
-          tag
-        }
-      });
     });
   });
 };

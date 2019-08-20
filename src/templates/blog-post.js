@@ -17,6 +17,53 @@ export default ({ data, pageContext }) => {
   const { prev, next } = pageContext;
   const ruLocale = require("date-fns/locale/ru");
 
+  function tagsRender() {
+    if (post.frontmatter.tags) {
+      return (
+        <>
+          <span className="post-links__span">·</span>
+          {post.frontmatter.tags.map(tag => (
+            <Link
+              to={`/blog/tags/${kebabCase(tag)}`}
+              key={tag}
+              className="post-links__a"
+            >
+              {tag}
+            </Link>
+          ))}
+        </>
+      );
+    } else {
+      return "";
+    }
+  }
+
+  function prevNextRender() {
+    if (prev || next) {
+      return (
+        <>
+          {prev ? (
+            <Link to={prev.node.fields.slug} className="post-links__a">
+              {prev.node.frontmatter.title} ←
+            </Link>
+          ) : (
+            <span className="post-links__span--inact">←</span>
+          )}
+          {next ? (
+            <Link to={next.node.fields.slug} className="post-links__a">
+              → {next.node.frontmatter.title}
+            </Link>
+          ) : (
+            <span className="post-links__span--inact">→</span>
+          )}
+        </>
+      );
+    }
+  }
+
+  const tags = tagsRender();
+  const prevNext = prevNextRender();
+
   return (
     <Layout
       pageClass="post"
@@ -62,33 +109,11 @@ export default ({ data, pageContext }) => {
               }
             })()}
           </span>
-          <span className="post-links__span">·</span>
           {/* All tags for this post */}
-          {post.frontmatter.tags.map(tag => (
-            <Link
-              to={`/blog/tags/${kebabCase(tag)}`}
-              key={tag}
-              className="post-links__a"
-            >
-              {tag}
-            </Link>
-          ))}
+          {tags}
           <br />
           {/* Links to next and previous pages */}
-          {prev ? (
-            <Link to={prev.node.fields.slug} className="post-links__a">
-              {prev.node.frontmatter.title} ←
-            </Link>
-          ) : (
-            <span className="post-links__span--inact">←</span>
-          )}
-          {next ? (
-            <Link to={next.node.fields.slug} className="post-links__a">
-              → {next.node.frontmatter.title}
-            </Link>
-          ) : (
-            <span className="post-links__span--inact">→</span>
-          )}
+          {prevNext}
         </p>
       </section>
     </Layout>

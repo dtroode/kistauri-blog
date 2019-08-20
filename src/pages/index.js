@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 
 import Layout from "../components/layout";
@@ -224,9 +225,9 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <a href="https://cyxym.netlify.com">
+            <Link to="/projects/cyxym">
               <strong>Сайт CYXYM</strong>
-            </a>{" "}
+            </Link>{" "}
             — 2018
             <br />
             Сделал сайт с командой про город Сухум.

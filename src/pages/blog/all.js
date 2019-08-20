@@ -53,6 +53,7 @@ export default AllPage;
 export const allPageQuery = graphql`
   query {
     AllPosts: allMarkdownRemark(
+      filter: { frontmatter: { posttype: { ne: "project" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       totalCount
