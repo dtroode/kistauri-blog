@@ -137,9 +137,9 @@ const IndexPage = () => {
             </ul>
           </li>
           <li>
-            <a href="https://postvel.now.sh">
+            <Link to="/projects/postvel-website">
               <strong>Сайт Пост Величины</strong>
-            </a>{" "}
+            </Link>{" "}
             — 2018
             <br />
             Сделал сайт с таблицами по математике, физике и химии.

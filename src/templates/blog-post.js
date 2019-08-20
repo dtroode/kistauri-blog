@@ -21,7 +21,7 @@ export default ({ data, pageContext }) => {
     <Layout
       pageClass="post"
       title={post.frontmatter.title}
-      link={post.fields.slug} // Link to this page for using in header and footer
+      link={post.fields.slug} // Link to this page for using in footer
     >
       <SEO
         title={post.frontmatter.title}
