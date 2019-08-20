@@ -29,7 +29,7 @@ const ProjectsList = ({ data }) => {
         {/* Displaying all projects according to limit */}
         {ProjectsList.map(({ node }) => (
           <article
-            id={node.frontmatter.categories}
+            id="work"
             key={node.frontmatter.title}
             className="main__sect--arts__art"
           >
@@ -102,7 +102,6 @@ export const projectsListQuery = graphql`
             title
             date(formatString: "YYYY-MM-DD")
             description
-            categories
             hero {
               childImageSharp {
                 fluid(maxWidth: 500, quality: 100) {

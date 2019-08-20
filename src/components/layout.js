@@ -6,7 +6,11 @@ import Footer from "./footer";
 const Layout = props => (
   <>
     {/* Using header component and passing link of page into it */}
-    <Header pageClass={props.pageClass} title={props.title} />
+    <Header
+      pageClass={props.pageClass}
+      title={props.title}
+      linkToProject={props.linkToProject}
+    />
     {/* Passing childs into main component */}
     <main className={`main main--${props.pageClass}`}>{props.children}</main>
     {/* Using footer component and passing link of page into it */}

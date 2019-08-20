@@ -78,7 +78,7 @@ const Navbar = props => {
         </ListLink>
       </nav>
     );
-  } else {
+  } else if (props.className === "projects") {
     nav = (
       <nav className="head__nav">
         <ListLink to="/" className="head__nav__a a--primary">
@@ -89,13 +89,30 @@ const Navbar = props => {
         </ListLink>
       </nav>
     );
+  } else {
+    nav = (
+      <nav className="head__nav">
+        <ListLink to="/" className="head__nav__a a--primary">
+          {">_<"}
+        </ListLink>
+        <ListLink to="/projects" className="head__nav__a a--primary">
+          Проекты
+        </ListLink>
+        <ListLink to="/blog" className="head__nav__a a--primary">
+          Блог
+        </ListLink>
+        <a href={props.linkToProject} className="head__nav__a a--secondary">
+          Открыть
+        </a>
+      </nav>
+    );
   }
   return nav;
 };
 
 const Header = props => (
   <header className={`head head--${props.pageClass}`}>
-    <Navbar className={props.pageClass} />
+    <Navbar className={props.pageClass} linkToProject={props.linkToProject} />
     <h1 className="head__header">{props.title}</h1>
     <hr />
   </header>

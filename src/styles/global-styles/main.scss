@@ -135,13 +135,8 @@ main {
     }
   }
   a.a--secondary {
+    margin-top: var(--fifth-padding);
     background-color: var(--additional-bg);
-    &:not(.a--project-link) {
-      margin-top: var(--fifth-padding);
-    }
-    &.a--project-link {
-      margin-bottom: var(--third-padding);
-    }
   }
   hr {
     margin-bottom: var(--secondary-padding);

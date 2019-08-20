@@ -16,9 +16,10 @@ export default ({ data }) => {
 
   return (
     <Layout
-      pageClass="post"
+      pageClass="project"
       title={post.frontmatter.title}
-      link={post.fields.slug} // Link to this page for using in header and footer
+      link={post.fields.slug} // Link to this page for using in footer
+      linkToProject={post.frontmatter.link} // Link to project page
     >
       <SEO
         title={post.frontmatter.title}
@@ -26,12 +27,6 @@ export default ({ data }) => {
         image={post.frontmatter.hero.childImageSharp.fluid.src}
       />
       <section className="main__sect--text">
-        <a
-          href={post.frontmatter.link}
-          className="a--secondary a--project-link"
-        >
-          Ссылка на сайт
-        </a>
         {/* Content of post converted to HTML */}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <p className="post-links">
