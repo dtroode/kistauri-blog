@@ -279,12 +279,6 @@ a {
       color: var(--main-bg);
       background-color: var(--accent-red);
     }
-    &:visited {
-      color: var(--main-bg);
-      &:hover {
-        color: var(--main-bg);
-      }
-    }
   }
   &.a--secondary {
     &:hover {
@@ -298,6 +292,11 @@ a {
     }
   }
   &.a--active {
+    color: var(--accent-blue);
+    background-color: var(--main-fg);
+  }
+  &[aria-current="page"] {
+    color: var(--main-bg);
     background-color: var(--main-fg);
     pointer-events: none;
     cursor: default;

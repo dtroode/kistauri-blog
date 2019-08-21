@@ -39,8 +39,8 @@ const Header = props => (
   <header className={`head head--${props.pageClass}`}>
     <nav className="head__nav">
       <Link
-        className="head__nav__a a--primary"
         to="/"
+        className="head__nav__a a--primary"
         activeClassName="a--active"
       >
         {">_<"}
@@ -49,13 +49,15 @@ const Header = props => (
         to="/projects/"
         className="head__nav__a a--primary"
         activeClassName="a--active"
+        partiallyActive={true}
       >
         Проекты
       </Link>
       <Link
-        className="head__nav__a a--primary"
         to="/blog/"
+        className="head__nav__a a--primary"
         activeClassName="a--active"
+        partiallyActive={true}
       >
         Блог
       </Link>
