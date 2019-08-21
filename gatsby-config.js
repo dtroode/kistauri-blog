@@ -68,7 +68,6 @@ module.exports = {
               showCaptions: true,
               backgroundColor: "transparent",
               quality: 75,
-              tracedSVG: true,
               loading: "lazy"
             }
           },
