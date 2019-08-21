@@ -105,7 +105,7 @@ export const projectsListQuery = graphql`
             hero {
               childImageSharp {
                 fluid(maxWidth: 500, quality: 100) {
-                  ...GatsbyImageSharpFluid_tracedSVG
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
