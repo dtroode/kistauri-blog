@@ -2,33 +2,30 @@
 
 exports[`Header renders correctly 1`] = `
 <header
-  className="head--portfolio"
+  className="head head--portfolio"
 >
   <nav
     className="head__nav"
   >
     <a
-      className="head__nav__a a--primary a--active"
+      className="head__nav__a a--primary"
       href="/"
-      style={
-        Object {
-          "backgroundColor": undefined,
-        }
-      }
     >
       &gt;_&lt;
     </a>
     <a
       className="head__nav__a a--primary"
+      href="/projects"
+    >
+      Проекты
+    </a>
+    <a
+      className="head__nav__a a--primary"
       href="/blog"
-      style={
-        Object {
-          "backgroundColor": undefined,
-        }
-      }
     >
       Блог
     </a>
+    
   </nav>
   <h1
     className="head__header"

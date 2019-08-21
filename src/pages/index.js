@@ -65,9 +65,9 @@ const IndexPage = () => {
         <h2>О работах</h2>
         <ol className="main__ol--arts">
           <li>
-            <a href="https://davidkistauri.now.sh/blog">
+            <Link to="/blog">
               <strong>Блог</strong>
-            </a>{" "}
+            </Link>{" "}
             — 2019
             <br />
             Сделал себе сайт портфолио-блог.

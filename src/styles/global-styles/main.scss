@@ -297,7 +297,7 @@ a {
       }
     }
   }
-  &.a--active {
+  &[aria-current="page"] {
     pointer-events: none;
     cursor: default;
     &:hover {
@@ -337,7 +337,6 @@ blockquote {
 }
 
 table {
-  width: 100%;
   margin-top: var(--third-padding);
   border-spacing: 0;
   border-collapse: collapse;
