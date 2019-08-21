@@ -297,13 +297,10 @@ a {
       }
     }
   }
-  &[aria-current="page"] {
+  &.a--active {
     background-color: var(--main-fg);
     pointer-events: none;
     cursor: default;
-    &:hover {
-      background-color: var(--main-fg);
-    }
   }
 }
 

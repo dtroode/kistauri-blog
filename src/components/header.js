@@ -38,13 +38,25 @@ const AdditionalLinks = props => {
 const Header = props => (
   <header className={`head head--${props.pageClass}`}>
     <nav className="head__nav">
-      <Link className="head__nav__a a--primary" to="/">
+      <Link
+        className="head__nav__a a--primary"
+        to="/"
+        activeClassName="a--active"
+      >
         {">_<"}
       </Link>
-      <Link to="/projects" className="head__nav__a a--primary">
+      <Link
+        to="/projects/"
+        className="head__nav__a a--primary"
+        activeClassName="a--active"
+      >
         Проекты
       </Link>
-      <Link className="head__nav__a a--primary" to="/blog">
+      <Link
+        className="head__nav__a a--primary"
+        to="/blog/"
+        activeClassName="a--active"
+      >
         Блог
       </Link>
       <AdditionalLinks
