@@ -39,7 +39,7 @@ const TagsPage = ({
               key={tag.fieldValue}
               className="a--secondary"
             >
-              ({tag.totalCount}) {tag.fieldValue}
+              {tag.fieldValue} <span className="a__span">{tag.totalCount}</span>
             </Link>
           ))}
         </p>
