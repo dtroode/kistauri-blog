@@ -120,6 +120,9 @@ main {
           margin-bottom: 0;
         }
       }
+      a.a--secondary {
+        margin-bottom: var(--fifth-padding);
+      }
     }
   }
   ol.main__ol--arts > li {
@@ -132,7 +135,6 @@ main {
     }
   }
   a.a--secondary {
-    margin-bottom: var(--fifth-padding);
     background-color: var(--additional-bg);
   }
   hr {
