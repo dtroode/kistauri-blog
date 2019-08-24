@@ -103,14 +103,9 @@ section {
         }
       }
       img,
-      video,
-      iframe {
-        width: 100%;
+      video {
         border-radius: var(--fourth-padding);
         background-color: var(--additional-bg);
-      }
-      iframe {
-        height: 500px;
       }
       ul,
       ol,
