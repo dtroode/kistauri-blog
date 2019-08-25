@@ -23,27 +23,27 @@ const BlogList = ({ pageContext, data }) => {
         ←
       </Link>
     ) : (
-      <Link to={`/blog/${currentPage - 1}`} className="a--secondary">
-        ←
+          <Link to={`/blog/page/${currentPage - 1}`} className="a--secondary">
+            ←
       </Link>
-    );
+        );
   // Creating link to previous page according to pages count
   const previousPageLink =
     currentPage === numPages ? (
       ""
     ) : (
-      <Link to={`/blog/${currentPage + 1}`} className="a--secondary">
-        →
+        <Link to={`/blog/page/${currentPage + 1}`} className="a--secondary">
+          →
       </Link>
-    );
+      );
   const allPostsLink =
     numPages > 1 ? (
       <Link to="/blog/all" className="a--secondary">
         Все посты
       </Link>
     ) : (
-      ""
-    );
+        ""
+      );
   return (
     <Layout pageClass="blog" title="Давид Кистаури. Блог">
       <Helmet>

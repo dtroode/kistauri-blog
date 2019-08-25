@@ -162,7 +162,7 @@ footer {
       svg.foot__sect__nav__a__svg {
         vertical-align: top;
         width: 1rem;
-        height: 1rem;
+        height: 1.4rem;
         margin-right: var(--fifth-padding);
       }
     }
@@ -245,7 +245,6 @@ p a {
 
 a {
   flex: inherit;
-  line-height: 1em;
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:not(.a--primary .a--secondary) {
     color: var(--accent-blue);
@@ -263,8 +262,9 @@ a {
   &.a--secondary {
     display: inline-block;
     margin-right: var(--fifth-padding);
-    padding: var(--fourth-padding);
+    padding: var(--fifth-padding) var(--fourth-padding);
     border-radius: var(--fourth-padding);
+    line-height: 1.4em;
     text-decoration: none;
     font-weight: 600;
     &:focus {
