@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
@@ -19,7 +19,9 @@ const BlogList = ({ pageContext, data }) => {
   const next = currentPage === 1 ? "" : currentPage === 2 ? "/blog/" : `/blog/page/${currentPage - 1}`;
   const prev = currentPage === numPages ? "" : `/blog/page/${currentPage + 1}`;
 
-  control(next, prev);
+  useEffect(() => {
+    control(next, prev);
+  }, [next, prev]);
 
   // Creating link to next page according to current page number
   const nextPageLink =

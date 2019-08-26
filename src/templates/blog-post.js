@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
@@ -21,7 +21,9 @@ export default ({ data, pageContext }) => {
   const nextSlug = next ? next.node.fields.slug : undefined;
   const prevSlug = prev ? prev.node.fields.slug : undefined;
 
-  control(nextSlug, prevSlug);
+  useEffect(() => {
+    control(nextSlug, prevSlug);
+  }, [nextSlug, prevSlug]);
 
   return (
     <Layout
@@ -68,7 +70,6 @@ export default ({ data, pageContext }) => {
               }
             })()}
           </span>
-          <span className="post-links__span">·</span>
           {/* All tags for this post */}
           {post.frontmatter.tags.map(tag => (
             <Link

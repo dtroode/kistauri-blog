@@ -154,6 +154,9 @@ footer {
     }
   }
   section.foot__sect {
+    nav.foot__sect__nav--links svg.foot__sect__nav__a__svg {
+      fill: var(--main-bg);
+    }
     h2.foot__sect__header {
       margin-bottom: var(--fourth-padding);
     }

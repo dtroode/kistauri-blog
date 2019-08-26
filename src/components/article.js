@@ -51,7 +51,6 @@ const Article = props => {
                 }
               })()}
             </span>
-            <span className="post-links__span">·</span>
             {/* All tags for this post */}
             {props.node.frontmatter.tags.map(tag => (
               <span key={tag} className="post-links__span">

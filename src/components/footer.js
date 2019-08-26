@@ -16,7 +16,7 @@ const Footer = props => {
           <a
             href={`https://twitter.com/intent/tweet?text=${title} by @dtroode&url=${link}`}
             title="Твитнуть"
-            className="a--secondary foot__sect__nav__a foot__sect__nav__a--twitter"
+            className="foot__sect__nav__a foot__sect__nav__a--twitter a--secondary"
           >
             <svg
               aria-hidden="true"
@@ -38,7 +38,7 @@ const Footer = props => {
           <a
             href={`https://www.facebook.com/sharer/sharer.php?u=${link}&amp;src=sdkpreparse`}
             title="Поделиться в Фейсбуке"
-            className="a--secondary foot__sect__nav__a foot__sect__nav__a--facebook"
+            className="foot__sect__nav__a foot__sect__nav__a--facebook a--secondary"
           >
             <svg
               aria-hidden="true"
@@ -60,7 +60,7 @@ const Footer = props => {
           <a
             href={`https://telegram.me/share/url?url=${link}&text=${title} | @dtroode`}
             title="Отправить через Телеграм"
-            className="a--secondary foot__sect__nav__a foot__sect__nav__a--telegram"
+            className="foot__sect__nav__a foot__sect__nav__a--telegram a--secondary"
           >
             <svg
               aria-hidden="true"
@@ -185,6 +185,16 @@ const Footer = props => {
             </svg>
             Гитхаб
           </a>
+          <a href="https://davidkistauri.now.sh/blog/rss.xml" title="РСС" className="foot__sect__nav__a a--primary">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              className="foot__sect__nav__a__svg"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img" viewBox="0 0 1000 1000">
+              <path d="M325.224 553.369L44.6383 665.754V570.717L220.381 509.999V506.228L44.6383 445.51V350.473L325.224 462.858V553.369ZM630.794 665V738.918H369.065V665H630.794ZM674.682 553.369V462.858L955.267 350.473V445.51L779.525 506.228V509.999L955.267 570.717V665.754L674.682 553.369Z" />
+            </svg>
+            Подписаться на блог</a>
         </nav>
       </section>
       {/* Social media icons by FontAwesome. Website: https://fontawesome.com. Github: https://github.com/FortAwesome/Font-Awesome */}

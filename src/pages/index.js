@@ -51,17 +51,6 @@ const IndexPage = () => {
       </section>
       <hr />
       <section className="main__sect--content">
-        <h2>О медиа</h2>
-        <ol>
-          <li>
-            <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
-              Моя статья о Файерфоксе
-            </a>
-          </li>
-        </ol>
-      </section>
-      <hr />
-      <section className="main__sect--content">
         <h2>О работах</h2>
         <ol className="main__ol--arts">
           <li>
@@ -268,6 +257,17 @@ const IndexPage = () => {
                 Написал текст о местах и людях, отредактировал текст об истории.
               </li>
             </ul>
+          </li>
+        </ol>
+      </section>
+      <hr />
+      <section className="main__sect--content">
+        <h2>О медиа</h2>
+        <ol>
+          <li>
+            <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
+              Моя статья о Файерфоксе
+            </a>
           </li>
         </ol>
       </section>

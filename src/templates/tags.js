@@ -26,7 +26,7 @@ const Tags = ({ pageContext, data }) => {
   return (
     <Layout pageClass="tag" title={tagHeader}>
       <SEO
-        title={tag}
+        title={`${totalCount} ${counter(totalCount)} с тегом ${tag}`}
         description={`Блог Давида Кистаури. тег: ${tag}`}
         image="/img/preview.jpg"
       />
