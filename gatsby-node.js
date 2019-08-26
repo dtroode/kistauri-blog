@@ -68,8 +68,8 @@ exports.createPages = ({ graphql, actions }) => {
             component: blogPostTemplate,
             context: {
               slug: node.fields.slug,
-              prev: index === 0 ? null : posts[index - 1],
-              next: index === result.length - 1 ? null : posts[index + 1]
+              next: index === 0 ? null : posts[index - 1],
+              prev: index === result.length - 1 ? null : posts[index + 1]
             }
           });
         });

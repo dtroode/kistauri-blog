@@ -7,6 +7,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Article from "../components/article";
 import SEO from "../components/seo";
+import control from "../scripts/control";
 
 import "../styles/media.scss";
 
@@ -14,25 +15,25 @@ const BlogList = ({ pageContext, data }) => {
   const PostsList = data.Posts.edges;
   const currentPage = pageContext.currentPage;
   const numPages = pageContext.numPages;
+
+  const next = currentPage === 1 ? "" : currentPage === 2 ? "/blog/" : `/blog/page/${currentPage - 1}`;
+  const prev = currentPage === numPages ? "" : `/blog/page/${currentPage + 1}`;
+
+  control(next, prev);
+
   // Creating link to next page according to current page number
   const nextPageLink =
     currentPage === 1 ? (
       ""
-    ) : currentPage === 2 ? (
-      <Link to="/blog/" className="a--secondary">
-        ←
-      </Link>
-    ) : (
-          <Link to={`/blog/page/${currentPage - 1}`} className="a--secondary">
-            ←
-      </Link>
-        );
+    ) : (<Link to={next} className="a--secondary">
+      ←
+      </Link>)
   // Creating link to previous page according to pages count
   const previousPageLink =
     currentPage === numPages ? (
       ""
     ) : (
-        <Link to={`/blog/page/${currentPage + 1}`} className="a--secondary">
+        <Link to={prev} className="a--secondary">
           →
       </Link>
       );

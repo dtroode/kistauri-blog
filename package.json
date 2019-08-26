@@ -67,6 +67,17 @@
     "gatsby"
   ],
   "license": "MIT",
+  "prettier": {
+    "editor.formatOnSave": false,
+    "[javascript]": {
+      "editor.formatOnSave": true,
+      "endOfLine": "lf",
+      "semi": false,
+      "singleQuote": false,
+      "tabWidth": 2,
+      "trailingComma": "es5"
+    }
+  },
   "size-limit": [
     {
       "name": "Critical Blog",
@@ -81,6 +92,28 @@
       "limit": "70 KB"
     }
   ],
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "<rootDir>/jest/jest-preprocess.js"
+    },
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/file-mock.js"
+    },
+    "testPathIgnorePatterns": [
+      "node_modules",
+      ".cache"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(gatsby)/)"
+    ],
+    "globals": {
+      "__PATH_PREFIX__": ""
+    },
+    "setupFiles": [
+      "<rootDir>/jest/loadershim.js"
+    ]
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

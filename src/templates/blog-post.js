@@ -7,6 +7,7 @@ import { format, isToday, isYesterday, isThisYear } from "date-fns";
 import Layout from "../components/layout";
 import kebabCase from "lodash/kebabCase";
 import SEO from "../components/seo";
+import control from "../scripts/control";
 
 import "../styles/post.scss";
 import "../styles/media.scss";
@@ -14,8 +15,13 @@ import "../styles/code.scss";
 
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
-  const { prev, next } = pageContext;
+  const { next, prev } = pageContext;
   const ruLocale = require("date-fns/locale/ru");
+
+  const nextSlug = next ? next.node.fields.slug : undefined;
+  const prevSlug = prev ? prev.node.fields.slug : undefined;
+
+  control(nextSlug, prevSlug);
 
   return (
     <Layout
@@ -75,20 +81,20 @@ export default ({ data, pageContext }) => {
           ))}
           <br />
           {/* Links to next and previous pages */}
-          {prev ? (
-            <Link to={prev.node.fields.slug} className="post-links__a">
-              {prev.node.frontmatter.title} ←
-            </Link>
-          ) : (
-            <span className="post-links__span--inact">←</span>
-          )}
           {next ? (
             <Link to={next.node.fields.slug} className="post-links__a">
-              → {next.node.frontmatter.title}
+              {next.node.frontmatter.title} ←
             </Link>
           ) : (
-            <span className="post-links__span--inact">→</span>
-          )}
+              <span className="post-links__span--inact">←</span>
+            )}
+          {prev ? (
+            <Link to={prev.node.fields.slug} className="post-links__a">
+              → {prev.node.frontmatter.title}
+            </Link>
+          ) : (
+              <span className="post-links__span--inact">→</span>
+            )}
         </p>
       </section>
     </Layout>
