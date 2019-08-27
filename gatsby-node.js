@@ -36,8 +36,10 @@ exports.createPages = ({ graphql, actions }) => {
               slug
             }
             frontmatter {
-              tags
               title
+              date
+              description
+              tags
               posttype
             }
           }
@@ -51,7 +53,10 @@ exports.createPages = ({ graphql, actions }) => {
           path: node.fields.slug,
           component: projectTemplate,
           context: {
-            slug: node.fields.slug
+            slug: node.fields.slug,
+            title: node.frontmatter.title,
+            date: node.frontmatter.date,
+            description: node.frontmatter.description
           }
         });
       } else {
@@ -69,7 +74,11 @@ exports.createPages = ({ graphql, actions }) => {
             context: {
               slug: node.fields.slug,
               next: index === 0 ? null : posts[index - 1],
-              prev: index === result.length - 1 ? null : posts[index + 1]
+              prev: index === result.length - 1 ? null : posts[index + 1],
+              title: node.frontmatter.title,
+              date: node.frontmatter.date,
+              description: node.frontmatter.description,
+              tags: node.frontmatter.tags
             }
           });
         });

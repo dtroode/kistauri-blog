@@ -15,7 +15,7 @@ import "../styles/code.scss";
 
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
-  const { next, prev } = pageContext;
+  const { slug, next, prev, title, date, description, tags } = pageContext;
   const ruLocale = require("date-fns/locale/ru");
 
   const nextSlug = next ? next.node.fields.slug : undefined;
@@ -28,12 +28,12 @@ export default ({ data, pageContext }) => {
   return (
     <Layout
       pageClass="post"
-      title={post.frontmatter.title}
-      link={post.fields.slug} // Link to this page for using in footer
+      title={title}
+      link={slug} // Link to this page for using in footer
     >
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
+        title={title}
+        description={description}
         image={post.frontmatter.hero.childImageSharp.fluid.src}
       />
       <section className="main__sect--text">
@@ -43,35 +43,35 @@ export default ({ data, pageContext }) => {
           {/* Date of post written */}
           <span
             title={
-              format(post.frontmatter.date, "dddd, D MMMM YYYY", {
+              format(date, "dddd, D MMMM YYYY", {
                 locale: ruLocale
               })
                 .charAt(0)
                 .toUpperCase() +
-              format(post.frontmatter.date, "dddd, D MMMM YYYY", {
+              format(date, "dddd, D MMMM YYYY", {
                 locale: ruLocale
               }).slice(1)
             }
             className="post-links__span"
           >
             {(() => {
-              if (isToday(post.frontmatter.date)) {
+              if (isToday(date)) {
                 return "сегодня";
-              } else if (isYesterday(post.frontmatter.date)) {
+              } else if (isYesterday(date)) {
                 return "вчера";
-              } else if (isThisYear(post.frontmatter.date)) {
-                return format(post.frontmatter.date, "D MMMM", {
+              } else if (isThisYear(date)) {
+                return format(date, "D MMMM", {
                   locale: ruLocale
                 });
               } else {
-                return format(post.frontmatter.date, "D MMMM YYYY", {
+                return format(date, "D MMMM YYYY", {
                   locale: ruLocale
                 });
               }
             })()}
           </span>
           {/* All tags for this post */}
-          {post.frontmatter.tags.map(tag => (
+          {tags.map(tag => (
             <Link
               to={`/blog/tags/${kebabCase(tag)}`}
               key={tag}
@@ -112,15 +112,7 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      fields {
-        slug
-      }
-      timeToRead
       frontmatter {
-        title
-        date
-        description
-        tags
         hero {
           childImageSharp {
             fluid {
