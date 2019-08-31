@@ -1,18 +1,25 @@
 @media (prefers-color-scheme: dark) {
   :root {
     // Main Background and Foreground colors
-    --main-bg: #2c2c2e;
-    --main-fg: #e5e5ea;
+    --main-bg: #1c1c1c;
+    --main-fg: #eeeeee;
 
     // Additional Background and Foreground colors
-    --additional-bg: #1c1c1e;
-    --additional-fg: #f2f2f7;
+    --additional-bg: #121212;
+    --additional-fg: #fafafa;
 
     // Accent colors
-    --accent-red: #ff453a;
-    --accent-green: #30d158;
-    --accent-blue: #0a84ff;
-    --accent-yellow: #ffd60a;
-    --accent-indigo: #5e5ce6;
+    --accent-red: #ff5131;
+    --accent-blue: #2962ff;
+    --accent-purple: #9d46ff;
+
+    // Additional colors
+    --additional-red: #ff867f;
+    --additional-green: #9fffe0;
+    --additional-blue: #83b9ff;
+    --additional-yellow: #ffff74;
+
+    // Contrast colors
+    --contrast-blue: #304ffe;
   }
 }

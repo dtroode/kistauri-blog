@@ -255,7 +255,7 @@ a {
       color: var(--accent-red);
     }
     &:visited {
-      color: var(--accent-indigo);
+      color: var(--accent-purple);
       &:hover {
         color: var(--accent-red);
       }
@@ -294,7 +294,7 @@ a {
     }
   }
   &.a--active {
-    color: var(--accent-blue);
+    color: var(--contrast-blue);
     background-color: var(--main-fg);
   }
   &[aria-current="page"] {
