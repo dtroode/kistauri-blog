@@ -29,9 +29,8 @@ const ProjectsList = ({ data }) => {
         {/* Displaying all projects according to limit */}
         {ProjectsList.map(({ node }) => (
           <article
-            id="work"
             key={node.frontmatter.title}
-            className="main__sect--arts__art"
+            className="main__sect--arts__art main__sect--arts__art--work"
           >
             <Link to={node.fields.slug} className="main__sect--arts__art__link">
               <Img
@@ -105,7 +104,7 @@ export const projectsListQuery = graphql`
             hero {
               childImageSharp {
                 fluid(maxWidth: 500, quality: 100) {
-                  ...GatsbyImageSharpFluid_withWebp
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

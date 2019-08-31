@@ -1,8 +1,8 @@
 ---
-title: Сайт второй школы
+title: Сайт школы им. А. С. Пушкина
 description: "Сайт второй школы Сухума, подробное описание всех плюсов и дизайн, подходящий школе"
 date: 2018-05-20
-hero: /img/preview/project-secondschool.jpg
+hero: /img/preview/project-secondschool.png
 link: https://secondschool.now.sh
 posttype: project
 ---

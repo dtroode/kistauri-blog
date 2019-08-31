@@ -170,7 +170,7 @@ const IndexPage = () => {
           </li>
           <li>
             <Link to="/projects/secondschool-website">
-              <strong>Сайт второй школы</strong>
+              <strong>Сайт школы им. А. С. Пушкина</strong>
             </Link>{" "}
             — 2018
             <br />
