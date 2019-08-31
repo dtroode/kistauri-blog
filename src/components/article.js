@@ -10,9 +10,8 @@ const Article = props => {
 
   return (
     <article
-      id={props.node.frontmatter.categories}
       key={props.node.frontmatter.title}
-      className="main__sect--arts__art"
+      className={`main__sect--arts__art main__sect--arts__art--${props.node.frontmatter.categories}`}
     >
       <Link to={props.node.fields.slug} className="main__sect--arts__art__link">
         <section className="main__sect--arts__art__link__sect">

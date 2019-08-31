@@ -6,16 +6,16 @@
     transform: translateY(-0.6rem);
     box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
   }
-  &#work {
+  &--work {
     background-color: var(--additional-red);
   }
-  &#thoughts {
+  &--thoughts {
     background-color: var(--additional-green);
   }
-  &#advices {
+  &--advices {
     background-color: var(--additional-yellow);
   }
-  &#learning {
+  &--learning {
     background-color: var(--additional-blue);
   }
   .main__sect--arts__art__link {
