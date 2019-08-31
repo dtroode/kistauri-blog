@@ -1,6 +1,7 @@
 .main__sect--arts__art {
   position: relative;
   border-radius: var(--fourth-padding);
+  background-color: var(--additional-bg);
   transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
     transform: translateY(-0.6rem);
@@ -18,17 +19,17 @@
   &--learning {
     background-color: var(--additional-blue);
   }
-  .main__sect--arts__art__link {
+  &__link {
     display: block;
     height: calc(100% - 2 * var(--third-padding));
     padding: var(--third-padding);
     border-radius: var(--fourth-padding);
     text-decoration: none;
-    &:hover {
-      color: #1c1c1e;
-    }
     &__sect {
-      color: #1c1c1e;
+      color: #121212;
+      &--proj {
+        color: var(--main-fg);
+      }
       &__p {
         margin-top: var(--third-padding);
       }

@@ -30,14 +30,14 @@ const ProjectsList = ({ data }) => {
         {ProjectsList.map(({ node }) => (
           <article
             key={node.frontmatter.title}
-            className="main__sect--arts__art main__sect--arts__art--work"
+            className="main__sect--arts__art"
           >
             <Link to={node.fields.slug} className="main__sect--arts__art__link">
               <Img
                 fluid={node.frontmatter.hero.childImageSharp.fluid}
                 className="main__sect--arts__art__link__img"
               />
-              <section className="main__sect--arts__art__link__sect">
+              <section className="main__sect--arts__art__link__sect main__sect--arts__art__link__sect--proj">
                 <h2>{node.frontmatter.title}</h2>
                 <p className="main__sect--arts__art__link__sect__p">
                   {node.frontmatter.description}
