@@ -1,11 +1,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     // Main Background and Foreground colors
-    --main-bg: #1c1c1c;
+    --main-bg: #121212;
     --main-fg: #eeeeee;
 
     // Additional Background and Foreground colors
-    --additional-bg: #121212;
+    --additional-bg: #1c1c1c;
     --additional-fg: #fafafa;
 
     // Accent colors
@@ -14,10 +14,15 @@
     --accent-purple: #9d46ff;
 
     // Additional colors
-    --additional-red: #ff867f;
-    --additional-green: #9fffe0;
-    --additional-blue: #83b9ff;
-    --additional-yellow: #ffff74;
+    --additional-red-bg: #1c1c1c;
+    --additional-green-bg: #1c1c1c;
+    --additional-blue-bg: #1c1c1c;
+    --additional-yellow-bg: #1c1c1c;
+
+    --additional-red-fg: #ff867f;
+    --additional-green-fg: #9fffe0;
+    --additional-blue-fg: #83b9ff;
+    --additional-yellow-fg: #ffff74;
 
     // Contrast colors
     --contrast-blue: #304ffe;

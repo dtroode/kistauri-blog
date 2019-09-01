@@ -8,16 +8,48 @@
     box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
   }
   &--work {
-    background-color: var(--additional-red);
+    background-color: var(--additional-red-bg);
+    .main__sect--arts__art__link__sect {
+      h2 {
+        color: var(--additional-red-fg);
+      }
+      p {
+        color: var(--additional-fg);
+      }
+    }
   }
   &--thoughts {
-    background-color: var(--additional-green);
+    background-color: var(--additional-green-bg);
+    .main__sect--arts__art__link__sect {
+      h2 {
+        color: var(--additional-green-fg);
+      }
+      p {
+        color: var(--additional-fg);
+      }
+    }
   }
   &--advices {
-    background-color: var(--additional-yellow);
+    background-color: var(--additional-yellow-bg);
+    .main__sect--arts__art__link__sect {
+      h2 {
+        color: var(--additional-yellow-fg);
+      }
+      p {
+        color: var(--additional-fg);
+      }
+    }
   }
   &--learning {
-    background-color: var(--additional-blue);
+    background-color: var(--additional-blue-bg);
+    .main__sect--arts__art__link__sect {
+      h2 {
+        color: var(--additional-blue-fg);
+      }
+      p {
+        color: var(--additional-fg);
+      }
+    }
   }
   &__link {
     display: block;
@@ -26,7 +58,6 @@
     border-radius: var(--fourth-padding);
     text-decoration: none;
     &__sect {
-      color: #121212;
       &--proj {
         color: var(--main-fg);
       }
