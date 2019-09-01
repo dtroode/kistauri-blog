@@ -185,7 +185,7 @@ const Footer = props => {
             </svg>
             На Гитхаб
           </a>
-          <a href="https://davidkistauri.now.sh/blog/rss.xml" title="РСС" className="foot__sect__nav__a a--primary">
+          <a href="https://davidkistauri.now.sh/rss.xml" title="РСС" className="foot__sect__nav__a a--primary">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -194,7 +194,7 @@ const Footer = props => {
               role="img" viewBox="0 0 1000 1000">
               <path d="M325.224 553.369L44.6383 665.754V570.717L220.381 509.999V506.228L44.6383 445.51V350.473L325.224 462.858V553.369ZM630.794 665V738.918H369.065V665H630.794ZM674.682 553.369V462.858L955.267 350.473V445.51L779.525 506.228V509.999L955.267 570.717V665.754L674.682 553.369Z" />
             </svg>
-            На блог</a>
+            На сайт</a>
         </nav>
       </section>
       {/* Social media icons by FontAwesome. Website: https://fontawesome.com. Github: https://github.com/FortAwesome/Font-Awesome */}

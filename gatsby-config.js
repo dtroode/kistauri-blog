@@ -123,8 +123,8 @@ module.exports = {
                 }
               }
             `,
-            output: "/blog/rss.xml",
-            title: "Дэтруд | Блог Давида Кистаури"
+            output: "/rss.xml",
+            title: "Дэтруд | Блог и Проекты Давида Кистаури"
           }
         ]
       }
