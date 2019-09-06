@@ -43,9 +43,14 @@ footer {
   }
 }
 
+header,
+main {
+  hr {
+    background-color: var(--additional-bg);
+  }
+}
+
 header {
-  align-items: start;
-  background-color: var(--additional-bg);
   &.head--error a.head__nav__a {
     color: var(--additional-fg);
     background-color: var(--additional-fg);
@@ -66,9 +71,6 @@ header {
     margin-bottom: var(--fourth-padding);
     a.head__nav__a {
       margin-bottom: var(--fifth-padding);
-      &.a--secondary {
-        background-color: var(--main-bg);
-      }
     }
   }
   h1.head__header {
@@ -80,11 +82,17 @@ header {
       opacity: 0.5;
     }
   }
+  hr {
+    margin: var(--secondary-padding) 0 0 0;
+  }
 }
 
 main,
 footer {
   padding-bottom: var(--primary-padding);
+  hr {
+    margin: var(--primary-padding) 0 0 0;
+  }
 }
 
 main {
@@ -134,9 +142,6 @@ main {
       margin-bottom: 0;
     }
   }
-  a.a--secondary {
-    background-color: var(--additional-bg);
-  }
   hr {
     margin-bottom: var(--secondary-padding);
   }
@@ -169,6 +174,9 @@ footer {
         margin-right: var(--fifth-padding);
       }
     }
+  }
+  hr {
+    background-color: var(--main-bg);
   }
 }
 
@@ -283,6 +291,7 @@ a {
     }
   }
   &.a--secondary {
+    background-color: var(--additional-bg);
     &:hover {
       color: var(--accent-red);
     }
@@ -361,8 +370,6 @@ img {
 }
 
 hr {
-  height: 0.25rem;
-  margin: var(--primary-padding) 0 0 0;
+  height: 0.15rem;
   border: 0;
-  background-color: var(--main-fg);
 }
