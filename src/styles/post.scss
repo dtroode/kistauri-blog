@@ -92,17 +92,24 @@ section {
         margin-top: 1rem;
       }
       a {
+        border-bottom: 1px solid var(--accent-blue-50);
         font-size: inherit;
         color: var(--accent-blue);
         text-decoration: none;
         &:hover {
+          border-bottom: 1px solid var(--accent-red-50);
           color: var(--accent-red);
         }
         &:visited {
+          border-bottom: 1px solid var(--accent-purple-50);
           color: var(--accent-purple);
           &:hover {
+            border-bottom: 1px solid var(--accent-red-50);
             color: var(--accent-red);
           }
+        }
+        &.gatsby-resp-image-link {
+          border-bottom: 0;
         }
       }
       img,

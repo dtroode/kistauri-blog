@@ -90,7 +90,17 @@ footer {
 
 main {
   &.main--portfolio a {
+    border-bottom: 1px solid var(--accent-blue-50);
     text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid var(--accent-red-50);
+    }
+    &:visited {
+      border-bottom: 1px solid var(--accent-purple-50);
+      &:hover {
+        border-bottom: 1px solid var(--accent-red-50);
+      }
+    }
   }
   &.main--error article.main__sect--arts__art {
     background-color: var(--accent-red);
@@ -231,9 +241,11 @@ p {
       margin-right: var(--fifth-padding);
     }
     a.post-links__a {
-      text-decoration: underline;
+      border-bottom: 1px solid var(--main-fg-50);
+      text-decoration: none;
       color: inherit;
       &:hover {
+        border-bottom: 1px solid var(--accent-red-50);
         color: var(--accent-red);
       }
     }
@@ -344,14 +356,12 @@ table {
   empty-cells: show;
   th,
   td {
+    padding: 0 var(--third-padding) var(--fifth-padding) 0;
     vertical-align: top;
     text-align: left;
   }
   th {
-    padding: 0 var(--third-padding) 0 0;
-  }
-  td {
-    padding: 0 var(--third-padding) var(--fifth-padding) 0;
+    border-bottom: 1px solid var(--main-fg-50);
   }
 }
 
