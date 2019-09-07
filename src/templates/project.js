@@ -27,41 +27,41 @@ export default ({ data, pageContext }) => {
         description={description}
         image={post.frontmatter.hero.childImageSharp.fluid.src}
       />
-      <section className="main__sect--text">
+      <section className="main__sect--text"><p className="post-links">
+        {/* Date of post written */}
+        <span
+          title={
+            format(date, "dddd, D MMMM YYYY", {
+              locale: ruLocale
+            })
+              .charAt(0)
+              .toUpperCase() +
+            format(date, "dddd, D MMMM YYYY", {
+              locale: ruLocale
+            }).slice(1)
+          }
+          className="post-links__span"
+        >
+          {(() => {
+            if (isToday(date)) {
+              return "сегодня";
+            } else if (isYesterday(date)) {
+              return "вчера";
+            } else if (isThisYear(date)) {
+              return format(date, "D MMMM", {
+                locale: ruLocale
+              });
+            } else {
+              return format(date, "D MMMM YYYY", {
+                locale: ruLocale
+              });
+            }
+          })()}
+        </span>
+      </p>
         {/* Content of post converted to HTML */}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <p className="post-links">
-          {/* Date of post written */}
-          <span
-            title={
-              format(date, "dddd, D MMMM YYYY", {
-                locale: ruLocale
-              })
-                .charAt(0)
-                .toUpperCase() +
-              format(date, "dddd, D MMMM YYYY", {
-                locale: ruLocale
-              }).slice(1)
-            }
-            className="post-links__span"
-          >
-            {(() => {
-              if (isToday(date)) {
-                return "сегодня";
-              } else if (isYesterday(date)) {
-                return "вчера";
-              } else if (isThisYear(date)) {
-                return format(date, "D MMMM", {
-                  locale: ruLocale
-                });
-              } else {
-                return format(date, "D MMMM YYYY", {
-                  locale: ruLocale
-                });
-              }
-            })()}
-          </span>
-        </p>
+
       </section>
     </Layout>
   );

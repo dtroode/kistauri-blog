@@ -37,8 +37,6 @@ export default ({ data, pageContext }) => {
         image={post.frontmatter.hero.childImageSharp.fluid.src}
       />
       <section className="main__sect--text">
-        {/* Content of post converted to HTML */}
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <p className="post-links">
           {/* Date of post written */}
           <span
@@ -80,7 +78,10 @@ export default ({ data, pageContext }) => {
               {tag}
             </Link>
           ))}
-          <br />
+        </p>
+        {/* Content of post converted to HTML */}
+        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <p className="post-links">
           {/* Links to next and previous pages */}
           {next ? (
             <Link to={next.node.fields.slug} className="post-links__a">
