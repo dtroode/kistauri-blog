@@ -84,16 +84,16 @@ export default ({ data, pageContext }) => {
         <p className="post-links">
           {/* Links to next and previous pages */}
           {next ? (
-            <Link to={next.node.fields.slug} className="post-links__a">
-              {next.node.frontmatter.title} ←
-            </Link>
+            <><Link to={next.node.fields.slug} className="post-links__a">
+              {next.node.frontmatter.title}
+            </Link><span className="post-links__span post-links__span--m015">←</span></>
           ) : (
-              <span className="post-links__span--inact">←</span>
+              <span className="post-links__span--m015 post-links__span--inact">←</span>
             )}
           {prev ? (
-            <Link to={prev.node.fields.slug} className="post-links__a">
-              → {prev.node.frontmatter.title}
-            </Link>
+            <><span className="post-links__span">→</span><Link to={prev.node.fields.slug} className="post-links__a">
+              {prev.node.frontmatter.title}
+            </Link></>
           ) : (
               <span className="post-links__span--inact">→</span>
             )}
