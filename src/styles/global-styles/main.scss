@@ -71,6 +71,7 @@ header {
     margin: 0;
     font-size: 2.25em;
     font-weight: 700;
+    word-break: break-word;
     span.head__header__span {
       text-transform: uppercase;
     }
@@ -90,15 +91,15 @@ footer {
 
 main {
   &.main--portfolio a {
-    border-bottom: 1px solid var(--accent-blue-50);
+    border-bottom: 1px solid var(--accent-blue-25);
     text-decoration: none;
     &:hover {
-      border-bottom: 1px solid var(--accent-red-50);
+      border-bottom: 1px solid var(--accent-red-25);
     }
     &:visited {
-      border-bottom: 1px solid var(--accent-purple-50);
+      border-bottom: 1px solid var(--accent-purple-25);
       &:hover {
-        border-bottom: 1px solid var(--accent-red-50);
+        border-bottom: 1px solid var(--accent-red-25);
       }
     }
   }
@@ -241,11 +242,11 @@ p {
       margin-right: var(--fifth-padding);
     }
     a.post-links__a {
-      border-bottom: 1px solid var(--main-fg-50);
+      border-bottom: 1px solid var(--main-fg-25);
       text-decoration: none;
       color: inherit;
       &:hover {
-        border-bottom: 1px solid var(--accent-red-50);
+        border-bottom: 1px solid var(--accent-red-25);
         color: var(--accent-red);
       }
     }
@@ -361,7 +362,7 @@ table {
     text-align: left;
   }
   th {
-    border-bottom: 1px solid var(--main-fg-50);
+    border-bottom: 1px solid var(--main-fg-25);
   }
 }
 
