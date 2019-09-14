@@ -3,7 +3,7 @@ title: Сайт CYXYM
 description: "Сайт города Сухум, где важное — контент"
 date: 2018-04-07
 hero: /img/preview/project-cyxym.jpg
-link: https://cyxym.netlify.com
+link: https://cyxym.now.sh
 posttype: project
 ---
 

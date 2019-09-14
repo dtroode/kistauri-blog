@@ -3,7 +3,7 @@ title: Мастер Букет
 description: Сайт и всякие штуки для цветочной студии Мастер Букет
 date: 2018-08-30
 hero: /preview/project-masterbuket.jpg
-link: https://masterbuket.com
+link: https://masterbuket.now.sh
 posttype: project
 ---
 

@@ -24,8 +24,8 @@ const IndexPage = () => {
         <ol>
           <li>
             Разрабатываю адаптивные сайты, лэндинги и веб-приложения,
-            оптимизирую их — сайты грузятся быстро. Пишу на HTML, CSS, JS,
-            React, Gatsby. Учу Next.js, Svelte. Вкладываю в опен сорс.
+            оптимизирую их — сайты грузятся быстро. Пишу на <span lang="en">HTML, CSS, JS,
+            React, Gatsby</span>. Учу <span lang="en">Next.js, Svelte</span>. Вкладываю в опен сорс.
           </li>
           <li>
             Пишу текст{" "}
@@ -41,7 +41,7 @@ const IndexPage = () => {
           </li>
           <li>
             Развиваю качественную разработку, хочу сделать ее проще для новичков
-            и опытных программистов: from developer to developer.
+            и опытных программистов: <span lang="en">from developer to developer</span>.
           </li>
           <li>
             Работаю только удаленно. Принимаю полный план с предоплатой и

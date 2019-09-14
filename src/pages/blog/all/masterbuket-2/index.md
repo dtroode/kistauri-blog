@@ -61,4 +61,4 @@ _Кастомизации больше — веса меньше._
 
 ![Результаты PageSpeed Insights по скорости](masterbuket-speed.jpg "Результаты PageSpeed Insights по скорости")
 
-Ссылка: [masterbuket.com](https://masterbuket.com)
+Ссылка: [masterbuket.now.sh](https://masterbuket.now.sh)
