@@ -1,14 +1,14 @@
-# <a href="https://davidkistauri.now.sh/">Kistauri</a>
+# <a href="https://davidkistauri.ru/">Kistauri</a>
 
 <img
   align="right"
-  src="https://davidkistauri.now.sh/icons/icon-144x144.png"
+  src="https://davidkistauri.ru/icons/icon-144x144.png"
   width="100px"
   height="100px"
   alt="Blog Logo">
 
 Hello, I am **David Kistauri**.\
-This is repository of my personal website with **[blog](https://davidkistauri.now.sh/blog).**
+This is repository of my personal website with **[blog](https://davidkistauri.ru/blog).**
 
 You can
 

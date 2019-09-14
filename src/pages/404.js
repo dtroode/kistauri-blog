@@ -13,7 +13,7 @@ const ErrorPage = () => {
   return (
     <Layout pageClass="error" title="404. Страница не найдена">
       <Helmet>
-        <link rel="canonical" href="https://davidkistauri.now.sh/404" />
+        <link rel="canonical" href="https://davidkistauri.ru/404" />
       </Helmet>
       <SEO
         title="404. Страница не найдена"

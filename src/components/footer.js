@@ -3,7 +3,7 @@ import React from "react";
 const Footer = props => {
   const title = props.title;
   // Link of page
-  const link = `https://davidkistauri.now.sh${props.link}`;
+  const link = `https://davidkistauri.ru${props.link}`;
   // Variable with share content. Uses only for posts
   let share = "";
 
@@ -185,7 +185,7 @@ const Footer = props => {
             </svg>
             На Гитхаб
           </a>
-          <a href="https://davidkistauri.now.sh/rss.xml" title="РСС" className="foot__sect__nav__a a--primary">
+          <a href="https://davidkistauri.ru/rss.xml" title="РСС" className="foot__sect__nav__a a--primary">
             <svg
               aria-hidden="true"
               focusable="false"

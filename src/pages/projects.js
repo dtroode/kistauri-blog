@@ -18,7 +18,7 @@ const ProjectsList = ({ data }) => {
   return (
     <Layout pageClass="projects" title="Давид Кистаури. Проекты">
       <Helmet>
-        <link rel="canonical" href="https://davidkistauri.now.sh/projects" />
+        <link rel="canonical" href="https://davidkistauri.ru/projects" />
       </Helmet>
       <SEO
         title="Проекты"

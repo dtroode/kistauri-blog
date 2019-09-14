@@ -12,7 +12,7 @@ const IndexPage = () => {
   return (
     <Layout pageClass="portfolio" title="Давид Кистаури">
       <Helmet>
-        <link rel="canonical" href="https://davidkistauri.now.sh/" />
+        <link rel="canonical" href="https://davidkistauri.ru/" />
       </Helmet>
       <SEO
         title=">_<"
@@ -157,7 +157,7 @@ const IndexPage = () => {
                 <strong>Как дизайнер</strong>
                 <br />
                 Придумал дизайн бренда, придумал дизайн сайта,{" "}
-                <a href="https://davidkistauri.now.sh/blog/all/masterbuket-2/">
+                <a href="https://davidkistauri.ru/blog/all/masterbuket-2/">
                   придумал редизайн сайта.
                 </a>
               </li>

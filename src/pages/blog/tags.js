@@ -20,7 +20,7 @@ const TagsPage = ({
   return (
     <Layout pageClass="tags" title="Давид Кистаури. Блог. Теги">
       <Helmet>
-        <link rel="canonical" href="https://davidkistauri.now.sh/blog" />
+        <link rel="canonical" href="https://davidkistauri.ru/blog" />
       </Helmet>
       <SEO
         title="Теги"

@@ -4,8 +4,8 @@ module.exports = {
     description: `Назови любое слово и я сделаю об этом сайт`,
     author: `Давид Кистаури`,
     image: `/img/preview.jpg`,
-    siteUrl: `https://davidkistauri.now.sh/`,
-    blogUrl: `https://davidkistauri.now.sh/blog/`
+    siteUrl: `https://davidkistauri.ru/`,
+    blogUrl: `https://davidkistauri.ru/blog/`
   },
   plugins: [
     `gatsby-plugin-sass`,
