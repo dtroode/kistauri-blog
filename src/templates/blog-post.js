@@ -72,7 +72,7 @@ export default ({ data, pageContext }) => {
           {/* All tags for this post */}
           {tags.map(tag => (
             <Link
-              to={`/ blog / tags / ${kebabCase(tag)}`}
+              to={`/blog/tags/${kebabCase(tag)}`}
               key={tag}
               className="postlinks__a"
             >
