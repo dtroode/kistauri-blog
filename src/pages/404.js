@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import "../styles/article.scss";
+import articleStyles from "../styles/article.module.scss";
 import "../styles/media.scss";
 
 const ErrorPage = () => {
@@ -21,11 +21,11 @@ const ErrorPage = () => {
         image="/img/preview.jpg"
       />
       <section className="main__sect--arts">
-        <article className="main__sect--arts__art">
-          <Link to="/" className="main__sect--arts__art__link">
-            <section className="main__sect--arts__art__link__sect">
+        <article className={`${articleStyles.art} ${articleStyles.error}`}>
+          <Link to="/" className={`${articleStyles.art__link} ${articleStyles.error__link}`}>
+            <section className={articleStyles.art__link__sect}>
               <h2>Ты столкнулся с ошибкой</h2>
-              <p>
+              <p className={articleStyles.error__link__sect__p}>
                 Что произошло: возможно, ты ошибся ссылкой или перешел по
                 удаленной странице.
                 <br />
@@ -34,14 +34,14 @@ const ErrorPage = () => {
             </section>
           </Link>
         </article>
-        <article className="main__sect--arts__art">
+        <article className={`${articleStyles.art} ${articleStyles.error}`}>
           <a
             href={`mailto:davidkis113@gmail.com?subject=Я нашел ошибку на сайте`}
-            className="main__sect--arts__art__link"
+            className={`${articleStyles.art__link} ${articleStyles.error__link}`}
           >
-            <section className="main__sect--arts__art__link__sect">
+            <section className={articleStyles.art__link__sect}>
               <h2>Сообщить об ошибке</h2>
-              <p>А еще можно сообщить автору об ошибке нажав на этот блок.</p>
+              <p className={articleStyles.error__link__sect__p}>А еще можно сообщить автору об ошибке нажав на этот блок.</p>
             </section>
           </a>
         </article>

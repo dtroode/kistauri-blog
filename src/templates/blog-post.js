@@ -10,6 +10,7 @@ import SEO from "../components/seo";
 import control from "../scripts/control";
 
 import "../styles/post.scss";
+import postStyles from "../styles/post.module.scss";
 import "../styles/media.scss";
 import "../styles/code.scss";
 
@@ -36,8 +37,8 @@ export default ({ data, pageContext }) => {
         description={description}
         image={post.frontmatter.hero.childImageSharp.fluid.src}
       />
-      <section className="main__sect--text">
-        <p className="post-links">
+      <section className={`${postStyles.text} main__sect--text`}>
+        <p className="postlinks">
           {/* Date of post written */}
           <span
             title={
@@ -50,7 +51,7 @@ export default ({ data, pageContext }) => {
                 locale: ruLocale
               }).slice(1)
             }
-            className="post-links__span"
+            className="postlinks__span"
           >
             {(() => {
               if (isToday(date)) {
@@ -71,9 +72,9 @@ export default ({ data, pageContext }) => {
           {/* All tags for this post */}
           {tags.map(tag => (
             <Link
-              to={`/blog/tags/${kebabCase(tag)}`}
+              to={`/ blog / tags / ${kebabCase(tag)}`}
               key={tag}
-              className="post-links__a"
+              className="postlinks__a"
             >
               {tag}
             </Link>
@@ -81,21 +82,21 @@ export default ({ data, pageContext }) => {
         </p>
         {/* Content of post converted to HTML */}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <p className="post-links">
+        <p className="postlinks">
           {/* Links to next and previous pages */}
           {next ? (
-            <><Link to={next.node.fields.slug} className="post-links__a">
+            <><Link to={next.node.fields.slug} className="postlinks__a">
               {next.node.frontmatter.title}
-            </Link><span className="post-links__span post-links__span--m015">←</span></>
+            </Link><span className="postlinks__span postlinks__span--m015">←</span></>
           ) : (
-              <span className="post-links__span--m015 post-links__span--inact">←</span>
+              <span className="postlinks__span--m015 postlinks__span--inact">←</span>
             )}
           {prev ? (
-            <><span className="post-links__span">→</span><Link to={prev.node.fields.slug} className="post-links__a">
+            <><span className="postlinks__span">→</span><Link to={prev.node.fields.slug} className="postlinks__a">
               {prev.node.frontmatter.title}
             </Link></>
           ) : (
-              <span className="post-links__span--inact">→</span>
+              <span className="postlinks__span--inact">→</span>
             )}
         </p>
       </section>
@@ -110,18 +111,18 @@ export default ({ data, pageContext }) => {
 // All tags list
 // Title image
 export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      query($slug: String!) {
+        markdownRemark(fields: {slug: {eq: $slug } }) {
+        html
       frontmatter {
         hero {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-        }
+        childImageSharp {
+        fluid {
+        src
+      }
       }
     }
   }
+}
+}
 `;

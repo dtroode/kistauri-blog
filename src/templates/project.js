@@ -7,8 +7,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import "../styles/post.scss";
+import postStyles from "../styles/post.module.scss";
 import "../styles/media.scss";
-import "../styles/code.scss";
 
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
@@ -27,7 +27,7 @@ export default ({ data, pageContext }) => {
         description={description}
         image={post.frontmatter.hero.childImageSharp.fluid.src}
       />
-      <section className="main__sect--text"><p className="post-links">
+      <section className={`${postStyles.text} main__sect--text`}><p className="postlinks">
         {/* Date of post written */}
         <span
           title={
@@ -40,7 +40,7 @@ export default ({ data, pageContext }) => {
               locale: ruLocale
             }).slice(1)
           }
-          className="post-links__span"
+          className="postlinks__span"
         >
           {(() => {
             if (isToday(date)) {

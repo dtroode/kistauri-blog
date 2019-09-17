@@ -9,6 +9,7 @@ import { format, isToday, isYesterday, isThisYear } from "date-fns";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
+import articleStyles from "../styles/article.module.scss";
 import "../styles/media.scss";
 
 const ProjectsList = ({ data }) => {
@@ -30,19 +31,19 @@ const ProjectsList = ({ data }) => {
         {ProjectsList.map(({ node }) => (
           <article
             key={node.frontmatter.title}
-            className="main__sect--arts__art"
+            className={articleStyles.art}
           >
-            <Link to={node.fields.slug} className="main__sect--arts__art__link">
+            <Link to={node.fields.slug} className={articleStyles.art__link}>
               <Img
                 fluid={node.frontmatter.hero.childImageSharp.fluid}
-                className="main__sect--arts__art__link__img"
+                className={articleStyles.art__link__img}
               />
-              <section className="main__sect--arts__art__link__sect main__sect--arts__art__link__sect--proj">
+              <section className={`${articleStyles.art__link__sect} ${articleStyles.art__link__proj}`}>
                 <h2>{node.frontmatter.title}</h2>
-                <p className="main__sect--arts__art__link__sect__p">
+                <p className={articleStyles.art__link__sect__p}>
                   {node.frontmatter.description}
                 </p>
-                <p className="main__sect--arts__art__link__sect__p post-links">
+                <p className={`${articleStyles.art__link__sect__p} postlinks`}>
                   {/* Date of post written */}
                   <span
                     title={
@@ -55,7 +56,7 @@ const ProjectsList = ({ data }) => {
                         locale: ruLocale
                       }).slice(1)
                     }
-                    className="post-links__span"
+                    className="postlinks__span"
                   >
                     {(() => {
                       if (isToday(node.frontmatter.date)) {

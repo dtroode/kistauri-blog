@@ -3,23 +3,25 @@ import React from "react";
 import { Link } from "gatsby";
 import { format, isToday, isYesterday, isThisYear } from "date-fns";
 
-import "../styles/article.scss";
+import articleStyles from "../styles/article.module.scss";
 
 const Article = props => {
   const ruLocale = require("date-fns/locale/ru");
 
+  const category = props.node.frontmatter.categories === 'work' ? articleStyles.work : props.node.frontmatter.categories === 'thoughts' ? articleStyles.thoughts : props.node.frontmatter.categories === 'advices' ? articleStyles.advices : articleStyles.learning;
+
   return (
     <article
       key={props.node.frontmatter.title}
-      className={`main__sect--arts__art main__sect--arts__art--${props.node.frontmatter.categories}`}
+      className={`${articleStyles.art} ${category}`}
     >
-      <Link to={props.node.fields.slug} className="main__sect--arts__art__link">
-        <section className="main__sect--arts__art__link__sect">
+      <Link to={props.node.fields.slug} className={articleStyles.art__link}>
+        <section className={articleStyles.art__link__sect}>
           <h2>{props.node.frontmatter.title}</h2>
-          <p className="main__sect--arts__art__link__sect__p">
+          <p className={articleStyles.art__link__sect__p}>
             {props.node.frontmatter.description}
           </p>
-          <p className="main__sect--arts__art__link__sect__p post-links">
+          <p className={`${articleStyles.art__link__sect__p} postlinks`}>
             {/* Date of post written */}
             <span
               title={
@@ -32,7 +34,7 @@ const Article = props => {
                   locale: ruLocale
                 }).slice(1)
               }
-              className="post-links__span"
+              className="postlinks__span"
             >
               {(() => {
                 if (isToday(props.node.frontmatter.date)) {
@@ -52,7 +54,7 @@ const Article = props => {
             </span>
             {/* All tags for this post */}
             {props.node.frontmatter.tags.map(tag => (
-              <span key={tag} className="post-links__span">
+              <span key={tag} className="postlinks__span">
                 {tag}
               </span>
             ))}

@@ -43,154 +43,18 @@ footer.foot--post {
 section {
   &.main__sect--text {
     section {
-      & > p:not(:first-child) {
-        margin-top: var(--third-padding);
+      a.gatsby-resp-image-link {
+        border-bottom: 0;
       }
-      h2,
-      h3,
-      p,
-      table {
-        max-width: 700px;
-      }
-      h2,
-      p {
-        width: 100%;
-      }
-      h2 {
-        margin-top: 3rem;
-      }
-      h3 {
-        margin-top: 1rem;
-        & + p:not(:first-child) {
-          margin-top: 0;
-        }
-      }
-      p,
-      a,
-      ul,
-      ol,
-      code,
-      blockquote {
-        font-weight: 400;
-        line-height: 1.5em;
-      }
-      p,
-      a,
-      ul,
-      ol {
-        code {
-          color: var(--main-dark);
-        }
-      }
-      p code,
-      a code,
-      li code,
-      span code {
-        background-color: unset;
-      }
-      p {
-        margin-top: 1rem;
-      }
-      a {
-        border-bottom: 1px solid var(--accent-blue-25);
-        font-size: inherit;
-        color: var(--accent-blue);
-        text-decoration: none;
-        &:hover {
-          border-bottom: 1px solid var(--accent-red-25);
-          color: var(--accent-red);
-        }
-        &:visited {
-          border-bottom: 1px solid var(--accent-purple-25);
-          color: var(--accent-purple);
-          &:hover {
-            border-bottom: 1px solid var(--accent-red-25);
-            color: var(--accent-red);
-          }
-        }
-        &.gatsby-resp-image-link {
-          border-bottom: 0;
-        }
-      }
-      img,
-      video {
+      span.gatsby-resp-image-background-image {
+        display: block;
         border-radius: var(--fourth-padding);
-        background-color: var(--additional-bg);
-      }
-      ul,
-      ol,
-      blockquote {
-        max-width: calc(700px - var(--primary-padding));
-      }
-      ul,
-      ol {
-        padding-left: var(--primary-padding);
-        li {
-          list-style-position: outside;
-        }
-      }
-      figure,
-      iframe {
-        margin: 1rem 0 0 0;
-      }
-      figcaption {
-        margin-top: 0.3rem;
-        font-size: 0.8em;
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-      span {
-        &.gatsby-resp-image-background-image {
-          display: block;
-          border-radius: var(--fourth-padding);
-        }
-      }
-      blockquote,
-      pre {
-        border-radius: var(--fourth-padding);
-      }
-      blockquote {
-        p:first-child {
-          margin-top: 0;
-        }
-      }
-      pre {
-        overflow-x: scroll;
-        max-width: calc(700px - 2 * var(--third-padding));
-        margin-top: var(--third-padding);
-        margin-bottom: 0;
-        padding: var(--third-padding);
-      }
-      code {
-        font-size: 1em;
-        span {
-          font-weight: unset;
-        }
-      }
-      code,
-      pre {
-        scrollbar-width: none;
-      }
-      code::-webkit-scrollbar,
-      pre::-webkit-scrollbar {
-        height: 0;
-      }
-      li p {
-        margin-top: 0;
-      }
-      twitter-widget {
-        width: 100% !important;
-        margin-top: 1rem !important;
-      }
-      hr + * {
-        margin-top: 0;
       }
     }
   }
-  p.post-links {
+  p.postlinks {
     width: unset;
-    span.post-links__span {
+    span.postlinks__span {
       &--m015 {
         margin-right: 0.15rem;
       }
@@ -198,7 +62,7 @@ section {
         opacity: 0.25;
       }
     }
-    a.post-links__a {
+    a.postlinks__a {
       color: inherit;
       &:hover {
         color: var(--accent-red);
