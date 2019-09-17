@@ -64,6 +64,12 @@ header {
     margin-bottom: var(--fourth-padding);
     a.head__nav__a {
       margin-bottom: var(--fifth-padding);
+      &[aria-current="page"] {
+        color: var(--main-bg);
+        background-color: var(--main-fg);
+        pointer-events: none;
+        cursor: default;
+      }
     }
   }
   h1.head__header {
@@ -297,12 +303,6 @@ a {
   &.a--active {
     color: var(--contrast-blue);
     background-color: var(--main-fg);
-  }
-  &[aria-current="page"] {
-    color: var(--main-bg);
-    background-color: var(--main-fg);
-    pointer-events: none;
-    cursor: default;
   }
   .a__span {
     opacity: 0.5;

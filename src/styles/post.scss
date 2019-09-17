@@ -53,7 +53,9 @@ section {
     }
   }
   p.postlinks {
-    width: unset;
+    &:first-of-type {
+      margin-top: 0;
+    }
     span.postlinks__span {
       &--m015 {
         margin-right: 0.15rem;
