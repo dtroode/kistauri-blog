@@ -32,7 +32,7 @@ const AdditionalLinks = props => {
   } else if (props.className === "project") {
     links = (
       <a href={props.linkToProject} className="head__nav__a a--secondary">
-        Открыть
+        {props.linkToProject.substr(8)} {/* Remove https:// */}
       </a>
     );
   } else {
