@@ -16,10 +16,9 @@ const Tags = ({ pageContext, data }) => {
   // Formatting text according to posts count
   const tagHeader = (
     <>
-      {totalCount} {counter(totalCount)} с тегом
-      <br />
+      {tag}{" "}
       <span className="head__header__span">
-        {tag}
+        {totalCount} {counter(totalCount)}
       </span>
     </>
   );
