@@ -33,4 +33,8 @@
     // Contrast colors
     --contrast-blue: #304ffe;
   }
+
+  img {
+    filter: brightness(85%);
+  }
 }
