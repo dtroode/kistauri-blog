@@ -34,6 +34,10 @@ function SEO({ description, lang, meta, title, image }) {
       image={site.siteMetadata.image}
       meta={[
         {
+          name: `theme-color`,
+          content: `#fafafa`
+        },
+        {
           name: `google-site-verification`,
           content: `ZxrqdjNGV_mLaEYAKAk4LAuwrTITGTnrR0jybKkl7N4`
         },

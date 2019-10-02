@@ -49,8 +49,6 @@ module.exports = {
         name: `Давид Кистаури`,
         short_name: `Давид`,
         start_url: `/`,
-        background_color: `#fafafa`,
-        theme_color: `#2962ff`,
         display: `minimal-ui`,
         icon: `src/images/icon.png` // This path is relative to the root of the site.
       }
