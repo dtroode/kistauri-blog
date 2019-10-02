@@ -8,6 +8,7 @@ module.exports = {
     blogUrl: `https://davidkistauri.ru/blog/`
   },
   plugins: [
+    `gatsby-plugin-preact`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
