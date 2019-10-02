@@ -187,7 +187,7 @@ const Footer = props => {
             </svg>
             На Гитхаб
           </a>
-          <Link to="https://davidkistauri.ru/blog/all/rss-subscribe" title="РСС" className="foot__sect__nav__a a--primary">
+          <Link to="/blog/all/rss-subscribe" title="РСС" className="foot__sect__nav__a a--primary">
             На сайт</Link>
         </nav>
       </section>
