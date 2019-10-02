@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "gatsby";
+
 const Footer = props => {
   const title = props.title;
   // Link of page
@@ -185,8 +187,8 @@ const Footer = props => {
             </svg>
             На Гитхаб
           </a>
-          <a href="https://davidkistauri.ru/rss.xml" title="РСС" className="foot__sect__nav__a a--primary">
-            На сайт</a>
+          <Link to="https://davidkistauri.ru/blog/all/rss-subscribe" title="РСС" className="foot__sect__nav__a a--primary">
+            На сайт</Link>
         </nav>
       </section>
       {/* Social media icons by FontAwesome. Website: https://fontawesome.com. Github: https://github.com/FortAwesome/Font-Awesome */}

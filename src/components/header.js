@@ -12,9 +12,9 @@ const AdditionalLinks = props => {
         <Link to="/blog/tags" className="head__nav__a a--secondary">
           Теги
         </Link>
-        <a href="/rss.xml" className="head__nav__a a--secondary">
+        <Link to="/blog/all/rss-subscribe" className="head__nav__a a--secondary">
           Подписаться
-        </a>
+        </Link>
       </>
     );
   } else if (props.className === "tag") {
@@ -25,9 +25,9 @@ const AdditionalLinks = props => {
     );
   } else if (props.className === "projects") {
     links = (
-      <a href="/rss.xml" className="head__nav__a a--secondary">
+      <Link to="/blog/all/rss-subscribe" className="head__nav__a a--secondary">
         Подписаться
-      </a>
+      </Link>
     );
   } else if (props.className === "project") {
     links = (
