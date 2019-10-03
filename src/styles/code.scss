@@ -6,14 +6,12 @@
 
 :root {
   // Code colors
-  --code-bg: #faf8f5;
   --code-fg: #728fcb;
   --comment: #b6ad9a;
   --tag: #063289;
   --function: #b29762;
   --selector: #2d2006;
   --string: #728fcb;
-  --highlight: #8a75f5;
 }
 
 pre,
@@ -31,7 +29,6 @@ code[class*="language-"] {
   hyphens: none;
   hyphens: none;
   color: var(--code-fg);
-  background-color: var(--code-bg);
   text-shadow: none;
 }
 
@@ -44,7 +41,7 @@ pre[class*="language-"] {
   hyphens: none;
   hyphens: none;
   color: var(--code-fg);
-  background-color: var(--code-bg);
+  background-color: var(--additional-bg);
   text-shadow: none;
 }
 
@@ -146,7 +143,6 @@ code {
 @media screen and (prefers-color-scheme: dark) {
   :root {
     // Code colors
-    --code-bg: #2a2734;
     --code-fg: #afa0fe;
     --comment: #6c6783;
     --tag: #e09142;

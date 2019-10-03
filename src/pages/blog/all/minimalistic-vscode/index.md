@@ -49,8 +49,7 @@ tags: ["текст", "вс код", "настройка"]
   // Редактор
   "editor.cursorSmoothCaretAnimation": true,
   // Включаю плавную анимацию движения курсора
-  "editor.fontFamily": "'Fira Code',\
-  Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
   // Моя настройка шрифтов. Можно вставить свою.
   // Fira Code <3
   "editor.fontLigatures": true, // Включаю лигатуры.
