@@ -75,7 +75,7 @@ header {
   h1.head__header {
     display: block;
     margin: 0;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: 700;
     word-break: break-word;
     span.head__header__span {
@@ -184,7 +184,7 @@ h2 {
 h2 {
   margin-top: 0;
   margin-bottom: var(--third-padding);
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 700;
   & + p {
     margin-top: var(--third-padding);
@@ -231,7 +231,7 @@ p {
     margin-top: 0;
   }
   &.postlinks {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     * {
       margin-right: var(--fifth-padding);
     }
