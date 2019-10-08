@@ -16,7 +16,7 @@ const Footer = props => {
         <h2 className="foot__sect__header">О ссылке</h2>
         <nav className="foot__sect__nav foot__sect__nav--share">
           <a
-            href={`https://twitter.com/intent/tweet?text=${title} by @dtroode&url=${link}`}
+            href={`https://twitter.com/intent/tweet?text=${title} от @dtroode&url=${link}`}
             title="Твитнуть"
             className="foot__sect__nav__a foot__sect__nav__a--twitter a--secondary"
           >
@@ -60,7 +60,7 @@ const Footer = props => {
             Поделиться
           </a>
           <a
-            href={`https://telegram.me/share/url?url=${link}&text=${title} | @dtroode`}
+            href={`https://telegram.me/share/url?url=${link}&text=${title} от @dtroode`}
             title="Отправить через Телеграм"
             className="foot__sect__nav__a foot__sect__nav__a--telegram a--secondary"
           >
