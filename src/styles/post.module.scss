@@ -94,12 +94,10 @@
     }
   }
   pre {
-    overflow-x: scroll;
-    max-width: calc(700px - 2 * var(--third-padding));
+    max-width: calc(700px - var(--primary-padding));
     margin-top: var(--third-padding);
     margin-bottom: 0;
-    padding: var(--third-padding);
-    font-size: 0.8rem;
+    padding: 0 0 0 var(--primary-padding);
   }
   code {
     font-size: 1em;

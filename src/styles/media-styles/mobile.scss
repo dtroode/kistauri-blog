@@ -36,9 +36,7 @@
     }
     section.main__sect--text {
       pre {
-        max-width: calc(
-          100vw - 2 * var(--third-padding) - 2 * var(--side-padding)
-        );
+        max-width: 100%;
       }
     }
   }

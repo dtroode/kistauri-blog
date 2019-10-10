@@ -16,7 +16,7 @@
 
 pre,
 code {
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 code[class*="language-"] {
@@ -41,7 +41,6 @@ pre[class*="language-"] {
   hyphens: none;
   hyphens: none;
   color: var(--code-fg);
-  background-color: var(--additional-bg);
   text-shadow: none;
 }
 
