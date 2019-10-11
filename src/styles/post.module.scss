@@ -124,3 +124,17 @@
     margin-top: 0;
   }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .text {
+    h2,
+    h3,
+    p,
+    table,
+    ul,
+    ol,
+    blockquote {
+      opacity: 0.9;
+    }
+  }
+}
