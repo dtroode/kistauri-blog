@@ -2,13 +2,16 @@ import React from "react";
 
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
+import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import "../styles/media.scss";
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const PostsList = data.Posts.edges;
+
   return (
     <Layout pageClass="portfolio" title="Давид Кистаури">
       <Helmet>
@@ -229,6 +232,17 @@ const IndexPage = () => {
       </section>
       <hr />
       <section className="main__sect--content">
+        <h2>О блоге</h2>
+        <ol>
+          {PostsList.map(({ node }) => (
+            <li key={node.frontmatter.title}>
+              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+            </li>
+          ))}
+        </ol>
+      </section>
+      <hr />
+      <section className="main__sect--content">
         <h2>Об остальном</h2>
         <ol>
           <li>
@@ -243,3 +257,24 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const blogListForPortfolio = graphql`
+  query blogListForPortfolio {
+    Posts: allMarkdownRemark(
+      filter: { frontmatter: { posttype: { ne: "project" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 4
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+`;

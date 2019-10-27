@@ -327,6 +327,10 @@ ul > li {
   list-style: none;
 }
 
+ol {
+  font-feature-settings: "tnum" 1;
+}
+
 li {
   margin-bottom: var(--fourth-padding);
 }

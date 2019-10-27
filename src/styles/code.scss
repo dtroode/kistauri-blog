@@ -24,7 +24,7 @@ code[class*="language-"] {
   direction: ltr;
   text-align: left;
   word-spacing: normal;
-  word-break: break-word;
+  word-break: normal;
   tab-size: 4;
   hyphens: none;
   hyphens: none;
@@ -48,6 +48,10 @@ pre[class*="language-"]::selection,
 code[class*="language-"]::selection {
   text-shadow: none;
   background-color: var(--accent-red-25);
+}
+
+pre code {
+  word-break: break-word;
 }
 
 .token {
