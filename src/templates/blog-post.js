@@ -110,8 +110,8 @@ export default ({ data, pageContext }) => {
 // Description
 // All tags list
 // Title image
-export const query = graphql`
-      query($slug: String!) {
+export const inPostQuery = graphql`
+      query inPostQuery($slug: String!) {
         markdownRemark(fields: {slug: {eq: $slug } }) {
         html
       frontmatter {
