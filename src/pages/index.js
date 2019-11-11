@@ -13,7 +13,10 @@ const IndexPage = ({ data }) => {
   const PostsList = data.Posts.edges;
 
   return (
-    <Layout pageClass="portfolio" title="Давид Кистаури">
+    <Layout
+      pageClass="portfolio"
+      title="Давид Кистаури. Проектирую дизайн сайтов и воплощаю его в жизнь"
+    >
       <Helmet>
         <link rel="canonical" href="https://davidkistauri.ru/" />
       </Helmet>
@@ -22,37 +25,6 @@ const IndexPage = ({ data }) => {
         description="Сайт Давида Кистаури. Назови любое слово и я сделаю о нем сайт."
         image="/img/preview.jpg"
       />
-      <section className="main__sect--content">
-        <h2>Обо мне</h2>
-        <ol>
-          <li>
-            Разрабатываю адаптивные сайты, лэндинги и веб-приложения,
-            оптимизирую их — сайты грузятся быстро. Пишу на <span lang="en">HTML, CSS, JS,
-            React, Gatsby</span>. Учу <span lang="en">Next.js, Svelte</span>. Вкладываю в опен сорс.
-          </li>
-          <li>
-            Пишу текст{" "}
-            <span style={{ opacity: "0.4" }}>
-              с фактами и конкретикой без лишней мишуры:{" "}
-            </span>
-            клиенты запомнят.
-          </li>
-          <li>
-            Пишу статьи на <a href="/blog">русском</a> и{" "}
-            <a href="https://dev.to/dtroode">английском</a> о полезных вещах для
-            дизайнеров, разработчиков и тех, кто новичок в веб-разработке.
-          </li>
-          <li>
-            Развиваю качественную разработку, хочу сделать ее проще для новичков
-            и опытных программистов: <span lang="en">from developer to developer</span>.
-          </li>
-          <li>
-            Работаю только удаленно. Принимаю полный план с предоплатой и
-            материалом, чтоб сразу начать работу.
-          </li>
-        </ol>
-      </section>
-      <hr />
       <section className="main__sect--content">
         <h2>О работах</h2>
         <ol className="main__ol--arts">
@@ -216,7 +188,6 @@ const IndexPage = ({ data }) => {
               </li>
             </ul>
           </li>
-
         </ol>
       </section>
       <hr />
@@ -263,7 +234,7 @@ export const blogListForPortfolio = graphql`
     Posts: allMarkdownRemark(
       filter: { frontmatter: { posttype: { ne: "project" } } }
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 4
+      limit: 8
     ) {
       edges {
         node {
