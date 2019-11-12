@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
       />
       <section className="main__sect--content">
         <h2>О работах</h2>
-        <ol className="main__ol--arts">
+        <ul className="main__ul--arts">
           <li>
             <Link to="/blog">
               <strong>Блог</strong>
@@ -188,42 +188,35 @@ const IndexPage = ({ data }) => {
               </li>
             </ul>
           </li>
-        </ol>
-      </section>
-      <hr />
-      <section className="main__sect--content">
-        <h2>О медиа</h2>
-        <ol>
-          <li>
-            <a href="https://twitter.com/newsycombinator/status/1142764827959595008?s=20">
-              Моя статья о Файерфоксе
-            </a>
-          </li>
-        </ol>
+        </ul>
       </section>
       <hr />
       <section className="main__sect--content">
         <h2>О блоге</h2>
-        <ol>
+        <ul>
           {PostsList.map(({ node }) => (
             <li key={node.frontmatter.title}>
               <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
             </li>
           ))}
-        </ol>
+        </ul>
       </section>
       <hr />
       <section className="main__sect--content">
         <h2>Об остальном</h2>
-        <ol>
+        <ul>
+          <li>
+            Решаю математические задачи, пишу в блог о разработке и веб-дизайне.<br />Читаю книги, катаюсь на велосипеде
+          </li>
+          <li>Учу компьютерные науки и Python</li>
           <li>
             <a href="https://t.me/s/dtroode_channel">
-              Телеграм канал о технологиях и дизайне
+              Веду телеграм канал о технологиях и дизайне
             </a>
           </li>
-        </ol>
+        </ul>
       </section>
-    </Layout>
+    </Layout >
   );
 };
 
