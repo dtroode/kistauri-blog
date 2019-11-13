@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
       />
       <section className="main__sect--content">
         <h2>О работах</h2>
-        <ul className="main__ul--arts">
+        <ol className="main__ol--arts" reversed>
           <li>
             <Link to="/blog">
               <strong>Блог</strong>
@@ -188,7 +188,7 @@ const IndexPage = ({ data }) => {
               </li>
             </ul>
           </li>
-        </ul>
+        </ol>
       </section>
       <hr />
       <section className="main__sect--content">

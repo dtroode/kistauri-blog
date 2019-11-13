@@ -110,7 +110,7 @@ main {
     }
   }
   section.main__sect--arts,
-  ul.main__ul--arts {
+  ol.main__ol--arts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: var(--third-padding);
@@ -130,7 +130,7 @@ main {
       }
     }
   }
-  ul.main__ul--arts > li {
+  ol.main__ol--arts > li {
     margin-bottom: 0;
     padding: var(--third-padding);
     border-radius: var(--fourth-padding);
@@ -320,6 +320,7 @@ ul > li {
 
 ol {
   font-feature-settings: "tnum" 1, "cv03" 1, "cv04" 1, "cv08" 1;
+  list-style-position: inside;
 }
 
 li {
