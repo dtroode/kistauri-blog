@@ -14,7 +14,6 @@ html {
   html {
     font-family: "Inter var", Inter, "Helvetica Neue", Helvetica, Arial,
       sans-serif;
-    font-feature-settings: "cv03" 1, "cv04" 1, "cv08" 1;
   }
 }
 
@@ -319,12 +318,11 @@ ul > li {
 }
 
 ol {
-  font-feature-settings: "tnum" 1, "cv03" 1, "cv04" 1, "cv08" 1;
   list-style-position: inside;
 }
 
 li {
-  margin-bottom: var(--fourth-padding);
+  margin-bottom: var(--fifth-padding);
 }
 
 blockquote {
