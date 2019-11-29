@@ -33,8 +33,14 @@
     // Contrast colors
     --contrast-blue: #304ffe;
   }
-
   img {
     filter: brightness(85%);
+  }
+  p,
+  table,
+  ul,
+  ol,
+  blockquote, figcaption {
+    opacity: 0.9;
   }
 }
