@@ -41,6 +41,9 @@
   ul,
   ol,
   blockquote, figcaption {
-    opacity: 0.9;
+    opacity: 0.85;
+    img {
+      filter: brightness(100%);
+    }
   }
 }
