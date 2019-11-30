@@ -334,10 +334,12 @@ blockquote {
 }
 
 table {
+  width: 100%;
   margin-top: var(--third-padding);
   border-spacing: 0;
   border-collapse: collapse;
   empty-cells: show;
+  table-layout: fixed;
   th,
   td {
     padding: 0 var(--third-padding) var(--fifth-padding) 0;
