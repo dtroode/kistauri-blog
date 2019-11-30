@@ -23,6 +23,7 @@ body {
   margin: 0;
   color: var(--main-fg);
   background-color: var(--main-bg);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   & > div > div {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -253,6 +254,12 @@ p a {
 a {
   flex: inherit;
   transition: all cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+  &:hover, &:active {
+    outline-width: 0;
+  }
+  &:active {
+    transition: none;
+  }
   &:not(.a--primary .a--secondary) {
     color: var(--accent-blue);
     &:hover {
