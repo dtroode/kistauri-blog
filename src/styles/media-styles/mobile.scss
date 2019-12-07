@@ -25,9 +25,6 @@
         }
       }
     }
-    nav a {
-      letter-spacing: -0.05rem;
-    }
   }
   main {
     section.main__sect--arts,
@@ -54,18 +51,5 @@
       grid-template-columns: unset;
       grid-template-rows: auto auto auto;
     }
-  }
-  h1,
-  h2,
-  h3 {
-    letter-spacing: -0.019em;
-  }
-  h4,
-  p,
-  a,
-  ul,
-  ol,
-  blockquote {
-    letter-spacing: -0.011em;
   }
 }
