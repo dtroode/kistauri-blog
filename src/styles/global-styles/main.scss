@@ -176,7 +176,7 @@ footer {
 
 h1,
 h2 {
-  line-height: 1.25em;
+  line-height: 1.15em;
   letter-spacing: -0.022em;
 }
 
@@ -257,8 +257,8 @@ a {
   &:hover, &:active {
     outline-width: 0;
   }
-  &:active {
-    transition: none;
+  &:focus {
+    outline: none;
   }
   &:not(.a--primary .a--secondary) {
     color: var(--accent-blue);
