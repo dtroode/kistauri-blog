@@ -61,7 +61,6 @@ export default ({ data, pageContext }) => {
       </p>
         {/* Content of post converted to HTML */}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-
       </section>
     </Layout>
   );

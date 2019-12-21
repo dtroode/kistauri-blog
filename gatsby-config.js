@@ -73,7 +73,16 @@ module.exports = {
               loading: "lazy"
             }
           },
-          `gatsby-remark-prismjs`
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              languageExtensions: [
+                {
+                  language: "pug"
+                },
+              ],
+            }
+          }
         ]
       }
     },
