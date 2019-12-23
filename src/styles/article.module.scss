@@ -2,7 +2,7 @@
   position: relative;
   border-radius: var(--fourth-padding);
   background-color: var(--additional-bg);
-  transition: all cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
+  transition: transform cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s, box-shadow cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
     transform: translateY(-0.6rem);
     box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);

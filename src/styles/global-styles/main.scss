@@ -253,7 +253,7 @@ p a {
 
 a {
   flex: inherit;
-  transition: all cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+  transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
   &:hover, &:active {
     outline-width: 0;
   }
@@ -281,6 +281,7 @@ a {
     line-height: 1.4em;
     text-decoration: none;
     font-weight: 600;
+    transition: background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
     &:focus {
       box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.2);
     }
