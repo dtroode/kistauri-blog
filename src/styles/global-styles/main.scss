@@ -108,6 +108,9 @@ main {
         border-bottom: 1px solid var(--accent-red-25);
       }
     }
+    &:focus {
+      color: var(--accent-red);
+    }
   }
   section.main__sect--arts,
   ol.main__ol--arts {
@@ -243,6 +246,9 @@ p {
         border-bottom: 1px solid var(--accent-red-25);
         color: var(--accent-red);
       }
+      &:focus {
+        color: var(--accent-red);
+      }
     }
   }
 }
@@ -260,7 +266,7 @@ a {
   &:focus {
     outline: none;
   }
-  &:not(.a--primary .a--secondary) {
+  &:not(&.a--primary), &:not(&.a--secondary) {
     color: var(--accent-blue);
     &:hover {
       color: var(--accent-red);
@@ -283,7 +289,7 @@ a {
     font-weight: 600;
     transition: background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
     &:focus {
-      box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
     }
   }
   &.a--primary {

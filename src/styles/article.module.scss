@@ -13,6 +13,10 @@
     padding: var(--third-padding);
     border-radius: var(--fourth-padding);
     text-decoration: none;
+    transition: box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+    &:focus {
+      box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
+    }
     &__sect {
       &__p {
         margin-top: var(--third-padding);
