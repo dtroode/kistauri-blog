@@ -8,6 +8,7 @@ footer.foot--post {
       display: block;
       a.foot__sect__nav__a {
         background-color: var(--main-bg);
+        transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
         &--twitter {
           &:hover {
             color: #1da1f2;
