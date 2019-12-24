@@ -266,7 +266,7 @@ a {
   &:focus {
     outline: none;
   }
-  &:not(&.a--primary), &:not(&.a--secondary) {
+  &:not(.a--primary, .a--secondary) {
     color: var(--accent-blue);
     &:hover {
       color: var(--accent-red);
