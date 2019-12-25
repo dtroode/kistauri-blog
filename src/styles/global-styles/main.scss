@@ -293,6 +293,7 @@ a {
     }
   }
   &.a--secondary {
+    color: var(--accent-blue);
     background-color: var(--additional-bg);
     transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
     &:hover {
