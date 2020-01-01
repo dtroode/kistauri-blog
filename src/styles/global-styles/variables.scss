@@ -1,7 +1,5 @@
 /* Root variables */
 :root {
-  color-scheme: light dark;
-
   // Main Background and Foreground colors
   --main-bg: #fafafa;
   --main-fg: #121212;
@@ -44,4 +42,10 @@
 
   // Side padding
   --side-padding: 2.4rem;
+}
+
+@media screen and (min-width: 1500px) {
+  :root {
+    --side-padding: 6.6%;
+  }
 }
