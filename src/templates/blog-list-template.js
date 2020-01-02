@@ -20,8 +20,8 @@ const BlogList = ({ pageContext, data }) => {
   const prev = currentPage === numPages ? "" : `/blog/page/${currentPage + 1}`;
 
   useEffect(() => {
-    control(next, prev);
-  }, [next, prev]);
+    control(prev, next);
+  }, [prev, next]);
 
   // Creating link to next page according to current page number
   const nextPageLink =

@@ -84,19 +84,19 @@ export default ({ data, pageContext }) => {
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <p className="postlinks">
           {/* Links to next and previous pages */}
-          {next ? (
-            <><Link to={next.node.fields.slug} className="postlinks__a">
-              {next.node.frontmatter.title}
-            </Link><span className="postlinks__span postlinks__span--m015">←</span></>
-          ) : (
-              <span className="postlinks__span--m015 postlinks__span--inact">←</span>
-            )}
           {prev ? (
-            <><span className="postlinks__span">→</span><Link to={prev.node.fields.slug} className="postlinks__a">
+            <><Link to={prev.node.fields.slug} className="postlinks__a">
               {prev.node.frontmatter.title}
+            </Link><span className="postlinks__span">←</span></>
+          ) : (
+              <span className="postlinks__span--inact">←</span>
+            )}
+          {next ? (
+            <><span className="postlinks__span postlinks__span--m015">→</span><Link to={next.node.fields.slug} className="postlinks__a">
+              {next.node.frontmatter.title}
             </Link></>
           ) : (
-              <span className="postlinks__span--inact">→</span>
+              <span className="postlinks__span--m015 postlinks__span--inact">→</span>
             )}
         </p>
       </section>
