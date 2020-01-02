@@ -28,17 +28,15 @@
   }
   p,
   a,
-  ul,
-  ol {
+  li,
+  span,
+  blockquote {
     code {
-      color: var(--main-dark);
+      padding: 0 0.25rem;
+      border-radius: 0.25rem;
+      color: var(--main-fg);
+      background-color: var(--accent-blue-25);
     }
-  }
-  p code,
-  a code,
-  li code,
-  span code {
-    background-color: unset;
   }
   p {
     margin-top: 1rem;

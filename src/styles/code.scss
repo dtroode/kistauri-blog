@@ -18,34 +18,18 @@ pre,
 code {
   font-family: "Roboto Mono", monospace;
   white-space: pre-wrap;
-}
-
-code[class*="language-"] {
   direction: ltr;
   text-align: left;
   word-spacing: normal;
-  tab-size: 4;
-  hyphens: none;
+  tab-size: 2;
   hyphens: none;
   color: var(--code-fg);
   text-shadow: none;
 }
 
-pre[class*="language-"] {
-  direction: ltr;
-  text-align: left;
-  word-spacing: normal;
-  tab-size: 4;
-  hyphens: none;
-  hyphens: none;
-  color: var(--code-fg);
-  text-shadow: none;
-}
-
-pre[class*="language-"]::selection,
-code[class*="language-"]::selection {
-  text-shadow: none;
-  background-color: var(--accent-red-25);
+pre::selection,
+code::selection {
+  background-color: var(--accent-red);
 }
 
 pre code {
