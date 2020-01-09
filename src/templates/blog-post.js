@@ -87,16 +87,16 @@ export default ({ data, pageContext }) => {
           {prev ? (
             <><Link to={prev.node.fields.slug} className="postlinks__a">
               {prev.node.frontmatter.title}
-            </Link><span className="postlinks__span">←</span></>
+            </Link><span className="postlinks__span postlinks__span--m015">←</span></>
           ) : (
-              <span className="postlinks__span--inact">←</span>
+              <span className="postlinks__span--inact postlinks__span--m015">←</span>
             )}
           {next ? (
-            <><span className="postlinks__span postlinks__span--m015">→</span><Link to={next.node.fields.slug} className="postlinks__a">
+            <><span className="postlinks__span">→</span><Link to={next.node.fields.slug} className="postlinks__a">
               {next.node.frontmatter.title}
             </Link></>
           ) : (
-              <span className="postlinks__span--m015 postlinks__span--inact">→</span>
+              <span className="postlinks__span--inact">→</span>
             )}
         </p>
       </section>
