@@ -69,7 +69,7 @@ module.exports = {
               maxWidth: 1000,
               showCaptions: true,
               backgroundColor: "transparent",
-              quality: 75,
+              quality: 90,
               loading: "lazy"
             }
           },
