@@ -98,16 +98,11 @@ tags: ["учеба", "работа", "ссылки"]
 еще одна версия документации. Я учу английский, поэтому изучение документация и
 записывание ее помогает расширять знания языка и набирать опыт.
 
-<blockquote class="twitter-tweet" data-lang="ru"><p lang="en" dir="ltr">
-Yesterday started learning
-<a href="https://twitter.com/sveltejs?ref_src=twsrc%5Etfw">@sveltejs</a>.
-Writing all to markdown file. All text is written by me, code from examples.
-You can see the bold and italic text (red on the left): this is my own thoughts
-for better memorization
-<a href="https://t.co/MPMCrqcOLk">pic.twitter.com/MPMCrqcOLk</a></p>&mdash;
-David Kistauri (@dtroode)
-<a href="https://twitter.com/dtroode/status/1138419790631055360?ref_src=twsrc%5Etfw">
-11 июня 2019 г.</a></blockquote>
+> [@dtroode](https://twitter.com/dtroode/status/1138419790631055360):
+Yesterday started learning [@sveltejs](https://twitter.com/sveltejs). Writing
+all to markdown file. All text is written by me, code from examples. You can
+see the bold and italic text (red on the left): this is my own thoughts for
+better memorization
 
 Для каждого нового материала: язык, фреймворк, технология — я создаю новую
 папку; в ней находится папка с примерами кода и файл `learn.md` для записи. Все
