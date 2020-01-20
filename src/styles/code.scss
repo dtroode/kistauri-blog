@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Roboto Mono";
+  font-family: "Fira Code";
   font-weight: normal;
-  src: url(../fonts/RobotoMono-Regular.woff2?v=3.5) format("woff2");
+  src: url(../fonts/FiraCode.woff2?v=3.5) format("woff2");
 }
 
 :root {
@@ -16,7 +16,8 @@
 
 pre,
 code {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Fira Code", monospace;
+  font-feature-settings: "ss01";
   white-space: pre-wrap;
   direction: ltr;
   text-align: left;
