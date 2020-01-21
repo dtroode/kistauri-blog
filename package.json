@@ -80,15 +80,11 @@
     "last 2 and_uc version"
   ],
   "prettier": {
-    "editor.formatOnSave": false,
-    "[javascript]": {
-      "editor.formatOnSave": true,
-      "endOfLine": "lf",
-      "semi": false,
-      "singleQuote": false,
-      "tabWidth": 2,
-      "trailingComma": "es5"
-    }
+    "endOfLine": "lf",
+    "semi": false,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "es5"
   },
   "stylelint": {
     "plugins": [
@@ -134,6 +130,6 @@
     "develop": "gatsby develop --open",
     "build": "npm run format && gatsby build",
     "serve": "gatsby serve",
-    "format": "prettier --write src/**/*.{js,jsx} && stylelint \"src/styles/**/*.sss\"",
+    "format": "prettier \"src/**/*.{js,jsx}\" --write && stylelint \"src/styles/**/*.scss\" --fix"
   }
 }
