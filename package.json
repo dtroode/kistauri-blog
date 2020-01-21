@@ -1,9 +1,21 @@
 {
   "name": "kistauri",
-  "private": true,
   "description": "Назови любое слово и я сделаю об этом сайт.",
   "version": "0.1.0",
   "author": "Давид Кистаури <davidkis113@gmail.com>",
+  "keywords": [
+    "gatsby",
+    "portfolio",
+    "blog"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtroode/kistauri"
+  },
+  "bugs": {
+    "url": "https://github.com/dtroode/kistauri/issues"
+  },
   "engines": {
     "node": "12.x"
   },
@@ -49,12 +61,11 @@
     "identity-obj-proxy": "^3.0.0",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
-    "sass": "^1.21.0"
+    "sass": "^1.21.0",
+    "stylelint": "^13.0.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^4.0.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "browserslist": [
     "> 0.25%",
     "not dead",
@@ -79,19 +90,50 @@
       "trailingComma": "es5"
     }
   },
+  "stylelint": {
+    "plugins": [
+      "stylelint-order"
+    ],
+    "extends": [
+      "stylelint-config-rational-order"
+    ],
+    "rules": {
+      "plugin/rational-order": [
+        true,
+        {
+          "empty-line-between-groups": true
+        }
+      ],
+      "color-named": "never",
+      "order/order": [
+        "declarations",
+        {
+          "type": "at-rule",
+          "name": "media"
+        },
+        {
+          "type": "rule",
+          "selector": "^&::(before|after)"
+        },
+        {
+          "type": "rule",
+          "selector": "^&:\\w"
+        },
+        {
+          "type": "rule",
+          "selector": "^&_"
+        },
+        {
+          "type": "rule",
+          "selector": "^."
+        }
+      ]
+    }
+  },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "develop": "gatsby develop --open",
+    "build": "npm run format && gatsby build",
     "serve": "gatsby serve",
-    "now-build": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dtroode/kistauri"
-  },
-  "bugs": {
-    "url": "https://github.com/dtroode/kistauri/issues"
+    "format": "prettier --write src/**/*.{js,jsx} && stylelint \"src/styles/**/*.sss\"",
   }
 }
