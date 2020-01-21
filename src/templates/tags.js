@@ -1,18 +1,18 @@
-import React from "react";
+import React from "react"
 
-import { graphql } from "gatsby";
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout";
-import Article from "../components/article";
-import SEO from "../components/seo";
+import Layout from "../components/layout"
+import Article from "../components/article"
+import SEO from "../components/seo"
 
-import "../styles/media.scss";
+import "../styles/media.scss"
 
-const counter = require("../scripts/counter");
+const counter = require("../scripts/counter")
 
 const Tags = ({ pageContext, data }) => {
-  const { tag } = pageContext; // Getting tag from context in graphql
-  const { edges, totalCount } = data.allMarkdownRemark;
+  const { tag } = pageContext // Getting tag from context in graphql
+  const { edges, totalCount } = data.allMarkdownRemark
   // Formatting text according to posts count
   const tagHeader = (
     <>
@@ -21,7 +21,7 @@ const Tags = ({ pageContext, data }) => {
         {totalCount} {counter(totalCount)}
       </span>
     </>
-  );
+  )
   return (
     <Layout pageClass="tag" title={tagHeader}>
       <SEO
@@ -32,14 +32,14 @@ const Tags = ({ pageContext, data }) => {
       <section className="main__sect--arts">
         {/* Displaying all articles, that match this tag */}
         {edges.map(({ node }) => {
-          return <Article node={node} key={node.frontmatter.title} />;
+          return <Article node={node} key={node.frontmatter.title} />
         })}
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default Tags;
+export default Tags
 
 // Getting all articles, that match this tag
 export const pageQuery = graphql`
@@ -68,4 +68,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

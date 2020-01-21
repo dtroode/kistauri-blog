@@ -1,18 +1,18 @@
-import React from "react";
+import React from "react"
 
-import { Link } from "gatsby";
-import { Helmet } from "react-helmet";
-import { graphql } from "gatsby";
+import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
-import "../../styles/media.scss";
+import "../../styles/media.scss"
 
-const counter = require("../../scripts/counter");
+const counter = require("../../scripts/counter")
 
 const AllPage = props => {
-  const AllPostsList = props.data.AllPosts.edges;
+  const AllPostsList = props.data.AllPosts.edges
   return (
     <Layout
       pageClass="posts"
@@ -45,10 +45,10 @@ const AllPage = props => {
         </p>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default AllPage;
+export default AllPage
 
 export const allPageQuery = graphql`
   query {
@@ -70,4 +70,4 @@ export const allPageQuery = graphql`
       }
     }
   }
-`;
+`

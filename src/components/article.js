@@ -1,14 +1,21 @@
-import React from "react";
+import React from "react"
 
-import { Link } from "gatsby";
-import { format, isToday, isYesterday, isThisYear } from "date-fns";
+import { Link } from "gatsby"
+import { format, isToday, isYesterday, isThisYear } from "date-fns"
 
-import articleStyles from "../styles/article.module.scss";
+import articleStyles from "../styles/article.module.scss"
 
 const Article = props => {
-  const ruLocale = require("date-fns/locale/ru");
+  const ruLocale = require("date-fns/locale/ru")
 
-  const category = props.node.frontmatter.categories === 'work' ? articleStyles.work : props.node.frontmatter.categories === 'thoughts' ? articleStyles.thoughts : props.node.frontmatter.categories === 'advices' ? articleStyles.advices : articleStyles.learning;
+  const category =
+    props.node.frontmatter.categories === "work"
+      ? articleStyles.work
+      : props.node.frontmatter.categories === "thoughts"
+      ? articleStyles.thoughts
+      : props.node.frontmatter.categories === "advices"
+      ? articleStyles.advices
+      : articleStyles.learning
 
   return (
     <article
@@ -26,29 +33,29 @@ const Article = props => {
             <span
               title={
                 format(props.node.frontmatter.date, "dddd, D MMMM YYYY", {
-                  locale: ruLocale
+                  locale: ruLocale,
                 })
                   .charAt(0)
                   .toUpperCase() +
                 format(props.node.frontmatter.date, "dddd, D MMMM YYYY", {
-                  locale: ruLocale
+                  locale: ruLocale,
                 }).slice(1)
               }
               className="postlinks__span"
             >
               {(() => {
                 if (isToday(props.node.frontmatter.date)) {
-                  return "сегодня";
+                  return "сегодня"
                 } else if (isYesterday(props.node.frontmatter.date)) {
-                  return "вчера";
+                  return "вчера"
                 } else if (isThisYear(props.node.frontmatter.date)) {
                   return format(props.node.frontmatter.date, "D MMMM", {
-                    locale: ruLocale
-                  });
+                    locale: ruLocale,
+                  })
                 } else {
                   return format(props.node.frontmatter.date, "D MMMM YYYY", {
-                    locale: ruLocale
-                  });
+                    locale: ruLocale,
+                  })
                 }
               })()}
             </span>
@@ -62,7 +69,7 @@ const Article = props => {
         </section>
       </Link>
     </article>
-  );
-};
+  )
+}
 
-export default Article;
+export default Article

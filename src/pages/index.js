@@ -1,16 +1,16 @@
-import React from "react";
+import React from "react"
 
-import { Link } from "gatsby";
-import { Helmet } from "react-helmet";
-import { graphql } from "gatsby";
+import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import "../styles/media.scss";
+import "../styles/media.scss"
 
 const IndexPage = ({ data }) => {
-  const PostsList = data.Posts.edges;
+  const PostsList = data.Posts.edges
 
   return (
     <Layout
@@ -194,22 +194,27 @@ const IndexPage = ({ data }) => {
             </Link>{" "}
             — 2018
             <br />
-            Сделал сайт города Сухум: собрал контент, придумал дизайн, написал код
+            Сделал сайт города Сухум: собрал контент, придумал дизайн, написал
+            код
             <ul>
               <li>
                 <strong>Цель</strong>
                 <br />
-                Создание простого, быстрого и минималистичного сайта, где главное — контент. Привлечение туристов и рассказ им об истории, местах и культуре города
+                Создание простого, быстрого и минималистичного сайта, где
+                главное — контент. Привлечение туристов и рассказ им об истории,
+                местах и культуре города
               </li>
               <li>
                 <strong>Целевая аудитория</strong>
                 <br />
-                Туристы, которые не знают, куда сперва пойти, где поесть, где насладиться красотой, с кем познакомиться
+                Туристы, которые не знают, куда сперва пойти, где поесть, где
+                насладиться красотой, с кем познакомиться
               </li>
               <li>
                 <strong>Как руководитель</strong>
                 <br />
-                Придумал проект, спланировал проект, руководил командой, собрал материал
+                Придумал проект, спланировал проект, руководил командой, собрал
+                материал
               </li>
               <li>
                 <strong>Как разработчик</strong>
@@ -225,7 +230,8 @@ const IndexPage = ({ data }) => {
               <li>
                 <strong>Как редактор</strong>
                 <br />
-                Написал текст к разделам о местах и культуре, отредактировал текст об истории
+                Написал текст к разделам о местах и культуре, отредактировал
+                текст об истории
               </li>
             </ul>
           </li>
@@ -246,13 +252,15 @@ const IndexPage = ({ data }) => {
       <section className="main__sect--content">
         <h2>Об остальном</h2>
         <ul>
-          <li>
-            Учу математику, пишу в блог о разработке и веб-дизайне
-          </li>
-          <li>Читаю книги, катаюсь на велосипеде
-          </li>
+          <li>Учу математику, пишу в блог о разработке и веб-дизайне</li>
+          <li>Читаю книги, катаюсь на велосипеде</li>
           <li>Учу компьютерные науки и Python</li>
-          <li><a href="https://news.ycombinator.com/item?id=20254420">«Why you need to give Firefox a chance»</a> на Хакерньюз</li>
+          <li>
+            <a href="https://news.ycombinator.com/item?id=20254420">
+              «Why you need to give Firefox a chance»
+            </a>{" "}
+            на Хакерньюз
+          </li>
           <li>
             <a href="https://t.me/s/dtroode_channel">
               Веду телеграм канал о технологиях и дизайне
@@ -260,11 +268,11 @@ const IndexPage = ({ data }) => {
           </li>
         </ul>
       </section>
-    </Layout >
-  );
-};
+    </Layout>
+  )
+}
 
-export default IndexPage;
+export default IndexPage
 
 export const blogListForPortfolio = graphql`
   query blogListForPortfolio {
@@ -285,4 +293,4 @@ export const blogListForPortfolio = graphql`
       }
     }
   }
-`;
+`

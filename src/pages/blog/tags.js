@@ -1,22 +1,22 @@
-import React from "react";
+import React from "react"
 
-import { Link } from "gatsby";
-import { Helmet } from "react-helmet";
-import { graphql } from "gatsby";
+import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 
-import kebabCase from "lodash/kebabCase";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
+import kebabCase from "lodash/kebabCase"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
-import "../../styles/media.scss";
+import "../../styles/media.scss"
 
 const TagsPage = ({
   data: {
-    allMarkdownRemark: { group }
-  }
+    allMarkdownRemark: { group },
+  },
 }) => {
   // Sorting tags by number of posts that use them
-  group.sort((a, b) => b.totalCount - a.totalCount);
+  group.sort((a, b) => b.totalCount - a.totalCount)
   return (
     <Layout pageClass="tags" title="Давид Кистаури. Блог. Теги">
       <Helmet>
@@ -45,10 +45,10 @@ const TagsPage = ({
         </p>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default TagsPage;
+export default TagsPage
 
 // Getting 2000 latest posts tags
 export const pageQuery = graphql`
@@ -68,4 +68,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

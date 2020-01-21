@@ -1,13 +1,13 @@
-import React from "react";
+import React from "react"
 
-import { Link } from "gatsby";
+import { Link } from "gatsby"
 
 const Footer = props => {
-  const title = props.title;
+  const title = props.title
   // Link of page
-  const link = `https://davidkistauri.ru${props.link}`;
+  const link = `https://davidkistauri.ru${props.link}`
   // Variable with share content. Uses only for posts
-  let share = "";
+  let share = ""
 
   // If page is post writing links to `share` variable
   if (props.pageClass === "post") {
@@ -84,7 +84,7 @@ const Footer = props => {
         </nav>
         <hr />
       </>
-    );
+    )
   }
 
   return (
@@ -187,13 +187,18 @@ const Footer = props => {
             </svg>
             На Гитхаб
           </a>
-          <Link to="/blog/all/rss-subscribe" title="РСС" className="foot__sect__nav__a a--primary">
-            На сайт</Link>
+          <Link
+            to="/blog/all/rss-subscribe"
+            title="РСС"
+            className="foot__sect__nav__a a--primary"
+          >
+            На сайт
+          </Link>
         </nav>
       </section>
       {/* Social media icons by FontAwesome. Website: https://fontawesome.com. Github: https://github.com/FortAwesome/Font-Awesome */}
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

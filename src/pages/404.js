@@ -1,13 +1,13 @@
-import React from "react";
+import React from "react"
 
-import { Link } from "gatsby";
-import { Helmet } from "react-helmet";
+import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import articleStyles from "../styles/article.module.scss";
-import "../styles/media.scss";
+import articleStyles from "../styles/article.module.scss"
+import "../styles/media.scss"
 
 const ErrorPage = () => {
   return (
@@ -22,7 +22,10 @@ const ErrorPage = () => {
       />
       <section className="main__sect--arts">
         <article className={`${articleStyles.art} ${articleStyles.error}`}>
-          <Link to="/" className={`${articleStyles.art__link} ${articleStyles.error__link}`}>
+          <Link
+            to="/"
+            className={`${articleStyles.art__link} ${articleStyles.error__link}`}
+          >
             <section className={articleStyles.art__link__sect}>
               <h2>Ты столкнулся с ошибкой</h2>
               <p className={articleStyles.error__link__sect__p}>
@@ -41,13 +44,15 @@ const ErrorPage = () => {
           >
             <section className={articleStyles.art__link__sect}>
               <h2>Сообщить об ошибке</h2>
-              <p className={articleStyles.error__link__sect__p}>А еще можно сообщить автору об ошибке нажав на этот блок.</p>
+              <p className={articleStyles.error__link__sect__p}>
+                А еще можно сообщить автору об ошибке нажав на этот блок.
+              </p>
             </section>
           </a>
         </article>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default ErrorPage;
+export default ErrorPage

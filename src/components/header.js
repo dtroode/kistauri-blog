@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 
-import { Link } from "gatsby";
+import { Link } from "gatsby"
 
 const AdditionalLinks = props => {
-  let links = "";
+  let links = ""
 
   // Creating different header links for different page types
   if (props.className === "blog") {
@@ -12,34 +12,37 @@ const AdditionalLinks = props => {
         <Link to="/blog/tags" className="head__nav__a a--secondary">
           Теги
         </Link>
-        <Link to="/blog/all/rss-subscribe" className="head__nav__a a--secondary">
+        <Link
+          to="/blog/all/rss-subscribe"
+          className="head__nav__a a--secondary"
+        >
           Подписаться
         </Link>
       </>
-    );
+    )
   } else if (props.className === "tag") {
     links = (
       <Link to="/blog/tags" className="head__nav__a a--secondary">
         Теги
       </Link>
-    );
+    )
   } else if (props.className === "projects") {
     links = (
       <Link to="/blog/all/rss-subscribe" className="head__nav__a a--secondary">
         Подписаться
       </Link>
-    );
+    )
   } else if (props.className === "project") {
     links = (
       <a href={props.linkToProject} className="head__nav__a a--secondary">
         {props.linkToProject.substr(8)} {/* Remove https:// */}
       </a>
-    );
+    )
   } else {
-    links = "";
+    links = ""
   }
-  return links;
-};
+  return links
+}
 
 const Header = props => (
   <header className={`head head--${props.pageClass}`}>
@@ -75,6 +78,6 @@ const Header = props => (
     <h1 className="head__header">{props.title}</h1>
     <hr />
   </header>
-);
+)
 
-export default Header;
+export default Header

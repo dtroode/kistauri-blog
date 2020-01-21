@@ -1,20 +1,20 @@
-import React from "react";
-import Img from "gatsby-image";
+import React from "react"
+import Img from "gatsby-image"
 
-import { Link } from "gatsby";
-import { Helmet } from "react-helmet";
-import { graphql } from "gatsby";
-import { format, isToday, isYesterday, isThisYear } from "date-fns";
+import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
+import { format, isToday, isYesterday, isThisYear } from "date-fns"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import articleStyles from "../styles/article.module.scss";
-import "../styles/media.scss";
+import articleStyles from "../styles/article.module.scss"
+import "../styles/media.scss"
 
 const ProjectsList = ({ data }) => {
-  const ProjectsList = data.Projects.edges;
-  const ruLocale = require("date-fns/locale/ru");
+  const ProjectsList = data.Projects.edges
+  const ruLocale = require("date-fns/locale/ru")
 
   return (
     <Layout pageClass="projects" title="Давид Кистаури. Проекты">
@@ -29,16 +29,15 @@ const ProjectsList = ({ data }) => {
       <section className="main__sect--arts">
         {/* Displaying all projects according to limit */}
         {ProjectsList.map(({ node }) => (
-          <article
-            key={node.frontmatter.title}
-            className={articleStyles.art}
-          >
+          <article key={node.frontmatter.title} className={articleStyles.art}>
             <Link to={node.fields.slug} className={articleStyles.art__link}>
               <Img
                 fluid={node.frontmatter.hero.childImageSharp.fluid}
                 className={articleStyles.art__link__img}
               />
-              <section className={`${articleStyles.art__link__sect} ${articleStyles.art__link__proj}`}>
+              <section
+                className={`${articleStyles.art__link__sect} ${articleStyles.art__link__proj}`}
+              >
                 <h2>{node.frontmatter.title}</h2>
                 <p className={articleStyles.art__link__sect__p}>
                   {node.frontmatter.description}
@@ -48,29 +47,29 @@ const ProjectsList = ({ data }) => {
                   <span
                     title={
                       format(node.frontmatter.date, "dddd, D MMMM YYYY", {
-                        locale: ruLocale
+                        locale: ruLocale,
                       })
                         .charAt(0)
                         .toUpperCase() +
                       format(node.frontmatter.date, "dddd, D MMMM YYYY", {
-                        locale: ruLocale
+                        locale: ruLocale,
                       }).slice(1)
                     }
                     className="postlinks__span"
                   >
                     {(() => {
                       if (isToday(node.frontmatter.date)) {
-                        return "сегодня";
+                        return "сегодня"
                       } else if (isYesterday(node.frontmatter.date)) {
-                        return "вчера";
+                        return "вчера"
                       } else if (isThisYear(node.frontmatter.date)) {
                         return format(node.frontmatter.date, "D MMMM", {
-                          locale: ruLocale
-                        });
+                          locale: ruLocale,
+                        })
                       } else {
                         return format(node.frontmatter.date, "D MMMM YYYY", {
-                          locale: ruLocale
-                        });
+                          locale: ruLocale,
+                        })
                       }
                     })()}
                   </span>
@@ -81,10 +80,10 @@ const ProjectsList = ({ data }) => {
         ))}
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default ProjectsList;
+export default ProjectsList
 
 // Getting projects list
 export const projectsListQuery = graphql`
@@ -114,4 +113,4 @@ export const projectsListQuery = graphql`
       }
     }
   }
-`;
+`

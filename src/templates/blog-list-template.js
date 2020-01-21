@@ -1,52 +1,59 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from "react"
 
-import { Link } from "gatsby";
-import { Helmet } from "react-helmet";
-import { graphql } from "gatsby";
+import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout";
-import Article from "../components/article";
-import SEO from "../components/seo";
-import control from "../scripts/control";
+import Layout from "../components/layout"
+import Article from "../components/article"
+import SEO from "../components/seo"
+import control from "../scripts/control"
 
-import "../styles/media.scss";
+import "../styles/media.scss"
 
 const BlogList = ({ pageContext, data }) => {
-  const PostsList = data.Posts.edges;
-  const currentPage = pageContext.currentPage;
-  const numPages = pageContext.numPages;
+  const PostsList = data.Posts.edges
+  const currentPage = pageContext.currentPage
+  const numPages = pageContext.numPages
 
-  const next = currentPage === 1 ? "" : currentPage === 2 ? "/blog/" : `/blog/page/${currentPage - 1}`;
-  const prev = currentPage === numPages ? "" : `/blog/page/${currentPage + 1}`;
+  const next =
+    currentPage === 1
+      ? ""
+      : currentPage === 2
+      ? "/blog/"
+      : `/blog/page/${currentPage - 1}`
+  const prev = currentPage === numPages ? "" : `/blog/page/${currentPage + 1}`
 
   useEffect(() => {
-    control(prev, next);
-  }, [prev, next]);
+    control(prev, next)
+  }, [prev, next])
 
   // Creating link to next page according to current page number
   const nextPageLink =
     currentPage === 1 ? (
       ""
-    ) : (<Link to={next} className="a--secondary">
-      ←
-      </Link>)
+    ) : (
+      <Link to={next} className="a--secondary">
+        ←
+      </Link>
+    )
   // Creating link to previous page according to pages count
   const previousPageLink =
     currentPage === numPages ? (
       ""
     ) : (
-        <Link to={prev} className="a--secondary">
-          →
+      <Link to={prev} className="a--secondary">
+        →
       </Link>
-      );
+    )
   const allPostsLink =
     numPages > 1 ? (
       <Link to="/blog/all" className="a--secondary">
         Все посты
       </Link>
     ) : (
-        ""
-      );
+      ""
+    )
   return (
     <Layout pageClass="blog" title="Давид Кистаури. Блог">
       <Helmet>
@@ -69,10 +76,10 @@ const BlogList = ({ pageContext, data }) => {
         </section>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default BlogList;
+export default BlogList
 
 // Getting limited amount of articles according to blog page number
 export const blogListQuery = graphql`
@@ -99,4 +106,4 @@ export const blogListQuery = graphql`
       }
     }
   }
-`;
+`
