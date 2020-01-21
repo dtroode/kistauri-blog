@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Fira Code";
   font-weight: normal;
+  font-family: "Fira Code";
   src: url(../fonts/FiraCode.woff2?v=3.5) format("woff2");
 }
 
@@ -16,16 +16,16 @@
 
 pre,
 code {
+  color: var(--code-fg);
   font-family: "Fira Code", monospace;
-  font-feature-settings: "ss01";
-  white-space: pre-wrap;
   direction: ltr;
+  white-space: pre-wrap;
   text-align: left;
+  text-shadow: none;
   word-spacing: normal;
   tab-size: 2;
   hyphens: none;
-  color: var(--code-fg);
-  text-shadow: none;
+  font-feature-settings: "ss01";
 }
 
 pre::selection,
@@ -108,8 +108,9 @@ code {
     text-decoration: line-through;
   }
   &.inserted {
-    border-bottom: 1px dotted var(--selector);
     text-decoration: none;
+
+    border-bottom: 1px dotted var(--selector);
   }
   &.italic {
     font-style: italic;

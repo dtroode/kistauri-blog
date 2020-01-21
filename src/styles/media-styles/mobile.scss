@@ -39,8 +39,8 @@
   }
   footer {
     section.foot__sect {
-      grid-template-columns: unset;
       grid-template-rows: auto auto;
+      grid-template-columns: unset;
       nav.foot__sect__nav {
         display: block;
         margin-top: var(--fourth-padding);
@@ -48,8 +48,8 @@
       }
     }
     &.foot--post section.foot__sect {
-      grid-template-columns: unset;
       grid-template-rows: auto auto auto;
+      grid-template-columns: unset;
     }
   }
 }

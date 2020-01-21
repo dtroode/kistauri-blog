@@ -8,10 +8,12 @@ footer.foot--post {
       display: block;
       a.foot__sect__nav__a {
         background-color: var(--main-bg);
+
         transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
         &--twitter {
           &:hover {
             color: #1da1f2;
+
             background-color: rgba(29, 161, 242, 0.25);
           }
           svg.foot__sect__nav__a__svg--twitter {
@@ -21,6 +23,7 @@ footer.foot--post {
         &--facebook {
           &:hover {
             color: #1877f2;
+
             background-color: rgba(17, 120, 242, 0.25);
           }
           svg.foot__sect__nav__a__svg--facebook {
@@ -30,6 +33,7 @@ footer.foot--post {
         &--telegram {
           &:hover {
             color: #2ea6d9;
+
             background-color: rgba(46, 166, 217, 0.25);
           }
           svg.foot__sect__nav__a__svg--telegram {

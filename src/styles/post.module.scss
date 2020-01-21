@@ -33,29 +33,35 @@
   blockquote {
     code {
       padding: 0 0.25rem;
-      border-radius: 0.25rem;
+
       color: var(--main-fg);
+
       background-color: var(--accent-blue-25);
+      border-radius: 0.25rem;
     }
   }
   p {
     margin-top: 1rem;
   }
   a {
-    border-bottom: 1px solid var(--accent-blue-25);
-    font-size: inherit;
     color: var(--accent-blue);
+    font-size: inherit;
     text-decoration: none;
+
+    border-bottom: 1px solid var(--accent-blue-25);
     &:hover {
-      border-bottom: 1px solid var(--accent-red-25);
       color: var(--accent-red);
+
+      border-bottom: 1px solid var(--accent-red-25);
     }
     &:visited {
-      border-bottom: 1px solid var(--accent-purple-25);
       color: var(--accent-purple);
+
+      border-bottom: 1px solid var(--accent-purple-25);
       &:hover {
-        border-bottom: 1px solid var(--accent-red-25);
         color: var(--accent-red);
+
+        border-bottom: 1px solid var(--accent-red-25);
       }
     }
   }
@@ -77,6 +83,7 @@
   }
   figcaption {
     margin-top: 0.3rem;
+
     font-size: 0.8em;
     &:last-child {
       margin-bottom: 0;
