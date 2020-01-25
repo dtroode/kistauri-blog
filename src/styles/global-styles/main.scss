@@ -88,8 +88,15 @@ header {
     margin: 0;
 
     font-weight: 700;
-    font-size: 2.25rem;
     word-break: break-word;
+
+    &:not(&--post, &--project) {
+      font-size: 3.375rem;
+    }
+
+    &--post, &--project {
+      font-size: 2.25rem;
+    }
     span.head__header__span {
       color: var(--main-fg-25);
     }

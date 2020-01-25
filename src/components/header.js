@@ -75,7 +75,7 @@ const Header = props => (
         linkToProject={props.linkToProject}
       />
     </nav>
-    <h1 className="head__header">{props.title}</h1>
+    <h1 className={`head__header head__header--${props.pageClass}`}>{props.title}</h1>
     <hr />
   </header>
 )
