@@ -190,11 +190,54 @@ footer {
     }
   }
   section.foot__sect {
-    nav.foot__sect__nav--links svg.foot__sect__nav__a__svg {
-      fill: var(--main-bg);
+    nav.foot__sect__nav {
+      &--share {
+        display: block;
+        a.foot__sect__nav__a {
+          background-color: var(--main-bg);
+
+          transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+          &--twitter {
+            &:hover {
+              color: #1da1f2;
+
+              background-color: rgba(29, 161, 242, 0.25);
+            }
+            svg.foot__sect__nav__a__svg--twitter {
+              fill: #1da1f2;
+            }
+          }
+          &--facebook {
+            &:hover {
+              color: #1877f2;
+
+              background-color: rgba(17, 120, 242, 0.25);
+            }
+            svg.foot__sect__nav__a__svg--facebook {
+              fill: #1877f2;
+            }
+          }
+          &--telegram {
+            &:hover {
+              color: #2ea6d9;
+
+              background-color: rgba(46, 166, 217, 0.25);
+            }
+            svg.foot__sect__nav__a__svg--telegram {
+              fill: #2ea6d9;
+            }
+          }
+        }
+      }
+      &--links svg.foot__sect__nav__a__svg {
+        fill: var(--main-bg);
+      }
     }
     h2.foot__sect__header {
       margin-bottom: var(--fourth-padding);
+      &:nth-of-type(2) {
+        margin-top: var(--secondary-padding);
+      }
     }
     a.foot__sect__nav__a {
       margin-top: var(--fifth-padding);

@@ -6,11 +6,11 @@ const Footer = props => {
   const title = props.title
   // Link of page
   const link = `https://davidkistauri.ru${props.link}`
-  // Variable with share content. Uses only for posts
+  // Variable with share content. Uses only for posts and projects
   let share = ""
 
-  // If page is post writing links to `share` variable
-  if (props.pageClass === "post") {
+  // If page is a post or a project writing links to `share` variable
+  if (props.pageClass === "post" || props.pageClass === "project") {
     share = (
       <>
         <h2 className="foot__sect__header">О ссылке</h2>
@@ -92,7 +92,7 @@ const Footer = props => {
       <section className="foot__sect">
         {/*
         Passing `share` variable.
-        If page is post, variable contains social media share links.
+        If page is a post or a project, variable contains social media share links.
         If not, variable is empty.
        */}
         {share}
