@@ -145,6 +145,18 @@ main {
     grid-gap: var(--third-padding);
     grid-template-columns: 1fr 1fr;
   }
+  ol.main__ol--arts {
+    padding-left: 0;
+    li {
+      list-style-position: inside;
+    }
+    ul {
+      padding-left: 0;
+      li {
+      list-style-type: none;
+    }
+  }
+  }
   section {
     &.main__sect--arts__pages-links {
       align-self: end;
@@ -406,15 +418,7 @@ ul,
 ol {
   margin: 0;
   margin-top: 0;
-  padding: 0;
-}
-
-ul > li {
-  list-style: none;
-}
-
-ol {
-  list-style-position: inside;
+  padding-left: var(--third-padding);
 }
 
 li {
