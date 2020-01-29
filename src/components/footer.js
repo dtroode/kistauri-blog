@@ -13,7 +13,7 @@ const Footer = props => {
   if (props.pageClass === "post" || props.pageClass === "project") {
     share = (
       <>
-        <h2 className="foot__sect__header">О ссылке</h2>
+        <h2 className="foot__sect__header">Поделиться</h2>
         <nav className="foot__sect__nav foot__sect__nav--share">
           <a
             href={`https://twitter.com/intent/tweet?text=${title} от @dtroode&url=${link}`}
@@ -96,7 +96,7 @@ const Footer = props => {
         If not, variable is empty.
        */}
         {share}
-        <h2 className="foot__sect__header">О подписке</h2>
+        <h2 className="foot__sect__header">Подписаться</h2>
         {/* Nav for links to social media */}
         <nav className="foot__sect__nav foot__sect__nav--links">
           <a

@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
         image="/img/preview.jpg"
       />
       <section className="main__sect--content">
-        <h2>О работах</h2>
+        <h2>Работаю</h2>
         <ol className="main__ol--arts" reversed>
           <li>
             <Link to="/blog">
@@ -239,7 +239,7 @@ const IndexPage = ({ data }) => {
       </section>
       <hr />
       <section className="main__sect--content">
-        <h2>О блоге</h2>
+        <h2>Пишу</h2>
         <ul>
           {PostsList.map(({ node }) => (
             <li key={node.frontmatter.title}>
@@ -250,18 +250,34 @@ const IndexPage = ({ data }) => {
       </section>
       <hr />
       <section className="main__sect--content">
-        <h2>О чтении</h2>
+        <h2>Читаю</h2>
         <p>Читаю книги — чаще нон-фикшн — и пишу короткие обзоры в телеграм</p>
         <h3>2020</h3>
         <ul>
-          <li>Rework. Бизнес без предрассудков — <em>Джейсон Фрид</em> ★</li>
-          <li><a href="https://t.me/dtroode_channel/516">Как устроена экономика</a> — <em>Ха-Джун Чанг</em> ★</li>
+          <li>
+            Rework. Бизнес без предрассудков — <em>Джейсон Фрид</em> ★
+          </li>
+          <li>
+            <a href="https://t.me/dtroode_channel/516">
+              Как устроена экономика
+            </a>{" "}
+            — <em>Ха-Джун Чанг</em> ★
+          </li>
         </ul>
         <h3>2019</h3>
         <ul>
-          <li><a href="https://t.me/dtroode_channel/475">Чистая архитектура</a> — <em>Роберт Мартин</em></li>
-          <li><a href="https://t.me/dtroode_channel/462">Укус Питона</a> — <em>К. Сваруп</em></li>
-          <li><a href="https://t.me/dtroode_channel/524">Грокаем алгоритмы</a> — <em>Адитья Бхаргава</em> ★</li>
+          <li>
+            <a href="https://t.me/dtroode_channel/475">Чистая архитектура</a> —{" "}
+            <em>Роберт Мартин</em>
+          </li>
+          <li>
+            <a href="https://t.me/dtroode_channel/462">Укус Питона</a> —{" "}
+            <em>К. Сваруп</em>
+          </li>
+          <li>
+            <a href="https://t.me/dtroode_channel/524">Грокаем алгоритмы</a> —{" "}
+            <em>Адитья Бхаргава</em> ★
+          </li>
         </ul>
         <h3>2018</h3>
         <ul>
@@ -320,7 +336,8 @@ const IndexPage = ({ data }) => {
             Заправляй кровать — <em>Уильям Макрейвен</em> ★
           </li>
           <li>
-            Как разговаривать с кем угодно, когда угодно, где угодно — <em>Ларри Кинг</em> ★
+            Как разговаривать с кем угодно, когда угодно, где угодно —{" "}
+            <em>Ларри Кинг</em> ★
           </li>
           <li>
             Жизнь по помидору — <em>Кэтрин Грейс</em>
@@ -348,11 +365,19 @@ const IndexPage = ({ data }) => {
         <ul>
           <li>Сейчас большую часть времени учу математику</li>
           <li>По дороге куда-нибудь читаю книги</li>
-          <li>В свободное время забываю про веб и учу компьютерные науки и Python</li>
-          <li>Иногда пишу в блог о разработке и веб-дизайне</li>
-          <li>Когда нахожу что-нибудь интересное, пишу в <a href="https://t.me/s/dtroode_channel">телеграм канал</a>
+          <li>
+            В свободное время забываю про веб и учу компьютерные науки и Python
           </li>
-          <li>А еще не забываю про <a href="https://news.ycombinator.com/item?id=20254420">«Why you need to give Firefox a chance»</a>{" "}
+          <li>Иногда пишу в блог о разработке и веб-дизайне</li>
+          <li>
+            Когда нахожу что-нибудь интересное, пишу в{" "}
+            <a href="https://t.me/s/dtroode_channel">телеграм канал</a>
+          </li>
+          <li>
+            А еще не забываю про{" "}
+            <a href="https://news.ycombinator.com/item?id=20254420">
+              «Why you need to give Firefox a chance»
+            </a>{" "}
             на Хакерньюз
           </li>
         </ul>
