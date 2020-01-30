@@ -2,11 +2,7 @@
   h2,
   h3,
   p {
-    max-width: 700px;
-  }
-  h2,
-  p {
-    width: 100%;
+    max-width: 70ch;
   }
   h2 {
     margin-top: 3rem;
@@ -68,7 +64,7 @@
   ul,
   ol,
   blockquote {
-    max-width: calc(700px - var(--primary-padding));
+    max-width: calc(70ch - var(--primary-padding));
   }
   ul,
   ol {
@@ -95,7 +91,7 @@
     }
   }
   pre {
-    max-width: calc(700px - var(--primary-padding));
+    max-width: calc(70ch - var(--primary-padding));
     margin-top: var(--third-padding);
     margin-bottom: 0;
     padding: 0 0 0 var(--primary-padding);
@@ -116,10 +112,6 @@
   }
   li p {
     margin-top: 0;
-  }
-  twitter-widget {
-    width: 100% !important;
-    margin-top: 1rem !important;
   }
   hr + * {
     margin-top: 0;
