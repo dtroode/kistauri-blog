@@ -2,7 +2,7 @@
   h2,
   h3,
   p {
-    max-width: 70ch;
+    max-width: 700px;
   }
   h2 {
     margin-top: 3rem;
@@ -28,11 +28,11 @@
   span,
   blockquote {
     code {
-      padding: 0 0.25rem;
+      padding: 0.125rem 0.25rem;
 
       color: var(--main-fg);
 
-      background-color: var(--accent-blue-25);
+      background-color: var(--additional-bg);
       border-radius: 0.25rem;
     }
   }
@@ -64,7 +64,7 @@
   ul,
   ol,
   blockquote {
-    max-width: calc(70ch - var(--primary-padding));
+    max-width: calc(700px - var(--primary-padding));
   }
   ul,
   ol {
@@ -89,26 +89,6 @@
     p:first-child {
       margin-top: 0;
     }
-  }
-  pre {
-    max-width: calc(70ch - var(--primary-padding));
-    margin-top: var(--third-padding);
-    margin-bottom: 0;
-    padding: 0 0 0 var(--primary-padding);
-  }
-  code {
-    font-size: 1em;
-    span {
-      font-weight: unset;
-    }
-  }
-  code,
-  pre {
-    scrollbar-width: none;
-  }
-  code::-webkit-scrollbar,
-  pre::-webkit-scrollbar {
-    height: 0;
   }
   li p {
     margin-top: 0;
