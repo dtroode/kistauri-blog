@@ -29,11 +29,17 @@ body {
   background-color: var(--main-bg);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   & > div > div {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 
-    outline: 0;
+    header, main {
+      flex: 0;
+    }
+
+    footer {
+      flex: 1;
+    }
   }
 }
 
@@ -85,7 +91,7 @@ header {
   }
   h1.head__header {
     display: block;
-    margin: 0;
+    margin: 0 0 0 -2px;
 
     font-weight: 700;
     word-break: break-word;
@@ -260,6 +266,7 @@ h2 {
 h2 {
   margin-top: 0;
   margin-bottom: var(--third-padding);
+  margin-left: -1px;
 
   font-weight: 700;
   font-size: 1.5rem;
