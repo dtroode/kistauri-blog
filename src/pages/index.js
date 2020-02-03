@@ -259,7 +259,7 @@ const IndexPage = ({ data }) => {
         <h3>2020</h3>
         <ul>
           <li>
-            Rework. Бизнес без предрассудков <i>— Джейсон Фрид ★</i>
+            <a href="https://t.me/dtroode_channel/533">Rework. Бизнес без предрассудков</a> <i>— Джейсон Фрид ★</i>
           </li>
           <li>
             <a href="https://t.me/dtroode_channel/516">
