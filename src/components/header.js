@@ -63,6 +63,14 @@ const Header = props => (
         Проекты
       </Link>
       <Link
+        to="/reading/"
+        className="head__nav__a a--primary"
+        activeClassName="a--active"
+        partiallyActive={true}
+      >
+        Читаю
+      </Link>
+      <Link
         to="/blog/"
         className="head__nav__a a--primary"
         activeClassName="a--active"
