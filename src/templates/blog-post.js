@@ -40,18 +40,18 @@ export default ({ data, pageContext }) => {
       <section className={`${postStyles.text} main__sect--text`}>
         <p className="postlinks">
           {/* Date of post written */}
-          <span
-            title={
-              format(date, "dddd, D MMMM YYYY", {
+          <time
+            datetime={
+              format(date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
                 locale: ruLocale,
               })
                 .charAt(0)
                 .toUpperCase() +
-              format(date, "dddd, D MMMM YYYY", {
+              format(date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
                 locale: ruLocale,
               }).slice(1)
             }
-            className="postlinks__span"
+            className="postlinks__time"
           >
             {(() => {
               if (isToday(date)) {
@@ -68,7 +68,7 @@ export default ({ data, pageContext }) => {
                 })
               }
             })()}
-          </span>
+          </time>
           {/* All tags for this post */}
           {tags.map(tag => (
             <Link
@@ -92,10 +92,10 @@ export default ({ data, pageContext }) => {
               <span className="postlinks__span postlinks__span--m015">←</span>
             </>
           ) : (
-            <span className="postlinks__span--inact postlinks__span--m015">
-              ←
+              <span className="postlinks__span--inact postlinks__span--m015">
+                ←
             </span>
-          )}
+            )}
           {next ? (
             <>
               <span className="postlinks__span">→</span>
@@ -104,8 +104,8 @@ export default ({ data, pageContext }) => {
               </Link>
             </>
           ) : (
-            <span className="postlinks__span--inact">→</span>
-          )}
+              <span className="postlinks__span--inact">→</span>
+            )}
         </p>
       </section>
     </Layout>

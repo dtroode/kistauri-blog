@@ -30,18 +30,18 @@ export default ({ data, pageContext }) => {
       <section className={`${postStyles.text} main__sect--text`}>
         <p className="postlinks">
           {/* Date of post written */}
-          <span
-            title={
-              format(date, "dddd, D MMMM YYYY", {
+          <time
+            datetime={
+              format(date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
                 locale: ruLocale,
               })
                 .charAt(0)
                 .toUpperCase() +
-              format(date, "dddd, D MMMM YYYY", {
+              format(date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
                 locale: ruLocale,
               }).slice(1)
             }
-            className="postlinks__span"
+            className="postlinks__time"
           >
             {(() => {
               if (isToday(date)) {
@@ -58,7 +58,7 @@ export default ({ data, pageContext }) => {
                 })
               }
             })()}
-          </span>
+          </time>
         </p>
         {/* Content of post converted to HTML */}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
