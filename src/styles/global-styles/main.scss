@@ -130,7 +130,7 @@ main {
     text-decoration: none;
 
     border-bottom: 1px solid var(--accent-blue-25);
-    &:hover {
+    &:hover, &:focus {
       color: var(--accent-red);
 
       border-bottom: 1px solid var(--accent-red-25);
@@ -139,14 +139,11 @@ main {
       color: var(--accent-purple);
 
       border-bottom: 1px solid var(--accent-purple-25);
-      &:hover {
+      &:hover, &:focus {
         color: var(--accent-red);
 
         border-bottom: 1px solid var(--accent-red-25);
       }
-    }
-    &:focus {
-      color: var(--accent-red);
     }
   }
   section.main__sect--arts,
@@ -329,13 +326,10 @@ p {
       text-decoration: none;
 
       border-bottom: 1px solid var(--main-fg-25);
-      &:hover {
+      &:hover, &:focus {
         color: var(--accent-red);
 
         border-bottom: 1px solid var(--accent-red-25);
-      }
-      &:focus {
-        color: var(--accent-red);
       }
     }
   }
@@ -378,7 +372,7 @@ a {
     background-color: var(--accent-blue);
 
     transition: background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
-      box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+    box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
     &:hover {
       color: var(--main-bg);
 
@@ -448,10 +442,6 @@ table {
   th {
     border-bottom: 1px solid var(--main-fg-25);
   }
-}
-
-i {
-  opacity: 0.4;
 }
 
 img {
