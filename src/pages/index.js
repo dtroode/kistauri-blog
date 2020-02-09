@@ -246,28 +246,27 @@ const IndexPage = ({ data }) => {
               <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
             </li>
           ))}
+          <li>
+            <a href="https://news.ycombinator.com/item?id=20254420">
+              «Why you need to give Firefox a chance»
+            </a>{" "} — <i>Hackernews</i>
+          </li>
         </ul>
       </section>
       <hr />
       <section className="main__sect--content">
         <h2>Еще</h2>
         <ul>
+          <li>HTML, CSS, JavaScript, Pug, SASS, SugarSS, React, Gatsby, GraphQL, Git</li>
+          <li>Учу: Svelte, Sapper, NextJS</li>
           <li>Сейчас большую часть времени учу математику</li>
           <li>По дороге куда-нибудь <Link to="/reading">читаю</Link> книги</li>
           <li>
             В свободное время забываю про веб и учу компьютерные науки и Python
           </li>
-          <li>Иногда пишу в блог о разработке и веб-дизайне</li>
           <li>
             Когда нахожу что-нибудь интересное, пишу в{" "}
             <a href="https://t.me/s/dtroode_channel">телеграм канал</a>
-          </li>
-          <li>
-            А еще не забываю про{" "}
-            <a href="https://news.ycombinator.com/iti?id=20254420">
-              «Why you need to give Firefox a chance»
-            </a>{" "}
-            на Хакерньюз
           </li>
         </ul>
       </section>
