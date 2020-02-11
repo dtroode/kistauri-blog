@@ -45,7 +45,7 @@
     text-decoration: none;
 
     border-bottom: 1px solid var(--accent-blue-25);
-    &:hover {
+    &:hover, &:focus {
       color: var(--accent-red);
 
       border-bottom: 1px solid var(--accent-red-25);
@@ -54,7 +54,7 @@
       color: var(--accent-purple);
 
       border-bottom: 1px solid var(--accent-purple-25);
-      &:hover {
+      &:hover, &:focus {
         color: var(--accent-red);
 
         border-bottom: 1px solid var(--accent-red-25);
