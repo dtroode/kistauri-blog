@@ -97,7 +97,7 @@ header {
     word-break: break-word;
 
     &:not(&--post, &--project) {
-      font-size: 3.375rem;
+      font-size: 3.5rem;
     }
 
     &--post, &--project {
@@ -317,7 +317,7 @@ p {
     margin-top: 0;
   }
   &.postlinks {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     * {
       margin-right: var(--fifth-padding);
     }
