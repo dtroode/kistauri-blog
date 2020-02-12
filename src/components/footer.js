@@ -96,7 +96,7 @@ const Footer = props => {
         If not, variable is empty.
        */}
         {share}
-        <h2 className="foot__sect__header">Подписаться</h2>
+        <h2 className="foot__sect__header">Давид Кистаури, 2019—2020. Подписаться</h2>
         {/* Nav for links to social media */}
         <nav className="foot__sect__nav foot__sect__nav--links">
           <a
