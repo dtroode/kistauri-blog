@@ -34,6 +34,9 @@
     ol.main__ol--arts {
       grid-template-columns: 1fr;
     }
+    section.main__sect--content:last-of-type p.main__sect--content__container {
+      column-count: 1;
+    }
   }
   footer {
     section.foot__sect {

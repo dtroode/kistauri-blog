@@ -173,6 +173,10 @@ main {
         ul {
           margin-bottom: 0;
         }
+        p.main__sect--content__container {
+          column-count: 2;
+          column-gap: var(--third-padding);
+        }
       }
       a.a--secondary {
         margin-bottom: var(--fifth-padding);

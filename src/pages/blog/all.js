@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 
+import kebabCase from "lodash/kebabCase"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
@@ -13,10 +14,13 @@ const counter = require("../../scripts/counter")
 
 const AllPage = props => {
   const AllPostsList = props.data.AllPosts.edges
+  const AllTagsList = props.data.AllTags.group
+  AllTagsList.sort((a, b) => b.totalCount - a.totalCount)
+
   return (
     <Layout
       pageClass="posts"
-      title={`Давид Кистаури. Блог. Посты
+      title={`Давид Кистаури. Блог. Заметки
     `}
     >
       <Helmet>
@@ -24,13 +28,31 @@ const AllPage = props => {
       </Helmet>
       <SEO
         title="Посты"
-        description="Блог Давида Кистаури. Посты"
+        description="Блог Давида Кистаури. Заметки"
         image="/img/preview.jpg"
       />
       <section className="main__sect--content">
         <h2 className="main__sect--content__header">
+          Теги по количеству заметок
+        </h2>
+        <p className="main__sect--content__container">
+          {/* All tags sorted */}
+          {AllTagsList.map(tag => (
+            <Link
+              to={`/blog/all/${kebabCase(tag.fieldValue)}/`}
+              key={tag.fieldValue}
+              className="a--secondary"
+            >
+              {tag.fieldValue} <span className="a__span">{tag.totalCount}</span>
+            </Link>
+          ))}
+        </p>
+      </section>
+      <hr />
+      <section className="main__sect--content">
+        <h2 className="main__sect--content__header">
           {props.data.AllPosts.totalCount}{" "}
-          {counter(props.data.AllPosts.totalCount)}
+          {counter(props.data.AllPosts.totalCount, ["заметка", "заметки", "заметок"])}
         </h2>
         <p className="main__sect--content__container">
           {/* All posts list */}
@@ -67,6 +89,15 @@ export const allPageQuery = graphql`
             description
           }
         }
+      }
+    }
+    AllTags: allMarkdownRemark(
+      filter: { frontmatter: { posttype: { ne: "project" } } }
+      limit: 2000
+    ) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }
