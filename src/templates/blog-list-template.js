@@ -49,7 +49,7 @@ const BlogList = ({ pageContext, data }) => {
   const allPostsLink =
     numPages > 1 ? (
       <Link to="/blog/all" className="a--secondary">
-        Все посты
+        Все заметки
       </Link>
     ) : (
         ""

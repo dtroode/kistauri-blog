@@ -17,7 +17,7 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = (
     <>
       <span className="head__header__span">
-        {totalCount} {counter(totalCount)} с тегом
+        {totalCount} {counter(totalCount, ["заметка", "заметки", "заметок"])} с тегом
       </span>
       {tag}{" "}
     </>
@@ -25,7 +25,7 @@ const Tags = ({ pageContext, data }) => {
   return (
     <Layout pageClass="tag" title={tagHeader}>
       <SEO
-        title={`${totalCount} ${counter(totalCount)} с тегом ${tag}`}
+        title={`${totalCount} ${counter(totalCount, ["заметка", "заметки", "заметок"])} с тегом ${tag}`}
         description={`Блог Давида Кистаури. тег: ${tag}`}
         image="/img/preview.jpg"
       />
