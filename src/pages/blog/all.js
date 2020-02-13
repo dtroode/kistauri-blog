@@ -52,7 +52,11 @@ const AllPage = props => {
       <section className="main__sect--content">
         <h2 className="main__sect--content__header">
           {props.data.AllPosts.totalCount}{" "}
-          {counter(props.data.AllPosts.totalCount, ["заметка", "заметки", "заметок"])}
+          {counter(props.data.AllPosts.totalCount, [
+            "заметка",
+            "заметки",
+            "заметок",
+          ])}
         </h2>
         <p className="main__sect--content__container">
           {/* All posts list */}

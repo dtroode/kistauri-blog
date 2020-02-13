@@ -20,8 +20,8 @@ const BlogList = ({ pageContext, data }) => {
     currentPage === 1
       ? ""
       : currentPage === 2
-        ? "/blog/"
-        : `/blog/page/${currentPage - 1}`
+      ? "/blog/"
+      : `/blog/page/${currentPage - 1}`
   const prev = currentPage === numPages ? "" : `/blog/page/${currentPage + 1}`
 
   useEffect(() => {
@@ -33,27 +33,27 @@ const BlogList = ({ pageContext, data }) => {
     currentPage === 1 ? (
       ""
     ) : (
-        <Link to={next} className="a--secondary">
-          ←
+      <Link to={next} className="a--secondary">
+        ←
       </Link>
-      )
+    )
   // Creating link to previous page according to pages count
   const previousPageLink =
     currentPage === numPages ? (
       ""
     ) : (
-        <Link to={prev} className="a--secondary">
-          →
+      <Link to={prev} className="a--secondary">
+        →
       </Link>
-      )
+    )
   const allPostsLink =
     numPages > 1 ? (
       <Link to="/blog/all" className="a--secondary">
         Все заметки
       </Link>
     ) : (
-        ""
-      )
+      ""
+    )
   return (
     <Layout pageClass="blog" title="Давид Кистаури. Блог">
       <Helmet>

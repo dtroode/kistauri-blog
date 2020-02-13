@@ -92,10 +92,10 @@ export default ({ data, pageContext }) => {
               <span className="postlinks__span postlinks__span--m015">←</span>
             </>
           ) : (
-              <span className="postlinks__span--inact postlinks__span--m015">
-                ←
+            <span className="postlinks__span--inact postlinks__span--m015">
+              ←
             </span>
-            )}
+          )}
           {next ? (
             <>
               <span className="postlinks__span">→</span>
@@ -104,8 +104,8 @@ export default ({ data, pageContext }) => {
               </Link>
             </>
           ) : (
-              <span className="postlinks__span--inact">→</span>
-            )}
+            <span className="postlinks__span--inact">→</span>
+          )}
         </p>
       </section>
     </Layout>

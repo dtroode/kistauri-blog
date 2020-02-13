@@ -9,10 +9,7 @@ import "../styles/media.scss"
 
 const ReadingPage = () => {
   return (
-    <Layout
-      pageClass="portfolio"
-      title="Давид Кистаури. Читаю"
-    >
+    <Layout pageClass="portfolio" title="Давид Кистаури. Читаю">
       <Helmet>
         <link rel="canonical" href="https://davidkistauri.ru/reading" />
       </Helmet>
@@ -24,34 +21,37 @@ const ReadingPage = () => {
       <section className="main__sect--content">
         <p>
           Читаю книги — чаще нон-фикшн — и пишу короткие обзоры в телеграм.
-            <br />
+          <br />
           <em>Обновлено 29 января 2020.</em>
         </p>
         <h3>2020</h3>
         <ul>
           <li>
-            <a href="https://t.me/dtroode_channel/533">Rework. Бизнес без предрассудков</a> — <i>Джейсон Фрид ★</i>
+            <a href="https://t.me/dtroode_channel/533">
+              Rework. Бизнес без предрассудков
+            </a>{" "}
+            — <i>Джейсон Фрид ★</i>
           </li>
           <li>
             <a href="https://t.me/dtroode_channel/516">
               Как устроена экономика
-              </a>{" "}
+            </a>{" "}
             — <i>Ха-Джун Чанг ★</i>
           </li>
         </ul>
         <h3>2019</h3>
         <ul>
           <li>
-            <a href="https://t.me/dtroode_channel/475">Чистая архитектура</a>{" "}
-            — <i>Роберт Мартин</i>
+            <a href="https://t.me/dtroode_channel/475">Чистая архитектура</a> —{" "}
+            <i>Роберт Мартин</i>
           </li>
           <li>
-            <a href="https://t.me/dtroode_channel/462">Укус Питона</a>{" "}
-            — <i>К. Сваруп</i>
+            <a href="https://t.me/dtroode_channel/462">Укус Питона</a> —{" "}
+            <i>К. Сваруп</i>
           </li>
           <li>
-            <a href="https://t.me/dtroode_channel/524">Грокаем алгоритмы</a>{" "}
-            — <i>Адитья Бхаргава ★</i>
+            <a href="https://t.me/dtroode_channel/524">Грокаем алгоритмы</a> —{" "}
+            <i>Адитья Бхаргава ★</i>
           </li>
         </ul>
         <h3>2018</h3>
@@ -111,8 +111,8 @@ const ReadingPage = () => {
             Заправляй кровать — <i>Уильям Макрейвен ★</i>
           </li>
           <li>
-            Как разговаривать с кем угодно, когда угодно, где угодно{" "}
-            — <i>Ларри Кинг ★</i>
+            Как разговаривать с кем угодно, когда угодно, где угодно —{" "}
+            <i>Ларри Кинг ★</i>
           </li>
           <li>
             Жизнь по помидору — <i>Кэтрин Грейс</i>

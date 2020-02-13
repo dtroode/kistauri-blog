@@ -249,7 +249,8 @@ const IndexPage = ({ data }) => {
           <li>
             <a href="https://news.ycombinator.com/item?id=20254420">
               «Why you need to give Firefox a chance»
-            </a>{" "} — <i>Hackernews</i>
+            </a>{" "}
+            — <i>Hackernews</i>
           </li>
         </ul>
       </section>
@@ -257,10 +258,15 @@ const IndexPage = ({ data }) => {
       <section className="main__sect--content">
         <h2>Еще</h2>
         <ul>
-          <li>HTML, CSS, JavaScript, Pug, SASS, SugarSS, React, Gatsby, GraphQL, Git</li>
+          <li>
+            HTML, CSS, JavaScript, Pug, SASS, SugarSS, React, Gatsby, GraphQL,
+            Git
+          </li>
           <li>Учу: Svelte, Sapper, NextJS</li>
           <li>Сейчас большую часть времени учу математику</li>
-          <li>По дороге куда-нибудь <Link to="/reading">читаю</Link> книги</li>
+          <li>
+            По дороге куда-нибудь <Link to="/reading">читаю</Link> книги
+          </li>
           <li>
             В свободное время забываю про веб и учу компьютерные науки и Python
           </li>
@@ -278,21 +284,21 @@ export default IndexPage
 
 export const blogListForPortfolio = graphql`
   query blogListForPortfolio {
-        Posts: allMarkdownRemark(
-      filter: {frontmatter: {posttype: {ne: "project" } } }
-      sort: {fields: [frontmatter___date], order: DESC }
+    Posts: allMarkdownRemark(
+      filter: { frontmatter: { posttype: { ne: "project" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
       limit: 8
     ) {
-        edges {
+      edges {
         node {
-        fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
       }
     }
   }
-}
 `

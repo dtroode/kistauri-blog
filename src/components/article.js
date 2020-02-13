@@ -12,10 +12,10 @@ const Article = props => {
     props.node.frontmatter.categories === "work"
       ? articleStyles.work
       : props.node.frontmatter.categories === "thoughts"
-        ? articleStyles.thoughts
-        : props.node.frontmatter.categories === "advices"
-          ? articleStyles.advices
-          : articleStyles.learning
+      ? articleStyles.thoughts
+      : props.node.frontmatter.categories === "advices"
+      ? articleStyles.advices
+      : articleStyles.learning
 
   return (
     <article
@@ -32,14 +32,22 @@ const Article = props => {
             {/* Date of post written */}
             <time
               datetime={
-                format(props.node.frontmatter.date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
-                  locale: ruLocale,
-                })
+                format(
+                  props.node.frontmatter.date,
+                  "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)",
+                  {
+                    locale: ruLocale,
+                  }
+                )
                   .charAt(0)
                   .toUpperCase() +
-                format(props.node.frontmatter.date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
-                  locale: ruLocale,
-                }).slice(1)
+                format(
+                  props.node.frontmatter.date,
+                  "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)",
+                  {
+                    locale: ruLocale,
+                  }
+                ).slice(1)
               }
               className="postlinks__time"
             >
