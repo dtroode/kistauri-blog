@@ -1,5 +1,4 @@
-function counter(number) {
-  const names = ["пост", "поста", "постов"]
+function counter(number, names) {
   return names[
     // Check if number ends with 1
     /1$/.test(number)

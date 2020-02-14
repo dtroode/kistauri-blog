@@ -9,7 +9,7 @@ const AdditionalLinks = props => {
   if (props.className === "blog") {
     links = (
       <>
-        <Link to="/blog/tags" className="head__nav__a a--secondary">
+        <Link to="/blog/all" className="head__nav__a a--secondary">
           Теги
         </Link>
         <Link
@@ -22,7 +22,7 @@ const AdditionalLinks = props => {
     )
   } else if (props.className === "tag") {
     links = (
-      <Link to="/blog/tags" className="head__nav__a a--secondary">
+      <Link to="/blog/all" className="head__nav__a a--secondary">
         Теги
       </Link>
     )

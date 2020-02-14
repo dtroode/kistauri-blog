@@ -105,9 +105,10 @@ header {
     }
     span.head__header__span {
       display: block;
+
+      font-weight: 500;
       font-size: 1rem;
       line-height: 1rem;
-      font-weight: 500;
       letter-spacing: -0.017em;
     }
   }
@@ -172,6 +173,10 @@ main {
       &:last-of-type {
         ul {
           margin-bottom: 0;
+        }
+        p.main__sect--content__container {
+          column-count: 2;
+          column-gap: var(--third-padding);
         }
       }
       a.a--secondary {
@@ -319,7 +324,7 @@ p {
   &.postlinks {
     font-size: 0.75rem;
     * {
-      margin-right: var(--fifth-padding);
+      margin-right: var(--fourth-padding);
     }
     a.postlinks__a {
       color: inherit;

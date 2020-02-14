@@ -110,7 +110,7 @@ exports.createPages = ({ graphql, actions }) => {
         // Creating tags pages for each tag we get from posts
         tags.forEach(tag => {
           createPage({
-            path: `/blog/tags/${_.kebabCase(tag)}/`,
+            path: `/blog/all/${_.kebabCase(tag)}/`,
             component: tagTemplate,
             context: {
               tag
