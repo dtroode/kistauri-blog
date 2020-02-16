@@ -30,11 +30,15 @@ pre {
   max-width: calc(700px - 2*var(--third-padding));
   margin-top: var(--third-padding);
   margin-bottom: 0;
-  padding: var(--third-padding);
   overflow-x: auto;
 
   background-color: var(--additional-bg);
   border-radius: 0.25rem;
+
+  code {
+    display: inline-block;
+    margin: var(--third-padding)
+  }
 }
 
 code {
