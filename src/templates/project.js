@@ -31,7 +31,7 @@ export default ({ data, pageContext }) => {
         <p className="postlinks">
           {/* Date of post written */}
           <time
-            datetime={
+            dateTime={
               format(date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
                 locale: ruLocale,
               })

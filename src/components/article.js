@@ -31,7 +31,7 @@ const Article = props => {
           <p className={`${articleStyles.art__link__sect__p} postlinks`}>
             {/* Date of post written */}
             <time
-              datetime={
+              dateTime={
                 format(
                   props.node.frontmatter.date,
                   "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)",
