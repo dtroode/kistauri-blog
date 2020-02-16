@@ -239,7 +239,7 @@ const IndexPage = ({ data }) => {
       </section>
       <hr />
       <section className="main__sect--content">
-        <h2>Пишу</h2>
+        <h2>Веду блог</h2>
         <ul>
           {PostsList.map(({ node }) => (
             <li key={node.frontmatter.title}>
@@ -257,24 +257,18 @@ const IndexPage = ({ data }) => {
       <hr />
       <section className="main__sect--content">
         <h2>Еще</h2>
-        <ul>
-          <li>
-            HTML, CSS, JavaScript, Pug, SASS, SugarSS, React, Gatsby, GraphQL,
-            Git
-          </li>
-          <li>Учу: Svelte, Sapper, NextJS</li>
-          <li>Сейчас большую часть времени учу математику</li>
-          <li>
-            По дороге куда-нибудь <Link to="/reading">читаю</Link> книги
-          </li>
-          <li>
-            В свободное время забываю про веб и учу компьютерные науки и Python
-          </li>
-          <li>
-            Когда нахожу что-нибудь интересное, пишу в{" "}
-            <a href="https://t.me/s/dtroode_channel">телеграм канал</a>
-          </li>
-        </ul>
+        <p>
+          HTML, CSS, JavaScript, Pug, SASS, SugarSS, React, Gatsby, GraphQL,
+          Git.
+          <br />
+          Учу: Svelte, Sapper, NextJS, а еще математику. По дороге куда-нибудь{" "}
+          <Link to="/reading">читаю</Link> книги.
+          <br />В свободное время забываю про веб и учу компьютерные науки и
+          Python.
+          <br />
+          Когда нахожу что-нибудь интересное, пишу в{" "}
+          <a href="https://t.me/s/dtroode_channel">телеграм канал</a>
+        </p>
       </section>
     </Layout>
   )
