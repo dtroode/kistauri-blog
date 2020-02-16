@@ -27,7 +27,7 @@ code::selection {
 }
 
 pre {
-  max-width: calc(700px - 2*var(--third-padding));
+  max-width: 700px;
   margin-top: var(--third-padding);
   margin-bottom: 0;
   overflow-x: auto;
