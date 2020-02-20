@@ -1,14 +1,15 @@
-import React from "react"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import Article from "../components/article"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import Article from '../components/article'
+import SEO from '../components/seo'
 
-import "../styles/media.scss"
+import '../styles/media.scss'
 
-const counter = require("../scripts/counter")
+const counter = require('../scripts/counter')
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext // Getting tag from context in graphql
@@ -17,19 +18,19 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = (
     <>
       <span className="head__header__span">
-        {totalCount} {counter(totalCount, ["заметка", "заметки", "заметок"])} с
+        {totalCount} {counter(totalCount, ['заметка', 'заметки', 'заметок'])} с
         тегом
       </span>
-      {tag}{" "}
+      {tag}{' '}
     </>
   )
   return (
     <Layout pageClass="tag" title={tagHeader}>
       <SEO
         title={`${totalCount} ${counter(totalCount, [
-          "заметка",
-          "заметки",
-          "заметок",
+          'заметка',
+          'заметки',
+          'заметок'
         ])} с тегом ${tag}`}
         description={`Блог Давида Кистаури. тег: ${tag}`}
         image="/img/preview.jpg"
@@ -42,6 +43,11 @@ const Tags = ({ pageContext, data }) => {
       </section>
     </Layout>
   )
+}
+
+Tags.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
 }
 
 export default Tags

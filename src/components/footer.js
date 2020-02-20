@@ -1,16 +1,17 @@
-import React from "react"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
 const Footer = props => {
   const title = props.title
   // Link of page
   const link = `https://davidkistauri.ru${props.link}`
   // Variable with share content. Uses only for posts and projects
-  let share = ""
+  let share = ''
 
   // If page is a post or a project writing links to `share` variable
-  if (props.pageClass === "post" || props.pageClass === "project") {
+  if (props.pageClass === 'post' || props.pageClass === 'project') {
     share = (
       <>
         <h2 className="foot__sect__header">Поделиться</h2>
@@ -199,6 +200,12 @@ const Footer = props => {
       {/* Social media icons by FontAwesome. Website: https://fontawesome.com. Github: https://github.com/FortAwesome/Font-Awesome */}
     </footer>
   )
+}
+
+Footer.propTypes = {
+  title: PropTypes.string,
+  link: PropTypes.string,
+  pageClass: PropTypes.string
 }
 
 export default Footer
