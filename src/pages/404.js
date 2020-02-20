@@ -1,13 +1,13 @@
-import React from "react"
+import React from 'react'
 
-import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
+import { Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-import articleStyles from "../styles/article.module.scss"
-import "../styles/media.scss"
+import articleStyles from '../styles/article.module.scss'
+import '../styles/media.scss'
 
 const ErrorPage = () => {
   return (
@@ -39,7 +39,7 @@ const ErrorPage = () => {
         </article>
         <article className={`${articleStyles.art} ${articleStyles.error}`}>
           <a
-            href={`mailto:davidkis113@gmail.com?subject=Я нашел ошибку на сайте`}
+            href={'mailto:davidkis113@gmail.com?subject=Я нашел ошибку на сайте'}
             className={`${articleStyles.art__link} ${articleStyles.error__link}`}
           >
             <section className={articleStyles.art__link__sect}>

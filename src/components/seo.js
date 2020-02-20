@@ -1,9 +1,10 @@
-import React from "react"
-import Helmet from "react-helmet"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, title, image }) {
+function SEO ({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -25,7 +26,7 @@ function SEO({ description, lang, meta, title, image }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang
       }}
       title={title}
       // Creating title using title of page + default title.
@@ -34,65 +35,65 @@ function SEO({ description, lang, meta, title, image }) {
       image={site.siteMetadata.image}
       meta={[
         {
-          name: `theme-color`,
-          content: `#fafafa`,
+          name: 'theme-color',
+          content: '#fafafa'
         },
         {
-          name: `google-site-verification`,
-          content: `ZxrqdjNGV_mLaEYAKAk4LAuwrTITGTnrR0jybKkl7N4`,
+          name: 'google-site-verification',
+          content: 'ZxrqdjNGV_mLaEYAKAk4LAuwrTITGTnrR0jybKkl7N4'
         },
         {
-          name: `description`,
-          content: metaDescription,
+          name: 'description',
+          content: metaDescription
         },
         {
-          property: `og:title`,
-          content: title,
+          property: 'og:title',
+          content: title
         },
         {
-          property: `og:description`,
-          content: metaDescription,
+          property: 'og:description',
+          content: metaDescription
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: 'og:type',
+          content: 'website'
         },
         {
-          property: `og:image`,
-          content: `https://davidkistauri.ru${image}`,
+          property: 'og:image',
+          content: `https://davidkistauri.ru${image}`
         },
         {
-          name: `twitter:card`,
-          content: `summary_large_image`,
+          name: 'twitter:card',
+          content: 'summary_large_image'
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          name: 'twitter:creator',
+          content: site.siteMetadata.author
         },
         {
-          name: `twitter:title`,
-          content: title,
+          name: 'twitter:title',
+          content: title
         },
         {
-          name: `twitter:description`,
-          content: metaDescription,
+          name: 'twitter:description',
+          content: metaDescription
         },
         {
-          name: `twitter:image`,
-          content: `https://davidkistauri.ru${image}`,
+          name: 'twitter:image',
+          content: `https://davidkistauri.ru${image}`
         },
         {
-          name: `apple-mobile-web-app-capable`,
-          content: `yes`,
+          name: 'apple-mobile-web-app-capable',
+          content: 'yes'
         },
         {
-          name: `apple-mobile-web-app-status-bar-style`,
-          content: `black`,
+          name: 'apple-mobile-web-app-status-bar-style',
+          content: 'black'
         },
         {
-          name: `apple-mobile-web-app-title`,
-          content: title,
-        },
+          name: 'apple-mobile-web-app-title',
+          content: title
+        }
       ].concat(meta)}
     >
       <link rel="me" href="https://twitter.com/dtroode" />
@@ -101,11 +102,19 @@ function SEO({ description, lang, meta, title, image }) {
 }
 
 SEO.defaultProps = {
-  lang: `ru`, // Lang of the page
+  lang: 'ru', // Lang of the page
   meta: [],
-  description: `Назови любое слово и я сделаю об этом сайт.`,
-  title: `Давид Кистаури`,
-  image: `/img/preview.jpg`,
+  description: 'Назови любое слово и я сделаю об этом сайт.',
+  title: 'Давид Кистаури',
+  image: '/img/preview.jpg'
+}
+
+SEO.propTypes = {
+  description: PropTypes.string,
+  lang: PropTypes.string,
+  meta: PropTypes.array,
+  title: PropTypes.string,
+  image: PropTypes.string
 }
 
 export default SEO
