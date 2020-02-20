@@ -257,18 +257,21 @@ const IndexPage = ({ data }) => {
       <hr />
       <section className="main__sect--content">
         <h2>Еще</h2>
-        <p>
-          HTML, CSS, JavaScript, Pug, SASS, SugarSS, React, Gatsby, GraphQL,
-          Git.
-          <br />
-          Учу: Svelte, Sapper, NextJS, а еще математику. По дороге куда-нибудь{" "}
-          <Link to="/reading">читаю</Link> книги.
-          <br />В свободное время забываю про веб и учу компьютерные науки и
-          Python.
-          <br />
-          Когда нахожу что-нибудь интересное, пишу в{" "}
-          <a href="https://t.me/s/dtroode_channel">телеграм канал</a>
-        </p>
+        <ul>
+          <li>
+            HTML, CSS, JavaScript, Pug, SASS, SugarSS, React, Gatsby, GraphQL,
+            Git.
+          </li><li>
+            Учу: Svelte, Sapper, NextJS, а еще математику. По дороге куда-нибудь{" "}
+            <Link to="/reading">читаю</Link> книги.
+          </li><li>
+            В свободное время забываю про веб и учу компьютерные науки и
+            Python.
+          </li><li>
+            Когда нахожу что-нибудь интересное, пишу в{" "}
+            <a href="https://t.me/s/dtroode_channel">телеграм канал</a>
+          </li>
+        </ul>
       </section>
     </Layout>
   )
