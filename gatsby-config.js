@@ -61,7 +61,6 @@ module.exports = {
         plugins: [
           `gatsby-remark-relative-images`,
           `gatsby-remark-typography`,
-          `gatsby-remark-responsive-iframe`,
           {
             resolve: `gatsby-remark-images`,
             options: {
