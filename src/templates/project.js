@@ -1,19 +1,20 @@
-import React from "react"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { graphql } from "gatsby"
-import { format, isToday, isYesterday, isThisYear } from "date-fns"
+import { graphql } from 'gatsby'
+import { format, isToday, isYesterday, isThisYear } from 'date-fns'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-import "../styles/post.scss"
-import postStyles from "../styles/post.module.scss"
-import "../styles/media.scss"
+import '../styles/post.scss'
+import postStyles from '../styles/post.module.scss'
+import '../styles/media.scss'
 
-export default ({ data, pageContext }) => {
+const ProjectPage = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { slug, title, date, description } = pageContext
-  const ruLocale = require("date-fns/locale/ru")
+  const ruLocale = require('date-fns/locale/ru')
 
   return (
     <Layout
@@ -32,29 +33,29 @@ export default ({ data, pageContext }) => {
           {/* Date of post written */}
           <time
             dateTime={
-              format(date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
-                locale: ruLocale,
+              format(date, 'YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)', {
+                locale: ruLocale
               })
                 .charAt(0)
                 .toUpperCase() +
-              format(date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
-                locale: ruLocale,
+              format(date, 'YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)', {
+                locale: ruLocale
               }).slice(1)
             }
             className="postlinks__time"
           >
             {(() => {
               if (isToday(date)) {
-                return "сегодня"
+                return 'сегодня'
               } else if (isYesterday(date)) {
-                return "вчера"
+                return 'вчера'
               } else if (isThisYear(date)) {
-                return format(date, "D MMMM", {
-                  locale: ruLocale,
+                return format(date, 'D MMMM', {
+                  locale: ruLocale
                 })
               } else {
-                return format(date, "D MMMM YYYY", {
-                  locale: ruLocale,
+                return format(date, 'D MMMM YYYY', {
+                  locale: ruLocale
                 })
               }
             })()}
@@ -66,6 +67,13 @@ export default ({ data, pageContext }) => {
     </Layout>
   )
 }
+
+ProjectPage.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
+}
+
+export default ProjectPage
 
 // Getting all information for this post:
 // Title

@@ -1,20 +1,21 @@
-import React from "react"
-import Img from "gatsby-image"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Img from 'gatsby-image'
 
-import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
-import { format, isToday, isYesterday, isThisYear } from "date-fns"
+import { Link, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { format, isToday, isYesterday, isThisYear } from 'date-fns'
 
-import articleStyles from "../styles/article.module.scss"
-import "../styles/media.scss"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+
+import articleStyles from '../styles/article.module.scss'
+import '../styles/media.scss'
 
 const ProjectsList = ({ data }) => {
   const ProjectsList = data.Projects.edges
-  const ruLocale = require("date-fns/locale/ru")
+  const ruLocale = require('date-fns/locale/ru')
 
   return (
     <Layout pageClass="projects" title="Давид Кистаури. Проекты">
@@ -46,29 +47,29 @@ const ProjectsList = ({ data }) => {
                   {/* Date of post written */}
                   <span
                     title={
-                      format(node.frontmatter.date, "dddd, D MMMM YYYY", {
-                        locale: ruLocale,
+                      format(node.frontmatter.date, 'dddd, D MMMM YYYY', {
+                        locale: ruLocale
                       })
                         .charAt(0)
                         .toUpperCase() +
-                      format(node.frontmatter.date, "dddd, D MMMM YYYY", {
-                        locale: ruLocale,
+                      format(node.frontmatter.date, 'dddd, D MMMM YYYY', {
+                        locale: ruLocale
                       }).slice(1)
                     }
                     className="postlinks__span"
                   >
                     {(() => {
                       if (isToday(node.frontmatter.date)) {
-                        return "сегодня"
+                        return 'сегодня'
                       } else if (isYesterday(node.frontmatter.date)) {
-                        return "вчера"
+                        return 'вчера'
                       } else if (isThisYear(node.frontmatter.date)) {
-                        return format(node.frontmatter.date, "D MMMM", {
-                          locale: ruLocale,
+                        return format(node.frontmatter.date, 'D MMMM', {
+                          locale: ruLocale
                         })
                       } else {
-                        return format(node.frontmatter.date, "D MMMM YYYY", {
-                          locale: ruLocale,
+                        return format(node.frontmatter.date, 'D MMMM YYYY', {
+                          locale: ruLocale
                         })
                       }
                     })()}
@@ -81,6 +82,10 @@ const ProjectsList = ({ data }) => {
       </section>
     </Layout>
   )
+}
+
+ProjectsList.propTypes = {
+  data: PropTypes.object
 }
 
 export default ProjectsList

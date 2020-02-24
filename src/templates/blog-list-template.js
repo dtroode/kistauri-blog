@@ -1,15 +1,15 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
 
-import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
+import { Link, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
-import Layout from "../components/layout"
-import Article from "../components/article"
-import SEO from "../components/seo"
-import control from "../scripts/control"
+import Layout from '../components/layout'
+import Article from '../components/article'
+import SEO from '../components/seo'
+import control from '../scripts/control'
 
-import "../styles/media.scss"
+import '../styles/media.scss'
 
 const BlogList = ({ pageContext, data }) => {
   const PostsList = data.Posts.edges
@@ -18,11 +18,11 @@ const BlogList = ({ pageContext, data }) => {
 
   const next =
     currentPage === 1
-      ? ""
+      ? ''
       : currentPage === 2
-      ? "/blog/"
-      : `/blog/page/${currentPage - 1}`
-  const prev = currentPage === numPages ? "" : `/blog/page/${currentPage + 1}`
+        ? '/blog/'
+        : `/blog/page/${currentPage - 1}`
+  const prev = currentPage === numPages ? '' : `/blog/page/${currentPage + 1}`
 
   useEffect(() => {
     control(prev, next)
@@ -31,7 +31,7 @@ const BlogList = ({ pageContext, data }) => {
   // Creating link to next page according to current page number
   const nextPageLink =
     currentPage === 1 ? (
-      ""
+      ''
     ) : (
       <Link to={next} className="a--secondary">
         ←
@@ -40,7 +40,7 @@ const BlogList = ({ pageContext, data }) => {
   // Creating link to previous page according to pages count
   const previousPageLink =
     currentPage === numPages ? (
-      ""
+      ''
     ) : (
       <Link to={prev} className="a--secondary">
         →
@@ -52,7 +52,7 @@ const BlogList = ({ pageContext, data }) => {
         Все заметки
       </Link>
     ) : (
-      ""
+      ''
     )
   return (
     <Layout pageClass="blog" title="Давид Кистаури. Блог">
@@ -77,6 +77,11 @@ const BlogList = ({ pageContext, data }) => {
       </section>
     </Layout>
   )
+}
+
+BlogList.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
 }
 
 export default BlogList
