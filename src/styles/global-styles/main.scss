@@ -160,10 +160,7 @@ main {
     }
     ul {
       padding-left: 0;
-      li {
-      list-style-type: none;
     }
-  }
   }
   section {
     &.main__sect--arts__pages-links {
@@ -412,6 +409,10 @@ ol {
   margin: 0;
   margin-top: 0;
   padding-left: var(--secondary-padding);
+}
+
+ul li {
+  list-style-type: none;
 }
 
 li {
