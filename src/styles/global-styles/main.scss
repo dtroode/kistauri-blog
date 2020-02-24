@@ -147,11 +147,11 @@ main {
       }
     }
   }
-  section.main__sect--arts,
-  ol.main__ol--arts {
-    display: grid;
-    grid-gap: var(--third-padding);
-    grid-template-columns: 1fr 1fr;
+  section.main__sect--arts article,
+  ol.main__ol--arts > li {
+    &:not(:last-child) {
+      margin-bottom: var(--third-padding);
+    }
   }
   ol.main__ol--arts {
     padding-left: 0;
@@ -173,10 +173,6 @@ main {
       &:last-of-type {
         ul {
           margin-bottom: 0;
-        }
-        p.main__sect--content__container {
-          column-count: 2;
-          column-gap: var(--third-padding);
         }
       }
       a.a--secondary {
