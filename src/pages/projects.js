@@ -11,7 +11,6 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import articleStyles from '../styles/article.module.scss'
-import '../styles/media.scss'
 
 const ProjectsList = ({ data }) => {
   const ProjectsList = data.Projects.edges

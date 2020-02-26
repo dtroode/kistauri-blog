@@ -9,7 +9,6 @@ import SEO from '../components/seo'
 
 import '../styles/post.scss'
 import postStyles from '../styles/post.module.scss'
-import '../styles/media.scss'
 
 const ProjectPage = ({ data, pageContext }) => {
   const post = data.markdownRemark

@@ -12,7 +12,6 @@ import control from '../scripts/control'
 
 import '../styles/post.scss'
 import postStyles from '../styles/post.module.scss'
-import '../styles/media.scss'
 import '../styles/code.scss'
 
 const BlogPostPage = ({ data, pageContext }) => {

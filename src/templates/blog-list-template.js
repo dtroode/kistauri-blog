@@ -9,8 +9,6 @@ import Article from '../components/article'
 import SEO from '../components/seo'
 import control from '../scripts/control'
 
-import '../styles/media.scss'
-
 const BlogList = ({ pageContext, data }) => {
   const PostsList = data.Posts.edges
   const currentPage = pageContext.currentPage

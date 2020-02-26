@@ -1,3 +1,98 @@
+/* Root variables */
+:root {
+  // Main Background and Foreground colors
+  --main-bg: #fafafa;
+  --main-fg: #121212;
+
+  // Additional Background and Foreground colors
+  --additional-bg: #eeeeee;
+  --additional-fg: #1c1c1c;
+
+  // Accent colors
+  --accent-red: #d50000;
+  --accent-blue: #2962ff;
+  --accent-purple: #768fff;
+
+  // Half colors
+  --main-fg-25: #12121240;
+  --accent-red-25: #d5000040;
+  --accent-blue-25: #2962ff40;
+  --accent-purple-25: #768fff40;
+
+  // Additional colors
+  --additional-red-bg: #ff5252;
+  --additional-green-bg: #69f0ae;
+  --additional-blue-bg: #448aff;
+  --additional-yellow-bg: #ffd740;
+
+  --additional-red-fg: #1c1c1c;
+  --additional-green-fg: #1c1c1c;
+  --additional-blue-fg: #1c1c1c;
+  --additional-yellow-fg: #1c1c1c;
+
+  // Contrast colors
+  --contrast-blue: #8c9eff;
+
+  // Paddings
+  --primary-padding: 2.4rem;
+  --secondary-padding: 1.5rem;
+  --third-padding: 1rem;
+  --fourth-padding: 0.6rem;
+  --fifth-padding: 0.4rem;
+
+  // Side padding
+  --side-padding: 2.4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    // Main Background and Foreground colors
+    --main-bg: #121212;
+    --main-fg: #eeeeee;
+
+    // Additional Background and Foreground colors
+    --additional-bg: #1c1c1c;
+    --additional-fg: #fafafa;
+
+    // Accent colors
+    --accent-red: #ff5131;
+    --accent-blue: #768fff;
+    --accent-purple: #9d46ff;
+
+    // Half colors
+    --main-fg-25: #eeeeee40;
+    --accent-red-25: #ff513140;
+    --accent-blue-25: #768fff40;
+    --accent-purple-25: #9d46ff40;
+
+    // Additional colors
+    --additional-red-bg: #1c1c1c;
+    --additional-green-bg: #1c1c1c;
+    --additional-blue-bg: #1c1c1c;
+    --additional-yellow-bg: #1c1c1c;
+
+    --additional-red-fg: #ff867f;
+    --additional-green-fg: #9fffe0;
+    --additional-blue-fg: #83b9ff;
+    --additional-yellow-fg: #ffff74;
+
+    // Contrast colors
+    --contrast-blue: #304ffe;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  :root {
+    --side-padding: 6.6%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --side-padding: 1.5rem;
+  }
+}
+
 *::selection {
   color: var(--main-bg);
 
@@ -116,6 +211,13 @@ header {
     margin: var(--secondary-padding) 0 0 0;
   }
 }
+
+@media screen and (max-width: 700px) {
+  header h1.head__header {
+    font-size: 2.25rem;
+  }
+}
+
 
 main,
 footer {
@@ -456,4 +558,24 @@ hr {
   background-color: var(--main-fg);
   border: 0;
   opacity: 0.125;
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: brightness(85%);
+  }
+  p,
+  table,
+  ul,
+  ol,
+  blockquote,
+  figcaption {
+    opacity: 0.85;
+    * {
+      opacity: 1;
+    }
+    img {
+      filter: brightness(100%);
+    }
+  }
 }

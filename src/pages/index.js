@@ -7,8 +7,6 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import '../styles/media.scss'
-
 const IndexPage = ({ data }) => {
   const PostsList = data.Posts.edges
 

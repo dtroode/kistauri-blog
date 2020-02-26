@@ -8,8 +8,6 @@ import kebabCase from 'lodash/kebabCase'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 
-import '../../styles/media.scss'
-
 const counter = require('../../scripts/counter')
 
 const AllPage = props => {
