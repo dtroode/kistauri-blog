@@ -14,8 +14,6 @@
     height: calc(100% - 2 * var(--third-padding));
     padding: var(--third-padding);
 
-    text-decoration: none;
-
     border-radius: var(--fourth-padding);
 
     transition: box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
