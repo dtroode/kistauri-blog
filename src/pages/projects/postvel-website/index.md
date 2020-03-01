@@ -2,7 +2,7 @@
 title: Сайт Пост Величины
 description: Сайт с постоянными величинами из математики, физики и химии, чтоб всегда было, где подглядеть
 date: 2018-10-05
-hero: /img/preview/project-postvel.png
+hero: /img/preview/project-postvel.jpg
 link: https://postvel.now.sh
 posttype: project
 ---
