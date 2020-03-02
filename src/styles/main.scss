@@ -11,13 +11,13 @@
   // Accent colors
   --accent-red: #d50000;
   --accent-blue: #2962ff;
-  --accent-purple: #768fff;
+  --accent-purple: #6200ea;
 
   // Half colors
   --main-fg-25: #12121240;
   --accent-red-25: #d5000040;
   --accent-blue-25: #2962ff40;
-  --accent-purple-25: #768fff40;
+  --accent-purple-25: #6200ea40;
 
   // Additional colors
   --additional-red-bg: #ff5252;
@@ -259,9 +259,6 @@ main {
     padding-left: 0;
     li {
       list-style-position: inside;
-    }
-    ul {
-      padding-left: 0;
     }
   }
   section {
@@ -515,6 +512,13 @@ ol {
 
 ul li {
   list-style-type: none;
+
+  &::before {
+    content: '\2014';
+    display: inline-block;
+    width: var(--secondary-padding);
+    margin-left: calc(-1 * var(--secondary-padding));
+  }
 }
 
 li {
