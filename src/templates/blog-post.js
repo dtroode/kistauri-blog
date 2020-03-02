@@ -1,23 +1,23 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
 
-import { graphql } from "gatsby"
-import { Link } from "gatsby"
-import { format, isToday, isYesterday, isThisYear } from "date-fns"
+import { graphql, Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import kebabCase from "lodash/kebabCase"
-import SEO from "../components/seo"
-import control from "../scripts/control"
+import { format, isToday, isYesterday, isThisYear } from 'date-fns'
 
-import "../styles/post.scss"
-import postStyles from "../styles/post.module.scss"
-import "../styles/media.scss"
-import "../styles/code.scss"
+import Layout from '../components/layout'
+import kebabCase from 'lodash/kebabCase'
+import SEO from '../components/seo'
+import control from '../scripts/control'
 
-export default ({ data, pageContext }) => {
+import '../styles/post.scss'
+import postStyles from '../styles/post.module.scss'
+import '../styles/code.scss'
+
+const BlogPostPage = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { slug, next, prev, title, date, description, tags } = pageContext
-  const ruLocale = require("date-fns/locale/ru")
+  const ruLocale = require('date-fns/locale/ru')
 
   const nextSlug = next ? next.node.fields.slug : undefined
   const prevSlug = prev ? prev.node.fields.slug : undefined
@@ -42,29 +42,29 @@ export default ({ data, pageContext }) => {
           {/* Date of post written */}
           <time
             dateTime={
-              format(date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
-                locale: ruLocale,
+              format(date, 'YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)', {
+                locale: ruLocale
               })
                 .charAt(0)
                 .toUpperCase() +
-              format(date, "YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)", {
-                locale: ruLocale,
+              format(date, 'YYYY-MM-DDTHH:mm:ss.SSS [GMT]Z (z)', {
+                locale: ruLocale
               }).slice(1)
             }
             className="postlinks__time"
           >
             {(() => {
               if (isToday(date)) {
-                return "сегодня"
+                return 'сегодня'
               } else if (isYesterday(date)) {
-                return "вчера"
+                return 'вчера'
               } else if (isThisYear(date)) {
-                return format(date, "D MMMM", {
-                  locale: ruLocale,
+                return format(date, 'D MMMM', {
+                  locale: ruLocale
                 })
               } else {
-                return format(date, "D MMMM YYYY", {
-                  locale: ruLocale,
+                return format(date, 'D MMMM YYYY', {
+                  locale: ruLocale
                 })
               }
             })()}
@@ -111,6 +111,13 @@ export default ({ data, pageContext }) => {
     </Layout>
   )
 }
+
+BlogPostPage.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
+}
+
+export default BlogPostPage
 
 // Getting all information for this post:
 // Title

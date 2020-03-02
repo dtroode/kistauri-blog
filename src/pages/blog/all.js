@@ -1,16 +1,14 @@
-import React from "react"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
+import { Link, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
-import kebabCase from "lodash/kebabCase"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import kebabCase from 'lodash/kebabCase'
+import Layout from '../../components/layout'
+import SEO from '../../components/seo'
 
-import "../../styles/media.scss"
-
-const counter = require("../../scripts/counter")
+const counter = require('../../scripts/counter')
 
 const AllPage = props => {
   const AllPostsList = props.data.AllPosts.edges
@@ -51,11 +49,11 @@ const AllPage = props => {
       <hr />
       <section className="main__sect--content">
         <h2 className="main__sect--content__header">
-          {props.data.AllPosts.totalCount}{" "}
+          {props.data.AllPosts.totalCount}{' '}
           {counter(props.data.AllPosts.totalCount, [
-            "заметка",
-            "заметки",
-            "заметок",
+            'заметка',
+            'заметки',
+            'заметок'
           ])}
         </h2>
         <p className="main__sect--content__container">
@@ -72,6 +70,10 @@ const AllPage = props => {
       </section>
     </Layout>
   )
+}
+
+AllPage.propTypes = {
+  data: PropTypes.object
 }
 
 export default AllPage

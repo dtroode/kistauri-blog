@@ -1,11 +1,9 @@
-import React from "react"
+import React from 'react'
 
-import { Helmet } from "react-helmet"
+import { Helmet } from 'react-helmet'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-import "../styles/media.scss"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const ReadingPage = () => {
   return (
@@ -29,28 +27,28 @@ const ReadingPage = () => {
           <li>
             <a href="https://t.me/dtroode_channel/533">
               Rework. Бизнес без предрассудков
-            </a>{" "}
+            </a>{' '}
             — <i>Джейсон Фрид ★</i>
           </li>
           <li>
             <a href="https://t.me/dtroode_channel/516">
               Как устроена экономика
-            </a>{" "}
+            </a>{' '}
             — <i>Ха-Джун Чанг ★</i>
           </li>
         </ul>
         <h3>2019</h3>
         <ul>
           <li>
-            <a href="https://t.me/dtroode_channel/475">Чистая архитектура</a> —{" "}
+            <a href="https://t.me/dtroode_channel/475">Чистая архитектура</a> —{' '}
             <i>Роберт Мартин</i>
           </li>
           <li>
-            <a href="https://t.me/dtroode_channel/462">Укус Питона</a> —{" "}
+            <a href="https://t.me/dtroode_channel/462">Укус Питона</a> —{' '}
             <i>К. Сваруп</i>
           </li>
           <li>
-            <a href="https://t.me/dtroode_channel/524">Грокаем алгоритмы</a> —{" "}
+            <a href="https://t.me/dtroode_channel/524">Грокаем алгоритмы</a> —{' '}
             <i>Адитья Бхаргава ★</i>
           </li>
         </ul>
@@ -81,7 +79,7 @@ const ReadingPage = () => {
             Когда дыхание растворяется в воздухе — <i>Пол Каланити ★</i>
           </li>
           <li>
-            Психология вредных привычек — <i>Ричард О'Коннор</i>
+            Психология вредных привычек — <i>Ричард О’Коннор</i>
           </li>
           <li>
             Сделано в Америке — <i>Сэм Уолтон ★</i>
@@ -111,7 +109,7 @@ const ReadingPage = () => {
             Заправляй кровать — <i>Уильям Макрейвен ★</i>
           </li>
           <li>
-            Как разговаривать с кем угодно, когда угодно, где угодно —{" "}
+            Как разговаривать с кем угодно, когда угодно, где угодно —{' '}
             <i>Ларри Кинг ★</i>
           </li>
           <li>

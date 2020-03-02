@@ -1,13 +1,11 @@
-import React from "react"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
+import { Link, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-import "../styles/media.scss"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const IndexPage = ({ data }) => {
   const PostsList = data.Posts.edges
@@ -29,9 +27,44 @@ const IndexPage = ({ data }) => {
         <h2>Работаю</h2>
         <ol className="main__ol--arts" reversed>
           <li>
+            <Link to="/projects/sukhum-road-website">
+              <strong>Маршрутки Сухума</strong>
+            </Link>{' '}
+            — 2020
+            <br/>
+            Сделал сайт-список маршруток Сухума с характеристикой
+            <ul>
+              <li>
+                <strong>Цель</strong>
+                <br/>
+                Собрать все машрутки с характеристикой, чтоб описать транспортную систему города и анализировать список
+              </li>
+              <li>
+                <strong>Целевая аудитория</strong>
+                <br/>
+                Кто угодно в городе: мальчики, девочки, парни, девушки, дедушки, бабушки
+              </li>
+              <li>
+                <strong>Как контент-менеджер</strong>
+                <br/>
+                Собирал несколько месяцев контент и структуризировал, продолжаю наполнять
+              </li>
+              <li>
+                <strong>Как разработчик</strong>
+                <br/>
+                Перевел таблицу из JSON в контент на сайте
+              </li>
+              <li>
+                <strong>Как дизайнер</strong>
+                <br/>
+                Придумал дизайн
+              </li>
+            </ul>
+          </li>
+          <li>
             <Link to="/blog">
               <strong>Блог</strong>
-            </Link>{" "}
+            </Link>{' '}
             — 2019
             <br />
             Сделал себе сайт портфолио-блог
@@ -39,7 +72,7 @@ const IndexPage = ({ data }) => {
               <li>
                 <strong>Цель</strong>
                 <br />
-                Создание портфолио с информацией о себе и работах + блог,
+                Создание портфолио с информацией о себе и работах + блог,
                 который выглядит как портфолио
               </li>
               <li>
@@ -63,7 +96,7 @@ const IndexPage = ({ data }) => {
           <li>
             <Link to="/projects/postvel-website">
               <strong>Сайт Пост Величины</strong>
-            </Link>{" "}
+            </Link>{' '}
             — 2018
             <br />
             Сделал сайт с таблицами по математике, физике и химии
@@ -106,7 +139,7 @@ const IndexPage = ({ data }) => {
           <li>
             <Link to="/projects/masterbuket">
               <strong>Мастер Букет</strong>
-            </Link>{" "}
+            </Link>{' '}
             — 2018
             <br />
             Сделал сайт и брендинг цветочной студии Мастер Букет
@@ -131,7 +164,7 @@ const IndexPage = ({ data }) => {
               <li>
                 <strong>Как дизайнер</strong>
                 <br />
-                Придумал дизайн бренда, придумал дизайн сайта,{" "}
+                Придумал дизайн бренда, придумал дизайн сайта,{' '}
                 <a href="https://davidkistauri.ru/blog/all/masterbuket-2/">
                   придумал редизайн сайта
                 </a>
@@ -146,7 +179,7 @@ const IndexPage = ({ data }) => {
           <li>
             <Link to="/projects/secondschool-website">
               <strong>Сайт школы им. А. С. Пушкина</strong>
-            </Link>{" "}
+            </Link>{' '}
             — 2018
             <br />
             Сделал редизайн сайта школы с нуля по информации со старого сайта
@@ -191,7 +224,7 @@ const IndexPage = ({ data }) => {
           <li>
             <Link to="/projects/cyxym-website">
               <strong>Сайт города Сухум</strong>
-            </Link>{" "}
+            </Link>{' '}
             — 2018
             <br />
             Сделал сайт города Сухум: собрал контент, придумал дизайн, написал
@@ -249,7 +282,7 @@ const IndexPage = ({ data }) => {
           <li>
             <a href="https://news.ycombinator.com/item?id=20254420">
               «Why you need to give Firefox a chance»
-            </a>{" "}
+            </a>{' '}
             — <i>Hackernews</i>
           </li>
         </ul>
@@ -262,19 +295,23 @@ const IndexPage = ({ data }) => {
             HTML, CSS, JavaScript, Pug, SASS, SugarSS, React, Gatsby, GraphQL,
             Git.
           </li><li>
-            Учу: Svelte, Sapper, NextJS, а еще математику. По дороге куда-нибудь{" "}
+            Учу: Svelte, Sapper, NextJS, а еще математику. По дороге куда-нибудь{' '}
             <Link to="/reading">читаю</Link> книги.
           </li><li>
             В свободное время забываю про веб и учу компьютерные науки и
             Python.
           </li><li>
-            Когда нахожу что-нибудь интересное, пишу в{" "}
+            Когда нахожу что-нибудь интересное, пишу в{' '}
             <a href="https://t.me/s/dtroode_channel">телеграм канал</a>
           </li>
         </ul>
       </section>
     </Layout>
   )
+}
+
+IndexPage.propTypes = {
+  data: PropTypes.object
 }
 
 export default IndexPage
