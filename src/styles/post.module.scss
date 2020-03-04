@@ -19,7 +19,7 @@
   ol,
   code,
   blockquote {
-    font-weight: 450;
+    font-weight: 500;
     line-height: 1.5em;
   }
   p,
@@ -87,9 +87,6 @@
     p:first-child {
       margin-top: 0;
     }
-  }
-  li p {
-    margin-top: 0;
   }
   hr + * {
     margin-top: 0;
