@@ -13,7 +13,7 @@ const Footer = props => {
   // If page is a post or a project writing links to `share` variable
   if (props.pageClass === 'post' || props.pageClass === 'project') {
     share = (
-      <>
+      <section className="foot__sect">
         <h2 className="foot__sect__header">Поделиться</h2>
         <nav className="foot__sect__nav foot__sect__nav--share">
           <a
@@ -84,19 +84,19 @@ const Footer = props => {
           </a>
         </nav>
         <hr />
-      </>
+      </section>
     )
   }
 
   return (
     <footer className={`foot foot--${props.pageClass}`}>
+      {share}
       <section className="foot__sect">
         {/*
         Passing `share` variable.
         If page is a post or a project, variable contains social media share links.
         If not, variable is empty.
        */}
-        {share}
         <h2 className="foot__sect__header">{`Давид Кистаури, 2019—${new Date().getFullYear()}`}</h2>
         {/* Nav for links to social media */}
         <nav className="foot__sect__nav foot__sect__nav--links">

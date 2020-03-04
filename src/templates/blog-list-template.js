@@ -62,17 +62,15 @@ const BlogList = ({ pageContext, data }) => {
         description="Блог Давида Кистаури. Назови любое слово и я сделаю о нем сайт."
         image="/img/preview.jpg"
       />
-      <section className="main__sect--arts">
-        {/* Displaying all articles according to limit */}
-        {PostsList.map(({ node }) => (
-          <Article node={node} key={node.frontmatter.title} />
-        ))}
-        <section className="main__sect--arts__pages">
-          {nextPageLink}
-          {previousPageLink}
-          {allPostsLink}
-        </section>
-      </section>
+      {/* Displaying all articles according to limit */}
+      {PostsList.map(({ node }) => (
+        <Article node={node} key={node.frontmatter.title} />
+      ))}
+      <article>
+        {nextPageLink}
+        {previousPageLink}
+        {allPostsLink}
+      </article>
     </Layout>
   )
 }
