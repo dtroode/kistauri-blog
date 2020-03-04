@@ -33,12 +33,10 @@ const Tags = ({ pageContext, data }) => {
         description={`Блог Давида Кистаури. тег: ${tag}`}
         image="/img/preview.jpg"
       />
-      <section className="main__sect--arts">
-        {/* Displaying all articles, that match this tag */}
-        {edges.map(({ node }) => {
-          return <Article node={node} key={node.frontmatter.title} />
-        })}
-      </section>
+      {/* Displaying all articles, that match this tag */}
+      {edges.map(({ node }) => {
+        return <Article node={node} key={node.frontmatter.title} />
+      })}
     </Layout>
   )
 }
