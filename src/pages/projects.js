@@ -26,59 +26,57 @@ const ProjectsList = ({ data }) => {
         description="Проекты Давида Кистаури. Назови любое слово и я сделаю о нем сайт."
         image="/img/preview.jpg"
       />
-      <section className="main__sect--arts">
-        {/* Displaying all projects according to limit */}
-        {ProjectsList.map(({ node }) => (
-          <article key={node.frontmatter.title} className={articleStyles.art}>
-            <Link to={node.fields.slug} className={articleStyles.art__link}>
-              <Img
-                fluid={node.frontmatter.hero.childImageSharp.fluid}
-                className={articleStyles.art__link__img}
-              />
-              <section
-                className={`${articleStyles.art__link__sect} ${articleStyles.art__link__proj}`}
-              >
-                <h2>{node.frontmatter.title}</h2>
-                <p className={articleStyles.art__link__sect__p}>
-                  {node.frontmatter.description}
-                </p>
-                <p className={`${articleStyles.art__link__sect__p} postlinks`}>
-                  {/* Date of post written */}
-                  <span
-                    title={
-                      format(node.frontmatter.date, 'dddd, D MMMM YYYY', {
+      {/* Displaying all projects according to limit */}
+      {ProjectsList.map(({ node }) => (
+        <article key={node.frontmatter.title} className={articleStyles.art}>
+          <Link to={node.fields.slug} className={articleStyles.art__link}>
+            <Img
+              fluid={node.frontmatter.hero.childImageSharp.fluid}
+              className={articleStyles.art__link__img}
+            />
+            <section
+              className={`${articleStyles.art__link__sect} ${articleStyles.art__link__proj}`}
+            >
+              <h2>{node.frontmatter.title}</h2>
+              <p className={articleStyles.art__link__sect__p}>
+                {node.frontmatter.description}
+              </p>
+              <p className={`${articleStyles.art__link__sect__p} postlinks`}>
+                {/* Date of post written */}
+                <span
+                  title={
+                    format(node.frontmatter.date, 'dddd, D MMMM YYYY', {
+                      locale: ruLocale
+                    })
+                      .charAt(0)
+                      .toUpperCase() +
+                    format(node.frontmatter.date, 'dddd, D MMMM YYYY', {
+                      locale: ruLocale
+                    }).slice(1)
+                  }
+                  className="postlinks__span"
+                >
+                  {(() => {
+                    if (isToday(node.frontmatter.date)) {
+                      return 'сегодня'
+                    } else if (isYesterday(node.frontmatter.date)) {
+                      return 'вчера'
+                    } else if (isThisYear(node.frontmatter.date)) {
+                      return format(node.frontmatter.date, 'D MMMM', {
                         locale: ruLocale
                       })
-                        .charAt(0)
-                        .toUpperCase() +
-                      format(node.frontmatter.date, 'dddd, D MMMM YYYY', {
+                    } else {
+                      return format(node.frontmatter.date, 'D MMMM YYYY', {
                         locale: ruLocale
-                      }).slice(1)
+                      })
                     }
-                    className="postlinks__span"
-                  >
-                    {(() => {
-                      if (isToday(node.frontmatter.date)) {
-                        return 'сегодня'
-                      } else if (isYesterday(node.frontmatter.date)) {
-                        return 'вчера'
-                      } else if (isThisYear(node.frontmatter.date)) {
-                        return format(node.frontmatter.date, 'D MMMM', {
-                          locale: ruLocale
-                        })
-                      } else {
-                        return format(node.frontmatter.date, 'D MMMM YYYY', {
-                          locale: ruLocale
-                        })
-                      }
-                    })()}
-                  </span>
-                </p>
-              </section>
-            </Link>
-          </article>
-        ))}
-      </section>
+                  })()}
+                </span>
+              </p>
+            </section>
+          </Link>
+        </article>
+      ))}
     </Layout>
   )
 }
