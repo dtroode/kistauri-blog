@@ -97,8 +97,6 @@ function SEO ({ description, lang, meta, title, image }) {
       ].concat(meta)}
     >
       <link rel="me" href="https://twitter.com/dtroode" />
-      <link rel="preload" href="../fonts/Inter-Medium.latin.woff2" as="font" type="font/woff2" crossOrigin/>
-      <link rel="preload" href="../fonts/Inter-Medium.cyrillic.woff2" as="font" type="font/woff2" crossOrigin/>
     </Helmet>
   )
 }
