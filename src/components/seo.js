@@ -97,9 +97,8 @@ function SEO ({ description, lang, meta, title, image }) {
       ].concat(meta)}
     >
       <link rel="me" href="https://twitter.com/dtroode" />
-      <link rel="preconnect" href="https://rsms.me/inter/inter.css" crossOrigin></link>
-      <link rel="dns-prefetch" href="https://rsms.me/inter/inter.css"/>
-      <link href="https://rsms.me/inter/inter.css" rel="stylesheet"></link>
+      <link rel="preload" href="../fonts/Inter-Medium.latin.woff2" as="font" type="font/woff2" crossOrigin/>
+      <link rel="preload" href="../fonts/Inter-Medium.cyrillic.woff2" as="font" type="font/woff2" crossOrigin/>
     </Helmet>
   )
 }
