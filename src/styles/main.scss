@@ -498,6 +498,10 @@ ul li {
 
     content: '\2014';
   }
+
+  &.li--favourite::before {
+    content: '★';
+  }
 }
 
 li:not(:last-child) {
