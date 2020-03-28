@@ -23,8 +23,12 @@ const ReadingPage = () => {
       </p>
       <h3>2020</h3>
       <ul>
-        <li>Удовольствие от x{' '}
-        — <i>Стивен Строгац</i></li>
+        <li>
+          <a href="https://t.me/dtroode_channel/556">
+            Удовольствие от x
+          </a>{' '}
+          — <i>Стивен Строгац</i>
+        </li>
         <li className="li--favourite">
           <a href="https://t.me/dtroode_channel/533">
             Rework. Бизнес без предрассудков
