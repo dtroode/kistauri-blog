@@ -516,7 +516,7 @@ blockquote {
 }
 
 table {
-  width: 100%;
+  min-width: 700px;
   margin-top: var(--third-padding);
 
   table-layout: fixed;
