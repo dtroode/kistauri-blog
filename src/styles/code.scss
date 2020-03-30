@@ -5,18 +5,18 @@
 }
 
 :root {
-  // Code colors
-  --code-fg: #728fcb;
-  --comment: #b6ad9a;
-  --tag: #063289;
-  --function: #b29762;
-  --selector: #2d2006;
-  --string: #728fcb;
+  // code colors
+  --code-fg: #000000;
+  --punctuation: #777777;
+  --comment: #aa3731;
+  --tag: #7a3e9d;
+  --string: #448c27;
+  --function: #325cc0;
 }
 
 pre,
 code {
-  color: var(--code-fg);
+  color: var(--main-fg);
   font-family: "Fira Code", monospace;
   tab-size: 2;
 }
@@ -43,29 +43,44 @@ code {
 }
 
 .token {
-  &.comment,
   &.prolog,
   &.doctype,
   &.cdata,
   &.punctuation {
-    color: var(--comment);
+    color: var(--punctuation);
   }
-  &.namespace {
-    opacity: 0.7;
-  }
-  &.tag,
-  &.operator,
   &.number {
     color: var(--tag);
   }
+  &.tag,
   &.property,
   &.function {
     color: var(--function);
   }
+  &.boolean,
+  &.string,
+  &.entity,
+  &.url {
+    color: var(--string);
+  }
   &.tag-id,
   &.selector,
-  &.atrule-id {
-    color: var(--selector);
+  &.atrule-id,
+  &.attr-value,
+  &.keyword,
+  &.control,
+  &.directive,
+  &.unit,
+  &.statement,
+  &.regex,
+  &.atrule,
+  &.placeholder,
+  &.variable {
+    color: var(--code-fg);
+  }
+  &.comment,
+  &.triple-quoted-string {
+    color: var(--comment);
   }
 }
 
@@ -79,67 +94,22 @@ code {
   &.language-scss {
     color: var(--string);
   }
-}
-
-.token {
-  &.boolean,
-  &.string,
-  &.entity,
-  &.url {
+  
+  &.language-css &.token.string,
+  &.language-scss &.token.string,
+  &.style &.token.string {
     color: var(--string);
-  }
-}
-
-.language-css .token.string,
-.language-scss .token.string,
-.style .token.string {
-  color: var(--string);
-}
-
-.token {
-  &.attr-value,
-  &.keyword,
-  &.control,
-  &.directive,
-  &.unit,
-  &.statement,
-  &.regex,
-  &.atrule,
-  &.placeholder,
-  &.variable {
-    color: var(--string);
-  }
-  &.deleted {
-    text-decoration: line-through;
-  }
-  &.inserted {
-    text-decoration: none;
-
-    border-bottom: 1px dotted var(--selector);
-  }
-  &.italic {
-    font-style: italic;
-  }
-  &.important,
-  &.bold {
-    font-weight: bold;
-  }
-  &.important {
-    color: var(--function);
-  }
-  &.entity {
-    cursor: help;
   }
 }
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    // Code colors
-    --code-fg: #afa0fe;
-    --comment: #6c6783;
-    --tag: #e09142;
-    --function: #c4b9fe;
-    --selector: #eeebff;
-    --string: #fc9;
+    // code colors
+    --code-fg: #cecece;
+    --punctuation: #708b8d;
+    --comment: #dfdf8e;
+    --tag: #71ade7;
+    --string: #95cb82;
+    --function: #cc8bc9;
   }
 }
