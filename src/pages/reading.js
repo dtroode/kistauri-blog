@@ -23,6 +23,12 @@ const ReadingPage = () => {
       </p>
       <h3>2020</h3>
       <ul>
+        <li className="li--favourite">
+          <a href="https://t.me/dtroode_channel/586">
+            Код: тайный язык информатики
+          </a>{' '}
+          — <i>Чарльз Петцольд</i>
+        </li>
         <li>
           <a href="https://t.me/dtroode_channel/556">
             Удовольствие от x
