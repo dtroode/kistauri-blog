@@ -28,7 +28,7 @@
   span,
   blockquote {
     code {
-      padding: 0.125rem 0.25rem;
+      padding: 0 0.25rem;
 
       color: var(--main-fg);
 
@@ -60,11 +60,6 @@
         border-bottom: 1px solid var(--accent-red-25);
       }
     }
-  }
-  ul,
-  ol,
-  blockquote {
-    max-width: calc(700px - var(--primary-padding));
   }
   ul,
   ol {

@@ -27,6 +27,7 @@ code::selection {
 }
 
 pre {
+  box-sizing: border-box;
   max-width: 700px;
   margin-top: var(--third-padding);
   margin-bottom: 0;
