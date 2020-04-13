@@ -220,6 +220,15 @@ const IndexPage = () => {
             <Link to="http://localhost:8000/blog/all/overcode/">Слишком-код</Link>
           </li>
         </ul>
+        <h3>Математика</h3>
+        <ul>
+          <li>
+            <Link to="https://davidkistauri.ru/blog/all/obeshal/">Обещание математической логики</Link>
+          </li>
+          <li>
+            <Link to="https://davidkistauri.ru/blog/all/math-conditions/">Необходимые и достаточные условия</Link>
+          </li>
+        </ul>
         <h3>Дизайн</h3>
         <ul>
           <li>
