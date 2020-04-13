@@ -225,9 +225,6 @@ main {
     h2, h3, p {
       max-width: 700px;
     }
-    ul, ol {
-      max-width: calc(700px - var(--secondary-padding));
-    }
     a {
       color: var(--accent-blue);
       text-decoration: none;
@@ -482,6 +479,13 @@ a {
 }
 
 ul,
+ol,
+blockquote {
+  box-sizing: border-box;
+  max-width: 700px;
+}
+
+ul,
 ol {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -512,7 +516,8 @@ blockquote {
   margin-top: var(--third-padding);
   margin-right: 0;
   margin-bottom: 0;
-  margin-left: var(--primary-padding);
+  margin-left: 0;
+  padding-left: var(--primary-padding);
 }
 
 table {
