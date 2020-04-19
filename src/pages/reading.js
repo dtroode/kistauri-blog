@@ -19,10 +19,16 @@ const ReadingPage = () => {
       <p>
         Читаю книги — чаще нон-фикшн — и пишу короткие обзоры в телеграм.
         <br />
-        <em>Обновлено 10 апреля 2020.</em>
+        <em>Обновлено 19 апреля 2020.</em>
       </p>
       <h3>2020</h3>
       <ul>
+        <li className="li--favourite">
+          <a href="https://t.me/dtroode_channel/594">
+            The Little Schemer
+          </a>{' '}
+          — <i>Дэниэл Фридман</i>
+        </li>
         <li className="li--favourite">
           <a href="https://t.me/dtroode_channel/586">
             Код: тайный язык информатики
