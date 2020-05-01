@@ -4,7 +4,8 @@
   background-color: var(--additional-bg);
   border-radius: var(--fourth-padding);
 
-  transition: transform cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s, box-shadow cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
+  transition: transform cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s,
+  box-shadow cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
   &:hover {
     box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
     transform: translateY(-0.6rem);
@@ -34,22 +35,6 @@
       margin-bottom: var(--third-padding);
 
       border-radius: var(--fifth-padding);
-    }
-  }
-}
-
-.error {
-  background-color: var(--accent-red);
-  &__link {
-    color: var(--main-bg);
-    &:hover {
-      color: var(--main-bg);
-    }
-    &:visited {
-      color: var(--main-bg);
-      &:hover {
-        color: var(--main-bg);
-      }
     }
   }
 }

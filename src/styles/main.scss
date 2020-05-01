@@ -257,22 +257,22 @@ footer {
         a.foot__sect__nav__a {
           color: var(--main-fg);
 
-          --linkBackground: var(--main-bg);
+          background-color: var(--main-bg);
 
           transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
           &--twitter {
             &:hover {
-              --linkBackground: rgba(29, 161, 242, 0.25);
+              background-color: rgba(29, 161, 242, 0.25);
             }
           }
           &--facebook {
             &:hover {
-              --linkBackground: rgba(17, 120, 242, 0.25);
+              background-color: rgba(17, 120, 242, 0.25);
             }
           }
           &--telegram {
             &:hover {
-              --linkBackground: rgba(46, 166, 217, 0.25);
+              background-color: rgba(46, 166, 217, 0.25);
             }
           }
         }
@@ -338,7 +338,7 @@ p,
 ul,
 ol,
 blockquote,
-table,
+table td,
 figcaption {
   line-height: 1.5em;
 }
@@ -405,7 +405,7 @@ a {
 
     border-radius: var(--fourth-padding);
 
-    background-color: var(--linkBackground);
+    background-color: var(--accent-blue);
     &:focus {
       box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
     }
@@ -413,20 +413,20 @@ a {
   &.a--primary {
     color: var(--main-bg);
 
-    --linkBackground: var(--accent-blue);
+    background-color: var(--accent-blue);
 
     transition: background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
     box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
     &:hover {
       color: var(--main-bg);
 
-      --linkBackground: var(--accent-red);
+      background-color: var(--accent-red);
     }
   }
   &.a--secondary {
     color: var(--accent-blue);
 
-    --linkBackground: var(--additional-bg);
+    background-color: var(--additional-bg);
 
     transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
       box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
@@ -443,7 +443,7 @@ a {
   &.a--active {
     color: var(--contrast-blue);
 
-    --linkBackground: var(--main-fg);
+    background-color: var(--main-fg);
   }
   .a__span {
     opacity: 0.5;
@@ -505,6 +505,7 @@ table {
     vertical-align: top;
   }
   th {
+    line-height: 1.15em;
     border-bottom: 1px solid var(--main-fg-25);
   }
 }
