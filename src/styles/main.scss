@@ -145,7 +145,7 @@ footer {
 header {
   nav.head__nav {
     margin-bottom: var(--fourth-padding);
-    a.head__nav__a {
+    a.head__a {
       margin-bottom: var(--fifth-padding);
       &[aria-current="page"] {
         color: var(--main-bg);
@@ -227,11 +227,12 @@ main {
       }
     }
   }
-  article {
-    &:not(:last-child) {
-      margin-bottom: var(--third-padding);
-    }
-  } 
+  &.main--blog article {
+    margin-bottom: var(--third-padding);
+  }
+  &.main--projects article:not(:last-child) {
+    margin-bottom: var(--third-padding);
+  }
   section {
     &.main__sect--content {
       &:last-of-type {
@@ -251,10 +252,10 @@ footer {
 
   background-color: var(--additional-bg);
   section.foot__sect {
-    nav.foot__sect__nav {
+    nav.foot__nav {
       &--share {
         display: block;
-        a.foot__sect__nav__a {
+        a.foot__a {
           color: var(--main-fg);
 
           background-color: var(--main-bg);
@@ -277,19 +278,19 @@ footer {
           }
         }
       }
-      &--links svg.foot__sect__nav__a__svg {
+      &--links svg.foot__svg {
         fill: var(--main-bg);
       }
     }
-    h2.foot__sect__header {
+    h2.foot__header {
       margin-bottom: var(--fourth-padding);
       &:nth-of-type(2) {
         margin-top: var(--secondary-padding);
       }
     }
-    a.foot__sect__nav__a {
+    a.foot__a {
       margin-top: var(--fifth-padding);
-      svg.foot__sect__nav__a__svg {
+      svg.foot__svg {
         width: 1rem;
         height: 1.4rem;
         margin-right: var(--fifth-padding);

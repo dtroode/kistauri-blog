@@ -10,12 +10,12 @@ const AdditionalLinks = props => {
   if (props.className === 'blog') {
     links = (
       <>
-        <Link to="/blog/all" className="head__nav__a a--secondary">
+        <Link to="/blog/all" className="head__a a--secondary">
           Теги
         </Link>
         <Link
           to="/blog/all/rss-subscribe"
-          className="head__nav__a a--secondary"
+          className="head__a a--secondary"
         >
           Подписаться
         </Link>
@@ -23,19 +23,19 @@ const AdditionalLinks = props => {
     )
   } else if (props.className === 'tag') {
     links = (
-      <Link to="/blog/all" className="head__nav__a a--secondary">
+      <Link to="/blog/all" className="head__a a--secondary">
         Теги
       </Link>
     )
   } else if (props.className === 'projects') {
     links = (
-      <Link to="/blog/all/rss-subscribe" className="head__nav__a a--secondary">
+      <Link to="/blog/all/rss-subscribe" className="head__a a--secondary">
         Подписаться
       </Link>
     )
   } else if (props.className === 'project') {
     links = (
-      <a href={props.linkToProject} className="head__nav__a a--secondary">
+      <a href={props.linkToProject} className="head__a a--secondary">
         {props.linkToProject.substr(8)} {/* Remove https:// */}
       </a>
     )
@@ -50,14 +50,14 @@ const Header = props => (
     <nav className="head__nav">
       <Link
         to="/"
-        className="head__nav__a a--primary"
+        className="head__a a--primary"
         activeClassName="a--active"
       >
         {'>_<'}
       </Link>
       <Link
         to="/projects/"
-        className="head__nav__a a--primary"
+        className="head__a a--primary"
         activeClassName="a--active"
         partiallyActive={true}
       >
@@ -65,7 +65,7 @@ const Header = props => (
       </Link>
       <Link
         to="/reading/"
-        className="head__nav__a a--primary"
+        className="head__a a--primary"
         activeClassName="a--active"
         partiallyActive={true}
       >
@@ -73,7 +73,7 @@ const Header = props => (
       </Link>
       <Link
         to="/blog/"
-        className="head__nav__a a--primary"
+        className="head__a a--primary"
         activeClassName="a--active"
         partiallyActive={true}
       >

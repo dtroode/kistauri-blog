@@ -66,11 +66,11 @@ const BlogList = ({ pageContext, data }) => {
       {PostsList.map(({ node }) => (
         <Article node={node} key={node.frontmatter.title} />
       ))}
-      <article>
+      <section>
         {nextPageLink}
         {previousPageLink}
         {allPostsLink}
-      </article>
+      </section>
     </Layout>
   )
 }

@@ -14,19 +14,19 @@ const Footer = props => {
   if (props.pageClass === 'post' || props.pageClass === 'project') {
     share = (
       <section className="foot__sect">
-        <h2 className="foot__sect__header">Поделиться</h2>
-        <nav className="foot__sect__nav foot__sect__nav--share">
+        <h2 className="foot__header">Поделиться</h2>
+        <nav className="foot__nav foot__nav--share">
           <a
             href={`https://twitter.com/intent/tweet?text=${title} от @dtroode&url=${link}`}
             title="Твитнуть"
-            className="foot__sect__nav__a foot__sect__nav__a--twitter a--secondary"
+            className="foot__a foot__a--twitter a--secondary"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="twitter"
-              className="foot__sect__nav__a__svg foot__sect__nav__a__svg--twitter"
+              className="foot__svg foot__svg--twitter"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -41,14 +41,14 @@ const Footer = props => {
           <a
             href={`https://www.facebook.com/sharer/sharer.php?u=${link}&amp;src=sdkpreparse`}
             title="Поделиться в Фейсбуке"
-            className="foot__sect__nav__a foot__sect__nav__a--facebook a--secondary"
+            className="foot__a foot__a--facebook a--secondary"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="facebook"
-              className="foot__sect__nav__a__svg foot__sect__nav__a__svg--facebook"
+              className="foot__svg foot__svg--facebook"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -63,14 +63,14 @@ const Footer = props => {
           <a
             href={`https://telegram.me/share/url?url=${link}&text=${title} от @dtroode`}
             title="Отправить через Телеграм"
-            className="foot__sect__nav__a foot__sect__nav__a--telegram a--secondary"
+            className="foot__a foot__a--telegram a--secondary"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="telegram"
-              className="foot__sect__nav__a__svg foot__sect__nav__a__svg--telegram"
+              className="foot__svg foot__svg--telegram"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -97,20 +97,20 @@ const Footer = props => {
         If page is a post or a project, variable contains social media share links.
         If not, variable is empty.
        */}
-        <h2 className="foot__sect__header">{`Давид Кистаури, 2019—${new Date().getFullYear()}`}</h2>
+        <h2 className="foot__header">{`Давид Кистаури, 2019—${new Date().getFullYear()}`}</h2>
         {/* Nav for links to social media */}
-        <nav className="foot__sect__nav foot__sect__nav--links">
+        <nav className="foot__nav foot__nav--links">
           <a
             href="https://twitter.com/dtroode"
             title="Я в Твиттере"
-            className="foot__sect__nav__a a--primary"
+            className="foot__a a--primary"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="twitter"
-              className="foot__sect__nav__a__svg foot__sect__nav__a__svg--twitter"
+              className="foot__svg foot__svg--twitter"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -125,14 +125,14 @@ const Footer = props => {
           <a
             href="https://t.me/dtroode_channel"
             title="Мой канал в Телеграме"
-            className="foot__sect__nav__a a--primary"
+            className="foot__a a--primary"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="telegram"
-              className="foot__sect__nav__a__svg foot__sect__nav__a__svg--telegram"
+              className="foot__svg foot__svg--telegram"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -147,14 +147,14 @@ const Footer = props => {
           <a
             href="https://dev.to/dtroode"
             title="Мой блог в Деве"
-            className="foot__sect__nav__a a--primary"
+            className="foot__a a--primary"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="dev"
-              className="foot__sect__nav__a__svg"
+              className="foot__svg"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -169,14 +169,14 @@ const Footer = props => {
           <a
             href="https://github.com/dtroode"
             title="Я в Гитхабе"
-            className="foot__sect__nav__a a--primary"
+            className="foot__a a--primary"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="github"
-              className="foot__sect__nav__a__svg"
+              className="foot__svg"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -191,7 +191,7 @@ const Footer = props => {
           <Link
             to="/blog/all/rss-subscribe"
             title="РСС"
-            className="foot__sect__nav__a a--primary"
+            className="foot__a a--primary"
           >
             Подписка
           </Link>
