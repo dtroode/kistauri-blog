@@ -227,10 +227,7 @@ main {
       }
     }
   }
-  &.main--blog article {
-    margin-bottom: var(--third-padding);
-  }
-  &.main--projects article:not(:last-child) {
+  article:not(:last-child) {
     margin-bottom: var(--third-padding);
   }
   section {
