@@ -25,13 +25,13 @@ const AllPage = props => {
         <link rel="canonical" href="https://davidkistauri.ru/blog" />
       </Helmet>
       <SEO
-        title="Посты"
+        title="Заметки"
         description="Блог Давида Кистаури. Заметки"
         image="/img/preview.jpg"
       />
       <section className="main__sect--content">
         <h2 className="main__sect--content__header">
-          Теги по количеству заметок
+          Теги
         </h2>
         <p className="main__sect--content__container">
           {/* All tags sorted */}
