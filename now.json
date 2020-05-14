@@ -2,15 +2,6 @@
   "version": 2,
   "name": "kistauri",
   "alias": "davidkistauri.ru",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": {
-        "distDir": "public"
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/*",
