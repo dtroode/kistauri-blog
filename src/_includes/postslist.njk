@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="{{ '/styles/article.css' | url }}">
+{%- for post in postslist | reverse -%}
+  <article key="{{ post.data.title }}" class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
+    <a href="{{ post.url | url }}" class="card__link">
+      {%- if pageClass == "projects" -%}
+        <img src="{{ post.data.image }}">
+      {%- endif -%}
+      <h2>{{ post.data.title }}</h2>
+      <p class="card__description">
+        {{ post.data.description }}
+      </p>
+      <p class="postlinks">
+        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        {%- for tag in post.data.tags -%}
+          {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {%- set tagUrl -%}/blog/tags/{{ tag | slug }}/{%- endset -%}
+            <span key="{{ tag }}" class="postlinks__span">{{ tag }}</span>
+          {%- endif -%}
+        {%- endfor -%}
+      </p>
+    </a>
+  </article>
+{%- endfor -%}

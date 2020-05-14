@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+title: Давид Кистаури. Блог
+description: Блог Давида Кистаури. Назови любое слово и я сделаю о нем сайт.
+pageClass: blog
+eleventyNavigation:
+  key: Блог
+  order: 4
+---
+
+{% set postslist = collections.blog %}
+{% set postslistCounter = collections.blog | length %}
+{% include "postslist.njk" %}

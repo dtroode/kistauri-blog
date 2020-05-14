@@ -1,0 +1,12 @@
+body {
+  background-color: var(--main-fg-25);
+  filter: grayscale(1);
+}
+
+footer {
+  background-color: transparent;
+}
+
+figure {
+  margin-top: 0;
+}

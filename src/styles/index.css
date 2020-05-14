@@ -1,0 +1,543 @@
+/* Root variables */
+:root {
+   /* Main Background and Foreground colors */
+   --main-bg: #fafafa;
+   --main-fg: #121212;
+ 
+   /* Additional Background and Foreground colors */
+   --additional-bg: #eeeeee;
+   --additional-fg: #1c1c1c;
+ 
+   /* Accent colors */
+   --accent-red: #d50000;
+   --accent-blue: #2962ff;
+   --accent-purple: #6200ea;
+ 
+   /* Half colors */
+   --main-fg-25: #12121240;
+   --accent-red-25: #d5000040;
+   --accent-blue-25: #2962ff40;
+   --accent-purple-25: #6200ea40;
+ 
+   /* Additional colors */
+   --additional-red-bg: #ff5252;
+   --additional-green-bg: #69f0ae;
+   --additional-blue-bg: #448aff;
+   --additional-yellow-bg: #ffd740;
+ 
+   --additional-red-fg: #1c1c1c;
+   --additional-green-fg: #1c1c1c;
+   --additional-blue-fg: #1c1c1c;
+   --additional-yellow-fg: #1c1c1c;
+ 
+   /* Contrast colors */
+   --contrast-blue: #8c9eff;
+ 
+   /* Paddings */
+   --primary-padding: 2.4rem;
+   --secondary-padding: 1.5rem;
+   --third-padding: 1rem;
+   --fourth-padding: 0.6rem;
+   --fifth-padding: 0.4rem;
+ 
+   /* Side padding */
+   --side-padding: 2.4rem;
+ }
+ 
+ @media (prefers-color-scheme: dark) {
+   :root {
+     /* Main Background and Foreground colors */
+     --main-bg: #121212;
+     --main-fg: #eeeeee;
+ 
+     /* Additional Background and Foreground colors */
+     --additional-bg: #1c1c1c;
+     --additional-fg: #fafafa;
+ 
+     /* Accent colors */
+     --accent-red: #ff5131;
+     --accent-blue: #768fff;
+     --accent-purple: #9d46ff;
+ 
+     /* Half colors */
+     --main-fg-25: #eeeeee40;
+     --accent-red-25: #ff513140;
+     --accent-blue-25: #768fff40;
+     --accent-purple-25: #9d46ff40;
+ 
+     /* Additional colors */
+     --additional-red-bg: #1c1c1c;
+     --additional-green-bg: #1c1c1c;
+     --additional-blue-bg: #1c1c1c;
+     --additional-yellow-bg: #1c1c1c;
+ 
+     --additional-red-fg: #ff867f;
+     --additional-green-fg: #9fffe0;
+     --additional-blue-fg: #83b9ff;
+     --additional-yellow-fg: #ffff74;
+ 
+     /* Contrast colors */
+     --contrast-blue: #304ffe;
+   }
+ }
+ 
+ @media screen and (min-width: 1500px) {
+   :root {
+     --side-padding: 10%;
+   }
+ }
+ 
+ @media screen and (max-width: 700px) {
+   :root {
+     --side-padding: 1.5rem;
+   }
+ }
+
+*::selection {
+   color: var(--main-bg);
+
+   background-color: var(--accent-red);
+}
+
+html {
+   height: 100%;
+
+   font-size: 100%;
+   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   -webkit-font-smoothing: antialiased;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   min-height: 100vh;
+   min-height: 100vh;
+   margin: 0;
+
+   color: var(--main-fg);
+
+   background-color: var(--main-bg);
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+header, main {
+   flex: 0;
+}
+
+footer {
+   flex: 1;
+}
+
+header, main, footer {
+   padding-top: var(--secondary-padding);
+   padding-right: var(--side-padding);
+   padding-left: var(--side-padding);
+}
+
+header > *, main > *, footer > * {
+   max-width: 1000px;
+}
+
+header nav.head__nav {
+   margin-bottom: var(--fourth-padding);
+}
+
+header a.head__a {
+   margin-bottom: var(--fifth-padding);
+}
+
+header h1.head__header {
+   display: block;
+   margin: 0 0 0 -2px;
+
+   font-weight: 700;
+   font-size: 3.5rem;
+   word-break: break-word;
+}
+
+header h1.head__header--post, header h1.head__header--project {
+   font-size: 2.25rem;
+}
+
+header hr {
+   margin: var(--secondary-padding) 0 0 0;
+}
+
+@media screen and (max-width: 700px) {
+   header h1.head__header {
+     font-size: 2.25rem;
+  }
+}
+
+main, footer {
+   padding-bottom: var(--primary-padding);
+}
+
+main hr, footer hr {
+   margin: var(--primary-padding) 0 var(--secondary-padding) 0;
+}
+
+main.main--portfolio h2, main.main--portfolio h3, main.main--portfolio p {
+   max-width: 700px;
+}
+
+main article:not(:last-child) {
+   margin-bottom: var(--third-padding);
+}
+
+main > section:last-of-type ul {
+   margin-bottom: 0;
+}
+
+main > section a:not(.a--secondary) {
+   border-bottom: 1px solid var(--accent-blue-25);
+}
+
+main > section a:not(.a--secondary):hover, main > section a:not(.a--secondary):focus {
+   color: var(--accent-red);
+
+   border-bottom: 1px solid var(--accent-red-25);
+}
+
+main > section a:not(.a--secondary):visited {
+   color: var(--accent-purple);
+
+   border-bottom: 1px solid var(--accent-purple-25);
+}
+
+main > section a:not(.a--secondary):visited:hover, main > section a:not(.a--secondary):visited:focus {
+   color: var(--accent-red);
+
+   border-bottom: 1px solid var(--accent-red-25);
+}
+
+main a.a--secondary {
+   margin-bottom: var(--fifth-padding);
+}
+
+footer {
+   color: var(--additional-fg);
+
+   background-color: var(--additional-bg);
+}
+
+footer section.foot__sect nav.foot__nav--share {
+   display: block;
+}
+
+footer section.foot__sect nav.foot__nav--share a.foot__a {
+   color: var(--main-fg);
+
+   background-color: var(--main-bg);
+
+   transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+}
+
+footer section.foot__sect nav.foot__nav--share a.foot__a--twitter:hover {
+   background-color: rgba(29, 161, 242, 0.25);
+}
+
+footer section.foot__sect nav.foot__nav--share a.foot__a--facebook:hover {
+   background-color: rgba(17, 120, 242, 0.25);
+}
+
+footer section.foot__sect nav.foot__nav--share a.foot__a--telegram:hover {
+   background-color: rgba(46, 166, 217, 0.25);
+}
+
+footer section.foot__sect nav.foot__nav--links svg.foot__icon {
+   fill: var(--main-bg);
+}
+
+footer section.foot__sect h2.foot__header {
+   margin-bottom: var(--fourth-padding);
+}
+
+footer section.foot__sect h2.foot__header:nth-of-type(2) {
+   margin-top: var(--secondary-padding);
+}
+
+footer section.foot__sect a.foot__a {
+   margin-top: var(--fifth-padding);
+}
+
+footer section.foot__sect a.foot__a svg.foot__icon {
+   width: 1em;
+   height: 1.375em;
+   margin-right: var(--fifth-padding);
+
+   vertical-align: top;
+}
+
+h1 {
+   line-height: 1.15em;
+   letter-spacing: -0.022em;
+}
+
+h2 {
+   margin-top: 0;
+   margin-bottom: var(--third-padding);
+   margin-left: -1px;
+
+   font-weight: 700;
+   font-size: 1.5rem;
+   line-height: 1.15em;
+   letter-spacing: -0.022em;
+}
+
+h2 + p {
+   margin-top: var(--third-padding);
+}
+
+h3 {
+   margin-bottom: 0;
+
+   font-size: 1rem;
+   letter-spacing: -0.017em;
+}
+
+p, a, ul, ol, blockquote, table {
+   font-size: 1rem;
+   letter-spacing: -0.017em;
+}
+
+h3, p, ul, ol, blockquote, table td, figcaption {
+   line-height: 1.5em;
+}
+
+p, ul, ol {
+   font-weight: 500;
+}
+
+p {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+p:not(:first-child) {
+   margin-top: var(--third-padding);
+}
+
+p.main__container {
+   margin-top: 0;
+}
+
+p.postlinks {
+   font-size: 0.75rem;
+}
+
+p.postlinks * {
+   margin-right: var(--fourth-padding);
+}
+
+p.postlinks a.postlinks__a {
+   color: inherit;
+   text-decoration: none;
+
+   border-bottom: 1px solid var(--main-fg-25);
+}
+
+p.postlinks a.postlinks__a:hover, p.postlinks a.postlinks__a:focus {
+   color: var(--accent-red);
+
+   border-bottom: 1px solid var(--accent-red-25);
+}
+
+p a {
+   font-size: inherit;
+}
+
+a {
+   flex: inherit;
+
+   color: var(--accent-blue);
+   text-decoration: none;
+
+   transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, border-bottom cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+}
+
+a:hover, a:active {
+   outline-width: 0;
+}
+
+a:focus {
+   outline: none;
+}
+
+a.a--primary, a.a--secondary {
+   display: inline-block;
+   margin-right: var(--fifth-padding);
+   padding: var(--fifth-padding) var(--fourth-padding);
+
+   font-weight: 600;
+   line-height: 1.4em;
+   text-decoration: none;
+
+   background-color: var(--accent-blue);
+   border-radius: var(--fourth-padding);
+}
+
+a.a--primary:focus, a.a--secondary:focus {
+   box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
+}
+
+a.a--primary {
+   color: var(--main-bg);
+
+   background-color: var(--accent-blue);
+
+   transition: background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+}
+
+a.a--primary:hover {
+   color: var(--main-bg);
+
+   background-color: var(--accent-red);
+}
+
+a.a--secondary {
+   color: var(--accent-blue);
+
+   background-color: var(--additional-bg);
+
+   transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+}
+
+a.a--secondary:hover {
+   color: var(--accent-red);
+}
+
+a.a--secondary:visited {
+   color: var(--accent-blue);
+}
+
+a.a--secondary:visited:hover {
+   color: var(--accent-red);
+}
+
+a.a--active {
+   color: var(--main-bg);
+
+   background-color: var(--main-fg);
+   cursor: default;
+
+   pointer-events: none;
+}
+
+a.a--parent-active {
+   color: var(--contrast-blue);
+
+   background-color: var(--main-fg);
+}
+
+a .a__span {
+   opacity: 0.5;
+}
+
+ul, ol, blockquote {
+   box-sizing: border-box;
+   max-width: 700px;
+}
+
+ul, ol {
+   margin-top: 0;
+   margin-bottom: 1rem;
+   padding-left: var(--secondary-padding);
+}
+
+ul li {
+   list-style-type: none;
+}
+
+ul li::before {
+   display: inline-block;
+   width: var(--secondary-padding);
+   margin-left: calc(-1 * var(--secondary-padding));
+
+   content: "—";
+}
+
+li.li--favourite::before {
+   content: "★";
+}
+
+li:not(:last-child) {
+   margin-bottom: var(--fifth-padding);
+}
+
+blockquote {
+   margin-top: var(--third-padding);
+   margin-right: 0;
+   margin-bottom: 0;
+   margin-left: 0;
+   padding-left: var(--primary-padding);
+}
+
+table {
+   margin-top: var(--third-padding);
+
+   table-layout: fixed;
+   empty-cells: show;
+}
+
+table th, table td {
+   padding: 0 var(--third-padding) var(--fifth-padding) 0;
+
+   text-align: left;
+   vertical-align: top;
+}
+
+table th {
+   line-height: 1.15em;
+
+   border-bottom: 1px solid var(--main-fg-25);
+}
+
+figure {
+   margin: 1rem 0 0 0;
+}
+
+figure a {
+   display: contents;
+}
+
+img {
+   width: 100%;
+}
+
+figcaption {
+   display: initial;
+   margin-top: 0.375rem;
+   margin-bottom: 0;
+
+   font-size: 0.75em;
+}
+
+img {
+   height: auto;
+}
+
+hr {
+   height: 1px;
+
+   background-color: var(--main-fg);
+   border: 0;
+   opacity: 0.125;
+}
+
+@media (prefers-color-scheme: dark) {
+   img {
+     filter: brightness(85%);
+  }
+   p, table, ul, ol, blockquote, figcaption {
+     opacity: 0.85;
+  }
+   p *, table *, ul *, ol *, blockquote *, figcaption * {
+     opacity: 1;
+  }
+   p img, table img, ul img, ol img, blockquote img, figcaption img {
+     filter: brightness(100%);
+  }
+}
+

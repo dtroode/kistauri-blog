@@ -1,0 +1,80 @@
+.card {
+  position: relative;
+
+  background-color: var(--additional-bg);
+  border-radius: var(--fourth-padding);
+
+  transition: transform cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s, box-shadow cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.6rem);
+}
+
+.card__link {
+  display: block;
+  height: calc(100% - 2 * var(--third-padding));
+  padding: var(--third-padding);
+
+  text-decoration: none;
+
+  border-radius: var(--fourth-padding);
+
+  transition: box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+}
+
+.card__link:focus {
+  box-shadow: inset 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.card__link img {
+  margin-bottom: var(--third-padding);
+
+  border-radius: var(--fifth-padding);
+}
+
+.card__link h2 {
+  color: var(--main-fg);
+}
+
+p {
+  color: var(--main-fg);
+}
+
+.card__link p {
+  margin-top: var(--third-padding);
+}
+
+.card.math {
+  background-color: var(--additional-red-bg);
+}
+
+.card.math h2 {
+  color: var(--additional-red-fg);
+}
+
+.card.programming {
+  background-color: var(--additional-green-bg);
+}
+
+.card.programming h2 {
+  color: var(--additional-green-fg);
+}
+
+.card.other {
+  background-color: var(--additional-yellow-bg);
+}
+
+.card.other h2 {
+  color: var(--additional-yellow-fg);
+}
+
+.card.design {
+  background-color: var(--additional-blue-bg);
+}
+
+.card.design h2 {
+  color: var(--additional-blue-fg);
+}
+

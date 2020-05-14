@@ -1,80 +1,44 @@
 {
   "name": "kistauri",
-  "description": "Назови любое слово и я сделаю об этом сайт.",
-  "author": "Давид Кистаури <davidkis113@gmail.com>",
-  "keywords": [
-    "gatsby",
-    "portfolio",
-    "blog"
-  ],
-  "license": "MIT",
+  "version": "3.0.0",
+  "description": "Код моего сайта портфолио-блога.",
   "scripts": {
-    "start": "gatsby develop --open",
-    "lint": "eslint src/ && stylelint src/styles/**/*.scss",
-    "spell": "yaspeller-ci \"src/**/**.md\"",
-    "test": "npm run lint && npm run spell",
-    "clean": "rm -rf dist/ .cache",
-    "build": "npm run lint && gatsby build"
-  },
-  "version": "2.1.0",
-  "engines": {
-    "node": "12.x"
+    "lint": "stylelint src/styles/*.css",
+    "build": "npm run lint && eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dtroode/kistauri"
+    "url": "git://github.com/11ty/eleventy-base-blog.git"
   },
+  "author": {
+    "name": "Давид Кистаури",
+    "email": "davidkis113@gmail.com",
+    "url": "https://davidkistauri.ru/"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dtroode/kistauri/issues"
   },
-  "dependencies": {
-    "date-fns": "^1.30.1",
-    "gatsby": "^2.19.19",
-    "gatsby-image": "^2.1.4",
-    "gatsby-plugin-feed": "^2.2.3",
-    "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-offline": "^2.1.3",
-    "gatsby-plugin-preact": "^3.1.13",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^2.1.5",
-    "gatsby-plugin-sitemap": "^2.1.0",
-    "gatsby-remark-images": "^3.0.16",
-    "gatsby-remark-prismjs": "^3.3.1",
-    "gatsby-remark-relative-images": "^0.2.3",
-    "gatsby-source-filesystem": "^2.0.39",
-    "gatsby-transformer-remark": "^2.6.53",
-    "gatsby-transformer-sharp": "^2.1.21",
-    "node-sass": "^4.12.0",
-    "preact": "^10.3.3",
-    "prismjs": "^1.16.0",
-    "prop-types": "^15.7.2",
-    "r": "0.0.5",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "sharp": "^0.22.1",
-    "typescript": "^3.6.2",
-    "typograf": "^6.8.2"
-  },
+  "homepage": "https://github.com/dtroode/kistauri#readme",
   "devDependencies": {
-    "@size-limit/preset-app": "^4.1.1",
-    "babel-eslint": "^10.0.3",
-    "babel-preset-gatsby": "^0.2.8",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-standard": "^4.0.1",
-    "gatsby-plugin-sass": "^2.1.29",
-    "identity-obj-proxy": "^3.0.0",
-    "sass": "^1.21.0",
-    "size-limit": "^4.1.1",
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.3",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "clean-css": "^4.2.3",
+    "date-fns": "^2.13.0",
+    "eleventy-plugin-lazyimages": "^1.1.1",
+    "eleventy-plugin-pwa": "^1.0.8",
+    "html-minifier": "^4.0.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-implicit-figures": "^0.10.0",
+    "slugify": "^1.4.0",
     "stylelint": "^13.0.0",
     "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-order": "^4.0.0",
-    "yaspeller-ci": "^1.0.2"
+    "stylelint-order": "^4.0.0"
   },
   "browserslist": [
     "> 0.25%",

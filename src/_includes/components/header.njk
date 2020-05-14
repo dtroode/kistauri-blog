@@ -1,0 +1,15 @@
+<header class="head">
+  <nav class="head__nav">
+    {%- for entry in collections.all | eleventyNavigation -%}
+      <a class="head__a a--primary {% if entry.url == page.url -%} a--active {% endif -%}{% if entry.key ==eleventyNavigation.parent -%} a--parent-active{% endif -%}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+    {%- endfor -%}
+    {%- if pageClass == "blog" or pageClass == "tag" -%}
+      <a class="head__a a--secondary" href="/blog/tags/">Теги</a>
+    {%- endif -%}
+    {%- if pageClass == "post" and projectURL -%}
+      <a class="head__a a--secondary" href="https://{{projectURL}}">{{ projectURL }}</a>
+    {%- endif -%}
+  </nav>
+  <h1 class="head__header head__header--{{pageClass}}">{{ renderData.title or title or metadata.title }}</h1>
+  <hr>
+</header>

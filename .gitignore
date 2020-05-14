@@ -6,6 +6,5 @@ npm-debug.log*
 # Dependency directories
 node_modules/
 
-# gatsby files
-.cache/
-public
+# Build
+_site

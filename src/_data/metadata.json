@@ -1,0 +1,15 @@
+{
+  "title": "Давид Кистаури",
+  "description": "Назови любое слово и я сделаю об этом сайт.",
+  "url": "https://davidkistauri.ru",
+  "feed": {
+    "subtitle": "Назови любое слово и я сделаю об этом сайт.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://davidkistauri.ru"
+  },
+  "author": "Давид Кистаури",
+  "twitter": "dtroode",
+  "image": "/images/preview/og.jpg",
+  "icon": "/images/icons/icon.png"
+}

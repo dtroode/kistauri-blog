@@ -1,0 +1,30 @@
+<footer class="foot">
+  {%- if pageClass == "post" -%}
+    <section class="foot__sect">
+      <h2 class="foot__header">Поделиться</h2>
+      <nav class="foot__nav foot__nav--share">
+        {%- for link in sharelinks -%}
+          <a class="foot__a foot__a--{{link.id}} a--secondary" href="{{link.url_part}}{{metadata.url}}{{page.url}}{%- if link.text_part -%}{{link.text_part}}{{title}}{%- endif -%}">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab"class="foot__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor" d="{{link.path}}"></path>
+            </svg>{{link.name}}
+          </a>
+        {%- endfor -%}
+      </nav>
+      <hr>
+    </section>
+  {%- endif -%}
+  <section class="foot__sect">
+    <h2 class="foot__header">Давид Кистаури, {{ 2019 | years }}</h2>
+    <nav class="foot__nav foot__nav--links">
+      {%- for link in contacts -%}
+        <a class="foot__a a--primary" href="{{link.url}}">
+        {%- if link.path -%}
+          <svg aria-hidden="true" focusable="false" data-prefix="fab"class="foot__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor" d="{{link.path}}"></path>
+          </svg>
+        {%- endif -%}{{link.name}}</a>
+      {%- endfor -%}
+    </nav>
+  </section>
+</footer>

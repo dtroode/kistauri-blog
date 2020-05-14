@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+pageClass: post
+eleventyNavigation:
+  key: Проект
+  parent: Проекты
+---
+
+<link rel="stylesheet" href="{{ '/styles/post.css' | url }}">
+<section class="main__sectF--text">
+  <p class="postlinks">
+    <time datetime="{{ page.date | htmlDateString }}">{{page.date | readableDate}}</time>
+  </p>
+  {{ content | safe }}
+</section>
