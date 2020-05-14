@@ -7,6 +7,10 @@
   transition: transform cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s, box-shadow cubic-bezier(0.15, 0.54, 0.35, 0.99) 0.5s;
 }
 
+.card:not(:last-child) {
+  margin-bottom: var(--third-padding);
+}
+
 .card:hover {
   box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.6rem);
@@ -78,3 +82,18 @@ p {
   color: var(--additional-blue-fg);
 }
 
+p.postlinks {
+  font-size: 0.75rem;
+}
+
+p.postlinks * {
+  margin-right: var(--fourth-padding);
+}
+
+nav.foot__nav--share a.foot__a {
+  background-color: var(--main-bg);
+}
+
+h2.foot__header:nth-of-type(2) {
+  margin-top: var(--secondary-padding);
+}

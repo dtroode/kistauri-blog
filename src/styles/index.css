@@ -156,10 +156,6 @@ header h1.head__header {
    word-break: break-word;
 }
 
-header h1.head__header--post, header h1.head__header--project {
-   font-size: 2.25rem;
-}
-
 header hr {
    margin: var(--secondary-padding) 0 0 0;
 }
@@ -176,14 +172,6 @@ main, footer {
 
 main hr, footer hr {
    margin: var(--primary-padding) 0 var(--secondary-padding) 0;
-}
-
-main.main--portfolio h2, main.main--portfolio h3, main.main--portfolio p {
-   max-width: 700px;
-}
-
-main article:not(:last-child) {
-   margin-bottom: var(--third-padding);
 }
 
 main > section:last-of-type ul {
@@ -212,62 +200,27 @@ main > section a:not(.a--secondary):visited:hover, main > section a:not(.a--seco
    border-bottom: 1px solid var(--accent-red-25);
 }
 
-main a.a--secondary {
-   margin-bottom: var(--fifth-padding);
-}
-
 footer {
    color: var(--additional-fg);
 
    background-color: var(--additional-bg);
 }
 
-footer section.foot__sect nav.foot__nav--share {
-   display: block;
-}
-
-footer section.foot__sect nav.foot__nav--share a.foot__a {
-   color: var(--main-fg);
-
-   background-color: var(--main-bg);
-
-   transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
-}
-
-footer section.foot__sect nav.foot__nav--share a.foot__a--twitter:hover {
-   background-color: rgba(29, 161, 242, 0.25);
-}
-
-footer section.foot__sect nav.foot__nav--share a.foot__a--facebook:hover {
-   background-color: rgba(17, 120, 242, 0.25);
-}
-
-footer section.foot__sect nav.foot__nav--share a.foot__a--telegram:hover {
-   background-color: rgba(46, 166, 217, 0.25);
-}
-
-footer section.foot__sect nav.foot__nav--links svg.foot__icon {
+svg.foot__icon {
    fill: var(--main-bg);
-}
-
-footer section.foot__sect h2.foot__header {
-   margin-bottom: var(--fourth-padding);
-}
-
-footer section.foot__sect h2.foot__header:nth-of-type(2) {
-   margin-top: var(--secondary-padding);
-}
-
-footer section.foot__sect a.foot__a {
-   margin-top: var(--fifth-padding);
-}
-
-footer section.foot__sect a.foot__a svg.foot__icon {
    width: 1em;
    height: 1.375em;
    margin-right: var(--fifth-padding);
 
    vertical-align: top;
+}
+
+h2.foot__header {
+   margin-bottom: var(--fourth-padding);
+}
+
+a.foot__a {
+   margin-top: var(--fifth-padding);
 }
 
 h1 {
@@ -317,31 +270,6 @@ p {
 
 p:not(:first-child) {
    margin-top: var(--third-padding);
-}
-
-p.main__container {
-   margin-top: 0;
-}
-
-p.postlinks {
-   font-size: 0.75rem;
-}
-
-p.postlinks * {
-   margin-right: var(--fourth-padding);
-}
-
-p.postlinks a.postlinks__a {
-   color: inherit;
-   text-decoration: none;
-
-   border-bottom: 1px solid var(--main-fg-25);
-}
-
-p.postlinks a.postlinks__a:hover, p.postlinks a.postlinks__a:focus {
-   color: var(--accent-red);
-
-   border-bottom: 1px solid var(--accent-red-25);
 }
 
 p a {
@@ -431,13 +359,8 @@ a.a--parent-active {
    background-color: var(--main-fg);
 }
 
-a .a__span {
-   opacity: 0.5;
-}
-
 ul, ol, blockquote {
    box-sizing: border-box;
-   max-width: 700px;
 }
 
 ul, ol {
@@ -474,47 +397,8 @@ blockquote {
    padding-left: var(--primary-padding);
 }
 
-table {
-   margin-top: var(--third-padding);
-
-   table-layout: fixed;
-   empty-cells: show;
-}
-
-table th, table td {
-   padding: 0 var(--third-padding) var(--fifth-padding) 0;
-
-   text-align: left;
-   vertical-align: top;
-}
-
-table th {
-   line-height: 1.15em;
-
-   border-bottom: 1px solid var(--main-fg-25);
-}
-
-figure {
-   margin: 1rem 0 0 0;
-}
-
-figure a {
-   display: contents;
-}
-
 img {
    width: 100%;
-}
-
-figcaption {
-   display: initial;
-   margin-top: 0.375rem;
-   margin-bottom: 0;
-
-   font-size: 0.75em;
-}
-
-img {
    height: auto;
 }
 
