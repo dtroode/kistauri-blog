@@ -1,0 +1,11 @@
+main a.a--secondary {
+  margin-bottom: var(--fifth-padding);
+}
+
+span.a__span {
+  opacity: 0.5;
+}
+
+p.main__container {
+  margin-top: 0;
+}
