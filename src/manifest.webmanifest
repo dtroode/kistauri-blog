@@ -1,7 +1,7 @@
 {
-  "short_name": "Weather",
-  "name": "Weather: Do I need an umbrella?",
-  "description": "Weather forecast information",
+  "short_name": "Кистаури",
+  "name": "Давид Кистаури",
+  "description": "Сайт Давида Кистаури",
   "icons": [
     {
       "src": "/images/icons/icon-512x512.png",
