@@ -4,7 +4,7 @@
   <article key="{{ post.data.title }}" class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
     <a href="{{ post.url | url }}" class="card__link">
       {%- if pageClass == "projects" -%}
-        <img src="{{ post.data.image }}">
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
       {%- endif -%}
       <h2>{{ post.data.title }}</h2>
       <p class="card__description">
