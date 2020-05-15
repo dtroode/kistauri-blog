@@ -15,7 +15,7 @@ eleventyNavigation:
 
 <link rel="stylesheet" href="{{ '/styles/tags.css' | url }}">
 <section>
-  <h2>Теги по количеству заметок</h2>
+  {# <h2>Теги по количеству заметок</h2> #}
   <p class="main__container">
     {%- for tag in collections.tagList -%}
       {%- set tagURL -%}/blog/tags/{{ tag | slug }}/{%- endset -%}
