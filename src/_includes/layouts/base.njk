@@ -8,27 +8,27 @@
     <meta name="robots" content="index,follow">
     <meta name="generator" content="Eleventy">
 
-    <title>{{ renderData.title or title or metadata.title }}</title>
+    <title>{{ title or renderData.title or metadata.title }}</title>
 
     <!--Twitter Card-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@{{metadata.twitter}}">
     <meta name="twitter:creator" content="@{{metadata.twitter}}">
     <meta name="twitter:url" content="{{metadata.url}}{{page.url}}">
-    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:title" content="{{ title or renderData.title or metadata.title }}">
     <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
     <meta name="twitter:image" content="{{ metadata.url }}{{ image or metadata.image }}">
 
     <!--Schema-->
     <link rel="author" href="{{metadata.author}}">
-    <meta itemprop="name" content="{{title}}">
+    <meta itemprop="name" content="{{ title or renderData.title or metadata.title }}">
     <meta itemprop="description" content="{{ renderData.description or description or metadata.description }}">
     <meta itemprop="image" content="{{ metadata.url }}{{ image or metadata.image }}">
 
     <!-- Facebook OpenGraph -->
     <meta property="og:url" content="{{metadata.url}}{{page.url}}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{title}}">
+    <meta property="og:title" content="{{ title or renderData.title or metadata.title }}">
     <meta property="og:image" content="{{ metadata.url }}{{ image or metadata.image }}">
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
     <meta property="og:site_name" content="{{metadata.title}}">
