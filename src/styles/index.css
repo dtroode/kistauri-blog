@@ -207,7 +207,7 @@ footer {
 }
 
 svg.foot__icon {
-   fill: var(--main-bg);
+   fill: currentColor;
    width: 1em;
    height: 1.375em;
    margin-right: var(--fifth-padding);
@@ -398,7 +398,9 @@ blockquote {
 }
 
 img {
+   display: block;
    width: 100%;
+   max-width: 100%;
    height: auto;
 }
 
