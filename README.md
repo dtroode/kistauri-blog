@@ -17,6 +17,6 @@ You can
 - **Fork** repository
 - Submit **changes in articles**
 
-To run locally, clone, then `npm install`, then `npm run serve`, then go to [https://localhost:8000](https://localhost:8000).
+To run locally, clone, then `npm install`, then `npm run serve`, then go to [https://localhost:8080](https://localhost:8000).
 
-**All blog posts in [/src/pages/blog/all](https://github.com/dtroode/kistauri/blob/master/src/pages/blog/all/)**
+**All blog posts in [/src/blog](https://github.com/dtroode/kistauri/blob/master/src/blog/)**
