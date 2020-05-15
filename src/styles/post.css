@@ -2,7 +2,7 @@ header h1.head__header--post, header h1.head__header--project {
   font-size: 2.25rem;
 }
 
-section.main__sect--text h2, section.main__sect--text h3, section.main__sect--text p {
+section.main__sect--text h2, section.main__sect--text h3, section.main__sect--text p, section.main__sect--text ol, section.main__sect--text ul, section.main__sect--text blockquote {
   max-width: 700px;
 }
 
@@ -21,15 +21,6 @@ section.main__sect--text h3 + p:not(:first-child) {
 section.main__sect--text p, section.main__sect--text a, section.main__sect--text ul, section.main__sect--text ol, section.main__sect--text code, section.main__sect--text blockquote {
   font-weight: 500;
   line-height: 1.5em;
-}
-
-section.main__sect--text p code, section.main__sect--text a code, section.main__sect--text li code, section.main__sect--text span code, section.main__sect--text blockquote code {
-  padding: 0 0.25rem;
-
-  color: var(--main-fg);
-
-  background-color: var(--additional-bg);
-  border-radius: 0.25rem;
 }
 
 section.main__sect--text p {
