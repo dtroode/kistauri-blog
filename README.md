@@ -2,7 +2,7 @@
 
 <img
   align="right"
-  src="https://davidkistauri.ru/icons/icon-144x144.png"
+  src="https://davidkistauri.ru/images/icons/icon-144x144.png"
   width="100px"
   height="100px"
   alt="Blog Logo">
