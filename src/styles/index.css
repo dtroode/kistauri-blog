@@ -156,6 +156,10 @@ header h1.head__header {
    word-break: break-word;
 }
 
+header h1.head__header--subhead {
+   font-size: 2.25rem;
+ }
+
 header hr {
    margin: var(--secondary-padding) 0 0 0;
 }
