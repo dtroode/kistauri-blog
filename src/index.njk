@@ -91,28 +91,14 @@ eleventyNavigation:
 <hr>
 <section>
   <h2>Веду блог</h2>
-  <h3>Программирование</h3>
-  <ul>
-    <li><a href="/blog/auto-dark-mode/">Автоматическая темная тема для сайта</a></li>
-    <li><a href="/blog/overcode/">Слишком-код</a></li>
-  </ul>
-  <h3>Математика</h3>
-  <ul>
-    <li><a href="/blog/obeshal/">Обещание математической логики</a></li>
-    <li><a href="/blog/math-conditions/">Необходимые и достаточные условия</a></li>
-  </ul>
-  <h3>Дизайн</h3>
-  <ul>
-    <li><a href="/blog/design-mockups/">Дизайн на рендерах и в жизни</a></li>
-    <li><a href="/blog/horizon/">Забудьте про гамбургер: горизонтальный скроллинг</a></li>
-    <li><a href="/blog/ya-u-mamy-designer/">Дизайнерские штуки и логика на моем сайте</a></li>
-  </ul>
-  <h3>Остальное</h3>
-  <ul>
-    <li><a href="/blog/math-conditions/">Необходимые и достаточные условия</a></li>
-    <li><a href="/blog/read-2019-11/">Читаю сейчас</a></li>
-    <li><a href="https://news.ycombinator.com/item?id=20254420">«Why you need to give Firefox a chance»</a> — <em>Hackernews</em></li>
-  </ul>
+  <p>{% for theme in theme_posts %}
+    <h3>{{ theme.title }}</h3>
+    <ul>
+      {% for item in theme.items %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endfor %}</p>
 </section>
 <hr>
 <section>

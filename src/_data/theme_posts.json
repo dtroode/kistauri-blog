@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Программирование",
+    "items": [
+      {
+        "name": "Автоматическая темная тема для сайта",
+        "link": "/blog/auto-dark-mode/"
+      },
+      {
+        "name": "Слишком-код",
+        "link": "/blog/overcode/"
+      }
+    ]
+  },
+  {
+    "title": "Математика",
+    "items": [
+      {
+        "name": "Обещание математической логики",
+        "link": "/blog/obeshal/"
+      },
+      {
+        "name": "Необходимые и достаточные условия",
+        "link": "/blog/math-conditions/"
+      }
+    ]
+  },
+  {
+    "title": "Дизайн",
+    "items": [
+      {
+        "name": "Дизайн на рендерах и в жизни",
+        "link": "/blog/design-mockups/"
+      },
+      {
+        "name": "Забудьте про гамбургер: горизонтальный скроллинг",
+        "link": "/blog/horizon/"
+      },
+      {
+        "name": "Дизайнерские штуки и логика на моем сайте",
+        "link": "/blog/ya-u-mamy-designer/"
+      }
+    ]
+  },
+  {
+    "title": "Остальное",
+    "items": [
+      {
+        "name": "Необходимые и достаточные условия",
+        "link": "/blog/math-conditions/"
+      },
+      {
+        "name": "Читаю сейчас",
+        "link": "/blog/read-2019-11/"
+      },
+      {
+        "name": "«Why you need to give Firefox a chance»",
+        "link": "https://news.ycombinator.com/item?id=20254420"
+      }
+    ]
+  }
+]
