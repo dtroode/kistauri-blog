@@ -39,7 +39,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("shortDate", dateObj => {
     return dateFns.format(
       dateObj,
-      'dd MMM yyyy',
+      'd MMM yyyy',
       {locale: ruLocale}
     )
   })
@@ -47,7 +47,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("readableDate", dateObj => {
     return dateFns.format(
       dateObj,
-      'dd MMMM yyyy, hh:mm, O',
+      'dd MMMM yyyy, hh:mm, zzzz',
       {locale: ruLocale}
     )
   })
