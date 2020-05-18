@@ -8,6 +8,6 @@ eleventyNavigation:
   order: 4
 ---
 
-{% set postslist = collections.blog %}
-{% set postslistCounter = collections.blog | length %}
+{% set postslist = collections.blog | head(-15) %}
 {% include "posts-list.njk" %}
+<a href="/blog/all" class="a--secondary">Все заметки</a>

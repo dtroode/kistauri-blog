@@ -17,7 +17,7 @@ eleventyNavigation:
 <section>
   {# <h2>Теги по количеству заметок</h2> #}
   <p class="main__container">
-    {%- for tag in collections.tagList -%}
+    {%- for tag in collections.tagList | sort(false, true, tag) -%}
       {%- set tagURL -%}/blog/tags/{{ tag | slug }}/{%- endset -%}
       <a href="{{ tagURL | url }}" key="{{ tag }}" class="a--secondary">
         {{ tag }}

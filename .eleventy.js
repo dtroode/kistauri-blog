@@ -56,6 +56,14 @@ module.exports = function(eleventyConfig) {
     return dateFns.formatISO(dateObj);
   });
 
+  eleventyConfig.addFilter("head", (array, n) => {
+    if( n < 0 ) {
+      return array.slice(n);
+    }
+
+    return array.slice(0, n);
+  });
+
   eleventyConfig.addCollection("tagList", require("./src/_11ty/getTagList.js"));
 
   eleventyConfig.addPassthroughCopy("src/images");
