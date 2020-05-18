@@ -211,12 +211,13 @@ footer {
 }
 
 svg.foot__icon {
-   fill: currentColor;
    width: 1em;
    height: 1.375em;
    margin-right: var(--fifth-padding);
 
    vertical-align: top;
+
+   fill: currentColor;
 }
 
 h2.foot__header {
@@ -368,10 +369,10 @@ ul, ol, blockquote {
 }
 
 ul, ol {
+   max-width: 700px;
    margin-top: 0;
    margin-bottom: 1rem;
    padding-left: var(--secondary-padding);
-   max-width: 700px;
 }
 
 ul li {
