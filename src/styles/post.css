@@ -1,4 +1,4 @@
-section.main__sect--text h2, section.main__sect--text h3, section.main__sect--text p, section.main__sect--text ol, section.main__sect--text ul, section.main__sect--text blockquote {
+section.main__sect--text h2, section.main__sect--text h3, section.main__sect--text p, section.main__sect--text blockquote {
   max-width: 700px;
 }
 
