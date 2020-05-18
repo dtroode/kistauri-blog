@@ -1,4 +1,7 @@
-section.main__sect--text h2, section.main__sect--text h3, section.main__sect--text p, section.main__sect--text blockquote {
+section.main__sect--text h2,
+section.main__sect--text h3,
+section.main__sect--text p,
+section.main__sect--text blockquote {
   max-width: 700px;
 }
 
@@ -14,7 +17,12 @@ section.main__sect--text h3 + p:not(:first-child) {
   margin-top: 0;
 }
 
-section.main__sect--text p, section.main__sect--text a, section.main__sect--text ul, section.main__sect--text ol, section.main__sect--text code, section.main__sect--text blockquote {
+section.main__sect--text p,
+section.main__sect--text a,
+section.main__sect--text ul,
+section.main__sect--text ol,
+section.main__sect--text code,
+section.main__sect--text blockquote {
   font-weight: 500;
   line-height: 1.5em;
 }
@@ -23,37 +31,13 @@ section.main__sect--text p {
   margin-top: 1rem;
 }
 
-section.main__sect--text a {
-  color: var(--accent-blue);
-  font-size: inherit;
-  text-decoration: none;
-
-  border-bottom: 1px solid var(--accent-blue-25);
-}
-
-section.main__sect--text a:hover, section.main__sect--text a:focus {
-  color: var(--accent-red);
-
-  border-bottom: 1px solid var(--accent-red-25);
-}
-
-section.main__sect--text a:visited {
-  color: var(--accent-purple);
-
-  border-bottom: 1px solid var(--accent-purple-25);
-}
-
-section.main__sect--text a:visited:hover, section.main__sect--text a:visited:focus {
-  color: var(--accent-red);
-
-  border-bottom: 1px solid var(--accent-red-25);
-}
-
-section.main__sect--text ul, section.main__sect--text ol {
+section.main__sect--text ul,
+section.main__sect--text ol {
   padding-left: var(--primary-padding);
 }
 
-section.main__sect--text ul li, section.main__sect--text ol li {
+section.main__sect--text ul li,
+section.main__sect--text ol li {
   list-style-position: outside;
 }
 
@@ -61,12 +45,9 @@ section.main__sect--text figure a {
   border-bottom: 0;
 }
 
-section.main__sect--text blockquote p:first-child, section.main__sect--text hr + * {
+section.main__sect--text blockquote p:first-child,
+section.main__sect--text hr + * {
   margin-top: 0;
-}
-
-section.main__sect--text a.image-link {
-  border-bottom: 0;
 }
 
 section.main__sect--text p.postlinks {
@@ -95,7 +76,10 @@ section.main__sect--text p.postlinks a.postlinks__a {
   border-bottom: 1px solid var(--main-fg-25);
 }
 
-section.main__sect--text p.postlinks a.postlinks__a:hover, section.main__sect--text p.postlinks a.postlinks__a:visited:hover, section.main__sect--text p.postlinks a.postlinks__a:focus {
+section.main__sect--text p.postlinks a.postlinks__a:hover,
+section.main__sect--text p.postlinks a.postlinks__a:visited:hover,
+section.main__sect--text p.postlinks a.postlinks__a:focus,
+section.main__sect--text p.postlinks a.postlinks__a:visited:focus {
   color: var(--accent-red);
 
   border-bottom: 1px solid var(--accent-red-25);
@@ -107,7 +91,8 @@ section.main__sect--text p.postlinks a.postlinks__a:visited {
   border-bottom: 1px solid var(--main-fg-25);
 }
 
-section.main__sect--text pre, section.main__sect--text code {
+section.main__sect--text pre,
+section.main__sect--text code {
   font-family: "Fira Code", monospace;
   tab-size: 2;
 }
@@ -136,7 +121,8 @@ section.main__sect--text table {
   empty-cells: show;
 }
 
-section.main__sect--text table th, section.main__sect--text table td {
+section.main__sect--text table th,
+section.main__sect--text table td {
   padding: 0 var(--third-padding) var(--fifth-padding) 0;
 
   text-align: left;
@@ -162,6 +148,16 @@ section.main__sect--text figcaption {
   margin-bottom: 0;
 
   font-size: 0.8rem;
+}
+
+section.main__sect--text a img {
+  transition: box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+}
+
+section.main__sect--text a:hover img,
+section.main__sect--text a:focus img {
+  box-shadow: 0 0 0 1px var(--accent-red);
+  transition: none;
 }
 
 nav.foot__nav--share a {
