@@ -36,20 +36,22 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("blog", ".src/layouts/post.njk");
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    if (dateFns.isToday(dateObj)) {
-      return 'сегодня'
-    } else if (dateFns.isYesterday(dateObj)) {
-      return 'вчера'
-    } else if (dateFns.isThisYear(dateObj)) {
-      return dateFns.format(dateObj, 'd MMMM', {
-        locale: ruLocale
-      })
-    } else {
-      return dateFns.format(dateObj, 'd MMMM yyyy', {
-        locale: ruLocale
-      })
+  eleventyConfig.addFilter("relativeDate", dateObj => {
+    const monthsDistance = dateFns.differenceInMonths(
+      new Date(),
+      dateObj
+    )
+    if (monthsDistance > 12) {
+      return dateObj.getFullYear()
     }
+    return dateFns.formatDistanceToNowStrict(
+      dateObj,
+      {locale: ruLocale}
+    )
+  })
+
+  eleventyConfig.addFilter("readableDate", dateObj => {
+    return dateFns.format(dateObj, 'dd MMMM yyyy, hh:mm, O', {locale: ruLocale})
   })
 
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
@@ -57,7 +59,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("years", (year) => {
-    return(`${year} — ${new Date().getFullYear()}`)
+    return(`${year}…${new Date().getFullYear()}`)
   })
 
   eleventyConfig.addCollection("tagList", require("./src/_11ty/getTagList.js"));
