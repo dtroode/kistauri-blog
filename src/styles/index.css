@@ -290,6 +290,10 @@ a {
    transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s, border-bottom cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
 }
 
+a:hover, a:focus {
+   transition: none;
+}
+
 a:hover, a:active {
    outline-width: 0;
 }
@@ -307,8 +311,11 @@ a.a--primary, a.a--secondary {
    line-height: 1.4em;
    text-decoration: none;
 
-   background-color: var(--accent-blue);
    border-radius: var(--fourth-padding);
+}
+
+a.a--primary:hover, a.a--secondary:hover, a.a--primary:focus, a.a--secondary:focus {
+   transition: none;
 }
 
 a.a--primary:focus, a.a--secondary:focus {
