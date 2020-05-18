@@ -10,7 +10,7 @@ eleventyNavigation:
 <link rel="stylesheet" href="{{ '/styles/post.css' | url }}">
 <section class="main__sect--text">
   <p class="postlinks">
-    <time datetime="{{ page.date | htmlDateString }}" title="{{ post.date | readableDate }}">{{page.date | relativeDate}}</time>
+    <time datetime="{{ page.date | htmlDateString }}" title="{{ page.date | readableDate }}">{{page.date | relativeDate}}</time>
   </p>
   {{ content | safe }}
 </section>
