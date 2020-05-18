@@ -2,7 +2,7 @@
 title: Маршрутки Сухума
 description: Сайт со списком хороших и плохих маршруток Сухума с характеристикой и разделением по моделям
 date: 2020-02-25
-image: /images/preview/project-sukhum-road.png
+image: /images/preview/project-sukhum-road.jpg
 projectURL: sukhum-road.now.sh
 ---
 

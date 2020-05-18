@@ -2,7 +2,7 @@
 title: Сайт Пост Величины
 description: Сайт с постоянными величинами из математики, физики и химии, чтоб всегда было, где подглядеть
 date: 2018-10-05
-image: /images/preview/project-postvel.png
+image: /images/preview/project-postvel.jpg
 projectURL: postvel.now.sh
 ---
 
@@ -105,5 +105,5 @@ section.main__math#math
 
 ---
 
-***Шрифт:*** [PT Root UI](https://www.paratype.ru/fonts/pt/pt-root-ui).\
-***Материалы взяты из интернета.***
+**_Шрифт:_** [PT Root UI](https://www.paratype.ru/fonts/pt/pt-root-ui).\
+**_Материалы взяты из интернета._**
