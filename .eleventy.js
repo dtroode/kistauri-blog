@@ -36,31 +36,25 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("blog", ".src/layouts/post.njk");
 
-  eleventyConfig.addFilter("relativeDate", dateObj => {
-    const monthsDistance = dateFns.differenceInMonths(
-      new Date(),
-      dateObj
-    )
-    if (monthsDistance > 12) {
-      return dateObj.getFullYear()
-    }
-    return dateFns.formatDistanceToNowStrict(
+  eleventyConfig.addFilter("shortDate", dateObj => {
+    return dateFns.format(
       dateObj,
+      'dd MMM yyyy',
       {locale: ruLocale}
     )
   })
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return dateFns.format(dateObj, 'dd MMMM yyyy, hh:mm, O', {locale: ruLocale})
+    return dateFns.format(
+      dateObj,
+      'dd MMMM yyyy, hh:mm, O',
+      {locale: ruLocale}
+    )
   })
 
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return dateFns.formatISO(dateObj);
   });
-
-  eleventyConfig.addFilter("years", (year) => {
-    return(`${year}…${new Date().getFullYear()}`)
-  })
 
   eleventyConfig.addCollection("tagList", require("./src/_11ty/getTagList.js"));
 

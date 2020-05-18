@@ -12,7 +12,7 @@ eleventyNavigation:
 
 <section class="main__sect--text">
   <p class="postlinks">
-    <time datetime="{{ page.date | htmlDateString }}" title="{{ page.date | readableDate }}">{{ page.date | relativeDate}}</time>
+    <time datetime="{{ page.date | htmlDateString }}" title="{{ page.date | readableDate }}">{{ page.date | shortDate}}</time>
     {%- for tag in tags -%}
       {%- if collections.tagList.indexOf(tag) != -1 -%}
       {%- set tagUrl -%}/blog/tags/{{ tag | slug }}/{%- endset -%}
