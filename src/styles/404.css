@@ -22,3 +22,13 @@ figcaption {
 
   font-size: 0.75em;
 }
+
+a img {
+  transition: box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+}
+
+a:hover img,
+a:focus img {
+  box-shadow: 0 0 0 1px var(--accent-red);
+  transition: none;
+}
