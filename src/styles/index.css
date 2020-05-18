@@ -108,24 +108,17 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   margin: 0;
 
   color: var(--main-fg);
 
-  background-color: var(--main-bg);
+  background-color: var(--additional-bg);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 header,
 main {
-  flex: 0;
-}
-
-footer {
-  flex: 1;
+  background-color: var(--main-bg);
 }
 
 header,
