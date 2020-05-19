@@ -77,6 +77,10 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter("sharePostTitle", (title) => {
+    return title.replace(/ /g, "%20")
+  })
+
   eleventyConfig.addCollection("tagList", require("./src/_11ty/getTagList.js"));
 
   eleventyConfig.addPassthroughCopy("src/images");
