@@ -39,10 +39,26 @@ eleventyNavigation:
 </section>
 <hr>
 <section>
+  <h2>Читаю</h2>
+  <p>Читаю книги — чаще нон-фикшн — и пишу короткие обзоры в телеграм.
+    <br />
+    <em>Обновлено 1 мая 2020.</em>
+  </p>
+  {%- for year in books -%}
+    <h3>{{ year.year }}</h3>
+    <ul>
+      {%- for item in year.list -%}
+        <li class="{%- if item.type == 'favourite' -%}li--favourite{%- endif -%}">{%- if item.link -%} <a href="{{ item.link }}">{{ item.title }}</a> {%- else -%} {{ item.title }} {% endif %} — <em>{{ item.author }}</em></li>
+      {%- endfor -%}
+    </ul>
+  {%- endfor -%}
+</section>
+<hr>
+<section>
   <h2>Еще</h2>
   <ul>
     <li>HTML, CSS, JavaScript, Pug, SASS, SugarSS, React, Gatsby, GraphQL, Git</li>
-    <li>Учу: Svelte, Sapper, NextJS, а еще математику. По дороге куда-нибудь <a href="/reading">читаю</a> книги</li>
+    <li>Учу: Svelte, Sapper, NextJS, а еще математику</li>
     <li>В свободное время забываю про веб и учу компьютерные науки и Python</li>
     <li>Когда нахожу что-нибудь интересное, пишу в <a href="https://t.me/s/dtroode_channel">телеграм канал</a></li>
   </ul>

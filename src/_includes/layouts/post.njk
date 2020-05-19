@@ -25,14 +25,12 @@ eleventyNavigation:
   {%- set nextPost = collections.blog | getNextCollectionItem(page) -%}
   <p class="postlinks">
     {%- if previousPost -%}
-      <a class="postlinks__a" href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-      <span class="postlinks__span postlinks__span--m015">←</span>
+      <a class="postlinks__a" href="{{ previousPost.url }}">{{ previousPost.data.title }}</a><span class="postlinks__span postlinks__span--m015">←</span>
     {%- else -%}
       <span class="postlinks__span--inact postlinks__span--m015">←</span>
     {%- endif -%}
     {%- if nextPost -%}
-      <span class="postlinks__span">→</span>
-      <a class="postlinks__a" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+      <span class="postlinks__span">→</span><a class="postlinks__a" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
     {%- else -%}
       <span class="postlinks__span--inact">→</span>
     {%- endif -%}
