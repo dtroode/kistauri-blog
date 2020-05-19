@@ -14,19 +14,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginPWA);
 
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if (outputPath && outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true
-      });
-      return minified;
-    }
-
-    return content;
-  });
-
   eleventyConfig.addTransform("images", function(content, outputPath) {
     let blog = /blog\/all\/([a-zA-Z0-9_-]+)\/index\.html/i;
     let projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
@@ -40,6 +27,19 @@ module.exports = function(eleventyConfig) {
                 <figcaption>${p2}</figcaption>
             </figure>`
         });
+    }
+
+    return content;
+  });
+
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if (outputPath && outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
     }
 
     return content;
