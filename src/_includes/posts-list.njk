@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ '/styles/article.css' | url }}">
 
 {%- for post in postslist | reverse -%}
-  <article key="{{ post.data.title }}" class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
+  <article class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
     <a href="{{ post.url | url }}" class="card__link">
       {%- if pageClass == "projects" -%}
         <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
@@ -15,7 +15,7 @@
         {%- for tag in post.data.tags -%}
           {%- if collections.tagList.indexOf(tag) != -1 -%}
             {%- set tagUrl -%}/blog/tags/{{ tag | slug }}/{%- endset -%}
-            <span key="{{ tag }}" class="postlinks__span">{{ tag }}</span>
+            <span class="postlinks__span">{{ tag }}</span>
           {%- endif -%}
         {%- endfor -%}
       </p>

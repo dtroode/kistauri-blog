@@ -19,12 +19,6 @@
     <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
     <meta name="twitter:image" content="{{ metadata.url }}{{ image or metadata.image }}">
 
-    <!--Schema-->
-    <link rel="author" href="{{metadata.author}}">
-    <meta itemprop="name" content="{{ title or renderData.title or metadata.title }}">
-    <meta itemprop="description" content="{{ renderData.description or description or metadata.description }}">
-    <meta itemprop="image" content="{{ metadata.url }}{{ image or metadata.image }}">
-
     <!-- Facebook OpenGraph -->
     <meta property="og:url" content="{{metadata.url}}{{page.url}}">
     <meta property="og:type" content="website">

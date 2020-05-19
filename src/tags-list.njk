@@ -19,7 +19,7 @@ eleventyNavigation:
   <p class="main__container">
     {%- for tag in collections.tagList | sort(false, true, tag) -%}
       {%- set tagURL -%}/blog/tags/{{ tag | slug }}/{%- endset -%}
-      <a href="{{ tagURL | url }}" key="{{ tag }}" class="a--secondary">
+      <a href="{{ tagURL | url }}" class="a--secondary">
         {{ tag }}
          <span class="a__span">{{ collections[ tag ] | length }}</span>
       </a>
