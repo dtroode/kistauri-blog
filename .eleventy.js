@@ -3,10 +3,8 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require('markdown-it');
-const implicitFigures = require('markdown-it-implicit-figures');
 const dateFns = require("date-fns");
 const ruLocale = require('date-fns/locale/ru');
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const pluginPWA = require("eleventy-plugin-pwa");
 const htmlmin = require("html-minifier");
 
@@ -15,18 +13,33 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginPWA);
-  eleventyConfig.addPlugin(lazyImagesPlugin, {
-    cacheFile: "src/.lazyimages.json"
-  });
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if( outputPath.endsWith(".html") ) {
+    if (outputPath && outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true
       });
       return minified;
+    }
+
+    return content;
+  });
+
+  eleventyConfig.addTransform("images", function(content, outputPath) {
+    let blog = /blog\/all\/([a-zA-Z0-9_-]+)\/index\.html/i;
+    let projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
+    let images = /\<p\>\<img src\=\"\/images\/([^\>]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig
+
+    if (outputPath && (outputPath.match(blog) || outputPath.match(projects)) ) {
+      content = content.replace(images, (match, p1, p2) => {
+          return `
+            <figure>
+                <img src="/images/${p1}" data-src="/images/${p1}" alt="${p2}" loading="lazy">
+                <figcaption>${p2}</figcaption>
+            </figure>`
+        });
     }
 
     return content;
@@ -77,7 +90,7 @@ module.exports = function(eleventyConfig) {
     typographer: true
   };
 
-  let markdownLib = markdownIt(mdOptions).use(implicitFigures, { figcaption: true });
+  let markdownLib = markdownIt(mdOptions)
 
   eleventyConfig.setLibrary("md", markdownLib);
 
