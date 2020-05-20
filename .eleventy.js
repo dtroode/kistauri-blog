@@ -7,6 +7,7 @@ const dateFns = require("date-fns");
 const ruLocale = require('date-fns/locale/ru');
 const pluginPWA = require("eleventy-plugin-pwa");
 const htmlmin = require("html-minifier");
+const jimp = require('jimp');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -21,11 +22,25 @@ module.exports = function(eleventyConfig) {
 
     if (outputPath && (outputPath.match(blog) || outputPath.match(projects)) ) {
       content = content.replace(images, (match, p1, p2) => {
-          return `
-            <figure>
-                <img src="/images/${p1}" data-src="/images/${p1}" alt="${p2}" loading="lazy">
-                <figcaption>${p2}</figcaption>
-            </figure>`
+        jimp.read(`src/images/${p1}`, function (err, image) {
+          if (err) throw err;
+          image.clone().resize(320, jimp.AUTO)
+          .quality(85)
+          .write(`_site/images/small/${p1}`)
+          image.clone().resize(640, jimp.AUTO)
+          .quality(85)
+          .write(`_site/images/medium/${p1}`)
+        })
+        return `
+          <figure>
+              <img
+                srcset="/images/${p1} 1000w,
+                        /images/medium/${p1} 640w,
+                        /images/small/${p1} 320w"
+                sizes="100vw"
+                alt="${p2}" loading="lazy">
+              <figcaption>${p2}</figcaption>
+          </figure>`
         });
     }
 
