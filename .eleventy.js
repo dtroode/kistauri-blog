@@ -18,10 +18,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addTransform("images", function(content, outputPath) {
     let blog = /blog\/all\/([a-zA-Z0-9_-]+)\/index\.html/i;
     let projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
-    let images = /\<p\>\<img src\=\"\/images\/([^\>]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig
+    let imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\>]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
+    let images = /\<img src\=\"\/images\/([^\>]*)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
 
     if (outputPath && (outputPath.match(blog) || outputPath.match(projects)) ) {
-      content = content.replace(images, (match, p1, p2) => {
+      content = content.replace(imagesInParagraph, (match, p1, p2) => {
         jimp.read(`src/images/${p1}`, function (err, image) {
           if (err) throw err;
           image.clone().resize(320, jimp.AUTO)
@@ -34,14 +35,38 @@ module.exports = function(eleventyConfig) {
         return `
           <figure>
               <img
-                srcset="/images/${p1} 1000w,
+                src="/images/${p1}"
+                srcset="/images/small/${p1} 320w,
                         /images/medium/${p1} 640w,
-                        /images/small/${p1} 320w"
-                sizes="100vw"
+                        /images/${p1} 1000w"
+                sizes="(min-width: calc(1000px + 2*2.4rem)) 1000px, 100%"
                 alt="${p2}" loading="lazy">
               <figcaption>${p2}</figcaption>
           </figure>`
         });
+        content = content.replace(images, (match, p1, p2) => {
+          jimp.read(`src/images/${p1}`, function (err, image) {
+            if (err) throw err;
+            image.clone().resize(320, jimp.AUTO)
+            .quality(85)
+            .write(`_site/images/small/${p1}`)
+            image.clone().resize(640, jimp.AUTO)
+            .quality(85)
+            .write(`_site/images/medium/${p1}`)
+          })
+          return `
+            <figure>
+                <img
+                  src="/images/${p1}"
+                  srcset="/images/small/${p1} 320w,
+                          /images/medium/${p1} 640w,
+                          /images/${p1} 1000w"
+                  sizes="(min-width: calc(1000px + 2*2.4rem)) 1000px,
+                         100%"
+                  alt="${p2}" loading="lazy">
+                <figcaption>${p2}</figcaption>
+            </figure>`
+          });
     }
 
     return content;
