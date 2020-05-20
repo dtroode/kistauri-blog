@@ -31,6 +31,7 @@
     "date-fns": "^2.13.0",
     "eleventy-plugin-pwa": "^1.0.8",
     "html-minifier": "^4.0.0",
+    "jimp": "^0.12.1",
     "markdown-it": "^8.4.2",
     "slugify": "^1.4.0",
     "stylelint": "^13.0.0",
