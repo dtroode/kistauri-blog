@@ -81,7 +81,7 @@
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1300px) {
   :root {
     --side-padding: 10%;
   }
