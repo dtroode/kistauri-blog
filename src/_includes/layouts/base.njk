@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru">
   <head>
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2962ff">
@@ -8,21 +9,21 @@
     <meta name="robots" content="index,follow">
     <meta name="generator" content="Eleventy">
 
-    <title>{{ title or renderData.title or metadata.title }}</title>
+    <title>{{ pageTitle or title or renderData.title or metadata.title }}</title>
 
     <!--Twitter Card-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@{{metadata.twitter}}">
     <meta name="twitter:creator" content="@{{metadata.twitter}}">
     <meta name="twitter:url" content="{{metadata.url}}{{page.url}}">
-    <meta name="twitter:title" content="{{ title or renderData.title or metadata.title }}">
+    <meta name="twitter:title" content="{{ pageTitle or title or renderData.title or metadata.title }}">
     <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
     <meta name="twitter:image" content="{{ metadata.url }}{{ image or metadata.image }}">
 
     <!-- Facebook OpenGraph -->
     <meta property="og:url" content="{{metadata.url}}{{page.url}}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ title or renderData.title or metadata.title }}">
+    <meta property="og:title" content="{{ pageTitle or title or renderData.title or metadata.title }}">
     <meta property="og:image" content="{{ metadata.url }}{{ image or metadata.image }}">
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
     <meta property="og:site_name" content="{{metadata.title}}">
