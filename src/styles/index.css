@@ -114,6 +114,7 @@ body {
 
   background-color: var(--additional-bg);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 header,
@@ -256,7 +257,6 @@ ol,
 blockquote,
 table {
   font-size: 1rem;
-  letter-spacing: -0.017em;
 }
 
 h3,
@@ -267,12 +267,6 @@ blockquote,
 table td,
 figcaption {
   line-height: 1.5em;
-}
-
-p,
-ul,
-ol {
-  font-weight: 500;
 }
 
 p {

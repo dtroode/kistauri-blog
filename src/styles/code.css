@@ -14,6 +14,11 @@
   --orange: #ffbc5d;
 }
 
+pre,
+code {
+  line-height: 1.5rem;
+}
+
 .token.prolog,
 .token.doctype,
 .token.cdata,

@@ -17,16 +17,6 @@ section.main__sect--text h3 + p:not(:first-child) {
   margin-top: 0;
 }
 
-section.main__sect--text p,
-section.main__sect--text a,
-section.main__sect--text ul,
-section.main__sect--text ol,
-section.main__sect--text code,
-section.main__sect--text blockquote {
-  font-weight: 500;
-  line-height: 1.5em;
-}
-
 section.main__sect--text p {
   margin-top: 1rem;
 }
@@ -61,31 +51,30 @@ section.main__sect--text p.postlinks:first-of-type {
 section.main__sect--text p.postlinks * {
   margin-right: var(--fourth-padding);
 }
-
-section.main__sect--text p.postlinks span.postlinks__span--m015 {
+section.main__sect--text span.postlinks__span--m015 {
   margin-right: 0.15rem;
 }
 
-section.main__sect--text p.postlinks span.postlinks__span--inact {
+section.main__sect--text span.postlinks__span--inact {
   opacity: 0.25;
 }
 
-section.main__sect--text p.postlinks a.postlinks__a {
+section.main__sect--text a.postlinks__a {
   color: inherit;
 
   border-bottom: 1px solid var(--main-fg-25);
 }
 
-section.main__sect--text p.postlinks a.postlinks__a:hover,
-section.main__sect--text p.postlinks a.postlinks__a:visited:hover,
-section.main__sect--text p.postlinks a.postlinks__a:focus,
-section.main__sect--text p.postlinks a.postlinks__a:visited:focus {
+section.main__sect--text a.postlinks__a:hover,
+section.main__sect--text a.postlinks__a:visited:hover,
+section.main__sect--text a.postlinks__a:focus,
+section.main__sect--text a.postlinks__a:visited:focus {
   color: var(--accent-red);
 
   border-bottom: 1px solid var(--accent-red-25);
 }
 
-section.main__sect--text p.postlinks a.postlinks__a:visited {
+section.main__sect--text a.postlinks__a:visited {
   color: var(--main-fg);
 
   border-bottom: 1px solid var(--main-fg-25);
