@@ -26,6 +26,6 @@
   {
     "name": "РСС",
     "title": "РСС блога",
-    "url": "/blog/rss-subscribe"
+    "url": "/blog/all/rss-subscribe"
   }
 ]
