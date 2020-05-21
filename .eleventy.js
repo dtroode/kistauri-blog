@@ -7,7 +7,7 @@ const dateFns = require("date-fns");
 const ruLocale = require('date-fns/locale/ru');
 const pluginPWA = require("eleventy-plugin-pwa");
 const htmlmin = require("html-minifier");
-const jimp = require('jimp');
+const sharp = require('sharp')
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -18,55 +18,47 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addTransform("images", function(content, outputPath) {
     let blog = /blog\/all\/([a-zA-Z0-9_-]+)\/index\.html/i;
     let projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
-    let imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\>]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
-    let images = /\<img src\=\"\/images\/([^\>]*)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
+    let imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\>]*).(jpg|jpeg|png|gif)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
+    let images = /\<img src\=\"\/images\/([^\>]*).(jpg|jpeg|png|gif)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
+
+    function generateImage(url, extension, alt) {
+      const image = sharp(`src/images/${url}.${extension}`);
+      const smallImage = image.clone().resize({ width: 320 });
+      const mediumImage = image.clone().resize({ width: 640 });
+      image.clone().webp().toFile(`_site/images/${url}.webp`);
+      smallImage.clone().toFile(`_site/images/${url}-small.${extension}`);
+      smallImage.clone().webp({ quality: 80 }).toFile(`_site/images/${url}-small.webp`);
+      mediumImage.clone().toFile(`_site/images/${url}-medium.${extension}`);
+      mediumImage.clone().webp({ quality: 80 }).toFile(`_site/images/${url}-medium.webp`);
+
+      return `
+        <figure>
+          <picture>
+            <source
+              srcset="/images/${url}-small.webp 320w,
+                      /images/${url}-medium.webp 640w,
+                      /images/${url}.webp 1000w"
+              sizes="(min-width: calc(1000px + 2*2.4rem)) 1000px, 100%"
+              type="image/webp">
+            <img
+              src="/images/${url}"
+              srcset="/images/${url}-small.${extension} 320w,
+                      /images/${url}-medium.${extension} 640w,
+                      /images/${url}.${extension} 1000w"
+              sizes="(min-width: calc(1000px + 2*2.4rem)) 1000px, 100%"
+              alt="${alt}" loading="lazy">
+          </picture>
+          <figcaption>${alt}</figcaption>
+        </figure>`
+    }
 
     if (outputPath && (outputPath.match(blog) || outputPath.match(projects)) ) {
-      content = content.replace(imagesInParagraph, (match, p1, p2) => {
-        jimp.read(`src/images/${p1}`, function (err, image) {
-          if (err) throw err;
-          image.clone().resize(320, jimp.AUTO)
-          .quality(85)
-          .write(`_site/images/small/${p1}`)
-          image.clone().resize(640, jimp.AUTO)
-          .quality(85)
-          .write(`_site/images/medium/${p1}`)
-        })
-        return `
-          <figure>
-              <img
-                src="/images/${p1}"
-                srcset="/images/small/${p1} 320w,
-                        /images/medium/${p1} 640w,
-                        /images/${p1} 1000w"
-                sizes="(min-width: calc(1000px + 2*2.4rem)) 1000px, 100%"
-                alt="${p2}" loading="lazy">
-              <figcaption>${p2}</figcaption>
-          </figure>`
-        });
-        content = content.replace(images, (match, p1, p2) => {
-          jimp.read(`src/images/${p1}`, function (err, image) {
-            if (err) throw err;
-            image.clone().resize(320, jimp.AUTO)
-            .quality(85)
-            .write(`_site/images/small/${p1}`)
-            image.clone().resize(640, jimp.AUTO)
-            .quality(85)
-            .write(`_site/images/medium/${p1}`)
-          })
-          return `
-            <figure>
-                <img
-                  src="/images/${p1}"
-                  srcset="/images/small/${p1} 320w,
-                          /images/medium/${p1} 640w,
-                          /images/${p1} 1000w"
-                  sizes="(min-width: calc(1000px + 2*2.4rem)) 1000px,
-                         100%"
-                  alt="${p2}" loading="lazy">
-                <figcaption>${p2}</figcaption>
-            </figure>`
-          });
+      content = content.replace(imagesInParagraph, (match, p1, p2, p3) => {
+        return generateImage(p1, p2, p3);
+      });
+      content = content.replace(images, (match, p1, p2, p3) => {
+        return generateImage(p1, p2, p3);
+      });
     }
 
     return content;
