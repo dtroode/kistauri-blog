@@ -20,7 +20,9 @@ eleventyNavigation:
       {%- endif -%}
     {%- endfor -%}
   </p>
-  {{ content | safe }}
+  <article>
+    {{ content | safe }}
+  </article>
   {%- set previousPost = collections.blog | getPreviousCollectionItem(page) -%}
   {%- set nextPost = collections.blog | getNextCollectionItem(page) -%}
   <p class="postlinks">

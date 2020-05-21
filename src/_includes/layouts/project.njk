@@ -12,5 +12,7 @@ eleventyNavigation:
   <p class="postlinks">
     <time datetime="{{ page.date | htmlDateString }}" title="{{ page.date | readableDate }}">{{page.date | shortDate}}</time>
   </p>
-  {{ content | safe }}
+  <article>
+    {{ content | safe }}
+  </article>
 </section>
