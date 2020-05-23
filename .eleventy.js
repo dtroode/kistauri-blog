@@ -41,7 +41,7 @@ module.exports = function(eleventyConfig) {
               sizes="(min-width: calc(1000px + 2*2.4rem)) 1000px, 100%"
               type="image/webp">
             <img
-              src="/images/${url}"
+              src="/images/${url}.${extension}"
               srcset="/images/${url}-small.${extension} 320w,
                       /images/${url}-medium.${extension} 640w,
                       /images/${url}.${extension} 1000w"
