@@ -7,7 +7,7 @@ category: other
 tags: ["блог", "рсс"]
 ---
 
-_Ссылка на РСС: [davidkistauri.ru/feed/feed.xml](https://davidkistauri.ru/feed/feed.xml)_
+_Ссылка на РСС: [davidkistauri.ru/blog/rss.xml](https://davidkistauri.ru/blog/rss.xml)_
 
 У меня в блоге нет никаких крутых систем подписки, просто есть РСС-лента. РСС —
 крутая технология, которая выдает ссылку на один файл для читалки. Файл
@@ -29,7 +29,7 @@ _Ссылка на РСС: [davidkistauri.ru/feed/feed.xml](https://davidkistaur
 3. Вписываете ссылку на этот сайт
 
 > Некоторые читалки не умеют подгружать РСС по ссылке на сайт. Для них нужна
-> [прямая ссылка](https://davidkistauri.ru/feed/feed.xml)
+> [прямая ссылка](https://davidkistauri.ru/blog/rss.xml)
 
 В моем РСС есть не только статьи из блога, но и страницы проектов. Они оформлены
 в виде статей, поэтому тоже включены в подписку. Выходит новый проект — приходит

@@ -1,5 +1,5 @@
 ---
-permalink: feed/feed.xml
+permalink: blog/rss.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -7,8 +7,9 @@ eleventyExcludeFromCollections: true
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.feed.subtitle }}</subtitle>
   {% set absoluteUrl %}{{ metadata.feed.path | url | absoluteUrl(metadata.url) }}{% endset %}
-  <link href="{{ absoluteUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
+  <description>{{ metadata.blogDescription }}</description>
+  <link>{{ metadata.blogUrl }}</link>
+  <language>ru</language>
   <updated>{{ collections.blog | rssLastUpdatedDate }}</updated>
   <id>{{ metadata.feed.id }}</id>
   <author>

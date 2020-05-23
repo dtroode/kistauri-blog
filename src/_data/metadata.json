@@ -1,14 +1,19 @@
 {
   "title": "Давид Кистаури",
   "description": "Назови любое слово и я сделаю об этом сайт.",
+  "blogDescription": "Блог Давида Кистаури. Назови любое слово и я сделаю об этом сайт.",
   "url": "https://davidkistauri.ru",
+  "blogUrl": "https://davidkistauri.ru/blog",
   "feed": {
     "subtitle": "Назови любое слово и я сделаю об этом сайт.",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
+    "filename": "index.xml",
+    "path": "/blog/rss.xml",
     "id": "https://davidkistauri.ru"
   },
-  "author": "Давид Кистаури",
+  "author":  {
+    "name": "Давид Кистаури",
+    "email": "davidkis113@gmail.com"
+  },
   "twitter": "dtroode",
   "image": "/images/preview/og.jpg",
   "icon": "/images/icons/icon.png"
