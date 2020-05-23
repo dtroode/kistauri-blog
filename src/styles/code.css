@@ -19,6 +19,11 @@ code {
   line-height: 1.5rem;
 }
 
+mark {
+  display: inline-block;
+  background-color: var(--orange);
+}
+
 .token.prolog,
 .token.doctype,
 .token.cdata,
@@ -62,10 +67,6 @@ code {
 .token.comment,
 .token.triple-quoted-string {
   color: var(--comment);
-}
-
-mark {
-  background-color: var(--orange);
 }
 
 @media screen and (prefers-color-scheme: dark) {
