@@ -7,7 +7,7 @@ const dateFns = require("date-fns");
 const ruLocale = require('date-fns/locale/ru');
 const pluginPWA = require("eleventy-plugin-pwa");
 const htmlmin = require("html-minifier");
-const sharp = require('sharp')
+const sharp = require('sharp');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);

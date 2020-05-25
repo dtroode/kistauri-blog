@@ -4,11 +4,11 @@
     "items": [
       {
         "name": "Автоматическая темная тема для сайта",
-        "link": "/blog/auto-dark-mode/"
+        "link": "/blog/all/auto-dark-mode/"
       },
       {
         "name": "Слишком-код",
-        "link": "/blog/overcode/"
+        "link": "/blog/all/overcode/"
       }
     ]
   },
@@ -17,11 +17,11 @@
     "items": [
       {
         "name": "Обещание математической логики",
-        "link": "/blog/obeshal/"
+        "link": "/blog/all/obeshal/"
       },
       {
         "name": "Необходимые и достаточные условия",
-        "link": "/blog/math-conditions/"
+        "link": "/blog/all/math-conditions/"
       }
     ]
   },
@@ -30,15 +30,15 @@
     "items": [
       {
         "name": "Дизайн на рендерах и в жизни",
-        "link": "/blog/design-mockups/"
+        "link": "/blog/all/design-mockups/"
       },
       {
         "name": "Забудьте про гамбургер: горизонтальный скроллинг",
-        "link": "/blog/horizon/"
+        "link": "/blog/all/horizon/"
       },
       {
         "name": "Дизайнерские штуки и логика на моем сайте",
-        "link": "/blog/ya-u-mamy-designer/"
+        "link": "/blog/all/ya-u-mamy-designer/"
       }
     ]
   },
@@ -47,11 +47,11 @@
     "items": [
       {
         "name": "Необходимые и достаточные условия",
-        "link": "/blog/math-conditions/"
+        "link": "/blog/all/math-conditions/"
       },
       {
         "name": "Читаю сейчас",
-        "link": "/blog/read-2019-11/"
+        "link": "/blog/all/read-2019-11/"
       },
       {
         "name": "«Why you need to give Firefox a chance»",
