@@ -18,8 +18,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addTransform("images", function(content, outputPath) {
     let blog = /blog\/all\/([a-zA-Z0-9_-]+)\/index\.html/i;
     let projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
-    let imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\>]*).(jpg|jpeg|png|gif)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
-    let images = /\<img src\=\"\/images\/([^\>]*).(jpg|jpeg|png|gif)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
+    let imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
+    let images = /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
 
     function generateImage(url, extension, alt) {
       const image = sharp(`src/images/${url}.${extension}`);
