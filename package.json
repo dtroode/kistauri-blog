@@ -30,6 +30,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "date-fns": "^2.13.0",
     "eleventy-plugin-pwa": "^1.0.8",
+    "eleventy-plugin-sass": "^1.0.0",
     "html-minifier": "^4.0.0",
     "markdown-it": "^8.4.2",
     "sharp": "^0.25.3",

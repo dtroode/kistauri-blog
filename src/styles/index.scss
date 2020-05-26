@@ -1,4 +1,5 @@
 /* Root variables */
+
 :root {
   /* Main Background and Foreground colors */
   --main-bg: #fafafa;
@@ -24,7 +25,6 @@
   --additional-green-bg: #69f0ae;
   --additional-blue-bg: #448aff;
   --additional-yellow-bg: #ffd740;
-
   --additional-red-fg: #1c1c1c;
   --additional-green-fg: #1c1c1c;
   --additional-blue-fg: #1c1c1c;
@@ -70,7 +70,6 @@
     --additional-green-bg: #1c1c1c;
     --additional-blue-bg: #1c1c1c;
     --additional-yellow-bg: #1c1c1c;
-
     --additional-red-fg: #ff867f;
     --additional-green-fg: #9fffe0;
     --additional-blue-fg: #83b9ff;
@@ -95,13 +94,11 @@
 
 *::selection {
   color: var(--main-bg);
-
   background-color: var(--accent-red);
 }
 
 html {
   height: 100%;
-
   font-size: 16px;
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -109,9 +106,7 @@ html {
 
 body {
   margin: 0;
-
   color: var(--main-fg);
-
   background-color: var(--additional-bg);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: subpixel-antialiased;
@@ -136,29 +131,32 @@ footer > * {
   max-width: 1000px;
 }
 
-header nav.head__nav {
-  margin-bottom: var(--fourth-padding);
-}
+header {
+  nav.head__nav {
+    margin-bottom: var(--fourth-padding);
+  }
 
-header a.head__a {
-  margin-bottom: var(--fifth-padding);
-}
+  a.head__a {
+    margin-bottom: var(--fifth-padding);
+  }
 
-header h1.head__header {
-  display: block;
-  margin: 0 0 0 -2px;
+  h1 {
+    &.head__header {
+      display: block;
+      margin: 0 0 0 -2px;
+      font-weight: 700;
+      font-size: var(--header-size, 3.5rem);
+      word-break: break-word;
+    }
 
-  font-weight: 700;
-  font-size: var(--header-size, 3.5rem);
-  word-break: break-word;
-}
+    &.head__header--subhead {
+      --header-size: 2.25rem;
+    }
+  }
 
-header h1.head__header--subhead {
-  --header-size: 2.25rem;
-}
-
-header hr {
-  margin: var(--secondary-padding) 0 0 0;
+  hr {
+    margin: var(--secondary-padding) 0 0 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -177,37 +175,35 @@ footer hr {
   margin: var(--primary-padding) 0 var(--secondary-padding) 0;
 }
 
-main > section:last-of-type ul {
-  margin-bottom: 0;
-}
+main > section {
+  &:last-of-type ul {
+    margin-bottom: 0;
+  }
 
-main > section a:not(.a--secondary) {
-  border-bottom: 1px solid var(--accent-blue-25);
-}
+  a:not(.a--secondary) {
+    border-bottom: 1px solid var(--accent-blue-25);
 
-main > section a:not(.a--secondary):hover,
-main > section a:not(.a--secondary):focus {
-  color: var(--accent-red);
+    &:hover,
+    &:focus {
+      color: var(--accent-red);
+      border-bottom: 1px solid var(--accent-red-25);
+    }
 
-  border-bottom: 1px solid var(--accent-red-25);
-}
+    &:visited {
+      color: var(--accent-purple);
+      border-bottom: 1px solid var(--accent-purple-25);
 
-main > section a:not(.a--secondary):visited {
-  color: var(--accent-purple);
-
-  border-bottom: 1px solid var(--accent-purple-25);
-}
-
-main > section a:not(.a--secondary):visited:hover,
-main > section a:not(.a--secondary):visited:focus {
-  color: var(--accent-red);
-
-  border-bottom: 1px solid var(--accent-red-25);
+      &:hover,
+      &:focus {
+        color: var(--accent-red);
+        border-bottom: 1px solid var(--accent-red-25);
+      }
+    }
+  }
 }
 
 footer {
   color: var(--additional-fg);
-
   background-color: var(--additional-bg);
 }
 
@@ -232,20 +228,18 @@ h2 {
   margin-top: 0;
   margin-bottom: var(--third-padding);
   margin-left: -1px;
-
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.15em;
   letter-spacing: -0.022em;
-}
 
-h2 + p {
-  margin-top: var(--third-padding);
+  + p {
+    margin-top: var(--third-padding);
+  }
 }
 
 h3 {
   margin-bottom: 0;
-
   font-size: 1rem;
   letter-spacing: -0.017em;
 }
@@ -272,114 +266,102 @@ figcaption {
 p {
   margin-top: 0;
   margin-bottom: 0;
-}
 
-p:not(:first-child) {
-  margin-top: var(--third-padding);
-}
+  &:not(:first-child) {
+    margin-top: var(--third-padding);
+  }
 
-p a {
-  font-size: inherit;
+  a {
+    font-size: inherit;
+  }
 }
 
 a {
   flex: inherit;
-
   color: var(--accent-blue);
   text-decoration: none;
-
   transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
     border-bottom cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
-}
 
-a:hover,
-a:focus {
-  transition: none;
-}
+  &:hover,
+  &:focus {
+    transition: none;
+  }
 
-a:hover,
-a:active {
-  outline-width: 0;
-}
+  &:hover,
+  &:active {
+    outline-width: 0;
+  }
 
-a:focus {
-  outline: none;
-}
+  &:focus {
+    outline: none;
+  }
 
-a.a--primary,
-a.a--secondary {
-  display: inline-block;
-  margin-right: var(--fifth-padding);
-  padding: var(--fifth-padding) var(--fourth-padding);
+  &.a--primary,
+  &.a--secondary {
+    display: inline-block;
+    margin-right: var(--fifth-padding);
+    padding: var(--fifth-padding) var(--fourth-padding);
+    font-weight: 600;
+    line-height: 1.4em;
+    text-decoration: none;
+    border-radius: var(--fourth-padding);
+  }
 
-  font-weight: 600;
-  line-height: 1.4em;
-  text-decoration: none;
+  &.a--primary:hover,
+  &.a--secondary:hover,
+  &.a--primary:focus,
+  &.a--secondary:focus {
+    transition: none;
+  }
 
-  border-radius: var(--fourth-padding);
-}
+  &.a--primary:focus,
+  &.a--secondary:focus {
+    box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
+  }
 
-a.a--primary:hover,
-a.a--secondary:hover,
-a.a--primary:focus,
-a.a--secondary:focus {
-  transition: none;
-}
+  &.a--primary {
+    color: var(--main-bg);
+    background-color: var(--accent-blue);
+    transition: background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
+      box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
 
-a.a--primary:focus,
-a.a--secondary:focus {
-  box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
-}
+    &:hover {
+      color: var(--main-bg);
+      background-color: var(--accent-red);
+    }
+  }
 
-a.a--primary {
-  color: var(--main-bg);
+  &.a--secondary {
+    color: var(--accent-blue);
+    background-color: var(--additional-bg);
+    transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
+      box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
 
-  background-color: var(--accent-blue);
+    &:hover {
+      color: var(--accent-red);
+    }
 
-  transition: background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
-    box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
-}
+    &:visited {
+      color: var(--accent-blue);
 
-a.a--primary:hover {
-  color: var(--main-bg);
+      &:hover {
+        color: var(--accent-red);
+      }
+    }
+  }
 
-  background-color: var(--accent-red);
-}
+  &.a--active {
+    color: var(--main-bg);
+    background-color: var(--main-fg);
+    cursor: default;
+    pointer-events: none;
+  }
 
-a.a--secondary {
-  color: var(--accent-blue);
-
-  background-color: var(--additional-bg);
-
-  transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
-    box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
-}
-
-a.a--secondary:hover {
-  color: var(--accent-red);
-}
-
-a.a--secondary:visited {
-  color: var(--accent-blue);
-}
-
-a.a--secondary:visited:hover {
-  color: var(--accent-red);
-}
-
-a.a--active {
-  color: var(--main-bg);
-
-  background-color: var(--main-fg);
-  cursor: default;
-
-  pointer-events: none;
-}
-
-a.a--parent-active {
-  color: var(--contrast-blue);
-
-  background-color: var(--main-fg);
+  &.a--parent-active {
+    color: var(--contrast-blue);
+    background-color: var(--main-fg);
+  }
 }
 
 ul,
@@ -398,22 +380,23 @@ ol {
 
 ul li {
   list-style-type: none;
+
+  &::before {
+    display: inline-block;
+    width: var(--secondary-padding);
+    margin-left: calc(-1 * var(--secondary-padding));
+    content: "—";
+  }
 }
 
-ul li::before {
-  display: inline-block;
-  width: var(--secondary-padding);
-  margin-left: calc(-1 * var(--secondary-padding));
+li {
+  &.li--favourite::before {
+    content: "★";
+  }
 
-  content: "—";
-}
-
-li.li--favourite::before {
-  content: "★";
-}
-
-li:not(:last-child) {
-  margin-bottom: var(--fifth-padding);
+  &:not(:last-child) {
+    margin-bottom: var(--fifth-padding);
+  }
 }
 
 blockquote {
@@ -432,7 +415,6 @@ img {
 
 hr {
   height: 1px;
-
   background-color: var(--main-fg);
   border: 0;
   opacity: 0.125;
@@ -442,6 +424,7 @@ hr {
   img {
     filter: brightness(85%);
   }
+
   p,
   table,
   ul,
@@ -450,6 +433,7 @@ hr {
   figcaption {
     opacity: 0.85;
   }
+
   p *,
   table *,
   ul *,
@@ -458,6 +442,7 @@ hr {
   figcaption * {
     opacity: 1;
   }
+
   p img,
   table img,
   ul img,

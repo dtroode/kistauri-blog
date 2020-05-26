@@ -9,15 +9,14 @@ footer {
 
 figure {
   margin: 0;
-}
 
-figure a {
-  display: contents;
-}
+  a {
+    display: contents;
+  }
 
-figcaption {
-  margin-top: var(--fifth-padding);
-  margin-bottom: 0;
-
-  font-size: 0.8rem;
+  figcaption {
+    margin-top: var(--fifth-padding);
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
 }

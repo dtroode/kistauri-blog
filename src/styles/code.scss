@@ -1,0 +1,63 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Fira Code";
+  font-display: swap;
+  src: url("/fonts/FiraCode.woff2") format("woff2");
+}
+
+:root {
+  --code-fg:#000;
+  --punctuation:#777;
+  --comment:#aa3731;
+  --tag:#7a3e9d;
+  --string:#448c27;
+  --function:#325cc0;
+  --orange:#ffbc5d;
+}
+
+pre, code {
+  line-height: 1.5rem;
+}
+
+mark {
+  display: inline-block;
+  background-color: var(--orange);
+}
+
+.token {
+  &.prolog, &.doctype, &.cdata, &.punctuation {
+    color: var(--punctuation);
+  }
+
+  &.number {
+    color: var(--tag);
+  }
+
+  &.tag, &.property, &.function {
+    color: var(--function);
+  }
+
+  &.boolean, &.string, &.entity, &.url {
+    color: var(--string);
+  }
+
+  &.tag-id, &.selector, &.atrule-id, &.attr-value, &.keyword, &.control, &.directive, &.unit, &.statement, &.regex, &.atrule, &.placeholder, &.variable {
+    color: var(--code-fg);
+  }
+
+  &.comment, &.triple-quoted-string {
+    color: var(--comment);
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --code-fg:#cecece;
+    --punctuation:#708b8d;
+    --comment:#dfdf8e;
+    --tag:#71ade7;
+    --string:#95cb82;
+    --function:#cc8bc9;
+    --orange:#4d391c;
+  }
+}

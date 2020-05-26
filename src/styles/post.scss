@@ -1,0 +1,147 @@
+section.main__sect--text {
+  h2, h3, p, blockquote {
+    max-width: 700px;
+  }
+
+  h2 {
+    margin-top: 3rem;
+  }
+
+  h3 {
+    margin-top: 1rem;
+
+    + p:not(:first-child) {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+
+  ul, ol {
+    padding-left: var(--primary-padding);
+  }
+
+  ul li, ol li {
+    list-style-position: outside;
+  }
+
+  figure a {
+    border-bottom: 0;
+  }
+
+  blockquote p:first-child, hr + * {
+    margin-top: 0;
+  }
+
+  p.postlinks {
+    font-size: 0.8rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    * {
+      margin-right: var(--fourth-padding);
+    }
+  }
+
+  span {
+    &.postlinks__span--m015 {
+      margin-right: 0.15rem;
+    }
+
+    &.postlinks__span--inact {
+      opacity: 0.25;
+    }
+  }
+
+  a.postlinks__a {
+    color: inherit;
+    border-bottom: 1px solid var(--main-fg-25);
+
+    &:hover, &:visited:hover, &:focus {
+      color: var(--accent-red);
+      border-bottom: 1px solid var(--accent-red-25);
+    }
+
+    &:visited {
+      &:focus {
+        color: var(--accent-red);
+        border-bottom: 1px solid var(--accent-red-25);
+      }
+
+      color: var(--main-fg);
+      border-bottom: 1px solid var(--main-fg-25);
+    }
+  }
+
+  pre, code {
+    font-family: "Fira Code", monospace;
+    tab-size: 2;
+  }
+
+  pre {
+    box-sizing: border-box;
+    max-width: 700px;
+    margin-top: var(--third-padding);
+    margin-bottom: 0;
+    padding-left: var(--primary-padding);
+    overflow-x: auto;
+  }
+
+  code {
+    font-size: 1em;
+
+    span {
+      font-weight: unset;
+    }
+  }
+
+  table {
+    margin-top: var(--third-padding);
+    table-layout: fixed;
+    empty-cells: show;
+
+    th, td {
+      padding: 0 var(--third-padding) var(--fifth-padding) 0;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      line-height: 1.15em;
+      border-bottom: 1px solid var(--main-fg-25);
+    }
+  }
+
+  figure {
+    margin: 1rem 0 0 0;
+
+    a {
+      display: contents;
+    }
+  }
+
+  figcaption {
+    margin-top: var(--fifth-padding);
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+
+  a {
+    img {
+      transition: box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+    }
+
+    &:hover img, &:focus img {
+      box-shadow: 0 0 0 1px var(--accent-red);
+      transition: none;
+    }
+  }
+}
+
+nav.foot__nav--share a {
+  background: var(--main-bg);
+}

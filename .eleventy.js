@@ -8,28 +8,39 @@ const ruLocale = require('date-fns/locale/ru');
 const pluginPWA = require("eleventy-plugin-pwa");
 const htmlmin = require("html-minifier");
 const sharp = require('sharp');
+const pluginSass = require('eleventy-plugin-sass');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(pluginSass, {
+    "watch": ['src/**/*.{scss,sass}', '!node_modules/**']
+  });
 
   eleventyConfig.addTransform("images", function(content, outputPath) {
-    let blog = /blog\/all\/([a-zA-Z0-9_-]+)\/index\.html/i;
-    let projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
-    let imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
-    let images = /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
+    const blog = /blog\/all\/([a-zA-Z0-9_-]+)\/index\.html/i;
+    const projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
+    const imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
+    const images = /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
+    // Image sizes property for adaptive images
+    const sizes = "(max-width: 1000px) 100vw, 1000px"
 
     function generateImage(url, extension, alt) {
+      // Get image
       const image = sharp(`src/images/${url}.${extension}`);
+      // Resize image to 320px and 640px
       const smallImage = image.clone().resize({ width: 320 });
       const mediumImage = image.clone().resize({ width: 640 });
+      // Generate a webp version of a large image
       image.clone().webp().toFile(`_site/images/${url}.webp`);
+      // Generate a small original and webp image
       smallImage.clone().toFile(`_site/images/${url}-small.${extension}`);
-      smallImage.clone().webp({ quality: 80 }).toFile(`_site/images/${url}-small.webp`);
+      smallImage.clone().webp().toFile(`_site/images/${url}-small.webp`);
+      // Generate a medium original and webp image
       mediumImage.clone().toFile(`_site/images/${url}-medium.${extension}`);
-      mediumImage.clone().webp({ quality: 80 }).toFile(`_site/images/${url}-medium.webp`);
+      mediumImage.clone().webp().toFile(`_site/images/${url}-medium.webp`);
 
       return `
         <figure>
@@ -38,14 +49,18 @@ module.exports = function(eleventyConfig) {
               srcset="/images/${url}-small.webp 320w,
                       /images/${url}-medium.webp 640w,
                       /images/${url}.webp 1000w"
-              sizes="(min-width: calc(1000px + 2*2.4rem)) 1000px, 100%"
+              sizes="${sizes}"
               type="image/webp">
             <img
               src="/images/${url}.${extension}"
+              data-src="auto"
               srcset="/images/${url}-small.${extension} 320w,
                       /images/${url}-medium.${extension} 640w,
                       /images/${url}.${extension} 1000w"
-              sizes="(min-width: calc(1000px + 2*2.4rem)) 1000px, 100%"
+              data-srcset="/images/${url}-small.${extension} 320w,
+                          /images/${url}-medium.${extension} 640w,
+                          /images/${url}.${extension} 1000w"
+              sizes="${sizes}"
               alt="${alt}" loading="lazy">
           </picture>
           <figcaption>${alt}</figcaption>
@@ -116,7 +131,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("tagList", require("./src/_11ty/getTagList.js"));
 
   eleventyConfig.addPassthroughCopy("src/images");
-  eleventyConfig.addPassthroughCopy("src/styles");
   eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("src/manifest.webmanifest");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
