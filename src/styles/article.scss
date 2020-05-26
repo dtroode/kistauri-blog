@@ -36,6 +36,9 @@
     margin-bottom: var(--third-padding);
 
     border-radius: var(--fifth-padding);
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   h2 {

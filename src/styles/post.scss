@@ -31,6 +31,15 @@ section.main__sect--text {
     border-bottom: 0;
   }
 
+  blockquote {
+    margin-top: var(--third-padding);
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: var(--primary-padding);
+    box-sizing: border-box;
+  }
+
   blockquote p:first-child, hr + * {
     margin-top: 0;
   }
@@ -105,6 +114,8 @@ section.main__sect--text {
     table-layout: fixed;
     empty-cells: show;
 
+    font-size: 1rem;
+
     th, td {
       padding: 0 var(--third-padding) var(--fifth-padding) 0;
 
@@ -113,9 +124,13 @@ section.main__sect--text {
     }
 
     th {
-      line-height: 1.15em;
+      line-height: 1.15rem;
 
       border-bottom: 1px solid var(--main-fg-25);
+    }
+
+    td {
+      line-height: 1.5rem;
     }
   }
 
@@ -132,6 +147,13 @@ section.main__sect--text {
     margin-bottom: 0;
 
     font-size: 0.8rem;
+    line-height: 1.5em;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   a {

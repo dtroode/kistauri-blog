@@ -58,6 +58,7 @@
     /* Accent colors */
     --accent-red: #ff5131;
     --accent-blue: #768fff;
+    --accent-blue-text: #768fff;
     --accent-purple: #9d46ff;
 
     /* Half colors */
@@ -128,12 +129,10 @@ footer {
   padding-top: var(--secondary-padding);
   padding-right: var(--side-padding);
   padding-left: var(--side-padding);
-}
 
-header > *,
-main > *,
-footer > * {
-  max-width: 1000px;
+  > * {
+    max-width: 1000px;
+  }
 }
 
 header {
@@ -143,21 +142,6 @@ header {
 
   a.head__a {
     margin-bottom: var(--fifth-padding);
-  }
-
-  h1 {
-    &.head__header {
-      display: block;
-      margin: 0 0 0 -2px;
-
-      font-weight: 700;
-      font-size: var(--header-size, 3.5rem);
-      word-break: break-word;
-    }
-
-    &.head__header--subhead {
-      --header-size: 2.25rem;
-    }
   }
 
   hr {
@@ -182,7 +166,7 @@ footer hr {
 }
 
 main > section {
-  &:last-of-type ul {
+  &:last-child ul {
     margin-bottom: 0;
   }
 
@@ -221,17 +205,19 @@ svg.foot__icon {
   margin-right: var(--fifth-padding);
 }
 
-h2.foot__header {
-  margin-bottom: var(--fourth-padding);
-}
-
-a.foot__a {
-  margin-top: var(--fifth-padding);
-}
-
 h1 {
   line-height: 1.15em;
   letter-spacing: -0.022em;
+  display: block;
+  margin: 0 0 0 -2px;
+
+  font-weight: 700;
+  font-size: var(--header-size, 3.5rem);
+  word-break: break-word;
+
+  &.head__header--subhead {
+    --header-size: 2.25rem;
+  }
 }
 
 h2 {
@@ -244,67 +230,40 @@ h2 {
   line-height: 1.15em;
   letter-spacing: -0.022em;
 
-  + p {
-    margin-top: var(--third-padding);
+  &.foot__header {
+    margin-bottom: var(--fourth-padding);
   }
 }
 
 h3 {
   margin-bottom: 0;
-
-  font-size: 1rem;
-  letter-spacing: -0.017em;
-}
-
-p,
-a,
-ul,
-ol,
-blockquote,
-table {
-  font-size: 1rem;
 }
 
 h3,
 p,
 ul,
-ol,
-blockquote,
-table td,
-figcaption {
+ol {
+  font-size: 1rem;
   line-height: 1.5em;
 }
 
 p {
-  margin-top: 0;
+  margin-top: var(--third-padding);
   margin-bottom: 0;
-
-  &:not(:first-child) {
-    margin-top: var(--third-padding);
-  }
-
-  a {
-    font-size: inherit;
-  }
 }
 
 a {
-  flex: inherit;
-
   color: var(--accent-blue);
   text-decoration: none;
+  line-height: 1.5em;
 
-  transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
-    border-bottom cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+  transition-timing-function: cubic-bezier(0.18, 0.45, 0.35, 0.99);
+  transition-duration: 0.38s;
+  transition-property: color, border-bottom;
 
   &:hover,
   &:focus {
     transition: none;
-  }
-
-  &:hover,
-  &:active {
-    outline-width: 0;
   }
 
   &:focus {
@@ -318,22 +277,12 @@ a {
     padding: var(--fifth-padding) var(--fourth-padding);
 
     font-weight: 600;
-    line-height: 1.4em;
-    text-decoration: none;
 
     border-radius: var(--fourth-padding);
-  }
 
-  &.a--primary:hover,
-  &.a--secondary:hover,
-  &.a--primary:focus,
-  &.a--secondary:focus {
-    transition: none;
-  }
-
-  &.a--primary:focus,
-  &.a--secondary:focus {
-    box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
+    &:focus {
+      box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
+    }
   }
 
   &.a--primary {
@@ -341,8 +290,7 @@ a {
 
     background-color: var(--accent-blue);
 
-    transition: background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
-      box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+    transition-property: backgrkound-color, box-shadow;
 
     &:hover {
       color: var(--main-bg);
@@ -356,8 +304,7 @@ a {
 
     background-color: var(--additional-bg);
 
-    transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
-      box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
+    transition-property: color, box-shadow;
 
     &:hover {
       color: var(--accent-red);
@@ -386,11 +333,14 @@ a {
 
     background-color: var(--main-fg);
   }
+
+  &.foot__a {
+    margin-top: var(--fifth-padding);
+  }
 }
 
 ul,
-ol,
-blockquote {
+ol {
   box-sizing: border-box;
 }
 
@@ -415,27 +365,12 @@ ul li {
 }
 
 li {
-
   &:not(:last-child) {
     margin-bottom: var(--fifth-padding);
   }
   &.li--favourite::before {
     content: "★";
   }
-}
-
-blockquote {
-  margin-top: var(--third-padding);
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding-left: var(--primary-padding);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 hr {
