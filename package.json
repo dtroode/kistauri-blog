@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Код моего сайта портфолио-блога.",
   "scripts": {
-    "lint": "stylelint src/styles/*.css",
+    "lint": "stylelint src/styles/*.scss",
     "build": "npm run lint && eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",

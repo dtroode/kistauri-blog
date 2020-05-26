@@ -94,11 +94,13 @@
 
 *::selection {
   color: var(--main-bg);
+
   background-color: var(--accent-red);
 }
 
 html {
   height: 100%;
+
   font-size: 16px;
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -106,7 +108,9 @@ html {
 
 body {
   margin: 0;
+
   color: var(--main-fg);
+
   background-color: var(--additional-bg);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: subpixel-antialiased;
@@ -144,6 +148,7 @@ header {
     &.head__header {
       display: block;
       margin: 0 0 0 -2px;
+
       font-weight: 700;
       font-size: var(--header-size, 3.5rem);
       word-break: break-word;
@@ -186,16 +191,19 @@ main > section {
     &:hover,
     &:focus {
       color: var(--accent-red);
+
       border-bottom: 1px solid var(--accent-red-25);
     }
 
     &:visited {
       color: var(--accent-purple);
+
       border-bottom: 1px solid var(--accent-purple-25);
 
       &:hover,
       &:focus {
         color: var(--accent-red);
+
         border-bottom: 1px solid var(--accent-red-25);
       }
     }
@@ -204,6 +212,7 @@ main > section {
 
 footer {
   color: var(--additional-fg);
+
   background-color: var(--additional-bg);
 }
 
@@ -228,6 +237,7 @@ h2 {
   margin-top: 0;
   margin-bottom: var(--third-padding);
   margin-left: -1px;
+
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.15em;
@@ -240,6 +250,7 @@ h2 {
 
 h3 {
   margin-bottom: 0;
+
   font-size: 1rem;
   letter-spacing: -0.017em;
 }
@@ -278,8 +289,10 @@ p {
 
 a {
   flex: inherit;
+
   color: var(--accent-blue);
   text-decoration: none;
+
   transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
     border-bottom cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
 
@@ -302,9 +315,11 @@ a {
     display: inline-block;
     margin-right: var(--fifth-padding);
     padding: var(--fifth-padding) var(--fourth-padding);
+
     font-weight: 600;
     line-height: 1.4em;
     text-decoration: none;
+
     border-radius: var(--fourth-padding);
   }
 
@@ -322,19 +337,24 @@ a {
 
   &.a--primary {
     color: var(--main-bg);
+
     background-color: var(--accent-blue);
+
     transition: background-color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
       box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
 
     &:hover {
       color: var(--main-bg);
+
       background-color: var(--accent-red);
     }
   }
 
   &.a--secondary {
     color: var(--accent-blue);
+
     background-color: var(--additional-bg);
+
     transition: color cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s,
       box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
 
@@ -353,13 +373,16 @@ a {
 
   &.a--active {
     color: var(--main-bg);
+
     background-color: var(--main-fg);
     cursor: default;
+
     pointer-events: none;
   }
 
   &.a--parent-active {
     color: var(--contrast-blue);
+
     background-color: var(--main-fg);
   }
 }
@@ -385,17 +408,18 @@ ul li {
     display: inline-block;
     width: var(--secondary-padding);
     margin-left: calc(-1 * var(--secondary-padding));
+
     content: "—";
   }
 }
 
 li {
-  &.li--favourite::before {
-    content: "★";
-  }
 
   &:not(:last-child) {
     margin-bottom: var(--fifth-padding);
+  }
+  &.li--favourite::before {
+    content: "★";
   }
 }
 
@@ -415,6 +439,7 @@ img {
 
 hr {
   height: 1px;
+
   background-color: var(--main-fg);
   border: 0;
   opacity: 0.125;
