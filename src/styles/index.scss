@@ -245,7 +245,7 @@ ul,
 ol {
   font-size: 1rem;
   line-height: 1.5em;
-  font-weight: 500;
+  letter-spacing: -0.011em;
 }
 
 p {
@@ -277,7 +277,8 @@ a {
     margin-right: var(--fifth-padding);
     padding: var(--fifth-padding) var(--fourth-padding);
 
-    font-weight: 500;
+    font-family: 'Inter SemiBold';
+    font-weight: 600;
 
     border-radius: var(--fourth-padding);
 
