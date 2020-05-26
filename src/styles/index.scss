@@ -12,6 +12,7 @@
   /* Accent colors */
   --accent-red: #d50000;
   --accent-blue: #2962ff;
+  --accent-blue-text: #0039cb;
   --accent-purple: #6200ea;
 
   /* Half colors */
@@ -351,7 +352,7 @@ a {
   }
 
   &.a--secondary {
-    color: var(--accent-blue);
+    color: var(--accent-blue-text);
 
     background-color: var(--additional-bg);
 
@@ -363,7 +364,7 @@ a {
     }
 
     &:visited {
-      color: var(--accent-blue);
+      color: var(--accent-blue-text);
 
       &:hover {
         color: var(--accent-red);
@@ -450,30 +451,13 @@ hr {
     filter: brightness(85%);
   }
 
-  p,
-  table,
-  ul,
-  ol,
-  blockquote,
-  figcaption {
+  p, table, ul, ol, blockquote, figcaption {
     opacity: 0.85;
-  }
-
-  p *,
-  table *,
-  ul *,
-  ol *,
-  blockquote *,
-  figcaption * {
-    opacity: 1;
-  }
-
-  p img,
-  table img,
-  ul img,
-  ol img,
-  blockquote img,
-  figcaption img {
-    filter: brightness(100%);
+    * {
+      opacity: 1;
+    }
+    img {
+      filter: brightness(100%);
+    }
   }
 }
