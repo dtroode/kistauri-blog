@@ -29,6 +29,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "date-fns": "^2.13.0",
+    "eleventy-plugin-json-feed": "0.0.6",
     "eleventy-plugin-pwa": "^1.0.8",
     "eleventy-plugin-sass": "^1.0.0",
     "html-minifier": "^4.0.0",

@@ -29,8 +29,8 @@
   },
   {
     "id": "rss",
-    "name": "РСС",
-    "title": "РСС блога",
+    "name": "Блог",
+    "title": "RSS или JSON Feed блога",
     "url": "/blog/all/rss-subscribe"
   }
 ]

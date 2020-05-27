@@ -8,7 +8,8 @@
     "subtitle": "Назови любое слово и я сделаю об этом сайт.",
     "filename": "index.xml",
     "path": "/blog/rss.xml",
-    "id": "https://davidkistauri.ru"
+    "id": "https://davidkistauri.ru",
+    "icon": "https://davidkistauri.ru/images/icons/icon-48x48.png"
   },
   "author":  {
     "name": "Давид Кистаури",

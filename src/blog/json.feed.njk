@@ -1,0 +1,15 @@
+---
+permalink: "blog/feed.json"
+metadata:
+  title: "Давид Кистаури"
+  home_page_url: "https://davidkistauri.ru/blog"
+  description: "Назови любое слово и я сделаю об этом сайт."
+  feed_url: "https://davidkistauri.ru/blog/feed.json"
+  icon: "https://davidkistauri.ru/images/icons/icon.png"
+  favicon: "https://davidkistauri.ru/images/icons/icon-48x48.png"
+  author:
+    name: "Давид Кистаури"
+    url: "https://davidkistauri.ru"
+  expired: true
+---
+{% jsonFeed collections.blog, metadata, 100 %}
