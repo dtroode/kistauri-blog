@@ -31,7 +31,7 @@ module.exports = function(eleventyConfig) {
     const imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
     const images = /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
     // Image sizes property for adaptive images
-    const sizes = "(max-width: 1000px) 100vw, 1000px"
+    const sizes = "(max-width: calc(1000px + 2 * 2.4rem)) calc(100vw - 2 * 2.4rem), 1000px"
 
     function generateImage(url, extension, alt) {
       // Get image
