@@ -262,6 +262,8 @@ a {
   transition-duration: 0.38s;
   transition-property: color, border-bottom;
 
+  &.a--primary:hover,
+  &.a--secondary:hover,
   &:hover,
   &:focus {
     transition: none;
@@ -292,7 +294,7 @@ a {
 
     background-color: var(--accent-blue);
 
-    transition-property: backgrkound-color, box-shadow;
+    transition-property: background-color, box-shadow;
 
     &:hover {
       color: var(--main-bg);
