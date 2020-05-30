@@ -3,6 +3,14 @@
     "title": "Программирование",
     "items": [
       {
+        "name": "Выбирайте правильные инструменты",
+        "link": "/blog/all/choose-right-tools/"
+      },
+      {
+        "name": "Y-комбинатор",
+        "link": "/blog/all/y-combinator/"
+      },
+      {
         "name": "Автоматическая темная тема для сайта",
         "link": "/blog/all/auto-dark-mode/"
       },
