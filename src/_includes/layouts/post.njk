@@ -27,7 +27,7 @@ eleventyNavigation:
   <hr>
   <h3>Читайте еще</h3>
   <ul>
-    {% for item in theme_posts[category].items %}
+    {% for item in theme_notes[category].items %}
       {% if item.name !== title %}
         <li><a href="{{ item.link }}">{{ item.name }}</a></li>
       {% endif %}
