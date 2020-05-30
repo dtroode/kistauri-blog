@@ -24,6 +24,15 @@ eleventyNavigation:
   <article>
     {{ content | safe }}
   </article>
+  <hr>
+  <h3>Читайте еще</h3>
+  <ul>
+    {% for item in theme_posts[category].items %}
+      {% if item.name !== title %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   {%- set previousPost = collections.blog | getPreviousCollectionItem(page) -%}
   {%- set nextPost = collections.blog | getNextCollectionItem(page) -%}
   <p class="postlinks">
