@@ -28,7 +28,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addTransform("images", function(content, outputPath) {
     const blog = /blog\/all\/([a-zA-Z0-9_-]+)\/index\.html/i;
     const projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
-    const imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
+    const imagesInParagraph = 
+    /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
     const images = /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
     // Image sizes property for adaptive images
     const sizes = "(max-width: calc(1000px + 2 * 2.4rem)) calc(100vw - 2 * 2.4rem), 1000px"
