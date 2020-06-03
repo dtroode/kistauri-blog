@@ -103,3 +103,7 @@ nav.foot__nav--share a.foot__a {
 h2.foot__header:nth-of-type(2) {
   margin-top: var(--secondary-padding);
 }
+
+.card ~ a.a--secondary {
+  margin-bottom: var(--fifth-padding);
+}
