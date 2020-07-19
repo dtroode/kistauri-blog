@@ -10,10 +10,10 @@ eleventyNavigation:
 <link rel="preload" href="/fonts/FiraCode.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/styles/post.css' | url }}">
 <section class="main__sect--text">
-  <p class="postlinks">
-    <time datetime="{{ page.date | htmlDateString }}" title="{{ page.date | readableDate }}">{{page.date | shortDate}}</time>
-  </p>
   <article>
     {{ content | safe }}
   </article>
+  <p class="postlinks">
+    <time datetime="{{ page.date | htmlDateString }}" title="{{ page.date | readableDate }}">{{page.date | shortDate}}</time>
+  </p>
 </section>

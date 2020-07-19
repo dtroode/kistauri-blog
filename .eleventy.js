@@ -119,7 +119,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("shortDate", dateObj => {
     return dateFns.format(
       dateObj,
-      'd MMM yyyy',
+      'd MMMM yyyy',
       {locale: ruLocale}
     )
   })

@@ -16,7 +16,12 @@ section.main__sect--text {
   }
 
   p {
-    margin-top: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
   }
 
   blockquote, ul, ol {
@@ -50,10 +55,6 @@ section.main__sect--text {
 
   p.postlinks {
     font-size: 0.8rem;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
 
     * {
       margin-right: var(--fourth-padding);
