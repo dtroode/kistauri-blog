@@ -83,6 +83,9 @@
 }
 
 @media screen and (min-width: 1300px) {
+  header img {
+    margin-left: calc(-1 * (1.5rem + 3 * var(--fifth-padding)));
+  }
   :root {
     --side-padding: 10%;
   }
@@ -113,22 +116,22 @@ body {
 
   color: var(--main-fg);
 
-  background-color: var(--additional-bg);
+  background-color: var(--main-bg);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 header,
 main {
-  background-color: var(--main-bg);
+  padding-top: var(--secondary-padding);
 }
 
 header,
 main,
 footer {
-  padding-top: var(--secondary-padding);
   padding-right: var(--side-padding);
   padding-left: var(--side-padding);
+  background-color: var(--main-bg);
 
   > * {
     max-width: 1000px;
@@ -137,11 +140,33 @@ footer {
 
 header {
   nav.head__nav {
+    display: inline-block;
+    position: relative;
     margin-bottom: var(--fourth-padding);
+
+    a:first-child::before {
+      content: '';
+      position: absolute;
+      height: calc(1.5rem + 2 * var(--fifth-padding));
+      width: calc(1.5rem + 2 * var(--fifth-padding));
+      top: 0;
+      left: calc(-1 * (1.5rem + 3* var(--fifth-padding)));
+    }
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: var(--fifth-padding);
   }
 
   a.head__a {
     margin-bottom: var(--fifth-padding);
+  }
+  
+  img {
+    height: calc(1.5rem + 2 * var(--fifth-padding));
+    border-radius: 50%;
   }
 
   hr {
@@ -150,12 +175,25 @@ header {
 }
 
 @media screen and (max-width: 700px) {
-  header h1.head__header {
+  header {
     --header-size: 2.25rem;
+
+    nav.head__nav a:first-child::before {
+      content: '';
+      position: absolute;
+      height: calc(1.5rem + 2 * var(--fifth-padding));
+      width: calc(1.5rem + 2 * var(--fifth-padding));
+      top: calc(-1 * (1.5rem + 3* var(--fifth-padding)));
+      left: 0;
+    }
+    
+    img {
+      display: block;
+      margin-bottom: var(--fifth-padding);
+    }
   }
 }
 
-main,
 footer {
   padding-bottom: var(--primary-padding);
 }
@@ -195,12 +233,6 @@ main > section {
   }
 }
 
-footer {
-  color: var(--additional-fg);
-
-  background-color: var(--additional-bg);
-}
-
 svg.foot__icon {
   margin-right: var(--fifth-padding);
 }
@@ -215,7 +247,7 @@ h1 {
   font-size: var(--header-size, 3.5rem);
   word-break: break-word;
 
-  &.head__header--subhead {
+  &.head__header--subsection {
     --header-size: 2.25rem;
   }
 }
