@@ -131,6 +131,7 @@ main,
 footer {
   padding-right: var(--side-padding);
   padding-left: var(--side-padding);
+
   background-color: var(--main-bg);
 
   > * {
@@ -140,24 +141,28 @@ footer {
 
 header {
   nav.head__nav {
-    display: inline-block;
     position: relative;
+
+    display: inline-block;
     margin-bottom: var(--fourth-padding);
 
     a:first-child::before {
-      content: '';
       position: absolute;
-      height: calc(1.5rem + 2 * var(--fifth-padding));
-      width: calc(1.5rem + 2 * var(--fifth-padding));
       top: 0;
       left: calc(-1 * (1.5rem + 3* var(--fifth-padding)));
+
+      width: calc(1.5rem + 2 * var(--fifth-padding));
+      height: calc(1.5rem + 2 * var(--fifth-padding));
+
+      content: '';
     }
   }
 
   img {
     display: inline-block;
-    vertical-align: top;
     margin-right: var(--fifth-padding);
+
+    vertical-align: top;
   }
 
   a.head__a {
@@ -166,6 +171,7 @@ header {
   
   img {
     height: calc(1.5rem + 2 * var(--fifth-padding));
+
     border-radius: 50%;
   }
 
@@ -176,21 +182,25 @@ header {
 
 @media screen and (max-width: 700px) {
   header {
-    --header-size: 2.25rem;
 
     nav.head__nav a:first-child::before {
-      content: '';
       position: absolute;
-      height: calc(1.5rem + 2 * var(--fifth-padding));
-      width: calc(1.5rem + 2 * var(--fifth-padding));
       top: calc(-1 * (1.5rem + 3* var(--fifth-padding)));
       left: 0;
+
+      width: calc(1.5rem + 2 * var(--fifth-padding));
+      height: calc(1.5rem + 2 * var(--fifth-padding));
+
+      border-radius: 50%;
+
+      content: '';
     }
     
     img {
       display: block;
       margin-bottom: var(--fifth-padding);
     }
+    --header-size: 2.25rem;
   }
 }
 
@@ -238,13 +248,13 @@ svg.foot__icon {
 }
 
 h1 {
-  line-height: 1.15em;
-  letter-spacing: -0.022em;
   display: block;
   margin: 0 0 0 -2px;
 
   font-weight: 700;
   font-size: var(--header-size, 3.5rem);
+  line-height: 1.15em;
+  letter-spacing: -0.022em;
   word-break: break-word;
 
   &.head__header--subsection {
@@ -287,12 +297,16 @@ p {
 
 a {
   color: var(--accent-blue);
-  text-decoration: none;
   line-height: 1.5em;
+  text-decoration: none;
 
   transition-timing-function: cubic-bezier(0.18, 0.45, 0.35, 0.99);
   transition-duration: 0.38s;
   transition-property: color, border-bottom;
+
+  &:focus {
+    outline: none;
+  }
 
   &.a--primary:hover,
   &.a--secondary:hover,
@@ -301,18 +315,15 @@ a {
     transition: none;
   }
 
-  &:focus {
-    outline: none;
-  }
-
   &.a--primary,
   &.a--secondary {
     display: inline-block;
     margin-right: var(--fifth-padding);
     padding: var(--fifth-padding) var(--fourth-padding);
 
-    font-family: 'Inter SemiBold', Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
+
+    font-family: 'Inter SemiBold', Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     border-radius: var(--fourth-padding);
 
