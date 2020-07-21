@@ -93,7 +93,7 @@
 
 @media screen and (max-width: 700px) {
   :root {
-    --side-padding: 1.5rem;
+    --side-padding: 1rem;
   }
 }
 
@@ -182,24 +182,11 @@ header {
 
 @media screen and (max-width: 700px) {
   header {
-
-    nav.head__nav a:first-child::before {
-      position: absolute;
-      top: calc(-1 * (1.5rem + 3* var(--fifth-padding)));
-      left: 0;
-
-      width: calc(1.5rem + 2 * var(--fifth-padding));
-      height: calc(1.5rem + 2 * var(--fifth-padding));
-
-      border-radius: 50%;
-
-      content: '';
-    }
     
     img {
-      display: block;
-      margin-bottom: var(--fifth-padding);
+      display: none;
     }
+
     --header-size: 2.25rem;
   }
 }
