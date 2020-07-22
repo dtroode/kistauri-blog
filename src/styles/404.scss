@@ -1,30 +1,18 @@
 body {
-  background-color: var(--main-fg-25);
   filter: grayscale(1);
+  background-color: var(--main-fg-25);
 }
 
-footer {
+header, main, footer {
   background-color: transparent;
 }
 
-figure {
-  margin: 0;
+a {
+  display: contents;
+}
 
-  a {
-    display: contents;
-  }
-
-  figcaption {
-    margin-top: var(--fifth-padding);
-    margin-bottom: 0;
-
-    font-size: 0.8rem;
-    line-height: 1.5em;
-  }
-
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
