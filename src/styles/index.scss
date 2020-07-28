@@ -208,24 +208,17 @@ main > section {
   a:not(.a--secondary) {
     border-bottom: 1px solid var(--accent-blue-25);
 
+    &:visited {
+      color: var(--accent-purple);
+
+      border-bottom: 1px solid var(--accent-purple-25);
+    }
+
     &:hover,
     &:focus {
       color: var(--accent-red);
 
       border-bottom: 1px solid var(--accent-red-25);
-    }
-
-    &:visited {
-      color: var(--accent-purple);
-
-      border-bottom: 1px solid var(--accent-purple-25);
-
-      &:hover,
-      &:focus {
-        color: var(--accent-red);
-
-        border-bottom: 1px solid var(--accent-red-25);
-      }
     }
   }
 }
@@ -340,16 +333,12 @@ a {
 
     transition-property: color, box-shadow;
 
-    &:hover {
-      color: var(--accent-red);
-    }
-
     &:visited {
       color: var(--accent-blue-text);
+    }
 
-      &:hover {
-        color: var(--accent-red);
-      }
+    &:hover {
+      color: var(--accent-red);
     }
   }
 

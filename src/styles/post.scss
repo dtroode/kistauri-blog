@@ -72,22 +72,17 @@ section.main__sect--text {
 
     border-bottom: 1px solid var(--main-fg-25);
 
-    &:hover, &:visited:hover, &:focus {
-      color: var(--accent-red);
-
-      border-bottom: 1px solid var(--accent-red-25);
-    }
-
     &:visited {
 
       color: var(--main-fg);
 
       border-bottom: 1px solid var(--main-fg-25);
-      &:focus {
-        color: var(--accent-red);
+    }
 
-        border-bottom: 1px solid var(--accent-red-25);
-      }
+    &:hover, &:focus {
+      color: var(--accent-red);
+
+      border-bottom: 1px solid var(--accent-red-25);
     }
   }
 
