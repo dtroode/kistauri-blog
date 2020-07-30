@@ -24,6 +24,10 @@
     "title": "Математика",
     "items": [
       {
+        "name": "Математическая нотация степени",
+        "link": "/blog/all/math-notation/"
+      },
+      {
         "name": "Обещание математической логики",
         "link": "/blog/all/obeshal/"
       },
