@@ -9,6 +9,7 @@ eleventyNavigation:
 
 <link rel="preload" href="/fonts/FiraCode.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/styles/post.css' | url }}">
+<h1 class="main__header main__header--{{pageClass}} main__header--subsection">{{ title }}</h1>
 <section class="main__sect--text">
   <article>
     {{ content | safe }}

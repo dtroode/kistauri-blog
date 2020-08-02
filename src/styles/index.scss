@@ -195,14 +195,16 @@ footer hr {
 }
 
 main {
-  padding-top: var(--third-padding);
-
   & > section {
     &:last-child ul {
       margin-bottom: 0;
     }
+  }
+}
 
-    a:not(.a--secondary) {
+main {
+  &.main--post, &.main--portfolio {
+    a {
       border-bottom: 1px solid var(--accent-blue-25);
 
       &:visited {
@@ -227,7 +229,7 @@ svg.foot__icon {
 
 h1 {
   display: block;
-  margin: 0 0 0 -2px;
+  margin: 0 0 var(--third-padding) -2px;
 
   font-weight: 700;
   font-size: var(--header-size, 2.8125rem);
@@ -235,7 +237,7 @@ h1 {
   letter-spacing: -0.022em;
   word-break: break-word;
 
-  &.head__header--subsection {
+  &.main__header--subsection {
     --header-size: 2.25rem;
   }
 }

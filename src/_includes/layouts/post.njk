@@ -11,6 +11,7 @@ eleventyNavigation:
 <link rel="stylesheet" href="{{ '/styles/post.css' | url }}">
 <link rel="stylesheet" href="{{ '/styles/code.css' | url }}">
 
+<h1 class="main__header main__header--{{pageClass}} main__header--subsection">{{ title }}</h1>
 <section class="main__sect--text">
   <article>
     {{ content | safe }}

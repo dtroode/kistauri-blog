@@ -18,7 +18,8 @@ eleventyNavigation:
   parent: blog
 renderData:
   description: "Блог Давида Кистаури. Тег: {{ tag }}."
-  title: "Тег: {{ tag }}"
+  title: "Давид Кистаури: {{ tag }}"
+  tag: "{{ tag }}"
 permalink: /blog/tags/{{ tag | slug }}/
 ---
 
@@ -26,25 +27,29 @@ permalink: /blog/tags/{{ tag | slug }}/
 {% set test11 = r/[1][1]$/ %}
 {% set test234 = r/(2|3|4)$/ %}
 {% set test121314 = r/([1][2]|[1][3]|[1][4])$/ %}
-
-<h2>
+<span>
   {{collections[ tag ] | length}}
-  {% if test1.test(collections[ tag ] | length) %}
-    {% if test11.test(collections[ tag ] | length) %}
-      заметок
+    {% if test1.test(collections[ tag ] | length) %}
+      {% if test11.test(collections[ tag ] | length) %}
+        заметок
+      {% else %}
+        заметка
+      {% endif %}
+    {% elif test234.test(collections[ tag ] | length) %}
+      {% if test121314.test(collections[ tag ] | length) %}
+        заметок
+      {% else %}
+        заметки
+      {% endif %}
     {% else %}
-      заметка
-    {% endif %}
-  {% elif test234.test(collections[ tag ] | length) %}
-    {% if test121314.test(collections[ tag ] | length) %}
       заметок
-    {% else %}
-      заметки
     {% endif %}
-  {% else %}
-    заметок
-  {% endif %}
-</h2>
-
-{% set postslist = collections[ tag ] %}
-{% include "posts-list.njk" %}
+    с тегом
+</span>
+<h1 class="main__header main__header--{{pageClass}} main__header--subsection">
+  {{ renderData.tag }}
+</h1>
+<section>
+  {% set postslist = collections[ tag ] %}
+  {% include "posts-list.njk" %}
+</section>

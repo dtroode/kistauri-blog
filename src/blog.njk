@@ -16,6 +16,7 @@ eleventyNavigation:
 ---
 
 {% set postslist = pagination.items | reverse %}
+<h1 class="main__header main__header--{{pageClass}}">{{ title }}</h1>
 {% include "posts-list.njk" %}
 {%- if pagination.page.previous -%}
 <a href="{{ pagination.href.previous }}" class="a--secondary">Позднее</a>

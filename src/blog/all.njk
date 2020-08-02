@@ -16,7 +16,7 @@ eleventyNavigation:
 {% set test121314 = r/([1][2]|[1][3]|[1][4])$/ %}
 
 <section>
-  <h2>
+  <h1 class="main__header main__header--{{pageClass}} main__header--subsection">
     {{postslistCounter}}
     {% if test1.test(postslistCounter) %}
       {% if test11.test(postslistCounter) %}
@@ -33,7 +33,7 @@ eleventyNavigation:
     {% else %}
       заметок
     {% endif %}
-  </h2>
+  </h1>
   <ul>
     {%- for post in postslist | reverse -%}
       <li>
