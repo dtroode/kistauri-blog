@@ -43,6 +43,7 @@
 
   h2 {
     color: var(--main-fg);
+    margin-bottom: 0;
   }
 }
 
@@ -51,7 +52,7 @@ p {
 }
 
 .card__link p {
-  margin-top: var(--third-padding);
+  margin-top: var(--fourth-padding);
 }
 
 .card {

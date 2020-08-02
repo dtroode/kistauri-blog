@@ -1,6 +1,10 @@
 section.main__sect--text {
   h2, h3, p, blockquote {
     max-width: 700px;
+    
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   h2 {

@@ -122,11 +122,6 @@ body {
 }
 
 header,
-main {
-  padding-top: var(--secondary-padding);
-}
-
-header,
 main,
 footer {
   padding-right: var(--side-padding);
@@ -140,11 +135,13 @@ footer {
 }
 
 header {
+  padding-top: var(--secondary-padding);
+
   nav.head__nav {
     position: relative;
 
     display: inline-block;
-    margin-bottom: var(--fourth-padding);
+    margin-bottom: calc(var(--primary-padding) - var(--fifth-padding));
 
     a:first-child::before {
       position: absolute;
@@ -200,25 +197,29 @@ footer hr {
   margin: var(--primary-padding) 0 var(--secondary-padding) 0;
 }
 
-main > section {
-  &:last-child ul {
-    margin-bottom: 0;
-  }
+main {
+  padding-top: var(--third-padding);
 
-  a:not(.a--secondary) {
-    border-bottom: 1px solid var(--accent-blue-25);
-
-    &:visited {
-      color: var(--accent-purple);
-
-      border-bottom: 1px solid var(--accent-purple-25);
+  & > section {
+    &:last-child ul {
+      margin-bottom: 0;
     }
 
-    &:hover,
-    &:focus {
-      color: var(--accent-red);
+    a:not(.a--secondary) {
+      border-bottom: 1px solid var(--accent-blue-25);
 
-      border-bottom: 1px solid var(--accent-red-25);
+      &:visited {
+        color: var(--accent-purple);
+
+        border-bottom: 1px solid var(--accent-purple-25);
+      }
+
+      &:hover,
+      &:focus {
+        color: var(--accent-red);
+
+        border-bottom: 1px solid var(--accent-red-25);
+      }
     }
   }
 }
