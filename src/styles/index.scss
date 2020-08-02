@@ -203,7 +203,7 @@ main {
 }
 
 main {
-  &.main--post, &.main--portfolio {
+  &.main--post, &.main--portfolio, &.main--notes {
     a {
       border-bottom: 1px solid var(--accent-blue-25);
 
