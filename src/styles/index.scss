@@ -35,6 +35,7 @@
   --contrast-blue: #8c9eff;
 
   /* Paddings */
+  --main-padding: 3.84rem;
   --primary-padding: 2.4rem;
   --secondary-padding: 1.5rem;
   --third-padding: 1rem;
@@ -201,7 +202,7 @@ main {
 }
 
 main {
-  &.main--post, &.main--portfolio, &.main--notes {
+  &.main--blog section.main__sect--text article, &.main--post, &.main--portfolio, &.main--notes {
     a {
       border-bottom: 1px solid var(--accent-blue-25);
 
