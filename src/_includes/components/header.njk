@@ -2,7 +2,7 @@
   <img src="/images/profile.jpg" height="36.8px" width="36.8px">
   <nav class="head__nav" aria-label="Страницы сайта">
     {%- for entry in collections.all | eleventyNavigation -%}
-      <a class="head__a a--primary {% if entry.url == page.url %} a--active {% endif %}{% if entry.key == eleventyNavigation.parent or (entry.url in page.url and entry.url != page.url and entry.key != 'kistauri') %} a--parent-active{% endif %}" href="{{ entry.url | url }}" {% if entry.url == page.url %}tabindex="-1"{% endif %}}>{{ entry.title }}</a>
+      <a class="head__a a--primary {% if entry.url == page.url %} a--active {% endif %}{% if entry.key == eleventyNavigation.parent or (entry.url in page.url and entry.url != page.url and entry.key != 'kistauri') %} a--parent-active{% endif %}" href="{{ entry.url | url }}" {% if entry.url == page.url %}tabindex="-1"{% endif %}>{{ entry.title }}</a>
     {%- endfor -%}
     {%- if pageClass == "blog" or pageClass == "tag" or pageClass == "notes" -%}
       <a class="head__a a--secondary" href="/blog/tags/">Теги</a>

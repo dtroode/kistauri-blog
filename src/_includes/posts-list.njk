@@ -4,11 +4,11 @@
 
 {%- for post in postslist | reverse -%}
   <article class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
-    <a href="{{ post.url | url }}" class="card__link">
+    <a href="{{ post.url | url }}" class="card__link main__header--subsection">
       {%- if pageClass == "projects" -%}
         <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
       {%- endif -%}
-      <h1 class="main__header--subsection">{{ post.data.title }}</h1>
+      {{ post.data.title }}
     </a>
     <section class="main__sect--text">
       <article>

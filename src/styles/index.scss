@@ -226,15 +226,18 @@ svg.foot__icon {
   margin-right: var(--fifth-padding);
 }
 
+h1, a.main__header--subsection {
+  font-weight: 700;
+  line-height: 1.15em;
+  letter-spacing: -0.022em;
+  word-break: break-word;
+}
+
 h1 {
   display: block;
   margin: 0 0 var(--third-padding) -2px;
 
-  font-weight: 700;
   font-size: var(--header-size, 2.8125rem);
-  line-height: 1.15em;
-  letter-spacing: -0.022em;
-  word-break: break-word;
 
   &.main__header--subsection {
     --header-size: 2.25rem;
@@ -291,6 +294,10 @@ a {
 
   &:focus {
     outline: none;
+  }
+
+  &.main__header--subsection {
+    font-size: 2.25rem;
   }
 
   &.a--primary:hover,
