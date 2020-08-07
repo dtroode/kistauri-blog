@@ -109,8 +109,7 @@ html {
   height: 100%;
 
   font-size: 16px;
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 body {
@@ -314,8 +313,6 @@ a {
     padding: var(--fifth-padding) var(--fourth-padding);
 
     font-weight: 600;
-
-    font-family: 'Inter Semibold', Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     border-radius: var(--fourth-padding);
 

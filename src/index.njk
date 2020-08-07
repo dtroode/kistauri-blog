@@ -53,12 +53,14 @@ eleventyNavigation:
   </ul>
   <h2>Веду блог</h2>
   <ul>{% for theme, content in theme_notes %}
-    <li><strong>{{ content.title }}</strong></li>
-    <ul>
-      {% for item in content.items %}
-        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
-      {% endfor %}
-    </ul>
+    <li>
+      <strong>{{ content.title }}</strong>
+      <ul>
+        {% for item in content.items %}
+          <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
   {% endfor %}</ul>
   <h2>Обо мне</h2>
   <p>

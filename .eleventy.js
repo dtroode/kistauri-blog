@@ -31,8 +31,8 @@ module.exports = function(eleventyConfig) {
 
   // Responsive images with captions
   eleventyConfig.addTransform("images", function(content, outputPath) {
-    const blog = /blog\/all\/([a-zA-Z0-9_-]+)\/index\.html/i;
-    const projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
+    const blog = /blog\/([a-zA-Z0-9_-]+)/i;
+    const projects = /projects\/([a-zA-Z0-9_-]+)/i;
     const imagesInParagraph = 
     /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
     const images = /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
