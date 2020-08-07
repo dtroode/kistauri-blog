@@ -4,9 +4,11 @@
 
 {%- for post in postslist | reverse -%}
   <article class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
-    <a href="{{ post.url | url }}" class="card__link main__header--subsection">
-      {{ post.data.title }}
-    </a>
+    <span>
+      <a href="{{ post.url | url }}" class="card__link main__header--subsection">
+        {{ post.data.title }}
+      </a>
+    </span>
     <section class="main__sect--text">
       <article>
         {{ post.templateContent | safe }}
