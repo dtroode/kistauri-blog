@@ -5,9 +5,6 @@
 {%- for post in postslist | reverse -%}
   <article class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
     <a href="{{ post.url | url }}" class="card__link main__header--subsection">
-      {%- if pageClass == "projects" -%}
-        <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
-      {%- endif -%}
       {{ post.data.title }}
     </a>
     <section class="main__sect--text">
