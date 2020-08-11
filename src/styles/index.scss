@@ -198,9 +198,6 @@ main {
       margin-bottom: 0;
     }
   }
-}
-
-main {
   &.main--blog section.main__sect--text article, &.main--post, &.main--portfolio, &.main--notes {
     a {
       border-bottom: 1px solid var(--accent-blue-25);
@@ -218,6 +215,9 @@ main {
         border-bottom: 1px solid var(--accent-red-25);
       }
     }
+  }
+  a.a--secondary {
+    margin-bottom: var(--fifth-padding);
   }
 }
 
