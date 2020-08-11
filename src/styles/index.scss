@@ -32,7 +32,8 @@
   --additional-yellow-fg: #1c1c1c;
 
   /* Contrast colors */
-  --contrast-blue: #8c9eff;
+  --contrast-red: #ff1744;
+  --contrast-red-25: #ff174440;
 
   /* Paddings */
   --main-padding: 3.84rem;
@@ -80,7 +81,8 @@
     --additional-yellow-fg: #ffff74;
 
     /* Contrast colors */
-    --contrast-blue: #304ffe;
+    --contrast-red: #ff616f;
+    --contrast-red-25: #ff616f40;
   }
 }
 
@@ -147,9 +149,11 @@ header {
     a:first-child::before {
       position: absolute;
       top: 0;
-      left: calc(-1 * (1.5rem + 3* var(--fifth-padding)));
+      left: calc(-1 * (1.5rem + 2 * var(--fifth-padding) + var(--fourth-padding)));
 
       width: calc(1.5rem + 2 * var(--fifth-padding));
+
+      margin-top: calc(-1 * var(--fifth-padding));
       height: calc(1.5rem + 2 * var(--fifth-padding));
 
       content: '';
@@ -158,19 +162,17 @@ header {
 
   img {
     display: inline-block;
-    margin-right: var(--fifth-padding);
+    margin-right: var(--fourth-padding);
 
     vertical-align: top;
+    height: calc(1.5rem + 2 * var(--fifth-padding));
+
+    border-radius: 50%;
+    margin-top: calc(-1 * var(--fifth-padding));
   }
 
   a.head__a {
     margin-bottom: var(--fifth-padding);
-  }
-  
-  img {
-    height: calc(1.5rem + 2 * var(--fifth-padding));
-
-    border-radius: 50%;
   }
 }
 
@@ -217,7 +219,7 @@ main {
     }
   }
   a.a--secondary {
-    margin-bottom: var(--fifth-padding);
+    margin-bottom: var(--fourth-padding);
   }
 }
 
@@ -291,6 +293,9 @@ a {
   transition-duration: 0.38s;
   transition-property: color, border-bottom;
 
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
   &:focus {
     outline: none;
   }
@@ -309,61 +314,41 @@ a {
   &.a--primary,
   &.a--secondary {
     display: inline-block;
-    margin-right: var(--fifth-padding);
-    padding: var(--fifth-padding) var(--fourth-padding);
+    margin-right: var(--third-padding);
 
     font-weight: 600;
 
-    border-radius: var(--fourth-padding);
 
-    &:focus {
-      box-shadow: inset 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
+
+    &:hover, &:focus {
+      color: var(--accent-red);
+      border-bottom-color: var(--accent-red-25);
     }
   }
 
   &.a--primary {
-    color: var(--main-bg);
-
-    background-color: var(--accent-blue);
-
-    transition-property: background-color, box-shadow;
-
-    &:hover {
-      color: var(--main-bg);
-
-      background-color: var(--accent-red);
-    }
+    color: var(--main-fg);
+    border-bottom-color: var(--main-fg-25);
   }
 
   &.a--secondary {
-    color: var(--accent-blue-text);
+    color: var(--accent-blue);
 
-    background-color: var(--additional-bg);
+    border-bottom-color: var(--accent-blue-25);
 
     transition-property: color, box-shadow;
-
-    &:visited {
-      color: var(--accent-blue-text);
-    }
-
-    &:hover {
-      color: var(--accent-red);
-    }
   }
 
   &.a--active {
-    color: var(--main-bg);
-
-    background-color: var(--main-fg);
-    cursor: default;
+    color: var(--contrast-red);
+    border-bottom: none;
 
     pointer-events: none;
   }
 
   &.a--parent-active {
-    color: var(--contrast-blue);
-
-    background-color: var(--main-fg);
+    color: var(--contrast-red);
+    border-bottom-color: var(--contrast-red-25);
   }
 
   &.foot__a {
