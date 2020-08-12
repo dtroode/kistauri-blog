@@ -200,7 +200,7 @@ main {
       margin-bottom: 0;
     }
   }
-  &.main--blog section.main__sect--text article, &.main--post, &.main--portfolio, &.main--notes {
+  section.main__sect--text article, &.main--post, &.main--portfolio, &.main--notes {
     a {
       border-bottom: 1px solid var(--accent-blue-25);
 
