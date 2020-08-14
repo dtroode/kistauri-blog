@@ -2,7 +2,7 @@
 title: Сайт Пост Величины
 description: Сайт с постоянными величинами из математики, физики и химии, чтоб всегда было, где подглядеть
 date: 2018-10-05
-image: /images/preview/project-postvel.jpg
+image: /images/preview/project-postvel.png
 projectURL: postvel.now.sh
 ---
 
@@ -23,8 +23,6 @@ _Редизайн и перестройка проведены осенью-зи
 - лантаноиды и актиноиды находятся в отдельных таблицах, чтоб не забивать основную.
 
 ![Темная тема Пост Величин](/images/postvel-dark.png)
-
-![Виды таблиц](/images/postvel-table-variations.png)
 
 ## Техническая часть
 
@@ -105,5 +103,4 @@ section.main__math#math
 
 ---
 
-**_Шрифт:_** [PT Root UI](https://www.paratype.ru/fonts/pt/pt-root-ui).\
-**_Материалы взяты из интернета._**
+**_Шрифт:_** [PT Root UI](https://www.paratype.ru/fonts/pt/pt-root-ui).

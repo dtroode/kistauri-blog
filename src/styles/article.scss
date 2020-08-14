@@ -4,6 +4,18 @@
   margin-bottom: var(--main-padding);
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--third-padding);
+
+  article {
+    flex: calc((100% - 2 * var(--third-padding))/3);
+    flex-grow: initial;
+    margin-bottom: 0;
+  }
+}
+
 span.card__span {
   display: block;
   margin-left: -2px;

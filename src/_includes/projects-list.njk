@@ -1,10 +1,12 @@
 <link rel="stylesheet" href="{{ '/styles/article.css' | url }}">
 
-{%- for post in postslist | reverse -%}
-  <article class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
-    <a href="{{ post.url | url }}" class="card__link">
-      <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
-      {{ post.data.title }}
-    </a>
-  </article>
-{%- endfor -%}
+<section class="grid">
+  {%- for post in postslist | reverse -%}
+    <article class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
+      <a href="{{ post.url | url }}" class="card__link">
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+        {{ post.data.title }}
+      </a>
+    </article>
+  {%- endfor -%}
+</section>
