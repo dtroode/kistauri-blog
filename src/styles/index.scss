@@ -42,7 +42,6 @@
   --third-padding: 1rem;
   --fourth-padding: 0.6rem;
   --fifth-padding: 0.4rem;
-  --sixth-padding: 0.25rem;
 
   /* Side padding */
   --side-padding: 2.4rem;
@@ -381,7 +380,7 @@ ul li {
 
 li {
   &:not(:last-child) {
-    margin-bottom: var(--sixth-padding);
+    margin-bottom: var(--fifth-padding);
   }
   &.li--favourite::before {
     content: "★";
