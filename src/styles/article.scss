@@ -4,15 +4,23 @@
   margin-bottom: var(--main-padding);
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--third-padding);
+@media screen and (min-width: 701px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--third-padding);
 
-  article {
-    flex: calc((100% - 2 * var(--third-padding))/3);
-    flex-grow: initial;
-    margin-bottom: 0;
+    article {
+      flex: calc((100% - 2 * var(--third-padding))/3);
+      flex-grow: initial;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid article {
+    margin-bottom: var(--primary-padding);
   }
 }
 
