@@ -378,6 +378,20 @@ ul li {
   }
 }
 
+@media screen and (max-width: 700px) {
+  li {
+    & > ul, & > ol {
+      padding-left: 0;
+    }
+    & > ul li::before {
+      content: none;
+    }
+    & > ol li {
+      list-style-type: none;
+    }
+  }
+}
+
 li {
   &:not(:last-child) {
     margin-bottom: var(--fifth-padding);

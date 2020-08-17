@@ -58,7 +58,7 @@ eleventyNavigation:
   <h2>Веду блог</h2>
   <ul>{% for theme, content in theme_notes %}
     <li>
-      <strong>{{ content.title }}</strong>
+      {{ content.title }}
       <ul>
         {% for item in content.items %}
           <li><a href="{{ item.link }}">{{ item.name }}</a></li>
