@@ -393,9 +393,7 @@ ul li {
 }
 
 li {
-  &:not(:last-child) {
-    margin-bottom: var(--fifth-padding);
-  }
+  margin-top: 0.5rem;
   &.li--favourite::before {
     content: "★";
   }
