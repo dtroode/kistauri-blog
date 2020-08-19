@@ -24,10 +24,6 @@ section.main__sect--text {
     }
   }
 
-  ul, ol {
-    padding-left: var(--primary-padding);
-  }
-
   ul li, ol li {
     list-style-position: outside;
   }
@@ -36,13 +32,16 @@ section.main__sect--text {
     border-bottom: 0;
   }
 
+  blockquote, pre {
+    padding-left: 1.5rem;
+  }
+
   blockquote {
     box-sizing: border-box;
-    margin-top: var(--third-padding);
+    margin-top: 1rem;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-    padding-left: var(--primary-padding);
   }
 
   blockquote p:first-child, hr + * {
@@ -90,9 +89,8 @@ section.main__sect--text {
   pre {
     box-sizing: border-box;
     max-width: 700px;
-    margin-top: var(--third-padding);
+    margin-top: 1rem;
     margin-bottom: 0;
-    padding-left: var(--primary-padding);
     overflow-x: auto;
   }
 
@@ -105,7 +103,7 @@ section.main__sect--text {
   }
 
   table {
-    margin-top: var(--third-padding);
+    margin-top: 1rem;
 
     font-size: 1rem;
 
@@ -114,7 +112,7 @@ section.main__sect--text {
     border-collapse: collapse;
 
     th, td {
-      padding: 0 var(--third-padding) var(--fifth-padding) 0;
+      padding: 0 1rem 0.5rem 0;
 
       text-align: left;
       vertical-align: top;

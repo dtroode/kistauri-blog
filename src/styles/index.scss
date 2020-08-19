@@ -2,8 +2,8 @@
 
 :root {
   /* Main Background and Foreground colors */
-  --main-bg: #fafafa;
-  --main-fg: #121212;
+  --main-bg: #ffffff;
+  --main-fg: #000000;
 
   /* Additional Background and Foreground colors */
   --additional-bg: #eeeeee;
@@ -393,7 +393,9 @@ ul li {
 }
 
 li {
-  margin-top: 0.5rem;
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
   &.li--favourite::before {
     content: "★";
   }
