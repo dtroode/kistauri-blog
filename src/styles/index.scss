@@ -363,39 +363,17 @@ ol {
   max-width: 700px;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding-left: var(--secondary-padding);
 }
 
-ul li {
-  list-style-type: none;
-
-  &::before {
-    display: inline-block;
-    width: var(--secondary-padding);
-    margin-left: calc(-1 * var(--secondary-padding));
-
-    content: "—";
-  }
-}
-
-@media screen and (max-width: 700px) {
+ul {
+  padding-left: 0;
   li {
-    & > ul, & > ol {
-      padding-left: 0;
-    }
-    & > ul li::before {
-      content: none;
-    }
-    & > ol li {
-      list-style-type: none;
-    }
+    list-style-type: none;
   }
 }
 
 li {
-  &:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
+  margin-top: 0.5rem;
   &.li--favourite::before {
     content: "★";
   }
