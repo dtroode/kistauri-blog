@@ -9,8 +9,8 @@ jobs:
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
-            https://davidkistauri.ru/
-            https://davidkistauri.ru/blog
+            https://kistauri.dtroode.now.sh/
+            https://kistauri.dtroode.now.sh/blog
       - name: Save results
         uses: actions/upload-artifact@v1
         with:

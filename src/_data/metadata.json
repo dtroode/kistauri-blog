@@ -2,14 +2,14 @@
   "title": "Давид Кистаури",
   "description": "Назови любое слово и я сделаю об этом сайт.",
   "blogDescription": "Блог Давида Кистаури. Назови любое слово и я сделаю об этом сайт.",
-  "url": "https://davidkistauri.ru",
-  "blogUrl": "https://davidkistauri.ru/blog",
+  "url": "https://kistauri.dtroode.now.sh",
+  "blogUrl": "https://kistauri.dtroode.now.sh/blog",
   "feed": {
     "subtitle": "Назови любое слово и я сделаю об этом сайт.",
     "filename": "index.xml",
     "path": "/blog/rss.xml",
-    "id": "https://davidkistauri.ru",
-    "icon": "https://davidkistauri.ru/images/icons/icon-48x48.png"
+    "id": "https://kistauri.dtroode.now.sh",
+    "icon": "https://kistauri.dtroode.now.sh/images/icons/icon-48x48.png"
   },
   "author":  {
     "name": "Давид Кистаури",

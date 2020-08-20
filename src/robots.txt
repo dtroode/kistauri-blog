@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://davidkistauri.ru/sitemap.xml
-Host: https://davidkistauri.ru
+Sitemap: https://kistauri.dtroode.now.sh/sitemap.xml
+Host: https://kistauri.dtroode.now.sh
