@@ -5,22 +5,19 @@
 }
 
 @media screen and (min-width: 701px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--third-padding);
-
-    article {
-      flex: calc((100% - 2 * var(--third-padding))/3);
-      flex-grow: initial;
-      margin-bottom: 0;
-    }
+  .grid article {
+    flex: calc((100% - 2 * var(--third-padding))/3);
   }
 }
 
-@media screen and (max-width: 700px) {
-  .grid article {
-    margin-bottom: var(--primary-padding);
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--third-padding);
+
+  article {
+    flex-grow: initial;
+    margin-bottom: 0;
   }
 }
 
