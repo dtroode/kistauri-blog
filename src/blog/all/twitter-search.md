@@ -3,7 +3,6 @@ title: Учимся смотреть на UX по-другому у Твитте
 description: Приключения Твиттера с иконкой поиска — лупа или хэштег
 date: 2019-08-22T15:58:00.021Z
 image: /images/preview/twitter-search.jpg
-category: design
 tags: ["веб", "ux"]
 ---
 

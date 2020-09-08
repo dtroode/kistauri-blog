@@ -3,7 +3,6 @@ title: "Эффективность: как работать и учиться"
 description: Сохрани, учи, записывай
 date: 2019-07-06T21:48:59.664Z
 image: /images/preview/work-learn.jpg
-category: other
 tags: ["организация", "ссылки"]
 ---
 

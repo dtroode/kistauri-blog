@@ -3,7 +3,6 @@ title: Почему надо дать Файерфоксу шанс
 description: Мы живем в эре браузерной монополии. Давайте взглянем на другой браузер
 date: 2019-06-22T12:48:59.664Z
 image: /images/preview/firefox.jpg
-category: programming
 tags: ["веб", "инструменты"]
 ---
 

@@ -2,7 +2,6 @@
 title: «Choose» или «select»
 description: Когда надо «выбирать», а когда «выбирать»
 date: 2019-12-31
-category: other
 tags: ["apple", "ux"]
 ---
 

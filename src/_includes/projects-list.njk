@@ -2,7 +2,7 @@
 
 <section class="grid">
   {%- for post in postslist | reverse -%}
-    <article class="card {% if post.data.category %}{{post.data.category}}{% endif %}">
+    <article class="card">
       <a href="{{ post.url | url }}" class="card__link">
         <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
         {{ post.data.title }}

@@ -3,7 +3,6 @@ title: Подписка по РСС
 description: Как подписаться на этот блог по РСС
 date: 2019-10-02
 image: /images/preview/rss-subscribe.jpg
-category: other
 tags: ["блог", "рсс"]
 ---
 

@@ -3,7 +3,6 @@ title: "«Как устроена экономика»: цитаты"
 description: "Избранные цитаты и интересные числа из книги «Как устроена экономика» Ха-Джун Чанга"
 date: 2020-01-28T20:00:00.021Z
 image: /images/preview/economics-the-user-guide.jpg
-category: other
 tags: ["книги", "экономика"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Y-комбинатор
 description: Объяснение работы Y-комбинатора на основе The Little Schemer
-category: programming
 date: 2020-05-18
 tags: ["функциональное программирование"]
 ---

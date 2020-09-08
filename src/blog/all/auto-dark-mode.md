@@ -3,7 +3,6 @@ title: Автоматическая темная тема для сайта
 description: Как собрать автоматическую темную тему для iOS 13 и не только
 date: 2019-09-30T20:25:00.664Z
 image: /images/preview/auto-dark-mode.jpg
-category: programming
 tags: ["блог", "веб", "дизайн", "темная тема"]
 ---
 

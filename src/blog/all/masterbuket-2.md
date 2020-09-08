@@ -3,7 +3,6 @@ title: Мастер Букет 2
 description: "Что нового у Мастер Букета: список, причины, процесс, результаты"
 date: 2019-07-31
 image: /images/preview/masterbuket-2.jpg
-category: programming
 tags: ["веб", "мастер букет", "проекты"]
 ---
 

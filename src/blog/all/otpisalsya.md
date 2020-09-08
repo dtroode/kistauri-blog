@@ -4,7 +4,6 @@ description: "Решил отписаться от рассылки, но про
 перестал пользоваться продуктом"
 date: 2019-07-23
 image: /images/preview/otpisalsya.jpg
-category: other
 tags: ["почта", "подписки", "интерфейс"]
 ---
 

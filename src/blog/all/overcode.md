@@ -3,7 +3,6 @@ title: Слишком-код
 description: Как собрать крутую библиотеку, которая занимает мало места и расширяется
 date: 2019-09-01
 image: /images/preview/overcode.jpg
-category: programming
 tags: ["хороший код", "библиотека"]
 ---
 
