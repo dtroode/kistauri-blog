@@ -87,7 +87,7 @@
 
 @media screen and (min-width: 1300px) {
   header img {
-    margin-left: calc(-1 * (1.5rem + 3 * var(--fifth-padding)));
+    margin-left: calc(-1 * (1.5rem + 2 * var(--fifth-padding) + var(--fourth-padding)));
   }
   :root {
     --side-padding: 10%;
@@ -243,6 +243,10 @@ h1 {
   }
 }
 
+#favourite::after {
+  content: " ★";
+}
+
 h2, h3, p, blockquote {
   &:first-child {
     margin-top: 0;
@@ -256,7 +260,7 @@ h2 {
 
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: 1.15em;
+  line-height: 1.25em;
   letter-spacing: -0.022em;
 
   &.foot__header {

@@ -42,11 +42,15 @@ a.card__link {
     border-bottom: 1px solid var(--accent-red-25);
   }
 
+  &--project {
+    line-height: 1.5em;
+  }
+
   img {
     display: block;
     max-width: 100%;
     height: auto;
-    padding-bottom: var(--fifth-padding);
+    padding-bottom: 0.5rem;
   }
 
   h1 {
