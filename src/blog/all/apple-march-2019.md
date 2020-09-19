@@ -2,7 +2,6 @@
 title: Мои мысли о мартовском ивенте Эппл
 description: Результаты мартовского ивента Эппл. Подписки
 date: 2019-03-25T18:45:00.000Z
-image: /images/preview/apple.jpg
 tags: ["apple"]
 ---
 

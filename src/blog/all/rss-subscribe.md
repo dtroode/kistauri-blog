@@ -6,8 +6,8 @@ image: /images/preview/rss-subscribe.jpg
 tags: ["блог", "рсс"]
 ---
 
-_Ссылка на РСС: [kistauri.dtroode.now.sh/blog/rss.xml](https://kistauri.dtroode.now.sh/blog/rss.xml)\
-Ссылка на Джейсон Фид: [kistauri.dtroode.now.sh/blog/feed.json](https://kistauri.dtroode.now.sh/blog/feed.json)_
+_Ссылка на РСС: [dtroode.vercel.app/blog/rss.xml](https://dtroode.vercel.app/blog/rss.xml)\
+Ссылка на Джейсон Фид: [dtroode.vercel.app/blog/feed.json](https://dtroode.vercel.app/blog/feed.json)_
 
 _Обновлено 27 мая 2020. Добавил Джейсон Фид._
 
@@ -32,8 +32,8 @@ _Обновлено 27 мая 2020. Добавил Джейсон Фид._
 3. Вписываете ссылку на этот сайт
 
 > Некоторые читалки не умеют подгружать РСС или Джсон Фид по ссылке на сайт. Для них нужна
-> [прямая ссылка на РСС](https://kistauri.dtroode.now.sh/blog/rss.xml) или
-> [прямая ссылка на Джсон Фид](https://kistauri.dtroode.now.sh/blog/feed.json)
+> [прямая ссылка на РСС](https://dtroode.vercel.app/blog/rss.xml) или
+> [прямая ссылка на Джсон Фид](https://dtroode.vercel.app/blog/feed.json)
 
 Часто информация из блогов дублируется в Телеграме, поэтому на них не хочется
 подписываться, если уже подписан на канал в мессенджере. У меня в блоге только

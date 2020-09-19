@@ -11,7 +11,7 @@ eleventyNavigation:
 <link rel="stylesheet" href="{{ '/styles/post.css' | url }}">
 <link rel="stylesheet" href="{{ '/styles/code.css' | url }}">
 
-<h1 class="main__header main__header--{{pageClass}} main__header--subsection">{{ title }}</h1>
+<h1 class="main__header main__header--{{pageClass}} main__header--subsection" {% if favourite == true %}id="favourite"{% endif %}>{{ title }}</h1>
 <section class="main__sect--text">
   <article>
     {{ content | safe }}
@@ -25,6 +25,21 @@ eleventyNavigation:
       {%- endif -%}
     {%- endfor -%}
   </p>
+  {%- if related.type != "a0 i0" -%}
+    <section class="related">
+      <h3>Читайте дальше</h3>
+      <section class="related-list {{ related.type }}">
+        {%- for i, val in related -%}
+          {%- if i != "type" -%}
+            <article class="{% if val.image %} imaged {% endif %} rating-{{ val.rating }}">
+              <a href="{{ val.url }}">{%- if val.image -%}<img src="{{ val.image }}" alt="Иллюстрация к заметке" class="img--nocaption" >{%- endif -%}{{ i }}</a>
+              <time datetime="{{ val.date | htmlDateString }}" title="{{ val.date | readableDate }}" class="postlinks">{{ val.date | shortDate}}</time>
+            </article>
+          {%- endif -%}
+        {%- endfor -%}
+      </section>
+    </section>
+  {%- endif -%}
   {%- set previousPost = collections.blog | getPreviousCollectionItem(page) -%}
   {%- set nextPost = collections.blog | getNextCollectionItem(page) -%}
   <p class="postlinks">

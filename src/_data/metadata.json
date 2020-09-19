@@ -2,14 +2,14 @@
   "title": "Давид Кистаури",
   "description": "Назови любое слово и я сделаю об этом сайт.",
   "blogDescription": "Блог Давида Кистаури. Назови любое слово и я сделаю об этом сайт.",
-  "url": "https://kistauri.dtroode.now.sh",
-  "blogUrl": "https://kistauri.dtroode.now.sh/blog",
+  "url": "https://dtroode.vercel.app",
+  "blogUrl": "https://dtroode.vercel.app/blog",
   "feed": {
     "subtitle": "Назови любое слово и я сделаю об этом сайт.",
     "filename": "index.xml",
     "path": "/blog/rss.xml",
-    "id": "https://kistauri.dtroode.now.sh",
-    "icon": "https://kistauri.dtroode.now.sh/images/icons/icon-48x48.png"
+    "id": "https://dtroode.vercel.app",
+    "icon": "https://dtroode.vercel.app/images/icons/icon-48x48.png"
   },
   "author":  {
     "name": "Давид Кистаури",

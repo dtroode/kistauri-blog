@@ -3,41 +3,38 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginJsonFeed = require("eleventy-plugin-json-feed");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const markdownIt = require('markdown-it');
+const markdownIt = require("markdown-it");
 const dateFns = require("date-fns");
-const ruLocale = require('date-fns/locale/ru');
+const ruLocale = require("date-fns/locale/ru");
 const pluginPWA = require("eleventy-plugin-pwa");
 const htmlmin = require("html-minifier");
-const sharp = require('sharp');
-const pluginSass = require('eleventy-plugin-sass');
+const sharp = require("sharp");
+const pluginSass = require("eleventy-plugin-sass");
 
-module.exports = function(eleventyConfig) {
-
-
+module.exports = function (eleventyConfig) {
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginJsonFeed, {
     content_html: true,
     image_metadata_field_name: "social_media_image",
-    summary_metadata_field_name: "description"
+    summary_metadata_field_name: "description",
   });
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginPWA);
   eleventyConfig.addPlugin(pluginSass, {
-    "watch": ['src/**/*.{scss,sass}', '!node_modules/**']
+    watch: ["src/**/*.{scss,sass}", "!node_modules/**"],
   });
 
-
   // Responsive images with captions
-  eleventyConfig.addTransform("images", function(content, outputPath) {
+  eleventyConfig.addTransform("images", function (content, outputPath) {
     const blog = /blog\/([a-zA-Z0-9_-]+)/i;
     const projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
-    const imagesInParagraph = 
-    /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>\<\/p\>/ig;
-    const images = /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\>]*)\"(.*?)\>/ig;
+    const imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\"]*)\"((?!img--nocaption).)*\>\<\/p\>/gi;
+    const images = /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\"]*)\"((?!img--nocaption).)*\>/gi;
     // Image sizes property for adaptive images
-    const sizes = "(max-width: calc(1000px + 2 * 2.4rem)) calc(100vw - 2 * 2.4rem), 1000px"
+    const sizes =
+      "(max-width: calc(1000px + 2 * 2.4rem)) calc(100vw - 2 * 2.4rem), 1000px";
 
     // Generate a responsive images
     // and create markup by url, image extension and alternate text
@@ -78,10 +75,10 @@ module.exports = function(eleventyConfig) {
               alt="${alt}" loading="lazy">
           </picture>
           <figcaption>${alt}</figcaption>
-        </figure>`
+        </figure>`;
     }
 
-    if (outputPath && (outputPath.match(blog) || outputPath.match(projects)) ) {
+    if (outputPath && (outputPath.match(blog) || outputPath.match(projects))) {
       content = content.replace(imagesInParagraph, (match, p1, p2, p3) => {
         return generateImage(p1, p2, p3);
       });
@@ -93,14 +90,13 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-
   // Minify HTML
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
       });
       return minified;
     }
@@ -108,48 +104,34 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-
   eleventyConfig.setDataDeepMerge(true);
 
-  
   eleventyConfig.addLayoutAlias("blog", ".src/layouts/post.njk");
 
-
   // Filter to generate short date in D MMM YYYY format
-  eleventyConfig.addFilter("shortDate", dateObj => {
-    return dateFns.format(
-      dateObj,
-      'd MMMM yyyy',
-      {locale: ruLocale}
-    )
-  })
-
+  eleventyConfig.addFilter("shortDate", (dateObj) => {
+    return dateFns.format(dateObj, "d MMMM yyyy", { locale: ruLocale });
+  });
 
   // Filter to generate full human readable date
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    return dateFns.format(
-      dateObj,
-      'dd MMMM yyyy, hh:mm, zzzz',
-      {locale: ruLocale}
-    )
-  })
-
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return dateFns.format(dateObj, "dd MMMM yyyy, hh:mm, zzzz", {
+      locale: ruLocale,
+    });
+  });
 
   // Filter to generate date for HTML tag
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return dateFns.formatISO(dateObj);
   });
 
-
   // Filter to replace spaces with unicode characters
   // in title for URL
   eleventyConfig.addFilter("sharePostTitle", (title) => {
-    return title.replace(/ /g, "%20")
-  })
-
+    return title.replace(/ /g, "%20");
+  });
 
   eleventyConfig.addCollection("tagList", require("./src/_11ty/getTagList.js"));
-
 
   // Copy directories to output
   eleventyConfig.addPassthroughCopy("src/images");
@@ -158,23 +140,21 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("now.json");
 
-
   // Markdown parser options
   let mdOptions = {
     html: true,
-    typographer: true
+    typographer: true,
   };
 
-  let markdownLib = markdownIt(mdOptions)
+  let markdownLib = markdownIt(mdOptions);
 
   eleventyConfig.setLibrary("md", markdownLib);
-
 
   // Redirect to 404 page when error status is 404
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
-      ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('./_site/404.html');
+      ready: function (err, browserSync) {
+        const content_404 = fs.readFileSync("./_site/404.html");
 
         browserSync.addMiddleware("*", (req, res) => {
           res.write(content_404);
@@ -183,17 +163,11 @@ module.exports = function(eleventyConfig) {
       },
     },
     ui: false,
-    ghostMode: false
+    ghostMode: false,
   });
 
-
   return {
-    templateFormats: [
-      "md",
-      "njk",
-      "html",
-      "liquid"
-    ],
+    templateFormats: ["md", "njk", "html", "liquid"],
 
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
@@ -203,7 +177,7 @@ module.exports = function(eleventyConfig) {
       input: "src",
       includes: "_includes",
       data: "_data",
-      output: "_site"
-    }
+      output: "_site",
+    },
   };
 };

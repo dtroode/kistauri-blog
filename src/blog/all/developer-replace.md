@@ -2,7 +2,6 @@
 title: Разработчик? Замени это сейчас
 description: Что я заменил после полутора лет разработки
 date: 2019-06-22T10:44:34.021Z
-image: /images/preview/developer-replace.jpg
 tags: ["веб", "инструменты"]
 ---
 

@@ -1,14 +1,14 @@
-# <a href="https://kistauri.dtroode.now.sh/">Kistauri</a>
+# <a href="https://dtroode.vercel.app/">Kistauri</a>
 
 <img
   align="right"
-  src="https://kistauri.dtroode.now.sh/images/icons/icon-144x144.png"
+  src="https://dtroode.vercel.app/images/icons/icon-144x144.png"
   width="100px"
   height="100px"
   alt="Blog Logo">
 
 Hello, I am **David Kistauri**.\
-This is repository of my personal website with **[blog](https://kistauri.dtroode.now.sh/blog).**
+This is repository of my personal website with **[blog](https://dtroode.vercel.app/blog).**
 
 You can
 

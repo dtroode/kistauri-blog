@@ -5,7 +5,7 @@
 {%- for post in postslist | reverse -%}
   <article class="card">
     <span class="card__span">
-      <a href="{{ post.url | url }}" class="card__link main__header--subsection">
+      <a href="{{ post.url | url }}" class="card__link main__header--subsection" {% if post.data.favourite == true %}id="favourite"{% endif %}>
         {{ post.data.title }}
       </a>
     </span>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://kistauri.dtroode.now.sh/sitemap.xml
-Host: https://kistauri.dtroode.now.sh
+Sitemap: https://dtroode.vercel.app/sitemap.xml
+Host: https://dtroode.vercel.app

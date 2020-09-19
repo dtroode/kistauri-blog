@@ -9,8 +9,8 @@ jobs:
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
-            https://kistauri.dtroode.now.sh/
-            https://kistauri.dtroode.now.sh/blog
+            https://dtroode.vercel.app/
+            https://dtroode.vercel.app/blog
       - name: Save results
         uses: actions/upload-artifact@v1
         with:
