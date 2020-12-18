@@ -10,6 +10,10 @@ projectURL: secondschool.now.sh
 
 Новый сайт — редизайн старого официального. Вся основная информация выделена крупным шрифтом, сразу видны ссылки на страницы, которые чаще всего нужны.
 
----
+Есть страница с историей школы.
 
-***Шрифт:*** [PT Root UI](https://www.paratype.ru/fonts/pt/pt-root-ui).
+![Главная страница сайта](/images/secondschool-main.png)
+
+![Информация о школе](/images/secondschool-inf.png)
+
+Используется шрифт PT Root UI.
