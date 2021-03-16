@@ -24,6 +24,10 @@
     "title": "Математика",
     "items": [
       {
+        "name": "Сперва частный случай",
+        "link": "/blog/all/particular-over-abstract"
+      },
+      {
         "name": "Математическая нотация степени",
         "link": "/blog/all/math-notation/"
       },
