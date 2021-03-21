@@ -151,9 +151,9 @@ header {
       left: calc(-1 * (1.5rem + 2 * var(--fifth-padding) + var(--fourth-padding)));
 
       width: calc(1.5rem + 2 * var(--fifth-padding));
+      height: calc(1.5rem + 2 * var(--fifth-padding));
 
       margin-top: calc(-0.125rem - var(--fifth-padding));
-      height: calc(1.5rem + 2 * var(--fifth-padding));
 
       content: '';
     }
@@ -161,13 +161,13 @@ header {
 
   img {
     display: inline-block;
+    height: calc(1.5rem + 2 * var(--fifth-padding));
+    margin-top: calc(-0.125rem - var(--fifth-padding));
     margin-right: var(--fourth-padding);
 
     vertical-align: top;
-    height: calc(1.5rem + 2 * var(--fifth-padding));
 
     border-radius: 50%;
-    margin-top: calc(-0.125rem - var(--fifth-padding));
   }
 
   a.head__a {
@@ -290,12 +290,12 @@ a {
   color: var(--accent-blue);
   text-decoration: none;
 
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
   transition-timing-function: cubic-bezier(0.18, 0.45, 0.35, 0.99);
   transition-duration: 0.38s;
   transition-property: color, border-bottom;
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
 
   &:focus {
     outline: none;

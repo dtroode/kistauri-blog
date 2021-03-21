@@ -174,9 +174,9 @@ section.main__sect--text {
   section.related {
     margin-top: var(--main-padding);
     section.related-list {
-      margin-top: 0.5rem;
       display: grid;
       grid-gap: var(--third-padding);
+      margin-top: 0.5rem;
 
       @media screen and (min-width: 701px) {
         &:not(.a1):not(.a2):not(.a3) {
@@ -186,6 +186,10 @@ section.main__sect--text {
             grid-area: 1/1/4/3;
           }
         }
+
+        &:not(.a5) {
+          grid-template-rows: max-content;
+        }
         &.a1, &.a2 {
           grid-template-columns: repeat(2, 1fr);
         }
@@ -194,16 +198,12 @@ section.main__sect--text {
           grid-template-columns: 2fr repeat(2, 1fr);
         }
 
-        &:not(.a5) {
-          grid-template-rows: max-content;
-        }
-
         &.a5 {
           grid-template-rows: auto auto 1fr;
           &.i1, &.i2 {
             article.imaged:nth-child(2) {
-              grid-row-start: 1;
               grid-row-end: 4;
+              grid-row-start: 1;
             }
             article:nth-child(n+3) {
               grid-column-start: 4;
@@ -215,9 +215,9 @@ section.main__sect--text {
 
       article {
         &:first-child a {
+          font-weight: bold;
           font-size: 1.5rem;
           line-height: 1.25em;
-          font-weight: bold;
         }
         a {
           font-size: 1rem;
