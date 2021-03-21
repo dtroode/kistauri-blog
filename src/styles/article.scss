@@ -1,24 +1,7 @@
-.card {
+article.card {
   position: relative;
 
   margin-bottom: var(--main-padding);
-}
-
-@media screen and (min-width: 701px) {
-  .grid article {
-    flex: calc((100% - 2 * var(--third-padding))/3);
-  }
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--third-padding);
-
-  article {
-    flex-grow: initial;
-    margin-bottom: 0;
-  }
 }
 
 span.card__span {
