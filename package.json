@@ -6,7 +6,7 @@
     "lint": "stylelint src/styles/*.scss --fix",
     "build": "npm run lint && eleventy",
     "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
