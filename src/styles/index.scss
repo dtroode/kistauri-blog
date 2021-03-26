@@ -376,8 +376,8 @@ ul {
 
 li {
   margin-top: 0.5rem;
-  &.li--favourite::before {
-    content: "★";
+  &.li--favourite::after {
+    content: " ★";
   }
 }
 
