@@ -1,0 +1,15 @@
+---
+permalink: "blog/feed.json"
+metadata:
+  title: "Давид Кистаури"
+  home_page_url: "https://dtroode.vercel.app/blog"
+  description: "Назови любое слово и я сделаю об этом сайт."
+  feed_url: "https://dtroode.vercel.app/blog/feed.json"
+  icon: "https://dtroode.vercel.app/images/icons/icon.png"
+  favicon: "https://dtroode.vercel.app/images/icons/icon-48x48.png"
+  author:
+    name: "Давид Кистаури"
+    url: "https://dtroode.vercel.app"
+  expired: true
+---
+{% jsonFeed collections.blog, metadata, 100 %}

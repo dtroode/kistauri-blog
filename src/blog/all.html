@@ -1,0 +1,33 @@
+---
+layout: layouts/home.html
+title: Все заметки
+description: Все заметки Давида Кистаури. Назови любое слово и я сделаю о нем сайт.
+pageClass: notes
+eleventyNavigation:
+  key: all
+  parent: blog
+---
+
+{% set postslist = collections.blog %} {% set postslistCounter =
+collections.blog | length %} {% set test1 = r/1$/ %} {% set test11 = r/[1][1]$/
+%} {% set test234 = r/(2|3|4)$/ %} {% set test121314 =
+r/([1][2]|[1][3]|[1][4])$/ %}
+
+<section>
+  <h1 class="main__header main__header--{{pageClass}} main__header--subsection">
+    {{postslistCounter}} {% if test1.test(postslistCounter) %} {% if
+    test11.test(postslistCounter) %} заметок {% else %} заметка {% endif %} {%
+    elif test234.test(postslistCounter) %} {% if
+    test121314.test(postslistCounter) %} заметок {% else %} заметки {% endif %}
+    {% else %} заметок {% endif %}
+  </h1>
+  <ul>
+    {%- for post in postslist | reverse -%}
+    <li>
+      <a href="{{ post.url | url }}" title="{{ post.date | shortDate }}"
+        >{{ post.data.title }}</a
+      >
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>

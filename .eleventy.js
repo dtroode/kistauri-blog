@@ -106,7 +106,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setDataDeepMerge(true);
 
-  eleventyConfig.addLayoutAlias("blog", ".src/layouts/post.html");
+  eleventyConfig.addLayoutAlias("blog", ".src/layouts/post.njk");
 
   // Filter to generate short date in D MMM YYYY format
   eleventyConfig.addFilter("shortDate", (dateObj) => {

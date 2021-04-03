@@ -1,4 +1,6 @@
 {
-  "tags": ["projects"],
-  "layout": "layouts/project.html"
+  "tags": [
+    "projects"
+  ],
+  "layout": "layouts/project.njk"
 }

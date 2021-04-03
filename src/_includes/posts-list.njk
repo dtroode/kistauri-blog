@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="{{ '/styles/article.css' | url }}">
+<link rel="stylesheet" href="{{ '/styles/post.css' | url }}">
+<link rel="stylesheet" href="{{ '/styles/code.css' | url }}">
+
+{%- for post in postslist | reverse -%}
+  <article class="card">
+    <span class="card__span">
+      <a href="{{ post.url | url }}" class="card__link main__header--subsection" {% if post.data.favourite == true %}id="favourite"{% endif %}>
+        {{ post.data.title }}
+      </a>
+    </span>
+    <section class="main__sect--text">
+      <article>
+        {{ post.templateContent | safe }}
+      </article>
+      <p class="postlinks">
+        <time datetime="{{ post.date | htmlDateString }}" title="{{ post.date | readableDate }}">{{ post.date | shortDate }}</time>
+        {%- for tag in post.data.tags -%}
+          {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {%- set tagUrl -%}/blog/tags/{{ tag | slug }}/{%- endset -%}
+            <a href="{{ tagUrl | url }}" class="postlinks__a">{{ tag }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </p>
+    </section>
+  </article>
+{%- endfor -%}

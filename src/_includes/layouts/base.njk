@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2962ff">
+    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
+    <meta name="robots" content="index,follow">
+    <meta name="generator" content="Eleventy">
+
+    <title>{{ pageTitle or title or renderData.title or metadata.title }}</title>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@{{metadata.twitter}}">
+    <meta name="twitter:creator" content="@{{metadata.twitter}}">
+    <meta name="twitter:url" content="{{metadata.url}}{{page.url}}">
+    <meta name="twitter:title" content="{{ pageTitle or title or renderData.title or metadata.title }}">
+    <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
+    <meta name="twitter:image" content="{{ metadata.url }}{{ image or metadata.image }}">
+
+    <!-- Facebook OpenGraph -->
+    <meta property="og:url" content="{{metadata.url}}{{page.url}}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ pageTitle or title or renderData.title or metadata.title }}">
+    <meta property="og:image" content="{{ metadata.url }}{{ image or metadata.image }}">
+    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
+    <meta property="og:site_name" content="{{metadata.title}}">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="article:author" content="{{metadata.author.name}}">
+
+    <!-- Preload image -->
+    <link rel="preload" href="/images/profile.jpg" as="image" type="image/jpg" crossorigin>
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <link rel="canonical" href="{{metadata.url}}{{page.url}}">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="{{ '/styles/index.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+  </head>
+  <body>
+
+    {% include "../components/header.njk" %}
+    <main class="main--{{pageClass}}">
+      {{ content | safe }}
+      <hr>
+    </main>
+    {% include "../components/footer.njk" %}
+
+    <script>
+      if ("serviceWorker" in navigator)
+        navigator.serviceWorker.register("/service-worker.js");
+    </script>
+  </body>
+</html>

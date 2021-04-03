@@ -1,0 +1,24 @@
+---
+layout: layouts/home.html
+title: Читаю
+pageTitle: Список прочтённых книг
+description: Веду список прочтённых книг с 2017 года.
+pageClass: reading
+---
+
+<h1 class="main__header main__header--{{pageClass}}">{{ title }}</h1>
+<section>
+  <h2>Список прочтённых книг</h2>
+  <p>Все прочтённые книги с 2017 года (список обновлён 1 мая 2020):</p>
+  {%- for year in books -%}
+  <h3>{{ year.year }}</h3>
+  <ul>
+    {%- for item in year.list -%}
+    <li class="{%- if item.type == 'favourite' -%}li--favourite{%- endif -%}">
+      {%- if item.link -%} <a href="{{ item.link }}">{{ item.title }}</a> {%-
+      else -%} {{ item.title }} {% endif %} — <em>{{ item.author }}</em>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- endfor -%}
+</section>

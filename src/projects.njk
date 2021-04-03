@@ -1,0 +1,17 @@
+---
+layout: layouts/home.njk
+title: Проекты
+pageTitle: Проекты Давида Кистаури
+description: Проекты Давида Кистаури. Назови любое слово и я сделаю о нем сайт.
+pageClass: projects
+eleventyNavigation:
+  key: projects
+  title: Проекты
+  order: 2
+---
+
+{% set postslist = collections.projects %}
+{% set postslistCounter = collections.projects | length %}
+<h1 class="main__header main__header--{{pageClass}}">{{ title }}</h1>
+{% include "projects-list.njk" %}
+<p>Пишу о проектах в блоге по тегу <a href="/blog/tags/proekty">проекты</a></p>

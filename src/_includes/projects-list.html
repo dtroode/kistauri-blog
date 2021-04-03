@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="{{ '/styles/article.css' | url }}">
+
+<section>
+  {%- for post in postslist | reverse -%}
+    <article class="card">
+      <p>
+        <a href="{{ post.url | url }}" class="card__link card__link--project">
+          <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+          {{- post.data.title -}}
+        </a>. 
+        {{ post.data.description }}
+      </p>
+    </article>
+  {%- endfor -%}
+</section>
