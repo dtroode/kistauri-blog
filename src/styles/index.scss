@@ -87,7 +87,9 @@
 
 @media screen and (min-width: 1300px) {
   header img {
-    margin-left: calc(-1 * (1.5rem + 2 * var(--fifth-padding) + var(--fourth-padding)));
+    margin-left: calc(
+      -1 * (1.5rem + 2 * var(--fifth-padding) + var(--fourth-padding))
+    );
   }
   :root {
     --side-padding: 10%;
@@ -108,7 +110,9 @@
 
 html {
   font-size: 16px;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text",
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 body {
@@ -146,14 +150,16 @@ header {
     a:first-child::before {
       position: absolute;
       top: 0;
-      left: calc(-1 * (1.5rem + 2 * var(--fifth-padding) + var(--fourth-padding)));
+      left: calc(
+        -1 * (1.5rem + 2 * var(--fifth-padding) + var(--fourth-padding))
+      );
 
       width: calc(1.5rem + 2 * var(--fifth-padding));
       height: calc(1.5rem + 2 * var(--fifth-padding));
 
       margin-top: calc(-0.125rem - var(--fifth-padding));
 
-      content: '';
+      content: "";
     }
   }
 
@@ -223,7 +229,8 @@ svg.foot__icon {
   margin-right: var(--fifth-padding);
 }
 
-h1, a.main__header--subsection {
+h1,
+a.main__header--subsection {
   font-weight: 700;
   line-height: 1.15em;
   letter-spacing: -0.022em;
@@ -245,7 +252,10 @@ h1 {
   content: " ★";
 }
 
-h2, h3, p, blockquote {
+h2,
+h3,
+p,
+blockquote {
   &:first-child {
     margin-top: 0;
   }
@@ -299,15 +309,19 @@ a {
     outline: none;
   }
 
-  &.main__header--subsection {
-    font-size: 2.25rem;
-  }
-
-  &.a--primary:hover,
-  &.a--secondary:hover,
   &:hover,
   &:focus {
     transition: none;
+
+    img {
+      box-shadow: 0 0 0 1px var(--accent-red);
+
+      transition: none;
+    }
+  }
+
+  &.main__header--subsection {
+    font-size: 2.25rem;
   }
 
   &.a--primary,
@@ -317,9 +331,8 @@ a {
 
     font-weight: 600;
 
-
-
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: var(--accent-red);
       border-bottom-color: var(--accent-red-25);
     }
@@ -352,6 +365,10 @@ a {
 
   &.foot__a {
     margin-top: var(--fifth-padding);
+  }
+
+  img {
+    transition: box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
   }
 }
 
@@ -394,7 +411,12 @@ hr {
     filter: brightness(85%);
   }
 
-  p, table, ul, ol, blockquote, figcaption {
+  p,
+  table,
+  ul,
+  ol,
+  blockquote,
+  figcaption {
     opacity: 0.85;
     * {
       opacity: 1;

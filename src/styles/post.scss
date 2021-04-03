@@ -1,7 +1,10 @@
 section.main__sect--text {
-  h2, h3, p, blockquote {
+  h2,
+  h3,
+  p,
+  blockquote {
     max-width: 700px;
-    
+
     &:first-child {
       margin-top: 0;
     }
@@ -24,7 +27,8 @@ section.main__sect--text {
     }
   }
 
-  ul li, ol li {
+  ul li,
+  ol li {
     list-style-position: outside;
   }
 
@@ -32,7 +36,10 @@ section.main__sect--text {
     border-bottom: 0;
   }
 
-  ul, ol, blockquote, pre {
+  ul,
+  ol,
+  blockquote,
+  pre {
     padding-left: 2rem;
   }
 
@@ -44,7 +51,8 @@ section.main__sect--text {
     margin-left: 0;
   }
 
-  blockquote p:first-child, hr + * {
+  blockquote p:first-child,
+  hr + * {
     margin-top: 0;
   }
 
@@ -70,20 +78,21 @@ section.main__sect--text {
     border-bottom: 1px solid var(--main-fg-25);
 
     &:visited {
-
       color: var(--main-fg);
 
       border-bottom: 1px solid var(--main-fg-25);
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: var(--accent-red);
 
       border-bottom: 1px solid var(--accent-red-25);
     }
   }
 
-  pre, code {
+  pre,
+  code {
     font-family: "Fira Code", monospace;
     tab-size: 2;
   }
@@ -113,7 +122,8 @@ section.main__sect--text {
     empty-cells: show;
     border-collapse: collapse;
 
-    th, td {
+    th,
+    td {
       padding: 0 1rem 0.5rem 0;
 
       text-align: left;
@@ -159,18 +169,6 @@ section.main__sect--text {
     height: auto;
   }
 
-  a {
-
-    &:hover img, &:focus img {
-      box-shadow: 0 0 0 1px var(--accent-red);
-
-      transition: none;
-    }
-    img {
-      transition: box-shadow cubic-bezier(0.18, 0.45, 0.35, 0.99) 0.38s;
-    }
-  }
-  
   section.related {
     margin-top: var(--main-padding);
     section.related-list {
@@ -182,15 +180,32 @@ section.main__sect--text {
         &:not(.a1):not(.a2):not(.a3) {
           grid-template-columns: repeat(4, 1fr);
 
-          article:first-child {
-            grid-area: 1/1/4/3;
+          &:not(.i2) {
+            article:first-child {
+              grid-area: 1/1/3/3;
+            }
+          }
+
+          &.i2 article {
+            &:first-child {
+              grid-area: 1/1/4/3;
+            }
+
+            &:last-child {
+              grid-column-start: 4;
+            }
+          }
+
+          article:nth-child(2).imaged {
+            grid-row: 1 / -1;
           }
         }
 
-        &:not(.a5) {
+        &:not(.a5):not(.a4) {
           grid-template-rows: max-content;
         }
-        &.a1, &.a2 {
+        &.a1,
+        &.a2 {
           grid-template-columns: repeat(2, 1fr);
         }
 
@@ -198,30 +213,37 @@ section.main__sect--text {
           grid-template-columns: 2fr repeat(2, 1fr);
         }
 
+        &.a4.i1 {
+          grid-template-rows: auto auto;
+        }
+
         &.a5 {
           grid-template-rows: auto auto 1fr;
-          &.i1, &.i2 {
+          &.i1,
+          &.i2 {
             article.imaged:nth-child(2) {
               grid-row-end: 4;
               grid-row-start: 1;
-            }
-            article:nth-child(n+3) {
-              grid-column-start: 4;
             }
           }
         }
       }
 
-
       article {
         &:first-child a {
           font-weight: bold;
-          font-size: 1.5rem;
+          font-size: 2rem;
           line-height: 1.25em;
+        }
+        &:not(:first-child) p.description {
+          display: none;
         }
         a {
           font-size: 1rem;
           line-height: 1.5em;
+        }
+        p.description {
+          margin-top: 0.5rem;
         }
         figure {
           margin: 0;
