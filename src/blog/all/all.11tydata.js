@@ -26,6 +26,8 @@ module.exports = {
                 notesList[item.data.title]["rating"] = 1;
                 notesList[item.data.title]["url"] = item.data.page.url;
                 notesList[item.data.title]["date"] = item.data.page.date;
+                notesList[item.data.title]["description"] =
+                  item.data.description;
 
                 if (item.data.favourite) {
                   // if the note has a favourite tag
@@ -54,6 +56,7 @@ module.exports = {
               notesList[note]["rating"],
               notesList[note]["url"],
               notesList[note]["date"],
+              notesList[note]["description"],
               notesList[note]["image"],
             ])
           : sortable.push([
@@ -61,6 +64,7 @@ module.exports = {
               notesList[note]["rating"],
               notesList[note]["url"],
               notesList[note]["date"],
+              notesList[note]["description"],
             ]);
       }
 
@@ -82,14 +86,15 @@ module.exports = {
         out[item[0]]["rating"] = item[1];
         out[item[0]]["url"] = item[2];
         out[item[0]]["date"] = item[3];
+        out[item[0]]["description"] = item[4];
 
-        if (item[4] && count < 3) {
+        if (item[5] && count < 3) {
           // if the note has a preview image
           // and there's less than three notes
           // with images, add it
           // increace counter of notes with images
           imagesCount++;
-          out[item[0]]["image"] = item[4];
+          out[item[0]]["image"] = item[5];
         }
       }
 
