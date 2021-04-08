@@ -1,15 +1,17 @@
-<link rel="stylesheet" href="{{ '/styles/article.css' | url }}">
+<link rel="stylesheet" href="{{ '/styles/article.css' | url }}" />
 
 <section>
   {%- for post in postslist | reverse -%}
-    <article class="card">
-      <p>
-        <a href="{{ post.url | url }}" class="card__link card__link--project">
-          <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
-          {{- post.data.title -}}
-        </a>. 
-        {{ post.data.description }}
-      </p>
-    </article>
+  <article class="card">
+    <h2>
+      <a href="{{ post.url | url }}" class="card__link">
+        {{- post.data.title -}}
+      </a>
+    </h2>
+    <img src="{{ post.data.image }}" alt="{{ post.data.title }}" />
+    <p class="card__description">{{ post.data.description }}</p>
+    {%- set tags = post.data.tags -%}
+    {% include "post-inf.html" %}
+  </article>
   {%- endfor -%}
 </section>

@@ -1,45 +1,18 @@
 article.card {
   position: relative;
 
-  margin-bottom: var(--main-padding);
-}
+  margin-bottom: var(--secondary-padding);
 
-span.card__span {
-  display: block;
-  margin-left: -2px;
-
-  & + section {
-    margin-top: var(--third-padding);
-  }
-}
-
-a.card__link {
-  color: var(--main-fg);
-
-  border-bottom: 1px solid var(--main-fg-25);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-red);
-
-    border-bottom: 1px solid var(--accent-red-25);
+  h2,
+  p {
+    max-width: 700px;
   }
 
-  &--project {
-    line-height: 1.5em;
-  }
-
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  h2 {
     margin-bottom: 0.5rem;
   }
 
-  h1 {
-    display: inline;
-    margin: 0;
-
-    color: inherit;
+  p.card__description {
+    margin-top: 0.5rem;
   }
 }
