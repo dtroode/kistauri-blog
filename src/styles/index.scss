@@ -17,8 +17,8 @@
   --accent-purple-25: #8a2be240;
 
   /* Contrast colors */
-  --contrast-red: #c50e29;
-  --contrast-red-25: #c50e2940;
+  --contrast-red: #a52a2a;
+  --contrast-red-25: #a52a2a40;
 
   /* Paddings */
   --main-padding: 3.84rem;
@@ -35,23 +35,23 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Main Background and Foreground colors */
-    --main-bg: darkolivegreen;
-    --main-fg: beige;
+    --main-bg: #2a4004;
+    --main-fg: #f5f5dc;
 
     /* Accent colors */
-    --accent-red: #ff5131;
-    --accent-blue: #768fff;
-    --accent-purple: #9d46ff;
+    --accent-red: #ff7c87;
+    --accent-blue: #8a9fff;
+    --accent-purple: #d28fff;
 
     /* Half colors */
-    --main-fg-25: #eeeeee40;
-    --accent-red-25: #ff513140;
-    --accent-blue-25: #768fff40;
-    --accent-purple-25: #9d46ff40;
+    --main-fg-25: #f5f5dc40;
+    --accent-red-25: #ff7c8740;
+    --accent-blue-25: #8a9fff40;
+    --accent-purple-25: #d28fff40;
 
     /* Contrast colors */
-    --contrast-red: #ff616f;
-    --contrast-red-25: #ff616f40;
+    --contrast-red: #ffc0c6;
+    --contrast-red-25: #ffc0c640;
   }
 }
 
@@ -233,9 +233,9 @@ p {
   margin-bottom: 0;
 
   &.tag_data {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -350,9 +350,9 @@ img {
 
 hr {
   height: 1px;
+  margin: var(--primary-padding) 0 var(--third-padding) 0;
 
   background-color: var(--main-fg);
-  margin: var(--primary-padding) 0 var(--third-padding) 0;
   border: 0;
   opacity: 0.125;
 }
