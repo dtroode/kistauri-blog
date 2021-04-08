@@ -4,7 +4,7 @@
   "description": "Код моего сайта портфолио-блога.",
   "scripts": {
     "lint": "stylelint src/styles/*.scss --fix",
-    "build": "npm run lint && eleventy",
+    "build": "eleventy",
     "watch": "eleventy --watch",
     "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy"
