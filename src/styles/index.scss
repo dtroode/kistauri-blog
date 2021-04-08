@@ -2,38 +2,23 @@
 
 :root {
   /* Main Background and Foreground colors */
-  --main-bg: #ffffff;
-  --main-fg: #000000;
-
-  /* Additional Background and Foreground colors */
-  --additional-bg: #eeeeee;
-  --additional-fg: #1c1c1c;
+  --main-bg: #f5f5dc;
+  --main-fg: #556b2f;
 
   /* Accent colors */
-  --accent-red: #d50000;
-  --accent-blue: #2962ff;
-  --accent-blue-text: #0039cb;
-  --accent-purple: #6200ea;
+  --accent-red: #dc143c;
+  --accent-blue: #3d64da;
+  --accent-purple: #8a2be2;
 
   /* Half colors */
-  --main-fg-25: #12121240;
-  --accent-red-25: #d5000040;
-  --accent-blue-25: #2962ff40;
-  --accent-purple-25: #6200ea40;
-
-  /* Additional colors */
-  --additional-red-bg: #ff5252;
-  --additional-green-bg: #69f0ae;
-  --additional-blue-bg: #448aff;
-  --additional-yellow-bg: #ffd740;
-  --additional-red-fg: #1c1c1c;
-  --additional-green-fg: #1c1c1c;
-  --additional-blue-fg: #1c1c1c;
-  --additional-yellow-fg: #1c1c1c;
+  --main-fg-25: #556b2f40;
+  --accent-red-25: #dc143c40;
+  --accent-blue-25: #3d64da40;
+  --accent-purple-25: #8a2be240;
 
   /* Contrast colors */
-  --contrast-red: #c50e29;
-  --contrast-red-25: #c50e2940;
+  --contrast-red: #a52a2a;
+  --contrast-red-25: #a52a2a40;
 
   /* Paddings */
   --main-padding: 3.84rem;
@@ -50,38 +35,23 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Main Background and Foreground colors */
-    --main-bg: #121212;
-    --main-fg: #eeeeee;
-
-    /* Additional Background and Foreground colors */
-    --additional-bg: #1c1c1c;
-    --additional-fg: #fafafa;
+    --main-bg: #2a4004;
+    --main-fg: #f5f5dc;
 
     /* Accent colors */
-    --accent-red: #ff5131;
-    --accent-blue: #768fff;
-    --accent-blue-text: #768fff;
-    --accent-purple: #9d46ff;
+    --accent-red: #ff7c87;
+    --accent-blue: #8a9fff;
+    --accent-purple: #d28fff;
 
     /* Half colors */
-    --main-fg-25: #eeeeee40;
-    --accent-red-25: #ff513140;
-    --accent-blue-25: #768fff40;
-    --accent-purple-25: #9d46ff40;
-
-    /* Additional colors */
-    --additional-red-bg: #1c1c1c;
-    --additional-green-bg: #1c1c1c;
-    --additional-blue-bg: #1c1c1c;
-    --additional-yellow-bg: #1c1c1c;
-    --additional-red-fg: #ff867f;
-    --additional-green-fg: #9fffe0;
-    --additional-blue-fg: #83b9ff;
-    --additional-yellow-fg: #ffff74;
+    --main-fg-25: #f5f5dc40;
+    --accent-red-25: #ff7c8740;
+    --accent-blue-25: #8a9fff40;
+    --accent-purple-25: #d28fff40;
 
     /* Contrast colors */
-    --contrast-red: #ff616f;
-    --contrast-red-25: #ff616f40;
+    --contrast-red: #ffc0c6;
+    --contrast-red-25: #ffc0c640;
   }
 }
 
@@ -146,32 +116,6 @@ header {
 
     display: inline-block;
     margin-bottom: calc(var(--primary-padding) - var(--fifth-padding));
-
-    a:first-child::before {
-      position: absolute;
-      top: 0;
-      left: calc(
-        -1 * (1.5rem + 2 * var(--fifth-padding) + var(--fourth-padding))
-      );
-
-      width: calc(1.5rem + 2 * var(--fifth-padding));
-      height: calc(1.5rem + 2 * var(--fifth-padding));
-
-      margin-top: calc(-0.125rem - var(--fifth-padding));
-
-      content: "";
-    }
-  }
-
-  img {
-    display: inline-block;
-    height: calc(1.5rem + 2 * var(--fifth-padding));
-    margin-top: calc(-0.125rem - var(--fifth-padding));
-    margin-right: var(--fourth-padding);
-
-    vertical-align: top;
-
-    border-radius: 50%;
   }
 
   a.head__a {
@@ -190,11 +134,6 @@ header {
 
 footer {
   padding-bottom: var(--primary-padding);
-}
-
-main hr,
-footer hr {
-  margin: var(--primary-padding) 0 var(--secondary-padding) 0;
 }
 
 main {
@@ -237,15 +176,15 @@ h1 {
   display: block;
   margin: 0 0 var(--third-padding) -2px;
 
-  font-size: var(--header-size, 2.8125rem);
+  font-size: var(--header-size, 3rem);
 
   &.main__header--subsection {
     --header-size: 2.25rem;
   }
-}
 
-#favourite::after {
-  content: " ★";
+  &.tag__header {
+    margin-bottom: 0.5rem;
+  }
 }
 
 h2,
@@ -288,6 +227,12 @@ ol {
 p {
   margin-top: var(--third-padding);
   margin-bottom: 0;
+
+  &.tag_data {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
 }
 
 a {
@@ -299,7 +244,7 @@ a {
 
   transition-timing-function: cubic-bezier(0.18, 0.45, 0.35, 0.99);
   transition-duration: 0.38s;
-  transition-property: color, border-bottom;
+  transition-property: color, border-bottom-color;
 
   &:focus {
     outline: none;
@@ -323,9 +268,12 @@ a {
   &.a--primary,
   &.a--secondary {
     display: inline-block;
-    margin-right: var(--third-padding);
 
     font-weight: 600;
+
+    &:not(:last-of-type) {
+      margin-right: var(--third-padding);
+    }
 
     &:hover,
     &:focus {
@@ -343,8 +291,6 @@ a {
     color: var(--accent-blue);
 
     border-bottom-color: var(--accent-blue-25);
-
-    transition-property: color, border-bottom-color;
   }
 
   &.a--active {
@@ -394,8 +340,13 @@ li {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 hr {
   height: 1px;
+  margin: var(--primary-padding) 0 var(--third-padding) 0;
 
   background-color: var(--main-fg);
   border: 0;

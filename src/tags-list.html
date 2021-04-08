@@ -18,7 +18,8 @@ r/(2|3|4)$/ -%} {%- set test121314 = r/([1][2]|[1][3]|[1][4])$/ -%}
 <section>
   <p class="main__container">
     {%- for tag in collections.tagList | sort(false, true, tag) -%} {%- set
-    tagURL -%}/blog/tags/{{ tag | slug }}/{%- endset -%}
+    tagURL -%}/blog/tags/{{ tags_info[tag]['slug'] or (tag | slug) }}/{%- endset
+    -%}
     <a href="{{ tagURL | url }}" class="a--secondary">
       {{ tag }} {{ collections[ tag ] | length }}
     </a>

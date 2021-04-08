@@ -4,7 +4,7 @@
   "description": "Код моего сайта портфолио-блога.",
   "scripts": {
     "lint": "stylelint src/styles/*.scss --fix",
-    "build": "npm run lint && eleventy",
+    "build": "eleventy",
     "watch": "eleventy --watch",
     "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy"
@@ -35,7 +35,7 @@
     "html-minifier": "^4.0.0",
     "lodash": "^4.17.21",
     "markdown-it": "^8.4.2",
-    "sharp": "^0.25.4",
+    "sharp": "^0.28.1",
     "slugify": "^1.4.7",
     "stylelint": "^13.12.0",
     "stylelint-config-rational-order": "^0.0.4",

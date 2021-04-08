@@ -1,0 +1,38 @@
+main {
+  .postlinks {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+
+    * {
+      margin-right: var(--fourth-padding);
+    }
+  }
+
+  span {
+    &.postlinks__span--m015 {
+      margin-right: 0.15rem;
+    }
+  }
+
+  a.postlinks__a,
+  a.card__link,
+  section.related-list a {
+    color: var(--main-fg);
+
+    border-bottom: 1px solid var(--main-fg-25);
+
+    &:visited {
+      color: var(--main-fg);
+
+      border-bottom: 1px solid var(--main-fg-25);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-red);
+
+      border-bottom: 1px solid var(--accent-red-25);
+    }
+  }
+}
