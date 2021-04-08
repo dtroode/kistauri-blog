@@ -20,11 +20,6 @@ eleventyNavigation:
 </h1>
 <section class="main__sect--text">
   <article>{{ content | safe }}</article>
-  <p class="postlinks">
-    <time
-      datetime="{{ page.date | htmlDateString }}"
-      title="{{ page.date | readableDate }}"
-      >{{page.date | shortDate}}</time
-    >
-  </p>
+  {%- set post = page -%}
+  {%- include "post-inf.html" -%}
 </section>
