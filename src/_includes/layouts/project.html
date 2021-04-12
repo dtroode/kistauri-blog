@@ -15,11 +15,12 @@ eleventyNavigation:
   crossorigin
 />
 <link rel="stylesheet" href="{{ '/styles/post.css' | url }}" />
+<link rel="stylesheet" href="{{ '/styles/post-inf.css' | url }}" />
+
 <h1 class="main__header main__header--{{pageClass}} main__header--subsection">
   {{ title }}
 </h1>
 <section class="main__sect--text">
   <article>{{ content | safe }}</article>
-  {%- set post = page -%}
-  {%- include "post-inf.html" -%}
+  {%- set post = page -%} {%- include "post-inf.html" -%}
 </section>
