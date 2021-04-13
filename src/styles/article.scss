@@ -3,7 +3,10 @@ article.card {
 
   margin-bottom: var(--secondary-padding);
 
-  h2,
+  a img {
+    margin-bottom: 0.25rem;
+  }
+
   p {
     max-width: 700px;
   }

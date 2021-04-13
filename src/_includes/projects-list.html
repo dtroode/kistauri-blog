@@ -6,10 +6,10 @@
   <article class="card">
     <h2>
       <a href="{{ post.url | url }}" class="card__link">
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" />
         {{- post.data.title -}}
       </a>
     </h2>
-    <img src="{{ post.data.image }}" alt="{{ post.data.title }}" />
     <p class="card__description">{{ post.data.description }}</p>
     {%- set tags = post.data.tags -%} {% include "post-inf.html" %}
   </article>
