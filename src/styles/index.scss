@@ -133,7 +133,7 @@ header {
 }
 
 footer {
-  padding-bottom: var(--primary-padding);
+  padding-bottom: calc(var(--primary-padding) - var(--fifth-padding));
 }
 
 main {
@@ -306,7 +306,7 @@ a {
   }
 
   &.foot__a {
-    margin-top: var(--fifth-padding);
+    margin-bottom: var(--fifth-padding);
   }
 
   img {
