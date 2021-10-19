@@ -6,7 +6,6 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const dateFns = require("date-fns");
 const ruLocale = require("date-fns/locale/ru");
-const pluginPWA = require("eleventy-plugin-pwa");
 const htmlmin = require("html-minifier");
 const sharp = require("sharp");
 const pluginSass = require("eleventy-plugin-sass");
@@ -21,7 +20,6 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(pluginPWA);
   eleventyConfig.addPlugin(pluginSass, {
     watch: ["src/**/*.{scss,sass}", "!node_modules/**"],
   });
@@ -30,8 +28,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addTransform("images", function (content, outputPath) {
     const blog = /blog\/([a-zA-Z0-9_-]+)/i;
     const projects = /projects\/([a-zA-Z0-9_-]+)\/index\.html/i;
-    const imagesInParagraph = /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\"]*)\"((?!img--nocaption).)*\>\<\/p\>/gi;
-    const images = /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\"]*)\"((?!img--nocaption).)*\>/gi;
+    const imagesInParagraph =
+      /\<p\>\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\"]*)\"((?!img--nocaption).)*\>\<\/p\>/gi;
+    const images =
+      /\<img src\=\"\/images\/([^\.]*).([^\"]*)\" alt\=\"([^\"]*)\"((?!img--nocaption).)*\>/gi;
     // Image sizes property for adaptive images
     const sizes =
       "(max-width: calc(1000px + 2 * 2.4rem)) calc(100vw - 2 * 2.4rem), 1000px";
