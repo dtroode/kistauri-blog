@@ -2,7 +2,7 @@
 
 <img
   align="right"
-  src="https://dtroode.vercel.app/images/icons/icon.svg"
+  src="https://dtroode.vercel.app/icon.svg"
   width="100px"
   height="100px"
   alt="Blog Logo">
