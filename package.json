@@ -3,7 +3,6 @@
   "version": "3.0.0",
   "description": "Код моего сайта портфолио-блога.",
   "scripts": {
-    "lint": "stylelint src/styles/*.scss --fix",
     "build": "eleventy",
     "watch": "eleventy --watch",
     "start": "eleventy --serve",
@@ -25,21 +24,17 @@
   "homepage": "https://github.com/dtroode/kistauri#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
     "date-fns": "^2.19.0",
-    "eleventy-plugin-json-feed": "0.0.6",
-    "eleventy-plugin-pwa": "^1.0.8",
+    "eleventy-plugin-json-feed": "^0.0.7",
     "eleventy-plugin-sass": "^1.2.0",
     "html-minifier": "^4.0.0",
     "lodash": "^4.17.21",
-    "markdown-it": "^8.4.2",
-    "sharp": "^0.28.1",
-    "slugify": "^1.4.7",
-    "stylelint": "^13.12.0",
-    "stylelint-config-rational-order": "^0.0.4",
-    "stylelint-order": "^4.1.0"
+    "markdown-it": "^12.2.0",
+    "sharp": "^0.29.1",
+    "slugify": "^1.4.7"
   },
   "browserslist": [
     "> 0.25%",
@@ -53,39 +48,5 @@
     "last 2 and_chr version",
     "last 2 and_ff version",
     "last 2 and_uc version"
-  ],
-  "stylelint": {
-    "plugins": [
-      "stylelint-order"
-    ],
-    "extends": [
-      "stylelint-config-rational-order"
-    ],
-    "rules": {
-      "color-named": "never",
-      "order/order": [
-        "declarations",
-        {
-          "type": "at-rule",
-          "name": "media"
-        },
-        {
-          "type": "rule",
-          "selector": "^&::(before|after)"
-        },
-        {
-          "type": "rule",
-          "selector": "^&:\\w"
-        },
-        {
-          "type": "rule",
-          "selector": "^&_"
-        },
-        {
-          "type": "rule",
-          "selector": "^."
-        }
-      ]
-    }
-  }
+  ]
 }
