@@ -8,7 +8,7 @@
   alt="Blog Logo">
 
 Hello, I am **David Kistauri**.\
-This is repository of my personal website with **[blog](https://dtroode.vercel.app/blog).**
+This is repository of my personal website with blog.
 
 You can
 
